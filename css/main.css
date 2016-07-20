@@ -454,7 +454,7 @@ body {
 }
 .header-inner {
   margin: 0 auto;
-  padding: 100px 50px;
+  padding: 150px 0 70px;
   width: 700px;
 }
 @media (min-width: 1600px) {
@@ -1032,7 +1032,7 @@ pre .javascript .function {
   transform: rotate(30deg);
 }
 .posts-expand {
-  padding-top: 40px;
+  padding-top: 0;
 }
 @media (max-width: 767px) {
   .posts-expand {
