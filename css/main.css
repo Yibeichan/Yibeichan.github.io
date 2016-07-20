@@ -1469,7 +1469,7 @@ pre .javascript .function {
   border: 2px solid #333;
 }
 .site-author-name {
-  margin: 5px 0 0;
+  margin: 12px 0 0;
   text-align: center;
   color: #f5f5f5;
   font-weight: normal;
@@ -1477,8 +1477,8 @@ pre .javascript .function {
 .site-description {
   margin-top: 5px;
   text-align: center;
-  font-size: 14px;
-  color: #999;
+  font-size: 16px;
+  color: #8A68AD;
 }
 .site-state {
   overflow: hidden;
