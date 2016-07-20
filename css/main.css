@@ -186,9 +186,9 @@ th {
 body {
   position: relative;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 17px;
-  line-height: 1.8;
-  color: #222;
+  font-size: 14px;
+  line-height: 2;
+  color: #555;
   background: #fff;
 }
 @media (max-width: 767px) {
@@ -274,7 +274,7 @@ h6 {
   }
 }
 p {
-  margin: 0 0 18px 0;
+  margin: 0 0 25px 0;
 }
 a {
   color: #555;
@@ -454,7 +454,7 @@ body {
 }
 .header-inner {
   margin: 0 auto;
-  padding: 150px 0 70px;
+  padding: 100px 0 70px;
   width: 700px;
 }
 @media (min-width: 1600px) {
@@ -907,15 +907,15 @@ pre .javascript .function {
 .site-title {
   display: inline-block;
   vertical-align: top;
-  line-height: 50px;
-  font-size: 28px;
+  line-height: 36px;
+  font-size: 20px;
   font-weight: normal;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
-  margin-top: 12px;
-  font-size: 16px;
-  color: #8A68AD;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #999;
 }
 .use-motion .brand {
   opacity: 0;
@@ -1032,7 +1032,7 @@ pre .javascript .function {
   transform: rotate(30deg);
 }
 .posts-expand {
-  padding-top: 0;
+  padding-top: 40px;
 }
 @media (max-width: 767px) {
   .posts-expand {
@@ -1216,17 +1216,17 @@ pre .javascript .function {
   font-size: 26px;
   text-align: center;
   word-break: break-word;
-  font-weight: 500;
+  font-weight: 400;
 }
 @media (max-width: 767px) {
   .posts-expand .post-title {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 .posts-expand .post-title-link {
   display: inline-block;
   position: relative;
-  color: #222;
+  color: #555;
   border-bottom: none;
   line-height: 1.2;
   vertical-align: top;
@@ -1261,10 +1261,10 @@ pre .javascript .function {
   font-size: 16px;
 }
 .posts-expand .post-meta {
-  margin: 3px 0 50px 0;
-  color: #4d4d4c;
+  margin: 3px 0 60px 0;
+  color: #999;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   text-align: center;
 }
 .posts-expand .post-meta .post-category-list {
@@ -1548,7 +1548,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0edf37;
+  background: #e0b1d5;
 }
 .links-of-blogroll {
   font-size: 13px;

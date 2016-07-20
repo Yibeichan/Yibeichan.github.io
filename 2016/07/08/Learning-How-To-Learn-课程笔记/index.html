@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="coursera,method," />
 
 
 
@@ -84,15 +84,22 @@
 
 
 
-<meta name="description" content="Keep writing and catch that Python">
-<meta property="og:type" content="website">
-<meta property="og:title" content="阿黛二的书摊">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="Learning How to Learn: Powerful mental tools to help you master tough subjects（如何学习：学习困难科目的实用思维方法 ）阅读材料：《A Mind for Numbers》
+课程共四周，小标题差不多就是按每周的要点来，比较随性啦。
+第一周人脑的两种思考模式focused- mode（左脑）和 diffuse mode（右脑">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Learning How To Learn 课程笔记">
+<meta property="og:url" content="http://yoursite.com/2016/07/08/Learning-How-To-Learn-课程笔记/index.html">
 <meta property="og:site_name" content="阿黛二的书摊">
-<meta property="og:description" content="Keep writing and catch that Python">
+<meta property="og:description" content="Learning How to Learn: Powerful mental tools to help you master tough subjects（如何学习：学习困难科目的实用思维方法 ）阅读材料：《A Mind for Numbers》
+课程共四周，小标题差不多就是按每周的要点来，比较随性啦。
+第一周人脑的两种思考模式focused- mode（左脑）和 diffuse mode（右脑">
+<meta property="og:updated_time" content="2016-07-20T16:21:15.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="阿黛二的书摊">
-<meta name="twitter:description" content="Keep writing and catch that Python">
+<meta name="twitter:title" content="Learning How To Learn 课程笔记">
+<meta name="twitter:description" content="Learning How to Learn: Powerful mental tools to help you master tough subjects（如何学习：学习困难科目的实用思维方法 ）阅读材料：《A Mind for Numbers》
+课程共四周，小标题差不多就是按每周的要点来，比较随性啦。
+第一周人脑的两种思考模式focused- mode（左脑）和 diffuse mode（右脑">
 
 
 
@@ -113,9 +120,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/08/Learning-How-To-Learn-课程笔记/"/>
 
-  <title> 阿黛二的书摊 </title>
+  <title> Learning How To Learn 课程笔记 | 阿黛二的书摊 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,9 +143,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -215,9 +220,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -237,499 +242,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/07/20/PR4E-Chapter-12.1-网络编程-作业/" itemprop="url">
-                  PR4E Chapter 12.1（网络编程）作业
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-20T21:42:59+08:00" content="2016-07-20">
-              2016-07-20
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。</p>
-<p>用socket会读取文档描述的头部信息和文档内容，而urllib更高级一点，默认你已经知晓头部信息了，直接读取文档内容。</p>
-<p>tips：保存文件的时候不要直接命名为socket.py和url lib.py。</p>
-<p>哦对，讲到HTTP我就该补课去了，完全不记得了已经。本周的测试几乎都是这方面的内容。</p>
-<h1 id="本周题目"><a href="#本周题目" class="headerlink" title="本周题目"></a>本周题目</h1><p>Exploring the HyperText Transport Protocol</p>
-<p>You are to retrieve the following document using the HTTP protocol in a way that you can examine the HTTP Response headers.</p>
-<ul>
-<li><a href="http://www.pythonlearn.com/code/intro-short.txt" target="_blank" rel="external">http://www.pythonlearn.com/code/intro-short.txt</a></li>
-</ul>
-<p>There are three ways that you might retrieve this web page and look at the response headers:</p>
-<ul>
-<li>Preferred: Modify the <a href="http://www.pythonlearn.com/code/socket1.py" target="_blank" rel="external">socket1.py</a> program to retrieve the above URL and print out the headers and data.</li>
-<li>Open the URL in a web browser with a developer console or FireBug and manually examine the headers that are returned.</li>
-<li>Use the telnet program as shown in lecture to retrieve the headers and content.</li>
-</ul>
-<p>其实这是一道填空题：</p>
-<ul>
-<li>Content-Type:</li>
-<li>Content-Length:</li>
-<li>Content-Length:</li>
-<li>ETag:</li>
-<li>Cache-Control:</li>
-</ul>
-<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>这道题简直是小学生水平，老师已经把py都写好了，因为我用的就是第一种方法，直接copy了socket1.py的代码，用terminal运行就得出了头部信息，正常来说，我还应该试一下第二和第三种方法，然而我懒……</p>
-<p>关于第三种方法，telnet program，把老师的slide给扒下来了<br>其实这是一种hack方式……</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ telnet www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span> <span class="number">80</span></div><div class="line">Trying <span class="number">74.208</span>.<span class="number">28.177</span>...</div><div class="line">Connected <span class="keyword">to</span> www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span>.</div><div class="line">Escape character <span class="keyword">is</span> <span class="string">'^]'</span>.</div><div class="line">GET http://www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span>/page1.htm</div></pre></td></tr></table></figure>
-<p>GET后面是应该有两次换行的，所以写到Python里的时候是 \n\n </p>
-<p>但是我在本地用$ telnet命令就不对，返回的是<br><code>www.dr-chunk.com: nodename nor servname provided, or not known</code></p>
-<p>我怀疑是端口80的问题，啊，这又是个坑，总之关于HTTP的都要补课</p>
-<h1 id="补充材料"><a href="#补充材料" class="headerlink" title="补充材料"></a>补充材料</h1><p>book：<a href="http://www.net-intro.com/" target="_blank" rel="external">Introduction to Networking</a><br>course：<a href="https://www.coursera.org/learn/internet-history" target="_blank" rel="external">Internet History, Technology, and Security</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/20/Listen-to-Music/" itemprop="url">
-                  Listen to Music
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-20T14:41:53+08:00" content="2016-07-20">
-              2016-07-20
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Why-we-Like-What-we-Like"><a href="#Why-we-Like-What-we-Like" class="headerlink" title="Why we Like What we Like"></a>Why we Like What we Like</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Art is life, art is another life, a life of imagination.</p>
-<blockquote>
-<p>Music is what feelings sound like. ———— Victor Hugo</p>
-</blockquote>
-<p>It’s very difficult to hate someone who passionately loves the same music that you do</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/19/PR4E-Chapter-11-正则表达式-作业/" itemprop="url">
-                  PR4E Chapter 11（正则表达式）作业
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-19T15:24:11+08:00" content="2016-07-19">
-              2016-07-19
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>正则表达式最常用的是search（）和findall（）</p>
-<h1 id="本周题目"><a href="#本周题目" class="headerlink" title="本周题目"></a>本周题目</h1><p>The basic outline of this problem is to read the file, look for integers using the re.findall(), looking for a regular expression of ‘[0-9]+’ and then converting the extracted strings to integers and summing up the integers.</p>
-<blockquote>
-<p><a href="http://python-data.dr-chuck.net/regex_sum_291515.txt" target="_blank" rel="external">http://python-data.dr-chuck.net/regex_sum_291515.txt</a> (There are 78 values and the sum ends with 813)</p>
-</blockquote>
-<h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><figure class="highlight processing"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> re</div><div class="line">name = raw_input(<span class="string">"Enter file:"</span>)</div><div class="line"><span class="keyword">if</span> len(name) &lt; <span class="number">1</span> : name = <span class="string">"regex_sum_291515.txt"</span></div><div class="line">hand = <span class="built_in">open</span>(name)</div><div class="line">l = list()</div><div class="line"><span class="keyword">for</span> <span class="built_in">line</span> in hand:</div><div class="line">    <span class="built_in">line</span> = <span class="built_in">line</span>.rstrip()</div><div class="line">    x = re.findall(<span class="string">'([0-9]+)'</span>,<span class="built_in">line</span>)</div><div class="line">    <span class="keyword">for</span> i in x:</div><div class="line">        i = <span class="built_in">float</span>(i)</div><div class="line">        l.<span class="built_in">append</span>(i)</div><div class="line"><span class="built_in">print</span> <span class="built_in">int</span>(sum(l))</div></pre></td></tr></table></figure>
-<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>两个问题：</p>
-<p>1）第一次split后出现列表嵌套不知道该怎么办了，差点用上了字典，后来翻到《列表》的作业才想起来用append加到另一个列表。</p>
-<p>2）表达式出错了，第一次用的是[0-9]+？，也不知道为什么在这用了一个非贪婪模式，是担心会把后面的单词也写进来了吗？真是杞人忧天。然后又发现’’这个单引号没加。输出之后发现变成了单个的数字，于是又在？后加了一个空格。本以为这下做对了，但是求和发现和答案不符，对着txt比对半天，原来是把一行结尾处的数字落下了，因为那个数字后面是没有空格的。好吧，空格和？都去掉了，结果竟然对了，之前真是瞎折腾。</p>
-<h1 id="Cheat-Sheet"><a href="#Cheat-Sheet" class="headerlink" title="Cheat Sheet :)"></a>Cheat Sheet :)</h1><table>
-<thead>
-<tr>
-<th>表达式</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>^</td>
-<td>Matches the beginning of a line</td>
-</tr>
-<tr>
-<td>$</td>
-<td>Matches the end of the line</td>
-</tr>
-<tr>
-<td>.</td>
-<td>Matches any character</td>
-</tr>
-<tr>
-<td>\s</td>
-<td>Matches whitespace</td>
-</tr>
-<tr>
-<td>\S</td>
-<td>Matches any non-whitespace character</td>
-</tr>
-<tr>
-<td>*</td>
-<td>Repeats a character zero or more times</td>
-</tr>
-<tr>
-<td>*?</td>
-<td>Repeats a character zero or more times (non-greedy)</td>
-</tr>
-<tr>
-<td>+</td>
-<td>Repeats a character one or more times</td>
-</tr>
-<tr>
-<td>+?</td>
-<td>Repeats a character one or more times (non-greedy)</td>
-</tr>
-<tr>
-<td>[aeiou]</td>
-<td>Matches a single character in the listed set</td>
-</tr>
-<tr>
-<td>[^XYZ]</td>
-<td>Matches a single character not in the listed set</td>
-</tr>
-<tr>
-<td>[a-z0-9]</td>
-<td>The set of characters can include a range</td>
-</tr>
-<tr>
-<td>(</td>
-<td>Indicates where string extraction is to start</td>
-</tr>
-<tr>
-<td>)</td>
-<td>Indicates where string extraction is to end</td>
-</tr>
-</tbody>
-</table>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/18/PR4E-Chapter-10-元组-作业/" itemprop="url">
-                  PR4E Chapter 10（元组）作业
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-18T14:39:13+08:00" content="2016-07-18">
-              2016-07-18
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>元组不复杂，和列表字典都有点相似，当然，又完全不相同。元组是不可变的。所以，感觉它是辅助列表字典进行运算的？</p>
-<h1 id="本周题目"><a href="#本周题目" class="headerlink" title="本周题目"></a>本周题目</h1><p>10.2 Write a program to read through the mbox-short.txt and figure out the distribution by hour of the day for each of the messages. You can pull the hour out from the ‘From ‘ line by finding the time and then splitting the string a second time using a colon.<br><code>From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008</code><br>Once you have accumulated the counts for each hour, print out the counts, sorted by hour as shown below.</p>
-<h1 id="原始答案"><a href="#原始答案" class="headerlink" title="原始答案"></a>原始答案</h1><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">name = raw_input(<span class="string">"Enter file:"</span>)</div><div class="line"><span class="keyword">if</span> <span class="built_in">len</span>(name) &lt; <span class="number">1</span> : name = <span class="string">"mbox-short.txt"</span></div><div class="line">handle = <span class="built_in">open</span>(name)</div><div class="line">d = dict()</div><div class="line"><span class="keyword">for</span> <span class="built_in">line</span> <span class="keyword">in</span> handle:</div><div class="line">    <span class="keyword">words</span> = <span class="built_in">line</span>.rstrip().<span class="built_in">split</span>()</div><div class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(<span class="keyword">words</span>)== <span class="number">0</span>: continue</div><div class="line">    <span class="keyword">if</span> <span class="keyword">words</span>[<span class="number">0</span>]!= <span class="string">'From'</span>: continue</div><div class="line">    <span class="keyword">if</span> <span class="keyword">words</span>[<span class="number">0</span>]== <span class="string">'From:'</span>: continue</div><div class="line">    <span class="comment">#print words[5]</span></div><div class="line">    <span class="keyword">words</span> = <span class="keyword">words</span>[<span class="number">5</span>].<span class="built_in">split</span>()</div><div class="line">    ws = <span class="keyword">words</span>[<span class="number">0</span>][: <span class="keyword">words</span>[<span class="number">0</span>].find(<span class="string">':'</span>)].rstrip().<span class="built_in">split</span>()</div><div class="line">    <span class="comment">#print ws</span></div><div class="line">    <span class="keyword">for</span> w <span class="keyword">in</span> ws:</div><div class="line">        <span class="keyword">if</span> w <span class="keyword">not</span> <span class="keyword">in</span> d:</div><div class="line">           d[w] = <span class="number">1</span></div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            d[w] += <span class="number">1</span></div><div class="line"><span class="comment">#print da</span></div><div class="line">l = list()</div><div class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> d.<span class="keyword">items</span>():</div><div class="line">    l.append((k, v))</div><div class="line">l.<span class="built_in">sort</span>()</div><div class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> l:</div><div class="line">    print k, v</div></pre></td></tr></table></figure>
-<h1 id="修改后的答案"><a href="#修改后的答案" class="headerlink" title="修改后的答案"></a>修改后的答案</h1><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">name = raw_input(<span class="string">"Enter file:"</span>)</div><div class="line"><span class="keyword">if</span> <span class="built_in">len</span>(name) &lt; <span class="number">1</span> : name = <span class="string">"mbox-short.txt"</span></div><div class="line">handle = <span class="built_in">open</span>(name)</div><div class="line">d = dict()</div><div class="line"><span class="keyword">for</span> <span class="built_in">line</span> <span class="keyword">in</span> handle:</div><div class="line">    <span class="keyword">if</span> <span class="built_in">line</span>.startswith(<span class="string">"From"</span>) <span class="keyword">and</span> <span class="keyword">not</span> <span class="built_in">line</span>.startswith(<span class="string">"From:"</span>):  </div><div class="line">       <span class="keyword">words</span> = <span class="built_in">line</span>.rstrip().<span class="built_in">split</span>()</div><div class="line">    <span class="comment">#print words[5]</span></div><div class="line">       <span class="keyword">words</span> = <span class="keyword">words</span>[<span class="number">5</span>].<span class="built_in">split</span>()</div><div class="line">       ws = <span class="keyword">words</span>[<span class="number">0</span>][: <span class="keyword">words</span>[<span class="number">0</span>].find(<span class="string">':'</span>)]</div><div class="line">       <span class="comment">#print ws</span></div><div class="line">       d[ws] = d.<span class="built_in">get</span>(ws,<span class="number">0</span>)+<span class="number">1</span>  </div><div class="line"><span class="comment">#print d</span></div><div class="line">l = d.<span class="keyword">items</span>()</div><div class="line">l.<span class="built_in">sort</span>()</div><div class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> l:</div><div class="line">    print k, v</div></pre></td></tr></table></figure>
-<h1 id="备注："><a href="#备注：" class="headerlink" title="备注："></a>备注：</h1><p>两次split之后是list，再切片一下得到的是单个数据项，既然是数据项就可以直接添加到字典，不用把它再变成列表然后从列表里再加到字典——这样写简直太麻烦了……觉得自己真是婆婆妈妈。</p>
-<p>回想起来，第九周的作业也是这么啰里啰嗦的……直接把数据项加入字典啊，为什么要绕到列表那去。</p>
-<p>另外，各种格式对齐问题一定要注意，一处不对就毁全局啊，就算code都是对的，对错了行也是功亏一篑。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/08/Learning-How-To-Learn-课程笔记/" itemprop="url">
-                  Learning How To Learn 课程笔记
-                </a>
+                Learning How To Learn 课程笔记
               
             
           </h1>
@@ -769,9 +282,7 @@
       
 
       
-        
-          
-            <h1 id="Learning-How-to-Learn-Powerful-mental-tools-to-help-you-master-tough-subjects（如何学习：学习困难科目的实用思维方法-）"><a href="#Learning-How-to-Learn-Powerful-mental-tools-to-help-you-master-tough-subjects（如何学习：学习困难科目的实用思维方法-）" class="headerlink" title="Learning How to Learn: Powerful mental tools to help you master tough subjects（如何学习：学习困难科目的实用思维方法 ）"></a>Learning How to Learn: Powerful mental tools to help you master tough subjects（如何学习：学习困难科目的实用思维方法 ）</h1><p>阅读材料：《A Mind for Numbers》</p>
+        <h1 id="Learning-How-to-Learn-Powerful-mental-tools-to-help-you-master-tough-subjects（如何学习：学习困难科目的实用思维方法-）"><a href="#Learning-How-to-Learn-Powerful-mental-tools-to-help-you-master-tough-subjects（如何学习：学习困难科目的实用思维方法-）" class="headerlink" title="Learning How to Learn: Powerful mental tools to help you master tough subjects（如何学习：学习困难科目的实用思维方法 ）"></a>Learning How to Learn: Powerful mental tools to help you master tough subjects（如何学习：学习困难科目的实用思维方法 ）</h1><p>阅读材料：《A Mind for Numbers》</p>
 <p>课程共四周，小标题差不多就是按每周的要点来，比较随性啦。</p>
 <h2 id="第一周"><a href="#第一周" class="headerlink" title="第一周"></a>第一周</h2><h3 id="人脑的两种思考模式"><a href="#人脑的两种思考模式" class="headerlink" title="人脑的两种思考模式"></a>人脑的两种思考模式</h3><p>focused- mode（左脑）和 diffuse mode（右脑）</p>
 <ul>
@@ -931,36 +442,61 @@
 <p>学习的方法可能是多样的，但那些学有所成的人的方法皆有相通之处。也就是说，原则在上，方法可以自由发挥啦。</p>
 <p>第四周的笔记记得有点简陋，因为最近我很厌学……</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/coursera/" rel="tag">#coursera</a>
+          
+            <a href="/tags/method/" rel="tag">#method</a>
+          
+        </div>
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/07/18/PR4E-Chapter-10-元组-作业/" rel="prev" title="PR4E Chapter 10（元组）作业">
+                PR4E Chapter 10（元组）作业 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -968,6 +504,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -987,8 +527,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -1031,6 +580,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Learning-How-to-Learn-Powerful-mental-tools-to-help-you-master-tough-subjects（如何学习：学习困难科目的实用思维方法-）"><span class="nav-number">1.</span> <span class="nav-text">Learning How to Learn: Powerful mental tools to help you master tough subjects（如何学习：学习困难科目的实用思维方法 ）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一周"><span class="nav-number">1.1.</span> <span class="nav-text">第一周</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#人脑的两种思考模式"><span class="nav-number">1.1.1.</span> <span class="nav-text">人脑的两种思考模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sleep的重要性在于"><span class="nav-number">1.1.2.</span> <span class="nav-text">sleep的重要性在于</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#exercise的重要性在于"><span class="nav-number">1.1.3.</span> <span class="nav-text">exercise的重要性在于</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人的两种记忆模式"><span class="nav-number">1.2.</span> <span class="nav-text">人的两种记忆模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二周"><span class="nav-number">1.3.</span> <span class="nav-text">第二周</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Chunk三步走"><span class="nav-number">1.3.1.</span> <span class="nav-text">Chunk三步走</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#那我们怎么样才能建立一个chunk并掌握它呢？"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">那我们怎么样才能建立一个chunk并掌握它呢？</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Recall：非常有助于加深理解"><span class="nav-number">1.3.2.</span> <span class="nav-text">Recall：非常有助于加深理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Transfer"><span class="nav-number">1.3.3.</span> <span class="nav-text">Transfer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Interleaving"><span class="nav-number">1.3.4.</span> <span class="nav-text">Interleaving</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Illusions-of-competence"><span class="nav-number">1.3.5.</span> <span class="nav-text">Illusions of competence</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Einstellug"><span class="nav-number">1.3.6.</span> <span class="nav-text">Einstellug</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不积跬步无以至千里"><span class="nav-number">1.3.7.</span> <span class="nav-text">不积跬步无以至千里</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三周"><span class="nav-number">1.4.</span> <span class="nav-text">第三周</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#拖延（procrastination）"><span class="nav-number">1.4.1.</span> <span class="nav-text">拖延（procrastination）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#每天的学习（工作）计划怎么做呢？量力而行！"><span class="nav-number">1.4.1.1.</span> <span class="nav-text">每天的学习（工作）计划怎么做呢？量力而行！</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#记忆"><span class="nav-number">1.4.2.</span> <span class="nav-text">记忆</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第四周"><span class="nav-number">1.5.</span> <span class="nav-text">第四周</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#巧用隐喻和类比"><span class="nav-number">1.5.1.</span> <span class="nav-text">巧用隐喻和类比</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不要嫉妒天才们"><span class="nav-number">1.5.2.</span> <span class="nav-text">不要嫉妒天才们</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Change-Your-Thoughts-Change-Your-Life"><span class="nav-number">1.5.3.</span> <span class="nav-text">Change Your Thoughts  Change Your Life</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#学会与人合作"><span class="nav-number">1.5.4.</span> <span class="nav-text">学会与人合作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hard-Start-Jump-to-Easy"><span class="nav-number">1.5.5.</span> <span class="nav-text">Hard Start Jump to Easy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#impostor-syndrome"><span class="nav-number">1.5.6.</span> <span class="nav-text">impostor syndrome</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说好的反转来了"><span class="nav-number">1.5.7.</span> <span class="nav-text">说好的反转来了</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">1.6.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -1127,6 +687,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
