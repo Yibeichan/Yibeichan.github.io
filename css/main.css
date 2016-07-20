@@ -186,8 +186,8 @@ th {
 body {
   position: relative;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
-  line-height: 2;
+  font-size: 17px;
+  line-height: 1.8;
   color: #555;
   background: #fff;
 }
@@ -907,15 +907,15 @@ pre .javascript .function {
 .site-title {
   display: inline-block;
   vertical-align: top;
-  line-height: 36px;
-  font-size: 20px;
+  line-height: 40px;
+  font-size: 28px;
   font-weight: normal;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
-  font-size: 13px;
-  color: #999;
+  font-size: 15px;
+  color: #8A68AD;
 }
 .use-motion .brand {
   opacity: 0;
@@ -1264,7 +1264,7 @@ pre .javascript .function {
   margin: 3px 0 60px 0;
   color: #999;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   text-align: center;
 }
 .posts-expand .post-meta .post-category-list {
