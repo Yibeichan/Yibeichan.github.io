@@ -84,19 +84,16 @@
 
 
 
-<meta name="description" content="正则表达式最常用的是search（）和findall（）
-本周题目The basic outline of this problem is to read the file, look for integers using the re.findall(), looking for a regular expression of ‘[0-9]+’ and then converting the e">
+<meta name="description" content="正则表达式最常用的是search（）和findall（）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PR4E Chapter 11（正则表达式）作业">
 <meta property="og:url" content="http://yoursite.com/2016/07/19/PR4E-Chapter-11-正则表达式-作业/index.html">
 <meta property="og:site_name" content="阿黛二的书摊">
-<meta property="og:description" content="正则表达式最常用的是search（）和findall（）
-本周题目The basic outline of this problem is to read the file, look for integers using the re.findall(), looking for a regular expression of ‘[0-9]+’ and then converting the e">
-<meta property="og:updated_time" content="2016-07-20T16:08:04.000Z">
+<meta property="og:description" content="正则表达式最常用的是search（）和findall（）">
+<meta property="og:updated_time" content="2016-07-21T03:04:37.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PR4E Chapter 11（正则表达式）作业">
-<meta name="twitter:description" content="正则表达式最常用的是search（）和findall（）
-本周题目The basic outline of this problem is to read the file, look for integers using the re.findall(), looking for a regular expression of ‘[0-9]+’ and then converting the e">
+<meta name="twitter:description" content="正则表达式最常用的是search（）和findall（）">
 
 
 
@@ -279,7 +276,7 @@
       
 
       
-        <p>正则表达式最常用的是search（）和findall（）</p>
+        <p>正则表达式最常用的是search（）和findall（）<br><a id="more"></a></p>
 <h1 id="本周题目"><a href="#本周题目" class="headerlink" title="本周题目"></a>本周题目</h1><p>The basic outline of this problem is to read the file, look for integers using the re.findall(), looking for a regular expression of ‘[0-9]+’ and then converting the extracted strings to integers and summing up the integers.</p>
 <blockquote>
 <p><a href="http://python-data.dr-chuck.net/regex_sum_291515.txt" target="_blank" rel="external">http://python-data.dr-chuck.net/regex_sum_291515.txt</a> (There are 78 values and the sum ends with 813)</p>
@@ -287,7 +284,7 @@
 <h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><figure class="highlight processing"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> re</div><div class="line">name = raw_input(<span class="string">"Enter file:"</span>)</div><div class="line"><span class="keyword">if</span> len(name) &lt; <span class="number">1</span> : name = <span class="string">"regex_sum_291515.txt"</span></div><div class="line">hand = <span class="built_in">open</span>(name)</div><div class="line">l = list()</div><div class="line"><span class="keyword">for</span> <span class="built_in">line</span> in hand:</div><div class="line">    <span class="built_in">line</span> = <span class="built_in">line</span>.rstrip()</div><div class="line">    x = re.findall(<span class="string">'([0-9]+)'</span>,<span class="built_in">line</span>)</div><div class="line">    <span class="keyword">for</span> i in x:</div><div class="line">        i = <span class="built_in">float</span>(i)</div><div class="line">        l.<span class="built_in">append</span>(i)</div><div class="line"><span class="built_in">print</span> <span class="built_in">int</span>(sum(l))</div></pre></td></tr></table></figure>
 <h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>两个问题：</p>
 <p>1）第一次split后出现列表嵌套不知道该怎么办了，差点用上了字典，后来翻到《列表》的作业才想起来用append加到另一个列表。</p>
-<p>2）表达式出错了，第一次用的是[0-9]+？，也不知道为什么在这用了一个非贪婪模式，是担心会把后面的单词也写进来了吗？真是杞人忧天。然后又发现’’这个单引号没加。输出之后发现变成了单个的数字，于是又在？后加了一个空格。本以为这下做对了，但是求和发现和答案不符，对着txt比对半天，原来是把一行结尾处的数字落下了，因为那个数字后面是没有空格的。好吧，空格和？都去掉了，结果竟然对了，之前真是瞎折腾。</p>
+<p>2）表达式出错了，第一次用的是[0-9]+？，也不知道为什么在这用了一个非贪婪模式，是担心会把后面的单词也写进来了吗？真是杞人忧天。然后发现’’这个单引号没加。输出之后变成了单个的数字，于是在？后加了一个空格。但计算结果还是不对，对着txt找半天，原来是把line结尾处的数字落下了，因为那个数字后面没有空格。好吧，空格和？都去掉了，算对了！之前真是瞎折腾。</p>
 <h1 id="Cheat-Sheet"><a href="#Cheat-Sheet" class="headerlink" title="Cheat Sheet :)"></a>Cheat Sheet :)</h1><table>
 <thead>
 <tr>
