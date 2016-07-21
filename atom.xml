@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-21T15:43:22.000Z</updated>
+  <updated>2016-07-21T15:49:42.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://yibeichen.me/2016/07/21/PR4E-Chapter-12-2-assignment/"/>
     <id>http://yibeichen.me/2016/07/21/PR4E-Chapter-12-2-assignment/</id>
     <published>2016-07-21T11:21:49.000Z</published>
-    <updated>2016-07-21T15:43:22.000Z</updated>
+    <updated>2016-07-21T15:49:42.000Z</updated>
     
-    <content type="html"><![CDATA[<p>老师说，之前我们都是start with the hard way, then the easy way，本周我们直接start with the easy way。介绍了用BeautifulSoup可以直接用，比如可以直接解析网站中的<strong>a</strong>标签。<br>库名出自于一本儿童读物？还蛮有意思的。</p>
+    <content type="html"><![CDATA[<p>老师说，之前我们都是start with the hard way, then the easy way，本周我们直接start with the easy way。（然而，本周的李牧折磨得我死去活来……）介绍了用BeautifulSoup可以直接用，比如可以直接解析网站中的<strong>a</strong>标签。<br>库名出自于一本儿童读物？还蛮有意思的。</p>
 <p>下载地址：<a href="https://www.crummy.com/software/BeautifulSoup/" target="_blank" rel="external">此处</a></p>
 <p>安装说明：<a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/" target="_blank" rel="external">此处</a></p>
 <p>两道习题。<br><a id="more"></a></p>
@@ -47,31 +47,33 @@
 <p>The web pages tweak the height between the links and hide the page after a few seconds to make it difficult for you to do the assignment without writing a Python program. But frankly with a little effort and patience you can overcome these attempts to make it a little harder to complete the assignment without writing a Python program. But that is not the point. The point is to write a clever Python program to solve the program.</p>
 <h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><h2 id="习题A"><a href="#习题A" class="headerlink" title="习题A"></a>习题A</h2><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">import urllib</div><div class="line">from bs4 import BeautifulSoup</div><div class="line"></div><div class="line">url = raw_input(<span class="string">'Enter - '</span>)</div><div class="line">html = urllib.urlopen(url).<span class="keyword">read</span>()</div><div class="line"></div><div class="line">soup = BeautifulSoup(html)</div><div class="line">s = []</div><div class="line"># Retrieve <span class="keyword">all</span> of the anchor <span class="keyword">tags</span></div><div class="line">spans = soup(<span class="string">'span'</span>)</div><div class="line"><span class="keyword">for</span> span in span<span class="variable">s:</span></div><div class="line">    s.<span class="keyword">append</span>(<span class="keyword">int</span>(span.<span class="built_in">string</span>))</div><div class="line"></div><div class="line"><span class="keyword">print</span> sum(s)</div></pre></td></tr></table></figure>
 <h2 id="习题B"><a href="#习题B" class="headerlink" title="习题B"></a>习题B</h2><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">import urllib</div><div class="line">from bs4 import BeautifulSoup</div><div class="line"></div><div class="line">url = raw_input(<span class="string">'Enter - '</span>)</div><div class="line"><span class="keyword">if</span> <span class="built_in">len</span>(url) &lt; <span class="number">1</span>:</div><div class="line">   url = <span class="string">"http://python-data.dr-chuck.net/known_by_Fikret.html"</span></div><div class="line"><span class="built_in">count</span> = <span class="keyword">int</span>(raw_input(<span class="string">'Enter count - '</span>))</div><div class="line">position = <span class="keyword">int</span>(raw_input(<span class="string">'Enter position - '</span>))</div><div class="line"><span class="built_in">taglist</span> = <span class="keyword">list</span>()</div><div class="line"><span class="keyword">for</span> i in <span class="built_in">range</span>(<span class="built_in">count</span>):</div><div class="line">    <span class="keyword">print</span> <span class="string">'Retrieving:'</span>, url</div><div class="line">    html = urllib.urlopen(url).<span class="keyword">read</span>()</div><div class="line">    soup = BeautifulSoup(html, <span class="string">"html.parser"</span>)</div><div class="line">    <span class="keyword">tags</span> = soup(<span class="string">'a'</span>)</div><div class="line">    <span class="keyword">for</span> <span class="keyword">tag</span> in <span class="keyword">tag</span><span class="variable">s:</span></div><div class="line">        <span class="built_in">taglist</span>.<span class="keyword">append</span>(<span class="keyword">tag</span>)</div><div class="line">    url = <span class="built_in">taglist</span>[position-<span class="number">1</span>].<span class="built_in">get</span>(<span class="string">'href'</span>, None)</div><div class="line">    del <span class="built_in">taglist</span>[:]</div><div class="line"><span class="keyword">print</span> <span class="string">"Retrieving:"</span>,url</div></pre></td></tr></table></figure>
-<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><h2 id="习题A-1"><a href="#习题A-1" class="headerlink" title="习题A"></a>习题A</h2><p>好了好了，我来坦白，这道题的答案借鉴了别人的@<a href="https://github.com/richyvk/python-web-data/blob/master/Week-4/bs4-scraper.py" target="_blank" rel="external">richyvk</a></p>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><h2 id="习题A-1"><a href="#习题A-1" class="headerlink" title="习题A"></a>习题A</h2><p>好了好了，我来坦白，这道题的答案借鉴了别人@<a href="https://github.com/richyvk/python-web-data/blob/master/Week-4/bs4-scraper.py" target="_blank" rel="external">richyvk</a></p>
 <p>我卡在了两个地方：</p>
 <p>1）bs的使用。</p>
-<p>其实题目建议是把beautifulsoup.py拷贝到程序文件夹中，然后用语句<br><code>from BeautifulSoup import *</code><br>但是运行之后总报错<br><code>ImportError: No module named BeautifulSoup</code></p>
-<p>好吧，我承认，根本不知道Mac里的程序文件夹是什么，我只是把bs.py和我写的py文件放到一起了。</p>
+<p>其实题目建议是把beautifulsoup.py拷贝到程序文件夹中，然后用语句<code>from BeautifulSoup import *</code>但是运行之后总报错<code>ImportError: No module named BeautifulSoup</code><br>好吧，我承认，根本不知道Mac里的程序文件夹是什么，我只是把bs.py和我写的py文件放到一起了。</p>
 <p>那就下载安装bs4吧。又是好一阵折腾，因为我还是不知道该把它放在哪个文件夹。战战兢兢install了半天，实在太困（为了折腾这个网站已经连续熬夜四天了），倒头大睡。梦里全都是各种install/uninstall的命令行，总之是梦见它成功了。啊，美梦啊，热望啊。</p>
-<p>醒来之后，查了一下，bs4的命令语句已经改了，是<br><code>from bs4 import BeautifulSoup</code><br>好啦，总算不报错了，哦不，是不报这种错，报了另一种。</p>
+<p>醒来之后，查了一下，bs4的命令语句已经改了，是<code>from bs4 import BeautifulSoup</code></p>
+<p>好啦，总算不报错了，哦不，是不报这种错，报了另一种。</p>
 <p>2）把列表元素变成整数型，再求和。</p>
 <p>我已经在这个坑边摔倒无数次了，前几周有很多这种求和的题目，我都是先转成float求和后又转成int，真是low。</p>
-<p>然后这位朋友用了<br><code>s.append(int(span.string))</code><br>这个语句，在加入列表前就转成int了。其实我还是没弄懂<em>span.string</em>代表了什么……先用着吧，慢慢找答案。</p>
+<p>然后这位朋友用了<code>s.append(int(span.string))</code>在加入列表前就转成int了。其实我还是没弄懂<em>span.string</em>代表了什么……先用着吧，慢慢找答案。</p>
 <h2 id="习题B-1"><a href="#习题B-1" class="headerlink" title="习题B"></a>习题B</h2><p>这次又借鉴了别人@<a href="https://gist.github.com/Vijayabhaskar96/a8b2f0e99fa148c8a2915ef7085ecbbb" target="_blank" rel="external">Vijayabhashar96</a>的答案。我真的不会写了呀，只能借助别人的答案倒推，学到这，仅靠视频和教材已经不够了，得找辅助材料。</p>
 <p>隆重推荐：<a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="external">Python教程——廖雪峰</a></p>
 <p>不过，我觉得不会做是因为没看懂题目……</p>
-<h3 id="本题中的几个知识点"><a href="#本题中的几个知识点" class="headerlink" title="本题中的几个知识点"></a>本题中的几个知识点</h3><h5 id="rang（-函数"><a href="#rang（-函数" class="headerlink" title="rang（)函数"></a>rang（)函数</h5><p>可以生成一个整数序列，再通过list()函数可以转换为list。比如range(5)生成的序列是从0开始小于5的整数。<br><code>for i in range(count):</code><br>这一句，应题意，循环7次。冒号后面就是循环的操作。</p>
-<h5 id="BeautifulSoup"><a href="#BeautifulSoup" class="headerlink" title="BeautifulSoup"></a>BeautifulSoup</h5><p>用来检索所有的锚标签<br><code>soup = BeautifulSoup(html, &quot;html.parser&quot;)
-tags = soup(&#39;a&#39;)</code><br>打印出一串元素，用<br><code>taglist.append(tag)</code><br>加入到列表中<br>再用<br><code>url = taglist[position-1].get(&#39;href&#39;, None)</code><br>读取列表中每个标签的href属性内容。<br><strong>注意</strong>和<br><code>tag.get(&#39;href&#39;, None)</code><br>完全不同，后一个<code>print</code>出来是8组重复的数据。<br>又试着<code>print taglist.append(tag)</code>得到了密密麻麻锚标签列表(嵌套)。所以，<code>url = taglist[position-1].get(&#39;href&#39;, None)</code>取得了第18个元素的url</p>
+<h3 id="本题中的几个知识点"><a href="#本题中的几个知识点" class="headerlink" title="本题中的几个知识点"></a>本题中的几个知识点</h3><h5 id="rang（-函数"><a href="#rang（-函数" class="headerlink" title="rang（)函数"></a>rang（)函数</h5><p>可以生成一个整数序列，再通过list()函数可以转换为list。比如range(5)生成的序列是从0开始小于5的整数。<code>for i in range(count):</code>这一句，应题意，循环7次。冒号后面就是循环的操作。</p>
+<h5 id="BeautifulSoup"><a href="#BeautifulSoup" class="headerlink" title="BeautifulSoup"></a>BeautifulSoup</h5><p>用来检索所有的锚标签</p>
+<p><code>soup = BeautifulSoup(html, &quot;html.parser&quot;)
+tags = soup(&#39;a&#39;)</code>打印出一串元素，用<code>taglist.append(tag)</code>加入到列表中<br>再用<code>url = taglist[position-1].get(&#39;href&#39;, None)</code>读取列表中每个标签的href属性内容。<strong>注意</strong>和<code>tag.get(&#39;href&#39;, None)</code>完全不同，后一个<code>print</code>出来是8组重复的数据。<br>又试着<code>print taglist.append(tag)</code>得到了密密麻麻锚标签列表(嵌套)。所以，<code>url = taglist[position-1].get(&#39;href&#39;, None)</code>取得了第18个元素的url</p>
 <p>然后到了循环的最后一步↓</p>
-<h5 id="del和list"><a href="#del和list" class="headerlink" title="del和list[:]"></a>del和list[:]</h5><p>list[:]是原样复制一个列表，del是根据元素在列表中的位置来删除它<br><code>del taglist[:]</code><br>这句很重要，因为把<br><code>print xxx</code><br>放在这句之前的任何位置，得到的都是7个相同的人名S（第一个人）。说明循环无效，每次都循环到了相同的位置啊。</p>
+<h5 id="del和list"><a href="#del和list" class="headerlink" title="del和list[:]"></a>del和list[:]</h5><p>list[:]是原样复制一个列表，del是根据元素在列表中的位置来删除它</p>
+<p><code>del taglist[:]</code>这句很重要，因为把<code>print xxx</code><br>放在这句之前的任何位置，得到的都是7个相同的人名S（第一个人）。说明循环无效，每次都循环到了相同的位置啊。</p>
 <p>这个句就应该是把列表删了，重新循环，然后输出最后一次循环得到的url。</p>
 <p>此处应有<strong>全剧终</strong>。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;老师说，之前我们都是start with the hard way, then the easy way，本周我们直接start with the easy way。介绍了用BeautifulSoup可以直接用，比如可以直接解析网站中的&lt;strong&gt;a&lt;/strong&gt;标签。&lt;br&gt;库名出自于一本儿童读物？还蛮有意思的。&lt;/p&gt;
+      &lt;p&gt;老师说，之前我们都是start with the hard way, then the easy way，本周我们直接start with the easy way。（然而，本周的李牧折磨得我死去活来……）介绍了用BeautifulSoup可以直接用，比如可以直接解析网站中的&lt;strong&gt;a&lt;/strong&gt;标签。&lt;br&gt;库名出自于一本儿童读物？还蛮有意思的。&lt;/p&gt;
 &lt;p&gt;下载地址：&lt;a href=&quot;https://www.crummy.com/software/BeautifulSoup/&quot;&gt;此处&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;安装说明：&lt;a href=&quot;https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/&quot;&gt;此处&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;两道习题。&lt;br&gt;
