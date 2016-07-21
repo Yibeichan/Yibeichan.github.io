@@ -186,8 +186,8 @@ th {
 body {
   position: relative;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 17px;
-  line-height: 1.8;
+  font-size: 14px;
+  line-height: 2;
   color: #555;
   background: #fff;
 }
@@ -454,7 +454,7 @@ body {
 }
 .header-inner {
   margin: 0 auto;
-  padding: 130px 0 20px;
+  padding: 100px 0 70px;
   width: 700px;
 }
 @media (min-width: 1600px) {
@@ -907,15 +907,15 @@ pre .javascript .function {
 .site-title {
   display: inline-block;
   vertical-align: top;
-  line-height: 40px;
-  font-size: 28px;
+  line-height: 36px;
+  font-size: 20px;
   font-weight: normal;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
-  font-size: 15px;
-  color: #8A68AD;
+  font-size: 13px;
+  color: #999;
 }
 .use-motion .brand {
   opacity: 0;
@@ -979,10 +979,10 @@ pre .javascript .function {
 }
 .menu .menu-item a {
   display: block;
-  font-size: 15px;
+  font-size: 13px;
   text-transform: capitalize;
   line-height: inherit;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
   transition-property: border-color;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
@@ -1226,7 +1226,7 @@ pre .javascript .function {
 .posts-expand .post-title-link {
   display: inline-block;
   position: relative;
-  color: #31353D;
+  color: #555;
   border-bottom: none;
   line-height: 1.2;
   vertical-align: top;
@@ -1264,7 +1264,7 @@ pre .javascript .function {
   margin: 3px 0 60px 0;
   color: #999;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   text-align: center;
 }
 .posts-expand .post-meta .post-category-list {
@@ -1469,7 +1469,7 @@ pre .javascript .function {
   border: 2px solid #333;
 }
 .site-author-name {
-  margin: 12px 0 0;
+  margin: 5px 0 0;
   text-align: center;
   color: #f5f5f5;
   font-weight: normal;
@@ -1477,8 +1477,8 @@ pre .javascript .function {
 .site-description {
   margin-top: 5px;
   text-align: center;
-  font-size: 16px;
-  color: #8A68AD;
+  font-size: 14px;
+  color: #999;
 }
 .site-state {
   overflow: hidden;
@@ -1548,7 +1548,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e0b1d5;
+  background: #6effff;
 }
 .links-of-blogroll {
   font-size: 13px;
