@@ -100,7 +100,7 @@
 下载地址：此处
 安装说明：此处
 两道习题。">
-<meta property="og:updated_time" content="2016-07-21T15:53:46.000Z">
+<meta property="og:updated_time" content="2016-07-21T15:55:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PR4E Chapter 12.2（网络编程） assignment">
 <meta name="twitter:description" content="老师说，之前我们都是start with the hard way, then the easy way，本周我们直接start with the easy way。（然而，本周的题目折磨得我死去活来……）介绍了用BeautifulSoup可以直接用，比如可以直接解析网站中的a标签。库名出自于一本儿童读物？还蛮有意思的。
@@ -350,9 +350,10 @@
 tags = soup(&#39;a&#39;)</code><br>打印出一串元素，用<code>taglist.append(tag)</code>加入到列表中<br>再用<code>url = taglist[position-1].get(&#39;href&#39;, None)</code>读取列表中每个标签的href属性内容。<strong>注意</strong>和<code>tag.get(&#39;href&#39;, None)</code>完全不同，后一个<code>print</code>出来是8组重复的数据。<br>又试着<code>print taglist.append(tag)</code>得到了密密麻麻锚标签列表(嵌套)。所以，<code>url = taglist[position-1].get(&#39;href&#39;, None)</code>取得了第18个元素的url</p>
 <p>然后到了循环的最后一步↓</p>
 <h5 id="del和list"><a href="#del和list" class="headerlink" title="del和list[:]"></a>del和list[:]</h5><p>list[:]是原样复制一个列表，del是根据元素在列表中的位置来删除它</p>
-<p><code>del taglist[:]</code>这句很重要，因为把<code>print xxx</code><br>放在这句之前的任何位置，得到的都是7个相同的人名S（第一个人）。说明循环无效，每次都循环到了相同的位置啊。</p>
+<p><code>del taglist[:]</code>这句很重要，因为把<code>print xxx</code>放在这句之前的任何位置，得到的都是7个相同的人名S（第一个人）。说明循环无效，每次都循环到了相同的位置啊。</p>
 <p>这个句就应该是把列表删了，重新循环，然后输出最后一次循环得到的url。</p>
 <p>此处应有<strong>全剧终</strong>。</p>
+<p>又是零点。啊，Python零点时。</p>
 
       
     </div>
