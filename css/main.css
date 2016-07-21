@@ -186,7 +186,7 @@ th {
 body {
   position: relative;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 2;
   color: #555;
   background: #fff;
@@ -203,7 +203,7 @@ body {
 }
 @media (min-width: 1600px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 h1,
@@ -414,7 +414,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   border: 1px solid #ddd;
-  font-size: 14px;
+  font-size: 16px;
   table-layout: fixed;
   word-wrap: break-all;
 }
@@ -454,7 +454,7 @@ body {
 }
 .header-inner {
   margin: 0 auto;
-  padding: 150px 0 20px;
+  padding: 100px 0 70px;
   width: 700px;
 }
 @media (min-width: 1600px) {
@@ -725,7 +725,7 @@ pre .javascript .function {
 .btn {
   display: inline-block;
   padding: 0 20px;
-  font-size: 14px;
+  font-size: 15px;
   color: #fff;
   background: #222;
   border: 2px solid #222;
@@ -908,14 +908,14 @@ pre .javascript .function {
   display: inline-block;
   vertical-align: top;
   line-height: 36px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: normal;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
-  font-size: 13px;
-  color: #999;
+  font-size: 15px;
+  color: #9a64d0;
 }
 .use-motion .brand {
   opacity: 0;
@@ -1016,7 +1016,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: 10px auto 15px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1309,7 +1309,7 @@ pre .javascript .function {
 }
 .post-more-link .btn {
   color: #fff;
-  font-size: 14px;
+  font-size: 17px;
   background: #222;
   border-radius: 0;
   line-height: 2;
@@ -1477,8 +1477,8 @@ pre .javascript .function {
 .site-description {
   margin-top: 5px;
   text-align: center;
-  font-size: 14px;
-  color: #999;
+  font-size: 15px;
+  color: #cd9dfd;
 }
 .site-state {
   overflow: hidden;
@@ -1505,7 +1505,7 @@ pre .javascript .function {
   font-size: 18px;
 }
 .site-state-item-name {
-  font-size: 13px;
+  font-size: 15px;
   color: inherit;
 }
 .feed-link {
@@ -1548,7 +1548,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #96fab9;
+  background: #45227f;
 }
 .links-of-blogroll {
   font-size: 13px;
