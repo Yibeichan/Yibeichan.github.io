@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-21T15:49:42.000Z</updated>
+  <updated>2016-07-21T15:51:24.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://yibeichen.me/2016/07/21/PR4E-Chapter-12-2-assignment/"/>
     <id>http://yibeichen.me/2016/07/21/PR4E-Chapter-12-2-assignment/</id>
     <published>2016-07-21T11:21:49.000Z</published>
-    <updated>2016-07-21T15:49:42.000Z</updated>
+    <updated>2016-07-21T15:51:24.000Z</updated>
     
-    <content type="html"><![CDATA[<p>老师说，之前我们都是start with the hard way, then the easy way，本周我们直接start with the easy way。（然而，本周的李牧折磨得我死去活来……）介绍了用BeautifulSoup可以直接用，比如可以直接解析网站中的<strong>a</strong>标签。<br>库名出自于一本儿童读物？还蛮有意思的。</p>
+    <content type="html"><![CDATA[<p>老师说，之前我们都是start with the hard way, then the easy way，本周我们直接start with the easy way。（然而，本周的题目折磨得我死去活来……）介绍了用BeautifulSoup可以直接用，比如可以直接解析网站中的<strong>a</strong>标签。<br>库名出自于一本儿童读物？还蛮有意思的。</p>
 <p>下载地址：<a href="https://www.crummy.com/software/BeautifulSoup/" target="_blank" rel="external">此处</a></p>
 <p>安装说明：<a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/" target="_blank" rel="external">此处</a></p>
 <p>两道习题。<br><a id="more"></a></p>
@@ -73,7 +73,7 @@ tags = soup(&#39;a&#39;)</code>打印出一串元素，用<code>taglist.append(t
     
     <summary type="html">
     
-      &lt;p&gt;老师说，之前我们都是start with the hard way, then the easy way，本周我们直接start with the easy way。（然而，本周的李牧折磨得我死去活来……）介绍了用BeautifulSoup可以直接用，比如可以直接解析网站中的&lt;strong&gt;a&lt;/strong&gt;标签。&lt;br&gt;库名出自于一本儿童读物？还蛮有意思的。&lt;/p&gt;
+      &lt;p&gt;老师说，之前我们都是start with the hard way, then the easy way，本周我们直接start with the easy way。（然而，本周的题目折磨得我死去活来……）介绍了用BeautifulSoup可以直接用，比如可以直接解析网站中的&lt;strong&gt;a&lt;/strong&gt;标签。&lt;br&gt;库名出自于一本儿童读物？还蛮有意思的。&lt;/p&gt;
 &lt;p&gt;下载地址：&lt;a href=&quot;https://www.crummy.com/software/BeautifulSoup/&quot;&gt;此处&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;安装说明：&lt;a href=&quot;https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/&quot;&gt;此处&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;两道习题。&lt;br&gt;
