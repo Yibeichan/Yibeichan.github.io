@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="coursera,Python," />
+  <meta name="keywords" content="coursera,python," />
 
 
 
@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="正则表达式最常用的是search（）和findall（）">
+<meta name="description" content="这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PR4E Chapter 11（正则表达式）作业">
-<meta property="og:url" content="http://yoursite.com/2016/07/19/PR4E-Chapter-11-正则表达式-作业/index.html">
+<meta property="og:title" content="PR4E Chapter 12.1（网络编程）作业">
+<meta property="og:url" content="http://yoursite.com/2016/07/20/PR4E-Chapter-12.1-assignment/index.html">
 <meta property="og:site_name" content="阿黛二的书摊">
-<meta property="og:description" content="正则表达式最常用的是search（）和findall（）">
-<meta property="og:updated_time" content="2016-07-21T03:04:37.000Z">
+<meta property="og:description" content="这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。">
+<meta property="og:updated_time" content="2016-07-21T03:04:24.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PR4E Chapter 11（正则表达式）作业">
-<meta name="twitter:description" content="正则表达式最常用的是search（）和findall（）">
+<meta name="twitter:title" content="PR4E Chapter 12.1（网络编程）作业">
+<meta name="twitter:description" content="这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。">
 
 
 
@@ -114,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/07/19/PR4E-Chapter-11-正则表达式-作业/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/20/PR4E-Chapter-12.1-assignment/"/>
 
-  <title> PR4E Chapter 11（正则表达式）作业 | 阿黛二的书摊 </title>
+  <title> PR4E Chapter 12.1（网络编程）作业 | 阿黛二的书摊 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -236,7 +236,7 @@
             
             
               
-                PR4E Chapter 11（正则表达式）作业
+                PR4E Chapter 12.1（网络编程）作业
               
             
           </h1>
@@ -248,8 +248,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-19T15:24:11+08:00" content="2016-07-19">
-              2016-07-19
+            <time itemprop="dateCreated" datetime="2016-07-20T21:42:59+08:00" content="2016-07-20">
+              2016-07-20
             </time>
           </span>
 
@@ -276,81 +276,35 @@
       
 
       
-        <p>正则表达式最常用的是search（）和findall（）<br><a id="more"></a></p>
-<h1 id="本周题目"><a href="#本周题目" class="headerlink" title="本周题目"></a>本周题目</h1><p>The basic outline of this problem is to read the file, look for integers using the re.findall(), looking for a regular expression of ‘[0-9]+’ and then converting the extracted strings to integers and summing up the integers.</p>
-<blockquote>
-<p><a href="http://python-data.dr-chuck.net/regex_sum_291515.txt" target="_blank" rel="external">http://python-data.dr-chuck.net/regex_sum_291515.txt</a> (There are 78 values and the sum ends with 813)</p>
-</blockquote>
-<h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><figure class="highlight processing"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> re</div><div class="line">name = raw_input(<span class="string">"Enter file:"</span>)</div><div class="line"><span class="keyword">if</span> len(name) &lt; <span class="number">1</span> : name = <span class="string">"regex_sum_291515.txt"</span></div><div class="line">hand = <span class="built_in">open</span>(name)</div><div class="line">l = list()</div><div class="line"><span class="keyword">for</span> <span class="built_in">line</span> in hand:</div><div class="line">    <span class="built_in">line</span> = <span class="built_in">line</span>.rstrip()</div><div class="line">    x = re.findall(<span class="string">'([0-9]+)'</span>,<span class="built_in">line</span>)</div><div class="line">    <span class="keyword">for</span> i in x:</div><div class="line">        i = <span class="built_in">float</span>(i)</div><div class="line">        l.<span class="built_in">append</span>(i)</div><div class="line"><span class="built_in">print</span> <span class="built_in">int</span>(sum(l))</div></pre></td></tr></table></figure>
-<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>两个问题：</p>
-<p>1）第一次split后出现列表嵌套不知道该怎么办了，差点用上了字典，后来翻到《列表》的作业才想起来用append加到另一个列表。</p>
-<p>2）表达式出错了，第一次用的是[0-9]+？，也不知道为什么在这用了一个非贪婪模式，是担心会把后面的单词也写进来了吗？真是杞人忧天。然后发现’’这个单引号没加。输出之后变成了单个的数字，于是在？后加了一个空格。但计算结果还是不对，对着txt找半天，原来是把line结尾处的数字落下了，因为那个数字后面没有空格。好吧，空格和？都去掉了，算对了！之前真是瞎折腾。</p>
-<h1 id="Cheat-Sheet"><a href="#Cheat-Sheet" class="headerlink" title="Cheat Sheet :)"></a>Cheat Sheet :)</h1><table>
-<thead>
-<tr>
-<th>表达式</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>^</td>
-<td>Matches the beginning of a line</td>
-</tr>
-<tr>
-<td>$</td>
-<td>Matches the end of the line</td>
-</tr>
-<tr>
-<td>.</td>
-<td>Matches any character</td>
-</tr>
-<tr>
-<td>\s</td>
-<td>Matches whitespace</td>
-</tr>
-<tr>
-<td>\S</td>
-<td>Matches any non-whitespace character</td>
-</tr>
-<tr>
-<td>*</td>
-<td>Repeats a character zero or more times</td>
-</tr>
-<tr>
-<td>*?</td>
-<td>Repeats a character zero or more times (non-greedy)</td>
-</tr>
-<tr>
-<td>+</td>
-<td>Repeats a character one or more times</td>
-</tr>
-<tr>
-<td>+?</td>
-<td>Repeats a character one or more times (non-greedy)</td>
-</tr>
-<tr>
-<td>[aeiou]</td>
-<td>Matches a single character in the listed set</td>
-</tr>
-<tr>
-<td>[^XYZ]</td>
-<td>Matches a single character not in the listed set</td>
-</tr>
-<tr>
-<td>[a-z0-9]</td>
-<td>The set of characters can include a range</td>
-</tr>
-<tr>
-<td>(</td>
-<td>Indicates where string extraction is to start</td>
-</tr>
-<tr>
-<td>)</td>
-<td>Indicates where string extraction is to end</td>
-</tr>
-</tbody>
-</table>
+        <p>这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。<br><a id="more"></a><br>用socket会读取文档描述的头部信息和文档内容，而urllib更高级一点，默认你已经知晓头部信息了，直接读取文档内容。</p>
+<p>tips：保存文件的时候不要直接命名为socket.py和url lib.py。</p>
+<p>哦对，讲到HTTP我就该补课去了，完全不记得了已经。本周的测试几乎都是这方面的内容。</p>
+<h1 id="本周题目"><a href="#本周题目" class="headerlink" title="本周题目"></a>本周题目</h1><p>Exploring the HyperText Transport Protocol</p>
+<p>You are to retrieve the following document using the HTTP protocol in a way that you can examine the HTTP Response headers.</p>
+<ul>
+<li><a href="http://www.pythonlearn.com/code/intro-short.txt" target="_blank" rel="external">http://www.pythonlearn.com/code/intro-short.txt</a></li>
+</ul>
+<p>There are three ways that you might retrieve this web page and look at the response headers:</p>
+<ul>
+<li>Preferred: Modify the <a href="http://www.pythonlearn.com/code/socket1.py" target="_blank" rel="external">socket1.py</a> program to retrieve the above URL and print out the headers and data.</li>
+<li>Open the URL in a web browser with a developer console or FireBug and manually examine the headers that are returned.</li>
+<li>Use the telnet program as shown in lecture to retrieve the headers and content.</li>
+</ul>
+<p>其实这是一道填空题：</p>
+<ul>
+<li>Content-Type:</li>
+<li>Content-Length:</li>
+<li>Content-Length:</li>
+<li>ETag:</li>
+<li>Cache-Control:</li>
+</ul>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>这道题简直是小学生水平，老师已经把py都写好了，因为我用的就是第一种方法，直接copy了socket1.py的代码，用terminal运行就得出了头部信息，正常来说，我还应该试一下第二和第三种方法，然而我懒……</p>
+<p>关于第三种方法，telnet program，把老师的slide给扒下来了<br>其实这是一种hack方式……</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ telnet www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span> <span class="number">80</span></div><div class="line">Trying <span class="number">74.208</span>.<span class="number">28.177</span>...</div><div class="line">Connected <span class="keyword">to</span> www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span>.</div><div class="line">Escape character <span class="keyword">is</span> <span class="string">'^]'</span>.</div><div class="line">GET http://www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span>/page1.htm</div></pre></td></tr></table></figure>
+<p>GET后面是应该有两次换行的，所以写到Python里的时候是 \n\n </p>
+<p>但是我在本地用$ telnet命令就不对，返回的是<br><code>www.dr-chunk.com: nodename nor servname provided, or not known</code></p>
+<p>我怀疑是端口80的问题，啊，这又是个坑，总之关于HTTP的都要补课</p>
+<h1 id="补充材料"><a href="#补充材料" class="headerlink" title="补充材料"></a>补充材料</h1><p>book：<a href="http://www.net-intro.com/" target="_blank" rel="external">Introduction to Networking</a><br>course：<a href="https://www.coursera.org/learn/internet-history" target="_blank" rel="external">Internet History, Technology, and Security</a></p>
 
       
     </div>
@@ -375,7 +329,7 @@
           
             <a href="/tags/coursera/" rel="tag">#coursera</a>
           
-            <a href="/tags/Python/" rel="tag">#Python</a>
+            <a href="/tags/python/" rel="tag">#python</a>
           
         </div>
       
@@ -384,17 +338,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/18/PR4E-Chapter-10-元组-作业/" rel="next" title="PR4E Chapter 10（元组）作业">
-                <i class="fa fa-chevron-left"></i> PR4E Chapter 10（元组）作业
+              <a href="/2016/07/20/Listen-to-Music/" rel="next" title="Listen to Music">
+                <i class="fa fa-chevron-left"></i> Listen to Music
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/07/20/Listen-to-Music/" rel="prev" title="Listen to Music">
-                Listen to Music <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -501,7 +451,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#本周题目"><span class="nav-number">1.</span> <span class="nav-text">本周题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#答案"><span class="nav-number">2.</span> <span class="nav-text">答案</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#备注"><span class="nav-number">3.</span> <span class="nav-text">备注</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Cheat-Sheet"><span class="nav-number">4.</span> <span class="nav-text">Cheat Sheet :)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#本周题目"><span class="nav-number">1.</span> <span class="nav-text">本周题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#备注"><span class="nav-number">2.</span> <span class="nav-text">备注</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#补充材料"><span class="nav-number">3.</span> <span class="nav-text">补充材料</span></a></li></ol></div>
             
           </div>
         </section>
