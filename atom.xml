@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-22T04:43:15.000Z</updated>
+  <updated>2016-07-22T09:18:33.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -16,21 +16,87 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Something about Hexo</title>
+    <title>Hexo的安装、使用、折腾历程（不定期更新）</title>
     <link href="http://yibeichen.me/2016/07/22/Something-about-Hexo/"/>
     <id>http://yibeichen.me/2016/07/22/Something-about-Hexo/</id>
     <published>2016-07-22T03:58:28.000Z</published>
-    <updated>2016-07-22T04:43:15.000Z</updated>
+    <updated>2016-07-22T09:18:33.000Z</updated>
     
-    <content type="html"><![CDATA[<p>7月17日的晚上，开始决定要用github+hexo搭一个博客。当然咯，不是心血来潮而是事出有因。</p>
-<p>7月7日，阿冰跟我说决定用WordPress搭个博客，行动好快，她迅速买了域名，搭了框架，噼里啪啦，今天去她那看了看，7月9日就已经发了文章了。（目测某冰应该不是跟我一样，把文章搬上来还非得改成原始发布时间。）</p>
-<p>隆重（这地不知道哪天才有人气，也敢称隆重？）推荐：<a href="chatnone.com">ChatNone</a></p>
+    <content type="html"><![CDATA[<p>7月17日的晚上，开始决定要用github+hexo搭一个博客。不是心血来潮哦。</p>
+<p>7月7日，阿冰说准备用WordPress搭个博客，行动好快，她迅速买了域名，搭了框架，噼里啪啦，今天去她那看了看，7月9日就已经发了文章了。（目测某冰应该不是跟我一样，把文章搬上来还非得改成原始发布时间。）</p>
+<p>隆重（这地不知道哪天才有人气，也敢称隆重？）推荐：<strong><a href="chatnone.com">ChatNone</a></strong></p>
+<p>广告到此结束，以下进入正文。</p>
+<hr>
+<a id="more"></a>
+<p>7月17日，学完了<a href="https://www.coursera.org/learn/python-data" target="_blank" rel="external">《Python Data Structures》</a>，<a href="http://yibeichen.me/2016/07/18/PR4E-Chapter-10-assignment/">最后一章的作业</a>很闹心，代码写得啰里啰嗦，不知道该怎么简化。想啊想，试呀试，哎哎哎，那三行是不是可以合并到一起？对呀！print一下，没错哎！哇噻，我好棒！（陷入了深深的自我迷恋…）咦，等等，这么“复杂”的心路历程是不是该记下来？下次再碰到也能引以为戒嘛。那么，记在哪里呢？默默爬上豆瓣，忍痛把这一大块代码放上去，真真是惨不忍睹。估计拿豆瓣记编程笔记的，千古仅我一人。</p>
+<p>如此惨烈丑陋不支持Mardown语法的页面，深深刺痛了我！搭一个博客的想法就此生根发芽……</p>
+<p>鉴于我在搭博客的过程中，厚着脸皮求助了无数陌生人，并得到了这些善良的大神们非常热心地回复，决定也记录一下我在使用Hexo过程中的心得，如果碰巧能为别人提供一点微薄的帮助，将不胜荣幸。（谢谢大家，我的发言结束了……）</p>
+<h1 id="利用Github-Pages和Hexo搭建博客"><a href="#利用Github-Pages和Hexo搭建博客" class="headerlink" title="利用Github Pages和Hexo搭建博客"></a>利用Github Pages和Hexo搭建博客</h1><p>这部分内容包括：为什么要选择github和hero、购买域名、注册github、安装hero、配置github和hexo参数、域名解析……</p>
+<p>这一部分的教程非常之多，推荐几个：</p>
+<p><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程</a> @<a href="http://cnfeat.com/" target="_blank" rel="external">CNfeat</a><br><a href="https://xuanwo.org/2015/03/26/hexo-intor/" target="_blank" rel="external">史上最详细的Hexo博客搭建图文教程</a> @<a href="https://xuanwo.org/" target="_blank" rel="external">Xuanwo</a><br><a href="http://blog.waydrow.com/2015/08/14/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8Github%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2/" target="_blank" rel="external">使用Hexo在Github上搭建你的博客</a> @<a href="blog.waydrow.com"> Waydrow </a></p>
+<p>这三篇也是我参考得最多的教程，7.18的晚上按照第一篇的方法搭建成功了，但是不知道哪里出了问题，本地的内容不能和github同步，7.19找到了@Xuanwo的教程，按照他的方法删掉了hexo文件夹又重来一遍，终于成功了，感谢。</p>
+<p>期间还因为安装hexo出现权限错误的问题骚扰过@Waydrow，感谢。</p>
+<p>这里不是说@CNfeat的方法有问题呀，是我自己操作失误，他介绍得非常详细，边边角角都说到了，非常感谢。</p>
+<p>其实这几篇都是基于Windows系统的，我在搜索的时候发现Mac下安装Git还需要Homebrew，但是我装完了才发现，所以从技术上来看不用它也可以，不过也许用了它之后更方便，就不会出错了呢，谁用谁知道……</p>
+<p>强烈推荐hexo的<a href="https://hexo.io/docs/" target="_blank" rel="external">官方文档</a>，再一次是搭完了才发现，早一点发现就不用走那么多弯路了呀！另外，此处评论非常值得一看，看过就知道，you are not alone，你碰到的问题他们都碰到了。</p>
+<h2 id="补充：Namecheap修改DNS设置"><a href="#补充：Namecheap修改DNS设置" class="headerlink" title="补充：Namecheap修改DNS设置"></a>补充：Namecheap修改DNS设置</h2><p>似乎大家都是在god daddy或者万网买的域名，然而我用的是Namecheap，还忘记用coupon，心疼！</p>
+<p>如果有人也是个“少数派”，那么，请看下面的设置方法：）</p>
+<p>Namecheap自带域名解析功能，但是在国内还是推荐Dnspod，至于为什么选它和怎么操作，前面的文档都提过了，下面专门介绍Namecheap的部分，因为网站换了新颜，相关教程上的截图还是旧的，完全看不懂，特来贡献一把。</p>
+<p>登录进入Namecheap，点击“Domain List”：<br><img src="http://ww1.sinaimg.cn/large/72f96cbagw1f62pwjsthej20x80c8t9z.jpg" alt="15:29:57.jpg"><br>再点击右边的“MANAGE”进入以下页面：<br><img src="http://ww2.sinaimg.cn/large/72f96cbagw1f62q2jhpv2j20sm0i2acp.jpg" alt="15:35:35.jpg"><br>选择“Custom DNS”，把在dnspod获得的两个ns填进去就ok啦。</p>
+<p>域名解析据说要24小时才能生效。</p>
+<h1 id="Hexo使用及优化"><a href="#Hexo使用及优化" class="headerlink" title="Hexo使用及优化"></a>Hexo使用及优化</h1><h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>正在使用的是nexT，前两天折腾过Maupassant，又换回来了。</p>
+<p>附上操作文档：</p>
+<p>nexT：<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">nexT主题使用文档</a></p>
+<p>Maupassant：<a href="https://www.haomwei.com/technology/maupassant-hexo.html" target="_blank" rel="external">大道至简——Hexo简洁主题推荐</a></p>
+<h3 id="nexT优化"><a href="#nexT优化" class="headerlink" title="nexT优化"></a>nexT优化</h3><h4 id="字体（字号、颜色）"><a href="#字体（字号、颜色）" class="headerlink" title="字体（字号、颜色）"></a>字体（字号、颜色）</h4><p><strong>工具：</strong>chrome开发者工具 + TextWrangler</p>
+<p>nexT原始的字号实在是太小了，可能因为是走极简风格，大量留白，行距段距都很大，字号衬托得更小了，尤其是英文字。</p>
+<p>为了用眼健康，我决定，改字号！</p>
+<p>chrome开发者工具是前端必备神器，啊，就当大家都认识它了。用它调到满意的样式之后再去css里修改对应行的代码就好，那么问题来了，css在哪改呢？</p>
+<h5 id="误区"><a href="#误区" class="headerlink" title="误区"></a>误区</h5><p>我掉过的坑必须要给大家竖个牌子，也许并没有人跟我一样蠢……</p>
+<p>调试的时候，chrome提示我css的文件名是main.css，于是我就去找呀，真是太机智了，一下子就找到了呢。路径是：hexo（你给hexo取的文件名）/source/public/css/main.css</p>
+<p>欢欢喜喜去改字号，改颜色，改行距，还改了header的margin、padding等等等。</p>
+<p>可是，执行<code>$ hexo s</code>和<code>$ hexo g -d</code>的时候，时好时坏，以为是cookies的问题，清理了好几次也没什么效果。</p>
+<p>直到我的github本地的一个repository同步出现了问题，我才意识到，刚刚改的main.css所在的public文件夹是hexo和github同步的部分。就是说，B文件夹是A文件夹同步的结果，但我改的是B，没有改A，所以每执行一次同步，A的数据就把B覆盖了，等于我白改了。</p>
+<p>repository那个问题也是，我把hexo部署在github上的仓库给clone到本地了，结果每次执行<code>$ hexo g -d</code>的时候，就出现：当本地的hexo和远程的github同步的时候，本地的github也在和远程的github同步。活生生逼疯了它……</p>
+<h5 id="正确答案"><a href="#正确答案" class="headerlink" title="正确答案"></a>正确答案</h5><p>嗯，犯错了不要紧，要记得去Google。</p>
+<p>果然找到一位<a href="http://papacochon.com/2015/10/02/hexo-3-hexo-next-customize/" target="_blank" rel="external">小伙伴</a>，指出了一条明路：hexo/themes/next/source/css/_variables/base.styl</p>
+<p>在这个文件中可以修改所有的字号、字体、颜色，然而，我去改了，发现没什么用……于是我把修改后的文件内容copy到了同一目录下的Muse.styl（因为我用的是Muse主题）里，保存之后，生效了！</p>
+<p>事实上，这个文件夹下，除了base.styl以外，其他的四个styl文件都是空的，是故意留给我们自己定制吗？其中有一个是custom.styl，我觉得，把base.styl的内容copy到这里而不是Muse.styl，应该也能生效？有空试试。</p>
+<h4 id="侧边栏优化"><a href="#侧边栏优化" class="headerlink" title="侧边栏优化"></a>侧边栏优化</h4><h5 id="头像"><a href="#头像" class="headerlink" title="头像"></a>头像</h5><p><strong>头像更换</strong></p>
+<p>官方文档中关于这部分写得好像有点麻烦，我不太记得了。我是把图片改成avatar.gif放到themes/next/source/images。就这样，OK啦。<br><strong>头像变圆形</strong></p>
+<p>还是从上面那位改字号的朋友那里学来的，再次感谢。上传的图片最好是正方形的，不然会变形，文件路径：themes/next/source/css_common_components/sidebar/sidebar.styl 代码修改如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.site-author-image</span> &#123;</div><div class="line">  <span class="attribute">display</span>: block;</div><div class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</div><div class="line">  <span class="attribute">max-width</span>: <span class="number">96px</span>;</div><div class="line">  <span class="attribute">height</span>: auto;</div><div class="line">  <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#333</span>;</div><div class="line">  <span class="attribute">padding</span>: <span class="number">2px</span>;  </div><div class="line">  <span class="comment">/* start*/</span></div><div class="line">  <span class="attribute">border-radius</span>: <span class="number">90%</span></div><div class="line">  webkit-transition: <span class="number">1.4s</span> all;</div><div class="line">  <span class="attribute">moz-transition</span>: <span class="number">1.4s</span> all;</div><div class="line">  <span class="attribute">ms-transition</span>: <span class="number">1.4s</span> all;</div><div class="line">  <span class="attribute">transition</span>: <span class="number">1.4s</span> all;</div><div class="line">  <span class="comment">/* end */</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><code>start</code>和<code>end</code>标记的部分就是需要添加的。</p>
+<p>PS：每个的文件路径可能并不完全一致，请自行对应。</p>
+<h3 id="关于Maupassant的一点点"><a href="#关于Maupassant的一点点" class="headerlink" title="关于Maupassant的一点点"></a>关于Maupassant的一点点</h3><p>这个主题我大概用了半天，也是简约路线，但是突然有一会儿，语言莫名奇妙变成了德语，我脆弱的内心已经经不起折腾了，于是换了它。</p>
+<p>但是关于这个主题安装，有一点要说的：</p>
+<p><code>npm install hexo-renderer-sass</code>安装的时候可能会报错，解决方法也有很多种，但，我是开着全局的VPN来安装的，很是顺利。</p>
+<p>没错，这一段就是为了安利VPN，科学上网必备。</p>
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><h3 id="音乐视频"><a href="#音乐视频" class="headerlink" title="音乐视频"></a>音乐视频</h3><p>正在找，试过再来说。</p>
+<h1 id="Hexo的好搭档！"><a href="#Hexo的好搭档！" class="headerlink" title="Hexo的好搭档！"></a>Hexo的好搭档！</h1><h2 id="七牛云-图床"><a href="#七牛云-图床" class="headerlink" title="七牛云+图床"></a>七牛云+图床</h2><p>一如既往，操作文档送上：</p>
+<p><a href="http://toolinbox.net/iPic/" target="_blank" rel="external">图床神器 iPic</a></p>
+<p><a href="http://toolinbox.net/iPic/AddQiniuImageHost.html" target="_blank" rel="external">在 iPic 中添加七牛云</a></p>
+<p>可以点<a href="https://portal.qiniu.com/signup?code=3lmae5oay6pua" target="_blank" rel="external">此处</a>注册七牛账户，互惠互利：）</p>
+<p>不过在用七牛图床的时候出现了一个bug：</p>
+<p><code>{&quot;error&quot;:&quot;download token not specified&quot;}</code></p>
+<p>悲伤的是，我不知道怎么解决它，先放着吧，等脑袋扩容了再来想这件事。</p>
+<h2 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h2><p>聊天之前先上文档：</p>
+<p><a href="http://wowubuntu.com/markdown/index.html" target="_blank" rel="external">Markdown 语法说明 (简体中文版)</a></p>
+<p><a href="https://wizardforcel.gitbooks.io/markdown-simple-world/content/index.html" target="_blank" rel="external">Markdown - 简单的世界</a></p>
+<p>大概是从去年初开始用Markdown的，为此买了Ulysses（Mac+iPad），可是支持md语言的网站我用得不多，只有Medium，所以平日里写的都是很基础的语法。</p>
+<p>直到我开始学Python，才深感md之好用。</p>
+<p>然而，我的Ulysses写出来的东西在hexo上显示非常之奇怪，代码不能高亮，一些语法的使用好像不太一致？所以又下载了Mou，它和hexo契合得倒是很完美，而且可以即时预览，但是反应有点卡顿，打开窗口时很奇怪，一个一个的，不能组合在一起，使用体验不及Ulysses。</p>
+<p>（未完待续）</p>
+<hr>
+<p>作为一个文科生，我真是在爬着建站。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;7月17日的晚上，开始决定要用github+hexo搭一个博客。当然咯，不是心血来潮而是事出有因。&lt;/p&gt;
-&lt;p&gt;7月7日，阿冰跟我说决定用WordPress搭个博客，行动好快，她迅速买了域名，搭了框架，噼里啪啦，今天去她那看了看，7月9日就已经发了文章了。（目测某冰应该不
+      &lt;p&gt;7月17日的晚上，开始决定要用github+hexo搭一个博客。不是心血来潮哦。&lt;/p&gt;
+&lt;p&gt;7月7日，阿冰说准备用WordPress搭个博客，行动好快，她迅速买了域名，搭了框架，噼里啪啦，今天去她那看了看，7月9日就已经发了文章了。（目测某冰应该不是跟我一样，把文章搬上来还非得改成原始发布时间。）&lt;/p&gt;
+&lt;p&gt;隆重（这地不知道哪天才有人气，也敢称隆重？）推荐：&lt;strong&gt;&lt;a href=&quot;chatnone.com&quot;&gt;ChatNone&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;广告到此结束，以下进入正文。&lt;/p&gt;
+&lt;hr&gt;
     
     </summary>
     
@@ -322,7 +388,7 @@
     <link href="http://yibeichen.me/2016/07/08/Learning-How-To-Learn/"/>
     <id>http://yibeichen.me/2016/07/08/Learning-How-To-Learn/</id>
     <published>2016-07-07T16:06:40.000Z</published>
-    <updated>2016-07-22T03:53:02.000Z</updated>
+    <updated>2016-07-22T07:25:31.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Learning How to Learn: Powerful mental tools to help you master tough subjects（如何学习：学习困难科目的实用思维方法 ）</strong></p>
 <p>阅读材料：《A Mind for Numbers》</p>
