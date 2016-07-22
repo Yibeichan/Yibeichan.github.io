@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-22T10:25:00.000Z</updated>
+  <updated>2016-07-22T16:26:25.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -16,13 +16,67 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PR4E Chapter 13.1（Web Service）作业</title>
+    <link href="http://yibeichen.me/2016/07/22/PR4E-Chapter-13-1-assignment/"/>
+    <id>http://yibeichen.me/2016/07/22/PR4E-Chapter-13-1-assignment/</id>
+    <published>2016-07-22T11:03:26.000Z</published>
+    <updated>2016-07-22T16:26:25.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>本节课介绍XML，下一节课介绍JSON。 </p>
+<p>如何判断一次课程难不难？看我做作业的时候有没有借助外力就知道了。其实我是借助了教材，而且老师一开始就说了呀，本周的作业很容易！然而……</p>
+<p>Again and again and again, I was stuck at the stage of converting a string into an integrate and making a sum.</p>
+<p>以下是quiz中遇到的几个知识点：</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">XML</span> <span class="title">Basics</span>：</div><div class="line"><span class="literal">start</span> <span class="keyword">tag</span></div><div class="line"><span class="title">end</span> <span class="keyword">tag</span></div><div class="line"><span class="title">text</span> content </div><div class="line"><span class="keyword">attribute</span></div><div class="line">self closing <span class="keyword">tag</span></div><div class="line"></div><div class="line"><span class="title">XSD</span> Structure</div><div class="line">xs:element</div><div class="line">xs:sequence</div><div class="line">xs:complexType</div><div class="line"></div><div class="line"><span class="keyword">XML</span> <span class="title">Tree</span></div><div class="line"></div><div class="line">parsing →→→ de-serialization</div></pre></td></tr></table></figure>
+<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>In this assignment you will write a Python program somewhat similar to <a href="http://www.pythonlearn.com/code/geoxml.py" target="_blank" rel="external">http://www.pythonlearn.com/code/geoxml.py</a>. The program will prompt for a URL, read the XML data from that URL using urllib and then parse and extract the comment counts from the XML data, compute the sum of the numbers in the file.</p>
+<p>We provide two files for this assignment. One is a sample file where we give you the sum for your testing and the other is the actual data you need to process for the assignment.</p>
+<ul>
+<li><p>Sample data: <a><a href="http://python-data.dr-chuck.net/comments_42.xml" target="_blank" rel="external">http://python-data.dr-chuck.net/comments_42.xml</a></a> (Sum=2553)</p>
+</li>
+<li><p>Actual data: <a><a href="http://python-data.dr-chuck.net/comments_291517.xml" target="_blank" rel="external">http://python-data.dr-chuck.net/comments_291517.xml</a></a> (Sum ends with 32)</p>
+</li>
+</ul>
+<p>You do not need to save these files to your folder since your program will read the data directly from the URL. Note: Each student will have a distinct data url for the assignment - so only use your own data url for analysis.<br>Data Format and Approach</p>
+<p>The data consists of a number of names and comment counts in XML as follows:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">comment</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>Matthias<span class="tag">&lt;/<span class="name">name</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">count</span>&gt;</span>97<span class="tag">&lt;/<span class="name">count</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">comment</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>You are to look through all the <comment> tags and find the <count> values sum the numbers. The closest sample code that shows how to parse XML is geoxml.py. But since the nesting of the elements in our data is different than the data we are parsing in that sample code you will have to make real changes to the code.<br>To make the code a little simpler, you can use an XPath selector string to look through the entire tree of XML for any tag named ‘count’ with the following line of code:</count></comment></p>
+<p><code>counts = tree.findall(&#39;.//count&#39;)</code></p>
+<p>Take a look at the Python ElementTree documentation and look for the supported XPath syntax for details. You could also work from the top of the XML down to the comments node and then loop through the child nodes of the comments node.</p>
+<h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">import urllib</div><div class="line">import xml.etree.ElementTree <span class="keyword">as</span> ET</div><div class="line"></div><div class="line"></div><div class="line">url = raw_input(<span class="string">'Enter - '</span>)</div><div class="line"><span class="keyword">if</span> <span class="built_in">len</span>(url) &lt; <span class="number">1</span>:</div><div class="line">   url = <span class="string">"http://python-data.dr-chuck.net/comments_291517.xml"</span></div><div class="line">data = urllib.urlopen(url).<span class="keyword">read</span>()</div><div class="line"></div><div class="line">tree = ET.fromstring(data)</div><div class="line">lst = tree.findall(<span class="string">'comments/comment'</span>)</div><div class="line">s = []</div><div class="line"><span class="keyword">for</span> item in <span class="keyword">ls</span><span class="variable">t:</span></div><div class="line">    <span class="built_in">count</span> = item.<span class="keyword">find</span>(<span class="string">'count'</span>).text</div><div class="line">    s.<span class="keyword">append</span>(<span class="keyword">int</span>(<span class="built_in">count</span>))</div><div class="line"><span class="keyword">print</span> sum(s)</div></pre></td></tr></table></figure>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>开头已经说了，这次的题目很简单，但是我还是卡在了两个地方</p>
+<h2 id="tree-findall"><a href="#tree-findall" class="headerlink" title="tree.findall()"></a>tree.findall()</h2><p>我最开始写的是<code>tree.findall(&#39;commentinfo/comments/comment&#39;)</code>相当于把根目录<code>commentinfo</code>（不知道标准称呼是什么，反正这么称呼我容易懂）放进来了，结果是<code>0</code>，其实可以理解为“空”。</p>
+<p>也就是说，一级tag是不用写出来的，直接从二级tag<code>comments</code>写到要计算的那级tag的上一级就可以了。</p>
+<h2 id="列表求和"><a href="#列表求和" class="headerlink" title="列表求和"></a>列表求和</h2><p>看见求和我就紧张，估计已经造成了心理阴影。</p>
+<p>最开始是直接用<code>sum(count)</code>求和，这是程序错误呀，循环中的一节怎么能用来求和呢。</p>
+<p>改成列表求和：<br><code>s.append(count)
+print sum(s)</code><br>报错：str是不能求和的。</p>
+<p>找到上回“借鉴”来的代码<code>s.append(int(count.string))</code>，又报错：count已经是一个str类型了，不能再转成一个string。</p>
+<p>好好好，那就去掉它，变成了<code>s.append(int(count))</code>，OK啦！</p>
+<p>PS：第12章以后的内容基本都是讲用Python联网，所以如果网络不好的话，在运行py的时候也会报错————显示urllib相关的一长串错误，不要紧张，不是程序错误，网络重新连接下就好了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本节课介绍XML，下一节课介绍JSON。 &lt;/p&gt;
+&lt;p&gt;如何判断一次课程难不难？看我做作业的时候有没有借助外力就知道了。其实我是借助了教材，而且老师一开始就说了呀，本周的作业很容易！然而……&lt;/p&gt;
+&lt;p&gt;Again and again and again, I was 
+    
+    </summary>
+    
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
+      <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo的安装、使用、折腾历程（不定期更新）</title>
     <link href="http://yibeichen.me/2016/07/22/Something-about-Hexo/"/>
     <id>http://yibeichen.me/2016/07/22/Something-about-Hexo/</id>
     <published>2016-07-22T03:58:28.000Z</published>
-    <updated>2016-07-22T10:25:00.000Z</updated>
+    <updated>2016-07-22T13:10:24.000Z</updated>
     
-    <content type="html"><![CDATA[<p>7月17日的晚上，开始决定要用github+hexo搭一个博客。不是心血来潮哦。</p>
+    <content type="html"><![CDATA[<p>7月17日的晚上，开始决定要用github+hexo搭一个博客。</p>
 <p>7月7日，阿冰说准备用WordPress搭个博客，行动好快，她迅速买了域名，搭了框架，噼里啪啦，今天去她那看了看，7月9日就已经发了文章了。（目测某冰应该不是跟我一样，把文章搬上来还非得改成原始发布时间。）</p>
 <p>隆重（这地不知道哪天才有人气，也敢称隆重？）推荐：<a href="http://chatnone.com" target="_blank" rel="external"><strong>ChatNone</strong></a></p>
 <p>广告到此结束，以下进入正文。</p>
@@ -44,12 +98,12 @@
 <p>Namecheap自带域名解析功能，但是在国内还是推荐Dnspod，至于为什么选它和怎么操作，前面的文档都提过了，下面专门介绍Namecheap的部分，因为网站换了新颜，相关教程上的截图还是旧的，完全看不懂，特来贡献一把。</p>
 <p>登录进入Namecheap，点击“Domain List”：<br><img src="http://ww1.sinaimg.cn/large/72f96cbagw1f62pwjsthej20x80c8t9z.jpg" alt="15:29:57.jpg"><br>再点击右边的“MANAGE”进入以下页面：<br><img src="http://ww2.sinaimg.cn/large/72f96cbagw1f62q2jhpv2j20sm0i2acp.jpg" alt="15:35:35.jpg"><br>选择“Custom DNS”，把在dnspod获得的两个ns填进去就ok啦。</p>
 <p>域名解析据说要24小时才能生效。</p>
-<h1 id="Hexo使用及优化"><a href="#Hexo使用及优化" class="headerlink" title="Hexo使用及优化"></a>Hexo使用及优化</h1><h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>正在使用的是nexT，前两天折腾过Maupassant，又换回来了。</p>
+<h1 id="Hexo使用及优化"><a href="#Hexo使用及优化" class="headerlink" title="Hexo使用及优化"></a>Hexo使用及优化</h1><h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>正在使用的是NexT，前两天折腾过Maupassant，又换回来了。</p>
 <p>附上操作文档：</p>
-<p>nexT：<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">nexT主题使用文档</a></p>
+<p>NexT：<a href="http://theme-NexT.iissnan.com/" target="_blank" rel="external">NexT主题使用文档</a></p>
 <p>Maupassant：<a href="https://www.haomwei.com/technology/maupassant-hexo.html" target="_blank" rel="external">大道至简——Hexo简洁主题推荐</a></p>
-<h3 id="nexT优化"><a href="#nexT优化" class="headerlink" title="nexT优化"></a>nexT优化</h3><h4 id="字体（字号、颜色）"><a href="#字体（字号、颜色）" class="headerlink" title="字体（字号、颜色）"></a>字体（字号、颜色）</h4><p><strong>工具：</strong>chrome开发者工具 + TextWrangler</p>
-<p>nexT原始的字号实在是太小了，可能因为是走极简风格，大量留白，行距段距都很大，字号衬托得更小了，尤其是英文字。</p>
+<h3 id="NexT优化"><a href="#NexT优化" class="headerlink" title="NexT优化"></a>NexT优化</h3><h4 id="字体（字号、颜色）"><a href="#字体（字号、颜色）" class="headerlink" title="字体（字号、颜色）"></a>字体（字号、颜色）</h4><p><strong>工具：</strong>chrome开发者工具 + TextWrangler</p>
+<p>NexT原始的字号实在是太小了，可能因为是走极简风格，大量留白，行距段距都很大，字号衬托得更小了，尤其是英文字。</p>
 <p>为了用眼健康，我决定，改字号！</p>
 <p>chrome开发者工具是前端必备神器，啊，就当大家都认识它了。用它调到满意的样式之后再去css里修改对应行的代码就好，那么问题来了，css在哪改呢？</p>
 <h5 id="误区"><a href="#误区" class="headerlink" title="误区"></a>误区</h5><p>我掉过的坑必须要给大家竖个牌子，也许并没有人跟我一样蠢……</p>
@@ -59,12 +113,12 @@
 <p>直到我的github本地的一个repository同步出现了问题，我才意识到，刚刚改的main.css所在的public文件夹是hexo和github同步的部分。就是说，B文件夹是A文件夹同步的结果，但我改的是B，没有改A，所以每执行一次同步，A的数据就把B覆盖了，等于我白改了。</p>
 <p>repository那个问题也是，我把hexo部署在github上的仓库给clone到本地了，结果每次执行<code>$ hexo g -d</code>的时候，就出现：当本地的hexo和远程的github同步的时候，本地的github也在和远程的github同步。活生生逼疯了它……</p>
 <h5 id="正确答案"><a href="#正确答案" class="headerlink" title="正确答案"></a>正确答案</h5><p>嗯，犯错了不要紧，要记得去Google。</p>
-<p>果然找到一位<a href="http://papacochon.com/2015/10/02/hexo-3-hexo-next-customize/" target="_blank" rel="external">小伙伴</a>，指出了一条明路：hexo/themes/next/source/css/_variables/base.styl</p>
+<p>果然找到一位<a href="http://papacochon.com/2015/10/02/hexo-3-hexo-NexT-customize/" target="_blank" rel="external">小伙伴</a>，指出了一条明路：hexo/themes/NexT/source/css/_variables/base.styl</p>
 <p>在这个文件中可以修改所有的字号、字体、颜色，然而，我去改了，发现没什么用……于是我把修改后的文件内容copy到了同一目录下的Muse.styl（因为我用的是Muse主题）里，保存之后，生效了！</p>
 <p>事实上，这个文件夹下，除了base.styl以外，其他的四个styl文件都是空的，是故意留给我们自己定制吗？其中有一个是custom.styl，我觉得，把base.styl的内容copy到这里而不是Muse.styl，应该也能生效？有空试试。</p>
 <h4 id="侧边栏优化"><a href="#侧边栏优化" class="headerlink" title="侧边栏优化"></a>侧边栏优化</h4><h5 id="头像"><a href="#头像" class="headerlink" title="头像"></a>头像</h5><p><strong>头像更换</strong></p>
-<p>官方文档中关于这部分写得好像有点麻烦，我不太记得了。我是把图片改成avatar.gif放到themes/next/source/images。就这样，OK啦。<br><strong>头像变圆形</strong></p>
-<p>还是从上面那位改字号的朋友那里学来的，再次感谢。上传的图片最好是正方形的，不然会变形，文件路径：themes/next/source/css_common_components/sidebar/sidebar.styl 代码修改如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.site-author-image</span> &#123;</div><div class="line">  <span class="attribute">display</span>: block;</div><div class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</div><div class="line">  <span class="attribute">max-width</span>: <span class="number">96px</span>;</div><div class="line">  <span class="attribute">height</span>: auto;</div><div class="line">  <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#333</span>;</div><div class="line">  <span class="attribute">padding</span>: <span class="number">2px</span>;  </div><div class="line">  <span class="comment">/* start*/</span></div><div class="line">  <span class="attribute">border-radius</span>: <span class="number">90%</span></div><div class="line">  webkit-transition: <span class="number">1.4s</span> all;</div><div class="line">  <span class="attribute">moz-transition</span>: <span class="number">1.4s</span> all;</div><div class="line">  <span class="attribute">ms-transition</span>: <span class="number">1.4s</span> all;</div><div class="line">  <span class="attribute">transition</span>: <span class="number">1.4s</span> all;</div><div class="line">  <span class="comment">/* end */</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>官方文档中关于这部分写得好像有点麻烦，我不太记得了。我是把图片改成avatar.gif放到themes/NexT/source/images。就这样，OK啦。<br><strong>头像变圆形</strong></p>
+<p>还是从上面那位改字号的朋友那里学来的，再次感谢。上传的图片最好是正方形的，不然会变形，文件路径：themes/NexT/source/css_common_components/sidebar/sidebar.styl 代码修改如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.site-author-image</span> &#123;</div><div class="line">  <span class="attribute">display</span>: block;</div><div class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</div><div class="line">  <span class="attribute">max-width</span>: <span class="number">96px</span>;</div><div class="line">  <span class="attribute">height</span>: auto;</div><div class="line">  <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#333</span>;</div><div class="line">  <span class="attribute">padding</span>: <span class="number">2px</span>;  </div><div class="line">  <span class="comment">/* start*/</span></div><div class="line">  <span class="attribute">border-radius</span>: <span class="number">90%</span></div><div class="line">  webkit-transition: <span class="number">1.4s</span> all;</div><div class="line">  <span class="attribute">moz-transition</span>: <span class="number">1.4s</span> all;</div><div class="line">  <span class="attribute">ms-transition</span>: <span class="number">1.4s</span> all;</div><div class="line">  <span class="attribute">transition</span>: <span class="number">1.4s</span> all;</div><div class="line">  <span class="comment">/* end */</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p><code>start</code>和<code>end</code>标记的部分就是需要添加的。</p>
 <p>PS：每个的文件路径可能并不完全一致，请自行对应。</p>
 <h3 id="关于Maupassant的一点点"><a href="#关于Maupassant的一点点" class="headerlink" title="关于Maupassant的一点点"></a>关于Maupassant的一点点</h3><p>这个主题我大概用了半天，也是简约路线，但是突然有一会儿，语言莫名奇妙变成了德语，我脆弱的内心已经经不起折腾了，于是换了它。</p>
@@ -92,7 +146,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;7月17日的晚上，开始决定要用github+hexo搭一个博客。不是心血来潮哦。&lt;/p&gt;
+      &lt;p&gt;7月17日的晚上，开始决定要用github+hexo搭一个博客。&lt;/p&gt;
 &lt;p&gt;7月7日，阿冰说准备用WordPress搭个博客，行动好快，她迅速买了域名，搭了框架，噼里啪啦，今天去她那看了看，7月9日就已经发了文章了。（目测某冰应该不是跟我一样，把文章搬上来还非得改成原始发布时间。）&lt;/p&gt;
 &lt;p&gt;隆重（这地不知道哪天才有人气，也敢称隆重？）推荐：&lt;a href=&quot;http://chatnone.com&quot;&gt;&lt;strong&gt;ChatNone&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;广告到此结束，以下进入正文。&lt;/p&gt;
@@ -106,13 +160,14 @@
   </entry>
   
   <entry>
-    <title>PR4E Chapter 12.2（网络编程） 作业</title>
+    <title>PR4E Chapter 12.2（Programs that Surf the Web） 作业</title>
     <link href="http://yibeichen.me/2016/07/21/PR4E-Chapter-12-2-assignment/"/>
     <id>http://yibeichen.me/2016/07/21/PR4E-Chapter-12-2-assignment/</id>
     <published>2016-07-21T11:21:49.000Z</published>
-    <updated>2016-07-22T03:46:21.000Z</updated>
+    <updated>2016-07-22T12:37:17.000Z</updated>
     
-    <content type="html"><![CDATA[<p>老师说，之前我们都是start with the hard way, then the easy way，本周我们直接start with the easy way。（然而，本周的题目折磨得我死去活来……）介绍了用BeautifulSoup可以直接用，比如可以直接解析网站中的<strong>a</strong>标签。<br>库名出自于一本儿童读物？还蛮有意思的。</p>
+    <content type="html"><![CDATA[<p>老师说，之前我们都是start with the hard way, then the easy way，本周我们直接start with the easy way。（然而，本周的题目折磨得我死去活来……）介绍了BeautifulSoup，比如可以直接解析网站中的<strong>a</strong>标签。</p>
+<p>库名出自于一本儿童读物？还蛮有意思的。</p>
 <p>下载地址：<a href="https://www.crummy.com/software/BeautifulSoup/" target="_blank" rel="external">此处</a></p>
 <p>安装说明：<a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/" target="_blank" rel="external">此处</a></p>
 <p>两道习题。<br><a id="more"></a></p>
@@ -161,7 +216,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;老师说，之前我们都是start with the hard way, then the easy way，本周我们直接start with the easy way。（然而，本周的题目折磨得我死去活来……）介绍了用BeautifulSoup可以直接用，比如可以直接解析网站中的&lt;strong&gt;a&lt;/strong&gt;标签。&lt;br&gt;库名出自于一本儿童读物？还蛮有意思的。&lt;/p&gt;
+      &lt;p&gt;老师说，之前我们都是start with the hard way, then the easy way，本周我们直接start with the easy way。（然而，本周的题目折磨得我死去活来……）介绍了BeautifulSoup，比如可以直接解析网站中的&lt;strong&gt;a&lt;/strong&gt;标签。&lt;/p&gt;
+&lt;p&gt;库名出自于一本儿童读物？还蛮有意思的。&lt;/p&gt;
 &lt;p&gt;下载地址：&lt;a href=&quot;https://www.crummy.com/software/BeautifulSoup/&quot;&gt;此处&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;安装说明：&lt;a href=&quot;https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/&quot;&gt;此处&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;两道习题。&lt;br&gt;
@@ -176,11 +232,11 @@
   </entry>
   
   <entry>
-    <title>PR4E Chapter 12.1（网络编程）作业</title>
+    <title>PR4E Chapter 12.1（Networks and Sockets）作业</title>
     <link href="http://yibeichen.me/2016/07/20/PR4E-Chapter-12-1-assignment/"/>
     <id>http://yibeichen.me/2016/07/20/PR4E-Chapter-12-1-assignment/</id>
     <published>2016-07-20T13:42:59.000Z</published>
-    <updated>2016-07-22T03:50:26.000Z</updated>
+    <updated>2016-07-22T10:30:23.000Z</updated>
     
     <content type="html"><![CDATA[<p>这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。<br><a id="more"></a><br>用socket会读取文档描述的头部信息和文档内容，而urllib更高级一点，默认你已经知晓头部信息了，直接读取文档内容。</p>
 <p>tips：保存文件的时候不要直接命名为socket.py和urllib.py。</p>
@@ -251,18 +307,18 @@
     </summary>
     
     
-      <category term="music" scheme="http://yibeichen.me/tags/music/"/>
-    
       <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
+      <category term="music" scheme="http://yibeichen.me/tags/music/"/>
     
   </entry>
   
   <entry>
-    <title>PR4E Chapter 11（正则表达式）作业</title>
+    <title>PR4E Chapter 11（Regular Expressions）作业</title>
     <link href="http://yibeichen.me/2016/07/19/PR4E-Chapter-11-assignment/"/>
     <id>http://yibeichen.me/2016/07/19/PR4E-Chapter-11-assignment/</id>
     <published>2016-07-19T07:24:11.000Z</published>
-    <updated>2016-07-22T03:48:21.000Z</updated>
+    <updated>2016-07-22T10:29:55.000Z</updated>
     
     <content type="html"><![CDATA[<p>正则表达式最常用的是search（）和findall（）<br><a id="more"></a></p>
 <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>The basic outline of this problem is to read the file, look for integers using the re.findall(), looking for a regular expression of ‘[0-9]+’ and then converting the extracted strings to integers and summing up the integers.</p>
@@ -355,11 +411,11 @@
   </entry>
   
   <entry>
-    <title>PR4E Chapter 10（元组）作业</title>
+    <title>PR4E Chapter 10（Tuples）作业</title>
     <link href="http://yibeichen.me/2016/07/18/PR4E-Chapter-10-assignment/"/>
     <id>http://yibeichen.me/2016/07/18/PR4E-Chapter-10-assignment/</id>
     <published>2016-07-18T06:39:13.000Z</published>
-    <updated>2016-07-22T03:48:57.000Z</updated>
+    <updated>2016-07-22T10:31:51.000Z</updated>
     
     <content type="html"><![CDATA[<p>元组不复杂，和列表字典都有点相似，当然，又完全不相同。元组是不可变的。所以，感觉它是辅助列表字典进行运算的？<br><a id="more"></a></p>
 <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>10.2 Write a program to read through the mbox-short.txt and figure out the distribution by hour of the day for each of the messages. You can pull the hour out from the ‘From ‘ line by finding the time and then splitting the string a second time using a colon.<br><code>From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008</code><br>Once you have accumulated the counts for each hour, print out the counts, sorted by hour as shown below.</p>
@@ -573,9 +629,9 @@
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="method" scheme="http://yibeichen.me/tags/method/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
