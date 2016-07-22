@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-22T16:26:25.000Z</updated>
+  <updated>2016-07-22T16:27:35.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -20,11 +20,12 @@
     <link href="http://yibeichen.me/2016/07/22/PR4E-Chapter-13-1-assignment/"/>
     <id>http://yibeichen.me/2016/07/22/PR4E-Chapter-13-1-assignment/</id>
     <published>2016-07-22T11:03:26.000Z</published>
-    <updated>2016-07-22T16:26:25.000Z</updated>
+    <updated>2016-07-22T16:27:35.000Z</updated>
     
     <content type="html"><![CDATA[<p>本节课介绍XML，下一节课介绍JSON。 </p>
 <p>如何判断一次课程难不难？看我做作业的时候有没有借助外力就知道了。其实我是借助了教材，而且老师一开始就说了呀，本周的作业很容易！然而……</p>
 <p>Again and again and again, I was stuck at the stage of converting a string into an integrate and making a sum.</p>
+<a id="more"></a>
 <p>以下是quiz中遇到的几个知识点：</p>
 <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">XML</span> <span class="title">Basics</span>：</div><div class="line"><span class="literal">start</span> <span class="keyword">tag</span></div><div class="line"><span class="title">end</span> <span class="keyword">tag</span></div><div class="line"><span class="title">text</span> content </div><div class="line"><span class="keyword">attribute</span></div><div class="line">self closing <span class="keyword">tag</span></div><div class="line"></div><div class="line"><span class="title">XSD</span> Structure</div><div class="line">xs:element</div><div class="line">xs:sequence</div><div class="line">xs:complexType</div><div class="line"></div><div class="line"><span class="keyword">XML</span> <span class="title">Tree</span></div><div class="line"></div><div class="line">parsing →→→ de-serialization</div></pre></td></tr></table></figure>
 <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>In this assignment you will write a Python program somewhat similar to <a href="http://www.pythonlearn.com/code/geoxml.py" target="_blank" rel="external">http://www.pythonlearn.com/code/geoxml.py</a>. The program will prompt for a URL, read the XML data from that URL using urllib and then parse and extract the comment counts from the XML data, compute the sum of the numbers in the file.</p>
@@ -58,7 +59,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     
       &lt;p&gt;本节课介绍XML，下一节课介绍JSON。 &lt;/p&gt;
 &lt;p&gt;如何判断一次课程难不难？看我做作业的时候有没有借助外力就知道了。其实我是借助了教材，而且老师一开始就说了呀，本周的作业很容易！然而……&lt;/p&gt;
-&lt;p&gt;Again and again and again, I was 
+&lt;p&gt;Again and again and again, I was stuck at the stage of converting a string into an integrate and making a sum.&lt;/p&gt;
     
     </summary>
     
