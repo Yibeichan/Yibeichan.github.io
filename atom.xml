@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-23T10:57:52.000Z</updated>
+  <updated>2016-07-23T11:07:32.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -14,56 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>PR4E-Chapter-13-2-assignment</title>
-    <link href="http://yibeichen.me/2016/07/23/To-HUST/"/>
-    <id>http://yibeichen.me/2016/07/23/To-HUST/</id>
-    <published>2016-07-23T10:46:36.000Z</published>
-    <updated>2016-07-23T10:57:52.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>超级尴尬之 </p>
-<ol>
-<li>quiz三次都没通过，还得过8小时去做第四次。</li>
-<li>极其容易的作业A卡住了，而且非常光荣地又卡在了求和问题上。</li>
-<li>昨天还机智聪明地注意到了一级tag、二级tag的细节，今天就栽到这了。（说到底还是智商问题）</li>
-<li>作业B根本不用动脑筋，代码都给了，改一个变量名就好行，是怕出个难题会打击学生的自信心么……</li>
-</ol>
-<p>另，我开始记课程笔记的时候，就是我已经听不懂的时候。</p>
-<p>两道习题，跟JSON、API相关。<br><a id="more"></a></p>
-<h1 id="本周知识点"><a href="#本周知识点" class="headerlink" title="本周知识点"></a>本周知识点</h1><h2 id="JavaScript-Object-Notation"><a href="#JavaScript-Object-Notation" class="headerlink" title="JavaScript Object Notation"></a>JavaScript Object Notation</h2><p>Everybody loves JSON.</p>
-<p>XML  is a great serialization format for documents, especially things that kind of have infinitely nested kinds of things, like a paragraph within this and that<br>And HTML is kind of like XML and it’s a good way to represent documents, and so that’s why this JavaScript Object Notation is not really used to represent HTML at all. </p>
-<p><strong>JSON represent data as nested “lists” and “dictionaries”</strong><br>list →→→ array<br>dictionary →→→ object</p>
-<p>deserialize from string to internal structure ↓<br><code>info = json.loads(data)</code><br>最棒的地方在于，如果原始data含有键值，那么deserialize后，得到的就是一个dictionary，有对应的key和value，而XML就不行，只有value。如果原始data是list，那么JSON就会返回一个list。<br>所以，它俩的区别就在于，XML注重的是结构，把一切想象成yige树状结构（Tree），而JSON则把数据看成是诸多列表（lists），或者一对对的键值（key value pairs）另外，JSON用起来比较容易，XML就有点难但是更具表现性。</p>
-<h2 id="Service-Oriented-Approach"><a href="#Service-Oriented-Approach" class="headerlink" title="Service Oriented Approach"></a>Service Oriented Approach</h2><p>一个非常有趣的视频 [Service Oriented Architectures]<br>突然想起来这是课程视频，没enroll应该就看不了……</p>
-<h2 id="Accessing-APIs-in-Python"><a href="#Accessing-APIs-in-Python" class="headerlink" title="Accessing APIs in Python"></a>Accessing APIs in Python</h2><p>SOAP - Simple Object Access Protocol (software)<br>REST - Representational State Transfer (resource focused)<br>Google  Geocoding APIs<br>→ make the URL and retrieve the URL</p>
-<h2 id="APIs-Security-and-Rate-Limiting"><a href="#APIs-Security-and-Rate-Limiting" class="headerlink" title="APIs Security and Rate Limiting"></a>APIs Security and Rate Limiting</h2><p>APIs are not “free”<br>Twitter APIs (authentication)—— OAuth<br>→ make the URL, augment it with the signature stuff on it, then get a request on that URL</p>
-<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>Service Oriented Architectures - allows an application to be broken into parts and distributed across a network </p>
-<p>An Application Program Interface (API) is a contract for interaction</p>
-<p>Web Services provide infrastructure for applications cooperating (an API) over a network - SOAP and REST are two styles of web services</p>
-<p>XML and JSON are serialization formats</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;超级尴尬之 &lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;quiz三次都没通过，还得过8小时去做第四次。&lt;/li&gt;
-&lt;li&gt;极其容易的作业A卡住了，而且非常光荣地又卡在了求和问题上。&lt;/li&gt;
-&lt;li&gt;昨天还机智聪明地注意到了一级tag、二级tag的细节，今天就栽到这了。（说到底还是智商问题）&lt;/li&gt;
-&lt;li&gt;作业B根本不用动脑筋，代码都给了，改一个变量名就好行，是怕出个难题会打击学生的自信心么……&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;另，我开始记课程笔记的时候，就是我已经听不懂的时候。&lt;/p&gt;
-&lt;p&gt;两道习题，跟JSON、API相关。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
-      <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
-    
-  </entry>
   
   <entry>
     <title>PR4E-Chapter-13-2-assignment</title>
