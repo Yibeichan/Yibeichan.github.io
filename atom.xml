@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-23T11:13:36.000Z</updated>
+  <updated>2016-07-23T11:22:14.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://yibeichen.me/2016/07/23/PR4E-Chapter-13-2-assignment/"/>
     <id>http://yibeichen.me/2016/07/23/PR4E-Chapter-13-2-assignment/</id>
     <published>2016-07-23T10:46:36.000Z</published>
-    <updated>2016-07-23T11:13:36.000Z</updated>
+    <updated>2016-07-23T11:22:14.000Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>超级尴尬</strong><br>今天的两道题目跟github不和，这篇文章deploy的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！</p>
+    <content type="html"><![CDATA[<p><strong>超级尴尬</strong><br>今天的两道题目跟github不和，这篇文章<code>$ hexo g -d</code>和<code>$ hexo s</code>的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！</p>
 <hr>
 <p>尴尬之</p>
 <ol>
@@ -62,7 +62,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;超级尴尬&lt;/strong&gt;&lt;br&gt;今天的两道题目跟github不和，这篇文章deploy的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;超级尴尬&lt;/strong&gt;&lt;br&gt;今天的两道题目跟github不和，这篇文章&lt;code&gt;$ hexo g -d&lt;/code&gt;和&lt;code&gt;$ hexo s&lt;/code&gt;的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;尴尬之&lt;/p&gt;
 &lt;ol&gt;
