@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-23T05:42:16.000Z</updated>
+  <updated>2016-07-23T10:52:00.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -14,6 +14,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>To HUST</title>
+    <link href="http://yibeichen.me/2016/07/23/To-HUST/"/>
+    <id>http://yibeichen.me/2016/07/23/To-HUST/</id>
+    <published>2016-07-23T10:52:00.000Z</published>
+    <updated>2016-07-23T10:52:00.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>PR4E Chapter 13.1（Web Service and XML）作业</title>

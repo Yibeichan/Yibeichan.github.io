@@ -70,7 +70,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="coursera,Python," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -88,16 +88,15 @@
 
 
 
-<meta name="description" content="正则表达式最常用的是search（）和findall（）">
-<meta property="og:type" content="article">
-<meta property="og:title" content="PR4E Chapter 11（Regular Expressions）作业">
-<meta property="og:url" content="http://yibeichen.me/2016/07/19/PR4E-Chapter-11-assignment/index.html">
+<meta name="description" content="Keep writing and catch that python">
+<meta property="og:type" content="website">
+<meta property="og:title" content="舞！舞！舞！">
+<meta property="og:url" content="http://yibeichen.me/archives/page/2/index.html">
 <meta property="og:site_name" content="舞！舞！舞！">
-<meta property="og:description" content="正则表达式最常用的是search（）和findall（）">
-<meta property="og:updated_time" content="2016-07-22T10:29:55.000Z">
+<meta property="og:description" content="Keep writing and catch that python">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PR4E Chapter 11（Regular Expressions）作业">
-<meta name="twitter:description" content="正则表达式最常用的是search（）和findall（）">
+<meta name="twitter:title" content="舞！舞！舞！">
+<meta name="twitter:description" content="Keep writing and catch that python">
 
 
 
@@ -118,9 +117,9 @@
 
 
 
-  <link rel="canonical" href="http://yibeichen.me/2016/07/19/PR4E-Chapter-11-assignment/"/>
+  <link rel="canonical" href="http://yibeichen.me/archives/page/2/"/>
 
-  <title> PR4E Chapter 11（Regular Expressions）作业 | 舞！舞！舞！ </title>
+  <title> 归档 | 舞！舞！舞！ </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -141,7 +140,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container one-collumn sidebar-position-left  page-archive  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -229,209 +228,70 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
+  <section id="posts" class="posts-collapse">
+    <span class="archive-move-on"></span>
+
+    <span class="archive-page-counter">
+      
+      
+      
+        
+      
+      嗯..! 目前共计 9 篇日志。 继续努力。
+    </span>
+
     
 
-  
-  
+      
+      
+      
 
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
+      
         
+        <div class="collection-title">
+          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+        </div>
+      
+      
+
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
+            <a class="post-title-link" href="/2016/07/08/Learning-How-To-Learn/" itemprop="url">
               
-                PR4E Chapter 11（Regular Expressions）作业
+                <span itemprop="name">Learning How To Learn 课程笔记</span>
               
-            
-          </h1>
+            </a>
         
+      </h1>
 
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-19T15:24:11+08:00" content="2016-07-19">
-              2016-07-19
-            </time>
-          </span>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-07-08T00:06:40+08:00"
+              content="2016-07-08" >
+          07-08
+        </time>
+      </div>
 
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/07/19/PR4E-Chapter-11-assignment/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/07/19/PR4E-Chapter-11-assignment/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>正则表达式最常用的是search（）和findall（）<br><a id="more"></a></p>
-<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>The basic outline of this problem is to read the file, look for integers using the re.findall(), looking for a regular expression of ‘[0-9]+’ and then converting the extracted strings to integers and summing up the integers.</p>
-<blockquote>
-<p><a href="http://python-data.dr-chuck.net/regex_sum_291515.txt" target="_blank" rel="external">http://python-data.dr-chuck.net/regex_sum_291515.txt</a> (There are 78 values and the sum ends with 813)</p>
-</blockquote>
-<h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><figure class="highlight processing"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> re</div><div class="line">name = raw_input(<span class="string">"Enter file:"</span>)</div><div class="line"><span class="keyword">if</span> len(name) &lt; <span class="number">1</span> : name = <span class="string">"regex_sum_291515.txt"</span></div><div class="line">hand = <span class="built_in">open</span>(name)</div><div class="line">l = list()</div><div class="line"><span class="keyword">for</span> <span class="built_in">line</span> in hand:</div><div class="line">    <span class="built_in">line</span> = <span class="built_in">line</span>.rstrip()</div><div class="line">    x = re.findall(<span class="string">'([0-9]+)'</span>,<span class="built_in">line</span>)</div><div class="line">    <span class="keyword">for</span> i in x:</div><div class="line">        i = <span class="built_in">float</span>(i)</div><div class="line">        l.<span class="built_in">append</span>(i)</div><div class="line"><span class="built_in">print</span> <span class="built_in">int</span>(sum(l))</div></pre></td></tr></table></figure>
-<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>两个问题：</p>
-<p>1）第一次split后出现列表嵌套不知道该怎么办了，差点用上了字典，后来翻到《列表》的作业才想起来用append加到另一个列表。</p>
-<p>2）表达式出错了，第一次用的是[0-9]+？，也不知道为什么在这用了一个非贪婪模式，是担心会把后面的单词也写进来了吗？真是杞人忧天。然后发现’’这个单引号没加。输出之后变成了单个的数字，于是在？后加了一个空格。但计算结果还是不对，对着txt找半天，原来是把line结尾处的数字落下了，因为那个数字后面没有空格。好吧，空格和？都去掉了，算对了！之前真是瞎折腾。</p>
-<h1 id="Cheat-Sheet"><a href="#Cheat-Sheet" class="headerlink" title="Cheat Sheet :)"></a>Cheat Sheet :)</h1><table>
-<thead>
-<tr>
-<th>表达式</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>^</td>
-<td>Matches the beginning of a line</td>
-</tr>
-<tr>
-<td>$</td>
-<td>Matches the end of the line</td>
-</tr>
-<tr>
-<td>.</td>
-<td>Matches any character</td>
-</tr>
-<tr>
-<td>\s</td>
-<td>Matches whitespace</td>
-</tr>
-<tr>
-<td>\S</td>
-<td>Matches any non-whitespace character</td>
-</tr>
-<tr>
-<td>*</td>
-<td>Repeats a character zero or more times</td>
-</tr>
-<tr>
-<td>*?</td>
-<td>Repeats a character zero or more times (non-greedy)</td>
-</tr>
-<tr>
-<td>+</td>
-<td>Repeats a character one or more times</td>
-</tr>
-<tr>
-<td>+?</td>
-<td>Repeats a character one or more times (non-greedy)</td>
-</tr>
-<tr>
-<td>[aeiou]</td>
-<td>Matches a single character in the listed set</td>
-</tr>
-<tr>
-<td>[^XYZ]</td>
-<td>Matches a single character not in the listed set</td>
-</tr>
-<tr>
-<td>[a-z0-9]</td>
-<td>The set of characters can include a range</td>
-</tr>
-<tr>
-<td>(</td>
-<td>Indicates where string extraction is to start</td>
-</tr>
-<tr>
-<td>)</td>
-<td>Indicates where string extraction is to end</td>
-</tr>
-</tbody>
-</table>
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/coursera/" rel="tag">#coursera</a>
-          
-            <a href="/tags/Python/" rel="tag">#Python</a>
-          
-        </div>
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/07/18/PR4E-Chapter-10-assignment/" rel="next" title="PR4E Chapter 10（Tuples）作业">
-                <i class="fa fa-chevron-left"></i> PR4E Chapter 10（Tuples）作业
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/07/20/Listen-to-Music/" rel="prev" title="Listen to Music">
-                Listen to Music <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
+    </header>
   </article>
 
 
 
-    <div class="post-spread">
-      
-    </div>
-  </div>
+    
+
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/archives/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
+  </nav>
+
+
 
 
           </div>
@@ -439,17 +299,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
-    
-  </div>
-
 
         </div>
         
@@ -469,17 +318,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -563,17 +403,6 @@
 
       </section>
 
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#答案"><span class="nav-number">2.</span> <span class="nav-text">答案</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#备注"><span class="nav-number">3.</span> <span class="nav-text">备注</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Cheat-Sheet"><span class="nav-number">4.</span> <span class="nav-text">Cheat Sheet :)</span></a></li></ol></div>
-            
-          </div>
-        </section>
       
 
     </div>
@@ -670,9 +499,11 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
+  
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
 
 
   
@@ -690,9 +521,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'yibeichen';
-      var disqus_identifier = '2016/07/19/PR4E-Chapter-11-assignment/';
-      var disqus_title = "PR4E Chapter 11（Regular Expressions）作业";
-      var disqus_url = 'http://yibeichen.me/2016/07/19/PR4E-Chapter-11-assignment/';
+      var disqus_identifier = 'archives/page/2/index.html';
+      var disqus_title = "";
+      var disqus_url = '';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
@@ -703,8 +534,6 @@
       }
 
       run_disqus_script('count.js');
-      
-        run_disqus_script('embed.js');
       
     </script>
   
