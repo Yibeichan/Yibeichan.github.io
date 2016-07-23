@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-23T10:53:53.000Z</updated>
+  <updated>2016-07-23T10:54:23.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -16,22 +16,20 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>PR4E-Chapter-13-2-assignment</title>
     <link href="http://yibeichen.me/2016/07/23/To-HUST/"/>
     <id>http://yibeichen.me/2016/07/23/To-HUST/</id>
-    <published>2016-07-23T10:52:00.000Z</published>
-    <updated>2016-07-23T10:53:53.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>test</p>
-]]></content>
+    <published>2016-07-23T10:46:36.000Z</published>
+    <updated>2016-07-23T10:54:23.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;test&lt;/p&gt;
-
-    
     </summary>
     
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
+      <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
     
   </entry>
   
