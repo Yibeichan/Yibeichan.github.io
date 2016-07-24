@@ -778,10 +778,16 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     <link href="http://yibeichen.me/2016/04/20/Try-Poem/"/>
     <id>http://yibeichen.me/2016/04/20/Try-Poem/</id>
     <published>2016-04-20T09:00:42.000Z</published>
-    <updated>2016-07-24T09:03:38.000Z</updated>
+    <updated>2016-07-24T09:06:54.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="雨夜"><a href="#雨夜" class="headerlink" title="雨夜"></a>雨夜</h1><p>忽然 暴雨<br>在 惊醒之前<br>你从梦中掠过<br>宛如闪电</p>
-<h1 id="吉他"><a href="#吉他" class="headerlink" title="吉他"></a>吉他</h1><p>开始 对吉他声敏感<br>就好像<br>碰见有些字写得好看<br>意识到<br>哦 用的也是ef尖的钢笔<br><code>他对米、面过敏，他对一切东西都过敏，他是对生活过敏</code></p>
+    <content type="html"><![CDATA[<p>To My Muse</p>
+<p>她来一天<br>我就写一行</p>
+<a id="more"></a>
+<h1 id="雨夜"><a href="#雨夜" class="headerlink" title="雨夜"></a>雨夜</h1><p>忽然 暴雨<br>在 惊醒之前<br>你从梦中掠过<br>宛如闪电</p>
+<h1 id="吉他"><a href="#吉他" class="headerlink" title="吉他"></a>吉他</h1><p>开始 对吉他声敏感<br>就好像<br>碰见有些字写得好看<br>意识到<br>哦 用的也是ef尖的钢笔</p>
+<blockquote>
+<p>他对米、面过敏<br>他对一切东西都过敏<br>他是对生活过敏</p>
+</blockquote>
 <h1 id="旅途"><a href="#旅途" class="headerlink" title="旅途"></a>旅途</h1><p>如果<br>还希望<br>我对武汉留有<br>一点<br>美好的念想<br>就 不要<br>逼我乘汽车 来回<br>因为<br>坐一次<br>恨一次<br>从前那些回忆<br>禁不起这样浪费</p>
 <h1 id="伤害"><a href="#伤害" class="headerlink" title="伤害"></a>伤害</h1><p>下午四点的校图书馆前<br>白玉兰和银杏的阴影还是原样<br>以为<br>什么都没变<br>直到<br>半夜同时醒来的胃疼<br>说<br>把离开的七百多天<br>塞进两餐饭里<br>真是徒劳 </p>
 <h1 id="我这样的生活"><a href="#我这样的生活" class="headerlink" title="我这样的生活"></a>我这样的生活</h1><p>一个雪人<br>正在大地上融化<br>你走过来<br>抓起一把残雪<br>那是我唯一存在的证据<br>但是<br>它最终会被夺走</p>
@@ -790,8 +796,8 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;雨夜&quot;&gt;&lt;a href=&quot;#雨夜&quot; class=&quot;headerlink&quot; title=&quot;雨夜&quot;&gt;&lt;/a&gt;雨夜&lt;/h1&gt;&lt;p&gt;忽然 暴雨&lt;br&gt;在 惊醒之前&lt;br&gt;你从梦中掠过&lt;br&gt;宛如闪电&lt;/p&gt;
-&lt;h1 id=&quot;吉他&quot;&gt;&lt;a href=&quot;#吉他&quot; class=
+      &lt;p&gt;To My Muse&lt;/p&gt;
+&lt;p&gt;她来一天&lt;br&gt;我就写一行&lt;/p&gt;
     
     </summary>
     
