@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-25T11:28:26.000Z</updated>
+  <updated>2016-07-25T13:59:59.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -16,11 +16,70 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PR4E Chapter 13A （Object Oriented Programming）</title>
+    <link href="http://yibeichen.me/2016/07/25/PR4E-Chapter-13-Additional/"/>
+    <id>http://yibeichen.me/2016/07/25/PR4E-Chapter-13-Additional/</id>
+    <published>2016-07-25T13:54:44.000Z</published>
+    <updated>2016-07-25T13:59:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>A means additional<br>这章算是补充知识点吧，不要求特别熟悉，理解了会用就行，事实上，我每章都不是特别懂……<br>本周没有作业，只有一个quiz，做了两遍才通过，都两遍了，竟然也没能满分。</p>
+<a id="more"></a>
+<h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="What-is-an-“Object”"><a href="#What-is-an-“Object”" class="headerlink" title="What is an “Object”?"></a>What is an “Object”?</h2><p>An object is a bit of self-contained code and data.<br>It’s not like a function, which is bit of code, but it is code and data.<br>“对象”可以复制成许多不同的部分，优点在于，每个部分管好自己就行了，不用操心其他部分。（是这个意思吧？感觉理解有偏差）</p>
+<h3 id="Terminology"><a href="#Terminology" class="headerlink" title="Terminology"></a>Terminology</h3><ul>
+<li>Class - a template - Dog</li>
+<li>Method or Message - A defined capability of a class - bark() <strong>causing the dog to bark</strong></li>
+<li>Field or attribute - A bit of data in a class - length</li>
+<li>Object or Instance - A particular instance of a class - Lassie</li>
+</ul>
+<p>他老人家的幽默感真是……</p>
+<p>classes contain code in addition to data, and the method is the way that we activate the code</p>
+<h3 id="Simple-Python-Objects"><a href="#Simple-Python-Objects" class="headerlink" title="Simple Python Objects"></a>Simple Python Objects</h3><p><img src="http://ww3.sinaimg.cn/large/72f96cbajw1f66g66h3llj211y0lcaeo.jpg" alt="20:54:41.jpg"><br>这么一大串，看得不是很懂……</p>
+<p>Use <strong>dir()</strong> to find the “capabilities” of our newly created class</p>
+<h3 id="Object-Lifecycle"><a href="#Object-Lifecycle" class="headerlink" title="Object Lifecycle"></a>Object Lifecycle</h3><ul>
+<li>Objects are created used and discarded</li>
+<li>We have special blocks of code (methods) that get called<ul>
+<li>at the moment of creation (constructor)</li>
+<li>at the moment of destruction (destructor)</li>
+</ul>
+</li>
+<li>Constructors are used a lot</li>
+<li>Destructors are seldom used</li>
+</ul>
+<h4 id="Constructor"><a href="#Constructor" class="headerlink" title="Constructor"></a>Constructor</h4><p>the primary purpose of the constructor is to set up some instance variables to have the proper initial values when the object is created</p>
+<p>optional, typically used to set up variables</p>
+<p>in <em>object-oriented programming</em>, a constructor in a class is a special block of statements called when an <em>object is created</em></p>
+<h4 id="Instances"><a href="#Instances" class="headerlink" title="Instances"></a>Instances</h4><p>each instance has its own copy of the instance variables<br><strong>multiple</strong><br><strong>independent!!!</strong></p>
+<h3 id="Inheritance"><a href="#Inheritance" class="headerlink" title="Inheritance"></a>Inheritance</h3><ul>
+<li>When we make a new class - we can reuse an existing class and <strong>inherit</strong> all the capabilities of an existing class and then add our own little bit to make our new class </li>
+<li>Another form of store and reuse </li>
+<li>Write once - reuse many times </li>
+<li>The new class (child) has all the capabilities of the old class (parent) - and then some more<br>→ → → <strong>Subclasses</strong><h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3></li>
+<li>Object Oriented programming is a very structured approach to code reuse. </li>
+<li>We can group data and functionality together and create many independent instances of a class</li>
+</ul>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>本章的slide链接：<a><a href="http://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-13a-Objects.pdf" target="_blank" rel="external">http://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-13a-Objects.pdf</a></a></p>
+<p>已经沦落到要抄slide的地步了……</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;A means additional&lt;br&gt;这章算是补充知识点吧，不要求特别熟悉，理解了会用就行，事实上，我每章都不是特别懂……&lt;br&gt;本周没有作业，只有一个quiz，做了两遍才通过，都两遍了，竟然也没能满分。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
+      <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>床前明月光</title>
     <link href="http://yibeichen.me/2016/07/25/Reread-Echo/"/>
     <id>http://yibeichen.me/2016/07/25/Reread-Echo/</id>
     <published>2016-07-25T09:15:20.000Z</published>
-    <updated>2016-07-25T11:28:26.000Z</updated>
+    <updated>2016-07-25T13:41:20.000Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://www.douban.com/group/topic/26705512/" target="_blank" rel="external">如果有来生</a></p>
 <p>不要抱歉 不要告别</p>
@@ -30,8 +89,8 @@
 <p>有些书，买了很久，也看过很久了，大概不会有机会重读，于是放到网上，等人来取走。<br>放了很久无人问津，我也忘了。<br>突然一天，有留言，谈问书的情况，聊两句就下单了。<br>我倒是愣在那里。<br>从明天起它就是别人的了，也许我是早忘了它，但倘若留在书架上，某一天还能重新发现，可送走之后，记忆里和现实中都没了它的影子。</p>
 <p>这次是三毛的演讲集《流星雨》。中学时代，在一家常去的书店买来的，先是在书店瞧见这本，下午骑着车带着钱来买了，高中生，正是迷三毛的时候吧。可是也只知道她有个荷西，去过沙漠，最后跳下天台。看过琼瑶回忆她的文字，大概是：明明见面的时候还一切都好，怎么转身就……悲痛中带着惊愕。<br>明天就要把书寄走了，真是舍不得，又把书翻开了，这次恨不得把它都背下来。</p>
 <p>附乐曲一段（原谅我音乐插件还没弄好）<br><a href="https://open.spotify.com/track/3ji70Y1KuOjlU3jrYIS3WR" target="_blank" rel="external">L’amoureuse chinoise</a></p>
-<p>从随手翻开的那一页读起，她讲自己给文章取标题的准则：不能让读者看了题目就能猜到文章内容。取名字也有三种境界：第一种是文章写了什么题目就说什么，比如《中国饭店》后来改名成了《沙漠中的饭店》，讲的是沙漠中的一家中国饭店，太直接了，她对题目不满意；第二种是想夸老王家的东西好，不直接说，偏偏要说老李家对面有一家店特别好，比如《五月花》，写的是本该五月繁花似锦，然而却只有无尽的辛劳；第三种是写的是悲剧却不写主人公的悲伤而是旁观者的眼泪，比如《哭泣的骆驼》，女孩被强暴了，然后又被丈夫的弟弟打死。<br>中学语文课上，老师讲《诗经》的时候常常会说到这种方法。三毛说，这些事她从前为广告公司工作的时候学到的。大学里的新闻和广告课上好像也提过，一不小心就记起了茂茂的《现当代文学》。</p>
-<p>三毛说，有段时间写得很少，慢慢写，对妈妈说：“对于一个念书不多的人来说，写五本书已经够多了。”后来结婚后，有十个月都没有写过，因为荷西不能睡觉。她只对别人说，我不能写作，因为荷西不能睡觉。可是她不说荷西为什么不能睡。<br>有一回，晚上写完回到房间，看见荷西蒙着被单躺在那，突然掀起被跳起来：“你写完啦？”“你为什么不睡觉？”“不敢睡。”“为什么不敢睡，我就在外面写东西而已呀。”“你知道，我总是要牵着你的手才能睡着。”<br>荷西是潜水工程师，工作特别危险，必须要有充足的睡眠。于是，从那以后，三毛就不写了。<br>三毛说：“写作是让我快乐的事，但如果写作妨碍了生活，我就会放弃写作。”</p>
+<p>从随手翻开的那一页读起，她讲自己给文章取标题的准则：不能让读者看了题目就能猜到文章内容。取名字也有三种境界：第一种是文章写了什么题目就说什么，比如《中国饭店》后来改名成了《沙漠中的饭店》，讲的是沙漠中的一家中国饭店，太直接了，她对题目不满意；第二种是想夸老王家的东西好，不直接说，偏偏要说老李家对面有一家店特别好，比如《五月花》，写的是本该五月繁花似锦，然而却只有无尽的辛劳；第三种是写的是悲剧却不写主人公的悲伤而是旁观者的眼泪，比如《哭泣的骆驼》，女孩被强暴了，然后又被丈夫的弟弟打死。<br>中学语文课上，老师讲《诗经》的时候常常会说到这种方法。三毛说，这些是她从前为广告公司工作的时候学到的。大学里的新闻和广告课上好像也提过，一不小心就记起了茂茂的《现当代文学》。</p>
+<p>三毛说，有段时间写得很少，慢慢写，对妈妈说：“对于一个念书不多的人来说，写五本书已经够多了。”结婚后，有十个月都没写作，因为荷西不能睡觉。她只对别人说，我不能写作，因为荷西不能睡觉。可是她不说荷西为什么不能睡。<br>有一回，晚上写完回到房间，看见荷西蒙着被单躺在那，突然掀起被跳起来：“你写完啦？”“你为什么不睡觉？”“不敢睡。”“为什么不敢睡，我就在外面写东西而已呀。”“你知道，我总是要牵着你的手才能睡着。”<br>荷西是潜水工程师，工作特别危险，必须要有充足的睡眠。于是，从那以后，三毛就不写了。<br>三毛说：“写作是让我快乐的事，但如果写作妨碍了生活，我就会放弃写作。”</p>
 <p>小时候，孩子们都是上同样的学校，穿同样的校服，走同样的路，所以滋生了无穷无尽的想象力，编出有意思的故事。后来，长大了，我们周围的生活周围的人都是那么丰富多彩，总想着把我和我身边的故事记录下来。<br>三毛说：“很佩服那些会编故事的小说家朋友，等自己写完了自己的故事再去编故事，但是我们的故事太多了，写不完。”</p>
 <p>翻回第一篇，《一个男孩子的爱情》。看过很多遍，因为它是第一篇，从前我读书都喜欢从第一页开始。荷西和三毛相识重逢的场景，实是难忘。其实也不过是大千世界一对普通的男女，但细水长流终是入了江河湖海，成为不朽。<br>讲着讲着，讲他们结婚，讲荷西和三毛的爸爸妈妈的相处，讲他们俩曾经讨论过“怎么死”，讲荷西真的走了，讲到最后，无语凝噎。<br>一闪而过迟子建在鲁迅文学馆演讲的场景，开场的时候，她说：“拜托大家，不要问和《世界上所有的夜晚》相关的问题。”她是笑着说的，可我只觉得难过。</p>
 <p>虽然并没有什么感情经历，但是偶尔也和朋友讨论过，两个人到底要什么样才能在一起呢？比较赞同：“门当户对”不是说家境相当，而是，成长的环境还是相似一点较好，相处起来，不至于价值观偏差太多。三毛说：“彼此的品格和心灵，才是我们所要讲求的‘门当户对’的东西。”</p>
@@ -61,7 +120,7 @@
     <link href="http://yibeichen.me/2016/07/24/To-HUST/"/>
     <id>http://yibeichen.me/2016/07/24/To-HUST/</id>
     <published>2016-07-24T06:35:55.000Z</published>
-    <updated>2016-07-24T12:25:09.000Z</updated>
+    <updated>2016-07-25T10:59:13.000Z</updated>
     
     <content type="html"><![CDATA[<p>搭完博客的那天，想到了这个题目。假如我的珞珈山和凌波门看见，不知道会怎么想。</p>
 <p>其实，这篇是关于一些不算远的回忆。</p>
@@ -105,7 +164,7 @@
     <link href="http://yibeichen.me/2016/07/23/PR4E-Chapter-13-2-assignment/"/>
     <id>http://yibeichen.me/2016/07/23/PR4E-Chapter-13-2-assignment/</id>
     <published>2016-07-23T10:46:36.000Z</published>
-    <updated>2016-07-24T06:34:31.000Z</updated>
+    <updated>2016-07-25T12:30:52.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong>超级尴尬</strong><br>今天的两道题目跟github不和，这篇文章<code>$ hexo g -d</code>和<code>$ hexo s</code>的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！</p>
 <hr>
@@ -118,11 +177,11 @@
 </ol>
 <p>另，我开始记课程笔记的时候，就是我已经听不懂的时候。</p>
 <p>两道习题，跟JSON、API相关。<br><a id="more"></a></p>
-<h1 id="本周知识点"><a href="#本周知识点" class="headerlink" title="本周知识点"></a>本周知识点</h1><h2 id="JavaScript-Object-Notation"><a href="#JavaScript-Object-Notation" class="headerlink" title="JavaScript Object Notation"></a>JavaScript Object Notation</h2><p>Everybody loves JSON.</p>
+<h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="JavaScript-Object-Notation"><a href="#JavaScript-Object-Notation" class="headerlink" title="JavaScript Object Notation"></a>JavaScript Object Notation</h2><p>Everybody loves JSON.</p>
 <p>XML  is a great serialization format for documents, especially things that kind of have infinitely nested kinds of things, like a paragraph within this and that<br>And HTML is kind of like XML and it’s a good way to represent documents, and so that’s why this JavaScript Object Notation is not really used to represent HTML at all. </p>
 <p><strong>JSON represent data as nested “lists” and “dictionaries”</strong><br>list →→→ array<br>dictionary →→→ object</p>
-<p>deserialize from string to internal structure ↓<br><code>info = json.loads(data)</code><br>最棒的地方在于，如果原始data含有键值，那么deserialize后，得到的就是一个dictionary，有对应的key和value，而XML就不行，只有value。如果原始data是list，那么JSON就会返回一个list。<br>所以，它俩的区别就在于，XML注重的是结构，把一切想象成yige树状结构（Tree），而JSON则把数据看成是诸多列表（lists），或者一对对的键值（key value pairs）另外，JSON用起来比较容易，XML就有点难但是更具表现性。</p>
-<h2 id="Service-Oriented-Approach"><a href="#Service-Oriented-Approach" class="headerlink" title="Service Oriented Approach"></a>Service Oriented Approach</h2><p>一个非常有趣的视频 [Service Oriented Architectures]<br>突然想起来这是课程视频，没enroll应该就看不了……</p>
+<p>deserialize from string to internal structure ↓<br><code>info = json.loads(data)</code><br>最棒的地方在于，如果原始data含有键值，那么deserialize后，得到的就是一个dictionary，有对应的key和value，而XML就不行，只有value。如果原始data是list，那么JSON就会返回一个list。<br>所以，它俩的区别就在于，XML注重的是结构，把一切想象一个树状结构（Tree），而JSON则把数据看成是诸多列表（lists），或者一对对的键值（key value pairs）另外，JSON用起来比较容易，XML就有点难但是更具表现性。</p>
+<h2 id="Service-Oriented-Approach"><a href="#Service-Oriented-Approach" class="headerlink" title="Service Oriented Approach"></a>Service Oriented Approach</h2><p>一个非常有趣的视频 <a href="https://www.coursera.org/learn/python-network-data/lecture/0CpCx/video-service-oriented-architectures" target="_blank" rel="external">Service Oriented Architectures</a><br>突然想起来这是课程视频，没enroll应该就看不了……<br>为了通过quiz，我把这个视频前前后后看了三遍……</p>
 <h2 id="Accessing-APIs-in-Python"><a href="#Accessing-APIs-in-Python" class="headerlink" title="Accessing APIs in Python"></a>Accessing APIs in Python</h2><p>SOAP - Simple Object Access Protocol (software)<br>REST - Representational State Transfer (resource focused)<br>Google  Geocoding APIs<br>→ make the URL and retrieve the URL</p>
 <h2 id="APIs-Security-and-Rate-Limiting"><a href="#APIs-Security-and-Rate-Limiting" class="headerlink" title="APIs Security and Rate Limiting"></a>APIs Security and Rate Limiting</h2><p>APIs are not “free”<br>Twitter APIs (authentication)—— OAuth<br>→ make the URL, augment it with the signature stuff on it, then get a request on that URL</p>
 <h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>Service Oriented Architectures - allows an application to be broken into parts and distributed across a network </p>
