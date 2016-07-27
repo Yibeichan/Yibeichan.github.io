@@ -979,7 +979,7 @@ pre .javascript .function {
 }
 .menu .menu-item a {
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   text-transform: capitalize;
   line-height: inherit;
   border-bottom: 1px solid transparent;
@@ -1555,7 +1555,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #57ffff;
+  background: #fcc8fb;
 }
 .links-of-blogroll {
   font-size: 13px;
