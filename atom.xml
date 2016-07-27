@@ -563,11 +563,11 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
   </entry>
   
   <entry>
-    <title>Listen to Music</title>
+    <title>Listen to Music 课程笔记</title>
     <link href="http://yibeichen.me/2016/07/20/Listen-to-Music/"/>
     <id>http://yibeichen.me/2016/07/20/Listen-to-Music/</id>
     <published>2016-07-20T06:41:53.000Z</published>
-    <updated>2016-07-27T08:33:20.000Z</updated>
+    <updated>2016-07-27T12:23:23.000Z</updated>
     
     <content type="html"><![CDATA[<p>0726：<br>艺术真是要比编程难多了，可编程也是艺术啊，不是么？</p>
 <p>0724：<br>字幕是英文的，所以就直接弄下下来了，“尊重原著”嘛，其实是懒。<br>万一有一天再考G/T，这个就当是 听力/阅读 的背景材料啦。</p>
@@ -632,7 +632,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
 <li>Eventually we move onto the end, to the conclusion of this opening section where we end with this, a chord progression. </li>
 <li>Remember, a syntax tells us we’ve got to go home. </li>
 </ol>
-<h1 id="How-Music-Works-it’s-Magic"><a href="#How-Music-Works-it’s-Magic" class="headerlink" title="How Music Works, it’s Magic"></a>How Music Works, it’s Magic</h1><h2 id="2-We’ve-All-Got-Rhythm"><a href="#2-We’ve-All-Got-Rhythm" class="headerlink" title="2 We’ve All Got Rhythm"></a>2 We’ve All Got Rhythm</h2><h3 id="2-1-Beat-Meter-and-Rhythm"><a href="#2-1-Beat-Meter-and-Rhythm" class="headerlink" title="2.1 Beat, Meter, and Rhythm"></a>2.1 Beat, Meter, and Rhythm</h3><h4 id="Rhythm"><a href="#Rhythm" class="headerlink" title="Rhythm"></a>Rhythm</h4><p>Well we’ve all got rhythm. Rhythm, along with melody, harmony, tone, color, texture and form, are the essential elements of music.<br><em>We’ll be exploring these elements in our next several sessions. </em><br>We’ll start with rhythm, because rhythm provides a framework, a framework in time in which sounds, pitches, can rest. </p>
+<h1 id="How-Music-Works-it’s-Magic"><a href="#How-Music-Works-it’s-Magic" class="headerlink" title="How Music Works, it’s Magic"></a>How Music Works, it’s Magic</h1><h2 id="2-We’ve-All-Got-Rhythm"><a href="#2-We’ve-All-Got-Rhythm" class="headerlink" title="2 We’ve All Got Rhythm"></a>2 We’ve All Got Rhythm</h2><h3 id="2-1-Beat-Meter-and-Rhythm"><a href="#2-1-Beat-Meter-and-Rhythm" class="headerlink" title="2.1 Beat, Meter, and Rhythm"></a>2.1 Beat, Meter, and Rhythm</h3><h4 id="Rhythm"><a href="#Rhythm" class="headerlink" title="Rhythm"></a>Rhythm</h4><p>Well we’ve all got rhythm. Rhythm, along with melody, harmony, tone, color, texture and form, are the essential elements of music.<br><em>We’ll be exploring these elements in our next several sessions.</em><br>We’ll start with rhythm, because rhythm provides a framework, a framework in time in which sounds, pitches, can rest. </p>
 <blockquote>
 <p>“Classical music is music  without Africa”—— Brian Eno</p>
 </blockquote>
@@ -648,7 +648,14 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
 <p>Musical notation signs placed higher vertically represent high sounding pitches. Lower signs mean lower sounding pitches.<br>Notation that gets increasingly darker with more flags on it represents that that music is moving faster up and down, left to right.<br>Darker means faster.<br><strong>Whiter Slower, Darker Faster</strong></p>
 <h3 id="2-3-Rhythm-What-is-It"><a href="#2-3-Rhythm-What-is-It" class="headerlink" title="2.3 Rhythm: What is It?"></a>2.3 Rhythm: What is It?</h3><p>Rhythm is the organization of time into compelling patterns of long and short sounds. </p>
 <p>duple meter → 强弱、强弱、强弱<br>triple meter → 强弱弱、强弱弱、强弱弱<br>一般都是通过伴奏声部来区分节拍的，有的时候并没有专门的演奏beat的人，这就要靠“听”来理解了。<br>Well, our ear, actually our brain, digest this complex of information and extrapolates it from it a basic structural framework underlying the music. So kinda platonic mental reality over arching structure that no one actually hears. No one actually sees but it’s there. </p>
-<p><strong>syncopation</strong> 切分音</p>
+<h3 id="2-4-Hearing-the-Downbeat-Feeling-the-Emotion"><a href="#2-4-Hearing-the-Downbeat-Feeling-the-Emotion" class="headerlink" title="2.4 Hearing the Downbeat, Feeling the Emotion"></a>2.4 Hearing the Downbeat, Feeling the Emotion</h3><p>bass(left hand)  melody(right hand)</p>
+<h4 id="syncopation-切分音"><a href="#syncopation-切分音" class="headerlink" title="syncopation 切分音"></a>syncopation 切分音</h4><p>源自希腊词根syncope，意思是cut off, compress</p>
+<h4 id="downbeat-强拍"><a href="#downbeat-强拍" class="headerlink" title="downbeat 强拍"></a>downbeat 强拍</h4><p>The most stressed and always the first sound of every measure. It’s called the downbeat among other reasons, because the conductor’s hand always goes down with the first beat in every measure.<br>Composers tell us where the downbeat is. Through duration, through accent, through range, and through change of harmony.</p>
+<p>Most frequently, <strong>chord</strong>(和弦) changes come on the downbeat.</p>
+<h3 id="2-5-Tempo-and-How-We-Feel-About-It"><a href="#2-5-Tempo-and-How-We-Feel-About-It" class="headerlink" title="2.5 Tempo (and How We Feel About It)"></a>2.5 Tempo (and How We Feel About It)</h3><p>Tempo - one last thing that has to do with duration in music</p>
+<p>some tempos, such as Adagio and Andante, are often related to our bodies: Adagio can be compared to a slow heartbeat, while Andante is often compared to a slow walking tempo.</p>
+<p>Cognitive psychologists have done studies that show that we respond emotionally much more favorably to music that is every so slightly off the beat, ever so slightly off pitch now and then. <em>Next time you listen to your favorite pop singer, just listen to how he or she can be slightly off pitch at one moment or slightly off tempo at one moment, and then pull it back on.</em> That moment of intentional imperfection of the beat or the pitch, that adds emotional intensity to our musical experience.</p>
+<p>Predictably, reality is on the beat. Art is slightly off the beat, slightly off beat.<br>Art makes reality a lot more exciting.</p>
 ]]></content>
     
     <summary type="html">
