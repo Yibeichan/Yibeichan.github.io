@@ -94,7 +94,7 @@
 <meta property="og:url" content="http://yibeichen.me/2016/07/20/PR4E-Chapter-12-1-assignment/index.html">
 <meta property="og:site_name" content="舞！舞！舞！">
 <meta property="og:description" content="这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。">
-<meta property="og:updated_time" content="2016-07-22T10:30:23.000Z">
+<meta property="og:updated_time" content="2016-07-27T08:33:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PR4E Chapter 12.1（Networks and Sockets）作业">
 <meta name="twitter:description" content="这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。">
@@ -332,7 +332,7 @@
 <h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>这道题简直是小学生水平，老师已经把py都写好了，因为我用的就是第一种方法，直接copy了socket1.py的代码，用terminal运行就得出了头部信息，正常来说，我还应该试一下第二和第三种方法，然而我懒……</p>
 <p>关于第三种方法，telnet program，把老师的slide给扒下来了<br>其实这是一种hack方式……</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ telnet www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span> <span class="number">80</span></div><div class="line">Trying <span class="number">74.208</span>.<span class="number">28.177</span>...</div><div class="line">Connected <span class="keyword">to</span> www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span>.</div><div class="line">Escape character <span class="keyword">is</span> <span class="string">'^]'</span>.</div><div class="line">GET http://www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span>/page1.htm</div></pre></td></tr></table></figure>
-<p>GET后面是应该有两次换行的，所以写到Python里的时候是 \n\n </p>
+<p>GET后面是应该有两次换行的，所以写到Python里的时候是 \n\n</p>
 <p>但是我在本地用$ telnet命令就不对，返回的是<br><code>www.dr-chunk.com: nodename nor servname provided, or not known</code></p>
 <p>我怀疑是端口80的问题，啊，这又是个坑，总之关于HTTP的都要补课</p>
 <h1 id="补充材料"><a href="#补充材料" class="headerlink" title="补充材料"></a>补充材料</h1><p>book：<a href="http://www.net-intro.com/" target="_blank" rel="external">Introduction to Networking</a><br>course：<a href="https://www.coursera.org/learn/internet-history" target="_blank" rel="external">Internet History, Technology, and Security</a></p>

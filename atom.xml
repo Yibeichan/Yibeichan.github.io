@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-27T05:41:58.000Z</updated>
+  <updated>2016-07-27T08:33:24.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yibeichen.me/2016/07/27/no-desire-to-study/"/>
     <id>http://yibeichen.me/2016/07/27/no-desire-to-study/</id>
     <published>2016-07-26T16:07:07.000Z</published>
-    <updated>2016-07-27T05:41:58.000Z</updated>
+    <updated>2016-07-27T08:33:24.000Z</updated>
     
     <content type="html"><![CDATA[<p>0727 13:25:00<br>一天也不能忍，哦不，12个小时都忍不了，中午刚开电脑就跑去补了15G的套餐，焦灼地等待了一个小时之后，终于生效了。<br>从此又是手脚齐全的人了。<br>Atom插件顺利安装！</p>
 <hr>
@@ -67,7 +67,7 @@
     <link href="http://yibeichen.me/2016/07/25/PR4E-Chapter-13-Additional/"/>
     <id>http://yibeichen.me/2016/07/25/PR4E-Chapter-13-Additional/</id>
     <published>2016-07-25T13:54:44.000Z</published>
-    <updated>2016-07-25T14:03:59.000Z</updated>
+    <updated>2016-07-27T08:33:36.000Z</updated>
     
     <content type="html"><![CDATA[<p>A means additional<br>这章算是补充知识点吧，不要求特别熟悉，理解了会用就行，事实上，我每章都不是特别懂……<br>本周没有作业，只有一个quiz，做了两遍才通过，都两遍了，竟然也没能满分。</p>
 <a id="more"></a>
@@ -97,11 +97,11 @@
 <p>in <em>object-oriented programming</em>, a constructor in a class is a special block of statements called when an <em>object is created</em></p>
 <h4 id="Instances"><a href="#Instances" class="headerlink" title="Instances"></a>Instances</h4><p>each instance has its own copy of the instance variables<br><strong>multiple</strong><br><strong>independent!!!</strong></p>
 <h3 id="Inheritance"><a href="#Inheritance" class="headerlink" title="Inheritance"></a>Inheritance</h3><ul>
-<li>When we make a new class - we can reuse an existing class and <strong>inherit</strong> all the capabilities of an existing class and then add our own little bit to make our new class </li>
-<li>Another form of store and reuse </li>
-<li>Write once - reuse many times </li>
+<li>When we make a new class - we can reuse an existing class and <strong>inherit</strong> all the capabilities of an existing class and then add our own little bit to make our new class</li>
+<li>Another form of store and reuse</li>
+<li>Write once - reuse many times</li>
 <li>The new class (child) has all the capabilities of the old class (parent) - and then some more<br>→ → → <strong>Subclasses</strong><h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2></li>
-<li>Object Oriented programming is a very structured approach to code reuse. </li>
+<li>Object Oriented programming is a very structured approach to code reuse.</li>
 <li>We can group data and functionality together and create many independent instances of a class</li>
 </ul>
 <h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>本章的slide链接：<a><a href="http://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-13a-Objects.pdf" target="_blank" rel="external">http://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-13a-Objects.pdf</a></a></p>
@@ -126,7 +126,7 @@
     <link href="http://yibeichen.me/2016/07/25/Reread-Echo/"/>
     <id>http://yibeichen.me/2016/07/25/Reread-Echo/</id>
     <published>2016-07-25T09:15:20.000Z</published>
-    <updated>2016-07-25T13:41:20.000Z</updated>
+    <updated>2016-07-27T08:33:39.000Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://www.douban.com/group/topic/26705512/" target="_blank" rel="external">如果有来生</a></p>
 <p>不要抱歉 不要告别</p>
@@ -167,7 +167,7 @@
     <link href="http://yibeichen.me/2016/07/24/To-HUST/"/>
     <id>http://yibeichen.me/2016/07/24/To-HUST/</id>
     <published>2016-07-24T06:35:55.000Z</published>
-    <updated>2016-07-25T10:59:13.000Z</updated>
+    <updated>2016-07-27T08:33:03.000Z</updated>
     
     <content type="html"><![CDATA[<p>搭完博客的那天，想到了这个题目。假如我的珞珈山和凌波门看见，不知道会怎么想。</p>
 <p>其实，这篇是关于一些不算远的回忆。</p>
@@ -211,7 +211,7 @@
     <link href="http://yibeichen.me/2016/07/23/PR4E-Chapter-13-2-assignment/"/>
     <id>http://yibeichen.me/2016/07/23/PR4E-Chapter-13-2-assignment/</id>
     <published>2016-07-23T10:46:36.000Z</published>
-    <updated>2016-07-25T14:03:33.000Z</updated>
+    <updated>2016-07-27T08:33:35.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong>超级尴尬</strong><br>今天的两道题目跟github不和，这篇文章<code>$ hexo g -d</code>和<code>$ hexo s</code>的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！</p>
 <hr>
@@ -231,15 +231,15 @@
 <h2 id="Service-Oriented-Approach"><a href="#Service-Oriented-Approach" class="headerlink" title="Service Oriented Approach"></a>Service Oriented Approach</h2><p>一个非常有趣的视频 <a href="https://www.coursera.org/learn/python-network-data/lecture/0CpCx/video-service-oriented-architectures" target="_blank" rel="external">Service Oriented Architectures</a><br>突然想起来这是课程视频，没enroll应该就看不了……<br>为了通过quiz，我把这个视频前前后后看了三遍……</p>
 <h2 id="Accessing-APIs-in-Python"><a href="#Accessing-APIs-in-Python" class="headerlink" title="Accessing APIs in Python"></a>Accessing APIs in Python</h2><p>SOAP - Simple Object Access Protocol (software)<br>REST - Representational State Transfer (resource focused)<br>Google  Geocoding APIs<br>→ make the URL and retrieve the URL</p>
 <h2 id="APIs-Security-and-Rate-Limiting"><a href="#APIs-Security-and-Rate-Limiting" class="headerlink" title="APIs Security and Rate Limiting"></a>APIs Security and Rate Limiting</h2><p>APIs are not “free”<br>Twitter APIs (authentication)—— OAuth<br>→ make the URL, augment it with the signature stuff on it, then get a request on that URL</p>
-<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>Service Oriented Architectures - allows an application to be broken into parts and distributed across a network </p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>Service Oriented Architectures - allows an application to be broken into parts and distributed across a network</p>
 <p>An Application Program Interface (API) is a contract for interaction</p>
 <p>Web Services provide infrastructure for applications cooperating (an API) over a network - SOAP and REST are two styles of web services</p>
 <p>XML and JSON are serialization formats</p>
 <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><h2 id="习题A"><a href="#习题A" class="headerlink" title="习题A"></a>习题A</h2><p><img src="http://ww3.sinaimg.cn/large/72f96cbagw1f641ndgayrj20vx0g5tc1.jpg" alt="19:01:52.jpg"></p>
 <h2 id="习题B"><a href="#习题B" class="headerlink" title="习题B"></a>习题B</h2><p><img src="http://ww1.sinaimg.cn/large/72f96cbagw1f641p7mhgzj20vx0iv0xp.jpg" alt="19:03:38.jpg"></p>
-<h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><h2 id="习题A-1"><a href="#习题A-1" class="headerlink" title="习题A"></a>习题A</h2><h3 id="我的答案①"><a href="#我的答案①" class="headerlink" title="我的答案①"></a>我的答案①</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> json</div><div class="line"></div><div class="line">input = <span class="string">'''</span></div><div class="line">[</div><div class="line">	&#123;</div><div class="line">	  name: "Matthias"</div><div class="line">	  count: 97</div><div class="line">	&#125;,</div><div class="line">	&#123;</div><div class="line">	  name: "Geomer"</div><div class="line">	  count: 97</div><div class="line">	&#125;</div><div class="line">	...</div><div class="line">  ]</div><div class="line">'''</div><div class="line"></div><div class="line">info = json.loads(input)</div><div class="line"><span class="keyword">print</span> <span class="string">'User count:'</span>, len(info)</div><div class="line">s = []</div><div class="line"><span class="keyword">for</span> item <span class="keyword">in</span> info: </div><div class="line">    count = item[<span class="string">'count'</span>]</div><div class="line">    s.append(int(count))</div><div class="line"><span class="keyword">print</span> sum(s)</div></pre></td></tr></table></figure>
-<h3 id="我的答案②"><a href="#我的答案②" class="headerlink" title="我的答案②"></a>我的答案②</h3><figure class="highlight gradle"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> urllib</div><div class="line"><span class="keyword">import</span> json</div><div class="line"></div><div class="line">url = raw_input(<span class="string">'Enter location- '</span>)</div><div class="line"></div><div class="line">data = urllib.urlopen(url).<span class="keyword">read</span>()</div><div class="line"></div><div class="line">info = json.loads(data)</div><div class="line"></div><div class="line">s = []</div><div class="line"><span class="keyword">for</span> item in info: </div><div class="line">    <span class="keyword">count</span> = item[<span class="string">'count'</span>]</div><div class="line">    s.<span class="keyword">append</span>(<span class="keyword">int</span>(<span class="keyword">count</span>))</div><div class="line"><span class="keyword">print</span> sum(s)</div></pre></td></tr></table></figure>
-<h3 id="别人的答案"><a href="#别人的答案" class="headerlink" title="别人的答案"></a>别人的答案</h3><figure class="highlight haskell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> urllib</div><div class="line"><span class="keyword">import</span> json</div><div class="line"></div><div class="line"><span class="title">url</span> = raw_input('<span class="type">Enter</span> location- ')</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">data</span> = urllib.urlopen(<span class="title">url</span>).read()</span></div><div class="line"></div><div class="line"><span class="title">info</span> = json.loads(<span class="class"><span class="keyword">data</span>)</span></div><div class="line"></div><div class="line"><span class="title">comments</span> = info[<span class="string">"comments"</span>]</div><div class="line"></div><div class="line"><span class="title">s</span> = []</div><div class="line"><span class="title">for</span> item <span class="keyword">in</span> comments: </div><div class="line">    count = item['count']</div><div class="line">    s.append(count)</div><div class="line"><span class="title">print</span> <span class="string">"Sum: &#123;0&#125;"</span>.format(sum(s))</div></pre></td></tr></table></figure>
+<h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><h2 id="习题A-1"><a href="#习题A-1" class="headerlink" title="习题A"></a>习题A</h2><h3 id="我的答案①"><a href="#我的答案①" class="headerlink" title="我的答案①"></a>我的答案①</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> json</div><div class="line"></div><div class="line">input = <span class="string">'''</span></div><div class="line">[</div><div class="line">	&#123;</div><div class="line">	  name: "Matthias"</div><div class="line">	  count: 97</div><div class="line">	&#125;,</div><div class="line">	&#123;</div><div class="line">	  name: "Geomer"</div><div class="line">	  count: 97</div><div class="line">	&#125;</div><div class="line">	...</div><div class="line">  ]</div><div class="line">'''</div><div class="line"></div><div class="line">info = json.loads(input)</div><div class="line"><span class="keyword">print</span> <span class="string">'User count:'</span>, len(info)</div><div class="line">s = []</div><div class="line"><span class="keyword">for</span> item <span class="keyword">in</span> info:</div><div class="line">    count = item[<span class="string">'count'</span>]</div><div class="line">    s.append(int(count))</div><div class="line"><span class="keyword">print</span> sum(s)</div></pre></td></tr></table></figure>
+<h3 id="我的答案②"><a href="#我的答案②" class="headerlink" title="我的答案②"></a>我的答案②</h3><figure class="highlight gradle"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> urllib</div><div class="line"><span class="keyword">import</span> json</div><div class="line"></div><div class="line">url = raw_input(<span class="string">'Enter location- '</span>)</div><div class="line"></div><div class="line">data = urllib.urlopen(url).<span class="keyword">read</span>()</div><div class="line"></div><div class="line">info = json.loads(data)</div><div class="line"></div><div class="line">s = []</div><div class="line"><span class="keyword">for</span> item in info:</div><div class="line">    <span class="keyword">count</span> = item[<span class="string">'count'</span>]</div><div class="line">    s.<span class="keyword">append</span>(<span class="keyword">int</span>(<span class="keyword">count</span>))</div><div class="line"><span class="keyword">print</span> sum(s)</div></pre></td></tr></table></figure>
+<h3 id="别人的答案"><a href="#别人的答案" class="headerlink" title="别人的答案"></a>别人的答案</h3><figure class="highlight haskell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> urllib</div><div class="line"><span class="keyword">import</span> json</div><div class="line"></div><div class="line"><span class="title">url</span> = raw_input('<span class="type">Enter</span> location- ')</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">data</span> = urllib.urlopen(<span class="title">url</span>).read()</span></div><div class="line"></div><div class="line"><span class="title">info</span> = json.loads(<span class="class"><span class="keyword">data</span>)</span></div><div class="line"></div><div class="line"><span class="title">comments</span> = info[<span class="string">"comments"</span>]</div><div class="line"></div><div class="line"><span class="title">s</span> = []</div><div class="line"><span class="title">for</span> item <span class="keyword">in</span> comments:</div><div class="line">    count = item['count']</div><div class="line">    s.append(count)</div><div class="line"><span class="title">print</span> <span class="string">"Sum: &#123;0&#125;"</span>.format(sum(s))</div></pre></td></tr></table></figure>
 <h2 id="习题B-1"><a href="#习题B-1" class="headerlink" title="习题B"></a>习题B</h2><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">import urllib</div><div class="line">import json</div><div class="line"></div><div class="line">serviceurl = <span class="string">'http://python-data.dr-chuck.net/geojson?'</span></div><div class="line"></div><div class="line"><span class="keyword">while</span> True:</div><div class="line">    address = raw_input(<span class="string">'Enter location: '</span>)</div><div class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(address) &lt; <span class="number">1</span> : <span class="keyword">break</span></div><div class="line"></div><div class="line">    url = serviceurl + urllib.urlencode(&#123;<span class="string">'sensor'</span>:<span class="string">'false'</span>, <span class="string">'address'</span>: address&#125;)</div><div class="line">    <span class="keyword">print</span> <span class="string">'Retrieving'</span>, url</div><div class="line">    uh = urllib.urlopen(url)</div><div class="line">    data = uh.<span class="keyword">read</span>()</div><div class="line">    <span class="keyword">print</span> <span class="string">'Retrieved'</span>,<span class="built_in">len</span>(data),<span class="string">'characters'</span></div><div class="line"></div><div class="line">    <span class="keyword">try</span>: js = json.loads(str(data))</div><div class="line">    excep<span class="variable">t:</span> js = None</div><div class="line">    <span class="keyword">if</span> <span class="string">'status'</span> not in js <span class="built_in">or</span> js[<span class="string">'status'</span>] != <span class="string">'OK'</span>:</div><div class="line">        <span class="keyword">print</span> <span class="string">'==== Failure To Retrieve ===='</span></div><div class="line">        <span class="keyword">print</span> data</div><div class="line">        <span class="keyword">continue</span></div><div class="line"></div><div class="line">    <span class="keyword">print</span> json.dumps(js, <span class="built_in">indent</span>=<span class="number">4</span>)</div><div class="line">    #lat = js[<span class="string">"results"</span>][<span class="number">0</span>][<span class="string">"geometry"</span>][<span class="string">"location"</span>][<span class="string">"lat"</span>]</div><div class="line">    #lng = js[<span class="string">"results"</span>][<span class="number">0</span>][<span class="string">"geometry"</span>][<span class="string">"location"</span>][<span class="string">"lng"</span>]</div><div class="line">    #print <span class="string">'lat'</span>,<span class="keyword">lat</span>,<span class="string">'lng'</span>,lng</div><div class="line">    location = js[<span class="string">'results'</span>][<span class="number">0</span>][<span class="string">'place_id'</span>]</div><div class="line">    <span class="keyword">print</span> location</div></pre></td></tr></table></figure>
 <h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><h2 id="习题A-2"><a href="#习题A-2" class="headerlink" title="习题A"></a>习题A</h2><p>先说我的第一个答案吧，其实我先写的是利用urllib抓取url，但是出错了，就用了笨办法，把数据copy到Python文件里了，算出了答案2838，然而，这个不能提交上去，太长了。所以还是得用抓取url的办法，那第一个答案成功了，没有报错，只是说明我的代码应该都没问题呀，是吧？<br>然而，只把前半部分改成urllib而已，就开始不断报错报错。用print len(info)测试，始终得到的是2，应该50才对啊，第一版那个笨答案算对了。（算了算了，刚刚拿最后一版的正确coding测试还是2，不知道问题出在哪了呀。）</p>
 <p>到第二版答案了，其实第二版答案里还包含了无数个版本，而且我写在这里的其实还是会报错，但是错的答案也是需要拿出来警示一下的。<br>一直报错的是<code>count = item[&#39;count&#39;]</code>，说<code>string indices must be integers</code>，低智如我，就卡在这句，不停改不停改，int/str换来换去……一点用都没有！</p>
@@ -279,14 +279,14 @@
     <link href="http://yibeichen.me/2016/07/22/PR4E-Chapter-13-1-assignment/"/>
     <id>http://yibeichen.me/2016/07/22/PR4E-Chapter-13-1-assignment/</id>
     <published>2016-07-22T11:03:26.000Z</published>
-    <updated>2016-07-23T05:42:16.000Z</updated>
+    <updated>2016-07-27T08:33:33.000Z</updated>
     
-    <content type="html"><![CDATA[<p>本节课介绍XML，下一节课介绍JSON。 </p>
+    <content type="html"><![CDATA[<p>本节课介绍XML，下一节课介绍JSON。</p>
 <p>如何判断一次课程难不难？看我做作业的时候有没有借助外力就知道了。其实我是借助了教材，而且老师一开始就说了呀，本周的作业很容易！然而……</p>
 <p>Again and again and again, I was stuck at the stage of converting a string into an integrate and making a sum.</p>
 <a id="more"></a>
 <p>以下是quiz中遇到的几个知识点：</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">XML</span> <span class="title">Basics</span>：</div><div class="line"><span class="literal">start</span> <span class="keyword">tag</span></div><div class="line"><span class="title">end</span> <span class="keyword">tag</span></div><div class="line"><span class="title">text</span> content </div><div class="line"><span class="keyword">attribute</span></div><div class="line">self closing <span class="keyword">tag</span></div><div class="line"></div><div class="line"><span class="title">XSD</span> Structure</div><div class="line">xs:element</div><div class="line">xs:sequence</div><div class="line">xs:complexType</div><div class="line"></div><div class="line"><span class="keyword">XML</span> <span class="title">Tree</span></div><div class="line"></div><div class="line">parsing →→→ de-serialization</div></pre></td></tr></table></figure>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">XML</span> <span class="title">Basics</span>：</div><div class="line"><span class="literal">start</span> <span class="keyword">tag</span></div><div class="line"><span class="title">end</span> <span class="keyword">tag</span></div><div class="line"><span class="title">text</span> content</div><div class="line"><span class="keyword">attribute</span></div><div class="line">self closing <span class="keyword">tag</span></div><div class="line"></div><div class="line"><span class="title">XSD</span> Structure</div><div class="line">xs:element</div><div class="line">xs:sequence</div><div class="line">xs:complexType</div><div class="line"></div><div class="line"><span class="keyword">XML</span> <span class="title">Tree</span></div><div class="line"></div><div class="line">parsing →→→ de-serialization</div></pre></td></tr></table></figure>
 <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>In this assignment you will write a Python program somewhat similar to <a href="http://www.pythonlearn.com/code/geoxml.py" target="_blank" rel="external">http://www.pythonlearn.com/code/geoxml.py</a>. The program will prompt for a URL, read the XML data from that URL using urllib and then parse and extract the comment counts from the XML data, compute the sum of the numbers in the file.</p>
 <p>We provide two files for this assignment. One is a sample file where we give you the sum for your testing and the other is the actual data you need to process for the assignment.</p>
 <ul>
@@ -316,7 +316,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     
     <summary type="html">
     
-      &lt;p&gt;本节课介绍XML，下一节课介绍JSON。 &lt;/p&gt;
+      &lt;p&gt;本节课介绍XML，下一节课介绍JSON。&lt;/p&gt;
 &lt;p&gt;如何判断一次课程难不难？看我做作业的时候有没有借助外力就知道了。其实我是借助了教材，而且老师一开始就说了呀，本周的作业很容易！然而……&lt;/p&gt;
 &lt;p&gt;Again and again and again, I was stuck at the stage of converting a string into an integrate and making a sum.&lt;/p&gt;
     
@@ -334,9 +334,9 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     <link href="http://yibeichen.me/2016/07/22/Something-about-Hexo/"/>
     <id>http://yibeichen.me/2016/07/22/Something-about-Hexo/</id>
     <published>2016-07-22T03:58:28.000Z</published>
-    <updated>2016-07-27T07:21:16.000Z</updated>
+    <updated>2016-07-27T08:33:07.000Z</updated>
     
-    <content type="html"><![CDATA[<p>0727更新：自定义导航、七牛图床、弃用Mou改为Atom</p>
+    <content type="html"><![CDATA[<p>0727：<br>自定义导航、七牛图床、弃用Mou改为Atom</p>
 <p>0722：<br>7月17日的晚上，开始决定要用github+hexo搭一个博客。</p>
 <p>7月7日，阿冰说准备用WordPress搭个博客，行动好快，她迅速买了域名，搭了框架，噼里啪啦，今天去她那看了看，7月9日就已经发了文章了。（目测某冰应该不是跟我一样，把文章搬上来还非得改成原始发布时间。）</p>
 <p>隆重（这地不知道哪天才有人气，也敢称隆重？）推荐：<a href="http://chatnone.com" target="_blank" rel="external"><strong>ChatNone</strong></a></p>
@@ -411,7 +411,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
 <p>不过在用七牛图床的时候出现了一个bug：</p>
 <p><code>{&quot;error&quot;:&quot;download token not specified&quot;}</code></p>
 <p>悲伤的是，我不知道怎么解决它，先放着吧，等脑袋扩容了再来想这件事。</p>
-<p>0727更新:<br>七牛图床的问题和他们的技术沟通过了，已解决。原因是因为我开启了“原图保护”，导致外部文件访问图片受阻，类似是跟“私有空间”同一个效果，关闭以后就正常了。</p>
+<p>0727:<br>七牛图床的问题和他们的技术沟通过了，已解决。原因是因为我开启了“原图保护”，导致外部文件访问图片受阻，类似是跟“私有空间”同一个效果，关闭以后就正常了。</p>
 <h2 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h2><p>聊天之前先上文档：</p>
 <p><a href="http://wowubuntu.com/markdown/index.html" target="_blank" rel="external">Markdown 语法说明 (简体中文版)</a></p>
 <p><a href="https://wizardforcel.gitbooks.io/markdown-simple-world/content/index.html" target="_blank" rel="external">Markdown - 简单的世界</a></p>
@@ -426,7 +426,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     
     <summary type="html">
     
-      &lt;p&gt;0727更新：自定义导航、七牛图床、弃用Mou改为Atom&lt;/p&gt;
+      &lt;p&gt;0727：&lt;br&gt;自定义导航、七牛图床、弃用Mou改为Atom&lt;/p&gt;
 &lt;p&gt;0722：&lt;br&gt;7月17日的晚上，开始决定要用github+hexo搭一个博客。&lt;/p&gt;
 &lt;p&gt;7月7日，阿冰说准备用WordPress搭个博客，行动好快，她迅速买了域名，搭了框架，噼里啪啦，今天去她那看了看，7月9日就已经发了文章了。（目测某冰应该不是跟我一样，把文章搬上来还非得改成原始发布时间。）&lt;/p&gt;
 &lt;p&gt;隆重（这地不知道哪天才有人气，也敢称隆重？）推荐：&lt;a href=&quot;http://chatnone.com&quot;&gt;&lt;strong&gt;ChatNone&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
@@ -444,7 +444,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     <link href="http://yibeichen.me/2016/07/21/PR4E-Chapter-12-2-assignment/"/>
     <id>http://yibeichen.me/2016/07/21/PR4E-Chapter-12-2-assignment/</id>
     <published>2016-07-21T11:21:49.000Z</published>
-    <updated>2016-07-22T12:37:17.000Z</updated>
+    <updated>2016-07-27T08:33:31.000Z</updated>
     
     <content type="html"><![CDATA[<p>老师说，之前我们都是start with the hard way, then the easy way，本周我们直接start with the easy way。（然而，本周的题目折磨得我死去活来……）介绍了BeautifulSoup，比如可以直接解析网站中的<strong>a</strong>标签。</p>
 <p>库名出自于一本儿童读物？还蛮有意思的。</p>
@@ -516,7 +516,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     <link href="http://yibeichen.me/2016/07/20/PR4E-Chapter-12-1-assignment/"/>
     <id>http://yibeichen.me/2016/07/20/PR4E-Chapter-12-1-assignment/</id>
     <published>2016-07-20T13:42:59.000Z</published>
-    <updated>2016-07-22T10:30:23.000Z</updated>
+    <updated>2016-07-27T08:33:30.000Z</updated>
     
     <content type="html"><![CDATA[<p>这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。<br><a id="more"></a><br>用socket会读取文档描述的头部信息和文档内容，而urllib更高级一点，默认你已经知晓头部信息了，直接读取文档内容。</p>
 <p>tips：保存文件的时候不要直接命名为socket.py和urllib.py。</p>
@@ -543,7 +543,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
 <h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>这道题简直是小学生水平，老师已经把py都写好了，因为我用的就是第一种方法，直接copy了socket1.py的代码，用terminal运行就得出了头部信息，正常来说，我还应该试一下第二和第三种方法，然而我懒……</p>
 <p>关于第三种方法，telnet program，把老师的slide给扒下来了<br>其实这是一种hack方式……</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ telnet www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span> <span class="number">80</span></div><div class="line">Trying <span class="number">74.208</span>.<span class="number">28.177</span>...</div><div class="line">Connected <span class="keyword">to</span> www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span>.</div><div class="line">Escape character <span class="keyword">is</span> <span class="string">'^]'</span>.</div><div class="line">GET http://www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span>/page1.htm</div></pre></td></tr></table></figure>
-<p>GET后面是应该有两次换行的，所以写到Python里的时候是 \n\n </p>
+<p>GET后面是应该有两次换行的，所以写到Python里的时候是 \n\n</p>
 <p>但是我在本地用$ telnet命令就不对，返回的是<br><code>www.dr-chunk.com: nodename nor servname provided, or not known</code></p>
 <p>我怀疑是端口80的问题，啊，这又是个坑，总之关于HTTP的都要补课</p>
 <h1 id="补充材料"><a href="#补充材料" class="headerlink" title="补充材料"></a>补充材料</h1><p>book：<a href="http://www.net-intro.com/" target="_blank" rel="external">Introduction to Networking</a><br>course：<a href="https://www.coursera.org/learn/internet-history" target="_blank" rel="external">Internet History, Technology, and Security</a></p>
@@ -567,9 +567,10 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     <link href="http://yibeichen.me/2016/07/20/Listen-to-Music/"/>
     <id>http://yibeichen.me/2016/07/20/Listen-to-Music/</id>
     <published>2016-07-20T06:41:53.000Z</published>
-    <updated>2016-07-26T09:56:49.000Z</updated>
+    <updated>2016-07-27T08:33:20.000Z</updated>
     
-    <content type="html"><![CDATA[<p>0726<br>艺术真是要比编程难多了，可编程也是艺术啊，不是么？<br>0724<br>字幕是英文的，所以就直接弄下下来了，“尊重原著”嘛，其实是懒。<br>万一有一天再考G/T，这个就当是 听力/阅读 的背景材料啦。</p>
+    <content type="html"><![CDATA[<p>0726：<br>艺术真是要比编程难多了，可编程也是艺术啊，不是么？</p>
+<p>0724：<br>字幕是英文的，所以就直接弄下下来了，“尊重原著”嘛，其实是懒。<br>万一有一天再考G/T，这个就当是 听力/阅读 的背景材料啦。</p>
 <a id="more"></a>
 <h1 id="What-Is-Music"><a href="#What-Is-Music" class="headerlink" title="What Is Music?"></a>What Is Music?</h1><h2 id="1-Why-we-Like-What-we-Like"><a href="#1-Why-we-Like-What-we-Like" class="headerlink" title="1 Why we Like What we Like"></a>1 Why we Like What we Like</h2><h3 id="1-1-Introduction"><a href="#1-1-Introduction" class="headerlink" title="1.1 Introduction"></a>1.1 Introduction</h3><p>Art is life, art is another life, a life of imagination.</p>
 <blockquote>
@@ -652,7 +653,8 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     
     <summary type="html">
     
-      &lt;p&gt;0726&lt;br&gt;艺术真是要比编程难多了，可编程也是艺术啊，不是么？&lt;br&gt;0724&lt;br&gt;字幕是英文的，所以就直接弄下下来了，“尊重原著”嘛，其实是懒。&lt;br&gt;万一有一天再考G/T，这个就当是 听力/阅读 的背景材料啦。&lt;/p&gt;
+      &lt;p&gt;0726：&lt;br&gt;艺术真是要比编程难多了，可编程也是艺术啊，不是么？&lt;/p&gt;
+&lt;p&gt;0724：&lt;br&gt;字幕是英文的，所以就直接弄下下来了，“尊重原著”嘛，其实是懒。&lt;br&gt;万一有一天再考G/T，这个就当是 听力/阅读 的背景材料啦。&lt;/p&gt;
     
     </summary>
     
@@ -668,7 +670,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     <link href="http://yibeichen.me/2016/07/19/PR4E-Chapter-11-assignment/"/>
     <id>http://yibeichen.me/2016/07/19/PR4E-Chapter-11-assignment/</id>
     <published>2016-07-19T07:24:11.000Z</published>
-    <updated>2016-07-27T07:45:04.000Z</updated>
+    <updated>2016-07-27T08:33:28.000Z</updated>
     
     <content type="html"><![CDATA[<p>正则表达式最常用的是search（）和findall（）<br><a id="more"></a></p>
 <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>The basic outline of this problem is to read the file, look for integers using the re.findall(), looking for a regular expression of ‘[0-9]+’ and then converting the extracted strings to integers and summing up the integers.</p>
@@ -765,7 +767,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     <link href="http://yibeichen.me/2016/07/18/PR4E-Chapter-10-assignment/"/>
     <id>http://yibeichen.me/2016/07/18/PR4E-Chapter-10-assignment/</id>
     <published>2016-07-18T06:39:13.000Z</published>
-    <updated>2016-07-27T07:44:59.000Z</updated>
+    <updated>2016-07-27T08:33:26.000Z</updated>
     
     <content type="html"><![CDATA[<p>元组不复杂，和列表字典都有点相似，当然，又完全不相同。元组是不可变的。所以，感觉它是辅助列表字典进行运算的？<br><a id="more"></a></p>
 <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>10.2 Write a program to read through the mbox-short.txt and figure out the distribution by hour of the day for each of the messages. You can pull the hour out from the ‘From ‘ line by finding the time and then splitting the string a second time using a colon.<br><code>From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008</code><br>Once you have accumulated the counts for each hour, print out the counts, sorted by hour as shown below.</p>
@@ -794,7 +796,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     <link href="http://yibeichen.me/2016/07/08/Learning-How-To-Learn/"/>
     <id>http://yibeichen.me/2016/07/08/Learning-How-To-Learn/</id>
     <published>2016-07-07T16:06:40.000Z</published>
-    <updated>2016-07-22T07:25:31.000Z</updated>
+    <updated>2016-07-27T08:33:22.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Learning How to Learn: Powerful mental tools to help you master tough subjects（如何学习：学习困难科目的实用思维方法 ）</strong></p>
 <p>阅读材料：《A Mind for Numbers》</p>
@@ -937,7 +939,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
 <p>也就是说，当你使用了类比，既学习了新知识，又巩固了旧知识。</p>
 <h3 id="不要嫉妒天才们"><a href="#不要嫉妒天才们" class="headerlink" title="不要嫉妒天才们"></a>不要嫉妒天才们</h3><p>讲真，做到这点好难，我倒不是嫉妒他们，每当我看到他们的时候，我都会痛恨自己为什么这么不天才。</p>
 <blockquote>
-<p>Being smarter often equates to having a larger working memory. Your hot rod of a memory may be able to hold nine things in mind instead of four and you can latch on to those things like a bulldog, which  makes it easier to learn. But guess what, it also makes it more difficult for you to be creative. How’s that?  It’s our old friend and enemy Einstellung. </p>
+<p>Being smarter often equates to having a larger working memory. Your hot rod of a memory may be able to hold nine things in mind instead of four and you can latch on to those things like a bulldog, which  makes it easier to learn. But guess what, it also makes it more difficult for you to be creative. How’s that?  It’s our old friend and enemy Einstellung.</p>
 </blockquote>
 <p>就是说聪明的人，脑容量大存储效率又高，很难塞进去新的东西，很容易就形成思维定势。嗯，换句话说，我们这些普通人，虽然懂得少，但是有潜力啊！</p>
 <p>最近在看另一本书《The Talent Code》，推崇deep practice，认为天赋和成就并没有什么必然的联系，关键在于有效的练习。</p>
@@ -990,7 +992,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     <link href="http://yibeichen.me/2016/04/20/Try-Poem/"/>
     <id>http://yibeichen.me/2016/04/20/Try-Poem/</id>
     <published>2016-04-20T09:00:42.000Z</published>
-    <updated>2016-07-27T07:44:11.000Z</updated>
+    <updated>2016-07-27T08:32:52.000Z</updated>
     
     <content type="html"><![CDATA[<p>To My Muse</p>
 <p>她来一天<br>我就写一行</p>
