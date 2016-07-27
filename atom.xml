@@ -668,7 +668,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     <link href="http://yibeichen.me/2016/07/19/PR4E-Chapter-11-assignment/"/>
     <id>http://yibeichen.me/2016/07/19/PR4E-Chapter-11-assignment/</id>
     <published>2016-07-19T07:24:11.000Z</published>
-    <updated>2016-07-22T10:29:55.000Z</updated>
+    <updated>2016-07-27T07:45:04.000Z</updated>
     
     <content type="html"><![CDATA[<p>正则表达式最常用的是search（）和findall（）<br><a id="more"></a></p>
 <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>The basic outline of this problem is to read the file, look for integers using the re.findall(), looking for a regular expression of ‘[0-9]+’ and then converting the extracted strings to integers and summing up the integers.</p>
@@ -679,7 +679,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
 <h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>两个问题：</p>
 <p>1）第一次split后出现列表嵌套不知道该怎么办了，差点用上了字典，后来翻到《列表》的作业才想起来用append加到另一个列表。</p>
 <p>2）表达式出错了，第一次用的是[0-9]+？，也不知道为什么在这用了一个非贪婪模式，是担心会把后面的单词也写进来了吗？真是杞人忧天。然后发现’’这个单引号没加。输出之后变成了单个的数字，于是在？后加了一个空格。但计算结果还是不对，对着txt找半天，原来是把line结尾处的数字落下了，因为那个数字后面没有空格。好吧，空格和？都去掉了，算对了！之前真是瞎折腾。</p>
-<h1 id="Cheat-Sheet"><a href="#Cheat-Sheet" class="headerlink" title="Cheat Sheet :)"></a>Cheat Sheet :)</h1><table>
+<h1 id="Cheat-Sheet"><a href="#Cheat-Sheet" class="headerlink" title="Cheat Sheet"></a>Cheat Sheet</h1><table>
 <thead>
 <tr>
 <th>表达式</th>
@@ -765,7 +765,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     <link href="http://yibeichen.me/2016/07/18/PR4E-Chapter-10-assignment/"/>
     <id>http://yibeichen.me/2016/07/18/PR4E-Chapter-10-assignment/</id>
     <published>2016-07-18T06:39:13.000Z</published>
-    <updated>2016-07-22T10:31:51.000Z</updated>
+    <updated>2016-07-27T07:44:59.000Z</updated>
     
     <content type="html"><![CDATA[<p>元组不复杂，和列表字典都有点相似，当然，又完全不相同。元组是不可变的。所以，感觉它是辅助列表字典进行运算的？<br><a id="more"></a></p>
 <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>10.2 Write a program to read through the mbox-short.txt and figure out the distribution by hour of the day for each of the messages. You can pull the hour out from the ‘From ‘ line by finding the time and then splitting the string a second time using a colon.<br><code>From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008</code><br>Once you have accumulated the counts for each hour, print out the counts, sorted by hour as shown below.</p>
@@ -990,7 +990,7 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     <link href="http://yibeichen.me/2016/04/20/Try-Poem/"/>
     <id>http://yibeichen.me/2016/04/20/Try-Poem/</id>
     <published>2016-04-20T09:00:42.000Z</published>
-    <updated>2016-07-24T09:11:46.000Z</updated>
+    <updated>2016-07-27T07:44:11.000Z</updated>
     
     <content type="html"><![CDATA[<p>To My Muse</p>
 <p>她来一天<br>我就写一行</p>
@@ -1001,8 +1001,8 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
 <p>他对米、面过敏<br>他对一切东西都过敏<br>他是对生活过敏<br>               ——廖一梅《恋爱的犀牛》</p>
 </blockquote>
 <h1 id="旅途"><a href="#旅途" class="headerlink" title="旅途"></a>旅途</h1><p>如果<br>还希望<br>我对武汉留有<br>一点<br>美好的念想<br>就 不要<br>逼我乘汽车 来回<br>因为<br>坐一次<br>恨一次<br>从前那些回忆<br>禁不起这样浪费</p>
-<h1 id="伤害"><a href="#伤害" class="headerlink" title="伤害"></a>伤害</h1><p>下午四点的校图书馆前<br>白玉兰和银杏的阴影还是原样<br>以为<br>什么都没变<br>直到<br>半夜同时醒来的胃疼<br>说<br>把离开的七百多天<br>塞进两餐饭里<br>真是徒劳 </p>
-<h1 id="我这样的生活"><a href="#我这样的生活" class="headerlink" title="我这样的生活"></a>我这样的生活</h1><p>我<br>站在大地上 融化<br>你走过来<br>抓起一把 残雪<br>那是我唯一存在的证据<br>但是<br>它最终被这样夺走</p>
+<h1 id="伤害"><a href="#伤害" class="headerlink" title="伤害"></a>伤害</h1><p>下午四点的校图书馆前<br>白玉兰和银杏的阴影还是原样<br>以为<br>什么都没变<br>直到<br>半夜同时醒来的胃疼<br>说<br>把离开的七百多天<br>塞进两餐饭里<br>真是徒劳</p>
+<h1 id="我这样的生活"><a href="#我这样的生活" class="headerlink" title="我这样的生活"></a>我这样的生活</h1><p>我<br>站在大地上 融化<br>你走过来<br>抓起一把<br>我曾存在的证据<br>它最终被这样夺走</p>
 <h1 id="Poor-language"><a href="#Poor-language" class="headerlink" title="Poor language"></a>Poor language</h1><p>I envy you.<br>I envy the things that you feel and touch, that you speak out and write down.<br>I envy you because I am this so average one with mediocre talent.<br>Envy leads to toss and turn.</p>
 ]]></content>
     
