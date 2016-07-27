@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-26T16:42:13.000Z</updated>
+  <updated>2016-07-27T05:41:58.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -20,9 +20,11 @@
     <link href="http://yibeichen.me/2016/07/27/no-desire-to-study/"/>
     <id>http://yibeichen.me/2016/07/27/no-desire-to-study/</id>
     <published>2016-07-26T16:07:07.000Z</published>
-    <updated>2016-07-26T16:42:13.000Z</updated>
+    <updated>2016-07-27T05:41:58.000Z</updated>
     
-    <content type="html"><![CDATA[<p>今天发现，本月的VPN流量已经用完了，于是，再也无心学习。</p>
+    <content type="html"><![CDATA[<p>0727 13:25:00<br>一天也不能忍，哦不，12个小时都忍不了，中午刚开电脑就跑去补了15G的套餐，焦灼地等待了一个小时之后，终于生效了。<br>从此又是手脚齐全的人了。<br>Atom插件顺利安装！</p>
+<hr>
+<p>今天发现，本月的VPN流量已经用完了，于是，再也无心学习。</p>
 <blockquote>
 <p>没有VPN的时候你怎么活的？<br>我有前公司给的chrome插件啊。<br>那在前公司之前呢？<br>前前公司自带VPN，随时随地科学上网……</p>
 </blockquote>
@@ -45,7 +47,9 @@
     
     <summary type="html">
     
-      &lt;p&gt;今天发现，本月的VPN流量已经用完了，于是，再也无心学习。&lt;/p&gt;
+      &lt;p&gt;0727 13:25:00&lt;br&gt;一天也不能忍，哦不，12个小时都忍不了，中午刚开电脑就跑去补了15G的套餐，焦灼地等待了一个小时之后，终于生效了。&lt;br&gt;从此又是手脚齐全的人了。&lt;br&gt;Atom插件顺利安装！&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;今天发现，本月的VPN流量已经用完了，于是，再也无心学习。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;没有VPN的时候你怎么活的？&lt;br&gt;我有前公司给的chrome插件啊。&lt;br&gt;那在前公司之前呢？&lt;br&gt;前前公司自带VPN，随时随地科学上网……&lt;/p&gt;
 &lt;/blockquote&gt;
