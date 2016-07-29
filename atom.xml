@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-29T15:58:23.000Z</updated>
+  <updated>2016-07-29T16:10:26.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -20,9 +20,18 @@
     <link href="http://yibeichen.me/2016/07/29/PR4E-Chapter-14-2-assignment/"/>
     <id>http://yibeichen.me/2016/07/29/PR4E-Chapter-14-2-assignment/</id>
     <published>2016-07-29T06:18:39.000Z</published>
-    <updated>2016-07-29T15:58:23.000Z</updated>
+    <updated>2016-07-29T16:10:26.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="Designing-a-Data-Model"><a href="#Designing-a-Data-Model" class="headerlink" title="Designing a Data Model"></a>Designing a Data Model</h2><h3 id="Building-a-Data-Model"><a href="#Building-a-Data-Model" class="headerlink" title="Building a Data Model"></a>Building a Data Model</h3><ul>
+    <content type="html"><![CDATA[<p>看教材的时候发现，有几个知识点是书上解释了但是视频没解释就直接写了的，比如cur():</p>
+<blockquote>
+<p>游标(cursor)类似一个文件句柄，可以对数据库中的数据执行操作。当处理文本文件时，cursor()的调用与open()方法相似。<br>当有个游标，使用execute()方法，对数据库的内容执行命令。</p>
+</blockquote>
+<p>比如fetchone()：</p>
+<blockquote>
+<p>如果try部分进展顺利，使用fetchone()[0]获取该记录，然后检索返回的元组的第一个(也是唯一一个)元素，并储存。</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="Designing-a-Data-Model"><a href="#Designing-a-Data-Model" class="headerlink" title="Designing a Data Model"></a>Designing a Data Model</h2><h3 id="Building-a-Data-Model"><a href="#Building-a-Data-Model" class="headerlink" title="Building a Data Model"></a>Building a Data Model</h3><ul>
 <li>Drawing a picture of the data objects for our application and then figuring out how to represent the objects and their relationships</li>
 <li><strong>Basic Rule</strong>: Don’t put the same string data in twice - use a relationship instead</li>
 <li>When there is one thing in the “real world” there should be one copy<br>of that thing in the database</li>
@@ -63,7 +72,14 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;知识点&quot;&gt;&lt;a href=&quot;#知识点&quot; class=&quot;headerlink&quot; title=&quot;知识点&quot;&gt;&lt;/a&gt;知识点&lt;/h1&gt;&lt;h2 id=&quot;Designing-a-Data-Model&quot;&gt;&lt;a href=&quot;#Designing-a-Data-Model&quot; cla
+      &lt;p&gt;看教材的时候发现，有几个知识点是书上解释了但是视频没解释就直接写了的，比如cur():&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;游标(cursor)类似一个文件句柄，可以对数据库中的数据执行操作。当处理文本文件时，cursor()的调用与open()方法相似。&lt;br&gt;当有个游标，使用execute()方法，对数据库的内容执行命令。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;比如fetchone()：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果try部分进展顺利，使用fetchone()[0]获取该记录，然后检索返回的元组的第一个(也是唯一一个)元素，并储存。&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -331,7 +347,7 @@
     <link href="http://yibeichen.me/2016/07/23/PR4E-Chapter-13-2-assignment/"/>
     <id>http://yibeichen.me/2016/07/23/PR4E-Chapter-13-2-assignment/</id>
     <published>2016-07-23T10:46:36.000Z</published>
-    <updated>2016-07-29T06:25:32.000Z</updated>
+    <updated>2016-07-29T16:02:00.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong>超级尴尬</strong></p>
 <h2 id="今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！"><a href="#今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！" class="headerlink" title="今天的两道题目跟github不和，这篇文章$ hexo g -d和$ hexo s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！"></a>今天的两道题目跟github不和，这篇文章<code>$ hexo g -d</code>和<code>$ hexo s</code>的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！</h2><p>尴尬之</p>

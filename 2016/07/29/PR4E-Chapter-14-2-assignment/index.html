@@ -88,23 +88,35 @@
 
 
 
-<meta name="description" content="知识点Designing a Data ModelBuilding a Data Model
-Drawing a picture of the data objects for our application and then figuring out how to represent the objects and their relationships
-Basic Rule: Don’t pu">
+<meta name="description" content="看教材的时候发现，有几个知识点是书上解释了但是视频没解释就直接写了的，比如cur():
+
+游标(cursor)类似一个文件句柄，可以对数据库中的数据执行操作。当处理文本文件时，cursor()的调用与open()方法相似。当有个游标，使用execute()方法，对数据库的内容执行命令。
+
+比如fetchone()：
+
+如果try部分进展顺利，使用fetchone()[0]获取该记录，然后检索返回的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PR4E Chapter 14.2（Data Models and Relational SQL）">
 <meta property="og:url" content="http://yibeichen.me/2016/07/29/PR4E-Chapter-14-2-assignment/index.html">
 <meta property="og:site_name" content="舞！舞！舞！">
-<meta property="og:description" content="知识点Designing a Data ModelBuilding a Data Model
-Drawing a picture of the data objects for our application and then figuring out how to represent the objects and their relationships
-Basic Rule: Don’t pu">
+<meta property="og:description" content="看教材的时候发现，有几个知识点是书上解释了但是视频没解释就直接写了的，比如cur():
+
+游标(cursor)类似一个文件句柄，可以对数据库中的数据执行操作。当处理文本文件时，cursor()的调用与open()方法相似。当有个游标，使用execute()方法，对数据库的内容执行命令。
+
+比如fetchone()：
+
+如果try部分进展顺利，使用fetchone()[0]获取该记录，然后检索返回的">
 <meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-07-29_22:43:42.jpg">
-<meta property="og:updated_time" content="2016-07-29T15:58:23.000Z">
+<meta property="og:updated_time" content="2016-07-29T16:10:26.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PR4E Chapter 14.2（Data Models and Relational SQL）">
-<meta name="twitter:description" content="知识点Designing a Data ModelBuilding a Data Model
-Drawing a picture of the data objects for our application and then figuring out how to represent the objects and their relationships
-Basic Rule: Don’t pu">
+<meta name="twitter:description" content="看教材的时候发现，有几个知识点是书上解释了但是视频没解释就直接写了的，比如cur():
+
+游标(cursor)类似一个文件句柄，可以对数据库中的数据执行操作。当处理文本文件时，cursor()的调用与open()方法相似。当有个游标，使用execute()方法，对数据库的内容执行命令。
+
+比如fetchone()：
+
+如果try部分进展顺利，使用fetchone()[0]获取该记录，然后检索返回的">
 <meta name="twitter:image" content="http://oapfne1kf.bkt.clouddn.com/2016-07-29_22:43:42.jpg">
 
 
@@ -315,7 +327,16 @@ Basic Rule: Don’t pu">
       
 
       
-        <h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="Designing-a-Data-Model"><a href="#Designing-a-Data-Model" class="headerlink" title="Designing a Data Model"></a>Designing a Data Model</h2><h3 id="Building-a-Data-Model"><a href="#Building-a-Data-Model" class="headerlink" title="Building a Data Model"></a>Building a Data Model</h3><ul>
+        <p>看教材的时候发现，有几个知识点是书上解释了但是视频没解释就直接写了的，比如cur():</p>
+<blockquote>
+<p>游标(cursor)类似一个文件句柄，可以对数据库中的数据执行操作。当处理文本文件时，cursor()的调用与open()方法相似。<br>当有个游标，使用execute()方法，对数据库的内容执行命令。</p>
+</blockquote>
+<p>比如fetchone()：</p>
+<blockquote>
+<p>如果try部分进展顺利，使用fetchone()[0]获取该记录，然后检索返回的元组的第一个(也是唯一一个)元素，并储存。</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="Designing-a-Data-Model"><a href="#Designing-a-Data-Model" class="headerlink" title="Designing a Data Model"></a>Designing a Data Model</h2><h3 id="Building-a-Data-Model"><a href="#Building-a-Data-Model" class="headerlink" title="Building a Data Model"></a>Building a Data Model</h3><ul>
 <li>Drawing a picture of the data objects for our application and then figuring out how to represent the objects and their relationships</li>
 <li><strong>Basic Rule</strong>: Don’t put the same string data in twice - use a relationship instead</li>
 <li>When there is one thing in the “real world” there should be one copy<br>of that thing in the database</li>
