@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-30T06:54:01.000Z</updated>
+  <updated>2016-07-30T08:29:25.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -16,9 +16,55 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PR4E Chapter 15（Databases and Visualization）</title>
+    <link href="http://yibeichen.me/2016/07/30/PR4E-Chapter-15/"/>
+    <id>http://yibeichen.me/2016/07/30/PR4E-Chapter-15/</id>
+    <published>2016-07-30T06:57:44.000Z</published>
+    <updated>2016-07-30T08:29:25.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>听完最后这章，只想说，有些事实在是因缘际会，怎么这么巧！<br>假如事件A和事件B有一定的关联，而我先碰到了A，那大概就注定会碰到B吧。</p>
+<p>讲了三个例子</p>
+<ul>
+<li>Geocoding</li>
+<li>Page Rank and Web Searching</li>
+<li>Gmane - Mailing Lists</li>
+</ul>
+<p>其实一个都没听懂，毕竟太复杂了。<br>最后的课程作业超级简单，把提供好的代码下载到本地，运行一下，截图上传，peer-grade。<br><a id="more"></a><br><strong>Retrieving GEOData and Visualize the Map</strong><br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-30_15:55:31.jpg" alt="2016-07-30_15:55:31.jpg"><br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-30_15:59:36.jpg" alt="2016-07-30_15:59:36.jpg"></p>
+<p>曾经用Google Map把不同的地点标在一张图上，然后推算出要找的位置。啊，那可是用手工计算的，开了好多个网页，切换来切换去。当时想，应该有这种可以帮忙标记地点的应用吧，可是没找到，其实也没好好找。<br>总之，最后自制了一张图，还觉得自己酷酷哒。<br>然而，今天看着.py文件运行，一串串代码刷刷刷上传，这才是真的cool啊！</p>
+<p>独乐乐不如众乐乐，附上code和玩法。</p>
+<ul>
+<li>Download the code from <a href="http://www.pythonlearn.com/code/geodata.zip" target="_blank" rel="external">http://www.pythonlearn.com/code/geodata.zip</a><br>-Then unzip the file and edit where.data to add an address nearby where you live - don’t reveal your actual location.</li>
+<li>Then run the geoload.py to lookup all of the entries in where.data (including the new one) and produce the geodata.sqlite.</li>
+<li>Then run geodump.py to read the database and produce where.js.</li>
+<li>Then open where.html to visualize the map.</li>
+</ul>
+<p>本章的slide链接：<a href="https://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-15-Data-Viz.pdf" target="_blank" rel="external">https://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-15-Data-Viz.pdf</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;听完最后这章，只想说，有些事实在是因缘际会，怎么这么巧！&lt;br&gt;假如事件A和事件B有一定的关联，而我先碰到了A，那大概就注定会碰到B吧。&lt;/p&gt;
+&lt;p&gt;讲了三个例子&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Geocoding&lt;/li&gt;
+&lt;li&gt;Page Rank and Web Searching&lt;/li&gt;
+&lt;li&gt;Gmane - Mailing Lists&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其实一个都没听懂，毕竟太复杂了。&lt;br&gt;最后的课程作业超级简单，把提供好的代码下载到本地，运行一下，截图上传，peer-grade。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PR4E Chapter 14.3（Many-to-Many Relationships in SQL）</title>
-    <link href="http://yibeichen.me/2016/07/30/PR4E-Chapter-14-3-assignment/"/>
-    <id>http://yibeichen.me/2016/07/30/PR4E-Chapter-14-3-assignment/</id>
+    <link href="http://yibeichen.me/2016/07/30/PR4E-Chapter-14-3/"/>
+    <id>http://yibeichen.me/2016/07/30/PR4E-Chapter-14-3/</id>
     <published>2016-07-30T05:44:17.000Z</published>
     <updated>2016-07-30T06:54:01.000Z</updated>
     
@@ -66,9 +112,9 @@
     <link href="http://yibeichen.me/2016/07/30/Test-for-Plugins/"/>
     <id>http://yibeichen.me/2016/07/30/Test-for-Plugins/</id>
     <published>2016-07-30T04:34:12.000Z</published>
-    <updated>2016-07-30T06:49:49.000Z</updated>
+    <updated>2016-07-30T07:03:10.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="音乐插件"><a href="#音乐插件" class="headerlink" title="音乐插件"></a>音乐插件</h1><h2 id="代码嵌套"><a href="#代码嵌套" class="headerlink" title="代码嵌套"></a>代码嵌套</h2><h3 id="Spotify"><a href="#Spotify" class="headerlink" title="Spotify"></a>Spotify</h3><p>网站提供的代码如下：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">iframe</span> src=<span class="string">"https://embed.spotify.com/?uri=spotify%3Atrack%3A3v8PlUFGQQDBIk1J86waCo"</span> <span class="attribute">width</span>=<span class="string">"300"</span> height=<span class="string">"380"</span> frameborder=<span class="string">"0"</span> allowtransparency=<span class="string">"true"</span>&gt;&lt;/iframe&gt;</div></pre></td></tr></table></figure></p>
+    <content type="html"><![CDATA[<h1 id="音乐插件"><a href="#音乐插件" class="headerlink" title="音乐插件"></a>音乐插件</h1><h2 id="代码嵌套"><a href="#代码嵌套" class="headerlink" title="代码嵌套"></a>代码嵌套</h2><h3 id="Spotify"><a href="#Spotify" class="headerlink" title="Spotify"></a>Spotify</h3><p>网站提供的代码如下：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">iframe</span> src=<span class="string">"https://embed.spotify.com/?uri=spotify%3Atrack%3A3v8PlUFGQQDBIk1J86waCo"</span> <span class="attribute">width</span>=<span class="string">"300"</span> height=<span class="string">"380"</span> frameborder=<span class="string">"0"</span> allowtransparency=<span class="string">"true"</span>&gt;</div><div class="line">&lt;/iframe&gt;</div></pre></td></tr></table></figure></p>
 <p>效果如图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-30_14:48:19.jpg" alt="2016-07-30_14:48:19.jpg"><br>没开VPN是显示不出来的。<br>看着挺美，但是问题在于，点击会跳转到Spotify官网，不能当前页播放。</p>
 ]]></content>
     
@@ -85,8 +131,8 @@
   
   <entry>
     <title>PR4E Chapter 14.2（Data Models and Relational SQL）</title>
-    <link href="http://yibeichen.me/2016/07/29/PR4E-Chapter-14-2-assignment/"/>
-    <id>http://yibeichen.me/2016/07/29/PR4E-Chapter-14-2-assignment/</id>
+    <link href="http://yibeichen.me/2016/07/29/PR4E-Chapter-14-2/"/>
+    <id>http://yibeichen.me/2016/07/29/PR4E-Chapter-14-2/</id>
     <published>2016-07-29T06:18:39.000Z</published>
     <updated>2016-07-30T06:27:47.000Z</updated>
     
@@ -160,8 +206,8 @@
   
   <entry>
     <title>PR4E Chapter 14.1（Basic Structured Query Language）</title>
-    <link href="http://yibeichen.me/2016/07/28/PR4E-Chapter-14-1-assignment/"/>
-    <id>http://yibeichen.me/2016/07/28/PR4E-Chapter-14-1-assignment/</id>
+    <link href="http://yibeichen.me/2016/07/28/PR4E-Chapter-14-1/"/>
+    <id>http://yibeichen.me/2016/07/28/PR4E-Chapter-14-1/</id>
     <published>2016-07-28T08:24:05.000Z</published>
     <updated>2016-07-29T06:29:52.000Z</updated>
     
@@ -412,8 +458,8 @@
   
   <entry>
     <title>PR4E Chapter 13.2（JSON and the REST Architecture）</title>
-    <link href="http://yibeichen.me/2016/07/23/PR4E-Chapter-13-2-assignment/"/>
-    <id>http://yibeichen.me/2016/07/23/PR4E-Chapter-13-2-assignment/</id>
+    <link href="http://yibeichen.me/2016/07/23/PR4E-Chapter-13-2/"/>
+    <id>http://yibeichen.me/2016/07/23/PR4E-Chapter-13-2/</id>
     <published>2016-07-23T10:46:36.000Z</published>
     <updated>2016-07-29T16:02:00.000Z</updated>
     
@@ -478,8 +524,8 @@
   
   <entry>
     <title>PR4E Chapter 13.1（Web Service and XML）</title>
-    <link href="http://yibeichen.me/2016/07/22/PR4E-Chapter-13-1-assignment/"/>
-    <id>http://yibeichen.me/2016/07/22/PR4E-Chapter-13-1-assignment/</id>
+    <link href="http://yibeichen.me/2016/07/22/PR4E-Chapter-13-1/"/>
+    <id>http://yibeichen.me/2016/07/22/PR4E-Chapter-13-1/</id>
     <published>2016-07-22T11:03:26.000Z</published>
     <updated>2016-07-29T06:26:35.000Z</updated>
     
@@ -640,8 +686,8 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
   
   <entry>
     <title>PR4E Chapter 12.2（Programs that Surf the Web）</title>
-    <link href="http://yibeichen.me/2016/07/21/PR4E-Chapter-12-2-assignment/"/>
-    <id>http://yibeichen.me/2016/07/21/PR4E-Chapter-12-2-assignment/</id>
+    <link href="http://yibeichen.me/2016/07/21/PR4E-Chapter-12-2/"/>
+    <id>http://yibeichen.me/2016/07/21/PR4E-Chapter-12-2/</id>
     <published>2016-07-21T11:21:49.000Z</published>
     <updated>2016-07-29T06:26:52.000Z</updated>
     
@@ -710,8 +756,8 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
   
   <entry>
     <title>PR4E Chapter 12.1（Networks and Sockets）</title>
-    <link href="http://yibeichen.me/2016/07/20/PR4E-Chapter-12-1-assignment/"/>
-    <id>http://yibeichen.me/2016/07/20/PR4E-Chapter-12-1-assignment/</id>
+    <link href="http://yibeichen.me/2016/07/20/PR4E-Chapter-12-1/"/>
+    <id>http://yibeichen.me/2016/07/20/PR4E-Chapter-12-1/</id>
     <published>2016-07-20T13:42:59.000Z</published>
     <updated>2016-07-29T06:28:02.000Z</updated>
     
@@ -875,8 +921,8 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
   
   <entry>
     <title>PR4E Chapter 11（Regular Expressions）</title>
-    <link href="http://yibeichen.me/2016/07/19/PR4E-Chapter-11-assignment/"/>
-    <id>http://yibeichen.me/2016/07/19/PR4E-Chapter-11-assignment/</id>
+    <link href="http://yibeichen.me/2016/07/19/PR4E-Chapter-11/"/>
+    <id>http://yibeichen.me/2016/07/19/PR4E-Chapter-11/</id>
     <published>2016-07-19T07:24:11.000Z</published>
     <updated>2016-07-29T06:28:36.000Z</updated>
     
@@ -972,10 +1018,10 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
   
   <entry>
     <title>PR4E Chapter 10（Tuples）</title>
-    <link href="http://yibeichen.me/2016/07/18/PR4E-Chapter-10-assignment/"/>
-    <id>http://yibeichen.me/2016/07/18/PR4E-Chapter-10-assignment/</id>
+    <link href="http://yibeichen.me/2016/07/18/PR4E-Chapter-10/"/>
+    <id>http://yibeichen.me/2016/07/18/PR4E-Chapter-10/</id>
     <published>2016-07-18T06:39:13.000Z</published>
-    <updated>2016-07-29T06:28:10.000Z</updated>
+    <updated>2016-07-30T08:30:44.000Z</updated>
     
     <content type="html"><![CDATA[<p>元组不复杂，和列表字典都有点相似，当然，又完全不相同。元组是不可变的。所以，感觉它是辅助列表字典进行运算的？<br><a id="more"></a></p>
 <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>10.2 Write a program to read through the mbox-short.txt and figure out the distribution by hour of the day for each of the messages. You can pull the hour out from the ‘From ‘ line by finding the time and then splitting the string a second time using a colon.<br><code>From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008</code><br>Once you have accumulated the counts for each hour, print out the counts, sorted by hour as shown below.</p>
