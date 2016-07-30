@@ -59,11 +59,11 @@
   </entry>
   
   <entry>
-    <title>PR4E Chapter 15（Databases and Visualization）</title>
+    <title>PY4E Chapter 15（Databases and Visualization）</title>
     <link href="http://yibeichen.me/2016/07/30/PY4E-Chapter-15/"/>
     <id>http://yibeichen.me/2016/07/30/PY4E-Chapter-15/</id>
     <published>2016-07-30T06:57:44.000Z</published>
-    <updated>2016-07-30T08:29:25.000Z</updated>
+    <updated>2016-07-30T09:46:32.000Z</updated>
     
     <content type="html"><![CDATA[<p>听完最后这章，只想说，有些事实在是因缘际会，怎么这么巧！<br>假如事件A和事件B有一定的关联，而我先碰到了A，那大概就注定会碰到B吧。</p>
 <p>讲了三个例子</p>
@@ -105,11 +105,11 @@
   </entry>
   
   <entry>
-    <title>PR4E Chapter 14.3（Many-to-Many Relationships in SQL）</title>
+    <title>PY4E Chapter 14.3（Many-to-Many Relationships in SQL）</title>
     <link href="http://yibeichen.me/2016/07/30/PY4E-Chapter-14-3/"/>
     <id>http://yibeichen.me/2016/07/30/PY4E-Chapter-14-3/</id>
     <published>2016-07-30T05:44:17.000Z</published>
-    <updated>2016-07-30T06:54:01.000Z</updated>
+    <updated>2016-07-30T09:46:35.000Z</updated>
     
     <content type="html"><![CDATA[<p>前两小节讲的都是one-to-many型数据，这一节讲many-to-many类型的数据。<br>这周的题目也是醉了，只用从例子中改三行代码即可。<br>感觉智商派不上用场……<br><a id="more"></a></p>
 <h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="Many-to-Many"><a href="#Many-to-Many" class="headerlink" title="Many-to-Many"></a>Many-to-Many</h2><ul>
@@ -173,11 +173,11 @@
   </entry>
   
   <entry>
-    <title>PR4E Chapter 14.2（Data Models and Relational SQL）</title>
+    <title>PY4E Chapter 14.2（Data Models and Relational SQL）</title>
     <link href="http://yibeichen.me/2016/07/29/PY4E-Chapter-14-2/"/>
     <id>http://yibeichen.me/2016/07/29/PY4E-Chapter-14-2/</id>
     <published>2016-07-29T06:18:39.000Z</published>
-    <updated>2016-07-30T06:27:47.000Z</updated>
+    <updated>2016-07-30T09:46:37.000Z</updated>
     
     <content type="html"><![CDATA[<p>看教材的时候发现，有几个知识点是书上解释了但是视频没解释就直接写了的，比如cur():</p>
 <blockquote>
@@ -248,11 +248,11 @@
   </entry>
   
   <entry>
-    <title>PR4E Chapter 14.1（Basic Structured Query Language）</title>
+    <title>PY4E Chapter 14.1（Basic Structured Query Language）</title>
     <link href="http://yibeichen.me/2016/07/28/PY4E-Chapter-14-1/"/>
     <id>http://yibeichen.me/2016/07/28/PY4E-Chapter-14-1/</id>
     <published>2016-07-28T08:24:05.000Z</published>
-    <updated>2016-07-29T06:29:52.000Z</updated>
+    <updated>2016-07-30T09:46:40.000Z</updated>
     
     <content type="html"><![CDATA[<p>前天开始听的，听了五分钟，不懂，感觉像天书，刚好网络不行，就放弃了。昨天想，不听不行啊，还是得继续，结果听完大发感慨，怎么这么简单！quiz简单，第一道作业题也很简单，一路绿灯到第二道作业题，卡住了。折腾半晚上，看不懂，后悔自己太嘚瑟，今天继续折腾，大半个下午，简直要怀疑智商。最后，突然发现，代码没错，是数据拿错了……<br>就当是复习了正则表达式和list.split()。<br>另，终于能懂github的好了，虽然写作业的时候没用，碰到project还是应该用。<br><a id="more"></a></p>
 <h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="Database-Introduction"><a href="#Database-Introduction" class="headerlink" title="Database Introduction"></a>Database Introduction</h2><h3 id="Relational-Databases-关系数据库"><a href="#Relational-Databases-关系数据库" class="headerlink" title="Relational Databases 关系数据库"></a>Relational Databases 关系数据库</h3><p>Relational databases model data by storing rows and columns in tables. The power of the relational database lies in its ability to efficiently retrieve data from those tables and in particular where there are multiple tables and the relationships between those tables involved in the query.<br>其实并没有看懂……</p>
@@ -357,11 +357,11 @@
   </entry>
   
   <entry>
-    <title>PR4E Chapter 13A（Object Oriented Programming）</title>
+    <title>PY4E Chapter 13A（Object Oriented Programming）</title>
     <link href="http://yibeichen.me/2016/07/25/PY4E-Chapter-13-Additional/"/>
     <id>http://yibeichen.me/2016/07/25/PY4E-Chapter-13-Additional/</id>
     <published>2016-07-25T13:54:44.000Z</published>
-    <updated>2016-07-29T06:25:16.000Z</updated>
+    <updated>2016-07-30T09:46:42.000Z</updated>
     
     <content type="html"><![CDATA[<p>A means additional<br>这章算是补充知识点吧，不要求特别熟悉，理解了会用就行，事实上，我每章都不是特别懂……<br>本周没有作业，只有一个quiz，做了两遍才通过，都两遍了，竟然也没能满分。<br><a id="more"></a></p>
 <h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="What-is-an-“Object”"><a href="#What-is-an-“Object”" class="headerlink" title="What is an “Object”?"></a>What is an “Object”?</h2><p>An object is a bit of self-contained code and data.<br>It’s not like a function, which is bit of code, but it is code and data.<br>“对象”可以复制成许多不同的部分，优点在于，每个部分管好自己就行了，不用操心其他部分。（是这个意思吧？感觉理解有偏差）</p>
@@ -500,11 +500,11 @@
   </entry>
   
   <entry>
-    <title>PR4E Chapter 13.2（JSON and the REST Architecture）</title>
+    <title>PY4E Chapter 13.2（JSON and the REST Architecture）</title>
     <link href="http://yibeichen.me/2016/07/23/PY4E-Chapter-13-2/"/>
     <id>http://yibeichen.me/2016/07/23/PY4E-Chapter-13-2/</id>
     <published>2016-07-23T10:46:36.000Z</published>
-    <updated>2016-07-29T16:02:00.000Z</updated>
+    <updated>2016-07-30T09:46:44.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong>超级尴尬</strong></p>
 <h2 id="今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！"><a href="#今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！" class="headerlink" title="今天的两道题目跟github不和，这篇文章$ hexo g -d和$ hexo s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！"></a>今天的两道题目跟github不和，这篇文章<code>$ hexo g -d</code>和<code>$ hexo s</code>的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！</h2><p>尴尬之</p>
@@ -566,11 +566,11 @@
   </entry>
   
   <entry>
-    <title>PR4E Chapter 13.1（Web Service and XML）</title>
+    <title>PY4E Chapter 13.1（Web Service and XML）</title>
     <link href="http://yibeichen.me/2016/07/22/PY4E-Chapter-13-1/"/>
     <id>http://yibeichen.me/2016/07/22/PY4E-Chapter-13-1/</id>
     <published>2016-07-22T11:03:26.000Z</published>
-    <updated>2016-07-29T06:26:35.000Z</updated>
+    <updated>2016-07-30T09:46:46.000Z</updated>
     
     <content type="html"><![CDATA[<p>本节课介绍XML，下一节课介绍JSON。</p>
 <p>如何判断一次课程难不难？看我做作业的时候有没有借助外力就知道了。其实我是借助了教材，而且老师一开始就说了呀，本周的作业很容易！然而……</p>
@@ -728,11 +728,11 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
   </entry>
   
   <entry>
-    <title>PR4E Chapter 12.2（Programs that Surf the Web）</title>
+    <title>PY4E Chapter 12.2（Programs that Surf the Web）</title>
     <link href="http://yibeichen.me/2016/07/21/PY4E-Chapter-12-2/"/>
     <id>http://yibeichen.me/2016/07/21/PY4E-Chapter-12-2/</id>
     <published>2016-07-21T11:21:49.000Z</published>
-    <updated>2016-07-29T06:26:52.000Z</updated>
+    <updated>2016-07-30T09:46:47.000Z</updated>
     
     <content type="html"><![CDATA[<p>老师说，之前我们都是start with the hard way, then the easy way，本周我们直接start with the easy way。（然而，本周的题目折磨得我死去活来……）介绍了BeautifulSoup，比如可以直接解析网站中的<strong>a</strong>标签。</p>
 <p>库名出自于一本儿童读物？还蛮有意思的。</p>
@@ -798,11 +798,11 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
   </entry>
   
   <entry>
-    <title>PR4E Chapter 12.1（Networks and Sockets）</title>
+    <title>PY4E Chapter 12.1（Networks and Sockets）</title>
     <link href="http://yibeichen.me/2016/07/20/PY4E-Chapter-12-1/"/>
     <id>http://yibeichen.me/2016/07/20/PY4E-Chapter-12-1/</id>
     <published>2016-07-20T13:42:59.000Z</published>
-    <updated>2016-07-29T06:28:02.000Z</updated>
+    <updated>2016-07-30T09:46:49.000Z</updated>
     
     <content type="html"><![CDATA[<p>这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。<br>用socket会读取文档描述的头部信息和文档内容，而urllib更高级一点，默认你已经知晓头部信息了，直接读取文档内容。<br>tips：保存文件的时候不要直接命名为socket.py和urllib.py。<br>讲到HTTP就该补课了，完全不记得了。本周的测试几乎都是这方面的内容。<br><a id="more"></a></p>
 <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>Exploring the HyperText Transport Protocol</p>
@@ -963,11 +963,11 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
   </entry>
   
   <entry>
-    <title>PR4E Chapter 11（Regular Expressions）</title>
+    <title>PY4E Chapter 11（Regular Expressions）</title>
     <link href="http://yibeichen.me/2016/07/19/PY4E-Chapter-11/"/>
     <id>http://yibeichen.me/2016/07/19/PY4E-Chapter-11/</id>
     <published>2016-07-19T07:24:11.000Z</published>
-    <updated>2016-07-29T06:28:36.000Z</updated>
+    <updated>2016-07-30T09:46:51.000Z</updated>
     
     <content type="html"><![CDATA[<p>正则表达式最常用的是search（）和findall（）<br>注意<code>import re</code><br><a id="more"></a></p>
 <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>The basic outline of this problem is to read the file, look for integers using the re.findall(), looking for a regular expression of ‘[0-9]+’ and then converting the extracted strings to integers and summing up the integers.</p>
@@ -1060,11 +1060,11 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
   </entry>
   
   <entry>
-    <title>PR4E Chapter 10（Tuples）</title>
+    <title>PY4E Chapter 10（Tuples）</title>
     <link href="http://yibeichen.me/2016/07/18/PY4E-Chapter-10/"/>
     <id>http://yibeichen.me/2016/07/18/PY4E-Chapter-10/</id>
     <published>2016-07-18T06:39:13.000Z</published>
-    <updated>2016-07-30T08:30:44.000Z</updated>
+    <updated>2016-07-30T09:46:55.000Z</updated>
     
     <content type="html"><![CDATA[<p>元组不复杂，和列表字典都有点相似，当然，又完全不相同。元组是不可变的。所以，感觉它是辅助列表字典进行运算的？<br><a id="more"></a></p>
 <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>10.2 Write a program to read through the mbox-short.txt and figure out the distribution by hour of the day for each of the messages. You can pull the hour out from the ‘From ‘ line by finding the time and then splitting the string a second time using a colon.<br><code>From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008</code><br>Once you have accumulated the counts for each hour, print out the counts, sorted by hour as shown below.</p>
