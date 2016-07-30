@@ -88,16 +88,40 @@
 
 
 
-<meta name="description" content="元组不复杂，和列表字典都有点相似，当然，又完全不相同。元组是不可变的。所以，感觉它是辅助列表字典进行运算的？">
+<meta name="description" content="听完最后这章，只想说，有些事实在是因缘际会，怎么这么巧！假如事件A和事件B有一定的关联，而我先碰到了A，那大概就注定会碰到B吧。
+讲了三个例子
+
+Geocoding
+Page Rank and Web Searching
+Gmane - Mailing Lists
+
+其实一个都没听懂，毕竟太复杂了。最后的课程作业超级简单，把提供好的代码下载到本地，运行一下，截图上传，peer-grade。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PR4E Chapter 10（Tuples）">
-<meta property="og:url" content="http://yibeichen.me/2016/07/18/PR4E-Chapter-10/index.html">
+<meta property="og:title" content="PR4E Chapter 15（Databases and Visualization）">
+<meta property="og:url" content="http://yibeichen.me/2016/07/30/PY4E-Chapter-15/index.html">
 <meta property="og:site_name" content="舞！舞！舞！">
-<meta property="og:description" content="元组不复杂，和列表字典都有点相似，当然，又完全不相同。元组是不可变的。所以，感觉它是辅助列表字典进行运算的？">
-<meta property="og:updated_time" content="2016-07-30T08:30:44.000Z">
+<meta property="og:description" content="听完最后这章，只想说，有些事实在是因缘际会，怎么这么巧！假如事件A和事件B有一定的关联，而我先碰到了A，那大概就注定会碰到B吧。
+讲了三个例子
+
+Geocoding
+Page Rank and Web Searching
+Gmane - Mailing Lists
+
+其实一个都没听懂，毕竟太复杂了。最后的课程作业超级简单，把提供好的代码下载到本地，运行一下，截图上传，peer-grade。">
+<meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-07-30_15:55:31.jpg">
+<meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-07-30_15:59:36.jpg">
+<meta property="og:updated_time" content="2016-07-30T08:29:25.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PR4E Chapter 10（Tuples）">
-<meta name="twitter:description" content="元组不复杂，和列表字典都有点相似，当然，又完全不相同。元组是不可变的。所以，感觉它是辅助列表字典进行运算的？">
+<meta name="twitter:title" content="PR4E Chapter 15（Databases and Visualization）">
+<meta name="twitter:description" content="听完最后这章，只想说，有些事实在是因缘际会，怎么这么巧！假如事件A和事件B有一定的关联，而我先碰到了A，那大概就注定会碰到B吧。
+讲了三个例子
+
+Geocoding
+Page Rank and Web Searching
+Gmane - Mailing Lists
+
+其实一个都没听懂，毕竟太复杂了。最后的课程作业超级简单，把提供好的代码下载到本地，运行一下，截图上传，peer-grade。">
+<meta name="twitter:image" content="http://oapfne1kf.bkt.clouddn.com/2016-07-30_15:55:31.jpg">
 
 
 
@@ -118,9 +142,9 @@
 
 
 
-  <link rel="canonical" href="http://yibeichen.me/2016/07/18/PR4E-Chapter-10/"/>
+  <link rel="canonical" href="http://yibeichen.me/2016/07/30/PY4E-Chapter-15/"/>
 
-  <title> PR4E Chapter 10（Tuples） | 舞！舞！舞！ </title>
+  <title> PR4E Chapter 15（Databases and Visualization） | 舞！舞！舞！ </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -260,7 +284,7 @@
             
             
               
-                PR4E Chapter 10（Tuples）
+                PR4E Chapter 15（Databases and Visualization）
               
             
           </h1>
@@ -272,8 +296,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-18T14:39:13+08:00" content="2016-07-18">
-              2016-07-18
+            <time itemprop="dateCreated" datetime="2016-07-30T14:57:44+08:00" content="2016-07-30">
+              2016-07-30
             </time>
           </span>
 
@@ -283,8 +307,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/07/18/PR4E-Chapter-10/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/07/18/PR4E-Chapter-10/" itemprop="commentsCount"></span>
+                <a href="/2016/07/30/PY4E-Chapter-15/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/07/30/PY4E-Chapter-15/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -307,13 +331,23 @@
       
 
       
-        <p>元组不复杂，和列表字典都有点相似，当然，又完全不相同。元组是不可变的。所以，感觉它是辅助列表字典进行运算的？<br><a id="more"></a></p>
-<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>10.2 Write a program to read through the mbox-short.txt and figure out the distribution by hour of the day for each of the messages. You can pull the hour out from the ‘From ‘ line by finding the time and then splitting the string a second time using a colon.<br><code>From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008</code><br>Once you have accumulated the counts for each hour, print out the counts, sorted by hour as shown below.</p>
-<h1 id="原始答案"><a href="#原始答案" class="headerlink" title="原始答案"></a>原始答案</h1><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">name = raw_input(<span class="string">"Enter file:"</span>)</div><div class="line"><span class="keyword">if</span> <span class="built_in">len</span>(name) &lt; <span class="number">1</span> : name = <span class="string">"mbox-short.txt"</span></div><div class="line">handle = <span class="built_in">open</span>(name)</div><div class="line">d = dict()</div><div class="line"><span class="keyword">for</span> <span class="built_in">line</span> <span class="keyword">in</span> handle:</div><div class="line">	<span class="keyword">words</span> = <span class="built_in">line</span>.rstrip().<span class="built_in">split</span>()</div><div class="line">	<span class="keyword">if</span> <span class="built_in">len</span>(<span class="keyword">words</span>)== <span class="number">0</span>: continue</div><div class="line">	<span class="keyword">if</span> <span class="keyword">words</span>[<span class="number">0</span>]!= <span class="string">'From'</span>: continue</div><div class="line">	<span class="keyword">if</span> <span class="keyword">words</span>[<span class="number">0</span>]== <span class="string">'From:'</span>: continue</div><div class="line">	<span class="comment">#print words[5]</span></div><div class="line">	<span class="keyword">words</span> = <span class="keyword">words</span>[<span class="number">5</span>].<span class="built_in">split</span>()</div><div class="line">	ws = <span class="keyword">words</span>[<span class="number">0</span>][: <span class="keyword">words</span>[<span class="number">0</span>].find(<span class="string">':'</span>)].rstrip().<span class="built_in">split</span>()</div><div class="line">	<span class="comment">#print ws</span></div><div class="line">	<span class="keyword">for</span> w <span class="keyword">in</span> ws:</div><div class="line">	    <span class="keyword">if</span> w <span class="keyword">not</span> <span class="keyword">in</span> d:</div><div class="line">	       d[w] = <span class="number">1</span></div><div class="line">	    <span class="keyword">else</span>:</div><div class="line">	        d[w] += <span class="number">1</span></div><div class="line"><span class="comment"># print da</span></div><div class="line">l = list()</div><div class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> d.<span class="keyword">items</span>():</div><div class="line">l.append((k, v))</div><div class="line">l.<span class="built_in">sort</span>()</div><div class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> l:</div><div class="line">print k, v</div></pre></td></tr></table></figure>
-<h1 id="修改后的答案"><a href="#修改后的答案" class="headerlink" title="修改后的答案"></a>修改后的答案</h1><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">name = raw\<span class="title">_input</span>(<span class="string">"Enter file:"</span>)</div><div class="line"><span class="keyword">if</span> <span class="built_in">len</span>(name) \&lt; <span class="number">1</span> : name = <span class="string">"mbox-short.txt"</span></div><div class="line">handle = <span class="built_in">open</span>(name)</div><div class="line">d = dict()</div><div class="line"><span class="keyword">for</span> <span class="built_in">line</span> <span class="keyword">in</span> handle:</div><div class="line">	<span class="keyword">if</span> <span class="built_in">line</span>.startswith(<span class="string">"From"</span>) <span class="keyword">and</span> <span class="keyword">not</span> <span class="built_in">line</span>.startswith(<span class="string">"From:"</span>):  </div><div class="line">	   <span class="keyword">words</span> = <span class="built_in">line</span>.rstrip().<span class="built_in">split</span>()</div><div class="line">	<span class="comment">#print words[5]</span></div><div class="line">	   <span class="keyword">words</span> = <span class="keyword">words</span>[<span class="number">5</span>].<span class="built_in">split</span>()</div><div class="line">	   ws = <span class="keyword">words</span>[<span class="number">0</span>][: <span class="keyword">words</span>[<span class="number">0</span>].find(<span class="string">':'</span>)]</div><div class="line">	   <span class="comment">#print ws</span></div><div class="line">	   d[ws] = d.<span class="built_in">get</span>(ws,<span class="number">0</span>)+<span class="number">1</span>  </div><div class="line"><span class="comment"># print d</span></div><div class="line">l = d.<span class="keyword">items</span>()</div><div class="line">l.<span class="built_in">sort</span>()</div><div class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> l:</div><div class="line">	print k, v</div></pre></td></tr></table></figure>
-<h1 id="备注："><a href="#备注：" class="headerlink" title="备注："></a>备注：</h1><p>两次split之后是list，再切片一下得到的是单个数据项，既然是数据项就可以直接添加到字典，不用把它再变成列表然后从列表里再加到字典——这样写简直太麻烦了……觉得自己真是婆婆妈妈。</p>
-<p>回想起来，第九周的作业也是这么啰里啰嗦的……直接把数据项加入字典啊，为什么要绕到列表那去。</p>
-<p>另外，各种格式对齐问题一定要注意，一处不对就毁全局啊，就算code都是对的，对错了行也是功亏一篑。</p>
+        <p>听完最后这章，只想说，有些事实在是因缘际会，怎么这么巧！<br>假如事件A和事件B有一定的关联，而我先碰到了A，那大概就注定会碰到B吧。</p>
+<p>讲了三个例子</p>
+<ul>
+<li>Geocoding</li>
+<li>Page Rank and Web Searching</li>
+<li>Gmane - Mailing Lists</li>
+</ul>
+<p>其实一个都没听懂，毕竟太复杂了。<br>最后的课程作业超级简单，把提供好的代码下载到本地，运行一下，截图上传，peer-grade。<br><a id="more"></a><br><strong>Retrieving GEOData and Visualize the Map</strong><br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-30_15:55:31.jpg" alt="2016-07-30_15:55:31.jpg"><br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-30_15:59:36.jpg" alt="2016-07-30_15:59:36.jpg"></p>
+<p>曾经用Google Map把不同的地点标在一张图上，然后推算出要找的位置。啊，那可是用手工计算的，开了好多个网页，切换来切换去。当时想，应该有这种可以帮忙标记地点的应用吧，可是没找到，其实也没好好找。<br>总之，最后自制了一张图，还觉得自己酷酷哒。<br>然而，今天看着.py文件运行，一串串代码刷刷刷上传，这才是真的cool啊！</p>
+<p>独乐乐不如众乐乐，附上code和玩法。</p>
+<ul>
+<li>Download the code from <a href="http://www.pythonlearn.com/code/geodata.zip" target="_blank" rel="external">http://www.pythonlearn.com/code/geodata.zip</a><br>-Then unzip the file and edit where.data to add an address nearby where you live - don’t reveal your actual location.</li>
+<li>Then run the geoload.py to lookup all of the entries in where.data (including the new one) and produce the geodata.sqlite.</li>
+<li>Then run geodump.py to read the database and produce where.js.</li>
+<li>Then open where.html to visualize the map.</li>
+</ul>
+<p>本章的slide链接：<a href="https://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-15-Data-Viz.pdf" target="_blank" rel="external">https://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-15-Data-Viz.pdf</a></p>
 
       
     </div>
@@ -347,16 +381,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/08/Learning-How-To-Learn/" rel="next" title="Learning How To Learn 课程笔记">
-                <i class="fa fa-chevron-left"></i> Learning How To Learn 课程笔记
+              <a href="/2016/07/30/PY4E-Chapter-14-3/" rel="next" title="PR4E Chapter 14.3（Many-to-Many Relationships in SQL）">
+                <i class="fa fa-chevron-left"></i> PR4E Chapter 14.3（Many-to-Many Relationships in SQL）
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/07/19/PR4E-Chapter-11/" rel="prev" title="PR4E Chapter 11（Regular Expressions）">
-                PR4E Chapter 11（Regular Expressions） <i class="fa fa-chevron-right"></i>
+              <a href="/2016/07/30/Python-for-Everybody/" rel="prev" title="Python for Everybody 系列课程总结">
+                Python for Everybody 系列课程总结 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -516,7 +550,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#原始答案"><span class="nav-number">2.</span> <span class="nav-text">原始答案</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改后的答案"><span class="nav-number">3.</span> <span class="nav-text">修改后的答案</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#备注："><span class="nav-number">4.</span> <span class="nav-text">备注：</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>
@@ -636,9 +670,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'yibeichen';
-      var disqus_identifier = '2016/07/18/PR4E-Chapter-10/';
-      var disqus_title = "PR4E Chapter 10（Tuples）";
-      var disqus_url = 'http://yibeichen.me/2016/07/18/PR4E-Chapter-10/';
+      var disqus_identifier = '2016/07/30/PY4E-Chapter-15/';
+      var disqus_title = "PR4E Chapter 15（Databases and Visualization）";
+      var disqus_url = 'http://yibeichen.me/2016/07/30/PY4E-Chapter-15/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');

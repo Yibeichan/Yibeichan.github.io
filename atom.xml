@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-30T09:38:14.000Z</updated>
+  <updated>2016-07-30T09:45:11.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -20,10 +20,9 @@
     <link href="http://yibeichen.me/2016/07/30/Python-for-Everybody/"/>
     <id>http://yibeichen.me/2016/07/30/Python-for-Everybody/</id>
     <published>2016-07-30T08:52:06.000Z</published>
-    <updated>2016-07-30T09:38:14.000Z</updated>
+    <updated>2016-07-30T09:45:11.000Z</updated>
     
-    <content type="html"><![CDATA[<p>没错，PR4E就是Python for Everybody的缩写。<br>6.14注册了第一门课，7.30学完了第四门课，还剩最后一个毕业项目，但是因为没有花钱买这个系列课程，所以没有资格参与这个项目。<br>总之呢，这一段Python之路可以暂告一个段落啦，接下来会探索新的Python学习之路。</p>
-<p>这个系列是coursera上的<a href="https://www.coursera.org/specializations/python" target="_blank" rel="external">专项课程</a>，一共有五门课：</p>
+    <content type="html"><![CDATA[<p>没错，PY4E就是Python for Everybody的缩写。<br>6.14注册了第一门课，7.30学完了第四门课，还剩最后一个毕业项目，但是因为没有花钱买这个系列课程，所以没有资格参与这个项目。<br>总之呢，这一段Python之路可以暂告一个段落啦，接下来会探索新的Python学习之路。<br><a id="more"></a><br>这个系列是coursera上的<a href="https://www.coursera.org/specializations/python" target="_blank" rel="external">专项课程</a>，一共有五门课：</p>
 <ul>
 <li><a href="https://www.coursera.org/learn/python" target="_blank" rel="external">Programming for Everybody (Getting Started with Python)</a></li>
 <li><a href="https://www.coursera.org/learn/python-data" target="_blank" rel="external">Python Data Structures</a></li>
@@ -41,14 +40,14 @@
 <li>动手写代码要比看书看视频更助于理解</li>
 <li>Keep exercising!</li>
 </ul>
-<p>Dr Chunk（这个专项课程里5门课都是他授课）特别幽默，有一次扮成Severus Snape，弄了个分院帽和魔杖来上课。每周的Bonus Hours也特别有意思。总之是个很棒的课程！</p>
+<p><a href="https://online.dr-chuck.com/" target="_blank" rel="external">Dr. Chunk</a>（整个专项课程都是由他授课）特别幽默，有一次扮成Severus Snape，弄了个分院帽和魔杖来上课。每周的Bonus Hours也特别有意思。总之是个很棒的课程！</p>
 <p>另外，也是为了记录课程笔记才萌发了搭这个博客的想法，也算是有点进步了，终于有那么一次能把想法付诸实践。</p>
 <p>Keep moving，Python之路还很长。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;没错，PR4E就是Python for Everybody的缩写。&lt;br&gt;6.14注册了第一门课，7.30学完了第四门课，还剩最后一个毕业项目，但是因为没有花钱买这个系列课程，所以没有资格参与这个项目。&lt;br&gt;总之呢，这一段Python之路可以暂告一个段落啦，接下来会探索新
+      &lt;p&gt;没错，PY4E就是Python for Everybody的缩写。&lt;br&gt;6.14注册了第一门课，7.30学完了第四门课，还剩最后一个毕业项目，但是因为没有花钱买这个系列课程，所以没有资格参与这个项目。&lt;br&gt;总之呢，这一段Python之路可以暂告一个段落啦，接下来会探索新的Python学习之路。&lt;br&gt;
     
     </summary>
     
@@ -61,8 +60,8 @@
   
   <entry>
     <title>PR4E Chapter 15（Databases and Visualization）</title>
-    <link href="http://yibeichen.me/2016/07/30/PR4E-Chapter-15/"/>
-    <id>http://yibeichen.me/2016/07/30/PR4E-Chapter-15/</id>
+    <link href="http://yibeichen.me/2016/07/30/PY4E-Chapter-15/"/>
+    <id>http://yibeichen.me/2016/07/30/PY4E-Chapter-15/</id>
     <published>2016-07-30T06:57:44.000Z</published>
     <updated>2016-07-30T08:29:25.000Z</updated>
     
@@ -107,8 +106,8 @@
   
   <entry>
     <title>PR4E Chapter 14.3（Many-to-Many Relationships in SQL）</title>
-    <link href="http://yibeichen.me/2016/07/30/PR4E-Chapter-14-3/"/>
-    <id>http://yibeichen.me/2016/07/30/PR4E-Chapter-14-3/</id>
+    <link href="http://yibeichen.me/2016/07/30/PY4E-Chapter-14-3/"/>
+    <id>http://yibeichen.me/2016/07/30/PY4E-Chapter-14-3/</id>
     <published>2016-07-30T05:44:17.000Z</published>
     <updated>2016-07-30T06:54:01.000Z</updated>
     
@@ -175,8 +174,8 @@
   
   <entry>
     <title>PR4E Chapter 14.2（Data Models and Relational SQL）</title>
-    <link href="http://yibeichen.me/2016/07/29/PR4E-Chapter-14-2/"/>
-    <id>http://yibeichen.me/2016/07/29/PR4E-Chapter-14-2/</id>
+    <link href="http://yibeichen.me/2016/07/29/PY4E-Chapter-14-2/"/>
+    <id>http://yibeichen.me/2016/07/29/PY4E-Chapter-14-2/</id>
     <published>2016-07-29T06:18:39.000Z</published>
     <updated>2016-07-30T06:27:47.000Z</updated>
     
@@ -250,8 +249,8 @@
   
   <entry>
     <title>PR4E Chapter 14.1（Basic Structured Query Language）</title>
-    <link href="http://yibeichen.me/2016/07/28/PR4E-Chapter-14-1/"/>
-    <id>http://yibeichen.me/2016/07/28/PR4E-Chapter-14-1/</id>
+    <link href="http://yibeichen.me/2016/07/28/PY4E-Chapter-14-1/"/>
+    <id>http://yibeichen.me/2016/07/28/PY4E-Chapter-14-1/</id>
     <published>2016-07-28T08:24:05.000Z</published>
     <updated>2016-07-29T06:29:52.000Z</updated>
     
@@ -359,8 +358,8 @@
   
   <entry>
     <title>PR4E Chapter 13A（Object Oriented Programming）</title>
-    <link href="http://yibeichen.me/2016/07/25/PR4E-Chapter-13-Additional/"/>
-    <id>http://yibeichen.me/2016/07/25/PR4E-Chapter-13-Additional/</id>
+    <link href="http://yibeichen.me/2016/07/25/PY4E-Chapter-13-Additional/"/>
+    <id>http://yibeichen.me/2016/07/25/PY4E-Chapter-13-Additional/</id>
     <published>2016-07-25T13:54:44.000Z</published>
     <updated>2016-07-29T06:25:16.000Z</updated>
     
@@ -502,8 +501,8 @@
   
   <entry>
     <title>PR4E Chapter 13.2（JSON and the REST Architecture）</title>
-    <link href="http://yibeichen.me/2016/07/23/PR4E-Chapter-13-2/"/>
-    <id>http://yibeichen.me/2016/07/23/PR4E-Chapter-13-2/</id>
+    <link href="http://yibeichen.me/2016/07/23/PY4E-Chapter-13-2/"/>
+    <id>http://yibeichen.me/2016/07/23/PY4E-Chapter-13-2/</id>
     <published>2016-07-23T10:46:36.000Z</published>
     <updated>2016-07-29T16:02:00.000Z</updated>
     
@@ -568,8 +567,8 @@
   
   <entry>
     <title>PR4E Chapter 13.1（Web Service and XML）</title>
-    <link href="http://yibeichen.me/2016/07/22/PR4E-Chapter-13-1/"/>
-    <id>http://yibeichen.me/2016/07/22/PR4E-Chapter-13-1/</id>
+    <link href="http://yibeichen.me/2016/07/22/PY4E-Chapter-13-1/"/>
+    <id>http://yibeichen.me/2016/07/22/PY4E-Chapter-13-1/</id>
     <published>2016-07-22T11:03:26.000Z</published>
     <updated>2016-07-29T06:26:35.000Z</updated>
     
@@ -730,8 +729,8 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
   
   <entry>
     <title>PR4E Chapter 12.2（Programs that Surf the Web）</title>
-    <link href="http://yibeichen.me/2016/07/21/PR4E-Chapter-12-2/"/>
-    <id>http://yibeichen.me/2016/07/21/PR4E-Chapter-12-2/</id>
+    <link href="http://yibeichen.me/2016/07/21/PY4E-Chapter-12-2/"/>
+    <id>http://yibeichen.me/2016/07/21/PY4E-Chapter-12-2/</id>
     <published>2016-07-21T11:21:49.000Z</published>
     <updated>2016-07-29T06:26:52.000Z</updated>
     
@@ -800,8 +799,8 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
   
   <entry>
     <title>PR4E Chapter 12.1（Networks and Sockets）</title>
-    <link href="http://yibeichen.me/2016/07/20/PR4E-Chapter-12-1/"/>
-    <id>http://yibeichen.me/2016/07/20/PR4E-Chapter-12-1/</id>
+    <link href="http://yibeichen.me/2016/07/20/PY4E-Chapter-12-1/"/>
+    <id>http://yibeichen.me/2016/07/20/PY4E-Chapter-12-1/</id>
     <published>2016-07-20T13:42:59.000Z</published>
     <updated>2016-07-29T06:28:02.000Z</updated>
     
@@ -965,8 +964,8 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
   
   <entry>
     <title>PR4E Chapter 11（Regular Expressions）</title>
-    <link href="http://yibeichen.me/2016/07/19/PR4E-Chapter-11/"/>
-    <id>http://yibeichen.me/2016/07/19/PR4E-Chapter-11/</id>
+    <link href="http://yibeichen.me/2016/07/19/PY4E-Chapter-11/"/>
+    <id>http://yibeichen.me/2016/07/19/PY4E-Chapter-11/</id>
     <published>2016-07-19T07:24:11.000Z</published>
     <updated>2016-07-29T06:28:36.000Z</updated>
     
@@ -1062,8 +1061,8 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
   
   <entry>
     <title>PR4E Chapter 10（Tuples）</title>
-    <link href="http://yibeichen.me/2016/07/18/PR4E-Chapter-10/"/>
-    <id>http://yibeichen.me/2016/07/18/PR4E-Chapter-10/</id>
+    <link href="http://yibeichen.me/2016/07/18/PY4E-Chapter-10/"/>
+    <id>http://yibeichen.me/2016/07/18/PY4E-Chapter-10/</id>
     <published>2016-07-18T06:39:13.000Z</published>
     <updated>2016-07-30T08:30:44.000Z</updated>
     

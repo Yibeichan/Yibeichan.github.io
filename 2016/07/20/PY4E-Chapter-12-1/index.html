@@ -88,18 +88,16 @@
 
 
 
-<meta name="description" content="A means additional这章算是补充知识点吧，不要求特别熟悉，理解了会用就行，事实上，我每章都不是特别懂……本周没有作业，只有一个quiz，做了两遍才通过，都两遍了，竟然也没能满分。">
+<meta name="description" content="这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。用socket会读取文档描述的头部信息和文档内容，而urllib更高级一点，默认你已经知晓头部信息了，直接读取文档内容。tips：保存文件的时候不要直接命名为socket.py和urllib.py。讲到HTTP就该补课了，完全不记得了。本周的测试几乎">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PR4E Chapter 13A（Object Oriented Programming）">
-<meta property="og:url" content="http://yibeichen.me/2016/07/25/PR4E-Chapter-13-Additional/index.html">
+<meta property="og:title" content="PR4E Chapter 12.1（Networks and Sockets）">
+<meta property="og:url" content="http://yibeichen.me/2016/07/20/PY4E-Chapter-12-1/index.html">
 <meta property="og:site_name" content="舞！舞！舞！">
-<meta property="og:description" content="A means additional这章算是补充知识点吧，不要求特别熟悉，理解了会用就行，事实上，我每章都不是特别懂……本周没有作业，只有一个quiz，做了两遍才通过，都两遍了，竟然也没能满分。">
-<meta property="og:image" content="http://ww3.sinaimg.cn/large/72f96cbajw1f66g66h3llj211y0lcaeo.jpg">
-<meta property="og:updated_time" content="2016-07-29T06:25:16.000Z">
+<meta property="og:description" content="这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。用socket会读取文档描述的头部信息和文档内容，而urllib更高级一点，默认你已经知晓头部信息了，直接读取文档内容。tips：保存文件的时候不要直接命名为socket.py和urllib.py。讲到HTTP就该补课了，完全不记得了。本周的测试几乎">
+<meta property="og:updated_time" content="2016-07-29T06:28:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PR4E Chapter 13A（Object Oriented Programming）">
-<meta name="twitter:description" content="A means additional这章算是补充知识点吧，不要求特别熟悉，理解了会用就行，事实上，我每章都不是特别懂……本周没有作业，只有一个quiz，做了两遍才通过，都两遍了，竟然也没能满分。">
-<meta name="twitter:image" content="http://ww3.sinaimg.cn/large/72f96cbajw1f66g66h3llj211y0lcaeo.jpg">
+<meta name="twitter:title" content="PR4E Chapter 12.1（Networks and Sockets）">
+<meta name="twitter:description" content="这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。用socket会读取文档描述的头部信息和文档内容，而urllib更高级一点，默认你已经知晓头部信息了，直接读取文档内容。tips：保存文件的时候不要直接命名为socket.py和urllib.py。讲到HTTP就该补课了，完全不记得了。本周的测试几乎">
 
 
 
@@ -120,9 +118,9 @@
 
 
 
-  <link rel="canonical" href="http://yibeichen.me/2016/07/25/PR4E-Chapter-13-Additional/"/>
+  <link rel="canonical" href="http://yibeichen.me/2016/07/20/PY4E-Chapter-12-1/"/>
 
-  <title> PR4E Chapter 13A（Object Oriented Programming） | 舞！舞！舞！ </title>
+  <title> PR4E Chapter 12.1（Networks and Sockets） | 舞！舞！舞！ </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -262,7 +260,7 @@
             
             
               
-                PR4E Chapter 13A（Object Oriented Programming）
+                PR4E Chapter 12.1（Networks and Sockets）
               
             
           </h1>
@@ -274,8 +272,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-25T21:54:44+08:00" content="2016-07-25">
-              2016-07-25
+            <time itemprop="dateCreated" datetime="2016-07-20T21:42:59+08:00" content="2016-07-20">
+              2016-07-20
             </time>
           </span>
 
@@ -285,8 +283,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/07/25/PR4E-Chapter-13-Additional/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/07/25/PR4E-Chapter-13-Additional/" itemprop="commentsCount"></span>
+                <a href="/2016/07/20/PY4E-Chapter-12-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/07/20/PY4E-Chapter-12-1/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -309,42 +307,33 @@
       
 
       
-        <p>A means additional<br>这章算是补充知识点吧，不要求特别熟悉，理解了会用就行，事实上，我每章都不是特别懂……<br>本周没有作业，只有一个quiz，做了两遍才通过，都两遍了，竟然也没能满分。<br><a id="more"></a></p>
-<h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="What-is-an-“Object”"><a href="#What-is-an-“Object”" class="headerlink" title="What is an “Object”?"></a>What is an “Object”?</h2><p>An object is a bit of self-contained code and data.<br>It’s not like a function, which is bit of code, but it is code and data.<br>“对象”可以复制成许多不同的部分，优点在于，每个部分管好自己就行了，不用操心其他部分。（是这个意思吧？感觉理解有偏差）</p>
-<h3 id="Terminology"><a href="#Terminology" class="headerlink" title="Terminology"></a>Terminology</h3><ul>
-<li>Class - a template - Dog</li>
-<li>Method or Message - A defined capability of a class - bark() <strong>causing the dog to bark</strong></li>
-<li>Field or attribute - A bit of data in a class - length</li>
-<li>Object or Instance - A particular instance of a class - Lassie</li>
+        <p>这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。<br>用socket会读取文档描述的头部信息和文档内容，而urllib更高级一点，默认你已经知晓头部信息了，直接读取文档内容。<br>tips：保存文件的时候不要直接命名为socket.py和urllib.py。<br>讲到HTTP就该补课了，完全不记得了。本周的测试几乎都是这方面的内容。<br><a id="more"></a></p>
+<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>Exploring the HyperText Transport Protocol</p>
+<p>You are to retrieve the following document using the HTTP protocol in a way that you can examine the HTTP Response headers.</p>
+<ul>
+<li><a href="http://www.pythonlearn.com/code/intro-short.txt" target="_blank" rel="external">http://www.pythonlearn.com/code/intro-short.txt</a></li>
 </ul>
-<p>他老人家的幽默感真是……</p>
-<p>classes contain code in addition to data, and the method is the way that we activate the code</p>
-<h3 id="Simple-Python-Objects"><a href="#Simple-Python-Objects" class="headerlink" title="Simple Python Objects"></a>Simple Python Objects</h3><p><img src="http://ww3.sinaimg.cn/large/72f96cbajw1f66g66h3llj211y0lcaeo.jpg" alt="20:54:41.jpg"><br>这么一大串，看得不是很懂……</p>
-<p>Use <strong>dir()</strong> to find the “capabilities” of our newly created class</p>
-<h3 id="Object-Lifecycle"><a href="#Object-Lifecycle" class="headerlink" title="Object Lifecycle"></a>Object Lifecycle</h3><ul>
-<li>Objects are created used and discarded</li>
-<li>We have special blocks of code (methods) that get called<ul>
-<li>at the moment of creation (constructor)</li>
-<li>at the moment of destruction (destructor)</li>
+<p>There are three ways that you might retrieve this web page and look at the response headers:</p>
+<ul>
+<li>Preferred: Modify the <a href="http://www.pythonlearn.com/code/socket1.py" target="_blank" rel="external">socket1.py</a> program to retrieve the above URL and print out the headers and data.</li>
+<li>Open the URL in a web browser with a developer console or FireBug and manually examine the headers that are returned.</li>
+<li>Use the telnet program as shown in lecture to retrieve the headers and content.</li>
 </ul>
-</li>
-<li>Constructors are used a lot</li>
-<li>Destructors are seldom used</li>
+<p>其实这是一道填空题：</p>
+<ul>
+<li>Content-Type:</li>
+<li>Content-Length:</li>
+<li>Content-Length:</li>
+<li>ETag:</li>
+<li>Cache-Control:</li>
 </ul>
-<h4 id="Constructor"><a href="#Constructor" class="headerlink" title="Constructor"></a>Constructor</h4><p>the primary purpose of the constructor is to set up some instance variables to have the proper initial values when the object is created</p>
-<p>optional, typically used to set up variables</p>
-<p>in <em>object-oriented programming</em>, a constructor in a class is a special block of statements called when an <em>object is created</em></p>
-<h4 id="Instances"><a href="#Instances" class="headerlink" title="Instances"></a>Instances</h4><p>each instance has its own copy of the instance variables<br><strong>multiple</strong><br><strong>independent!!!</strong></p>
-<h3 id="Inheritance"><a href="#Inheritance" class="headerlink" title="Inheritance"></a>Inheritance</h3><ul>
-<li>When we make a new class - we can reuse an existing class and <strong>inherit</strong> all the capabilities of an existing class and then add our own little bit to make our new class</li>
-<li>Another form of store and reuse</li>
-<li>Write once - reuse many times</li>
-<li>The new class (child) has all the capabilities of the old class (parent) - and then some more<br>→ → → <strong>Subclasses</strong><h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2></li>
-<li>Object Oriented programming is a very structured approach to code reuse.</li>
-<li>We can group data and functionality together and create many independent instances of a class</li>
-</ul>
-<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>本章的slide链接：<a><a href="http://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-13a-Objects.pdf" target="_blank" rel="external">http://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-13a-Objects.pdf</a></a></p>
-<p>已经沦落到要抄slide的地步了……</p>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>这道题简直是小学生水平，老师已经把py都写好了，因为我用的就是第一种方法，直接copy了socket1.py的代码，用terminal运行就得出了头部信息，正常来说，我还应该试一下第二和第三种方法，然而我懒……</p>
+<p>关于第三种方法，telnet program，把老师的slide给扒下来了<br>其实这是一种hack方式……</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ telnet www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span> <span class="number">80</span></div><div class="line">Trying <span class="number">74.208</span>.<span class="number">28.177</span>...</div><div class="line">Connected <span class="keyword">to</span> www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span>.</div><div class="line">Escape character <span class="keyword">is</span> <span class="string">'^]'</span>.</div><div class="line">GET http://www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span>/page1.htm</div></pre></td></tr></table></figure>
+<p>GET后面是应该有两次换行的，所以写到Python里的时候是 \n\n</p>
+<p>但是我在本地用$ telnet命令就不对，返回的是<br><code>www.dr-chunk.com: nodename nor servname provided, or not known</code></p>
+<p>我怀疑是端口80的问题，啊，这又是个坑，总之关于HTTP的都要补课</p>
+<h1 id="补充材料"><a href="#补充材料" class="headerlink" title="补充材料"></a>补充材料</h1><p>book：<a href="http://www.net-intro.com/" target="_blank" rel="external">Introduction to Networking</a><br>course：<a href="https://www.coursera.org/learn/internet-history" target="_blank" rel="external">Internet History, Technology, and Security</a></p>
 
       
     </div>
@@ -378,16 +367,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/25/Reread-Echo/" rel="next" title="床前明月光">
-                <i class="fa fa-chevron-left"></i> 床前明月光
+              <a href="/2016/07/20/Listen-to-Music/" rel="next" title="Listen to Music 课程笔记">
+                <i class="fa fa-chevron-left"></i> Listen to Music 课程笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/07/27/No-Desire-to-Study/" rel="prev" title="无心学习之没有VPN">
-                无心学习之没有VPN <i class="fa fa-chevron-right"></i>
+              <a href="/2016/07/21/PY4E-Chapter-12-2/" rel="prev" title="PR4E Chapter 12.2（Programs that Surf the Web）">
+                PR4E Chapter 12.2（Programs that Surf the Web） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -547,7 +536,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#知识点"><span class="nav-number">1.</span> <span class="nav-text">知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-an-“Object”"><span class="nav-number">1.1.</span> <span class="nav-text">What is an “Object”?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Terminology"><span class="nav-number">1.1.1.</span> <span class="nav-text">Terminology</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Simple-Python-Objects"><span class="nav-number">1.1.2.</span> <span class="nav-text">Simple Python Objects</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-Lifecycle"><span class="nav-number">1.1.3.</span> <span class="nav-text">Object Lifecycle</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Constructor"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">Constructor</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Instances"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">Instances</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Inheritance"><span class="nav-number">1.1.4.</span> <span class="nav-text">Inheritance</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Summary"><span class="nav-number">1.2.</span> <span class="nav-text">Summary</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#备注"><span class="nav-number">2.</span> <span class="nav-text">备注</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#备注"><span class="nav-number">2.</span> <span class="nav-text">备注</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#补充材料"><span class="nav-number">3.</span> <span class="nav-text">补充材料</span></a></li></ol></div>
             
           </div>
         </section>
@@ -667,9 +656,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'yibeichen';
-      var disqus_identifier = '2016/07/25/PR4E-Chapter-13-Additional/';
-      var disqus_title = "PR4E Chapter 13A（Object Oriented Programming）";
-      var disqus_url = 'http://yibeichen.me/2016/07/25/PR4E-Chapter-13-Additional/';
+      var disqus_identifier = '2016/07/20/PY4E-Chapter-12-1/';
+      var disqus_title = "PR4E Chapter 12.1（Networks and Sockets）";
+      var disqus_url = 'http://yibeichen.me/2016/07/20/PY4E-Chapter-12-1/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
