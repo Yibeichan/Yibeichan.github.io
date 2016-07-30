@@ -88,16 +88,16 @@
 
 
 
-<meta name="description" content="这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。用socket会读取文档描述的头部信息和文档内容，而urllib更高级一点，默认你已经知晓头部信息了，直接读取文档内容。tips：保存文件的时候不要直接命名为socket.py和urllib.py。讲到HTTP就该补课了，完全不记得了。本周的测试几乎">
+<meta name="description" content="前两小节讲的都是one-to-many型数据，这一节讲many-to-many类型的数据。这周的题目也是醉了，只用从例子中改三行代码即可。感觉智商派不上用场……">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PR4E Chapter 12.1（Networks and Sockets）">
-<meta property="og:url" content="http://yibeichen.me/2016/07/20/PR4E-Chapter-12-1-assignment/index.html">
+<meta property="og:title" content="PR4E Chapter 14.3（Many-to-Many Relationships in SQL）">
+<meta property="og:url" content="http://yibeichen.me/2016/07/30/PR4E-Chapter-14-3-assignment/index.html">
 <meta property="og:site_name" content="舞！舞！舞！">
-<meta property="og:description" content="这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。用socket会读取文档描述的头部信息和文档内容，而urllib更高级一点，默认你已经知晓头部信息了，直接读取文档内容。tips：保存文件的时候不要直接命名为socket.py和urllib.py。讲到HTTP就该补课了，完全不记得了。本周的测试几乎">
-<meta property="og:updated_time" content="2016-07-29T06:28:02.000Z">
+<meta property="og:description" content="前两小节讲的都是one-to-many型数据，这一节讲many-to-many类型的数据。这周的题目也是醉了，只用从例子中改三行代码即可。感觉智商派不上用场……">
+<meta property="og:updated_time" content="2016-07-30T06:54:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PR4E Chapter 12.1（Networks and Sockets）">
-<meta name="twitter:description" content="这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。用socket会读取文档描述的头部信息和文档内容，而urllib更高级一点，默认你已经知晓头部信息了，直接读取文档内容。tips：保存文件的时候不要直接命名为socket.py和urllib.py。讲到HTTP就该补课了，完全不记得了。本周的测试几乎">
+<meta name="twitter:title" content="PR4E Chapter 14.3（Many-to-Many Relationships in SQL）">
+<meta name="twitter:description" content="前两小节讲的都是one-to-many型数据，这一节讲many-to-many类型的数据。这周的题目也是醉了，只用从例子中改三行代码即可。感觉智商派不上用场……">
 
 
 
@@ -118,9 +118,9 @@
 
 
 
-  <link rel="canonical" href="http://yibeichen.me/2016/07/20/PR4E-Chapter-12-1-assignment/"/>
+  <link rel="canonical" href="http://yibeichen.me/2016/07/30/PR4E-Chapter-14-3-assignment/"/>
 
-  <title> PR4E Chapter 12.1（Networks and Sockets） | 舞！舞！舞！ </title>
+  <title> PR4E Chapter 14.3（Many-to-Many Relationships in SQL） | 舞！舞！舞！ </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -260,7 +260,7 @@
             
             
               
-                PR4E Chapter 12.1（Networks and Sockets）
+                PR4E Chapter 14.3（Many-to-Many Relationships in SQL）
               
             
           </h1>
@@ -272,8 +272,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-20T21:42:59+08:00" content="2016-07-20">
-              2016-07-20
+            <time itemprop="dateCreated" datetime="2016-07-30T13:44:17+08:00" content="2016-07-30">
+              2016-07-30
             </time>
           </span>
 
@@ -283,8 +283,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/07/20/PR4E-Chapter-12-1-assignment/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/07/20/PR4E-Chapter-12-1-assignment/" itemprop="commentsCount"></span>
+                <a href="/2016/07/30/PR4E-Chapter-14-3-assignment/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/07/30/PR4E-Chapter-14-3-assignment/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -307,33 +307,30 @@
       
 
       
-        <p>这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。<br>用socket会读取文档描述的头部信息和文档内容，而urllib更高级一点，默认你已经知晓头部信息了，直接读取文档内容。<br>tips：保存文件的时候不要直接命名为socket.py和urllib.py。<br>讲到HTTP就该补课了，完全不记得了。本周的测试几乎都是这方面的内容。<br><a id="more"></a></p>
-<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>Exploring the HyperText Transport Protocol</p>
-<p>You are to retrieve the following document using the HTTP protocol in a way that you can examine the HTTP Response headers.</p>
-<ul>
-<li><a href="http://www.pythonlearn.com/code/intro-short.txt" target="_blank" rel="external">http://www.pythonlearn.com/code/intro-short.txt</a></li>
+        <p>前两小节讲的都是one-to-many型数据，这一节讲many-to-many类型的数据。<br>这周的题目也是醉了，只用从例子中改三行代码即可。<br>感觉智商派不上用场……<br><a id="more"></a></p>
+<h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="Many-to-Many"><a href="#Many-to-Many" class="headerlink" title="Many-to-Many"></a>Many-to-Many</h2><ul>
+<li>We need to add a “connection” table with two foreign keys</li>
+<li>There is usually no separate primary key</li>
 </ul>
-<p>There are three ways that you might retrieve this web page and look at the response headers:</p>
-<ul>
-<li>Preferred: Modify the <a href="http://www.pythonlearn.com/code/socket1.py" target="_blank" rel="external">socket1.py</a> program to retrieve the above URL and print out the headers and data.</li>
-<li>Open the URL in a web browser with a developer console or FireBug and manually examine the headers that are returned.</li>
-<li>Use the telnet program as shown in lecture to retrieve the headers and content.</li>
+<p><strong>Why We Do This?</strong><br>All about speed.</p>
+<h2 id="Complexity-Enables-Speed"><a href="#Complexity-Enables-Speed" class="headerlink" title="Complexity Enables Speed"></a>Complexity Enables Speed</h2><ul>
+<li>Complexity makes speed possible and allows you to get very fast results as the data size grows</li>
+<li>By <em>normalizing the data and linking it with integer keys, the overall amount of data</em> which the relational database must <em>scan</em> is far lower than if the data were simply flattened out</li>
+<li>It might seem like a <strong>tradeoff</strong> - spend some time designing your database so it continues to be fast when your application is a success</li>
 </ul>
-<p>其实这是一道填空题：</p>
-<ul>
-<li>Content-Type:</li>
-<li>Content-Length:</li>
-<li>Content-Length:</li>
-<li>ETag:</li>
-<li>Cache-Control:</li>
+<h2 id="Additional-SQL-Topics"><a href="#Additional-SQL-Topics" class="headerlink" title="Additional SQL Topics"></a>Additional SQL Topics</h2><ul>
+<li>Indexes improve access performance for things like string fields</li>
+<li>Constraints on data - (cannot be NULL, etc..)</li>
+<li>Transactions - allow SQL operations to be grouped and done as a unit</li>
 </ul>
-<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>这道题简直是小学生水平，老师已经把py都写好了，因为我用的就是第一种方法，直接copy了socket1.py的代码，用terminal运行就得出了头部信息，正常来说，我还应该试一下第二和第三种方法，然而我懒……</p>
-<p>关于第三种方法，telnet program，把老师的slide给扒下来了<br>其实这是一种hack方式……</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ telnet www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span> <span class="number">80</span></div><div class="line">Trying <span class="number">74.208</span>.<span class="number">28.177</span>...</div><div class="line">Connected <span class="keyword">to</span> www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span>.</div><div class="line">Escape character <span class="keyword">is</span> <span class="string">'^]'</span>.</div><div class="line">GET http://www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span>/page1.htm</div></pre></td></tr></table></figure>
-<p>GET后面是应该有两次换行的，所以写到Python里的时候是 \n\n</p>
-<p>但是我在本地用$ telnet命令就不对，返回的是<br><code>www.dr-chunk.com: nodename nor servname provided, or not known</code></p>
-<p>我怀疑是端口80的问题，啊，这又是个坑，总之关于HTTP的都要补课</p>
-<h1 id="补充材料"><a href="#补充材料" class="headerlink" title="补充材料"></a>补充材料</h1><p>book：<a href="http://www.net-intro.com/" target="_blank" rel="external">Introduction to Networking</a><br>course：<a href="https://www.coursera.org/learn/internet-history" target="_blank" rel="external">Internet History, Technology, and Security</a></p>
+<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>This application will read roster data in JSON format, parse the file, and then produce an SQLite database that contains a User, Course, and Member table and populate the tables from the data file.</p>
+<p>You can base your solution on this code: <a href="http://www.pythonlearn.com/code/roster.py" target="_blank" rel="external">http://www.pythonlearn.com/code/roster.py</a> - this code is incomplete as you need to modify the program to store the role column in the Member table to complete the assignment.</p>
+<p>Each student gets their own file for the assignment. Download this file and save it as roster_data.json. Move the downloaded file into the same folder as your roster.py program.</p>
+<p>Once you have made the necessary changes to the program and it has been run successfully reading the above JSON data, run the following SQL command:<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">SELECT</span> <span class="keyword">hex</span>(User.name || Course.title || Member.role ) <span class="keyword">AS</span> X <span class="keyword">FROM</span></div><div class="line">    <span class="keyword">User</span> <span class="keyword">JOIN</span> <span class="keyword">Member</span> <span class="keyword">JOIN</span> Course</div><div class="line">    <span class="keyword">ON</span> User.id = Member.user_id <span class="keyword">AND</span> Member.course_id = Course.id</div><div class="line">    <span class="keyword">ORDER</span> <span class="keyword">BY</span> X</div></pre></td></tr></table></figure></p>
+<p>Find the <strong>first</strong> row in the resulting record set and enter the long string that looks like 53656C696E613333.</p>
+<h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><p>Python：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> json</div><div class="line"><span class="keyword">import</span> sqlite3</div><div class="line"></div><div class="line">conn = sqlite3.connect(<span class="string">'rosterdb.sqlite'</span>)</div><div class="line">cur = conn.cursor()</div><div class="line"></div><div class="line"><span class="comment"># Do some setup</span></div><div class="line">cur.executescript(<span class="string">'''</span></div><div class="line">DROP TABLE IF EXISTS User;</div><div class="line">DROP TABLE IF EXISTS Member;</div><div class="line">DROP TABLE IF EXISTS Course;</div><div class="line"></div><div class="line">CREATE TABLE User (</div><div class="line">    id     INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,</div><div class="line">    name   TEXT UNIQUE</div><div class="line">);</div><div class="line"></div><div class="line">CREATE TABLE Course (</div><div class="line">    id     INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,</div><div class="line">    title  TEXT UNIQUE</div><div class="line">);</div><div class="line"></div><div class="line">CREATE TABLE Member (</div><div class="line">    user_id     INTEGER,</div><div class="line">    course_id   INTEGER,</div><div class="line">    role        INTEGER,</div><div class="line">    PRIMARY KEY (user_id, course_id)</div><div class="line">)</div><div class="line">''')</div><div class="line"></div><div class="line">fname = raw_input(<span class="string">'Enter file name: '</span>)</div><div class="line"><span class="keyword">if</span> ( len(fname) &lt; <span class="number">1</span> ) : fname = <span class="string">'roster_data.json'</span></div><div class="line"></div><div class="line"></div><div class="line">str_data = open(fname).read()</div><div class="line">json_data = json.loads(str_data)</div><div class="line"></div><div class="line"><span class="keyword">for</span> entry <span class="keyword">in</span> json_data:</div><div class="line"></div><div class="line">    name = entry[<span class="number">0</span>];</div><div class="line">    title = entry[<span class="number">1</span>];</div><div class="line">    role = entry[<span class="number">2</span>] <span class="comment"># 添加了role</span></div><div class="line"></div><div class="line">    <span class="keyword">print</span> name, title, role <span class="comment"># 添加了role</span></div><div class="line"></div><div class="line">    cur.execute(<span class="string">'''INSERT OR IGNORE INTO User (name)</span></div><div class="line">        VALUES ( ? )''', ( name, ) )</div><div class="line">    cur.execute(<span class="string">'SELECT id FROM User WHERE name = ? '</span>, (name, ))</div><div class="line">    user_id = cur.fetchone()[<span class="number">0</span>]</div><div class="line"></div><div class="line">    cur.execute(<span class="string">'''INSERT OR IGNORE INTO Course (title)</span></div><div class="line">        VALUES ( ? )''', ( title, ) )</div><div class="line">    cur.execute(<span class="string">'SELECT id FROM Course WHERE title = ? '</span>, (title, ))</div><div class="line">    course_id = cur.fetchone()[<span class="number">0</span>]</div><div class="line"></div><div class="line">    cur.execute(<span class="string">'''INSERT OR REPLACE INTO Member</span></div><div class="line">        (user_id, course_id, role) VALUES ( ?, ?, ? )''',</div><div class="line">        ( user_id, course_id, role ) ) <span class="comment"># 添加了role（3处）</span></div><div class="line"></div><div class="line">    conn.commit()</div></pre></td></tr></table></figure></p>
+<p>SQL：<br>题目中给定的那些，原封不动。<br>不过，这段语句倒是第一次见：<code>hex(User.name || Course.title || Member.role ) AS X</code> 是把三个字段合并为一个吧，但是得到的结果长得好奇怪，不知道是怎么排列的。</p>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>没有一点点惊喜，还以为到第三节了，会来个好玩的，比如教材上的，抓取Twitter朋友信息什么的，打算改一改去试试微博。<br>啊，不能怪老师，要怪就怪自己心思不正。</p>
 
       
     </div>
@@ -367,17 +364,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/20/Listen-to-Music/" rel="next" title="Listen to Music 课程笔记">
-                <i class="fa fa-chevron-left"></i> Listen to Music 课程笔记
+              <a href="/2016/07/30/Test-for-Plugins/" rel="next" title="Test for Plugins">
+                <i class="fa fa-chevron-left"></i> Test for Plugins
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/07/21/PR4E-Chapter-12-2-assignment/" rel="prev" title="PR4E Chapter 12.2（Programs that Surf the Web）">
-                PR4E Chapter 12.2（Programs that Surf the Web） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -536,7 +529,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#备注"><span class="nav-number">2.</span> <span class="nav-text">备注</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#补充材料"><span class="nav-number">3.</span> <span class="nav-text">补充材料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#知识点"><span class="nav-number">1.</span> <span class="nav-text">知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Many-to-Many"><span class="nav-number">1.1.</span> <span class="nav-text">Many-to-Many</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Complexity-Enables-Speed"><span class="nav-number">1.2.</span> <span class="nav-text">Complexity Enables Speed</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Additional-SQL-Topics"><span class="nav-number">1.3.</span> <span class="nav-text">Additional SQL Topics</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">2.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#答案"><span class="nav-number">3.</span> <span class="nav-text">答案</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#备注"><span class="nav-number">4.</span> <span class="nav-text">备注</span></a></li></ol></div>
             
           </div>
         </section>
@@ -656,9 +649,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'yibeichen';
-      var disqus_identifier = '2016/07/20/PR4E-Chapter-12-1-assignment/';
-      var disqus_title = "PR4E Chapter 12.1（Networks and Sockets）";
-      var disqus_url = 'http://yibeichen.me/2016/07/20/PR4E-Chapter-12-1-assignment/';
+      var disqus_identifier = '2016/07/30/PR4E-Chapter-14-3-assignment/';
+      var disqus_title = "PR4E Chapter 14.3（Many-to-Many Relationships in SQL）";
+      var disqus_url = 'http://yibeichen.me/2016/07/30/PR4E-Chapter-14-3-assignment/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');

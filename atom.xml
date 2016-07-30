@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-30T04:35:53.000Z</updated>
+  <updated>2016-07-30T06:54:01.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -16,18 +16,65 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Test for Plugins</title>
-    <link href="http://yibeichen.me/2016/07/30/Test-for-Plugins/"/>
-    <id>http://yibeichen.me/2016/07/30/Test-for-Plugins/</id>
-    <published>2016-07-30T04:34:12.000Z</published>
-    <updated>2016-07-30T04:35:53.000Z</updated>
+    <title>PR4E Chapter 14.3（Many-to-Many Relationships in SQL）</title>
+    <link href="http://yibeichen.me/2016/07/30/PR4E-Chapter-14-3-assignment/"/>
+    <id>http://yibeichen.me/2016/07/30/PR4E-Chapter-14-3-assignment/</id>
+    <published>2016-07-30T05:44:17.000Z</published>
+    <updated>2016-07-30T06:54:01.000Z</updated>
     
-    <content type="html"><![CDATA[<iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A3v8PlUFGQQDBIk1J86waCo" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+    <content type="html"><![CDATA[<p>前两小节讲的都是one-to-many型数据，这一节讲many-to-many类型的数据。<br>这周的题目也是醉了，只用从例子中改三行代码即可。<br>感觉智商派不上用场……<br><a id="more"></a></p>
+<h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="Many-to-Many"><a href="#Many-to-Many" class="headerlink" title="Many-to-Many"></a>Many-to-Many</h2><ul>
+<li>We need to add a “connection” table with two foreign keys</li>
+<li>There is usually no separate primary key</li>
+</ul>
+<p><strong>Why We Do This?</strong><br>All about speed.</p>
+<h2 id="Complexity-Enables-Speed"><a href="#Complexity-Enables-Speed" class="headerlink" title="Complexity Enables Speed"></a>Complexity Enables Speed</h2><ul>
+<li>Complexity makes speed possible and allows you to get very fast results as the data size grows</li>
+<li>By <em>normalizing the data and linking it with integer keys, the overall amount of data</em> which the relational database must <em>scan</em> is far lower than if the data were simply flattened out</li>
+<li>It might seem like a <strong>tradeoff</strong> - spend some time designing your database so it continues to be fast when your application is a success</li>
+</ul>
+<h2 id="Additional-SQL-Topics"><a href="#Additional-SQL-Topics" class="headerlink" title="Additional SQL Topics"></a>Additional SQL Topics</h2><ul>
+<li>Indexes improve access performance for things like string fields</li>
+<li>Constraints on data - (cannot be NULL, etc..)</li>
+<li>Transactions - allow SQL operations to be grouped and done as a unit</li>
+</ul>
+<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>This application will read roster data in JSON format, parse the file, and then produce an SQLite database that contains a User, Course, and Member table and populate the tables from the data file.</p>
+<p>You can base your solution on this code: <a href="http://www.pythonlearn.com/code/roster.py" target="_blank" rel="external">http://www.pythonlearn.com/code/roster.py</a> - this code is incomplete as you need to modify the program to store the role column in the Member table to complete the assignment.</p>
+<p>Each student gets their own file for the assignment. Download this file and save it as roster_data.json. Move the downloaded file into the same folder as your roster.py program.</p>
+<p>Once you have made the necessary changes to the program and it has been run successfully reading the above JSON data, run the following SQL command:<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">SELECT</span> <span class="keyword">hex</span>(User.name || Course.title || Member.role ) <span class="keyword">AS</span> X <span class="keyword">FROM</span></div><div class="line">    <span class="keyword">User</span> <span class="keyword">JOIN</span> <span class="keyword">Member</span> <span class="keyword">JOIN</span> Course</div><div class="line">    <span class="keyword">ON</span> User.id = Member.user_id <span class="keyword">AND</span> Member.course_id = Course.id</div><div class="line">    <span class="keyword">ORDER</span> <span class="keyword">BY</span> X</div></pre></td></tr></table></figure></p>
+<p>Find the <strong>first</strong> row in the resulting record set and enter the long string that looks like 53656C696E613333.</p>
+<h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><p>Python：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> json</div><div class="line"><span class="keyword">import</span> sqlite3</div><div class="line"></div><div class="line">conn = sqlite3.connect(<span class="string">'rosterdb.sqlite'</span>)</div><div class="line">cur = conn.cursor()</div><div class="line"></div><div class="line"><span class="comment"># Do some setup</span></div><div class="line">cur.executescript(<span class="string">'''</span></div><div class="line">DROP TABLE IF EXISTS User;</div><div class="line">DROP TABLE IF EXISTS Member;</div><div class="line">DROP TABLE IF EXISTS Course;</div><div class="line"></div><div class="line">CREATE TABLE User (</div><div class="line">    id     INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,</div><div class="line">    name   TEXT UNIQUE</div><div class="line">);</div><div class="line"></div><div class="line">CREATE TABLE Course (</div><div class="line">    id     INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,</div><div class="line">    title  TEXT UNIQUE</div><div class="line">);</div><div class="line"></div><div class="line">CREATE TABLE Member (</div><div class="line">    user_id     INTEGER,</div><div class="line">    course_id   INTEGER,</div><div class="line">    role        INTEGER,</div><div class="line">    PRIMARY KEY (user_id, course_id)</div><div class="line">)</div><div class="line">''')</div><div class="line"></div><div class="line">fname = raw_input(<span class="string">'Enter file name: '</span>)</div><div class="line"><span class="keyword">if</span> ( len(fname) &lt; <span class="number">1</span> ) : fname = <span class="string">'roster_data.json'</span></div><div class="line"></div><div class="line"></div><div class="line">str_data = open(fname).read()</div><div class="line">json_data = json.loads(str_data)</div><div class="line"></div><div class="line"><span class="keyword">for</span> entry <span class="keyword">in</span> json_data:</div><div class="line"></div><div class="line">    name = entry[<span class="number">0</span>];</div><div class="line">    title = entry[<span class="number">1</span>];</div><div class="line">    role = entry[<span class="number">2</span>] <span class="comment"># 添加了role</span></div><div class="line"></div><div class="line">    <span class="keyword">print</span> name, title, role <span class="comment"># 添加了role</span></div><div class="line"></div><div class="line">    cur.execute(<span class="string">'''INSERT OR IGNORE INTO User (name)</span></div><div class="line">        VALUES ( ? )''', ( name, ) )</div><div class="line">    cur.execute(<span class="string">'SELECT id FROM User WHERE name = ? '</span>, (name, ))</div><div class="line">    user_id = cur.fetchone()[<span class="number">0</span>]</div><div class="line"></div><div class="line">    cur.execute(<span class="string">'''INSERT OR IGNORE INTO Course (title)</span></div><div class="line">        VALUES ( ? )''', ( title, ) )</div><div class="line">    cur.execute(<span class="string">'SELECT id FROM Course WHERE title = ? '</span>, (title, ))</div><div class="line">    course_id = cur.fetchone()[<span class="number">0</span>]</div><div class="line"></div><div class="line">    cur.execute(<span class="string">'''INSERT OR REPLACE INTO Member</span></div><div class="line">        (user_id, course_id, role) VALUES ( ?, ?, ? )''',</div><div class="line">        ( user_id, course_id, role ) ) <span class="comment"># 添加了role（3处）</span></div><div class="line"></div><div class="line">    conn.commit()</div></pre></td></tr></table></figure></p>
+<p>SQL：<br>题目中给定的那些，原封不动。<br>不过，这段语句倒是第一次见：<code>hex(User.name || Course.title || Member.role ) AS X</code> 是把三个字段合并为一个吧，但是得到的结果长得好奇怪，不知道是怎么排列的。</p>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>没有一点点惊喜，还以为到第三节了，会来个好玩的，比如教材上的，抓取Twitter朋友信息什么的，打算改一改去试试微博。<br>啊，不能怪老师，要怪就怪自己心思不正。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;iframe src=&quot;https://embed.spotify.com/?uri=spotify%3Atrack%3A3v8PlUFGQQDBIk1J86waCo&quot; width=&quot;300&quot; height=&quot;380&quot; frameborder=&quot;0&quot; allowtranspar
+      &lt;p&gt;前两小节讲的都是one-to-many型数据，这一节讲many-to-many类型的数据。&lt;br&gt;这周的题目也是醉了，只用从例子中改三行代码即可。&lt;br&gt;感觉智商派不上用场……&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Test for Plugins</title>
+    <link href="http://yibeichen.me/2016/07/30/Test-for-Plugins/"/>
+    <id>http://yibeichen.me/2016/07/30/Test-for-Plugins/</id>
+    <published>2016-07-30T04:34:12.000Z</published>
+    <updated>2016-07-30T06:49:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="音乐插件"><a href="#音乐插件" class="headerlink" title="音乐插件"></a>音乐插件</h1><h2 id="代码嵌套"><a href="#代码嵌套" class="headerlink" title="代码嵌套"></a>代码嵌套</h2><h3 id="Spotify"><a href="#Spotify" class="headerlink" title="Spotify"></a>Spotify</h3><p>网站提供的代码如下：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">iframe</span> src=<span class="string">"https://embed.spotify.com/?uri=spotify%3Atrack%3A3v8PlUFGQQDBIk1J86waCo"</span> <span class="attribute">width</span>=<span class="string">"300"</span> height=<span class="string">"380"</span> frameborder=<span class="string">"0"</span> allowtransparency=<span class="string">"true"</span>&gt;&lt;/iframe&gt;</div></pre></td></tr></table></figure></p>
+<p>效果如图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-30_14:48:19.jpg" alt="2016-07-30_14:48:19.jpg"><br>没开VPN是显示不出来的。<br>看着挺美，但是问题在于，点击会跳转到Spotify官网，不能当前页播放。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;音乐插件&quot;&gt;&lt;a href=&quot;#音乐插件&quot; class=&quot;headerlink&quot; title=&quot;音乐插件&quot;&gt;&lt;/a&gt;音乐插件&lt;/h1&gt;&lt;h2 id=&quot;代码嵌套&quot;&gt;&lt;a href=&quot;#代码嵌套&quot; class=&quot;headerlink&quot; title=&quot;代码嵌套&quot;&gt;&lt;/a
     
     </summary>
     
@@ -41,7 +88,7 @@
     <link href="http://yibeichen.me/2016/07/29/PR4E-Chapter-14-2-assignment/"/>
     <id>http://yibeichen.me/2016/07/29/PR4E-Chapter-14-2-assignment/</id>
     <published>2016-07-29T06:18:39.000Z</published>
-    <updated>2016-07-29T16:10:26.000Z</updated>
+    <updated>2016-07-30T06:27:47.000Z</updated>
     
     <content type="html"><![CDATA[<p>看教材的时候发现，有几个知识点是书上解释了但是视频没解释就直接写了的，比如cur():</p>
 <blockquote>
@@ -105,9 +152,9 @@
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -169,16 +216,16 @@
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
   <entry>
     <title>无心学习之没有VPN</title>
-    <link href="http://yibeichen.me/2016/07/27/no-desire-to-study/"/>
-    <id>http://yibeichen.me/2016/07/27/no-desire-to-study/</id>
+    <link href="http://yibeichen.me/2016/07/27/No-Desire-to-Study/"/>
+    <id>http://yibeichen.me/2016/07/27/No-Desire-to-Study/</id>
     <published>2016-07-26T16:07:07.000Z</published>
     <updated>2016-07-29T06:29:16.000Z</updated>
     
@@ -272,9 +319,9 @@
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -423,9 +470,9 @@
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -475,9 +522,9 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -655,9 +702,9 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -704,9 +751,9 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -917,9 +964,9 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -946,9 +993,9 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -1141,9 +1188,9 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     </summary>
     
     
-      <category term="method" scheme="http://yibeichen.me/tags/method/"/>
-    
       <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
+      <category term="method" scheme="http://yibeichen.me/tags/method/"/>
     
   </entry>
   
