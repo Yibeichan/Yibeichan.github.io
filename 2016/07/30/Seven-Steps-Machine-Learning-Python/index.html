@@ -1,0 +1,812 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ZNp-Or9osyj9lyjTN9O5DRqaSId7rz-OEXbix-AvYjM" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Python,machine learning," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="舞！舞！舞！" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="8月份打算学习machine learning，于是试了一下用Google搜索“machine learning tutorial”，找到了一篇很不错的文章，拿来存着。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="7 Steps to Mastering Machine Learning With Python">
+<meta property="og:url" content="http://yibeichen.me/2016/07/30/Seven-Steps-Machine-Learning-Python/index.html">
+<meta property="og:site_name" content="舞！舞！舞！">
+<meta property="og:description" content="8月份打算学习machine learning，于是试了一下用Google搜索“machine learning tutorial”，找到了一篇很不错的文章，拿来存着。">
+<meta property="og:updated_time" content="2016-07-30T10:10:48.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="7 Steps to Mastering Machine Learning With Python">
+<meta name="twitter:description" content="8月份打算学习machine learning，于是试了一下用Google搜索“machine learning tutorial”，找到了一篇很不错的文章，拿来存着。">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yibeichen.me/2016/07/30/Seven-Steps-Machine-Learning-Python/"/>
+
+  <title> 7 Steps to Mastering Machine Learning With Python | 舞！舞！舞！ </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">舞！舞！舞！</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">宁要壮烈的闪烁，不要平淡的沉默</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tools">
+          <a href="/tools" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-magic"></i> <br />
+            
+            工具
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                7 Steps to Mastering Machine Learning With Python
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-30T17:49:46+08:00" content="2016-07-30">
+              2016-07-30
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/07/30/Seven-Steps-Machine-Learning-Python/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/07/30/Seven-Steps-Machine-Learning-Python/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>8月份打算学习machine learning，于是试了一下用Google搜索“machine learning tutorial”，找到了一篇很不错的文章，拿来存着。<br><a id="more"></a><br>原文链接：<a href="http://www.kdnuggets.com/2015/11/seven-steps-machine-learning-python.html" target="_blank" rel="external">http://www.kdnuggets.com/2015/11/seven-steps-machine-learning-python.html</a></p>
+<blockquote>
+<p>There are many Python machine learning resources freely available online. Where to begin? How to proceed? Go from zero to Python machine learning hero in 7 steps!<br><strong>By <a href="http://www.kdnuggets.com/author/matt-mayo" target="_blank" rel="external">Matthew Mayo</a>, KDnuggets.</strong></p>
+</blockquote>
+<p>Getting started. Two of the most de-motivational words in the English language. The first step is often the hardest to take, and when given too much choice in terms of direction it can often be debilitating.</p>
+<p>Where to begin?</p>
+<p>This post aims to take a newcomer from minimal knowledge of machine learning in Python all the way to knowledgeable practitioner in 7 steps, all while using freely available materials and resources along the way. The prime objective of this outline is to help you wade through the numerous free options that are available; there are many, to be sure, but which are the best? Which complement one another? What is the best order in which to use selected resources?</p>
+<p>Moving forward, I make the assumption that you are not an expert in:</p>
+<ul>
+<li>Machine learning</li>
+<li>Python</li>
+<li>Any of Python’s machine learning, scientific computing, or data analysis libraries</li>
+</ul>
+<p>It would probably be helpful to have some basic understanding of one or both of the first 2 topics, but even that won’t be necessary; some extra time spent on the earlier steps should help compensate.</p>
+<h1 id="Step-1-Basic-Python-Skills"><a href="#Step-1-Basic-Python-Skills" class="headerlink" title="Step 1: Basic Python Skills"></a>Step 1: Basic Python Skills</h1><p>If we intend to leverage Python in order to perform machine learning, having some base understanding of Python is crucial. Fortunately, due to its widespread popularity as a general purpose programming language, as well as its adoption in both scientific computing and machine learning, coming across beginner’s tutorials is not very difficult. Your level of experience in both Python and programming in general are crucial to choosing a starting point.</p>
+<p>First, you need Python installed. Since we will be using scientific computing and machine learning packages at some point, I suggest that you <a href="http://docs.continuum.io/anaconda/install" target="_blank" rel="external">install Anaconda</a>. It is an industrial-strength Python implementation for Linux, OSX, and Windows, complete with the required packages for machine learning, including numpy, scikit-learn, and matplotlib. It also includes iPython Notebook, an interactive environment for many of our tutorials. I would suggest Python 2.7, for no other reason than it is still the dominant installed version.</p>
+<p>learn-pythonIf you have no knowledge of programming, my suggestion is to start with the following free online book, then move on to the subsequent materials:</p>
+<ul>
+<li><a href="http://learnpythonthehardway.org/book/" target="_blank" rel="external">Python The Hard Way</a> by Zed A. Shaw</li>
+</ul>
+<p>If you have experience in programming but not with Python in particular, or if your Python is elementary, I would suggest one or both of the following:</p>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLfZeRfzhgQzTMgwFVezQbnpc1ck0I6CQl" target="_blank" rel="external">Google Developers Python Course </a>(highly recommended for visual learners)</li>
+<li><a href="http://www.engr.ucsb.edu/~shell/che210d/python.pdf" target="_blank" rel="external">An Introduction to Python for Scientific Computing</a> (from UCSB Engineering) by M. Scott Shell (a great scientific Python intro ~60 pages)</li>
+</ul>
+<p>And for those looking for a 30 minute crash course in Python, here you go:</p>
+<ul>
+<li><a href="http://learnxinyminutes.com/docs/python/" target="_blank" rel="external">Learn X in Y Minutes (X = Python)</a></li>
+</ul>
+<p>Of course, if you are an experienced Python programmer you will be able to skip this step. Even if so, I suggest keeping the very readable <a href="https://www.python.org/doc/" target="_blank" rel="external">Python documentation</a> handy.</p>
+<h1 id="Step-2-Foundational-Machine-Learning-Skills"><a href="#Step-2-Foundational-Machine-Learning-Skills" class="headerlink" title="Step 2: Foundational Machine Learning Skills"></a>Step 2: Foundational Machine Learning Skills</h1><p>KDnuggets’ own Zachary Lipton has pointed out that there is a lot of variation in what people consider a “data scientist.” This actually is a reflection of the field of machine learning, since much of what data scientists do involves using machine learning algorithms to varying degrees. Is it necessary to intimately understand kernel methods in order to efficiently create and gain insight from a support vector machine model? Of course not. Like almost anything in life, required depth of theoretical understanding is relative to practical application. Gaining an intimate understanding of machine learning algorithms is beyond the scope of this article, and generally requires substantial amounts of time investment in a more academic setting, or via intense self-study at the very least.</p>
+<p>The good news is that you don’t need to possess a PhD-level understanding of the theoretical aspects of machine learning in order to practice, in the same manner that not all programmers require a theoretical computer science education in order to be effective coders.</p>
+<p>Andrew Ng’s Coursera course often gets rave reviews for its content; my suggestion, however, is to browse the course notes compiled by a former student of the online course’s previous incarnation. Skip over the Octave-specific notes (a Matlab-like language unrelated to our Python pursuits). Be warned that these are not “official” notes, but do seem to capture the relevant content from Andrew’s course material. Of course, if you have the time and interest, now would be the time to take <a href="https://www.coursera.org/learn/machine-learning" target="_blank" rel="external">Andrew Ng’s Machine Learning course on Coursera</a>.</p>
+<ul>
+<li><a href="http://www.holehouse.org/mlclass/" target="_blank" rel="external">Unofficial Andrew Ng course notes</a></li>
+</ul>
+<p>There all sorts of video lectures out there if you prefer, alongside Ng’s course mentioned above. I’m a fan of Tom Mitchell, so here’s a link to his recent lecture videos (along with Maria-Florina Balcan), which I find particularly approachable:</p>
+<ul>
+<li><a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/lectures.shtml" target="_blank" rel="external">Tom Mitchell Machine Learning Lectures</a></li>
+</ul>
+<p>You don’t need all of the notes and videos at this point. A valid strategy involves moving forward to particular exercises below, and referencing applicable sections of the above notes and videos when appropriate. For example, when you come across an exercise implementing a regression model below, read the appropriate regression section of Ng’s notes and/or view Mitchell’s regression videos at that time.</p>
+<h1 id="Step-3-Scientific-Python-Packages-Overview"><a href="#Step-3-Scientific-Python-Packages-Overview" class="headerlink" title="Step 3: Scientific Python Packages Overview"></a>Step 3: Scientific Python Packages Overview</h1><p>Alright. We have a handle on Python programming and understand a bit about machine learning. Beyond Python there are a number of open source libraries generally used to facilitate practical machine learning. In general, these are the main so-called scientific Python libraries we put to use when performing elementary machine learning tasks (there is clearly subjectivity in this):</p>
+<ul>
+<li><a href="http://www.numpy.org/" target="_blank" rel="external">numpy</a> - mainly useful for its N-dimensional array objects</li>
+<li><a href="http://pandas.pydata.org/" target="_blank" rel="external">pandas</a> - Python data analysis library, including structures such as dataframes</li>
+<li><a href="http://matplotlib.org/" target="_blank" rel="external">matplotlib</a> - 2D plotting library producing publication quality figures</li>
+<li><a href="http://scikit-learn.org/stable/" target="_blank" rel="external">scikit-learn</a> - the machine learning algorithms used for data analysis and data mining tasks</li>
+</ul>
+<p>A good approach to learning these is to cover this material:</p>
+<ul>
+<li><a href="http://www.scipy-lectures.org/" target="_blank" rel="external">Scipy Lecture Notes</a> by Gaël Varoquaux, Emmanuelle Gouillart, and Olav Vahtras</li>
+</ul>
+<p>This pandas tutorial is good, and to the point:</p>
+<ul>
+<li><a href="http://pandas.pydata.org/pandas-docs/stable/10min.html" target="_blank" rel="external">10 Minutes to Pandas</a></li>
+</ul>
+<p>You will see some other packages in the tutorials below, including, for example, Seaborn, which is a data visualization library based on matplotlib. The aforementioned packages are (again, subjectively) the core of a wide array of machine learning tasks in Python; however, understanding them should let you adapt to additional and related packages without confusion when they are referenced in the following tutorials.</p>
+<h1 id="Step-4-Getting-Started-with-Machine-Learning-in-Python"><a href="#Step-4-Getting-Started-with-Machine-Learning-in-Python" class="headerlink" title="Step 4: Getting Started with Machine Learning in Python"></a>Step 4: Getting Started with Machine Learning in Python</h1><p>Python. Check.<br>Machine learning fundamentals. Check.<br>Numpy. Check.<br>Pandas. Check.<br>Matplotlib. Check.</p>
+<p>The time has come. Let’s start implementing machine learning algorithms with Python’s de facto standard machine learning library, scikit-learn.</p>
+<p>Many of the following tutorials and exercises will be driven by the iPython (Jupyter) Notebook, which is an interactive environment for executing Python. These iPython notebooks can optionally be viewed online or downloaded and interacted with locally on your own computer.</p>
+<ul>
+<li><a href="http://cs231n.github.io/ipython-tutorial/" target="_blank" rel="external">iPython Notebook Overview</a> from Stanford</li>
+</ul>
+<p>Also note that the tutorials below are from a number of online sources. All Notebooks have been attributed to the authors; if, for some reason, you find that someone has not been properly credited for their work, <a href="https://twitter.com/mattmayo13" target="_blank" rel="external">please let me know</a> and the situation will be rectified ASAP. In particular, I would like to tip my hat to <a href="http://www.astro.washington.edu/users/vanderplas/" target="_blank" rel="external">Jake VanderPlas</a>, <a href="http://www.randalolson.com/" target="_blank" rel="external">Randal Olson</a>, <a href="http://donnemartin.com/" target="_blank" rel="external">Donne Martin</a>, <a href="https://twitter.com/justmarkham" target="_blank" rel="external">Kevin Markham</a>, and <a href="http://www.colinraffel.com/" target="_blank" rel="external">Colin Raffel</a> for their fantastic freely-available resources.</p>
+<p>Our first tutorials for getting our feet wet with scikit-learn follow. I suggest doing all of these in order before moving to the following steps.</p>
+<p>A general introduction to scikit-learn, Python’s most-used general purpose machine learning library, covering the k-nearest neighbors algorithm:</p>
+<ul>
+<li><a href="http://nbviewer.ipython.org/github/donnemartin/data-science-ipython-notebooks/blob/master/scikit-learn/scikit-learn-intro.ipynb" target="_blank" rel="external">An Introduction to scikit-learn</a> by Jake VanderPlas</li>
+</ul>
+<p>A more in-depth and expanded introduction, including a starter project with a well-known dataset from start to finish:</p>
+<ul>
+<li><a href="http://nbviewer.ipython.org/github/rhiever/Data-Analysis-and-Machine-Learning-Projects/blob/master/example-data-science-notebook/Example%20Machine%20Learning%20Notebook.ipynb" target="_blank" rel="external">Example Machine Learning Notebook</a> by Randal Olson</li>
+</ul>
+<p>A focus on strategies for evaluating different models in scikit-learn, covering train/test dataset splits:</p>
+<ul>
+<li><a href="https://github.com/justmarkham/scikit-learn-videos/blob/master/05_model_evaluation.ipynb" target="_blank" rel="external">Model Evaluation</a> by Kevin Markham</li>
+</ul>
+<h1 id="Step-5-Machine-Learning-Topics-with-Python"><a href="#Step-5-Machine-Learning-Topics-with-Python" class="headerlink" title="Step 5: Machine Learning Topics with Python"></a>Step 5: Machine Learning Topics with Python</h1><p>With a foundation having been laid in scikit-learn, we can move on to some more in-depth explorations of the various common, and useful, algorithms. We start with k-means clustering, one of the most well-known machine learning algorithms. It is a simple and often effective method for solving unsupervised learning problems:</p>
+<ul>
+<li><a href="https://github.com/jakevdp/sklearn_pycon2015/blob/master/notebooks/04.2-Clustering-KMeans.ipynb" target="_blank" rel="external">k-means Clustering</a> by Jake VanderPlas</li>
+</ul>
+<p>Next, we move back toward classification, and take a look at one of the most historically popular classification methods:</p>
+<ul>
+<li><a href="http://thegrimmscientist.com/2014/10/23/tutorial-decision-trees/" target="_blank" rel="external">Decision Trees</a> via <a href="http://thegrimmscientist.com/" target="_blank" rel="external">The Grimm Scientist</a></li>
+</ul>
+<p>From classification, we look at continuous numeric prediction:</p>
+<ul>
+<li><a href="http://nbviewer.ipython.org/github/donnemartin/data-science-ipython-notebooks/blob/master/scikit-learn/scikit-learn-linear-reg.ipynb" target="_blank" rel="external">Linear Regression</a> by Jake VanderPlas</li>
+</ul>
+<p>We can then leverage regression for classification problems, via logistic regression:</p>
+<ul>
+<li><a href="http://nbviewer.ipython.org/github/justmarkham/gadsdc1/blob/master/logistic_assignment/kevin_logistic_sklearn.ipynb" target="_blank" rel="external">Logistic Regression</a> by Kevin Markham</li>
+</ul>
+<p>Step 6: Advanced Machine Learning Topics with Python</p>
+<p>We’ve gotten our feet wet with scikit-learn, and now we turn our attention to some more advanced topics. First up are support vector machines, a not-necessarily-linear classifier relying on complex transformations of data into higher dimensional space.</p>
+<ul>
+<li><a href="https://github.com/jakevdp/sklearn_pycon2015/blob/master/notebooks/03.1-Classification-SVMs.ipynb" target="_blank" rel="external">Support Vector Machines</a> by Jake VanderPlas</li>
+</ul>
+<p>Next, random forests, an ensemble classifier, are examined via a Kaggle Titanic Competition walk-through:</p>
+<ul>
+<li><a href="https://github.com/jakevdp/sklearn_pycon2015/blob/master/notebooks/03.1-Classification-SVMs.ipynb" target="_blank" rel="external">Kaggle Titanic Competition (with Random Forests)</a> by Donne Martin</li>
+</ul>
+<p>Dimensionality reduction is a method for reducing the number of variables being considered in a problem. Principal Component Analysis is a particular form of unsupervised dimensionality reduction:</p>
+<ul>
+<li><a href="https://github.com/jakevdp/sklearn_pycon2015/blob/master/notebooks/04.1-Dimensionality-PCA.ipynb" target="_blank" rel="external">Dimensionality Reduction</a> by Jake VanderPlas</li>
+</ul>
+<p>Before moving on to the final step, we can take a moment to consider that we have come a long way in a relatively short period of time.</p>
+<p>Using Python and its machine learning libraries, we have covered some of the most common and well-known machine learning algorithms (k-nearest neighbors, k-means clustering, support vector machines), investigated a powerful ensemble technique (random forests), and examined some additional machine learning support tasks (dimensionality reduction, model validation techniques). Along with some foundational machine learning skills, we have started filling a useful toolkit for ourselves.</p>
+<p>We will add one more in-demand tool to that kit before wrapping up.</p>
+<h1 id="Step-7-Deep-Learning-in-Python"><a href="#Step-7-Deep-Learning-in-Python" class="headerlink" title="Step 7: Deep Learning in Python"></a>Step 7: Deep Learning in Python</h1><p>Deep learning is everywhere! Deep learning builds on neural network research going back several decades, but recent advances dating to the past several years have dramatically increased the perceived power of, and general interest in, deep neural networks. If you are unfamiliar with deep learning, <a href="http://www.kdnuggets.com/?s=deep+learning" target="_blank" rel="external">KDnuggets has many articles</a> detailing the numerous recent innovations, accomplishments, and accolades of the technology.</p>
+<p>This final step does not purport to be a deep learning clinic of any sort; we will take a look at a few simple network implementations in 2 of the leading contemporary Python deep learning libraries. For those interested in digging deeper into deep learning, I recommend starting with the following free online book:</p>
+<ul>
+<li><a href="http://neuralnetworksanddeeplearning.com/" target="_blank" rel="external">Neural Networks and Deep Learning</a> by <a href="http://michaelnielsen.org/" target="_blank" rel="external">Michael Nielsen</a></li>
+</ul>
+<h2 id="Theano"><a href="#Theano" class="headerlink" title="Theano"></a><a href="http://deeplearning.net/software/theano/" target="_blank" rel="external">Theano</a></h2><p>Theano is the first Python deep learning library we will look at. From the authors:</p>
+<blockquote>
+<p>Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.</p>
+</blockquote>
+<p>The following introductory tutorial on deep learning in Theano is lengthy, but it is quite good, very descriptive, and heavily-commented:</p>
+<ul>
+<li><a href="http://nbviewer.ipython.org/github/craffel/theano-tutorial/blob/master/Theano%20Tutorial.ipynb" target="_blank" rel="external">Theano Deep Learning Tutorial</a> by <a href="http://www.colinraffel.com/" target="_blank" rel="external">Colin Raffel</a></li>
+</ul>
+<h2 id="Caffe"><a href="#Caffe" class="headerlink" title="Caffe"></a><a href="http://caffe.berkeleyvision.org/" target="_blank" rel="external">Caffe</a></h2><p>The other library we will test drive is Caffe. Again, from the authors:</p>
+<blockquote>
+<p>Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is developed by the Berkeley Vision and Learning Center (BVLC) and by community contributors.</p>
+</blockquote>
+<p>This tutorial is the cherry on the top of this article. While we have undertaken a few interesting examples above, none likely compete with the following, which is implementing <a href="http://googleresearch.blogspot.ch/2015/06/inceptionism-going-deeper-into-neural.html" target="_blank" rel="external">Google’s #DeepDream</a> using Caffe. Enjoy this one! After understanding the tutorial, play around with it to get your processors dreaming on their own.</p>
+<ul>
+<li><a href="https://github.com/google/deepdream/blob/master/dream.ipynb" target="_blank" rel="external">Dreaming Deep with Caffe</a> via <a href="https://github.com/google" target="_blank" rel="external">Google’s GitHub</a></li>
+</ul>
+<p>I didn’t promise it would be quick or easy, but if you put the time in and follow the above 7 steps, there is no reason that you won’t be able to claim reasonable proficiency and understanding in a number of machine learning algorithms and their implementation in Python using its popular libraries, including some of those on the cutting edge of current deep learning research.</p>
+<p>Bio: <a href="https://twitter.com/mattmayo13" target="_blank" rel="external">Matthew Mayo</a> is a computer science graduate student currently working on his thesis parallelizing machine learning algorithms. He is also a student of data mining, a data enthusiast, and an aspiring machine learning scientist.</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag">#Python</a>
+          
+            <a href="/tags/machine-learning/" rel="tag">#machine learning</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/30/Python-for-Everybody/" rel="next" title="Python for Everybody 系列课程总结">
+                <i class="fa fa-chevron-left"></i> Python for Everybody 系列课程总结
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Yibei Chen" />
+          <p class="site-author-name" itemprop="name">Yibei Chen</p>
+          <p class="site-description motion-element" itemprop="description">Keep writing and catch that python</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/Yibeichan" target="_blank" title="github">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  github
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/adelechen" target="_blank" title="zhihu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  zhihu
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://chatnone.com/" title="ChatNone" target="_blank">ChatNone</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://xiaolai.li/" title="xiaolai.li" target="_blank">xiaolai.li</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Step-1-Basic-Python-Skills"><span class="nav-number">1.</span> <span class="nav-text">Step 1: Basic Python Skills</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Step-2-Foundational-Machine-Learning-Skills"><span class="nav-number">2.</span> <span class="nav-text">Step 2: Foundational Machine Learning Skills</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Step-3-Scientific-Python-Packages-Overview"><span class="nav-number">3.</span> <span class="nav-text">Step 3: Scientific Python Packages Overview</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Step-4-Getting-Started-with-Machine-Learning-in-Python"><span class="nav-number">4.</span> <span class="nav-text">Step 4: Getting Started with Machine Learning in Python</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Step-5-Machine-Learning-Topics-with-Python"><span class="nav-number">5.</span> <span class="nav-text">Step 5: Machine Learning Topics with Python</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Step-7-Deep-Learning-in-Python"><span class="nav-number">6.</span> <span class="nav-text">Step 7: Deep Learning in Python</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Theano"><span class="nav-number">6.1.</span> <span class="nav-text">Theano</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Caffe"><span class="nav-number">6.2.</span> <span class="nav-text">Caffe</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yibei Chen</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'yibeichen';
+      var disqus_identifier = '2016/07/30/Seven-Steps-Machine-Learning-Python/';
+      var disqus_title = "7 Steps to Mastering Machine Learning With Python";
+      var disqus_url = 'http://yibeichen.me/2016/07/30/Seven-Steps-Machine-Learning-Python/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+
+  
+  
+
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+
+  
+
+</body>
+</html>
