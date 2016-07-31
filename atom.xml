@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-30T10:22:35.000Z</updated>
+  <updated>2016-07-31T09:41:55.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -14,6 +14,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记一次失败的尝试</title>
+    <link href="http://yibeichen.me/2016/07/31/A-Failed-Try/"/>
+    <id>http://yibeichen.me/2016/07/31/A-Failed-Try/</id>
+    <published>2016-07-31T08:21:07.000Z</published>
+    <updated>2016-07-31T09:41:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这篇文章是关于为Hexo添加站内搜索的，很不幸，失败了，所以这篇文章也没有什么参考价值，引以为戒好了。<br><a id="more"></a><br>尝试了两种方法：Swiftype Search 和Local Search，严格说来也不能算失败，但是结果实在不能令人满意。</p>
+<p>一个一个说：</p>
+<h1 id="Swiftype"><a href="#Swiftype" class="headerlink" title="Swiftype"></a>Swiftype</h1><p>分两步：</p>
+<h2 id="Swiftype内设置"><a href="#Swiftype内设置" class="headerlink" title="Swiftype内设置"></a>Swiftype内设置</h2><ul>
+<li>注册账号</li>
+<li>添加搜索引擎（官网上有清晰的引导）</li>
+<li>自定义搜索引擎样式</li>
+<li>获取key</li>
+</ul>
+<h2 id="Hexo内设置"><a href="#Hexo内设置" class="headerlink" title="Hexo内设置"></a>Hexo内设置</h2><p>在站点_config.yml添加 Swiftype_key: yourswiftypekey</p>
+<p>按理说这样设置以后就ok了，结果网站的menu变成了这样：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-31_16:30:14.jpg" alt="2016-07-31_16:30:14.jpg"><br>WHAT!!!<br>为什么会有两个搜索框！TELL ME WHY!!!</p>
+<p>其实最开始是没有搜索框的，只有“搜索”这个菜单，为了把文字换成搜索框，我就去折腾NexT的配置文件了，找到一个Swiftype.swig,把里面的代码换成了网站提供的，事实上没有什么差别，唯一不同的地方就是swig本来是没有key的。然后，网页就同时出现了搜索框和“搜索”字样。</p>
+<p>好了，我现在不想要搜索框了，只要一个“搜索”就ok啊，然而，无论我怎么改，把swig改回去，在Swiftype里把engine删了重设又删又重设，都没有一点用。</p>
+<p>算了算了，我不要这个了，改成Local Search，OK？</p>
+<h1 id="Local-Search"><a href="#Local-Search" class="headerlink" title="Local Search"></a>Local Search</h1><p>安装插件<br><code>npm install hexo-generator-search --save</code></p>
+<p>在站点的_config.yml中增加<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">search:</div><div class="line">  path: search.<span class="keyword">xml</span></div><div class="line">  <span class="title">field</span>: post</div></pre></td></tr></table></figure></p>
+<p>效果如图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-31_16:47:55.jpg" alt="2016-07-31_16:47:55.jpg"></p>
+<p>搜索框长这么难看就算了，搜索结果还不精确。似乎只能抓取首页的，其他页面比如“工具”的内容就没办法检索到，以cheatsheet为例：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-31_16:51:13.jpg" alt="2016-07-31_16:51:13.jpg"></p>
+<p>样式我不会改，可能要修改node_modules内的文件，看不懂。</p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>好了，就是这样一个悲伤的故事。<br>我只想要一个简单实用又好看（要求高？）的搜索啊！</p>
+<h2 id="折腾了整整一天，竟然就是这个结果。"><a href="#折腾了整整一天，竟然就是这个结果。" class="headerlink" title="折腾了整整一天，竟然就是这个结果。"></a>折腾了整整一天，竟然就是这个结果。</h2><p>妹妹：姐姐你不休息一会呀？<br>我：玩的时候为什么要休息？<br>妹妹：你不是在工作吗？<br>我：我没在工作，我在玩……</p>
+<p>玩物丧志，懂？</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这篇文章是关于为Hexo添加站内搜索的，很不幸，失败了，所以这篇文章也没有什么参考价值，引以为戒好了。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yibeichen.me/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>7 Steps to Mastering Machine Learning With Python</title>
@@ -1109,9 +1151,9 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="music" scheme="http://yibeichen.me/tags/music/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -1238,201 +1280,6 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
       <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Learning How To Learn 课程笔记</title>
-    <link href="http://yibeichen.me/2016/07/08/Learning-How-To-Learn/"/>
-    <id>http://yibeichen.me/2016/07/08/Learning-How-To-Learn/</id>
-    <published>2016-07-07T16:06:40.000Z</published>
-    <updated>2016-07-29T06:29:35.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>Learning How to Learn: Powerful mental tools to help you master tough subjects（如何学习：学习困难科目的实用思维方法 ）</strong></p>
-<p>阅读材料：《A Mind for Numbers》</p>
-<p>课程共四周，小标题差不多就是按每周的要点来，比较随性啦。<br><a id="more"></a></p>
-<h2 id="第一周"><a href="#第一周" class="headerlink" title="第一周"></a>第一周</h2><h3 id="人脑的两种思考模式"><a href="#人脑的两种思考模式" class="headerlink" title="人脑的两种思考模式"></a>人脑的两种思考模式</h3><p>focused- mode（左脑）和 diffuse mode（右脑）</p>
-<ul>
-<li>focused- mode 是指那些需要集中注意力进行的学习，比如解数学题什么的</li>
-<li>diffuse mode 刚好相反，属于那种你发个呆、散个步，或者睡个觉就突然灵光一闪，把百思不得其解的东西，想出个所以然来了</li>
-</ul>
-<p>几乎所有的学习都是这两种模式相结合，你可能会在这两种模式中不停切换，但是基本上不会同时处于这两种模式中。当你专注得不到结果的时候，就可以尝试放空一下，说不定灵感就突然冒出来了。</p>
-<p>说到“放空”，就不得不说两个很重要的行为：睡觉和锻炼</p>
-<h3 id="sleep的重要性在于"><a href="#sleep的重要性在于" class="headerlink" title="sleep的重要性在于"></a>sleep的重要性在于</h3><ul>
-<li>可以排出大脑中的毒素，大脑和房间一样每天也会产生垃圾，睡觉就是一种清洁过程，keep clean and healthy</li>
-<li>通常伴随着另一个活动：做梦，做梦就涉及到diffuse mode了，如果睡前你非常专注于某项学习，那么睡着以后就很有可能梦到它</li>
-<li>是一种放松，可以帮助记忆重组，发现之前被忽视的一些联系</li>
-</ul>
-<h3 id="exercise的重要性在于"><a href="#exercise的重要性在于" class="headerlink" title="exercise的重要性在于"></a>exercise的重要性在于</h3><ul>
-<li>mental和physical要搭配好呀，不能光练脑不练肌肉</li>
-<li>锻炼和睡觉一样，可以将人从focus mode中解放出来，进入diffuse mode</li>
-<li>另外有研究表明，锻炼肌肉也能对思维能力起到一定的锻炼效果，有助于记忆</li>
-</ul>
-<h3 id="人的两种记忆模式"><a href="#人的两种记忆模式" class="headerlink" title="人的两种记忆模式"></a>人的两种记忆模式</h3><p>working memory和long term memory</p>
-<ul>
-<li>working memory 是短期的即时的记忆，而long term memory 顾名思义就是长期记忆，我们学到的东西基本都是先进入working memory，然后只有一小部分由此进入long term memory，而working memory能储存的东西很少，大概只有4 chunks</li>
-<li>怎么样才能让更多的短期记忆变成长期记忆呢？最重要的就是practice和repeat！重复重复不断重复是记忆的最佳手段之一！甚至可以说是最重要的。</li>
-</ul>
-<p>在一个interview里，Dr. Barbara Oakley说到“记忆”：</p>
-<blockquote>
-<p>人们通常觉得“死记硬背”不好，但往往批评过头了，甚至觉得“记忆”这件事本身也不好。他们会说，记住了不代表理解了也不代表会用。而现在，借助于发达的科技，很多东西我们都不会主动记忆了。比如诗歌。但实际上，诗人们说，记住一首诗能帮助你更好地理解诗中的深意。</p>
-</blockquote>
-<p>当然，记忆也是讲方法的，这又可以讲很多，不要cram your memory by repeating too many things all in one day ，还有spaced repetition，有个软件叫做anki就是利用这种方法帮助人们记忆的。（大学的时候我就折腾过，和它类似的还有 supermemo，但没多久就放弃了，过多寄希望于工具，是不够理性的）</p>
-<p>第一周的课程里，Dr. Barbara Oakley采访了五个人，他们有的是科学家非常擅长于学习，有的天分不高但依然学会了很多门语言，还有的从事编辑写作指导工作几十年。</p>
-<p>Dr. Barbara Oakley提了很多很棒的问题，受访者也给出了不少可操作性的回答。</p>
-<p>比如：</p>
-<p>如何在枯燥的课堂上保持注意力？</p>
-<ul>
-<li>多提问，带着问题去听课可以让你积极参与其中，发现乐趣并且保持注意力</li>
-</ul>
-<p>面对multitask的时候，如何保持专注？</p>
-<ul>
-<li>每种任务的切换都需要一段时间的适应，因此我通常在夜深人静的时候做那些需要非常专注才能完成的工作。</li>
-</ul>
-<p>学习语言的过程中，遭遇很多的失败，该怎么克服这种挫败感？</p>
-<ul>
-<li>try different techniques, push your attention, find your limits.（这个人还说了，不要有畏难情绪，不要怕，“every single person in this world，has had challenges to go through”，总之就是 you’re not alone，比你更难的困难户都在努力而且取得了效果，你还在畏畏缩缩地干什么！）</li>
-</ul>
-<p>写稿的时候，写到一半觉得自己写得太烂了不想继续了，怎么办？（果壳推了一篇<a href="https://app.yinxiang.com/shard/s20/nl/631551271/1d13236e-1c9f-4848-aa3a-1997fc090b87/" target="_blank" rel="external">文章</a>刚好分析了一下拖稿的心理：作者拖稿是怕自己写不好，而快到ddl的时候，怕自己写不完的恐惧战胜了写不好的恐惧）</p>
-<ul>
-<li>几乎每个作者都会遇到这种情况，其原因在于，我们总是一边写一边改。正确的做法应该是：一鼓作气写到底，写完再改。最重要的是写下去！等你写完了回过头看看，可能就不觉得自己写得差，反而会发现：这句写得可真好！（www.publicationcoach.com）</li>
-</ul>
-<p>最后，关于学习的终极问题，对于持续的学习而言，什么是最重要的？</p>
-<ul>
-<li>几乎所有人的回答都是_passion_和_persistence_！</li>
-</ul>
-<h2 id="第二周"><a href="#第二周" class="headerlink" title="第二周"></a>第二周</h2><h3 id="Chunk三步走"><a href="#Chunk三步走" class="headerlink" title="Chunk三步走"></a>Chunk三步走</h3><ul>
-<li>focused attention</li>
-<li>understanding of the basic idea</li>
-<li>practice help you get the big picture context</li>
-</ul>
-<p>之前在Quora上看到有人说chunk，当时不太理解，去搜了一下这个单词，大意是“块”。然后想到学英语的时候，有个老师讲过“语块”学习，他说：abstract、metaphor、yearn这三个单词（我不记得他说的是哪几个词了，随便举了个例子）分开记有点难度，但是把首字母连在一起记就是amy，背的时候就更容易联想些。事实上我的感觉是，如果这就是他所谓的chunk记忆法，那真是扯淡，他完全没有理解chunk的真正意义。</p>
-<p>视频里，Dr. Barbara Oakley举例说：单独记p、o、p这组字母不如它们变成pop这个单词来记（估计那位老师就看到这，然后错误地理解了chunk的意义），chunk类似于把一个概念及其相关的东西打包压缩成为一个整体。</p>
-<p>最开始我也没有很好地理解chunk，但渐渐地，我觉得离这个概念越来越近了，我把chunk看成一个个独立的unit，比如整个代数可以分成很多个独立unit，三角函数是一个、一元二次方程又是一个，概论论是另外一个等等，以前中学的时候做过一套书叫做《各个击破》，大概就是这个道理，一个专题一个专题地解决，而不是把所有代数、几何都混合在一起。更直观的是练习钢琴曲，一首很难的曲子，不要试图一下子把它全部掌握，可以一节一节地练习，当每个部分都熟练了以后再将它们合到一起就好了。</p>
-<h4 id="那我们怎么样才能建立一个chunk并掌握它呢？"><a href="#那我们怎么样才能建立一个chunk并掌握它呢？" class="headerlink" title="那我们怎么样才能建立一个chunk并掌握它呢？"></a>那我们怎么样才能建立一个chunk并掌握它呢？</h4><p>拿理科学习来说：不要急于做题目，要先看书、找教学视频、Google相关的资料等等，总之就是先理解基本概念，要有一定的了解再开始练习。而且练习要数书上的习题最佳。因为书上的习题都有讲解，每一步怎么走的都清清楚楚，对着做的时候就知道自己的思路和书中的思路有何不同，这就是一种_正反馈_啊！非常之重要！</p>
-<p>想到以前读高中的时候，也迷恋过“啃难题”，啃出了一道就非常有成就感，老师常常劝我说，你把基本功打好，会做的不要做错，就差不多能得个130了，本来难题就少，你不会做别人也不会做，何必浪费时间呢？</p>
-<p>读书的时候觉得老师真是，太保守了，一点上进心都没有，怎么能止步于拿那些容易的分数呢？现在发现，还真没错。难题的学习价值其实是很小的，做难题要么是为了争一口气，要么是为了寻找数学之美。大部分人都是前者吧，你跟学习赌什么气呢？后者呢，实在是太少见了，都是冲着数学家的目标去的，在他们那根本不存在容易题还丢分这种情况，人家就不是为了考试啊。</p>
-<h3 id="Recall：非常有助于加深理解"><a href="#Recall：非常有助于加深理解" class="headerlink" title="Recall：非常有助于加深理解"></a>Recall：非常有助于加深理解</h3><p>说到如何巩固，我们通常的做法是rereading，这其实是非常低效的，因为看书是被动的吸收知识，更何况这些知识你很熟悉了，rereading会产生一种“我已经掌握了这些”的幻觉。不过，rereading在spaced repetition的时候倒是很有效。</p>
-<p>正确的做法是，关上书本，把学过的知识复述一遍，能用自己的话把概念解释清楚了，这才算理解的彻底了。<br>所以我们常说，“教”也是一种学习，当你跟一个完全外行的人，介绍某一类知识，你就不得不用最通俗最简单的语言来表达，你就会用上“类比”的方法，而“类比”其实就是发现两个知识点之间的联系，当你已经开始主动寻找不同知识点的关系，就说明你理解了呀！</p>
-<p>Dr. Barbara Oakley也说到了这种“联系”，她称之为“Transfer”。</p>
-<h3 id="Transfer"><a href="#Transfer" class="headerlink" title="Transfer"></a>Transfer</h3><p>不同的领域看上去很可能差了十万八千里，但其实它们内在的联系会让你大吃一惊。比如：物理学和管理学，在一些概念和解决问题的方法上有很多相似之处。这两个学科跟我都没什么关系，我不好举例子，但是很明显，数学跟物理这两门学科，好得就简直像双胞胎。读高中的时候，我经常用数学思维来解决物理问题。</p>
-<p>再举一个例子吧，我工作的时候学到的一些方法，比如：关于一个项目如何推进，一个想法如何落实等等的一整套流程，对我写论文、学习新概念都很有帮助。这种帮助主要是思维方式上的。</p>
-<p>概念和概念之间也有很多可比的，在我的学习过程中遇到过不少，不过一时半会想不起来了，下次补上。</p>
-<p>transfer不仅指不同领域之间chunks有联系，同一个领域内的chunks也有联系。</p>
-<h3 id="Interleaving"><a href="#Interleaving" class="headerlink" title="Interleaving"></a>Interleaving</h3><p>刚刚说了chunks学得越多越能发现联系，当你有一个library of chunks的时候，就会发现，大千世界都紧紧地联系在了一起。</p>
-<p>这时候有了一个新的学习的技巧，第一周的时候讲了diffuse mode，适用于focused mode受阻的情况，现在我们要说interleaving——在学习一个chunk遇到了瓶颈的时候，可以适当插入其他类型chunk的学习，可以帮助你转换一下思维方式，不是说这两个chunk一定存在某种必然联系，而是当我们处理一个新问题的时候可以引入新的视角，有可能触发你对前一个问题的思考，我把这也理解为diffuse mode。</p>
-<h3 id="Illusions-of-competence"><a href="#Illusions-of-competence" class="headerlink" title="Illusions of competence"></a>Illusions of competence</h3><p>在说rereading的时候，说到了它为什么低效，因为当你看着书本的时候就有一种“我已经掌握了这些知识”的幻觉，跟你买了书回来就有一种“我已经看过了”以及你每次跟朋友说要减肥就有一种“我已经在减肥了”的幻觉是一样的。</p>
-<p>先说怎么避免这种幻觉吧，几种参考方法如下：</p>
-<ul>
-<li>test yourself</li>
-<li>minimize highlighting or underline</li>
-<li>mistakes are good</li>
-<li>use deliberate practice</li>
-</ul>
-<p>第一种方法其实和Recall是类似的效果，你得关上书本，才能检验出知识结构中薄弱的是哪块。当然，有test就会有mistake，犯错是好的呀，这是一种反馈，可不就是要查缺补漏吗，哪里不行补哪里，对症下药。</p>
-<p>很多人读书的时候喜欢划重点，我也是，尤其在复习备考的时候，教材上被划得满满的，看着特别有成就感，好像我划了线它就存在我的记忆中了一样。这都是幻觉啊，幻觉。一来，重点划太多就没有重点了，因为都是重点啊，你还得找出重中之重；二来，做标记这种事情特别容易给大脑传递错误的信号，啊，我标记了，意味着这一块学习任务已经完成了，实际上根本没有，这块知识点就被忽略了。</p>
-<p>最后一个是“刻意练习”。很多书中都介绍过，它有时候被描述为“跳出舒适区，在学习区学习”。我们经常会犯的错误是：一遍一遍重复自己已经掌握的内容，比如我几何学得好，我就总做几何题，而代数就会越来越差因为我总不练习。熟悉的东西练久了就会产生惯性，有了惯性就会懈怠，又会出现“啊，我已经这么熟练了”的幻觉，而且总停留在同一个地方怎么能进步呢？</p>
-<p>Stephen Krashen的语言习得理论“i+1”和这也有异曲同工之妙，i代表你现在的语言水平，1代表略高于你现有水平的材料，也就是说，当你输入的材料对你有点点“困难”的时候，你才能专注于理解它，才会进步。</p>
-<p>总之呢，当你觉得学习得很轻松的时候，就要警惕了，你可能已经滞后了。赶快给自己施加一点压力，制造一些挑战吧！</p>
-<h3 id="Einstellug"><a href="#Einstellug" class="headerlink" title="Einstellug"></a>Einstellug</h3><p>刚刚我们一直在说如何让自己变得熟练，如何拥有expertise，殊不知，过分专注于某一领域很可能会阻碍你接受新知识。Einstellug是一个德语词，大意是你的知识会形成一个壁垒，把你困在其中，当你在某个领域中获得的知识越多，你接受新的（尤其是特别新颖的反传统的）观念的困难就越大。换句话说，就是你的知识包袱太重了。看，爱因斯坦到晚年坚定地站在了量子物理的反面。</p>
-<blockquote>
-<p>There is the old saying that science progresses one funeral at a time as people entrenched in the old ways of looking at things die off.</p>
-</blockquote>
-<p>那怎么办呢?</p>
-<p>跳出来呀！保持广泛的兴趣，培养多维的视角，努力开阔开阔更开阔些。</p>
-<h3 id="不积跬步无以至千里"><a href="#不积跬步无以至千里" class="headerlink" title="不积跬步无以至千里"></a>不积跬步无以至千里</h3><p>最后，要说的是，积少成多，聚沙成塔，一步一个脚印向前走呀！</p>
-<p>第一次上法语课的时候，老师在黑板上写下了一个句子：Petit a petit l’oiseau fait son nid.（我偏不给翻译哈哈）</p>
-<p>嗯哼，理论说了这么多，最后就化为一句话：Just do it！</p>
-<p>还有一句相赠：Law of Serendipity——Lady Luck favors the one who tries﻿。</p>
-<h2 id="第三周"><a href="#第三周" class="headerlink" title="第三周"></a>第三周</h2><h3 id="拖延（procrastination）"><a href="#拖延（procrastination）" class="headerlink" title="拖延（procrastination）"></a>拖延（procrastination）</h3><p>四个组成部分：</p>
-<ul>
-<li>the cue</li>
-<li>the routine</li>
-<li>the reward</li>
-<li>the belief</li>
-</ul>
-<p>那现在说一下如何针对这四个部分实施战拖延计划。</p>
-<p>Cues本身是没有好坏的，你对cue所作出的反应，也就是routines才是最重要的。</p>
-<p>通常情况下，人都是趋利避害的，也就是逃离那些让我们感到痛苦的东西，自发地转向那些能给我们带来欢乐的。所以，当一件事情让你产生畏难情绪了，自然就会拖延。</p>
-<p>那要怎么办呢？</p>
-<p>要用a new ritual对抗the old ritual，就是养成一个新习惯，自然地你就会改变那个旧习惯，比如：每当工作和学习的时候，就把手机调成飞行模式或者锁起来。久而久之，你就养成了专心工作不看手机的习惯。前一天晚上写好第二天待办事项的清单，每周末制定下一周的待办清单等等，都是很好的办法。</p>
-<p>Rewards很好理解了，每做出一些改变都会消耗一些意志力willpower，必须得补偿一下，让大脑感觉到快乐，否则下次它就不干了。</p>
-<p>The belief是说，实践过程中肯定艰难重重，要相信自己一定可以做到，相信自己的方法是正确的，信念很重要。</p>
-<h4 id="每天的学习（工作）计划怎么做呢？量力而行！"><a href="#每天的学习（工作）计划怎么做呢？量力而行！" class="headerlink" title="每天的学习（工作）计划怎么做呢？量力而行！"></a>每天的学习（工作）计划怎么做呢？量力而行！</h4><p>不能太多也不能太少，难做的放前面，eat your frogs first。</p>
-<p>举我自己的例子吧。</p>
-<p>我最拖延的就是练琴了，琴就在书桌边，但我就是不愿意坐过去。本来不能理解，为什么我不愿意练琴，是我主动要学琴的啊，既然不是被逼的，为什么我就是不愿意做呢？</p>
-<p>（穿插一下我学琴的动机，我当然不是出于对钢琴或者音乐的热爱，而是，觉得弹钢琴会对学习有帮助，虽然达不到艺术的境界，沾点艺术的裙角也会对学术研究有点点启发吧。就是这么功利，可是哪种理由不功利呢？）</p>
-<p>听完课，反思了一下，总算是明白了一点点：给自己定的目标太高了，导致我不敢去做。</p>
-<p>我对自己说每天必须练一个小时，其实一小时真没什么，练着练着就过去了，但是一想到要花整整一小时在这件事情上，我就崩溃了，听上去好吓人啊，一小时我干点什么不行啊，为什么非要练琴？</p>
-<p>对呀，为什么呢？因为我还在初级阶段，没能从中找到成就感满足感，想到跟练琴的同龄人相比，我差不多就是个小学水平，就很挫败。我总是想，我去读一个小时的英语，要比练一个小时的琴，收获多得多。</p>
-<p>其实，我是没有耐心打基本功，要是我的英语也是初级水平，我估计也不想练。</p>
-<p>再比如，法语听写，第一天的时候很顺利，我跟自己说，那从第二天开始每天听五篇吧，这样我20天就能听完这本了。结果到了第二天发现，怎么越听越难越听越慢越来越挫败，想到自己要完成五篇，真是苦不堪言，结果，自然是从第三天就开始拖延了，从五篇变成三篇两篇一篇，还有为0的时候。而且每天早上醒来想到要听写那么难的法语，就又是一阵阵不愿意。</p>
-<p>总之，我的错误就在于，恨不得五天做完一本书，十天速成一门课，一天学习十小时然后累得半死去睡觉第二天继续。真是太变态了。想学没错啊，错就错在，被自己的雄心壮志压垮了，徒增负罪感，然后自暴自弃。</p>
-<p>学习是件很累的事情，一个普通人不可能做到每天focus 10小时，需要切换到diffuse mode。Dr. Barbara Oakley在自己的任务清单最后写到：以上工作必须在下午五点前结束。5点以后就不是工作时间了，要和家人一起hang out，看一些自己喜欢的书。</p>
-<p>Planning your quitting time is as important as planning your working time。</p>
-<p>切记！</p>
-<h3 id="记忆"><a href="#记忆" class="headerlink" title="记忆"></a>记忆</h3><p>这周课程的另一部分是讲“记忆”。其实前两周都在讲这些，这周给出了一些工具：app和website。对工具没有太多的兴趣，个人觉得思维和方法比较重要。</p>
-<p>这周还提到了“记忆宫殿”。</p>
-<p>这周的选修材料里有几个还不错，摘几个要点吧：</p>
-<ol>
-<li>Broaden your passions instead of just following them.</li>
-</ol>
-<p>我们常说要做自己所热爱的事情，这样你会学得更快做得更好。但实际上，找到真爱是需要很久的，必须要有耐心，你以为你喜欢的，可能只是一个假象，你真正热爱的说不定还没碰到呢，所以要开阔眼界，多多尝试，耐心寻找。（哎，世界上的道理都差不多，就好比优秀的人的学习方法其实也都差不多）</p>
-<ol>
-<li>step by step.</li>
-</ol>
-<p>这个说了不止一次了。这次有个教授说，课外的学习很重要，不说让你课后每天再学习6个小时，好歹你得好好做完家庭作业，每门课至少花上15分钟吧。</p>
-<p>我本来计划一周六天，周一周二学一门课，周三周四学另外一门，周五周六学第三门。等这三门中学完了一门，再补上另一门。</p>
-<p>现在我决定不这么干了，我要把第四门课同步提上来，每天听一小节，大概10分钟左右，因为第四门课很长很长，对我来说有点难，得早早开始，长久坚持。</p>
-<h2 id="第四周"><a href="#第四周" class="headerlink" title="第四周"></a>第四周</h2><h3 id="巧用隐喻和类比"><a href="#巧用隐喻和类比" class="headerlink" title="巧用隐喻和类比"></a>巧用隐喻和类比</h3><p>这个很好理解吧，学习陌生概念的时候，借用你熟悉的东西来类比，有助于理解。比如：当你学生物的时候，把你的血管想象成高速公路，一个个细胞就是一辆辆轿车。当你利用类比掌握了新的知识后，这新的知识又可以成为下一次学习的类比素材。</p>
-<p>也就是说，当你使用了类比，既学习了新知识，又巩固了旧知识。</p>
-<h3 id="不要嫉妒天才们"><a href="#不要嫉妒天才们" class="headerlink" title="不要嫉妒天才们"></a>不要嫉妒天才们</h3><p>讲真，做到这点好难，我倒不是嫉妒他们，每当我看到他们的时候，我都会痛恨自己为什么这么不天才。</p>
-<blockquote>
-<p>Being smarter often equates to having a larger working memory. Your hot rod of a memory may be able to hold nine things in mind instead of four and you can latch on to those things like a bulldog, which  makes it easier to learn. But guess what, it also makes it more difficult for you to be creative. How’s that?  It’s our old friend and enemy Einstellung.</p>
-</blockquote>
-<p>就是说聪明的人，脑容量大存储效率又高，很难塞进去新的东西，很容易就形成思维定势。嗯，换句话说，我们这些普通人，虽然懂得少，但是有潜力啊！</p>
-<p>最近在看另一本书《The Talent Code》，推崇deep practice，认为天赋和成就并没有什么必然的联系，关键在于有效的练习。</p>
-<p>人人都能成为master，只要你用对了功夫。</p>
-<p>这个结论有没有让你好过一点？反正我是没有，因为我还没找到对的功夫。</p>
-<h3 id="Change-Your-Thoughts-Change-Your-Life"><a href="#Change-Your-Thoughts-Change-Your-Life" class="headerlink" title="Change Your Thoughts  Change Your Life"></a>Change Your Thoughts  Change Your Life</h3><p>这里举了一个诺贝尔奖获得者Cajal的例子，Cajal以前是个很差的学生，后来他努力学医（这里就说到了practice的重要性，Practice appears to strengthen and reinforce connections between different brain regions, creating highways between the brain’s control centers and the centers that store knowledge.），他同很多比他聪明的科学家们共事，然而发现这些尽管他们已经绝顶聪明了，但也会犯错也会有偏见。Cajal给自己找到了定位——perseverance——我没你聪明但我比你有耐力啊，他把这称之为“the virtue of the less brilliant”。</p>
-<p>另外，要知道，不管你有多么好的老师、教材，真正重要的还是自己对待学习的态度。</p>
-<p>有时候，当你取得了一些成绩，身边的人可能会因为妒忌而故意贬低你，这种现象很常见，因为竞争与合作总是并存，这时候要学会专注于继续学习，并对这些负面的信息充耳不闻。</p>
-<blockquote>
-<p>Especially, in the qualities that make you different, and use them as a secret talisman for success. Use your natural contrariness to defy the always present prejudices from others about what you can accomplish.</p>
-</blockquote>
-<p>好吧，我有点懒，直接把字幕抠下来了。</p>
-<h3 id="学会与人合作"><a href="#学会与人合作" class="headerlink" title="学会与人合作"></a>学会与人合作</h3><p>“合作”这个话题已经被说烂了，与人合作的能力不仅仅涉及到学业，对个人的职业发展也非常重要。</p>
-<p>这段我就不多说了，之所以要提一下，是因为最后还有个反转。</p>
-<h3 id="Hard-Start-Jump-to-Easy"><a href="#Hard-Start-Jump-to-Easy" class="headerlink" title="Hard Start Jump to Easy"></a>Hard Start Jump to Easy</h3><p>这是一个应试技巧，中学的时候经常思考这个问题，考试的时候是先易后难还是先难后易？一般情况下，老师都建议先易后难。因为难题可能大家都不会，你得把能得到的分数都得到了，这样才能保大局。</p>
-<p>而这里呢，给出了另一种方式：先看难题，如果两分钟之内卡壳了，立马抽身，改做容易的题目。这还是涉及到focused mode和diffuse mode，也就是说，难题先在脑中打个印记，把它放到diffuse mode下，等解完了其他题目之后，再面对这个题目相当于从diffuse 转到focused，这比单纯地，只用focused一种思考模式解答难题，要更高效。</p>
-<h3 id="impostor-syndrome"><a href="#impostor-syndrome" class="headerlink" title="impostor syndrome"></a>impostor syndrome</h3><p>“冒名顶替者综合征”这大概是对应的中文了。</p>
-<p>就是那种，觉得自己到目前为止取得的成就都是侥幸，周围的其他人都比自己优秀，别人夸自己的时候，内心无比崩溃，觉得真是名不副实。等到下一次挑战来临，就会露出真面目了，较量真本事的时候，自己一定会输得很惨。</p>
-<p>总之就是对自己不自信，“我得到的都是侥幸啊，我失去的都是人生”。</p>
-<p>这已经成为了一种“综合征”，说明了什么？We are not alone！世界上有千千万万的人都跟我们一样，只是我们不知道而已。</p>
-<p>再延伸开来，当我们意识到自己的某种心理的时候，请告诉自己，我不是唯一一个这样想的，我既不孤单也没什么特别的。世界这么大，每一种心理都有足够大的样本来让它成为“XXX综合征”。</p>
-<h3 id="说好的反转来了"><a href="#说好的反转来了" class="headerlink" title="说好的反转来了"></a>说好的反转来了</h3><p>全书看上去充满了不少矛盾之处，我又来抄书了，别嫌我懒。</p>
-<blockquote>
-<p>Focused attention is indispensable for problem solving—yet it can also block our ability to solve problems. Persistence is key—but it can also leave us unnecessarily pounding our heads. Memorization is a critical aspect of acquiring expertise—but it can also keep us focused on the trees instead of the forest. Metaphor allows us to acquire new concepts—but it can also keep us wedded to faulty conceptions.</p>
-</blockquote>
-<p>另外还有“与人合作和独立学习”这一对也是，许多人一起学习的时候，效率可能会变得低下，因为大家讨论着讨论着就变成了闲聊。独立学习的能力很重要啊，因为通往伟大事业的道路通常都是孤独的。不过，就算爱因斯坦发现了相对论，这其中也有其他科学家对他的启发呀。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>看完了视频和书，我觉得我的学习方法并没有发生质的飞跃，因为很多都用过，只不过这次给它们正名了，原来它们都是有科学依据的，大部分是神经科学。</p>
-<p>不过，我相信每个人都能从中看到自己的欠缺之处，从而查缺补漏。我最欠缺的就是耐心，急躁又缺乏耐心，所以，我暂时根本不用担心“persistence”的负面作用，因为还没拥有它呀！</p>
-<p>学习的方法可能是多样的，但那些学有所成的人的方法皆有相通之处。也就是说，原则在上，方法可以自由发挥啦。</p>
-<p>第四周的笔记记得有点简陋，因为最近我很厌学……</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;Learning How to Learn: Powerful mental tools to help you master tough subjects（如何学习：学习困难科目的实用思维方法 ）&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;阅读材料：《A Mind for Numbers》&lt;/p&gt;
-&lt;p&gt;课程共四周，小标题差不多就是按每周的要点来，比较随性啦。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="method" scheme="http://yibeichen.me/tags/method/"/>
-    
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
