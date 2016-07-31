@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-31T09:41:55.000Z</updated>
+  <updated>2016-07-31T10:13:30.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yibeichen.me/2016/07/31/A-Failed-Try/"/>
     <id>http://yibeichen.me/2016/07/31/A-Failed-Try/</id>
     <published>2016-07-31T08:21:07.000Z</published>
-    <updated>2016-07-31T09:41:55.000Z</updated>
+    <updated>2016-07-31T10:13:30.000Z</updated>
     
     <content type="html"><![CDATA[<p>这篇文章是关于为Hexo添加站内搜索的，很不幸，失败了，所以这篇文章也没有什么参考价值，引以为戒好了。<br><a id="more"></a><br>尝试了两种方法：Swiftype Search 和Local Search，严格说来也不能算失败，但是结果实在不能令人满意。</p>
 <p>一个一个说：</p>
@@ -31,7 +31,7 @@
 <li>自定义搜索引擎样式</li>
 <li>获取key</li>
 </ul>
-<h2 id="Hexo内设置"><a href="#Hexo内设置" class="headerlink" title="Hexo内设置"></a>Hexo内设置</h2><p>在站点_config.yml添加 Swiftype_key: yourswiftypekey</p>
+<h2 id="Hexo内设置"><a href="#Hexo内设置" class="headerlink" title="Hexo内设置"></a>Hexo内设置</h2><p>在站点_config.yml添加 <code>Swiftype_key: yourswiftypekey</code></p>
 <p>按理说这样设置以后就ok了，结果网站的menu变成了这样：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-31_16:30:14.jpg" alt="2016-07-31_16:30:14.jpg"><br>WHAT!!!<br>为什么会有两个搜索框！TELL ME WHY!!!</p>
 <p>其实最开始是没有搜索框的，只有“搜索”这个菜单，为了把文字换成搜索框，我就去折腾NexT的配置文件了，找到一个Swiftype.swig,把里面的代码换成了网站提供的，事实上没有什么差别，唯一不同的地方就是swig本来是没有key的。然后，网页就同时出现了搜索框和“搜索”字样。</p>
 <p>好了，我现在不想要搜索框了，只要一个“搜索”就ok啊，然而，无论我怎么改，把swig改回去，在Swiftype里把engine删了重设又删又重设，都没有一点用。</p>
@@ -42,7 +42,9 @@
 <p>搜索框长这么难看就算了，搜索结果还不精确。似乎只能抓取首页的，其他页面比如“工具”的内容就没办法检索到，以cheatsheet为例：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-31_16:51:13.jpg" alt="2016-07-31_16:51:13.jpg"></p>
 <p>样式我不会改，可能要修改node_modules内的文件，看不懂。</p>
 <h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>好了，就是这样一个悲伤的故事。<br>我只想要一个简单实用又好看（要求高？）的搜索啊！</p>
-<h2 id="折腾了整整一天，竟然就是这个结果。"><a href="#折腾了整整一天，竟然就是这个结果。" class="headerlink" title="折腾了整整一天，竟然就是这个结果。"></a>折腾了整整一天，竟然就是这个结果。</h2><p>妹妹：姐姐你不休息一会呀？<br>我：玩的时候为什么要休息？<br>妹妹：你不是在工作吗？<br>我：我没在工作，我在玩……</p>
+<p>折腾了整整一天，竟然就是这个结果。</p>
+<hr>
+<p>妹妹：姐姐你不休息一会呀？<br>我：玩的时候为什么要休息？<br>妹妹：你不是在工作吗？<br>我：我没在工作，我在玩……</p>
 <p>玩物丧志，懂？</p>
 ]]></content>
     
