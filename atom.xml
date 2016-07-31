@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-07-30T10:14:04.000Z</updated>
+  <updated>2016-07-30T10:22:35.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://yibeichen.me/2016/07/30/Seven-Steps-Machine-Learning-Python/"/>
     <id>http://yibeichen.me/2016/07/30/Seven-Steps-Machine-Learning-Python/</id>
     <published>2016-07-30T09:49:46.000Z</published>
-    <updated>2016-07-30T10:14:04.000Z</updated>
+    <updated>2016-07-30T10:22:35.000Z</updated>
     
-    <content type="html"><![CDATA[<p>8月份准备学习machine learning，试了一下用Google搜索“machine learning tutorial”，找到了一篇很不错的文章，拿来存着。<br><a id="more"></a><br>原文链接：<a href="http://www.kdnuggets.com/2015/11/seven-steps-machine-learning-python.html" target="_blank" rel="external">http://www.kdnuggets.com/2015/11/seven-steps-machine-learning-python.html</a></p>
+    <content type="html"><![CDATA[<p>8月份准备学习machine learning，试了一下用Google搜索“machine learning tutorial”，找到了一篇不错的文章，拿来存着。<br><a id="more"></a><br>原文链接：<a href="http://www.kdnuggets.com/2015/11/seven-steps-machine-learning-python.html" target="_blank" rel="external">http://www.kdnuggets.com/2015/11/seven-steps-machine-learning-python.html</a></p>
 <blockquote>
 <p>There are many Python machine learning resources freely available online. Where to begin? How to proceed? Go from zero to Python machine learning hero in 7 steps!<br><strong>By <a href="http://www.kdnuggets.com/author/matt-mayo" target="_blank" rel="external">Matthew Mayo</a>, KDnuggets.</strong></p>
 </blockquote>
@@ -157,7 +157,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;8月份准备学习machine learning，试了一下用Google搜索“machine learning tutorial”，找到了一篇很不错的文章，拿来存着。&lt;br&gt;
+      &lt;p&gt;8月份准备学习machine learning，试了一下用Google搜索“machine learning tutorial”，找到了一篇不错的文章，拿来存着。&lt;br&gt;
     
     </summary>
     
@@ -205,9 +205,9 @@
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -251,9 +251,9 @@
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -297,9 +297,9 @@
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -394,9 +394,9 @@
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -458,9 +458,9 @@
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -561,9 +561,9 @@
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -657,10 +657,10 @@
     <link href="http://yibeichen.me/2016/07/23/PY4E-Chapter-13-2/"/>
     <id>http://yibeichen.me/2016/07/23/PY4E-Chapter-13-2/</id>
     <published>2016-07-23T10:46:36.000Z</published>
-    <updated>2016-07-30T09:46:44.000Z</updated>
+    <updated>2016-07-30T10:22:31.000Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>超级尴尬</strong></p>
-<h2 id="今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！"><a href="#今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！" class="headerlink" title="今天的两道题目跟github不和，这篇文章$ hexo g -d和$ hexo s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！"></a>今天的两道题目跟github不和，这篇文章<code>$ hexo g -d</code>和<code>$ hexo s</code>的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！</h2><p>尴尬之</p>
+    <content type="html"><![CDATA[<p>超级尴尬</p>
+<h2 id="今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了"><a href="#今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了" class="headerlink" title="今天的两道题目跟github不和，这篇文章$ hexo g -d和$ hexo s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了"></a>今天的两道题目跟github不和，这篇文章<code>$ hexo g -d</code>和<code>$ hexo s</code>的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了</h2><p>尴尬之</p>
 <ol>
 <li>quiz三次都没通过，还得过8小时去做第四次。</li>
 <li>极其容易的作业A卡住了，而且非常光荣地又卡在了求和问题上。</li>
@@ -698,8 +698,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;超级尴尬&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！&quot;&gt;&lt;a href=&quot;#今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！&quot; class=&quot;headerlink&quot; title=&quot;今天的两道题目跟github不和，这篇文章$ hexo g -d和$ hexo s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！&quot;&gt;&lt;/a&gt;今天的两道题目跟github不和，这篇文章&lt;code&gt;$ hexo g -d&lt;/code&gt;和&lt;code&gt;$ hexo s&lt;/code&gt;的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但是，没有耐心了呀！&lt;/h2&gt;&lt;p&gt;尴尬之&lt;/p&gt;
+      &lt;p&gt;超级尴尬&lt;/p&gt;
+&lt;h2 id=&quot;今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了&quot;&gt;&lt;a href=&quot;#今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了&quot; class=&quot;headerlink&quot; title=&quot;今天的两道题目跟github不和，这篇文章$ hexo g -d和$ hexo s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了&quot;&gt;&lt;/a&gt;今天的两道题目跟github不和，这篇文章&lt;code&gt;$ hexo g -d&lt;/code&gt;和&lt;code&gt;$ hexo s&lt;/code&gt;的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了&lt;/h2&gt;&lt;p&gt;尴尬之&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;quiz三次都没通过，还得过8小时去做第四次。&lt;/li&gt;
 &lt;li&gt;极其容易的作业A卡住了，而且非常光荣地又卡在了求和问题上。&lt;/li&gt;
@@ -712,9 +712,9 @@
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -764,9 +764,9 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -944,9 +944,9 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -993,9 +993,9 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -1206,9 +1206,9 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -1235,9 +1235,9 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -1430,9 +1430,9 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
     </summary>
     
     
-      <category term="method" scheme="http://yibeichen.me/tags/method/"/>
-    
       <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
+      <category term="method" scheme="http://yibeichen.me/tags/method/"/>
     
   </entry>
   
