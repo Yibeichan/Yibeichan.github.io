@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[7 Steps to Mastering Machine Learning With Python]]></title>
+      <url>http://yibeichen.me/2016/07/30/Seven-Steps-Machine-Learning-Python/</url>
+      <content type="html"><![CDATA[<p>8月份准备学习machine learning，试了一下用Google搜索“machine learning tutorial”，找到了一篇不错的文章，拿来存着。<br><a id="more"></a><br>原文链接：<a href="http://www.kdnuggets.com/2015/11/seven-steps-machine-learning-python.html" target="_blank" rel="external">http://www.kdnuggets.com/2015/11/seven-steps-machine-learning-python.html</a></p>
+<blockquote>
+<p>There are many Python machine learning resources freely available online. Where to begin? How to proceed? Go from zero to Python machine learning hero in 7 steps!<br><strong>By <a href="http://www.kdnuggets.com/author/matt-mayo" target="_blank" rel="external">Matthew Mayo</a>, KDnuggets.</strong></p>
+</blockquote>
+<p>Getting started. Two of the most de-motivational words in the English language. The first step is often the hardest to take, and when given too much choice in terms of direction it can often be debilitating.</p>
+<p>Where to begin?</p>
+<p>This post aims to take a newcomer from minimal knowledge of machine learning in Python all the way to knowledgeable practitioner in 7 steps, all while using freely available materials and resources along the way. The prime objective of this outline is to help you wade through the numerous free options that are available; there are many, to be sure, but which are the best? Which complement one another? What is the best order in which to use selected resources?</p>
+<p>Moving forward, I make the assumption that you are not an expert in:</p>
+<ul>
+<li>Machine learning</li>
+<li>Python</li>
+<li>Any of Python’s machine learning, scientific computing, or data analysis libraries</li>
+</ul>
+<p>It would probably be helpful to have some basic understanding of one or both of the first 2 topics, but even that won’t be necessary; some extra time spent on the earlier steps should help compensate.</p>
+<h1 id="Step-1-Basic-Python-Skills"><a href="#Step-1-Basic-Python-Skills" class="headerlink" title="Step 1: Basic Python Skills"></a>Step 1: Basic Python Skills</h1><p>If we intend to leverage Python in order to perform machine learning, having some base understanding of Python is crucial. Fortunately, due to its widespread popularity as a general purpose programming language, as well as its adoption in both scientific computing and machine learning, coming across beginner’s tutorials is not very difficult. Your level of experience in both Python and programming in general are crucial to choosing a starting point.</p>
+<p>First, you need Python installed. Since we will be using scientific computing and machine learning packages at some point, I suggest that you <a href="http://docs.continuum.io/anaconda/install" target="_blank" rel="external">install Anaconda</a>. It is an industrial-strength Python implementation for Linux, OSX, and Windows, complete with the required packages for machine learning, including numpy, scikit-learn, and matplotlib. It also includes iPython Notebook, an interactive environment for many of our tutorials. I would suggest Python 2.7, for no other reason than it is still the dominant installed version.</p>
+<p>learn-pythonIf you have no knowledge of programming, my suggestion is to start with the following free online book, then move on to the subsequent materials:</p>
+<ul>
+<li><a href="http://learnpythonthehardway.org/book/" target="_blank" rel="external">Python The Hard Way</a> by Zed A. Shaw</li>
+</ul>
+<p>If you have experience in programming but not with Python in particular, or if your Python is elementary, I would suggest one or both of the following:</p>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLfZeRfzhgQzTMgwFVezQbnpc1ck0I6CQl" target="_blank" rel="external">Google Developers Python Course </a>(highly recommended for visual learners)</li>
+<li><a href="http://www.engr.ucsb.edu/~shell/che210d/python.pdf" target="_blank" rel="external">An Introduction to Python for Scientific Computing</a> (from UCSB Engineering) by M. Scott Shell (a great scientific Python intro ~60 pages)</li>
+</ul>
+<p>And for those looking for a 30 minute crash course in Python, here you go:</p>
+<ul>
+<li><a href="http://learnxinyminutes.com/docs/python/" target="_blank" rel="external">Learn X in Y Minutes (X = Python)</a></li>
+</ul>
+<p>Of course, if you are an experienced Python programmer you will be able to skip this step. Even if so, I suggest keeping the very readable <a href="https://www.python.org/doc/" target="_blank" rel="external">Python documentation</a> handy.</p>
+<h1 id="Step-2-Foundational-Machine-Learning-Skills"><a href="#Step-2-Foundational-Machine-Learning-Skills" class="headerlink" title="Step 2: Foundational Machine Learning Skills"></a>Step 2: Foundational Machine Learning Skills</h1><p>KDnuggets’ own Zachary Lipton has pointed out that there is a lot of variation in what people consider a “data scientist.” This actually is a reflection of the field of machine learning, since much of what data scientists do involves using machine learning algorithms to varying degrees. Is it necessary to intimately understand kernel methods in order to efficiently create and gain insight from a support vector machine model? Of course not. Like almost anything in life, required depth of theoretical understanding is relative to practical application. Gaining an intimate understanding of machine learning algorithms is beyond the scope of this article, and generally requires substantial amounts of time investment in a more academic setting, or via intense self-study at the very least.</p>
+<p>The good news is that you don’t need to possess a PhD-level understanding of the theoretical aspects of machine learning in order to practice, in the same manner that not all programmers require a theoretical computer science education in order to be effective coders.</p>
+<p>Andrew Ng’s Coursera course often gets rave reviews for its content; my suggestion, however, is to browse the course notes compiled by a former student of the online course’s previous incarnation. Skip over the Octave-specific notes (a Matlab-like language unrelated to our Python pursuits). Be warned that these are not “official” notes, but do seem to capture the relevant content from Andrew’s course material. Of course, if you have the time and interest, now would be the time to take <a href="https://www.coursera.org/learn/machine-learning" target="_blank" rel="external">Andrew Ng’s Machine Learning course on Coursera</a>.</p>
+<ul>
+<li><a href="http://www.holehouse.org/mlclass/" target="_blank" rel="external">Unofficial Andrew Ng course notes</a></li>
+</ul>
+<p>There all sorts of video lectures out there if you prefer, alongside Ng’s course mentioned above. I’m a fan of Tom Mitchell, so here’s a link to his recent lecture videos (along with Maria-Florina Balcan), which I find particularly approachable:</p>
+<ul>
+<li><a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/lectures.shtml" target="_blank" rel="external">Tom Mitchell Machine Learning Lectures</a></li>
+</ul>
+<p>You don’t need all of the notes and videos at this point. A valid strategy involves moving forward to particular exercises below, and referencing applicable sections of the above notes and videos when appropriate. For example, when you come across an exercise implementing a regression model below, read the appropriate regression section of Ng’s notes and/or view Mitchell’s regression videos at that time.</p>
+<h1 id="Step-3-Scientific-Python-Packages-Overview"><a href="#Step-3-Scientific-Python-Packages-Overview" class="headerlink" title="Step 3: Scientific Python Packages Overview"></a>Step 3: Scientific Python Packages Overview</h1><p>Alright. We have a handle on Python programming and understand a bit about machine learning. Beyond Python there are a number of open source libraries generally used to facilitate practical machine learning. In general, these are the main so-called scientific Python libraries we put to use when performing elementary machine learning tasks (there is clearly subjectivity in this):</p>
+<ul>
+<li><a href="http://www.numpy.org/" target="_blank" rel="external">numpy</a> - mainly useful for its N-dimensional array objects</li>
+<li><a href="http://pandas.pydata.org/" target="_blank" rel="external">pandas</a> - Python data analysis library, including structures such as dataframes</li>
+<li><a href="http://matplotlib.org/" target="_blank" rel="external">matplotlib</a> - 2D plotting library producing publication quality figures</li>
+<li><a href="http://scikit-learn.org/stable/" target="_blank" rel="external">scikit-learn</a> - the machine learning algorithms used for data analysis and data mining tasks</li>
+</ul>
+<p>A good approach to learning these is to cover this material:</p>
+<ul>
+<li><a href="http://www.scipy-lectures.org/" target="_blank" rel="external">Scipy Lecture Notes</a> by Gaël Varoquaux, Emmanuelle Gouillart, and Olav Vahtras</li>
+</ul>
+<p>This pandas tutorial is good, and to the point:</p>
+<ul>
+<li><a href="http://pandas.pydata.org/pandas-docs/stable/10min.html" target="_blank" rel="external">10 Minutes to Pandas</a></li>
+</ul>
+<p>You will see some other packages in the tutorials below, including, for example, Seaborn, which is a data visualization library based on matplotlib. The aforementioned packages are (again, subjectively) the core of a wide array of machine learning tasks in Python; however, understanding them should let you adapt to additional and related packages without confusion when they are referenced in the following tutorials.</p>
+<h1 id="Step-4-Getting-Started-with-Machine-Learning-in-Python"><a href="#Step-4-Getting-Started-with-Machine-Learning-in-Python" class="headerlink" title="Step 4: Getting Started with Machine Learning in Python"></a>Step 4: Getting Started with Machine Learning in Python</h1><p>Python. Check.<br>Machine learning fundamentals. Check.<br>Numpy. Check.<br>Pandas. Check.<br>Matplotlib. Check.</p>
+<p>The time has come. Let’s start implementing machine learning algorithms with Python’s de facto standard machine learning library, scikit-learn.</p>
+<p>Many of the following tutorials and exercises will be driven by the iPython (Jupyter) Notebook, which is an interactive environment for executing Python. These iPython notebooks can optionally be viewed online or downloaded and interacted with locally on your own computer.</p>
+<ul>
+<li><a href="http://cs231n.github.io/ipython-tutorial/" target="_blank" rel="external">iPython Notebook Overview</a> from Stanford</li>
+</ul>
+<p>Also note that the tutorials below are from a number of online sources. All Notebooks have been attributed to the authors; if, for some reason, you find that someone has not been properly credited for their work, <a href="https://twitter.com/mattmayo13" target="_blank" rel="external">please let me know</a> and the situation will be rectified ASAP. In particular, I would like to tip my hat to <a href="http://www.astro.washington.edu/users/vanderplas/" target="_blank" rel="external">Jake VanderPlas</a>, <a href="http://www.randalolson.com/" target="_blank" rel="external">Randal Olson</a>, <a href="http://donnemartin.com/" target="_blank" rel="external">Donne Martin</a>, <a href="https://twitter.com/justmarkham" target="_blank" rel="external">Kevin Markham</a>, and <a href="http://www.colinraffel.com/" target="_blank" rel="external">Colin Raffel</a> for their fantastic freely-available resources.</p>
+<p>Our first tutorials for getting our feet wet with scikit-learn follow. I suggest doing all of these in order before moving to the following steps.</p>
+<p>A general introduction to scikit-learn, Python’s most-used general purpose machine learning library, covering the k-nearest neighbors algorithm:</p>
+<ul>
+<li><a href="http://nbviewer.ipython.org/github/donnemartin/data-science-ipython-notebooks/blob/master/scikit-learn/scikit-learn-intro.ipynb" target="_blank" rel="external">An Introduction to scikit-learn</a> by Jake VanderPlas</li>
+</ul>
+<p>A more in-depth and expanded introduction, including a starter project with a well-known dataset from start to finish:</p>
+<ul>
+<li><a href="http://nbviewer.ipython.org/github/rhiever/Data-Analysis-and-Machine-Learning-Projects/blob/master/example-data-science-notebook/Example%20Machine%20Learning%20Notebook.ipynb" target="_blank" rel="external">Example Machine Learning Notebook</a> by Randal Olson</li>
+</ul>
+<p>A focus on strategies for evaluating different models in scikit-learn, covering train/test dataset splits:</p>
+<ul>
+<li><a href="https://github.com/justmarkham/scikit-learn-videos/blob/master/05_model_evaluation.ipynb" target="_blank" rel="external">Model Evaluation</a> by Kevin Markham</li>
+</ul>
+<h1 id="Step-5-Machine-Learning-Topics-with-Python"><a href="#Step-5-Machine-Learning-Topics-with-Python" class="headerlink" title="Step 5: Machine Learning Topics with Python"></a>Step 5: Machine Learning Topics with Python</h1><p>With a foundation having been laid in scikit-learn, we can move on to some more in-depth explorations of the various common, and useful, algorithms. We start with k-means clustering, one of the most well-known machine learning algorithms. It is a simple and often effective method for solving unsupervised learning problems:</p>
+<ul>
+<li><a href="https://github.com/jakevdp/sklearn_pycon2015/blob/master/notebooks/04.2-Clustering-KMeans.ipynb" target="_blank" rel="external">k-means Clustering</a> by Jake VanderPlas</li>
+</ul>
+<p>Next, we move back toward classification, and take a look at one of the most historically popular classification methods:</p>
+<ul>
+<li><a href="http://thegrimmscientist.com/2014/10/23/tutorial-decision-trees/" target="_blank" rel="external">Decision Trees</a> via <a href="http://thegrimmscientist.com/" target="_blank" rel="external">The Grimm Scientist</a></li>
+</ul>
+<p>From classification, we look at continuous numeric prediction:</p>
+<ul>
+<li><a href="http://nbviewer.ipython.org/github/donnemartin/data-science-ipython-notebooks/blob/master/scikit-learn/scikit-learn-linear-reg.ipynb" target="_blank" rel="external">Linear Regression</a> by Jake VanderPlas</li>
+</ul>
+<p>We can then leverage regression for classification problems, via logistic regression:</p>
+<ul>
+<li><a href="http://nbviewer.ipython.org/github/justmarkham/gadsdc1/blob/master/logistic_assignment/kevin_logistic_sklearn.ipynb" target="_blank" rel="external">Logistic Regression</a> by Kevin Markham</li>
+</ul>
+<h1 id="Step-6-Advanced-Machine-Learning-Topics-with-Python"><a href="#Step-6-Advanced-Machine-Learning-Topics-with-Python" class="headerlink" title="Step 6: Advanced Machine Learning Topics with Python"></a>Step 6: Advanced Machine Learning Topics with Python</h1><p>We’ve gotten our feet wet with scikit-learn, and now we turn our attention to some more advanced topics. First up are support vector machines, a not-necessarily-linear classifier relying on complex transformations of data into higher dimensional space.</p>
+<ul>
+<li><a href="https://github.com/jakevdp/sklearn_pycon2015/blob/master/notebooks/03.1-Classification-SVMs.ipynb" target="_blank" rel="external">Support Vector Machines</a> by Jake VanderPlas</li>
+</ul>
+<p>Next, random forests, an ensemble classifier, are examined via a Kaggle Titanic Competition walk-through:</p>
+<ul>
+<li><a href="https://github.com/jakevdp/sklearn_pycon2015/blob/master/notebooks/03.1-Classification-SVMs.ipynb" target="_blank" rel="external">Kaggle Titanic Competition (with Random Forests)</a> by Donne Martin</li>
+</ul>
+<p>Dimensionality reduction is a method for reducing the number of variables being considered in a problem. Principal Component Analysis is a particular form of unsupervised dimensionality reduction:</p>
+<ul>
+<li><a href="https://github.com/jakevdp/sklearn_pycon2015/blob/master/notebooks/04.1-Dimensionality-PCA.ipynb" target="_blank" rel="external">Dimensionality Reduction</a> by Jake VanderPlas</li>
+</ul>
+<p>Before moving on to the final step, we can take a moment to consider that we have come a long way in a relatively short period of time.</p>
+<p>Using Python and its machine learning libraries, we have covered some of the most common and well-known machine learning algorithms (k-nearest neighbors, k-means clustering, support vector machines), investigated a powerful ensemble technique (random forests), and examined some additional machine learning support tasks (dimensionality reduction, model validation techniques). Along with some foundational machine learning skills, we have started filling a useful toolkit for ourselves.</p>
+<p>We will add one more in-demand tool to that kit before wrapping up.</p>
+<h1 id="Step-7-Deep-Learning-in-Python"><a href="#Step-7-Deep-Learning-in-Python" class="headerlink" title="Step 7: Deep Learning in Python"></a>Step 7: Deep Learning in Python</h1><p>Deep learning is everywhere! Deep learning builds on neural network research going back several decades, but recent advances dating to the past several years have dramatically increased the perceived power of, and general interest in, deep neural networks. If you are unfamiliar with deep learning, <a href="http://www.kdnuggets.com/?s=deep+learning" target="_blank" rel="external">KDnuggets has many articles</a> detailing the numerous recent innovations, accomplishments, and accolades of the technology.</p>
+<p>This final step does not purport to be a deep learning clinic of any sort; we will take a look at a few simple network implementations in 2 of the leading contemporary Python deep learning libraries. For those interested in digging deeper into deep learning, I recommend starting with the following free online book:</p>
+<ul>
+<li><a href="http://neuralnetworksanddeeplearning.com/" target="_blank" rel="external">Neural Networks and Deep Learning</a> by <a href="http://michaelnielsen.org/" target="_blank" rel="external">Michael Nielsen</a></li>
+</ul>
+<h2 id="Theano"><a href="#Theano" class="headerlink" title="Theano"></a><a href="http://deeplearning.net/software/theano/" target="_blank" rel="external">Theano</a></h2><p>Theano is the first Python deep learning library we will look at. From the authors:</p>
+<blockquote>
+<p>Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.</p>
+</blockquote>
+<p>The following introductory tutorial on deep learning in Theano is lengthy, but it is quite good, very descriptive, and heavily-commented:</p>
+<ul>
+<li><a href="http://nbviewer.ipython.org/github/craffel/theano-tutorial/blob/master/Theano%20Tutorial.ipynb" target="_blank" rel="external">Theano Deep Learning Tutorial</a> by <a href="http://www.colinraffel.com/" target="_blank" rel="external">Colin Raffel</a></li>
+</ul>
+<h2 id="Caffe"><a href="#Caffe" class="headerlink" title="Caffe"></a><a href="http://caffe.berkeleyvision.org/" target="_blank" rel="external">Caffe</a></h2><p>The other library we will test drive is Caffe. Again, from the authors:</p>
+<blockquote>
+<p>Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is developed by the Berkeley Vision and Learning Center (BVLC) and by community contributors.</p>
+</blockquote>
+<p>This tutorial is the cherry on the top of this article. While we have undertaken a few interesting examples above, none likely compete with the following, which is implementing <a href="http://googleresearch.blogspot.ch/2015/06/inceptionism-going-deeper-into-neural.html" target="_blank" rel="external">Google’s #DeepDream</a> using Caffe. Enjoy this one! After understanding the tutorial, play around with it to get your processors dreaming on their own.</p>
+<ul>
+<li><a href="https://github.com/google/deepdream/blob/master/dream.ipynb" target="_blank" rel="external">Dreaming Deep with Caffe</a> via <a href="https://github.com/google" target="_blank" rel="external">Google’s GitHub</a></li>
+</ul>
+<p>I didn’t promise it would be quick or easy, but if you put the time in and follow the above 7 steps, there is no reason that you won’t be able to claim reasonable proficiency and understanding in a number of machine learning algorithms and their implementation in Python using its popular libraries, including some of those on the cutting edge of current deep learning research.</p>
+<p>Bio: <a href="https://twitter.com/mattmayo13" target="_blank" rel="external">Matthew Mayo</a> is a computer science graduate student currently working on his thesis parallelizing machine learning algorithms. He is also a student of data mining, a data enthusiast, and an aspiring machine learning scientist.</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Python for Everybody 系列课程总结]]></title>
+      <url>http://yibeichen.me/2016/07/30/Python-for-Everybody/</url>
+      <content type="html"><![CDATA[<p>没错，PY4E就是Python for Everybody的缩写。<br>6.14注册了第一门课，7.30学完了第四门课，还剩最后一个毕业项目，但是因为没有花钱买这个系列课程，所以没有资格参与这个项目。<br>总之呢，这一段Python之路可以暂告一个段落啦，接下来会探索新的Python学习之路。<br><a id="more"></a><br>这个系列是coursera上的<a href="https://www.coursera.org/specializations/python" target="_blank" rel="external">专项课程</a>，一共有五门课：</p>
+<ul>
+<li><a href="https://www.coursera.org/learn/python" target="_blank" rel="external">Programming for Everybody (Getting Started with Python)</a></li>
+<li><a href="https://www.coursera.org/learn/python-data" target="_blank" rel="external">Python Data Structures</a></li>
+<li><a href="https://www.coursera.org/learn/python-network-data" target="_blank" rel="external">Using Python to Access Web Data</a></li>
+<li><a href="https://www.coursera.org/learn/python-databases" target="_blank" rel="external">Using Databases with Python</a></li>
+<li>Capstone Project(毕业项目：使用 Python 获取并处理数据，并用可视化方式展现数据)</li>
+</ul>
+<p>配套教材有中文版本：<br><a href="http://oapfne1kf.bkt.clouddn.com/Python%20for%20Informatics.epub" target="_blank" rel="external">http://oapfne1kf.bkt.clouddn.com/Python%20for%20Informatics.epub</a><br>教材一共15章，专项课程也是围绕这15章展开的。</p>
+<p>虽然是6.14注册的第一门课，但最开始是一周学一次，7.12才学完了第一门。自第二门课开始，差不多每天学习一周的量，于是就以每周一门课的速度，在7月学完了后三门。</p>
+<p>从学习速度上也可以看出来，课程不难，当然了，也可以说是作业不太难，前一部分有那么几章是磕磕绊绊折腾了大半天或者一整天才做完，而且听课不是很认真，前两门课都没有做过笔记，一直到第10章才醒悟该写点什么。</p>
+<p>整体上来看，从这一系列课还是学到了不少，其中最重要(至少对现阶段的我最重要)的是：</p>
+<ul>
+<li>借鉴别人的代码没问题，但要弄清楚为什么要这么写</li>
+<li>在没有能力写一整串原创代码的时候，拿范例来修修补补也很有帮助</li>
+<li>动手写代码要比看书看视频更助于理解</li>
+<li>Keep exercising!</li>
+</ul>
+<p><a href="https://online.dr-chuck.com/" target="_blank" rel="external">Dr. Chunk</a>（整个专项课程都是由他授课）特别幽默，有一次扮成Severus Snape，弄了个分院帽和魔杖来上课。每周的Bonus Hours也特别有意思。总之是个很棒的课程！</p>
+<p>另外，也是为了记录课程笔记才萌发了搭这个博客的想法，也算是有点进步了，终于有那么一次能把想法付诸实践。</p>
+<p>Keep moving，Python之路还很长。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PY4E Chapter 15（Databases and Visualization）]]></title>
+      <url>http://yibeichen.me/2016/07/30/PY4E-Chapter-15/</url>
+      <content type="html"><![CDATA[<p>听完最后这章，只想说，有些事实在是因缘际会，怎么这么巧！<br>假如事件A和事件B有一定的关联，而我先碰到了A，那大概就注定会碰到B吧。</p>
+<p>讲了三个例子</p>
+<ul>
+<li>Geocoding</li>
+<li>Page Rank and Web Searching</li>
+<li>Gmane - Mailing Lists</li>
+</ul>
+<p>其实一个都没听懂，毕竟太复杂了。<br>最后的课程作业超级简单，把提供好的代码下载到本地，运行一下，截图上传，peer-grade。<br><a id="more"></a><br><strong>Retrieving GEOData and Visualize the Map</strong><br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-30_15:55:31.jpg" alt="2016-07-30_15:55:31.jpg"><br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-30_15:59:36.jpg" alt="2016-07-30_15:59:36.jpg"></p>
+<p>曾经用Google Map把不同的地点标在一张图上，然后推算出要找的位置。啊，那可是用手工计算的，开了好多个网页，切换来切换去。当时想，应该有这种可以帮忙标记地点的应用吧，可是没找到，其实也没好好找。<br>总之，最后自制了一张图，还觉得自己酷酷哒。<br>然而，今天看着.py文件运行，一串串代码刷刷刷上传，这才是真的cool啊！</p>
+<p>独乐乐不如众乐乐，附上code和玩法。</p>
+<ul>
+<li>Download the code from <a href="http://www.pythonlearn.com/code/geodata.zip" target="_blank" rel="external">http://www.pythonlearn.com/code/geodata.zip</a><br>-Then unzip the file and edit where.data to add an address nearby where you live - don’t reveal your actual location.</li>
+<li>Then run the geoload.py to lookup all of the entries in where.data (including the new one) and produce the geodata.sqlite.</li>
+<li>Then run geodump.py to read the database and produce where.js.</li>
+<li>Then open where.html to visualize the map.</li>
+</ul>
+<p>本章的slide链接：<a href="https://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-15-Data-Viz.pdf" target="_blank" rel="external">https://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-15-Data-Viz.pdf</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PY4E Chapter 14.3（Many-to-Many Relationships in SQL）]]></title>
+      <url>http://yibeichen.me/2016/07/30/PY4E-Chapter-14-3/</url>
+      <content type="html"><![CDATA[<p>前两小节讲的都是one-to-many型数据，这一节讲many-to-many类型的数据。<br>这周的题目也是醉了，只用从例子中改三行代码即可。<br>感觉智商派不上用场……<br><a id="more"></a></p>
+<h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="Many-to-Many"><a href="#Many-to-Many" class="headerlink" title="Many-to-Many"></a>Many-to-Many</h2><ul>
+<li>We need to add a “connection” table with two foreign keys</li>
+<li>There is usually no separate primary key</li>
+</ul>
+<p><strong>Why We Do This?</strong><br>All about speed.</p>
+<h2 id="Complexity-Enables-Speed"><a href="#Complexity-Enables-Speed" class="headerlink" title="Complexity Enables Speed"></a>Complexity Enables Speed</h2><ul>
+<li>Complexity makes speed possible and allows you to get very fast results as the data size grows</li>
+<li>By <em>normalizing the data and linking it with integer keys, the overall amount of data</em> which the relational database must <em>scan</em> is far lower than if the data were simply flattened out</li>
+<li>It might seem like a <strong>tradeoff</strong> - spend some time designing your database so it continues to be fast when your application is a success</li>
+</ul>
+<h2 id="Additional-SQL-Topics"><a href="#Additional-SQL-Topics" class="headerlink" title="Additional SQL Topics"></a>Additional SQL Topics</h2><ul>
+<li>Indexes improve access performance for things like string fields</li>
+<li>Constraints on data - (cannot be NULL, etc..)</li>
+<li>Transactions - allow SQL operations to be grouped and done as a unit</li>
+</ul>
+<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>This application will read roster data in JSON format, parse the file, and then produce an SQLite database that contains a User, Course, and Member table and populate the tables from the data file.</p>
+<p>You can base your solution on this code: <a href="http://www.pythonlearn.com/code/roster.py" target="_blank" rel="external">http://www.pythonlearn.com/code/roster.py</a> - this code is incomplete as you need to modify the program to store the role column in the Member table to complete the assignment.</p>
+<p>Each student gets their own file for the assignment. Download this file and save it as roster_data.json. Move the downloaded file into the same folder as your roster.py program.</p>
+<p>Once you have made the necessary changes to the program and it has been run successfully reading the above JSON data, run the following SQL command:<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">SELECT</span> <span class="keyword">hex</span>(User.name || Course.title || Member.role ) <span class="keyword">AS</span> X <span class="keyword">FROM</span></div><div class="line">    <span class="keyword">User</span> <span class="keyword">JOIN</span> <span class="keyword">Member</span> <span class="keyword">JOIN</span> Course</div><div class="line">    <span class="keyword">ON</span> User.id = Member.user_id <span class="keyword">AND</span> Member.course_id = Course.id</div><div class="line">    <span class="keyword">ORDER</span> <span class="keyword">BY</span> X</div></pre></td></tr></table></figure></p>
+<p>Find the <strong>first</strong> row in the resulting record set and enter the long string that looks like 53656C696E613333.</p>
+<h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><p>Python：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> json</div><div class="line"><span class="keyword">import</span> sqlite3</div><div class="line"></div><div class="line">conn = sqlite3.connect(<span class="string">'rosterdb.sqlite'</span>)</div><div class="line">cur = conn.cursor()</div><div class="line"></div><div class="line"><span class="comment"># Do some setup</span></div><div class="line">cur.executescript(<span class="string">'''</span></div><div class="line">DROP TABLE IF EXISTS User;</div><div class="line">DROP TABLE IF EXISTS Member;</div><div class="line">DROP TABLE IF EXISTS Course;</div><div class="line"></div><div class="line">CREATE TABLE User (</div><div class="line">    id     INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,</div><div class="line">    name   TEXT UNIQUE</div><div class="line">);</div><div class="line"></div><div class="line">CREATE TABLE Course (</div><div class="line">    id     INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,</div><div class="line">    title  TEXT UNIQUE</div><div class="line">);</div><div class="line"></div><div class="line">CREATE TABLE Member (</div><div class="line">    user_id     INTEGER,</div><div class="line">    course_id   INTEGER,</div><div class="line">    role        INTEGER,</div><div class="line">    PRIMARY KEY (user_id, course_id)</div><div class="line">)</div><div class="line">''')</div><div class="line"></div><div class="line">fname = raw_input(<span class="string">'Enter file name: '</span>)</div><div class="line"><span class="keyword">if</span> ( len(fname) &lt; <span class="number">1</span> ) : fname = <span class="string">'roster_data.json'</span></div><div class="line"></div><div class="line"></div><div class="line">str_data = open(fname).read()</div><div class="line">json_data = json.loads(str_data)</div><div class="line"></div><div class="line"><span class="keyword">for</span> entry <span class="keyword">in</span> json_data:</div><div class="line"></div><div class="line">    name = entry[<span class="number">0</span>];</div><div class="line">    title = entry[<span class="number">1</span>];</div><div class="line">    role = entry[<span class="number">2</span>] <span class="comment"># 添加了role</span></div><div class="line"></div><div class="line">    <span class="keyword">print</span> name, title, role <span class="comment"># 添加了role</span></div><div class="line"></div><div class="line">    cur.execute(<span class="string">'''INSERT OR IGNORE INTO User (name)</span></div><div class="line">        VALUES ( ? )''', ( name, ) )</div><div class="line">    cur.execute(<span class="string">'SELECT id FROM User WHERE name = ? '</span>, (name, ))</div><div class="line">    user_id = cur.fetchone()[<span class="number">0</span>]</div><div class="line"></div><div class="line">    cur.execute(<span class="string">'''INSERT OR IGNORE INTO Course (title)</span></div><div class="line">        VALUES ( ? )''', ( title, ) )</div><div class="line">    cur.execute(<span class="string">'SELECT id FROM Course WHERE title = ? '</span>, (title, ))</div><div class="line">    course_id = cur.fetchone()[<span class="number">0</span>]</div><div class="line"></div><div class="line">    cur.execute(<span class="string">'''INSERT OR REPLACE INTO Member</span></div><div class="line">        (user_id, course_id, role) VALUES ( ?, ?, ? )''',</div><div class="line">        ( user_id, course_id, role ) ) <span class="comment"># 添加了role（3处）</span></div><div class="line"></div><div class="line">    conn.commit()</div></pre></td></tr></table></figure></p>
+<p>SQL：<br>题目中给定的那些，原封不动。<br>不过，这段语句倒是第一次见：<code>hex(User.name || Course.title || Member.role ) AS X</code> 是把三个字段合并为一个吧，但是得到的结果长得好奇怪，不知道是怎么排列的。</p>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>没有一点点惊喜，还以为到第三节了，会来个好玩的，比如教材上的，抓取Twitter朋友信息什么的，打算改一改去试试微博。<br>啊，不能怪老师，要怪就怪自己心思不正。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Test for Plugins]]></title>
+      <url>http://yibeichen.me/2016/07/30/Test-for-Plugins/</url>
+      <content type="html"><![CDATA[<h1 id="音乐插件"><a href="#音乐插件" class="headerlink" title="音乐插件"></a>音乐插件</h1><h2 id="代码嵌套"><a href="#代码嵌套" class="headerlink" title="代码嵌套"></a>代码嵌套</h2><h3 id="Spotify"><a href="#Spotify" class="headerlink" title="Spotify"></a>Spotify</h3><p>网站提供的代码如下：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">iframe</span> src=<span class="string">"https://embed.spotify.com/?uri=spotify%3Atrack%3A3v8PlUFGQQDBIk1J86waCo"</span> <span class="attribute">width</span>=<span class="string">"300"</span> height=<span class="string">"380"</span> frameborder=<span class="string">"0"</span> allowtransparency=<span class="string">"true"</span>&gt;</div><div class="line">&lt;/iframe&gt;</div></pre></td></tr></table></figure></p>
+<p>效果如图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-30_14:48:19.jpg" alt="2016-07-30_14:48:19.jpg"><br>没开VPN是显示不出来的。<br>看着挺美，但是问题在于，点击会跳转到Spotify官网，不能当前页播放。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PY4E Chapter 14.2（Data Models and Relational SQL）]]></title>
+      <url>http://yibeichen.me/2016/07/29/PY4E-Chapter-14-2/</url>
+      <content type="html"><![CDATA[<p>看教材的时候发现，有几个知识点是书上解释了但是视频没解释就直接写了的，比如cur():</p>
+<blockquote>
+<p>游标(cursor)类似一个文件句柄，可以对数据库中的数据执行操作。当处理文本文件时，cursor()的调用与open()方法相似。<br>当有个游标，使用execute()方法，对数据库的内容执行命令。</p>
+</blockquote>
+<p>比如fetchone()：</p>
+<blockquote>
+<p>如果try部分进展顺利，使用fetchone()[0]获取该记录，然后检索返回的元组的第一个(也是唯一一个)元素，并储存。</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="Designing-a-Data-Model"><a href="#Designing-a-Data-Model" class="headerlink" title="Designing a Data Model"></a>Designing a Data Model</h2><h3 id="Building-a-Data-Model"><a href="#Building-a-Data-Model" class="headerlink" title="Building a Data Model"></a>Building a Data Model</h3><ul>
+<li>Drawing a picture of the data objects for our application and then figuring out how to represent the objects and their relationships</li>
+<li><strong>Basic Rule</strong>: Don’t put the same string data in twice - use a relationship instead</li>
+<li>When there is one thing in the “real world” there should be one copy<br>of that thing in the database</li>
+</ul>
+<h2 id="Representing-a-Data-Model-in-Tables"><a href="#Representing-a-Data-Model-in-Tables" class="headerlink" title="Representing a Data Model in Tables"></a>Representing a Data Model in Tables</h2><p>将一个大表格拆分成若干个小表格，形成关联。为了减少冗余，当数据量非常非常大的时候，这样做不仅可以缩小存储空间，而且可以加快数据读取的速度。<br>Once we define objects, we need to define the relationships between objects.</p>
+<h3 id="Three-Kinds-of-Keys"><a href="#Three-Kinds-of-Keys" class="headerlink" title="Three Kinds of Keys"></a>Three Kinds of Keys</h3><ul>
+<li>Primary key - generally an integer autoincrement field(自动生成的，不要用logical key 作为primary key)</li>
+<li>Logical key - What the outside world uses for lookup</li>
+<li>Foreign key - generally an integer key pointing to a row in another table</li>
+</ul>
+<h2 id="Reconstructing-data-with-JOIN"><a href="#Reconstructing-data-with-JOIN" class="headerlink" title="Reconstructing data with JOIN"></a>Reconstructing data with JOIN</h2><h3 id="The-JOIN-Operation"><a href="#The-JOIN-Operation" class="headerlink" title="The JOIN Operation"></a>The JOIN Operation</h3><p>The JOIN operation links across several tables as part of a select<br>operation<br>You must tell the JOIN how to use the keys that make the connection<br>between the tables using an <strong>ON</strong> clause</p>
+<h3 id="Many-to-Many"><a href="#Many-to-Many" class="headerlink" title="Many to Many"></a>Many to Many</h3><ul>
+<li>Sometimes we need to model a relationship that is many-tomany</li>
+<li>We need to add a “connection” table with two foreign keys</li>
+<li>There is usually no separate primary key</li>
+</ul>
+<h3 id="Additional-SQL-Topics"><a href="#Additional-SQL-Topics" class="headerlink" title="Additional SQL Topics"></a>Additional SQL Topics</h3><ul>
+<li>Indexes improve access performance for things like string fields</li>
+<li>Constraints on data - (cannot be NULL, etc..)</li>
+<li>Transactions - allow SQL operations to be grouped and done as a unit</li>
+</ul>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><ul>
+<li>Relational databases allow us to scale to very large amounts of data</li>
+<li>The key is to have one copy of any data element and use relations and joins to link the data to multiple places</li>
+<li>This greatly reduces the amount of data which much be scanned when doing complex operations across large amounts of data</li>
+<li>Database and SQL design is a bit of an art form</li>
+</ul>
+<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>This application will read an iTunes export file in XML and produce a properly normalized database with this structure:<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> Artist (</div><div class="line">    <span class="keyword">id</span>  <span class="built_in">INTEGER</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> PRIMARY <span class="keyword">KEY</span> AUTOINCREMENT <span class="keyword">UNIQUE</span>,</div><div class="line">    <span class="keyword">name</span>    <span class="built_in">TEXT</span> <span class="keyword">UNIQUE</span></div><div class="line">);</div><div class="line"></div><div class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> Genre (</div><div class="line">    <span class="keyword">id</span>  <span class="built_in">INTEGER</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> PRIMARY <span class="keyword">KEY</span> AUTOINCREMENT <span class="keyword">UNIQUE</span>,</div><div class="line">    <span class="keyword">name</span>    <span class="built_in">TEXT</span> <span class="keyword">UNIQUE</span></div><div class="line">);</div><div class="line"></div><div class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> Album (</div><div class="line">    <span class="keyword">id</span>  <span class="built_in">INTEGER</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> PRIMARY <span class="keyword">KEY</span> AUTOINCREMENT <span class="keyword">UNIQUE</span>,</div><div class="line">    artist_id  <span class="built_in">INTEGER</span>,</div><div class="line">    title   <span class="built_in">TEXT</span> <span class="keyword">UNIQUE</span></div><div class="line">);</div><div class="line"></div><div class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> Track (</div><div class="line">    <span class="keyword">id</span>  <span class="built_in">INTEGER</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> PRIMARY <span class="keyword">KEY</span></div><div class="line">        AUTOINCREMENT <span class="keyword">UNIQUE</span>,</div><div class="line">    title <span class="built_in">TEXT</span>  <span class="keyword">UNIQUE</span>,</div><div class="line">    album_id  <span class="built_in">INTEGER</span>,</div><div class="line">    genre_id  <span class="built_in">INTEGER</span>,</div><div class="line">    <span class="keyword">len</span> <span class="built_in">INTEGER</span>, rating <span class="built_in">INTEGER</span>, <span class="keyword">count</span> <span class="built_in">INTEGER</span></div><div class="line">);</div></pre></td></tr></table></figure></p>
+<p>If you run the program multiple times in testing or with different files, make sure to empty out the data before each run.</p>
+<p>You can use this code as a starting point for your application: <a href="http://www.pythonlearn.com/code/tracks.zip" target="_blank" rel="external">http://www.pythonlearn.com/code/tracks.zip</a>. The ZIP file contains the Library.xml file to be used for this assignment. You can export your own tracks from iTunes and create a database, but for the database that you turn in for this assignment, only use the Library.xml data that is provided.</p>
+<p>To grade this assignment, the program will run a query like this on your uploaded database and look for the data it expects to see:<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">SELECT Track<span class="selector-class">.title</span>, Artist<span class="selector-class">.name</span>, Album<span class="selector-class">.title</span>, Genre<span class="selector-class">.name</span></div><div class="line">    FROM Track JOIN Genre JOIN Album JOIN Artist</div><div class="line">    ON Track<span class="selector-class">.genre_id</span> = Genre<span class="selector-class">.ID</span> and Track<span class="selector-class">.album_id</span> = Album<span class="selector-class">.id</span></div><div class="line">        AND Album<span class="selector-class">.artist_id</span> = Artist<span class="selector-class">.id</span></div><div class="line">    ORDER BY Artist<span class="selector-class">.name</span> LIMIT <span class="number">3</span></div></pre></td></tr></table></figure></p>
+<p>The expected result of this query on your database is:<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-29_22:43:42.jpg" alt="2016-07-29_22:43:42.jpg"></p>
+<h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><h2 id="Python："><a href="#Python：" class="headerlink" title="Python："></a>Python：</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> xml.etree.ElementTree <span class="keyword">as</span> ET</div><div class="line"><span class="keyword">import</span> sqlite3</div><div class="line"></div><div class="line">conn = sqlite3.connect(<span class="string">'trackdb2.sqlite'</span>)</div><div class="line">cur = conn.cursor()</div><div class="line"></div><div class="line"><span class="comment"># Make some fresh tables using executescript()</span></div><div class="line">cur.executescript(<span class="string">'''</span></div><div class="line">DROP TABLE IF EXISTS Artist;</div><div class="line">DROP TABLE IF EXISTS Genre;</div><div class="line">DROP TABLE IF EXISTS Album;</div><div class="line">DROP TABLE IF EXISTS Track;</div><div class="line"></div><div class="line">CREATE TABLE Artist (</div><div class="line">    id  INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,</div><div class="line">    name    TEXT UNIQUE</div><div class="line">);</div><div class="line">CREATE TABLE Genre (</div><div class="line">    id  INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,</div><div class="line">    name    TEXT UNIQUE</div><div class="line">);</div><div class="line">CREATE TABLE Album (</div><div class="line">    id  INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,</div><div class="line">    artist_id  INTEGER,</div><div class="line">    title   TEXT UNIQUE</div><div class="line">);</div><div class="line"></div><div class="line">CREATE TABLE Track (</div><div class="line">    id  INTEGER NOT NULL PRIMARY KEY</div><div class="line">        AUTOINCREMENT UNIQUE,</div><div class="line">    title TEXT  UNIQUE,</div><div class="line">    artist_id INTEGER,</div><div class="line">    genre_id  INTEGER,</div><div class="line">    album_id  INTEGER</div><div class="line">);</div><div class="line">''')</div><div class="line"></div><div class="line">fname = raw_input(<span class="string">'Enter file name: '</span>)</div><div class="line"><span class="keyword">if</span> ( len(fname) &lt; <span class="number">1</span> ) : fname = <span class="string">'Library.xml'</span></div><div class="line"></div><div class="line"><span class="comment"># &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;369&lt;/integer&gt;</span></div><div class="line"><span class="comment"># &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Another One Bites The Dust&lt;/string&gt;</span></div><div class="line"><span class="comment"># &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Queen&lt;/string&gt;</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">lookup</span><span class="params">(d, key)</span>:</span></div><div class="line">    found = <span class="keyword">False</span></div><div class="line">    <span class="keyword">for</span> child <span class="keyword">in</span> d:</div><div class="line">        <span class="keyword">if</span> found : <span class="keyword">return</span> child.text</div><div class="line">        <span class="keyword">if</span> child.tag == <span class="string">'key'</span> <span class="keyword">and</span> child.text == key :</div><div class="line">            found = <span class="keyword">True</span></div><div class="line">    <span class="keyword">return</span> <span class="keyword">None</span></div><div class="line"></div><div class="line">stuff = ET.parse(fname)</div><div class="line">all = stuff.findall(<span class="string">'dict/dict/dict'</span>)</div><div class="line"><span class="keyword">print</span> <span class="string">'Dict count:'</span>, len(all)</div><div class="line"><span class="keyword">for</span> entry <span class="keyword">in</span> all:</div><div class="line">    <span class="keyword">if</span> ( lookup(entry, <span class="string">'Track ID'</span>) <span class="keyword">is</span> <span class="keyword">None</span> ) : <span class="keyword">continue</span></div><div class="line"></div><div class="line">    name = lookup(entry, <span class="string">'Name'</span>)</div><div class="line">    artist = lookup(entry, <span class="string">'Artist'</span>)</div><div class="line">    genre = lookup(entry, <span class="string">'Genre'</span>)</div><div class="line">    album = lookup(entry, <span class="string">'Album'</span>)</div><div class="line"></div><div class="line">    <span class="keyword">if</span> name <span class="keyword">is</span> <span class="keyword">None</span> <span class="keyword">or</span> artist <span class="keyword">is</span> <span class="keyword">None</span> <span class="keyword">or</span> genre <span class="keyword">is</span> <span class="keyword">None</span> <span class="keyword">or</span> album <span class="keyword">is</span> <span class="keyword">None</span> :</div><div class="line">        <span class="keyword">continue</span></div><div class="line"></div><div class="line">    <span class="keyword">print</span> name, artist, genre, album</div><div class="line"></div><div class="line">    cur.execute(<span class="string">'''INSERT OR IGNORE INTO Artist (name)</span></div><div class="line">        VALUES ( ? )''', ( artist, ) )</div><div class="line">    cur.execute(<span class="string">'SELECT id FROM Artist WHERE name = ? '</span>, (artist, ))</div><div class="line">    artist_id = cur.fetchone()[<span class="number">0</span>]</div><div class="line"></div><div class="line">    cur.execute(<span class="string">'''INSERT OR IGNORE INTO Genre (name)</span></div><div class="line">        VALUES ( ? )''', ( genre, ) )</div><div class="line">    cur.execute(<span class="string">'SELECT id FROM Genre WHERE name = ? '</span>, (genre, ))</div><div class="line">    genre_id = cur.fetchone()[<span class="number">0</span>]</div><div class="line"></div><div class="line">    cur.execute(<span class="string">'''INSERT OR IGNORE INTO Album (title, artist_id)</span></div><div class="line">        VALUES ( ?, ? )''', ( album, artist_id ) )</div><div class="line">    cur.execute(<span class="string">'SELECT id FROM Album WHERE title = ? '</span>, (album, ))</div><div class="line">    album_id = cur.fetchone()[<span class="number">0</span>]</div><div class="line"></div><div class="line">    cur.execute(<span class="string">'''INSERT OR REPLACE INTO Track</span></div><div class="line">        (title, artist_id, genre_id, album_id)</div><div class="line">        VALUES ( ?, ?, ?, ? )''',</div><div class="line">        ( name, artist_id, genre_id, album_id ) )</div><div class="line"></div><div class="line">    conn.commit()</div></pre></td></tr></table></figure>
+<h2 id="SQL"><a href="#SQL" class="headerlink" title="SQL:"></a>SQL:</h2><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">SELECT Track<span class="selector-class">.title</span>, Artist<span class="selector-class">.name</span>, Album<span class="selector-class">.title</span>, Genre<span class="selector-class">.name</span></div><div class="line">    FROM Track JOIN Genre JOIN Album JOIN Artist</div><div class="line">    ON Track<span class="selector-class">.genre_id</span> = Genre<span class="selector-class">.ID</span> and Track<span class="selector-class">.album_id</span> = Album<span class="selector-class">.id</span></div><div class="line">        AND Album<span class="selector-class">.artist_id</span> = Artist<span class="selector-class">.id</span></div><div class="line">    ORDER BY Artist<span class="selector-class">.name</span>, Track<span class="selector-class">.title</span>  LIMIT <span class="number">3</span></div></pre></td></tr></table></figure>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>Python的代码是提供了一个模板，就是tracks.py，但是要补充genre的参数，我加的时候忘记修改其他的参数了，报错好几次，于是就去改呀改，到最后在SQL里运行的时候，得出的三条总是不对，于是就翻回去找，发现它只根据artist排序了，而目标答案很显然是要多重字段排序的。这时候领悟到，题目中给的那段SQL代码只是参考的呀，还得修改下，不然这作业也太容易了吧。</p>
+<p>总之呢，假如让我自己写，是肯定写不出来这么一长串，看都看得不是很懂。不过，修改代码的过程，倒是也帮助我理解了不少，所以，在原创能力不足的情况下，模仿和修改也是很好的办法。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PY4E Chapter 14.1（Basic Structured Query Language）]]></title>
+      <url>http://yibeichen.me/2016/07/28/PY4E-Chapter-14-1/</url>
+      <content type="html"><![CDATA[<p>前天开始听的，听了五分钟，不懂，感觉像天书，刚好网络不行，就放弃了。昨天想，不听不行啊，还是得继续，结果听完大发感慨，怎么这么简单！quiz简单，第一道作业题也很简单，一路绿灯到第二道作业题，卡住了。折腾半晚上，看不懂，后悔自己太嘚瑟，今天继续折腾，大半个下午，简直要怀疑智商。最后，突然发现，代码没错，是数据拿错了……<br>就当是复习了正则表达式和list.split()。<br>另，终于能懂github的好了，虽然写作业的时候没用，碰到project还是应该用。<br><a id="more"></a></p>
+<h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="Database-Introduction"><a href="#Database-Introduction" class="headerlink" title="Database Introduction"></a>Database Introduction</h2><h3 id="Relational-Databases-关系数据库"><a href="#Relational-Databases-关系数据库" class="headerlink" title="Relational Databases 关系数据库"></a>Relational Databases 关系数据库</h3><p>Relational databases model data by storing rows and columns in tables. The power of the relational database lies in its ability to efficiently retrieve data from those tables and in particular where there are multiple tables and the relationships between those tables involved in the query.<br>其实并没有看懂……</p>
+<h3 id="Terminology"><a href="#Terminology" class="headerlink" title="Terminology"></a>Terminology</h3><ul>
+<li>Database - contains many tables</li>
+<li>Relation (or table) - contains tuples and attributes</li>
+<li>Tuple (or row) - a set of fields that generally represents an “object” like a person or a music track</li>
+<li>Attribute (also column or field) - one of possibly many elements of data corresponding to the object represented by the row</li>
+</ul>
+<p>Python + SQL的组合之强大在于<br>Python cleans up the data while SQL stores and retrieves data.</p>
+<p>SQL has 4 basic functions – CRUD</p>
+<ul>
+<li>Create</li>
+<li>Read</li>
+<li>Update</li>
+<li>Delete</li>
+</ul>
+<h2 id="Using-Databases"><a href="#Using-Databases" class="headerlink" title="Using Databases"></a>Using Databases</h2><h3 id="Two-Roles-in-Large-Projects"><a href="#Two-Roles-in-Large-Projects" class="headerlink" title="Two Roles in Large Projects"></a>Two Roles in Large Projects</h3><ul>
+<li>Application Developer - Builds the logic for the application, the look<br>and feel of the application - monitors the application for problems</li>
+<li>Database Administrator - Monitors and adjusts the database as the<br>program runs in production</li>
+<li>Often both people participate in the building of the “Data model”</li>
+</ul>
+<h3 id="Database-Model"><a href="#Database-Model" class="headerlink" title="Database Model"></a>Database Model</h3><p>A <em>database model</em> or <em>database schema</em> is the <em>structure or format of a database</em>, described in a formal language<br>supported by the database management system. In other<br>words, a “database model” is the application of a data<br>model when used in conjunction with a database<br>management system.</p>
+<h3 id="Common-Database-Systems"><a href="#Common-Database-Systems" class="headerlink" title="Common Database Systems"></a>Common Database Systems</h3><p>Three major DMS:</p>
+<ul>
+<li>Oracle - Large, commercial, enterprise-scale, very very tweakable</li>
+<li>MySql - Simpler but very fast and scalable - commercial open source</li>
+<li>SqlServer - Very nice - from Microsoft (also Access)</li>
+</ul>
+<h2 id="Single-Table-CRUD"><a href="#Single-Table-CRUD" class="headerlink" title="Single Table CRUD"></a>Single Table CRUD</h2><h3 id="Insert"><a href="#Insert" class="headerlink" title="Insert"></a>Insert</h3><p>INSERT INTO Users (name, email) VALUES (‘Kristin’, ‘kf@umich.edu’)</p>
+<h3 id="Delete"><a href="#Delete" class="headerlink" title="Delete"></a>Delete</h3><p>DELETE FROM Users WHERE email=’ted@umich.edu’</p>
+<h3 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h3><p>UPDATE Users SET name=’Charles’ WHERE email=’csev@umich.edu’</p>
+<h3 id="Retrieving-Records-Select"><a href="#Retrieving-Records-Select" class="headerlink" title="Retrieving Records: Select"></a>Retrieving Records: Select</h3><p>SELECT <em> FROM Users<br>SELECT </em> FROM Users WHERE email=’csev@umich.edu’</p>
+<h3 id="Sorting-with-ORDER-BY"><a href="#Sorting-with-ORDER-BY" class="headerlink" title="Sorting with ORDER BY"></a>Sorting with ORDER BY</h3><p>SELECT <em> FROM Users ORDER BY email<br>SELECT </em> FROM Users ORDER BY name</p>
+<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><h2 id="习题A"><a href="#习题A" class="headerlink" title="习题A"></a>习题A</h2><p>按照给定的指令在本地用sqlitebrowser操作，主要是create、insert这两个指令，好傻瓜的……我就不写了<br>最后有个组合指令有意思，但是不懂什么意思……<br><code>SELECT hex(name || age) AS X FROM Ages ORDER BY X</code></p>
+<h2 id="习题B"><a href="#习题B" class="headerlink" title="习题B"></a>习题B</h2><p><strong>Counting Organizations</strong><br>This application will read the mailbox data (mbox.txt) count up the number email messages per organization (i.e. domain name of the email address) using a database with the following schema to maintain the counts.</p>
+<h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><h2 id="习题B-1"><a href="#习题B-1" class="headerlink" title="习题B"></a>习题B</h2><h3 id="正确答案"><a href="#正确答案" class="headerlink" title="正确答案"></a>正确答案</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> sqlite3</div><div class="line"><span class="keyword">import</span> re</div><div class="line"></div><div class="line">conn = sqlite3.connect(<span class="string">'email07281.sqlite'</span>)</div><div class="line">cur = conn.cursor()</div><div class="line"></div><div class="line">cur.execute(<span class="string">'''</span></div><div class="line">DROP TABLE IF EXISTS Counts''')</div><div class="line"></div><div class="line">cur.execute(<span class="string">'''</span></div><div class="line">CREATE TABLE Counts (org TEXT, count INTEGER)''')</div><div class="line"></div><div class="line">fname = raw_input(<span class="string">'Enter file name: '</span>)</div><div class="line"><span class="keyword">if</span> ( len(fname) &lt; <span class="number">1</span> ) : fname = <span class="string">'mbox.txt'</span></div><div class="line">fh = open(fname)</div><div class="line"><span class="keyword">for</span> line <span class="keyword">in</span> fh:</div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> line.startswith(<span class="string">'From: '</span>) : <span class="keyword">continue</span></div><div class="line">    pieces = line.split(<span class="string">'@'</span>) <span class="comment">#sample中是pieces = line.split()</span></div><div class="line">    org = pieces[<span class="number">1</span>]</div><div class="line">    org = org.rstrip()<span class="comment">#remove the blank spaces</span></div><div class="line">    <span class="keyword">print</span> org</div><div class="line"></div><div class="line">    cur.execute(<span class="string">'SELECT count FROM Counts WHERE org = ? '</span>, (org, ))</div><div class="line">    row = cur.fetchone()</div><div class="line">    <span class="keyword">if</span> row <span class="keyword">is</span> <span class="keyword">None</span>:</div><div class="line">        cur.execute(<span class="string">'''INSERT INTO Counts (org, count)</span></div><div class="line">                VALUES ( ?, 1 )''', ( org, ) )</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        cur.execute(<span class="string">'UPDATE Counts SET count=count+1 WHERE org = ?'</span>,(org, ))</div><div class="line">        <span class="comment"># This statement commits outstanding changes to disk each</span></div><div class="line">        <span class="comment"># time through the loop - the program can be made faster</span></div><div class="line">        <span class="comment"># by moving the commit so it runs only after the loop completes</span></div><div class="line">    conn.commit()</div><div class="line"></div><div class="line">sqlstr = <span class="string">'SELECT org, count FROM Counts ORDER BY count DESC LIMIT 10'</span></div><div class="line"></div><div class="line"><span class="keyword">print</span> <span class="string">"Counts:"</span></div><div class="line"><span class="keyword">for</span> row <span class="keyword">in</span> cur.execute(sqlstr) :</div><div class="line">    <span class="keyword">print</span> str(row[<span class="number">0</span>]), row[<span class="number">1</span>]</div><div class="line"></div><div class="line">cur.close()</div></pre></td></tr></table></figure>
+<h3 id="错误答案"><a href="#错误答案" class="headerlink" title="错误答案"></a>错误答案</h3><p>其他部分都是相同的，奇怪的是，最初用样本数据运行，结果正常呀。<br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> <span class="built_in">line</span> <span class="keyword">in</span> fh:</div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> <span class="built_in">line</span>.startswith(<span class="string">'From: '</span>) : continue</div><div class="line">    <span class="built_in">line</span> = <span class="built_in">line</span>.rstrip()</div><div class="line">    email = re.findall(<span class="string">'[a-zA-Z0-9]\S*@\S*[a-zA-Z]'</span>,<span class="built_in">line</span>)</div><div class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(email)&gt;<span class="number">0</span>:</div><div class="line">        print email</div><div class="line">    <span class="keyword">for</span> mail <span class="keyword">in</span> email:</div><div class="line">        <span class="keyword">a</span> = mail.find(<span class="string">'@'</span>)</div><div class="line">        b = mail.find(<span class="string">' '</span>,<span class="keyword">a</span>)</div><div class="line">        org = mail[<span class="keyword">a</span>+<span class="number">1</span>:b+<span class="number">1</span>]</div><div class="line">        print org</div></pre></td></tr></table></figure></p>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><h2 id="习题B-2"><a href="#习题B-2" class="headerlink" title="习题B"></a>习题B</h2><p>其实第二题也是根据给定的代码修改的，最终成果是只改了一行，结果，为了这一行，折腾了四五个小时。<br>不过，要说明一下，这行代码不是我写的。参考：<a href="http://blog.csdn.net/suiqiji206/article/details/50498928" target="_blank" rel="external">http://blog.csdn.net/suiqiji206/article/details/50498928</a><br><code>pieces = line.split(&#39;@&#39;)</code>以前我都不知道这种分发……</p>
+<p>但是，我最开始写的代码应该也没错，然而多次修改之后已经不记得最初的是什么了，所以说终于能理解为什么程序员们都爱github。<br>第一次得到的结果不对，我以为是理解错了题意，可能是要找出所有的email地址再从中找domain，而不是仅仅是“From”开头那行的。为此我还启用了正则表达式！写了长长的一串，见上面。<br>然而继续错继续错，百思不得其解。<br>偶然一下，发现是题目中提供的数据量太大，之前都是没有加载完就copy了，所以本地的数据是不完整的……于是重新弄了一遍，答案就正确了……</p>
+<p>至于错误的答案，就是用正则表达式的这段，测试了一下，<code>print org</code>这里错了，估计是loop嵌套出了问题，但是改来改去都不太对，算了……</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>Atom有点奇怪，每次修改了都得保存一下才能运行，TextWrangler就不用，改过直接运行就ok。（想念TextWrangler，要不要装回来呢……）</p>
+<p>本章的slide链接：<a href="https://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-14-Databases.pdf" target="_blank" rel="external">https://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-14-Databases.pdf</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[无心学习之没有VPN]]></title>
+      <url>http://yibeichen.me/2016/07/27/No-Desire-to-Study/</url>
+      <content type="html"><![CDATA[<p>0727 13:25:00<br>一天，哦不，12个小时都忍不了，中午刚开电脑就跑去补了15G的套餐，焦灼等待一小时后，终于生效。<br>从此又是手脚齐全的人了。</p>
+<h2 id="Atom插件顺利安装！"><a href="#Atom插件顺利安装！" class="headerlink" title="Atom插件顺利安装！"></a>Atom插件顺利安装！</h2><p>今天发现，本月的VPN流量已经用完了，于是，再也无心学习。</p>
+<blockquote>
+<p>没有VPN的时候你怎么活的？<br>我有前公司给的chrome插件啊。<br>那在前公司之前呢？<br>前前公司自带VPN，随时随地科学上网……</p>
+</blockquote>
+<p>还是前前公司好（心疼前公司，对不起前公司……）。</p>
+<a id="more"></a>
+<p>好了，正经说话。</p>
+<p>六月份的时候在iqlink上买了每月8G的VPN，一年40块。这是第二次买了，查了下记录，2014年10月买过一年的，但没怎么用过，白白浪费了8Gx12。也不能怪我，那时候还在某厂，用不上VPN，请注意，这句并不是夸某厂，而是，太累了以至于出了公司根本不想再上网。</p>
+<p>这个月VPN用得实在太快，因为每天一上coursera就开着，啊，其实也不完全是，我还有插件呢，全局的VPN主要是给Mac上其他app用的。最近插件也不好用了，估计是前公司发现我跑了之后还厚脸皮地占用公司资源，给我封了……所以就全靠我买的VPN了。</p>
+<p>再加上，已经彻底弃用某搜索引擎，全靠Google，所以VPN就一直这么开着。RescueTime 显示我上一周的上网时间是49h56m，想象一下一个月的……这还只是Mac，iPad都不算了，但iPad上也有VPN的授权，看过几次YouTube，哦，也是可以忽略不计。总之，流量消耗得特别快。</p>
+<p>我正在考虑要不要升级成更高的流量套餐，然而，iqlink的网站也不好登了。</p>
+<p>好吧，来细数一下，没有VPN之后我的生活发生了怎样的变化，为什么我厌学了。</p>
+<p>首先，coursera不好登了，也有可能是我家网络问题，但是从前开着VPN的时候就是快很多啊。问题在于，最近学的课程越来越难了，我得看一会停一会，有时候还要翻回去看，但是它越来越慢就会导致我停一下它就接不上了，倒回去它就卡住了。人生啊，就浪费在这漫长地等待网页加载上。</p>
+<p>然后，Google不能用了，天哪，真要命，感觉一只手断了。</p>
+<p>再然后，还有一大堆app都不好用了，因为很多账号都是用gmail邮箱登录的，当然了它们通常只用在登录的时候翻一次墙就好了，可是有时候它会突然掉线，让我重新授权登录，这就难办了，根本连不上Google账号……</p>
+<p>最后，可能是心理作用，总觉得没了VPN之后，所有的app都慢了好多，比如Spotify，总显示offline，也有可能是我们家网络实在太差。</p>
+<p>呐，由于我是个坚定的工具论者，纸笔不顺手就不肯写字，我现在不想学习了。于是就开始折腾别的东西，然而，没有搜索引擎……好吧好吧，我还是找到了可以折腾的，下载了Atom，准备研究一下，然而，不幸的是，packages没办法install，现在可是午夜呀，难道有人跟我争带宽么，只能理解为墙太厚……</p>
+<p>算了算了，这种时候我应该关上电脑潜心读书才对，这个月全都在折腾编程，一本书也没好好读。但是，还是忍不住想要写东西，关于Atom的周边，我是怎么决定开始用它，我用过的各种编辑器，以及跟它们多多少少有点关联的人和事……可以写好多好多呀。</p>
+<p>可能我要变成一个话唠了。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PY4E Chapter 13A（Object Oriented Programming）]]></title>
+      <url>http://yibeichen.me/2016/07/25/PY4E-Chapter-13-Additional/</url>
+      <content type="html"><![CDATA[<p>A means additional<br>这章算是补充知识点吧，不要求特别熟悉，理解了会用就行，事实上，我每章都不是特别懂……<br>本周没有作业，只有一个quiz，做了两遍才通过，都两遍了，竟然也没能满分。<br><a id="more"></a></p>
+<h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="What-is-an-“Object”"><a href="#What-is-an-“Object”" class="headerlink" title="What is an “Object”?"></a>What is an “Object”?</h2><p>An object is a bit of self-contained code and data.<br>It’s not like a function, which is bit of code, but it is code and data.<br>“对象”可以复制成许多不同的部分，优点在于，每个部分管好自己就行了，不用操心其他部分。（是这个意思吧？感觉理解有偏差）</p>
+<h3 id="Terminology"><a href="#Terminology" class="headerlink" title="Terminology"></a>Terminology</h3><ul>
+<li>Class - a template - Dog</li>
+<li>Method or Message - A defined capability of a class - bark() <strong>causing the dog to bark</strong></li>
+<li>Field or attribute - A bit of data in a class - length</li>
+<li>Object or Instance - A particular instance of a class - Lassie</li>
+</ul>
+<p>他老人家的幽默感真是……</p>
+<p>classes contain code in addition to data, and the method is the way that we activate the code</p>
+<h3 id="Simple-Python-Objects"><a href="#Simple-Python-Objects" class="headerlink" title="Simple Python Objects"></a>Simple Python Objects</h3><p><img src="http://ww3.sinaimg.cn/large/72f96cbajw1f66g66h3llj211y0lcaeo.jpg" alt="20:54:41.jpg"><br>这么一大串，看得不是很懂……</p>
+<p>Use <strong>dir()</strong> to find the “capabilities” of our newly created class</p>
+<h3 id="Object-Lifecycle"><a href="#Object-Lifecycle" class="headerlink" title="Object Lifecycle"></a>Object Lifecycle</h3><ul>
+<li>Objects are created used and discarded</li>
+<li>We have special blocks of code (methods) that get called<ul>
+<li>at the moment of creation (constructor)</li>
+<li>at the moment of destruction (destructor)</li>
+</ul>
+</li>
+<li>Constructors are used a lot</li>
+<li>Destructors are seldom used</li>
+</ul>
+<h4 id="Constructor"><a href="#Constructor" class="headerlink" title="Constructor"></a>Constructor</h4><p>the primary purpose of the constructor is to set up some instance variables to have the proper initial values when the object is created</p>
+<p>optional, typically used to set up variables</p>
+<p>in <em>object-oriented programming</em>, a constructor in a class is a special block of statements called when an <em>object is created</em></p>
+<h4 id="Instances"><a href="#Instances" class="headerlink" title="Instances"></a>Instances</h4><p>each instance has its own copy of the instance variables<br><strong>multiple</strong><br><strong>independent!!!</strong></p>
+<h3 id="Inheritance"><a href="#Inheritance" class="headerlink" title="Inheritance"></a>Inheritance</h3><ul>
+<li>When we make a new class - we can reuse an existing class and <strong>inherit</strong> all the capabilities of an existing class and then add our own little bit to make our new class</li>
+<li>Another form of store and reuse</li>
+<li>Write once - reuse many times</li>
+<li>The new class (child) has all the capabilities of the old class (parent) - and then some more<br>→ → → <strong>Subclasses</strong><h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2></li>
+<li>Object Oriented programming is a very structured approach to code reuse.</li>
+<li>We can group data and functionality together and create many independent instances of a class</li>
+</ul>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>本章的slide链接：<a><a href="http://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-13a-Objects.pdf" target="_blank" rel="external">http://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-13a-Objects.pdf</a></a></p>
+<p>已经沦落到要抄slide的地步了……</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[床前明月光]]></title>
+      <url>http://yibeichen.me/2016/07/25/Reread-Echo/</url>
+      <content type="html"><![CDATA[<p><a href="https://www.douban.com/group/topic/26705512/" target="_blank" rel="external">如果有来生</a></p>
+<p>不要抱歉 不要告别</p>
+<p>这世上不会再出现第二个荷西</p>
+<a id="more"></a>
+<hr>
+<p>有些书，买了很久，也看过很久了，大概不会有机会重读，于是放到网上，等人来取走。<br>放了很久无人问津，我也忘了。<br>突然一天，有留言，谈问书的情况，聊两句就下单了。<br>我倒是愣在那里。<br>从明天起它就是别人的了，也许我是早忘了它，但倘若留在书架上，某一天还能重新发现，可送走之后，记忆里和现实中都没了它的影子。</p>
+<p>这次是三毛的演讲集《流星雨》。中学时代，在一家常去的书店买来的，先是在书店瞧见这本，下午骑着车带着钱来买了，高中生，正是迷三毛的时候吧。可是也只知道她有个荷西，去过沙漠，最后跳下天台。看过琼瑶回忆她的文字，大概是：明明见面的时候还一切都好，怎么转身就……悲痛中带着惊愕。<br>明天就要把书寄走了，真是舍不得，又把书翻开了，这次恨不得把它都背下来。</p>
+<p>附乐曲一段（原谅我音乐插件还没弄好）<br><a href="https://open.spotify.com/track/3ji70Y1KuOjlU3jrYIS3WR" target="_blank" rel="external">L’amoureuse chinoise</a></p>
+<p>从随手翻开的那一页读起，她讲自己给文章取标题的准则：不能让读者看了题目就能猜到文章内容。取名字也有三种境界：第一种是文章写了什么题目就说什么，比如《中国饭店》后来改名成了《沙漠中的饭店》，讲的是沙漠中的一家中国饭店，太直接了，她对题目不满意；第二种是想夸老王家的东西好，不直接说，偏偏要说老李家对面有一家店特别好，比如《五月花》，写的是本该五月繁花似锦，然而却只有无尽的辛劳；第三种是写的是悲剧却不写主人公的悲伤而是旁观者的眼泪，比如《哭泣的骆驼》，女孩被强暴了，然后又被丈夫的弟弟打死。<br>中学语文课上，老师讲《诗经》的时候常常会说到这种方法。三毛说，这些是她从前为广告公司工作的时候学到的。大学里的新闻和广告课上好像也提过，一不小心就记起了茂茂的《现当代文学》。</p>
+<p>三毛说，有段时间写得很少，慢慢写，对妈妈说：“对于一个念书不多的人来说，写五本书已经够多了。”结婚后，有十个月都没写作，因为荷西不能睡觉。她只对别人说，我不能写作，因为荷西不能睡觉。可是她不说荷西为什么不能睡。<br>有一回，晚上写完回到房间，看见荷西蒙着被单躺在那，突然掀起被跳起来：“你写完啦？”“你为什么不睡觉？”“不敢睡。”“为什么不敢睡，我就在外面写东西而已呀。”“你知道，我总是要牵着你的手才能睡着。”<br>荷西是潜水工程师，工作特别危险，必须要有充足的睡眠。于是，从那以后，三毛就不写了。<br>三毛说：“写作是让我快乐的事，但如果写作妨碍了生活，我就会放弃写作。”</p>
+<p>小时候，孩子们都是上同样的学校，穿同样的校服，走同样的路，所以滋生了无穷无尽的想象力，编出有意思的故事。后来，长大了，我们周围的生活周围的人都是那么丰富多彩，总想着把我和我身边的故事记录下来。<br>三毛说：“很佩服那些会编故事的小说家朋友，等自己写完了自己的故事再去编故事，但是我们的故事太多了，写不完。”</p>
+<p>翻回第一篇，《一个男孩子的爱情》。看过很多遍，因为它是第一篇，从前我读书都喜欢从第一页开始。荷西和三毛相识重逢的场景，实是难忘。其实也不过是大千世界一对普通的男女，但细水长流终是入了江河湖海，成为不朽。<br>讲着讲着，讲他们结婚，讲荷西和三毛的爸爸妈妈的相处，讲他们俩曾经讨论过“怎么死”，讲荷西真的走了，讲到最后，无语凝噎。<br>一闪而过迟子建在鲁迅文学馆演讲的场景，开场的时候，她说：“拜托大家，不要问和《世界上所有的夜晚》相关的问题。”她是笑着说的，可我只觉得难过。</p>
+<p>虽然并没有什么感情经历，但是偶尔也和朋友讨论过，两个人到底要什么样才能在一起呢？比较赞同：“门当户对”不是说家境相当，而是，成长的环境还是相似一点较好，相处起来，不至于价值观偏差太多。三毛说：“彼此的品格和心灵，才是我们所要讲求的‘门当户对’的东西。”</p>
+<p>有些东西是浅浅的，似乎三岁小孩子也常常挂在嘴边，比如“床前明月光”。可是，这浅浅的四句诗里，不过是写月光，也写出了高高低低。“床前明月光”，看见了月光，是观察；“疑是地上霜”已经开始思考探索了；“举头望明月”是求证；“低头望故乡”是顺着月光跳到了更遥远的地方。观乎景，言于心，止于情。</p>
+<p>也许写得出“庄生晓梦迷蝴蝶，望帝春心托杜鹃”的有好些个人，但他们写不出“床前明月光”。</p>
+<hr>
+<p>上次寄走的是一套松本清张，四本，舍不得，从此不敢再碰日本推理。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[献给华科]]></title>
+      <url>http://yibeichen.me/2016/07/24/To-HUST/</url>
+      <content type="html"><![CDATA[<p>搭完博客的那天，想到了这个题目。假如我的珞珈山和凌波门看见，不知道会怎么想。</p>
+<p>其实，这篇是关于一些不算远的回忆。</p>
+<a id="more"></a>
+<p>这周过得特别快，好像突然一抬头就周日了。折腾hexo的那几天，没睡好，coding入梦，醒来只觉得特别累，其实也睡不着，恨不得天一亮就爬起来扑向电脑，要不是眼睛疼得睁不开，简直会不眠不休好几天。<br>我妈见了说：“现在我知道了，当初怪你们公司太辛苦，是怪错了，你自己总是要折腾，到哪都折腾，怪不得别人。”</p>
+<p>快到月末，才发现这个月几乎一本书都没读完。心里空空的，脑袋也空空的，都不会说话了。走到书架边，1603的读库摆在那，还没看呢。</p>
+<p>于是，周日热风阵阵的上午，坐在朝南的窗户前，翻开《读库》，风是南风。</p>
+<p>第二篇是艾苓写自己的学生，《毕业生》。新闻系的师生，频繁出现考研、考碗（考公务员）这样的字眼，出现了北京、黑龙江，还有偶然的一个安徽。</p>
+<p>我好像从来没有认真写过我的考研。不对，我就没有正经写过什么。</p>
+<p>考研前看过很多人的经验帖，关于学习方法，关于内心挣扎。考研后也有小学妹一脸期待地望着我：学姐，你的考研故事是什么呀？是不是热血满满，一大碗鸡汤？<br>摇摇头，没有什么迟到的名校梦，没有要痛下决心改变命运的深刻领悟，没有一步一步痛苦得走不下去了又不得不咬牙继续的坚持。</p>
+<p>挣扎当然有，活在这世上，每时每刻都有种种。远一点的不记得了，能记起来的是从初试前一天晚上，到出复试结果那天，四个多月里，经历了各种失眠、噩梦、紧张、崩溃。可能备考的时候，脑袋被那些知识点塞得满满的，腾不出地方来担惊受怕，考完，就是听天由命的时候了，深深地无力，此时此刻，再也不能为我的前途做点什么，除了祈祷。<br>当未来的一切都要拜托昨天的自己，真是恨不得当初努力一点，更努力一点，再怎么努力都嫌不够。<br>初试结果出来前，担心的是，假如进不了复试，要怎么办呢？调剂去别的学校吗？能接受一个连W都不如的学校吗？（被我妈骂，就这么不待见你本科？）如果不调剂，还考吗？是接着再考一年，还是去找份工作，半工半考？还是，考公务员，读个在职？<br>等待复试结果的时候，已经到达脆弱的顶点了，心里想的是都走到这一步了，万一输掉，哪里还有勇气面对，怕是从此无心北上广，任我终老小县城。<br>可能是太敏感了，复试通过后，通知书迟迟未到的那些日子，半夜还会梦见无论怎样奋笔疾书都写不完的考卷；梦见加试，被刷。</p>
+<p>最近还在疑惑，七月份的学习效率怎么这么高？前半年加一起都没这个月学的一半多。突然就想明白了，前半年始终在为前途担忧，哪里都是路，哪条路都看不清，忐忐忑忑，根本无心学习。六月底拿到通知书，才真正放下负担，可以开始新的道路了。</p>
+<p>前段时间是毕业季，研究生公众号推送了一系列毕业生的文章。其中有个人写：如果十年前来到FD，我不会像今天这么努力。作者是研究生毕业，工作一年后考了FD。真想冲上去握个手，只有从社会重返校园的人，才能明白这一张课桌的来之不易。<br>复试前夜，窗户对面就是新闻院，躺在床上，辗转反侧：假如上天愿意给我这次机会，一定洗心革面重新做人。</p>
+<p>说到工作，我妈总是责怪我：“当初赶着工作，毕业照都没好好照，什么回忆都没有。你怎么一点都不喜欢你们学校。”<br>不啊，我爱死了珞珈山东湖水，没有什么山山水水比它更灵动，没有哪个图书馆能和樱顶老图媲美，没有哪条路比樱花大道更动人。在我心里，它就是亲妈，别人的妈再漂亮再温柔，都不及亲妈的万分之一好。只是当时不懂真情可贵，以为照片，不过就是照片而已。</p>
+<p>那，为什么是《献给华科》？</p>
+<p>小时候总有过这样的想法吧：为什么我爸不是XXX，为什么我不是XXX的孩子？白天这么想，晚上还是要搂着亲妈才能睡得着。直到如今，有时还会闪过“为什么没能生在北京？”这样的念头，但我依然热爱我的小城。</p>
+<p>第一次听说华科，是高考后，填志愿前。爸爸的朋友说：去上华科吧，有亲戚在那工作，平日里也能照顾些。<br>不幸的是，我是个孤陋寡闻的文科生，一口回绝：听都没听过，不去。<br>等到了武汉，才知道这一个武断的决定错得有多离谱。<br>在武汉，武大和华科，就如同北京的北大清华、上海的复旦交大，一城难容二虎，总是争来争去。不过，上学的那几年，倒是觉得他们俩挺和气的，相亲相爱。武大文科气息浓重，包袱也重，相比之下，华科简单，纯粹，踏实，进步飞快。<br>不知道是因为对技术充满向往，所以对华科念念不忘，还是因为对华科有心结在先，所以对技术总有念想。</p>
+<p>其实，我没去过华科，也没同华科出来的人有过面对面的交流，但总觉得华科像个若有若无的影子，是我重重background的一层。</p>
+<p>前同事有很多华科的，大多在深圳，大多是技术和产品岗。有时候暗自想想，假如去了华科，说不定最后还是到了某厂。说不定我就是个前端了。说不定我就不走了。说不定说不定说不定，啊，每一次，以为是偏离了正路，其实，正是我们走的每一步构成了我们自己的路。</p>
+<p>搭这个博客的时候，也碰到了很多华科人，记得有个人的资料上写：华中科技大学，网络传播。<br>都是学网传的，差别怎么这么大，毕业两年了，我还是棵技术白菜。</p>
+<p>刚上大学的时候，知道哲学系有位出名的教授，邓晓芒，他去华科了。后来听说又回来了？不太清楚。他的妹妹也很出名，是作家，笔名“残雪”。有一天听她的讲座，去图书馆翻了翻书，看不懂。<br>我们系的老师，张明新，很可爱的人，典型工科男，上课的时候总担心他会被我们这些文科生呛住。冬天在教三上课，早晨前两节，又冷又困，下课铃一响就睡倒一片，他以为我们是不喜欢他的课，其实我们能撑到下课，就已经充分证明了他的魅力。哎，虽然我们嘴上不说，但心里都很喜欢他，当面不说，背后都在夸他。他也去华科了。<br>我们都挺舍不得他的，但又觉得，华科似乎更适合他。<br>大四有一回在湖滨打印店碰见他了，打了声招呼，还是当年那么可爱。上个月跟同学聊天，她说准备去上北大的暑期班：有明新哥哥的课诶，社会学研究方法，想念当年上课的日子，他可真好。</p>
+<p>所以，献给华科，献给我没机会走的路。</p>
+<hr>
+<p>最爱始终是珞珈山人民公园，将来五角场传媒技术学院也夺不走这个位置。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PY4E Chapter 13.2（JSON and the REST Architecture）]]></title>
+      <url>http://yibeichen.me/2016/07/23/PY4E-Chapter-13-2/</url>
+      <content type="html"><![CDATA[<p>超级尴尬</p>
+<h2 id="今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了"><a href="#今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了" class="headerlink" title="今天的两道题目跟github不和，这篇文章$ hexo g -d和$ hexo s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了"></a>今天的两道题目跟github不和，这篇文章<code>$ hexo g -d</code>和<code>$ hexo s</code>的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了</h2><p>尴尬之</p>
+<ol>
+<li>quiz三次都没通过，还得过8小时去做第四次。</li>
+<li>极其容易的作业A卡住了，而且非常光荣地又卡在了求和问题上。</li>
+<li>昨天还机智聪明地注意到了一级tag、二级tag的细节，今天就栽到这了。（说到底还是智商问题）</li>
+<li>作业B根本不用动脑筋，代码都给了，改一个变量名就行，是怕出个难题会打击学生的自信心么……</li>
+</ol>
+<p>另，开始记课程笔记的时候，就是已经听不懂的时候。</p>
+<p>两道习题，跟JSON、API相关。<br><a id="more"></a></p>
+<h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="JavaScript-Object-Notation"><a href="#JavaScript-Object-Notation" class="headerlink" title="JavaScript Object Notation"></a>JavaScript Object Notation</h2><p>Everybody loves JSON.</p>
+<p>XML  is a great serialization format for documents, especially things that kind of have infinitely nested kinds of things, like a paragraph within this and that<br>And HTML is kind of like XML and it’s a good way to represent documents, and so that’s why this JavaScript Object Notation is not really used to represent HTML at all. </p>
+<p><strong>JSON represent data as nested “lists” and “dictionaries”</strong><br>list →→→ array<br>dictionary →→→ object</p>
+<p>deserialize from string to internal structure ↓<br><code>info = json.loads(data)</code><br>最棒的地方在于，如果原始data含有键值，那么deserialize后，得到的就是一个dictionary，有对应的key和value，而XML就不行，只有value。如果原始data是list，那么JSON就会返回一个list。<br>所以，它俩的区别就在于，XML注重的是结构，把一切想象一个树状结构（Tree），而JSON则把数据看成是诸多列表（lists），或者一对对的键值（key value pairs）另外，JSON用起来比较容易，XML就有点难但是更具表现性。</p>
+<h2 id="Service-Oriented-Approach"><a href="#Service-Oriented-Approach" class="headerlink" title="Service Oriented Approach"></a>Service Oriented Approach</h2><p>一个非常有趣的视频 <a href="https://www.coursera.org/learn/python-network-data/lecture/0CpCx/video-service-oriented-architectures" target="_blank" rel="external">Service Oriented Architectures</a><br>突然想起来这是课程视频，没enroll应该就看不了……<br>为了通过quiz，我把这个视频前前后后看了三遍……</p>
+<h2 id="Accessing-APIs-in-Python"><a href="#Accessing-APIs-in-Python" class="headerlink" title="Accessing APIs in Python"></a>Accessing APIs in Python</h2><p>SOAP - Simple Object Access Protocol (software)<br>REST - Representational State Transfer (resource focused)<br>Google  Geocoding APIs<br>→ make the URL and retrieve the URL</p>
+<h2 id="APIs-Security-and-Rate-Limiting"><a href="#APIs-Security-and-Rate-Limiting" class="headerlink" title="APIs Security and Rate Limiting"></a>APIs Security and Rate Limiting</h2><p>APIs are not “free”<br>Twitter APIs (authentication)—— OAuth<br>→ make the URL, augment it with the signature stuff on it, then get a request on that URL</p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>Service Oriented Architectures - allows an application to be broken into parts and distributed across a network</p>
+<p>An Application Program Interface (API) is a contract for interaction</p>
+<p>Web Services provide infrastructure for applications cooperating (an API) over a network - SOAP and REST are two styles of web services</p>
+<p>XML and JSON are serialization formats</p>
+<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><h2 id="习题A"><a href="#习题A" class="headerlink" title="习题A"></a>习题A</h2><p><img src="http://ww3.sinaimg.cn/large/72f96cbagw1f641ndgayrj20vx0g5tc1.jpg" alt="19:01:52.jpg"></p>
+<h2 id="习题B"><a href="#习题B" class="headerlink" title="习题B"></a>习题B</h2><p><img src="http://ww1.sinaimg.cn/large/72f96cbagw1f641p7mhgzj20vx0iv0xp.jpg" alt="19:03:38.jpg"></p>
+<h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><h2 id="习题A-1"><a href="#习题A-1" class="headerlink" title="习题A"></a>习题A</h2><h3 id="我的答案①"><a href="#我的答案①" class="headerlink" title="我的答案①"></a>我的答案①</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> json</div><div class="line"></div><div class="line">input = <span class="string">'''</span></div><div class="line">[</div><div class="line">	&#123;</div><div class="line">	  name: "Matthias"</div><div class="line">	  count: 97</div><div class="line">	&#125;,</div><div class="line">	&#123;</div><div class="line">	  name: "Geomer"</div><div class="line">	  count: 97</div><div class="line">	&#125;</div><div class="line">	...</div><div class="line">  ]</div><div class="line">'''</div><div class="line"></div><div class="line">info = json.loads(input)</div><div class="line"><span class="keyword">print</span> <span class="string">'User count:'</span>, len(info)</div><div class="line">s = []</div><div class="line"><span class="keyword">for</span> item <span class="keyword">in</span> info:</div><div class="line">    count = item[<span class="string">'count'</span>]</div><div class="line">    s.append(int(count))</div><div class="line"><span class="keyword">print</span> sum(s)</div></pre></td></tr></table></figure>
+<h3 id="我的答案②"><a href="#我的答案②" class="headerlink" title="我的答案②"></a>我的答案②</h3><figure class="highlight gradle"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> urllib</div><div class="line"><span class="keyword">import</span> json</div><div class="line"></div><div class="line">url = raw_input(<span class="string">'Enter location- '</span>)</div><div class="line"></div><div class="line">data = urllib.urlopen(url).<span class="keyword">read</span>()</div><div class="line"></div><div class="line">info = json.loads(data)</div><div class="line"></div><div class="line">s = []</div><div class="line"><span class="keyword">for</span> item in info:</div><div class="line">    <span class="keyword">count</span> = item[<span class="string">'count'</span>]</div><div class="line">    s.<span class="keyword">append</span>(<span class="keyword">int</span>(<span class="keyword">count</span>))</div><div class="line"><span class="keyword">print</span> sum(s)</div></pre></td></tr></table></figure>
+<h3 id="别人的答案"><a href="#别人的答案" class="headerlink" title="别人的答案"></a>别人的答案</h3><figure class="highlight haskell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> urllib</div><div class="line"><span class="keyword">import</span> json</div><div class="line"></div><div class="line"><span class="title">url</span> = raw_input('<span class="type">Enter</span> location- ')</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">data</span> = urllib.urlopen(<span class="title">url</span>).read()</span></div><div class="line"></div><div class="line"><span class="title">info</span> = json.loads(<span class="class"><span class="keyword">data</span>)</span></div><div class="line"></div><div class="line"><span class="title">comments</span> = info[<span class="string">"comments"</span>]</div><div class="line"></div><div class="line"><span class="title">s</span> = []</div><div class="line"><span class="title">for</span> item <span class="keyword">in</span> comments:</div><div class="line">    count = item['count']</div><div class="line">    s.append(count)</div><div class="line"><span class="title">print</span> <span class="string">"Sum: &#123;0&#125;"</span>.format(sum(s))</div></pre></td></tr></table></figure>
+<h2 id="习题B-1"><a href="#习题B-1" class="headerlink" title="习题B"></a>习题B</h2><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">import urllib</div><div class="line">import json</div><div class="line"></div><div class="line">serviceurl = <span class="string">'http://python-data.dr-chuck.net/geojson?'</span></div><div class="line"></div><div class="line"><span class="keyword">while</span> True:</div><div class="line">    address = raw_input(<span class="string">'Enter location: '</span>)</div><div class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(address) &lt; <span class="number">1</span> : <span class="keyword">break</span></div><div class="line"></div><div class="line">    url = serviceurl + urllib.urlencode(&#123;<span class="string">'sensor'</span>:<span class="string">'false'</span>, <span class="string">'address'</span>: address&#125;)</div><div class="line">    <span class="keyword">print</span> <span class="string">'Retrieving'</span>, url</div><div class="line">    uh = urllib.urlopen(url)</div><div class="line">    data = uh.<span class="keyword">read</span>()</div><div class="line">    <span class="keyword">print</span> <span class="string">'Retrieved'</span>,<span class="built_in">len</span>(data),<span class="string">'characters'</span></div><div class="line"></div><div class="line">    <span class="keyword">try</span>: js = json.loads(str(data))</div><div class="line">    excep<span class="variable">t:</span> js = None</div><div class="line">    <span class="keyword">if</span> <span class="string">'status'</span> not in js <span class="built_in">or</span> js[<span class="string">'status'</span>] != <span class="string">'OK'</span>:</div><div class="line">        <span class="keyword">print</span> <span class="string">'==== Failure To Retrieve ===='</span></div><div class="line">        <span class="keyword">print</span> data</div><div class="line">        <span class="keyword">continue</span></div><div class="line"></div><div class="line">    <span class="keyword">print</span> json.dumps(js, <span class="built_in">indent</span>=<span class="number">4</span>)</div><div class="line">    #lat = js[<span class="string">"results"</span>][<span class="number">0</span>][<span class="string">"geometry"</span>][<span class="string">"location"</span>][<span class="string">"lat"</span>]</div><div class="line">    #lng = js[<span class="string">"results"</span>][<span class="number">0</span>][<span class="string">"geometry"</span>][<span class="string">"location"</span>][<span class="string">"lng"</span>]</div><div class="line">    #print <span class="string">'lat'</span>,<span class="keyword">lat</span>,<span class="string">'lng'</span>,lng</div><div class="line">    location = js[<span class="string">'results'</span>][<span class="number">0</span>][<span class="string">'place_id'</span>]</div><div class="line">    <span class="keyword">print</span> location</div></pre></td></tr></table></figure>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><h2 id="习题A-2"><a href="#习题A-2" class="headerlink" title="习题A"></a>习题A</h2><p>先说我的第一个答案吧，其实我先写的是利用urllib抓取url，但是出错了，就用了笨办法，把数据copy到Python文件里了，算出了答案2838，然而，这个不能提交上去，太长了。所以还是得用抓取url的办法，那第一个答案成功了，没有报错，只是说明我的代码应该都没问题呀，是吧？<br>然而，只把前半部分改成urllib而已，就开始不断报错报错。用print len(info)测试，始终得到的是2，应该50才对啊，第一版那个笨答案算对了。（算了算了，刚刚拿最后一版的正确coding测试还是2，不知道问题出在哪了呀。）</p>
+<p>到第二版答案了，其实第二版答案里还包含了无数个版本，而且我写在这里的其实还是会报错，但是错的答案也是需要拿出来警示一下的。<br>一直报错的是<code>count = item[&#39;count&#39;]</code>，说<code>string indices must be integers</code>，低智如我，就卡在这句，不停改不停改，int/str换来换去……一点用都没有！</p>
+<p>于是我就去Google了，又找到上次“借鉴”的那位朋友@[richyvk]的作业，一看，重点根本不是那句好吗！而是for循环前面的句子，他多了一句<code>comments = info[&quot;comments”]</code>，接下来循环的是<code>for item in comments:</code>，而我的循环则是<code>for item in info:</code>。<br>那么区别在哪呢？<br>comments是info这个数据库里的一级tag，而count则是comments下的tag，也就是info的二级tag。所以得转换一下才能循环，不然循环的就是comments和它同级的内容。<strong>啊，突然理解了开头那个len(info)为什么是2了，因为算的是几个一级tag</strong><br>豁然开朗！</p>
+<p>至于int/str的求和，@[richyvk]提供了一种新的方法，<code>print &quot;Sum: {0}&quot;.format(sum(s))</code>好棒！然而我没看懂……这位朋友应该有其他语言基础吧……</p>
+<h2 id="习题B-2"><a href="#习题B-2" class="headerlink" title="习题B"></a>习题B</h2><p>这道题没什么好讲的，代码是提供好的，大部分我都没看懂，我只看懂了需要我改的那句……</p>
+<p>来都来了，那就说两句吧<br><code>url = serviceurl + urllib.urlencode({&#39;sensor&#39;:&#39;false&#39;, &#39;address&#39;: address})</code><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>: js = json.loads(str(data))</div><div class="line"><span class="keyword">except</span>: js = <span class="keyword">None</span></div><div class="line"><span class="keyword">if</span> <span class="string">'status'</span> <span class="keyword">not</span> <span class="keyword">in</span> js <span class="keyword">or</span> js[<span class="string">'status'</span>] != <span class="string">'OK'</span>:</div><div class="line">	<span class="keyword">print</span> <span class="string">'==== Failure To Retrieve ===='</span></div><div class="line">	<span class="keyword">print</span> data</div><div class="line">	<span class="keyword">continue</span></div></pre></td></tr></table></figure></p>
+<p><code>print json.dumps(js, indent=4)</code></p>
+<p>这三句都看不懂，摊手，新世界的大门还没有朝我打开。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PY4E Chapter 13.1（Web Service and XML）]]></title>
+      <url>http://yibeichen.me/2016/07/22/PY4E-Chapter-13-1/</url>
+      <content type="html"><![CDATA[<p>本节课介绍XML，下一节课介绍JSON。</p>
+<p>如何判断一次课程难不难？看我做作业的时候有没有借助外力就知道了。其实我是借助了教材，而且老师一开始就说了呀，本周的作业很容易！然而……</p>
+<p>Again and again and again, I was stuck at the stage of converting a string into an integrate and making a sum.<br><a id="more"></a></p>
+<p>#知识点<br>quiz中遇到的几个<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">XML</span> <span class="title">Basics</span>：</div><div class="line"><span class="literal">start</span> <span class="keyword">tag</span></div><div class="line"><span class="title">end</span> <span class="keyword">tag</span></div><div class="line"><span class="title">text</span> content</div><div class="line"><span class="keyword">attribute</span></div><div class="line">self closing <span class="keyword">tag</span></div><div class="line"></div><div class="line"><span class="title">XSD</span> Structure</div><div class="line">xs:element</div><div class="line">xs:sequence</div><div class="line">xs:complexType</div><div class="line"></div><div class="line"><span class="keyword">XML</span> <span class="title">Tree</span></div><div class="line"></div><div class="line">parsing →→→ de-serialization</div></pre></td></tr></table></figure></p>
+<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>In this assignment you will write a Python program somewhat similar to <a href="http://www.pythonlearn.com/code/geoxml.py" target="_blank" rel="external">http://www.pythonlearn.com/code/geoxml.py</a>. The program will prompt for a URL, read the XML data from that URL using urllib and then parse and extract the comment counts from the XML data, compute the sum of the numbers in the file.</p>
+<p>We provide two files for this assignment. One is a sample file where we give you the sum for your testing and the other is the actual data you need to process for the assignment.</p>
+<ul>
+<li><p>Sample data: <a><a href="http://python-data.dr-chuck.net/comments_42.xml" target="_blank" rel="external">http://python-data.dr-chuck.net/comments_42.xml</a></a> (Sum=2553)</p>
+</li>
+<li><p>Actual data: <a><a href="http://python-data.dr-chuck.net/comments_291517.xml" target="_blank" rel="external">http://python-data.dr-chuck.net/comments_291517.xml</a></a> (Sum ends with 32)</p>
+</li>
+</ul>
+<p>You do not need to save these files to your folder since your program will read the data directly from the URL. Note: Each student will have a distinct data url for the assignment - so only use your own data url for analysis.<br>Data Format and Approach</p>
+<p>The data consists of a number of names and comment counts in XML as follows:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">comment</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>Matthias<span class="tag">&lt;/<span class="name">name</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">count</span>&gt;</span>97<span class="tag">&lt;/<span class="name">count</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">comment</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>You are to look through all the <comment> tags and find the <count> values sum the numbers. The closest sample code that shows how to parse XML is geoxml.py. But since the nesting of the elements in our data is different than the data we are parsing in that sample code you will have to make real changes to the code.<br>To make the code a little simpler, you can use an XPath selector string to look through the entire tree of XML for any tag named ‘count’ with the following line of code:<br><code>counts = tree.findall(&#39;.//count&#39;)</code></count></comment></p>
+<p>Take a look at the Python ElementTree documentation and look for the supported XPath syntax for details. You could also work from the top of the XML down to the comments node and then loop through the child nodes of the comments node.</p>
+<h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">import urllib</div><div class="line">import xml.etree.ElementTree <span class="keyword">as</span> ET</div><div class="line"></div><div class="line"></div><div class="line">url = raw_input(<span class="string">'Enter - '</span>)</div><div class="line"><span class="keyword">if</span> <span class="built_in">len</span>(url) &lt; <span class="number">1</span>:</div><div class="line">   url = <span class="string">"http://python-data.dr-chuck.net/comments_291517.xml"</span></div><div class="line">data = urllib.urlopen(url).<span class="keyword">read</span>()</div><div class="line"></div><div class="line">tree = ET.fromstring(data)</div><div class="line">lst = tree.findall(<span class="string">'comments/comment'</span>)</div><div class="line">s = []</div><div class="line"><span class="keyword">for</span> item in <span class="keyword">ls</span><span class="variable">t:</span></div><div class="line">    <span class="built_in">count</span> = item.<span class="keyword">find</span>(<span class="string">'count'</span>).text</div><div class="line">    s.<span class="keyword">append</span>(<span class="keyword">int</span>(<span class="built_in">count</span>))</div><div class="line"><span class="keyword">print</span> sum(s)</div></pre></td></tr></table></figure>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>开头已经说了，这次的题目很简单，但是我还是卡在了两个地方</p>
+<h2 id="tree-findall"><a href="#tree-findall" class="headerlink" title="tree.findall()"></a>tree.findall()</h2><p>我最开始写的是<code>tree.findall(&#39;commentinfo/comments/comment&#39;)</code>相当于把根目录<code>commentinfo</code>（不知道标准称呼是什么，反正这么称呼我容易懂）放进来了，结果是<code>0</code>，其实可以理解为“空”。</p>
+<p>也就是说，一级tag是不用写出来的，直接从二级tag<code>comments</code>写到要计算的那级tag的上一级就可以了。</p>
+<h2 id="列表求和"><a href="#列表求和" class="headerlink" title="列表求和"></a>列表求和</h2><p>看见求和我就紧张，估计已经造成了心理阴影。</p>
+<p>最开始是直接用<code>sum(count)</code>求和，这是程序错误呀，循环中的一节怎么能用来求和呢。</p>
+<p>改成列表求和：<br><code>s.append(count)
+print sum(s)</code><br>报错：str是不能求和的。</p>
+<p>找到上回“借鉴”来的代码<code>s.append(int(count.string))</code>，又报错：count已经是一个str类型了，不能再转成一个string。</p>
+<p>好好好，那就去掉它，变成了<code>s.append(int(count))</code>，OK啦！</p>
+<p>PS：第12章以后的内容基本都是讲用Python联网，所以如果网络不好的话，在运行py的时候也会报错————显示urllib相关的一长串错误，不要紧张，不是程序错误，网络重新连接下就好了。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hexo的安装、使用、折腾历程（不定期更新）]]></title>
+      <url>http://yibeichen.me/2016/07/22/Something-about-Hexo/</url>
+      <content type="html"><![CDATA[<p>0727：<br>自定义导航、七牛图床、弃用Mou改为Atom</p>
+<p>0722：<br>7月17日的晚上，开始决定要用github+hexo搭一个博客。</p>
+<p>7月7日，阿冰说准备用WordPress搭个博客，行动好快，她迅速买了域名，搭了框架，噼里啪啦，今天去她那看了看，7月9日就已经发了文章了。（目测某冰应该不是跟我一样，把文章搬上来还非得改成原始发布时间。）</p>
+<p>隆重（这地不知道哪天才有人气，也敢称隆重？）推荐：<a href="http://chatnone.com" target="_blank" rel="external"><strong>ChatNone</strong></a></p>
+<p>广告到此结束，以下进入正文。</p>
+<a id="more"></a>
+<hr>
+<p>7月17日，学完了<a href="https://www.coursera.org/learn/python-data" target="_blank" rel="external">《Python Data Structures》</a>，<a href="http://yibeichen.me/2016/07/18/PR4E-Chapter-10-assignment/">最后一章的作业</a>很闹心，代码写得啰里啰嗦，不知道该怎么简化。想啊想，试呀试，哎哎哎，那三行是不是可以合并到一起？对呀！<code>print</code>一下，没错哎！哇噻，我好棒！（陷入了深深的自我迷恋…）咦，等等，这么“复杂”的心路历程是不是该记下来？下次再碰到也能引以为戒嘛。那么，记在哪里呢？默默爬上豆瓣，忍痛把这一大块代码放上去，真真是惨不忍睹。估计拿豆瓣记编程笔记的，千古仅我一人。</p>
+<p>如此惨烈丑陋不支持Mardown语法的页面，深深刺痛了我！搭一个博客的想法就此生根发芽……</p>
+<p>鉴于我在搭博客的过程中，厚着脸皮求助了无数陌生人，并得到了这些善良的大神们非常热心地回复，决定也记录一下我在使用Hexo过程中的心得，如果碰巧能为别人提供一点微薄的帮助，将不胜荣幸。（谢谢大家，我的发言结束了……）</p>
+<h1 id="利用Github-Pages和Hexo搭建博客"><a href="#利用Github-Pages和Hexo搭建博客" class="headerlink" title="利用Github Pages和Hexo搭建博客"></a>利用Github Pages和Hexo搭建博客</h1><p>这部分内容包括：为什么要选择github和hero、购买域名、注册github、安装hero、配置github和hexo参数、域名解析……</p>
+<p>这一部分的教程非常之多，推荐几个：</p>
+<p><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程</a> @<a href="http://cnfeat.com/" target="_blank" rel="external">CNfeat</a><br><a href="https://xuanwo.org/2015/03/26/hexo-intor/" target="_blank" rel="external">史上最详细的Hexo博客搭建图文教程</a> @<a href="https://xuanwo.org/" target="_blank" rel="external">Xuanwo</a><br><a href="http://blog.waydrow.com/2015/08/14/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8Github%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2/" target="_blank" rel="external">使用Hexo在Github上搭建你的博客</a> @<a href="blog.waydrow.com"> Waydrow </a></p>
+<p>这三篇也是我参考得最多的教程，7.18的晚上按照第一篇的方法搭建成功了，但是不知道哪里出了问题，本地的内容不能和github同步，7.19找到了@Xuanwo的教程，按照他的方法删掉了hexo文件夹又重来一遍，终于成功了，感谢。</p>
+<p>期间还因为安装hexo出现权限错误的问题骚扰过@Waydrow，感谢。</p>
+<p>这里不是说@CNfeat的方法有问题呀，是我自己操作失误，他介绍得非常详细，边边角角都说到了，非常感谢。</p>
+<p>其实这几篇都是基于Windows系统的，我在搜索的时候发现Mac下安装Git还需要Homebrew，但是我装完了才发现，所以从技术上来看不用它也可以，不过也许用了它之后更方便，就不会出错了呢，谁用谁知道……</p>
+<p>强烈推荐hexo的<a href="https://hexo.io/docs/" target="_blank" rel="external">官方文档</a>，再一次是搭完了才发现，早一点发现就不用走那么多弯路了呀！另外，此处评论非常值得一看，看过就知道，you are not alone，你碰到的问题他们都碰到了。</p>
+<h2 id="补充：Namecheap修改DNS设置"><a href="#补充：Namecheap修改DNS设置" class="headerlink" title="补充：Namecheap修改DNS设置"></a>补充：Namecheap修改DNS设置</h2><p>似乎大家都是在GoDaddy或者万网买的域名，然而我用的是Namecheap，还忘记用coupon，心疼！</p>
+<p>如果有人也是个“少数派”，那么，请看下面的设置方法：）</p>
+<p>Namecheap自带域名解析功能，但是在国内还是推荐Dnspod，至于为什么选它和怎么操作，前面的文档都提过了，下面专门介绍Namecheap的部分，因为网站换了新颜，相关教程上的截图还是旧的，完全看不懂，特来贡献一把。</p>
+<p>登录进入Namecheap，点击“Domain List”：<br><img src="http://ww1.sinaimg.cn/large/72f96cbagw1f62pwjsthej20x80c8t9z.jpg" alt="15:29:57.jpg"><br>再点击右边的“MANAGE”进入以下页面：<br><img src="http://ww2.sinaimg.cn/large/72f96cbagw1f62q2jhpv2j20sm0i2acp.jpg" alt="15:35:35.jpg"><br>选择“Custom DNS”，把在dnspod获得的两个ns填进去就ok啦。</p>
+<p>域名解析据说要24小时才能生效。</p>
+<h1 id="Hexo使用及优化"><a href="#Hexo使用及优化" class="headerlink" title="Hexo使用及优化"></a>Hexo使用及优化</h1><h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>正在使用的是NexT，前两天折腾过Maupassant，又换回来了。</p>
+<p>附上操作文档：</p>
+<p>NexT：<a href="http://theme-NexT.iissnan.com/" target="_blank" rel="external">NexT主题使用文档</a></p>
+<p>Maupassant：<a href="https://www.haomwei.com/technology/maupassant-hexo.html" target="_blank" rel="external">大道至简——Hexo简洁主题推荐</a></p>
+<h3 id="NexT优化"><a href="#NexT优化" class="headerlink" title="NexT优化"></a>NexT优化</h3><h4 id="自定义导航"><a href="#自定义导航" class="headerlink" title="自定义导航"></a>自定义导航</h4><p>NexT默认的导航很有限，只有“首页、分类、归档、关于”这几个选项，不太够用，那么怎么按需添加呢？</p>
+<p>以添加“工具”为例，需要修改三个文件：</p>
+<blockquote>
+<p>hexo/source/tools/index.md<br>hexo/themes/next/_config.yml<br>hexo/themes/next/languages/zh-Hans.yml</p>
+</blockquote>
+<p>首先，在hexo/source下，新建tools文件夹，在文件夹内新建index.md文件，可以复试about文件中的index，修改一下title就可以了。</p>
+<p>然后，到hexo/themes/next/_config.yml修改两个部分：</p>
+<ol>
+<li><p>添加menu名称</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">menu:</span></div><div class="line"><span class="symbol">  home:</span> /</div><div class="line">  <span class="meta">#categories: /categories</span></div><div class="line"><span class="symbol">  archives:</span> /archives</div><div class="line"><span class="symbol">  tags:</span> /tags</div><div class="line"><span class="symbol">  tools:</span> /tools   <span class="meta">#添加的位置决定了页面呈现的位置</span></div><div class="line"><span class="symbol">  about:</span> /about</div><div class="line">  <span class="meta">#commonweal: /404.html</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>添加menu icon，在fontawesome.io寻找喜欢的icon</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="attr">menu_icons:</span></div><div class="line"><span class="attr">  enable:</span> <span class="literal">true</span>   <span class="comment">#如果不想显示icon，改为false</span></div><div class="line">  <span class="comment">#KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome</span></div><div class="line"><span class="attr">  home:</span> home</div><div class="line"><span class="attr">  tools:</span> magic   <span class="comment">#FontAwesome没有tools对应的icon，所以我选了magic</span></div><div class="line"><span class="attr">  about:</span> user</div><div class="line"><span class="attr">  categories:</span> th</div><div class="line"><span class="attr">  tags:</span> tags</div><div class="line"><span class="attr">  archives:</span> archive</div><div class="line"><span class="attr">  commonweal:</span> heartbeat</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>关于“标签”页和“404”页面的添加，请参考官方文档。</p>
+<p>本部分参考了<a href="http://www.selfrebuild.net/2015/06/24/Github-Hexo-Next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E5%AE%9A%E5%88%B6/" target="_blank" rel="external">Hexo博客优化 - Next主题个性化定制</a>，感谢！</p>
+<h4 id="字体（字号、颜色）"><a href="#字体（字号、颜色）" class="headerlink" title="字体（字号、颜色）"></a>字体（字号、颜色）</h4><p><strong>工具：</strong>chrome开发者工具 + TextWrangler</p>
+<p>NexT原始的字号实在是太小了，可能因为是走极简风格，大量留白，行距段距都很大，字号衬托得更小了，尤其是英文字。</p>
+<p>为了用眼健康，我决定，改字号！</p>
+<p>chrome开发者工具是前端必备神器，啊，就当大家都认识它了。用它调到满意的样式之后再去css里修改对应行的代码就好，那么问题来了，css在哪改呢？</p>
+<h5 id="误区"><a href="#误区" class="headerlink" title="误区"></a>误区</h5><p>我掉过的坑必须要给大家竖个牌子，也许并没有人跟我一样蠢……</p>
+<p>调试的时候，chrome提示我css的文件名是main.css，于是我就去找呀，真是太机智了，一下子就找到了呢。路径是：hexo（你给hexo取的文件名）/source/public/css/main.css</p>
+<p>欢欢喜喜去改字号，改颜色，改行距，还改了header的margin、padding等等等。</p>
+<p>可是，执行<code>$ hexo s</code>和<code>$ hexo g -d</code>的时候，时好时坏，以为是cookies的问题，清理了好几次也没什么效果。</p>
+<p>直到我的github本地的一个repository同步出现了问题，我才意识到，刚刚改的main.css所在的public文件夹是hexo和github同步的部分。就是说，B文件夹是A文件夹同步的结果，但我改的是B，没有改A，所以每执行一次同步，A的数据就把B覆盖了，等于我白改了。</p>
+<p>repository那个问题也是，我把hexo部署在github上的仓库给clone到本地了，结果每次执行<code>$ hexo g -d</code>的时候，就出现：当本地的hexo和远程的github同步的时候，本地的github也在和远程的github同步。活生生逼疯了它……</p>
+<h5 id="正确答案"><a href="#正确答案" class="headerlink" title="正确答案"></a>正确答案</h5><p>嗯，犯错了不要紧，要记得去Google。</p>
+<p>果然找到一位<a href="http://papacochon.com/2015/10/02/hexo-3-hexo-NexT-customize/" target="_blank" rel="external">小伙伴</a>，指出了一条明路：hexo/themes/next/source/css/_variables/base.styl</p>
+<p>在这个文件中可以修改所有的字号、字体、颜色，然而，我去改了，发现没什么用……于是我把修改后的文件内容copy到了同一目录下的Muse.styl（因为我用的是Muse主题）里，保存之后，生效了！</p>
+<p>事实上，这个文件夹下，除了base.styl以外，其他的四个styl文件都是空的，是故意留给我们自己定制吗？其中有一个是custom.styl，我觉得，把base.styl的内容copy到这里而不是Muse.styl，应该也能生效？有空试试。</p>
+<h4 id="侧边栏优化"><a href="#侧边栏优化" class="headerlink" title="侧边栏优化"></a>侧边栏优化</h4><h5 id="头像"><a href="#头像" class="headerlink" title="头像"></a>头像</h5><p><strong>头像更换</strong></p>
+<p>官方文档中关于这部分写得好像有点麻烦，我不太记得了。我是把图片改成avatar.gif放到themes/next/source/images。就这样，OK啦。<br><strong>头像变圆形</strong></p>
+<p>还是从上面那位改字号的朋友那里学来的，再次感谢。上传的图片最好是正方形的，不然会变形，文件路径：themes/next/source/css_common_components/sidebar/sidebar.styl 代码修改如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.site-author-image</span> &#123;</div><div class="line">  <span class="attribute">display</span>: block;</div><div class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</div><div class="line">  <span class="attribute">max-width</span>: <span class="number">96px</span>;</div><div class="line">  <span class="attribute">height</span>: auto;</div><div class="line">  <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#333</span>;</div><div class="line">  <span class="attribute">padding</span>: <span class="number">2px</span>;  </div><div class="line">  <span class="comment">/* start*/</span></div><div class="line">  <span class="attribute">border-radius</span>: <span class="number">90%</span></div><div class="line">  webkit-transition: <span class="number">1.4s</span> all;</div><div class="line">  <span class="attribute">moz-transition</span>: <span class="number">1.4s</span> all;</div><div class="line">  <span class="attribute">ms-transition</span>: <span class="number">1.4s</span> all;</div><div class="line">  <span class="attribute">transition</span>: <span class="number">1.4s</span> all;</div><div class="line">  <span class="comment">/* end */</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><code>start</code>和<code>end</code>标记的部分就是需要添加的。</p>
+<p>PS：每个的文件路径可能并不完全一致，请自行对应。</p>
+<h3 id="关于Maupassant的一点点"><a href="#关于Maupassant的一点点" class="headerlink" title="关于Maupassant的一点点"></a>关于Maupassant的一点点</h3><p>这个主题我大概用了半天，也是简约路线，但是突然有一会儿，语言莫名奇妙变成了德语，我脆弱的内心已经经不起折腾了，于是换了它。</p>
+<p>但是关于这个主题安装，有一点要说的：</p>
+<p><code>npm install hexo-renderer-sass</code>安装的时候可能会报错，解决方法也有很多种，但，我是开着全局的VPN来安装的，很是顺利。</p>
+<p>没错，这一段就是为了安利VPN，科学上网必备。</p>
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><h3 id="音乐视频"><a href="#音乐视频" class="headerlink" title="音乐视频"></a>音乐视频</h3><p>正在找，试过再来说。</p>
+<h1 id="Hexo的好搭档！"><a href="#Hexo的好搭档！" class="headerlink" title="Hexo的好搭档！"></a>Hexo的好搭档！</h1><h2 id="七牛云-图床"><a href="#七牛云-图床" class="headerlink" title="七牛云+图床"></a>七牛云+图床</h2><p>一如既往，操作文档送上：</p>
+<p><a href="http://toolinbox.net/iPic/" target="_blank" rel="external">图床神器 iPic</a></p>
+<p><a href="http://toolinbox.net/iPic/AddQiniuImageHost.html" target="_blank" rel="external">在 iPic 中添加七牛云</a></p>
+<p>可以点<a href="https://portal.qiniu.com/signup?code=3lmae5oay6pua" target="_blank" rel="external">此处</a>注册七牛账户，互惠互利：）</p>
+<p>不过在用七牛图床的时候出现了一个bug：</p>
+<p><code>{&quot;error&quot;:&quot;download token not specified&quot;}</code></p>
+<p>悲伤的是，我不知道怎么解决它，先放着吧，等脑袋扩容了再来想这件事。</p>
+<p>0727:<br>七牛图床的问题和他们的技术沟通过了，已解决。原因是因为我开启了“原图保护”，导致外部文件访问图片受阻，类似是跟“私有空间”同一个效果，关闭以后就正常了。</p>
+<h2 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h2><p>聊天之前先上文档：</p>
+<p><a href="http://wowubuntu.com/markdown/index.html" target="_blank" rel="external">Markdown 语法说明 (简体中文版)</a></p>
+<p><a href="https://wizardforcel.gitbooks.io/markdown-simple-world/content/index.html" target="_blank" rel="external">Markdown - 简单的世界</a></p>
+<p>大概是从去年初开始用Markdown的，为此买了Ulysses（Mac+iPad），可是支持md语言的网站我用得不多，只有Medium，所以平日里写的都是很基础的语法。</p>
+<p>直到我开始学Python，才深感md之好用。</p>
+<p>然而，我的Ulysses写出来的东西在hexo上显示非常之奇怪，代码不能高亮，一些语法的使用好像不太一致？所以又下载了Mou，它和hexo契合得倒是很完美，而且可以即时预览，但是反应有点卡顿，打开窗口时很奇怪，一个一个的，不能组合在一起，使用体验不及Ulysses。</p>
+<p>已决定弃用Mou，改用Atom书写markdown。<br>假如早点认识Atom，大概连Ulysses都不用买了罢。</p>
+<p>（未完待续）</p>
+<hr>
+<p>作为一个文科生，我真是在爬着建站。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PY4E Chapter 12.2（Programs that Surf the Web）]]></title>
+      <url>http://yibeichen.me/2016/07/21/PY4E-Chapter-12-2/</url>
+      <content type="html"><![CDATA[<p>老师说，之前我们都是start with the hard way, then the easy way，本周我们直接start with the easy way。（然而，本周的题目折磨得我死去活来……）介绍了BeautifulSoup，比如可以直接解析网站中的<strong>a</strong>标签。</p>
+<p>库名出自于一本儿童读物？还蛮有意思的。</p>
+<p>下载地址：<a href="https://www.crummy.com/software/BeautifulSoup/" target="_blank" rel="external">此处</a><br>安装说明：<a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/" target="_blank" rel="external">此处</a></p>
+<p>两道习题。<br><a id="more"></a></p>
+<h1 id="本周题目"><a href="#本周题目" class="headerlink" title="本周题目"></a>本周题目</h1><h2 id="Scraping-HTML-Data-with-BeautifulSoup"><a href="#Scraping-HTML-Data-with-BeautifulSoup" class="headerlink" title="Scraping HTML Data with BeautifulSoup"></a>Scraping HTML Data with BeautifulSoup</h2><p>Scraping Numbers from HTML using BeautifulSoup In this assignment you will write a Python program similar to <a href="http://www.pythonlearn.com/code/urllink2.py" target="_blank" rel="external">http://www.pythonlearn.com/code/urllink2.py</a>. The program will use urllib to read the HTML from the data files below, and parse the data, extracting numbers and compute the sum of the numbers in the file.</p>
+<p>We provide two files for this assignment. One is a sample file where we give you the sum for your testing and the other is the actual data you need to process for the assignment.</p>
+<p><a href="http://python-data.dr-chuck.net/comments_42.html" target="_blank" rel="external">Sample data</a>(Sum=2553)</p>
+<p><a href="http://python-data.dr-chuck.net/comments_291520.html" target="_blank" rel="external">Actual data</a> (Sum ends with 25)</p>
+<p>You do not need to save these files to your folder since your program will read the data directly from the URL.<br>Note: Each student will have a distinct data url for the assignment - so only use your own data url for analysis.</p>
+<p><strong>Data Format</strong></p>
+<p>The file is a table of names and comment counts. You can ignore most of the data in the file except for lines like the following:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;tr&gt;<span class="xml"><span class="tag">&lt;<span class="name">td</span>&gt;</span>Modu<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"comments"</span>&gt;</span>90<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span></div><div class="line">&lt;tr&gt;<span class="xml"><span class="tag">&lt;<span class="name">td</span>&gt;</span>Kenzie<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"comments"</span>&gt;</span>88<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span></div><div class="line">&lt;tr&gt;<span class="xml"><span class="tag">&lt;<span class="name">td</span>&gt;</span>Hubert<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"comments"</span>&gt;</span>87<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span></div></pre></td></tr></table></figure></p>
+<p>You are to find all the <code>&lt;span&gt;</code>tags in the file and pull out the numbers from the tag and sum the numbers.<br>Look at the sample code provided. It shows how to find all of a certain kind of tag, loop through the tags and extract the various aspects of the tags.<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">#Retrieve <span class="keyword">all</span> of the anchor <span class="keyword">tags</span></div><div class="line"><span class="keyword">tags</span> = soup(<span class="string">'a'</span>)</div><div class="line"><span class="keyword">for</span> <span class="keyword">tag</span> in <span class="keyword">tag</span><span class="variable">s:</span></div><div class="line">   # Look at the parts of <span class="keyword">a</span> <span class="keyword">tag</span></div><div class="line">   <span class="keyword">print</span> <span class="string">'TAG:'</span>,<span class="keyword">tag</span></div><div class="line">   <span class="keyword">print</span> <span class="string">'URL:'</span>,<span class="keyword">tag</span>.<span class="built_in">get</span>(<span class="string">'href'</span>, None)</div><div class="line">   <span class="keyword">print</span> <span class="string">'Contents:'</span>,<span class="keyword">tag</span>.contents[<span class="number">0</span>]</div><div class="line">   <span class="keyword">print</span> <span class="string">'Attrs:'</span>,<span class="keyword">tag</span>.attrs</div></pre></td></tr></table></figure></p>
+<p>You need to adjust this code to look for <strong>span</strong> tags and pull out the text content of the span tag, convert them to integers and add them up to complete the assignment.</p>
+<h2 id="Following-Links-in-HTML-Using-BeautifulSoup"><a href="#Following-Links-in-HTML-Using-BeautifulSoup" class="headerlink" title="Following Links in HTML Using BeautifulSoup"></a>Following Links in HTML Using BeautifulSoup</h2><p>In this assignment you will write a Python program that expands on <a><a href="http://www.pythonlearn.com/code/urllinks.py" target="_blank" rel="external">http://www.pythonlearn.com/code/urllinks.py</a>.</a> The program will use <strong>urllib</strong> to read the HTML from the data files below, extract the href= vaues from the anchor tags, scan for a tag that is in a particular position relative to the first name in the list, follow that link and repeat the process a number of times and report the last name you find.</p>
+<p>We provide two files for this assignment. One is a sample file where we give you the name for your testing and the other is the actual data you need to process for the assignment</p>
+<ul>
+<li>Sample problem: Start at <a><a href="http://python-data.dr-chuck.net/known_by_Fikret.html" target="_blank" rel="external">http://python-data.dr-chuck.net/known_by_Fikret.html</a></a><br>Find the link at position 3 (the first name is 1). Follow that link. Repeat this process 4 times. The answer is the last name that you retrieve.<br>Sequence of names: Fikret Montgomery Mhairade Butchi Anayah<br>Last name in sequence: Anayah</li>
+<li>Actual problem: Start at: <a href="http://python-data.dr-chuck.net/known_by_Peni.html" target="_blank" rel="external">http://python-data.dr-chuck.net/known_by_Peni.html</a><br>Find the link at position 18 (the first name is 1). Follow that link. Repeat this process 7 times. The answer is the last name that you retrieve.<br>Hint: The first character of the name of the last page that you will load is: A</li>
+</ul>
+<p><strong>Strategy</strong></p>
+<p>The web pages tweak the height between the links and hide the page after a few seconds to make it difficult for you to do the assignment without writing a Python program. But frankly with a little effort and patience you can overcome these attempts to make it a little harder to complete the assignment without writing a Python program. But that is not the point. The point is to write a clever Python program to solve the program.</p>
+<h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><h2 id="习题A"><a href="#习题A" class="headerlink" title="习题A"></a>习题A</h2><figure class="highlight gradle"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> urllib</div><div class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</div><div class="line"></div><div class="line">url = raw_input(<span class="string">'Enter - '</span>)</div><div class="line">html = urllib.urlopen(url).<span class="keyword">read</span>()</div><div class="line"></div><div class="line">soup = BeautifulSoup(html)</div><div class="line">s = []</div><div class="line">spans = soup(<span class="string">'span'</span>)</div><div class="line"><span class="keyword">for</span> span in spans:</div><div class="line">    s.<span class="keyword">append</span>(<span class="keyword">int</span>(span.string))</div><div class="line"></div><div class="line"><span class="keyword">print</span> sum(s)</div></pre></td></tr></table></figure>
+<h2 id="习题B"><a href="#习题B" class="headerlink" title="习题B"></a>习题B</h2><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">import urllib</div><div class="line">from bs4 import BeautifulSoup</div><div class="line"></div><div class="line">url = raw_input(<span class="string">'Enter - '</span>)</div><div class="line"><span class="keyword">if</span> <span class="built_in">len</span>(url) &lt; <span class="number">1</span>:</div><div class="line">   url = <span class="string">"http://python-data.dr-chuck.net/known_by_Fikret.html"</span></div><div class="line"><span class="built_in">count</span> = <span class="keyword">int</span>(raw_input(<span class="string">'Enter count - '</span>))</div><div class="line">position = <span class="keyword">int</span>(raw_input(<span class="string">'Enter position - '</span>))</div><div class="line"><span class="built_in">taglist</span> = <span class="keyword">list</span>()</div><div class="line"><span class="keyword">for</span> i in <span class="built_in">range</span>(<span class="built_in">count</span>):</div><div class="line"><span class="keyword">print</span> <span class="string">'Retrieving:'</span>, url</div><div class="line">html = urllib.urlopen(url).<span class="keyword">read</span>()</div><div class="line">soup = BeautifulSoup(html, <span class="string">"html.parser"</span>)</div><div class="line"><span class="keyword">tags</span> = soup(<span class="string">'a'</span>)</div><div class="line"><span class="keyword">for</span> <span class="keyword">tag</span> in <span class="keyword">tag</span><span class="variable">s:</span></div><div class="line">    <span class="built_in">taglist</span>.<span class="keyword">append</span>(<span class="keyword">tag</span>)</div><div class="line">url = <span class="built_in">taglist</span>[position-<span class="number">1</span>].<span class="built_in">get</span>(<span class="string">'href'</span>, None)</div><div class="line">del <span class="built_in">taglist</span>[:]</div><div class="line"><span class="keyword">print</span> <span class="string">"Retrieving:"</span>,url</div></pre></td></tr></table></figure>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><h2 id="习题A-1"><a href="#习题A-1" class="headerlink" title="习题A"></a>习题A</h2><p>好了好了，我来坦白，这道题的答案借鉴了别人@<a href="https://github.com/richyvk/python-web-data/blob/master/Week-4/bs4-scraper.py" target="_blank" rel="external">richyvk</a></p>
+<p>我卡在了两个地方：</p>
+<p>1）bs的使用。</p>
+<p>其实题目建议是把beautifulsoup.py拷贝到程序文件夹中，然后用语句<br><code>from BeautifulSoup import</code> 但是运行之后总报错<code>ImportError: No module named BeautifulSoup</code><br>好吧，我承认，根本不知道Mac里的程序文件夹是什么，我只是把bs.py和我写的py文件放到一起了。</p>
+<p>那就下载安装bs4吧。又是好一阵折腾，因为我还是不知道该把它放在哪个文件夹。战战兢兢install了半天，实在太困（为了折腾这个网站已经连续熬夜四天了），倒头大睡。梦里全都是各种install/uninstall的命令行，总之是梦见它成功了。啊，美梦啊，热望啊。</p>
+<p>醒来之后，查了一下，bs4的命令语句已经改了，是<code>from bs4 import BeautifulSoup</code></p>
+<p>好啦，总算不报错了，哦不，是不报这种错，报了另一种。</p>
+<p>2）把列表元素变成整数型，再求和。</p>
+<p>我已经在这个坑边摔倒无数次了，前几周有很多这种求和的题目，我都是先转成float求和后又转成int，真是low。</p>
+<p>然后这位朋友用了<code>s.append(int(span.string))</code>在加入列表前就转成int了。其实我还是没弄懂<em>span.string</em>代表了什么……先用着吧，慢慢找答案。</p>
+<h2 id="习题B-1"><a href="#习题B-1" class="headerlink" title="习题B"></a>习题B</h2><p>这次又借鉴了别人@<a href="https://gist.github.com/Vijayabhaskar96/a8b2f0e99fa148c8a2915ef7085ecbbb" target="_blank" rel="external">Vijayabhashar96</a>的答案。我真的不会写了呀，只能借助别人的答案倒推，学到这，仅靠视频和教材已经不够了，得找辅助材料。</p>
+<p>隆重推荐：<a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="external">Python教程——廖雪峰</a></p>
+<p>不过，我觉得不会做是因为没看懂题目……</p>
+<h3 id="本题中的几个知识点"><a href="#本题中的几个知识点" class="headerlink" title="本题中的几个知识点"></a>本题中的几个知识点</h3><h5 id="rang（-函数"><a href="#rang（-函数" class="headerlink" title="rang（)函数"></a>rang（)函数</h5><p>可以生成一个整数序列，再通过list()函数可以转换为list。比如range(5)生成的序列是从0开始小于5的整数。<code>for i in range(count):</code>这一句，应题意，循环7次。冒号后面就是循环的操作。</p>
+<h5 id="BeautifulSoup"><a href="#BeautifulSoup" class="headerlink" title="BeautifulSoup"></a>BeautifulSoup</h5><p>用来检索所有的锚标签<br><figure class="highlight ini"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attr">soup</span> = BeautifulSoup(html, <span class="string">"html.parser"</span>)</div><div class="line"><span class="attr">tags</span> = soup(<span class="string">'a'</span>)</div></pre></td></tr></table></figure></p>
+<p>打印出一串元素，用<code>taglist.append(tag)</code>加入到列表中<br>再用<code>url = taglist[position-1].get(&#39;href&#39;, None)</code>读取列表中每个标签的href属性内容。<strong>注意</strong>和<code>tag.get(&#39;href&#39;, None)</code>完全不同，后一个<code>print</code>出来是8组重复的数据。<br>又试着<code>print taglist.append(tag)</code>得到了密密麻麻锚标签列表(嵌套)。所以，<code>url = taglist[position-1].get(&#39;href&#39;, None)</code>取得了第18个元素的url</p>
+<p>然后到了循环的最后一步↓</p>
+<h5 id="del和list"><a href="#del和list" class="headerlink" title="del和list[:]"></a>del和list[:]</h5><p>list[:]是原样复制一个列表，del是根据元素在列表中的位置来删除它</p>
+<p><code>del taglist[:]</code>这句很重要，因为把<code>print xxx</code>放在这句之前的任何位置，得到的都是7个相同的人名S（第一个人）。说明循环无效，每次都循环到了相同的位置啊。</p>
+<p>这个句就应该是把列表删了，重新循环，然后输出最后一次循环得到的url。</p>
+<p>此处应有<strong>全剧终</strong>。</p>
+<p>又是零点。啊，Python零点时。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PY4E Chapter 12.1（Networks and Sockets）]]></title>
+      <url>http://yibeichen.me/2016/07/20/PY4E-Chapter-12-1/</url>
+      <content type="html"><![CDATA[<p>这章开始讲用Python联网处理文件了，之前的11章都是在说，如何用Python处理本地的文件。涉及到两个library：socket和urllib。<br>用socket会读取文档描述的头部信息和文档内容，而urllib更高级一点，默认你已经知晓头部信息了，直接读取文档内容。<br>tips：保存文件的时候不要直接命名为socket.py和urllib.py。<br>讲到HTTP就该补课了，完全不记得了。本周的测试几乎都是这方面的内容。<br><a id="more"></a></p>
+<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>Exploring the HyperText Transport Protocol</p>
+<p>You are to retrieve the following document using the HTTP protocol in a way that you can examine the HTTP Response headers.</p>
+<ul>
+<li><a href="http://www.pythonlearn.com/code/intro-short.txt" target="_blank" rel="external">http://www.pythonlearn.com/code/intro-short.txt</a></li>
+</ul>
+<p>There are three ways that you might retrieve this web page and look at the response headers:</p>
+<ul>
+<li>Preferred: Modify the <a href="http://www.pythonlearn.com/code/socket1.py" target="_blank" rel="external">socket1.py</a> program to retrieve the above URL and print out the headers and data.</li>
+<li>Open the URL in a web browser with a developer console or FireBug and manually examine the headers that are returned.</li>
+<li>Use the telnet program as shown in lecture to retrieve the headers and content.</li>
+</ul>
+<p>其实这是一道填空题：</p>
+<ul>
+<li>Content-Type:</li>
+<li>Content-Length:</li>
+<li>Content-Length:</li>
+<li>ETag:</li>
+<li>Cache-Control:</li>
+</ul>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>这道题简直是小学生水平，老师已经把py都写好了，因为我用的就是第一种方法，直接copy了socket1.py的代码，用terminal运行就得出了头部信息，正常来说，我还应该试一下第二和第三种方法，然而我懒……</p>
+<p>关于第三种方法，telnet program，把老师的slide给扒下来了<br>其实这是一种hack方式……</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ telnet www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span> <span class="number">80</span></div><div class="line">Trying <span class="number">74.208</span>.<span class="number">28.177</span>...</div><div class="line">Connected <span class="keyword">to</span> www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span>.</div><div class="line">Escape character <span class="keyword">is</span> <span class="string">'^]'</span>.</div><div class="line">GET http://www.<span class="keyword">dr</span>-chuck.<span class="keyword">com</span>/page1.htm</div></pre></td></tr></table></figure>
+<p>GET后面是应该有两次换行的，所以写到Python里的时候是 \n\n</p>
+<p>但是我在本地用$ telnet命令就不对，返回的是<br><code>www.dr-chunk.com: nodename nor servname provided, or not known</code></p>
+<p>我怀疑是端口80的问题，啊，这又是个坑，总之关于HTTP的都要补课</p>
+<h1 id="补充材料"><a href="#补充材料" class="headerlink" title="补充材料"></a>补充材料</h1><p>book：<a href="http://www.net-intro.com/" target="_blank" rel="external">Introduction to Networking</a><br>course：<a href="https://www.coursera.org/learn/internet-history" target="_blank" rel="external">Internet History, Technology, and Security</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Listen to Music 课程笔记]]></title>
+      <url>http://yibeichen.me/2016/07/20/Listen-to-Music/</url>
+      <content type="html"><![CDATA[<p>我：“为什么每次听这课都得重复两三遍才懂？Python都只用听一遍啊。”<br>爸：“可能你没有音乐细胞吧，但是你有编程细胞呀！”</p>
+<p>字幕是英文的，所以就直接弄下下来了，懒。<br>万一有一天再考G/T，这个就当是 听力/阅读 的背景材料啦。<br><a id="more"></a></p>
+<h1 id="What-Is-Music"><a href="#What-Is-Music" class="headerlink" title="What Is Music?"></a>What Is Music?</h1><h2 id="1-Why-we-Like-What-we-Like"><a href="#1-Why-we-Like-What-we-Like" class="headerlink" title="1 Why we Like What we Like"></a>1 Why we Like What we Like</h2><h3 id="1-1-Introduction"><a href="#1-1-Introduction" class="headerlink" title="1.1 Introduction"></a>1.1 Introduction</h3><p>Art is life, art is another life, a life of imagination.</p>
+<blockquote>
+<p>Music is what feelings sound like. ———— Victor Hugo</p>
+</blockquote>
+<p>It’s very difficult to hate someone who passionately loves the same music that you do.</p>
+<h3 id="1-2-Popular-Music-and-Classic-Music-Compared"><a href="#1-2-Popular-Music-and-Classic-Music-Compared" class="headerlink" title="1.2 Popular Music and Classic Music Compared"></a>1.2 Popular Music and Classic Music Compared</h3><p>Five important way</p>
+<ul>
+<li><p>P often uses electric instruments, electric guitars and electric keyboards</p>
+<p>  C uses acoustic instruments, instruments generating sounds from natural materials</p>
+</li>
+<li><p>P often includes lyrics that describe the emotion of the music</p>
+<p>  C is usually purely instrumental</p>
+</li>
+<li><p>P tends to have a strong beat</p>
+<p>  C may be more subdued</p>
+</li>
+<li><p>P is often short and repetitious</p>
+<p> C is longer</p>
+</li>
+<li><p>P is often performed without music notation</p>
+<p>  C is often performed  with a score</p>
+</li>
+</ul>
+<h3 id="1-3-Music-and-Emotions"><a href="#1-3-Music-and-Emotions" class="headerlink" title="1.3 Music and Emotions"></a>1.3 Music and Emotions</h3><p>You can’t see it. You can’t touch it or feel it. You can’t hold it in your hand. But it can touch you, it can grab you, it can move you to cry or move you to dance with joy.<br>Music is the poetry of the air.<br>Classic object, timeless  music.(ad for a classic watch)</p>
+<h3 id="1-4-How-Do-We-Hear-Music-Sound-Waves-and-the-Ear"><a href="#1-4-How-Do-We-Hear-Music-Sound-Waves-and-the-Ear" class="headerlink" title="1.4 How Do We Hear Music? Sound Waves and the Ear"></a>1.4 How Do We Hear Music? Sound Waves and the Ear</h3><p>Music is the rational organization of sounds and silences passing through time.</p>
+<p>We have large sound waves, and smaller sound waves. Large ones generate low pitches. Small ones generate high pitches. </p>
+<p>A very long string creates an equally long sound and a low sound.<br>The low note on the piano is vibrating at about 30 times per second while the highest note on the piano is vibrating about 4,000 times per second. </p>
+<h4 id="how-we-process-musical-information"><a href="#how-we-process-musical-information" class="headerlink" title="how we process musical information"></a>how we process musical information</h4><p>sound wave enter the inner ear → electro chemical implies (occurs in a small organ —— the basilar membrane (tonotopic))<br>filaments, called cilia are activated by particular sound waves → send a signal to brain<br>sound goes to the brain → through first the primary auditory nerve → to the left and right side of the cortex (the processing of sound occurs → respond to particular frequencies)</p>
+<p>How we hear the sound and how we feel about the music (the limbic system, including the amygdala) are the responsibilities of different parts of the brain.</p>
+<p>Music is like candy for the mind.</p>
+<h3 id="1-5-Music-Thrills-Us-Music-Chills-Us"><a href="#1-5-Music-Thrills-Us-Music-Chills-Us" class="headerlink" title="1.5 Music Thrills Us, Music Chills Us"></a>1.5 Music Thrills Us, Music Chills Us</h3><p><strong>We have a direct physiological response to music</strong><br>Most of us are musical maniacs. We can’t get enough of music. And we respond to it very deeply.<br>You may cry when you listen to music. You may get chills.<br>Neuroscientists have shown that there is a scientific reason for these chills.</p>
+<p>At the moment of the chills, there is a radical shift in blood flow in certain key spots of the brain, sometimes more, sometimes less blood flows in the frontal cortex, in the amygdala and in the hippocampus, for example. </p>
+<h3 id="1-6-Why-We-Like-What-We-Like-It’s-Nurture"><a href="#1-6-Why-We-Like-What-We-Like-It’s-Nurture" class="headerlink" title="1.6 Why We Like What We Like? It’s Nurture"></a>1.6 Why We Like What We Like? It’s Nurture</h3><p>How do we get the musical expectations (template) that we have when we come to listen to a piece of music.<br>Two ways through nurture and through nature.<br><strong>By nurture</strong><br>The culture you grow up decides the kind of music you hear and like</p>
+<h3 id="1-7-It’s-Nurture-The-Syntax-of-Western-Music"><a href="#1-7-It’s-Nurture-The-Syntax-of-Western-Music" class="headerlink" title="1.7 It’s Nurture: The Syntax of Western Music"></a>1.7 It’s Nurture: The Syntax of Western Music</h3><p>Language and music work the same way<br><strong>some rules</strong></p>
+<ul>
+<li>Leading Tone: Pulls toward the Home Pitch or Tonic</li>
+<li>Large Leap: A large leap is reversed by the following pitch (Big leap, always back in the opposite direction)</li>
+<li>Harmony: The Harmony must fit with the Melody</li>
+<li>Chord Progression: The harmonies usually return hame to tonic</li>
+</ul>
+<p><strong>sum up</strong><br>Every culture around the world establishes a norm, a template for what the music of that culture should sound like, how it should go. These are not physical attributes of the music, they are cultural. They are human and they are local and they are somewhat arbitrary. </p>
+<h3 id="1-8-Why-We-Like-What-We-Like-It’s-Nature"><a href="#1-8-Why-We-Like-What-We-Like-It’s-Nature" class="headerlink" title="1.8 Why We Like What We Like? It’s Nature"></a>1.8 Why We Like What We Like? It’s Nature</h3><p>Universal principals about the physics and the acoustic of sound:</p>
+<ul>
+<li>the overtone series, which does indeed involve good vibrations.</li>
+</ul>
+<p>In Indonesian gamelan music, Chinese music, every music, classical or pop. We all have the same overtones and therefore the basic notion of consonances. We all have the same basic notion of consonance. Because when I play these fundamental notes, this fundamental. </p>
+<p><strong>Also sprach Zarathustra《查拉图斯特拉如是说》</strong><br>It’s a big piece for a western symphony orchestra. The name is German and it sounds very impressive, very intimidating. It’s about the dawn of a superman, a superhero who is equated with the rising of the sun and the advent of the new age. </p>
+<p><strong>How it depict</strong></p>
+<ol>
+<li>Start with low rumblings down underneath to suggest primordial slime. </li>
+<li>Then the sound of the trumpet. </li>
+<li>Since time immemorial, the trumpet has been associated with the military, the army, with royalty, with power, with the hero. </li>
+<li>And this powerful sound is moving upwards. </li>
+<li>It reaches a midway point and then seems to fall back as if the super hero is not quite equal to the task. </li>
+<li>Then he tries again, but is now able to reach.</li>
+<li>And hold onto the sought after goal. </li>
+<li>Eventually we move onto the end, to the conclusion of this opening section where we end with this, a chord progression. </li>
+<li>Remember, a syntax tells us we’ve got to go home. </li>
+</ol>
+<h1 id="How-Music-Works-it’s-Magic"><a href="#How-Music-Works-it’s-Magic" class="headerlink" title="How Music Works, it’s Magic"></a>How Music Works, it’s Magic</h1><h2 id="2-We’ve-All-Got-Rhythm"><a href="#2-We’ve-All-Got-Rhythm" class="headerlink" title="2 We’ve All Got Rhythm"></a>2 We’ve All Got Rhythm</h2><h3 id="2-1-Beat-Meter-and-Rhythm"><a href="#2-1-Beat-Meter-and-Rhythm" class="headerlink" title="2.1 Beat, Meter, and Rhythm"></a>2.1 Beat, Meter, and Rhythm</h3><h4 id="Rhythm"><a href="#Rhythm" class="headerlink" title="Rhythm"></a>Rhythm</h4><p>Well we’ve all got rhythm. Rhythm, along with melody, harmony, tone, color, texture and form, are the essential elements of music.<br><em>We’ll be exploring these elements in our next several sessions.</em><br>We’ll start with rhythm, because rhythm provides a framework, a framework in time in which sounds, pitches, can rest. </p>
+<blockquote>
+<p>“Classical music is music  without Africa”—— Brian Eno</p>
+</blockquote>
+<p>↓ ↓ ↓<br>music without a strong rhythmic profile → in most part he is right<br>but here’s an example of classical music in which there is a pretty clear beat<br>↓ ↓ ↓<br>Pomp and Circumstance March (Edward Elgar) → a graduation ceremony</p>
+<p>classic music often has a suppressed beat, or the sound of the beat is weak</p>
+<h4 id="Grouping-Beats"><a href="#Grouping-Beats" class="headerlink" title="Grouping Beats"></a>Grouping Beats</h4><p>In music, we group the endless flow of beats to make sense of them. </p>
+<h4 id="Meter"><a href="#Meter" class="headerlink" title="Meter"></a>Meter</h4><p>When we group beats into regularly recurring units, we create meter in music. Meter is simply a pattern of regularly recurring beats. The lines that separate the groups are called bar lines or measure lines. </p>
+<p>Each unit constitutes a bar or a measure.<br>Bar lines tend to make western music on a grid.<br>Other cultures don’t have this kind of grid, and as a result their music is a good deal more flexible. </p>
+<p><strong> What are the two axes, or coordinates, of music? </strong><br>Pitch and duration (otherwise said, sound and time)</p>
+<h3 id="2-2-Introduction-to-Musical-Notation"><a href="#2-2-Introduction-to-Musical-Notation" class="headerlink" title="2.2 Introduction to Musical Notation"></a>2.2 Introduction to Musical Notation</h3><p>Western music is the only musical culture that uses musical notation in a controlling way.<br>那么它们是怎么形成的呢？<br>公元900年左右，一群修道院里的音乐家们决定要把音乐记录在纸上（they try to capture and freeze sound onto paper）</p>
+<p>The musical scribes are trying to represent the high and low flow of the music by graphic symbols.<br>They look like worms, squiggling across the page, but they’re called, these little aggregates are called neumes, neumes that represented a collection of pitches.<br>If the voice produced a high pitch, they wrote a visually higher symbol.<br>Eventually, these neumes were separated into individual discrete pitches called <strong>notae</strong>, hence our word note, a symbol for a pitch.<br>But these notes, originally, were only indicators of pitch, not duration. </p>
+<p>……好难懂，上中文！<br>最开始的时候，只有全音符，后来出了二分音符，再后来出了四分音符，然后八分音符，十六分音符……越来越复杂</p>
+<p>Musical notation signs placed higher vertically represent high sounding pitches. Lower signs mean lower sounding pitches.<br>Notation that gets increasingly darker with more flags on it represents that that music is moving faster up and down, left to right.<br>Darker means faster.<br><strong>Whiter Slower, Darker Faster</strong></p>
+<h3 id="2-3-Rhythm-What-is-It"><a href="#2-3-Rhythm-What-is-It" class="headerlink" title="2.3 Rhythm: What is It?"></a>2.3 Rhythm: What is It?</h3><p>Rhythm is the organization of time into compelling patterns of long and short sounds. </p>
+<p>duple meter → 强弱、强弱、强弱<br>triple meter → 强弱弱、强弱弱、强弱弱<br>一般都是通过伴奏声部来区分节拍的，有的时候并没有专门的演奏beat的人，这就要靠“听”来理解了。<br>Well, our ear, actually our brain, digest this complex of information and extrapolates it from it a basic structural framework underlying the music. So kinda platonic mental reality over arching structure that no one actually hears. No one actually sees but it’s there. </p>
+<h3 id="2-4-Hearing-the-Downbeat-Feeling-the-Emotion"><a href="#2-4-Hearing-the-Downbeat-Feeling-the-Emotion" class="headerlink" title="2.4 Hearing the Downbeat, Feeling the Emotion"></a>2.4 Hearing the Downbeat, Feeling the Emotion</h3><p>bass(left hand)  melody(right hand)</p>
+<h4 id="syncopation-切分音"><a href="#syncopation-切分音" class="headerlink" title="syncopation 切分音"></a>syncopation 切分音</h4><p>源自希腊词根syncope，意思是cut off, compress</p>
+<h4 id="downbeat-强拍"><a href="#downbeat-强拍" class="headerlink" title="downbeat 强拍"></a>downbeat 强拍</h4><p>The most stressed and always the first sound of every measure. It’s called the downbeat among other reasons, because the conductor’s hand always goes down with the first beat in every measure.<br>Composers tell us where the downbeat is. Through duration, through accent, through range, and through change of harmony.</p>
+<p>Most frequently, <strong>chord</strong>(和弦) changes come on the downbeat.</p>
+<h3 id="2-5-Tempo-and-How-We-Feel-About-It"><a href="#2-5-Tempo-and-How-We-Feel-About-It" class="headerlink" title="2.5 Tempo (and How We Feel About It)"></a>2.5 Tempo (and How We Feel About It)</h3><p>Tempo - one last thing that has to do with duration in music</p>
+<p>some tempos, such as Adagio and Andante, are often related to our bodies: Adagio can be compared to a slow heartbeat, while Andante is often compared to a slow walking tempo.</p>
+<p>Cognitive psychologists have done studies that show that we respond emotionally much more favorably to music that is every so slightly off the beat, ever so slightly off pitch now and then. <em>Next time you listen to your favorite pop singer, just listen to how he or she can be slightly off pitch at one moment or slightly off tempo at one moment, and then pull it back on.</em> That moment of intentional imperfection of the beat or the pitch, that adds emotional intensity to our musical experience.</p>
+<p>Predictably, reality is on the beat. Art is slightly off the beat, slightly off beat.<br>Art makes reality a lot more exciting.</p>
+<h2 id="3-Melody-is-the-Star"><a href="#3-Melody-is-the-Star" class="headerlink" title="3 Melody is the Star"></a>3 Melody is the Star</h2><h3 id="3-1-What-is-Melody"><a href="#3-1-What-is-Melody" class="headerlink" title="3.1 What is Melody?"></a>3.1 What is Melody?</h3><p>When we listen to music, most of us hear music only as the melody. We don’t focus on the inner parts or the bass.<br>There may be an acoustical reason for this. High pitches may be more easy to perceive than lower and potentially murkier ones.</p>
+<h3 id="3-2-Melodic-Notation-and-Scales"><a href="#3-2-Melodic-Notation-and-Scales" class="headerlink" title="3.2 Melodic Notation and Scales"></a>3.2 Melodic Notation and Scales</h3><h4 id="Notation"><a href="#Notation" class="headerlink" title="Notation"></a>Notation</h4><p>这一段讲的是五线谱是如何“进化”的</p>
+<h4 id="Scale（音阶）"><a href="#Scale（音阶）" class="headerlink" title="Scale（音阶）"></a>Scale（音阶）</h4><p>Scale in music is simply a pattern of adjacent pitches going up or down the keyboard. Different cultures have different scales.<br>Much of Chinese music is written in a five note scale, so called pentatonic scale（五声音阶）.<br>Melodies in western music, are written in scales of seven pitches.</p>
+<p> 为什么钢琴键长得这么不规律？<br> 要追溯到柏拉图和亚里士多德时代。They privileged mathematics above all else, and as a result, we end up with seven pitches in our scale.（看不懂这句）</p>
+<p><strong>Why seven notes？</strong><br>因为古希腊时代的人非常着迷于用数学解释一切东西，尤其是音乐。但是视频里解释了半天，还是没弄懂为什么是一个八度内有七个音。早期的七个音和现代钢琴的白键相同，后来又插入了黑键的五个音。<br>We end up here within an octave, we end up with 12 equal pitches. But we still use this term of seven note scale, cuz we have seven notes within the scale of the major scale and seven notes within the scale of the minor scale.</p>
+<h3 id="3-3-Major-and-Minor-Scales-大调音阶和小调音阶"><a href="#3-3-Major-and-Minor-Scales-大调音阶和小调音阶" class="headerlink" title="3.3 Major and Minor Scales 大调音阶和小调音阶"></a>3.3 Major and Minor Scales 大调音阶和小调音阶</h3><p>Octave duplication.  The eighth note is the same as the first.</p>
+<p>All major scales sound the same way because they have the same pattern of whole and half steps. All minor scales sound the same way for the same reason.</p>
+<p>The major and minor scales involve two different sequences of intervals. Again, an interval of music is simply the distance from one pitch to another. In each major and minor scale there are five adjacent intervals that we call whole tones（全音） and two intervals of half tones（半音） or half steps.</p>
+<h3 id="3-4-The-Chromatic-Scale"><a href="#3-4-The-Chromatic-Scale" class="headerlink" title="3.4 The Chromatic Scale"></a>3.4 The Chromatic Scale</h3>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PY4E Chapter 11（Regular Expressions）]]></title>
+      <url>http://yibeichen.me/2016/07/19/PY4E-Chapter-11/</url>
+      <content type="html"><![CDATA[<p>正则表达式最常用的是search（）和findall（）<br>注意<code>import re</code><br><a id="more"></a></p>
+<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>The basic outline of this problem is to read the file, look for integers using the re.findall(), looking for a regular expression of ‘[0-9]+’ and then converting the extracted strings to integers and summing up the integers.</p>
+<blockquote>
+<p><a href="http://python-data.dr-chuck.net/regex_sum_291515.txt" target="_blank" rel="external">http://python-data.dr-chuck.net/regex_sum_291515.txt</a> (There are 78 values and the sum ends with 813)</p>
+</blockquote>
+<h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><figure class="highlight processing"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> re</div><div class="line">name = raw_input(<span class="string">"Enter file:"</span>)</div><div class="line"><span class="keyword">if</span> len(name) &lt; <span class="number">1</span> : name = <span class="string">"regex_sum_291515.txt"</span></div><div class="line">hand = <span class="built_in">open</span>(name)</div><div class="line">l = list()</div><div class="line"><span class="keyword">for</span> <span class="built_in">line</span> in hand:</div><div class="line">    <span class="built_in">line</span> = <span class="built_in">line</span>.rstrip()</div><div class="line">    x = re.findall(<span class="string">'([0-9]+)'</span>,<span class="built_in">line</span>)</div><div class="line">    <span class="keyword">for</span> i in x:</div><div class="line">        i = <span class="built_in">float</span>(i)</div><div class="line">        l.<span class="built_in">append</span>(i)</div><div class="line"><span class="built_in">print</span> <span class="built_in">int</span>(sum(l))</div></pre></td></tr></table></figure>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>两个问题：</p>
+<p>1）第一次split后出现列表嵌套不知道该怎么办了，差点用上了字典，后来翻到《列表》的作业才想起来用append加到另一个列表。</p>
+<p>2）表达式出错了，第一次用的是[0-9]+？，也不知道为什么在这用了一个非贪婪模式，是担心会把后面的单词也写进来了吗？真是杞人忧天。然后发现’’这个单引号没加。输出之后变成了单个的数字，于是在？后加了一个空格。但计算结果还是不对，对着txt找半天，原来是把line结尾处的数字落下了，因为那个数字后面没有空格。好吧，空格和？都去掉了，算对了！之前真是瞎折腾。</p>
+<h1 id="Cheat-Sheet"><a href="#Cheat-Sheet" class="headerlink" title="Cheat Sheet"></a>Cheat Sheet</h1><table>
+<thead>
+<tr>
+<th>表达式</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>^</td>
+<td>Matches the beginning of a line</td>
+</tr>
+<tr>
+<td>$</td>
+<td>Matches the end of the line</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Matches any character</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>Matches whitespace</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>Matches any non-whitespace character</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Repeats a character zero or more times</td>
+</tr>
+<tr>
+<td>*?</td>
+<td>Repeats a character zero or more times (non-greedy)</td>
+</tr>
+<tr>
+<td>+</td>
+<td>Repeats a character one or more times</td>
+</tr>
+<tr>
+<td>+?</td>
+<td>Repeats a character one or more times (non-greedy)</td>
+</tr>
+<tr>
+<td>[aeiou]</td>
+<td>Matches a single character in the listed set</td>
+</tr>
+<tr>
+<td>[^XYZ]</td>
+<td>Matches a single character not in the listed set</td>
+</tr>
+<tr>
+<td>[a-z0-9]</td>
+<td>The set of characters can include a range</td>
+</tr>
+<tr>
+<td>(</td>
+<td>Indicates where string extraction is to start</td>
+</tr>
+<tr>
+<td>)</td>
+<td>Indicates where string extraction is to end</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PY4E Chapter 10（Tuples）]]></title>
+      <url>http://yibeichen.me/2016/07/18/PY4E-Chapter-10/</url>
+      <content type="html"><![CDATA[<p>元组不复杂，和列表字典都有点相似，当然，又完全不相同。元组是不可变的。所以，感觉它是辅助列表字典进行运算的？<br><a id="more"></a></p>
+<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>10.2 Write a program to read through the mbox-short.txt and figure out the distribution by hour of the day for each of the messages. You can pull the hour out from the ‘From ‘ line by finding the time and then splitting the string a second time using a colon.<br><code>From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008</code><br>Once you have accumulated the counts for each hour, print out the counts, sorted by hour as shown below.</p>
+<h1 id="原始答案"><a href="#原始答案" class="headerlink" title="原始答案"></a>原始答案</h1><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">name = raw_input(<span class="string">"Enter file:"</span>)</div><div class="line"><span class="keyword">if</span> <span class="built_in">len</span>(name) &lt; <span class="number">1</span> : name = <span class="string">"mbox-short.txt"</span></div><div class="line">handle = <span class="built_in">open</span>(name)</div><div class="line">d = dict()</div><div class="line"><span class="keyword">for</span> <span class="built_in">line</span> <span class="keyword">in</span> handle:</div><div class="line">	<span class="keyword">words</span> = <span class="built_in">line</span>.rstrip().<span class="built_in">split</span>()</div><div class="line">	<span class="keyword">if</span> <span class="built_in">len</span>(<span class="keyword">words</span>)== <span class="number">0</span>: continue</div><div class="line">	<span class="keyword">if</span> <span class="keyword">words</span>[<span class="number">0</span>]!= <span class="string">'From'</span>: continue</div><div class="line">	<span class="keyword">if</span> <span class="keyword">words</span>[<span class="number">0</span>]== <span class="string">'From:'</span>: continue</div><div class="line">	<span class="comment">#print words[5]</span></div><div class="line">	<span class="keyword">words</span> = <span class="keyword">words</span>[<span class="number">5</span>].<span class="built_in">split</span>()</div><div class="line">	ws = <span class="keyword">words</span>[<span class="number">0</span>][: <span class="keyword">words</span>[<span class="number">0</span>].find(<span class="string">':'</span>)].rstrip().<span class="built_in">split</span>()</div><div class="line">	<span class="comment">#print ws</span></div><div class="line">	<span class="keyword">for</span> w <span class="keyword">in</span> ws:</div><div class="line">	    <span class="keyword">if</span> w <span class="keyword">not</span> <span class="keyword">in</span> d:</div><div class="line">	       d[w] = <span class="number">1</span></div><div class="line">	    <span class="keyword">else</span>:</div><div class="line">	        d[w] += <span class="number">1</span></div><div class="line"><span class="comment"># print da</span></div><div class="line">l = list()</div><div class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> d.<span class="keyword">items</span>():</div><div class="line">l.append((k, v))</div><div class="line">l.<span class="built_in">sort</span>()</div><div class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> l:</div><div class="line">print k, v</div></pre></td></tr></table></figure>
+<h1 id="修改后的答案"><a href="#修改后的答案" class="headerlink" title="修改后的答案"></a>修改后的答案</h1><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">name = raw\<span class="title">_input</span>(<span class="string">"Enter file:"</span>)</div><div class="line"><span class="keyword">if</span> <span class="built_in">len</span>(name) \&lt; <span class="number">1</span> : name = <span class="string">"mbox-short.txt"</span></div><div class="line">handle = <span class="built_in">open</span>(name)</div><div class="line">d = dict()</div><div class="line"><span class="keyword">for</span> <span class="built_in">line</span> <span class="keyword">in</span> handle:</div><div class="line">	<span class="keyword">if</span> <span class="built_in">line</span>.startswith(<span class="string">"From"</span>) <span class="keyword">and</span> <span class="keyword">not</span> <span class="built_in">line</span>.startswith(<span class="string">"From:"</span>):  </div><div class="line">	   <span class="keyword">words</span> = <span class="built_in">line</span>.rstrip().<span class="built_in">split</span>()</div><div class="line">	<span class="comment">#print words[5]</span></div><div class="line">	   <span class="keyword">words</span> = <span class="keyword">words</span>[<span class="number">5</span>].<span class="built_in">split</span>()</div><div class="line">	   ws = <span class="keyword">words</span>[<span class="number">0</span>][: <span class="keyword">words</span>[<span class="number">0</span>].find(<span class="string">':'</span>)]</div><div class="line">	   <span class="comment">#print ws</span></div><div class="line">	   d[ws] = d.<span class="built_in">get</span>(ws,<span class="number">0</span>)+<span class="number">1</span>  </div><div class="line"><span class="comment"># print d</span></div><div class="line">l = d.<span class="keyword">items</span>()</div><div class="line">l.<span class="built_in">sort</span>()</div><div class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> l:</div><div class="line">	print k, v</div></pre></td></tr></table></figure>
+<h1 id="备注："><a href="#备注：" class="headerlink" title="备注："></a>备注：</h1><p>两次split之后是list，再切片一下得到的是单个数据项，既然是数据项就可以直接添加到字典，不用把它再变成列表然后从列表里再加到字典——这样写简直太麻烦了……觉得自己真是婆婆妈妈。</p>
+<p>回想起来，第九周的作业也是这么啰里啰嗦的……直接把数据项加入字典啊，为什么要绕到列表那去。</p>
+<p>另外，各种格式对齐问题一定要注意，一处不对就毁全局啊，就算code都是对的，对错了行也是功亏一篑。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Learning How To Learn 课程笔记]]></title>
+      <url>http://yibeichen.me/2016/07/08/Learning-How-To-Learn/</url>
+      <content type="html"><![CDATA[<p><strong>Learning How to Learn: Powerful mental tools to help you master tough subjects（如何学习：学习困难科目的实用思维方法 ）</strong></p>
+<p>阅读材料：《A Mind for Numbers》</p>
+<p>课程共四周，小标题差不多就是按每周的要点来，比较随性啦。<br><a id="more"></a></p>
+<h2 id="第一周"><a href="#第一周" class="headerlink" title="第一周"></a>第一周</h2><h3 id="人脑的两种思考模式"><a href="#人脑的两种思考模式" class="headerlink" title="人脑的两种思考模式"></a>人脑的两种思考模式</h3><p>focused- mode（左脑）和 diffuse mode（右脑）</p>
+<ul>
+<li>focused- mode 是指那些需要集中注意力进行的学习，比如解数学题什么的</li>
+<li>diffuse mode 刚好相反，属于那种你发个呆、散个步，或者睡个觉就突然灵光一闪，把百思不得其解的东西，想出个所以然来了</li>
+</ul>
+<p>几乎所有的学习都是这两种模式相结合，你可能会在这两种模式中不停切换，但是基本上不会同时处于这两种模式中。当你专注得不到结果的时候，就可以尝试放空一下，说不定灵感就突然冒出来了。</p>
+<p>说到“放空”，就不得不说两个很重要的行为：睡觉和锻炼</p>
+<h3 id="sleep的重要性在于"><a href="#sleep的重要性在于" class="headerlink" title="sleep的重要性在于"></a>sleep的重要性在于</h3><ul>
+<li>可以排出大脑中的毒素，大脑和房间一样每天也会产生垃圾，睡觉就是一种清洁过程，keep clean and healthy</li>
+<li>通常伴随着另一个活动：做梦，做梦就涉及到diffuse mode了，如果睡前你非常专注于某项学习，那么睡着以后就很有可能梦到它</li>
+<li>是一种放松，可以帮助记忆重组，发现之前被忽视的一些联系</li>
+</ul>
+<h3 id="exercise的重要性在于"><a href="#exercise的重要性在于" class="headerlink" title="exercise的重要性在于"></a>exercise的重要性在于</h3><ul>
+<li>mental和physical要搭配好呀，不能光练脑不练肌肉</li>
+<li>锻炼和睡觉一样，可以将人从focus mode中解放出来，进入diffuse mode</li>
+<li>另外有研究表明，锻炼肌肉也能对思维能力起到一定的锻炼效果，有助于记忆</li>
+</ul>
+<h3 id="人的两种记忆模式"><a href="#人的两种记忆模式" class="headerlink" title="人的两种记忆模式"></a>人的两种记忆模式</h3><p>working memory和long term memory</p>
+<ul>
+<li>working memory 是短期的即时的记忆，而long term memory 顾名思义就是长期记忆，我们学到的东西基本都是先进入working memory，然后只有一小部分由此进入long term memory，而working memory能储存的东西很少，大概只有4 chunks</li>
+<li>怎么样才能让更多的短期记忆变成长期记忆呢？最重要的就是practice和repeat！重复重复不断重复是记忆的最佳手段之一！甚至可以说是最重要的。</li>
+</ul>
+<p>在一个interview里，Dr. Barbara Oakley说到“记忆”：</p>
+<blockquote>
+<p>人们通常觉得“死记硬背”不好，但往往批评过头了，甚至觉得“记忆”这件事本身也不好。他们会说，记住了不代表理解了也不代表会用。而现在，借助于发达的科技，很多东西我们都不会主动记忆了。比如诗歌。但实际上，诗人们说，记住一首诗能帮助你更好地理解诗中的深意。</p>
+</blockquote>
+<p>当然，记忆也是讲方法的，这又可以讲很多，不要cram your memory by repeating too many things all in one day ，还有spaced repetition，有个软件叫做anki就是利用这种方法帮助人们记忆的。（大学的时候我就折腾过，和它类似的还有 supermemo，但没多久就放弃了，过多寄希望于工具，是不够理性的）</p>
+<p>第一周的课程里，Dr. Barbara Oakley采访了五个人，他们有的是科学家非常擅长于学习，有的天分不高但依然学会了很多门语言，还有的从事编辑写作指导工作几十年。</p>
+<p>Dr. Barbara Oakley提了很多很棒的问题，受访者也给出了不少可操作性的回答。</p>
+<p>比如：</p>
+<p>如何在枯燥的课堂上保持注意力？</p>
+<ul>
+<li>多提问，带着问题去听课可以让你积极参与其中，发现乐趣并且保持注意力</li>
+</ul>
+<p>面对multitask的时候，如何保持专注？</p>
+<ul>
+<li>每种任务的切换都需要一段时间的适应，因此我通常在夜深人静的时候做那些需要非常专注才能完成的工作。</li>
+</ul>
+<p>学习语言的过程中，遭遇很多的失败，该怎么克服这种挫败感？</p>
+<ul>
+<li>try different techniques, push your attention, find your limits.（这个人还说了，不要有畏难情绪，不要怕，“every single person in this world，has had challenges to go through”，总之就是 you’re not alone，比你更难的困难户都在努力而且取得了效果，你还在畏畏缩缩地干什么！）</li>
+</ul>
+<p>写稿的时候，写到一半觉得自己写得太烂了不想继续了，怎么办？（果壳推了一篇<a href="https://app.yinxiang.com/shard/s20/nl/631551271/1d13236e-1c9f-4848-aa3a-1997fc090b87/" target="_blank" rel="external">文章</a>刚好分析了一下拖稿的心理：作者拖稿是怕自己写不好，而快到ddl的时候，怕自己写不完的恐惧战胜了写不好的恐惧）</p>
+<ul>
+<li>几乎每个作者都会遇到这种情况，其原因在于，我们总是一边写一边改。正确的做法应该是：一鼓作气写到底，写完再改。最重要的是写下去！等你写完了回过头看看，可能就不觉得自己写得差，反而会发现：这句写得可真好！（www.publicationcoach.com）</li>
+</ul>
+<p>最后，关于学习的终极问题，对于持续的学习而言，什么是最重要的？</p>
+<ul>
+<li>几乎所有人的回答都是_passion_和_persistence_！</li>
+</ul>
+<h2 id="第二周"><a href="#第二周" class="headerlink" title="第二周"></a>第二周</h2><h3 id="Chunk三步走"><a href="#Chunk三步走" class="headerlink" title="Chunk三步走"></a>Chunk三步走</h3><ul>
+<li>focused attention</li>
+<li>understanding of the basic idea</li>
+<li>practice help you get the big picture context</li>
+</ul>
+<p>之前在Quora上看到有人说chunk，当时不太理解，去搜了一下这个单词，大意是“块”。然后想到学英语的时候，有个老师讲过“语块”学习，他说：abstract、metaphor、yearn这三个单词（我不记得他说的是哪几个词了，随便举了个例子）分开记有点难度，但是把首字母连在一起记就是amy，背的时候就更容易联想些。事实上我的感觉是，如果这就是他所谓的chunk记忆法，那真是扯淡，他完全没有理解chunk的真正意义。</p>
+<p>视频里，Dr. Barbara Oakley举例说：单独记p、o、p这组字母不如它们变成pop这个单词来记（估计那位老师就看到这，然后错误地理解了chunk的意义），chunk类似于把一个概念及其相关的东西打包压缩成为一个整体。</p>
+<p>最开始我也没有很好地理解chunk，但渐渐地，我觉得离这个概念越来越近了，我把chunk看成一个个独立的unit，比如整个代数可以分成很多个独立unit，三角函数是一个、一元二次方程又是一个，概论论是另外一个等等，以前中学的时候做过一套书叫做《各个击破》，大概就是这个道理，一个专题一个专题地解决，而不是把所有代数、几何都混合在一起。更直观的是练习钢琴曲，一首很难的曲子，不要试图一下子把它全部掌握，可以一节一节地练习，当每个部分都熟练了以后再将它们合到一起就好了。</p>
+<h4 id="那我们怎么样才能建立一个chunk并掌握它呢？"><a href="#那我们怎么样才能建立一个chunk并掌握它呢？" class="headerlink" title="那我们怎么样才能建立一个chunk并掌握它呢？"></a>那我们怎么样才能建立一个chunk并掌握它呢？</h4><p>拿理科学习来说：不要急于做题目，要先看书、找教学视频、Google相关的资料等等，总之就是先理解基本概念，要有一定的了解再开始练习。而且练习要数书上的习题最佳。因为书上的习题都有讲解，每一步怎么走的都清清楚楚，对着做的时候就知道自己的思路和书中的思路有何不同，这就是一种_正反馈_啊！非常之重要！</p>
+<p>想到以前读高中的时候，也迷恋过“啃难题”，啃出了一道就非常有成就感，老师常常劝我说，你把基本功打好，会做的不要做错，就差不多能得个130了，本来难题就少，你不会做别人也不会做，何必浪费时间呢？</p>
+<p>读书的时候觉得老师真是，太保守了，一点上进心都没有，怎么能止步于拿那些容易的分数呢？现在发现，还真没错。难题的学习价值其实是很小的，做难题要么是为了争一口气，要么是为了寻找数学之美。大部分人都是前者吧，你跟学习赌什么气呢？后者呢，实在是太少见了，都是冲着数学家的目标去的，在他们那根本不存在容易题还丢分这种情况，人家就不是为了考试啊。</p>
+<h3 id="Recall：非常有助于加深理解"><a href="#Recall：非常有助于加深理解" class="headerlink" title="Recall：非常有助于加深理解"></a>Recall：非常有助于加深理解</h3><p>说到如何巩固，我们通常的做法是rereading，这其实是非常低效的，因为看书是被动的吸收知识，更何况这些知识你很熟悉了，rereading会产生一种“我已经掌握了这些”的幻觉。不过，rereading在spaced repetition的时候倒是很有效。</p>
+<p>正确的做法是，关上书本，把学过的知识复述一遍，能用自己的话把概念解释清楚了，这才算理解的彻底了。<br>所以我们常说，“教”也是一种学习，当你跟一个完全外行的人，介绍某一类知识，你就不得不用最通俗最简单的语言来表达，你就会用上“类比”的方法，而“类比”其实就是发现两个知识点之间的联系，当你已经开始主动寻找不同知识点的关系，就说明你理解了呀！</p>
+<p>Dr. Barbara Oakley也说到了这种“联系”，她称之为“Transfer”。</p>
+<h3 id="Transfer"><a href="#Transfer" class="headerlink" title="Transfer"></a>Transfer</h3><p>不同的领域看上去很可能差了十万八千里，但其实它们内在的联系会让你大吃一惊。比如：物理学和管理学，在一些概念和解决问题的方法上有很多相似之处。这两个学科跟我都没什么关系，我不好举例子，但是很明显，数学跟物理这两门学科，好得就简直像双胞胎。读高中的时候，我经常用数学思维来解决物理问题。</p>
+<p>再举一个例子吧，我工作的时候学到的一些方法，比如：关于一个项目如何推进，一个想法如何落实等等的一整套流程，对我写论文、学习新概念都很有帮助。这种帮助主要是思维方式上的。</p>
+<p>概念和概念之间也有很多可比的，在我的学习过程中遇到过不少，不过一时半会想不起来了，下次补上。</p>
+<p>transfer不仅指不同领域之间chunks有联系，同一个领域内的chunks也有联系。</p>
+<h3 id="Interleaving"><a href="#Interleaving" class="headerlink" title="Interleaving"></a>Interleaving</h3><p>刚刚说了chunks学得越多越能发现联系，当你有一个library of chunks的时候，就会发现，大千世界都紧紧地联系在了一起。</p>
+<p>这时候有了一个新的学习的技巧，第一周的时候讲了diffuse mode，适用于focused mode受阻的情况，现在我们要说interleaving——在学习一个chunk遇到了瓶颈的时候，可以适当插入其他类型chunk的学习，可以帮助你转换一下思维方式，不是说这两个chunk一定存在某种必然联系，而是当我们处理一个新问题的时候可以引入新的视角，有可能触发你对前一个问题的思考，我把这也理解为diffuse mode。</p>
+<h3 id="Illusions-of-competence"><a href="#Illusions-of-competence" class="headerlink" title="Illusions of competence"></a>Illusions of competence</h3><p>在说rereading的时候，说到了它为什么低效，因为当你看着书本的时候就有一种“我已经掌握了这些知识”的幻觉，跟你买了书回来就有一种“我已经看过了”以及你每次跟朋友说要减肥就有一种“我已经在减肥了”的幻觉是一样的。</p>
+<p>先说怎么避免这种幻觉吧，几种参考方法如下：</p>
+<ul>
+<li>test yourself</li>
+<li>minimize highlighting or underline</li>
+<li>mistakes are good</li>
+<li>use deliberate practice</li>
+</ul>
+<p>第一种方法其实和Recall是类似的效果，你得关上书本，才能检验出知识结构中薄弱的是哪块。当然，有test就会有mistake，犯错是好的呀，这是一种反馈，可不就是要查缺补漏吗，哪里不行补哪里，对症下药。</p>
+<p>很多人读书的时候喜欢划重点，我也是，尤其在复习备考的时候，教材上被划得满满的，看着特别有成就感，好像我划了线它就存在我的记忆中了一样。这都是幻觉啊，幻觉。一来，重点划太多就没有重点了，因为都是重点啊，你还得找出重中之重；二来，做标记这种事情特别容易给大脑传递错误的信号，啊，我标记了，意味着这一块学习任务已经完成了，实际上根本没有，这块知识点就被忽略了。</p>
+<p>最后一个是“刻意练习”。很多书中都介绍过，它有时候被描述为“跳出舒适区，在学习区学习”。我们经常会犯的错误是：一遍一遍重复自己已经掌握的内容，比如我几何学得好，我就总做几何题，而代数就会越来越差因为我总不练习。熟悉的东西练久了就会产生惯性，有了惯性就会懈怠，又会出现“啊，我已经这么熟练了”的幻觉，而且总停留在同一个地方怎么能进步呢？</p>
+<p>Stephen Krashen的语言习得理论“i+1”和这也有异曲同工之妙，i代表你现在的语言水平，1代表略高于你现有水平的材料，也就是说，当你输入的材料对你有点点“困难”的时候，你才能专注于理解它，才会进步。</p>
+<p>总之呢，当你觉得学习得很轻松的时候，就要警惕了，你可能已经滞后了。赶快给自己施加一点压力，制造一些挑战吧！</p>
+<h3 id="Einstellug"><a href="#Einstellug" class="headerlink" title="Einstellug"></a>Einstellug</h3><p>刚刚我们一直在说如何让自己变得熟练，如何拥有expertise，殊不知，过分专注于某一领域很可能会阻碍你接受新知识。Einstellug是一个德语词，大意是你的知识会形成一个壁垒，把你困在其中，当你在某个领域中获得的知识越多，你接受新的（尤其是特别新颖的反传统的）观念的困难就越大。换句话说，就是你的知识包袱太重了。看，爱因斯坦到晚年坚定地站在了量子物理的反面。</p>
+<blockquote>
+<p>There is the old saying that science progresses one funeral at a time as people entrenched in the old ways of looking at things die off.</p>
+</blockquote>
+<p>那怎么办呢?</p>
+<p>跳出来呀！保持广泛的兴趣，培养多维的视角，努力开阔开阔更开阔些。</p>
+<h3 id="不积跬步无以至千里"><a href="#不积跬步无以至千里" class="headerlink" title="不积跬步无以至千里"></a>不积跬步无以至千里</h3><p>最后，要说的是，积少成多，聚沙成塔，一步一个脚印向前走呀！</p>
+<p>第一次上法语课的时候，老师在黑板上写下了一个句子：Petit a petit l’oiseau fait son nid.（我偏不给翻译哈哈）</p>
+<p>嗯哼，理论说了这么多，最后就化为一句话：Just do it！</p>
+<p>还有一句相赠：Law of Serendipity——Lady Luck favors the one who tries﻿。</p>
+<h2 id="第三周"><a href="#第三周" class="headerlink" title="第三周"></a>第三周</h2><h3 id="拖延（procrastination）"><a href="#拖延（procrastination）" class="headerlink" title="拖延（procrastination）"></a>拖延（procrastination）</h3><p>四个组成部分：</p>
+<ul>
+<li>the cue</li>
+<li>the routine</li>
+<li>the reward</li>
+<li>the belief</li>
+</ul>
+<p>那现在说一下如何针对这四个部分实施战拖延计划。</p>
+<p>Cues本身是没有好坏的，你对cue所作出的反应，也就是routines才是最重要的。</p>
+<p>通常情况下，人都是趋利避害的，也就是逃离那些让我们感到痛苦的东西，自发地转向那些能给我们带来欢乐的。所以，当一件事情让你产生畏难情绪了，自然就会拖延。</p>
+<p>那要怎么办呢？</p>
+<p>要用a new ritual对抗the old ritual，就是养成一个新习惯，自然地你就会改变那个旧习惯，比如：每当工作和学习的时候，就把手机调成飞行模式或者锁起来。久而久之，你就养成了专心工作不看手机的习惯。前一天晚上写好第二天待办事项的清单，每周末制定下一周的待办清单等等，都是很好的办法。</p>
+<p>Rewards很好理解了，每做出一些改变都会消耗一些意志力willpower，必须得补偿一下，让大脑感觉到快乐，否则下次它就不干了。</p>
+<p>The belief是说，实践过程中肯定艰难重重，要相信自己一定可以做到，相信自己的方法是正确的，信念很重要。</p>
+<h4 id="每天的学习（工作）计划怎么做呢？量力而行！"><a href="#每天的学习（工作）计划怎么做呢？量力而行！" class="headerlink" title="每天的学习（工作）计划怎么做呢？量力而行！"></a>每天的学习（工作）计划怎么做呢？量力而行！</h4><p>不能太多也不能太少，难做的放前面，eat your frogs first。</p>
+<p>举我自己的例子吧。</p>
+<p>我最拖延的就是练琴了，琴就在书桌边，但我就是不愿意坐过去。本来不能理解，为什么我不愿意练琴，是我主动要学琴的啊，既然不是被逼的，为什么我就是不愿意做呢？</p>
+<p>（穿插一下我学琴的动机，我当然不是出于对钢琴或者音乐的热爱，而是，觉得弹钢琴会对学习有帮助，虽然达不到艺术的境界，沾点艺术的裙角也会对学术研究有点点启发吧。就是这么功利，可是哪种理由不功利呢？）</p>
+<p>听完课，反思了一下，总算是明白了一点点：给自己定的目标太高了，导致我不敢去做。</p>
+<p>我对自己说每天必须练一个小时，其实一小时真没什么，练着练着就过去了，但是一想到要花整整一小时在这件事情上，我就崩溃了，听上去好吓人啊，一小时我干点什么不行啊，为什么非要练琴？</p>
+<p>对呀，为什么呢？因为我还在初级阶段，没能从中找到成就感满足感，想到跟练琴的同龄人相比，我差不多就是个小学水平，就很挫败。我总是想，我去读一个小时的英语，要比练一个小时的琴，收获多得多。</p>
+<p>其实，我是没有耐心打基本功，要是我的英语也是初级水平，我估计也不想练。</p>
+<p>再比如，法语听写，第一天的时候很顺利，我跟自己说，那从第二天开始每天听五篇吧，这样我20天就能听完这本了。结果到了第二天发现，怎么越听越难越听越慢越来越挫败，想到自己要完成五篇，真是苦不堪言，结果，自然是从第三天就开始拖延了，从五篇变成三篇两篇一篇，还有为0的时候。而且每天早上醒来想到要听写那么难的法语，就又是一阵阵不愿意。</p>
+<p>总之，我的错误就在于，恨不得五天做完一本书，十天速成一门课，一天学习十小时然后累得半死去睡觉第二天继续。真是太变态了。想学没错啊，错就错在，被自己的雄心壮志压垮了，徒增负罪感，然后自暴自弃。</p>
+<p>学习是件很累的事情，一个普通人不可能做到每天focus 10小时，需要切换到diffuse mode。Dr. Barbara Oakley在自己的任务清单最后写到：以上工作必须在下午五点前结束。5点以后就不是工作时间了，要和家人一起hang out，看一些自己喜欢的书。</p>
+<p>Planning your quitting time is as important as planning your working time。</p>
+<p>切记！</p>
+<h3 id="记忆"><a href="#记忆" class="headerlink" title="记忆"></a>记忆</h3><p>这周课程的另一部分是讲“记忆”。其实前两周都在讲这些，这周给出了一些工具：app和website。对工具没有太多的兴趣，个人觉得思维和方法比较重要。</p>
+<p>这周还提到了“记忆宫殿”。</p>
+<p>这周的选修材料里有几个还不错，摘几个要点吧：</p>
+<ol>
+<li>Broaden your passions instead of just following them.</li>
+</ol>
+<p>我们常说要做自己所热爱的事情，这样你会学得更快做得更好。但实际上，找到真爱是需要很久的，必须要有耐心，你以为你喜欢的，可能只是一个假象，你真正热爱的说不定还没碰到呢，所以要开阔眼界，多多尝试，耐心寻找。（哎，世界上的道理都差不多，就好比优秀的人的学习方法其实也都差不多）</p>
+<ol>
+<li>step by step.</li>
+</ol>
+<p>这个说了不止一次了。这次有个教授说，课外的学习很重要，不说让你课后每天再学习6个小时，好歹你得好好做完家庭作业，每门课至少花上15分钟吧。</p>
+<p>我本来计划一周六天，周一周二学一门课，周三周四学另外一门，周五周六学第三门。等这三门中学完了一门，再补上另一门。</p>
+<p>现在我决定不这么干了，我要把第四门课同步提上来，每天听一小节，大概10分钟左右，因为第四门课很长很长，对我来说有点难，得早早开始，长久坚持。</p>
+<h2 id="第四周"><a href="#第四周" class="headerlink" title="第四周"></a>第四周</h2><h3 id="巧用隐喻和类比"><a href="#巧用隐喻和类比" class="headerlink" title="巧用隐喻和类比"></a>巧用隐喻和类比</h3><p>这个很好理解吧，学习陌生概念的时候，借用你熟悉的东西来类比，有助于理解。比如：当你学生物的时候，把你的血管想象成高速公路，一个个细胞就是一辆辆轿车。当你利用类比掌握了新的知识后，这新的知识又可以成为下一次学习的类比素材。</p>
+<p>也就是说，当你使用了类比，既学习了新知识，又巩固了旧知识。</p>
+<h3 id="不要嫉妒天才们"><a href="#不要嫉妒天才们" class="headerlink" title="不要嫉妒天才们"></a>不要嫉妒天才们</h3><p>讲真，做到这点好难，我倒不是嫉妒他们，每当我看到他们的时候，我都会痛恨自己为什么这么不天才。</p>
+<blockquote>
+<p>Being smarter often equates to having a larger working memory. Your hot rod of a memory may be able to hold nine things in mind instead of four and you can latch on to those things like a bulldog, which  makes it easier to learn. But guess what, it also makes it more difficult for you to be creative. How’s that?  It’s our old friend and enemy Einstellung.</p>
+</blockquote>
+<p>就是说聪明的人，脑容量大存储效率又高，很难塞进去新的东西，很容易就形成思维定势。嗯，换句话说，我们这些普通人，虽然懂得少，但是有潜力啊！</p>
+<p>最近在看另一本书《The Talent Code》，推崇deep practice，认为天赋和成就并没有什么必然的联系，关键在于有效的练习。</p>
+<p>人人都能成为master，只要你用对了功夫。</p>
+<p>这个结论有没有让你好过一点？反正我是没有，因为我还没找到对的功夫。</p>
+<h3 id="Change-Your-Thoughts-Change-Your-Life"><a href="#Change-Your-Thoughts-Change-Your-Life" class="headerlink" title="Change Your Thoughts  Change Your Life"></a>Change Your Thoughts  Change Your Life</h3><p>这里举了一个诺贝尔奖获得者Cajal的例子，Cajal以前是个很差的学生，后来他努力学医（这里就说到了practice的重要性，Practice appears to strengthen and reinforce connections between different brain regions, creating highways between the brain’s control centers and the centers that store knowledge.），他同很多比他聪明的科学家们共事，然而发现这些尽管他们已经绝顶聪明了，但也会犯错也会有偏见。Cajal给自己找到了定位——perseverance——我没你聪明但我比你有耐力啊，他把这称之为“the virtue of the less brilliant”。</p>
+<p>另外，要知道，不管你有多么好的老师、教材，真正重要的还是自己对待学习的态度。</p>
+<p>有时候，当你取得了一些成绩，身边的人可能会因为妒忌而故意贬低你，这种现象很常见，因为竞争与合作总是并存，这时候要学会专注于继续学习，并对这些负面的信息充耳不闻。</p>
+<blockquote>
+<p>Especially, in the qualities that make you different, and use them as a secret talisman for success. Use your natural contrariness to defy the always present prejudices from others about what you can accomplish.</p>
+</blockquote>
+<p>好吧，我有点懒，直接把字幕抠下来了。</p>
+<h3 id="学会与人合作"><a href="#学会与人合作" class="headerlink" title="学会与人合作"></a>学会与人合作</h3><p>“合作”这个话题已经被说烂了，与人合作的能力不仅仅涉及到学业，对个人的职业发展也非常重要。</p>
+<p>这段我就不多说了，之所以要提一下，是因为最后还有个反转。</p>
+<h3 id="Hard-Start-Jump-to-Easy"><a href="#Hard-Start-Jump-to-Easy" class="headerlink" title="Hard Start Jump to Easy"></a>Hard Start Jump to Easy</h3><p>这是一个应试技巧，中学的时候经常思考这个问题，考试的时候是先易后难还是先难后易？一般情况下，老师都建议先易后难。因为难题可能大家都不会，你得把能得到的分数都得到了，这样才能保大局。</p>
+<p>而这里呢，给出了另一种方式：先看难题，如果两分钟之内卡壳了，立马抽身，改做容易的题目。这还是涉及到focused mode和diffuse mode，也就是说，难题先在脑中打个印记，把它放到diffuse mode下，等解完了其他题目之后，再面对这个题目相当于从diffuse 转到focused，这比单纯地，只用focused一种思考模式解答难题，要更高效。</p>
+<h3 id="impostor-syndrome"><a href="#impostor-syndrome" class="headerlink" title="impostor syndrome"></a>impostor syndrome</h3><p>“冒名顶替者综合征”这大概是对应的中文了。</p>
+<p>就是那种，觉得自己到目前为止取得的成就都是侥幸，周围的其他人都比自己优秀，别人夸自己的时候，内心无比崩溃，觉得真是名不副实。等到下一次挑战来临，就会露出真面目了，较量真本事的时候，自己一定会输得很惨。</p>
+<p>总之就是对自己不自信，“我得到的都是侥幸啊，我失去的都是人生”。</p>
+<p>这已经成为了一种“综合征”，说明了什么？We are not alone！世界上有千千万万的人都跟我们一样，只是我们不知道而已。</p>
+<p>再延伸开来，当我们意识到自己的某种心理的时候，请告诉自己，我不是唯一一个这样想的，我既不孤单也没什么特别的。世界这么大，每一种心理都有足够大的样本来让它成为“XXX综合征”。</p>
+<h3 id="说好的反转来了"><a href="#说好的反转来了" class="headerlink" title="说好的反转来了"></a>说好的反转来了</h3><p>全书看上去充满了不少矛盾之处，我又来抄书了，别嫌我懒。</p>
+<blockquote>
+<p>Focused attention is indispensable for problem solving—yet it can also block our ability to solve problems. Persistence is key—but it can also leave us unnecessarily pounding our heads. Memorization is a critical aspect of acquiring expertise—but it can also keep us focused on the trees instead of the forest. Metaphor allows us to acquire new concepts—but it can also keep us wedded to faulty conceptions.</p>
+</blockquote>
+<p>另外还有“与人合作和独立学习”这一对也是，许多人一起学习的时候，效率可能会变得低下，因为大家讨论着讨论着就变成了闲聊。独立学习的能力很重要啊，因为通往伟大事业的道路通常都是孤独的。不过，就算爱因斯坦发现了相对论，这其中也有其他科学家对他的启发呀。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>看完了视频和书，我觉得我的学习方法并没有发生质的飞跃，因为很多都用过，只不过这次给它们正名了，原来它们都是有科学依据的，大部分是神经科学。</p>
+<p>不过，我相信每个人都能从中看到自己的欠缺之处，从而查缺补漏。我最欠缺的就是耐心，急躁又缺乏耐心，所以，我暂时根本不用担心“persistence”的负面作用，因为还没拥有它呀！</p>
+<p>学习的方法可能是多样的，但那些学有所成的人的方法皆有相通之处。也就是说，原则在上，方法可以自由发挥啦。</p>
+<p>第四周的笔记记得有点简陋，因为最近我很厌学……</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[试诗]]></title>
+      <url>http://yibeichen.me/2016/04/20/Try-Poem/</url>
+      <content type="html"><![CDATA[<p>To My Muse</p>
+<p>她来一天<br>我就写一行</p>
+<a id="more"></a>
+<h1 id="雨夜"><a href="#雨夜" class="headerlink" title="雨夜"></a>雨夜</h1><p>忽然 暴雨<br>在 惊醒之前<br>你从梦中掠过<br>宛如闪电</p>
+<h1 id="吉他"><a href="#吉他" class="headerlink" title="吉他"></a>吉他</h1><p>开始 对吉他声敏感<br>就好像<br>碰见有些字写得好看<br>意识到<br>哦 用的也是ef尖的钢笔</p>
+<blockquote>
+<p>他对米、面过敏<br>他对一切东西都过敏<br>他是对生活过敏<br>               ——廖一梅《恋爱的犀牛》</p>
+</blockquote>
+<h1 id="旅途"><a href="#旅途" class="headerlink" title="旅途"></a>旅途</h1><p>如果<br>还希望<br>我对武汉留有<br>一点<br>美好的念想<br>就 不要<br>逼我乘汽车 来回<br>因为<br>坐一次<br>恨一次<br>从前那些回忆<br>禁不起这样浪费</p>
+<h1 id="伤害"><a href="#伤害" class="headerlink" title="伤害"></a>伤害</h1><p>下午四点的校图书馆前<br>白玉兰和银杏的阴影还是原样<br>以为<br>什么都没变<br>直到<br>半夜同时醒来的胃疼<br>说<br>把离开的七百多天<br>塞进两餐饭里<br>真是徒劳</p>
+<h1 id="我这样的生活"><a href="#我这样的生活" class="headerlink" title="我这样的生活"></a>我这样的生活</h1><p>我<br>站在大地上 融化<br>你走过来<br>抓起一把<br>我曾存在的证据<br>它最终被这样夺走</p>
+<h1 id="Poor-language"><a href="#Poor-language" class="headerlink" title="Poor language"></a>Poor language</h1><p>I envy you.<br>I envy the things that you feel and touch, that you speak out and write down.<br>I envy you because I am this so average one with mediocre talent.<br>Envy leads to toss and turn.</p>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
