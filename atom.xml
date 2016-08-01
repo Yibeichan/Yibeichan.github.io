@@ -612,10 +612,11 @@
     <link href="http://yibeichen.me/2016/07/27/No-Desire-to-Study/"/>
     <id>http://yibeichen.me/2016/07/27/No-Desire-to-Study/</id>
     <published>2016-07-26T16:07:07.000Z</published>
-    <updated>2016-07-29T06:29:16.000Z</updated>
+    <updated>2016-08-01T10:13:54.000Z</updated>
     
-    <content type="html"><![CDATA[<p>0727 13:25:00<br>一天，哦不，12个小时都忍不了，中午刚开电脑就跑去补了15G的套餐，焦灼等待一小时后，终于生效。<br>从此又是手脚齐全的人了。</p>
-<h2 id="Atom插件顺利安装！"><a href="#Atom插件顺利安装！" class="headerlink" title="Atom插件顺利安装！"></a>Atom插件顺利安装！</h2><p>今天发现，本月的VPN流量已经用完了，于是，再也无心学习。</p>
+    <content type="html"><![CDATA[<p>0727 13:25:00<br>一天，哦不，12个小时都忍不了，中午刚开电脑就跑去补了15G的套餐，焦灼等待一小时后，终于生效。<br>从此又是手脚齐全的人了。<br>Atom插件顺利安装！</p>
+<hr>
+<p>今天发现，本月的VPN流量已经用完了，于是，再也无心学习。</p>
 <blockquote>
 <p>没有VPN的时候你怎么活的？<br>我有前公司给的chrome插件啊。<br>那在前公司之前呢？<br>前前公司自带VPN，随时随地科学上网……</p>
 </blockquote>
@@ -638,8 +639,9 @@
     
     <summary type="html">
     
-      &lt;p&gt;0727 13:25:00&lt;br&gt;一天，哦不，12个小时都忍不了，中午刚开电脑就跑去补了15G的套餐，焦灼等待一小时后，终于生效。&lt;br&gt;从此又是手脚齐全的人了。&lt;/p&gt;
-&lt;h2 id=&quot;Atom插件顺利安装！&quot;&gt;&lt;a href=&quot;#Atom插件顺利安装！&quot; class=&quot;headerlink&quot; title=&quot;Atom插件顺利安装！&quot;&gt;&lt;/a&gt;Atom插件顺利安装！&lt;/h2&gt;&lt;p&gt;今天发现，本月的VPN流量已经用完了，于是，再也无心学习。&lt;/p&gt;
+      &lt;p&gt;0727 13:25:00&lt;br&gt;一天，哦不，12个小时都忍不了，中午刚开电脑就跑去补了15G的套餐，焦灼等待一小时后，终于生效。&lt;br&gt;从此又是手脚齐全的人了。&lt;br&gt;Atom插件顺利安装！&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;今天发现，本月的VPN流量已经用完了，于是，再也无心学习。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;没有VPN的时候你怎么活的？&lt;br&gt;我有前公司给的chrome插件啊。&lt;br&gt;那在前公司之前呢？&lt;br&gt;前前公司自带VPN，随时随地科学上网……&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -800,10 +802,12 @@
     <link href="http://yibeichen.me/2016/07/23/PY4E-Chapter-13-2/"/>
     <id>http://yibeichen.me/2016/07/23/PY4E-Chapter-13-2/</id>
     <published>2016-07-23T10:46:36.000Z</published>
-    <updated>2016-07-30T10:22:31.000Z</updated>
+    <updated>2016-08-01T10:14:11.000Z</updated>
     
     <content type="html"><![CDATA[<p>超级尴尬</p>
-<h2 id="今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了"><a href="#今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了" class="headerlink" title="今天的两道题目跟github不和，这篇文章$ hexo g -d和$ hexo s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了"></a>今天的两道题目跟github不和，这篇文章<code>$ hexo g -d</code>和<code>$ hexo s</code>的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了</h2><p>尴尬之</p>
+<p>今天的两道题目跟github不和，这篇文章<code>$ hexo g -d</code>和<code>$ hexo s</code>的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了</p>
+<hr>
+<p>尴尬之</p>
 <ol>
 <li>quiz三次都没通过，还得过8小时去做第四次。</li>
 <li>极其容易的作业A卡住了，而且非常光荣地又卡在了求和问题上。</li>
@@ -842,7 +846,9 @@
     <summary type="html">
     
       &lt;p&gt;超级尴尬&lt;/p&gt;
-&lt;h2 id=&quot;今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了&quot;&gt;&lt;a href=&quot;#今天的两道题目跟github不和，这篇文章-hexo-g-d和-hexo-s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了&quot; class=&quot;headerlink&quot; title=&quot;今天的两道题目跟github不和，这篇文章$ hexo g -d和$ hexo s的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了&quot;&gt;&lt;/a&gt;今天的两道题目跟github不和，这篇文章&lt;code&gt;$ hexo g -d&lt;/code&gt;和&lt;code&gt;$ hexo s&lt;/code&gt;的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了&lt;/h2&gt;&lt;p&gt;尴尬之&lt;/p&gt;
+&lt;p&gt;今天的两道题目跟github不和，这篇文章&lt;code&gt;$ hexo g -d&lt;/code&gt;和&lt;code&gt;$ hexo s&lt;/code&gt;的时候不停报错，最后是一段一段测试出来，错在题目那两段，其实还可以测试得更细一点，但，没有耐心了&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;尴尬之&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;quiz三次都没通过，还得过8小时去做第四次。&lt;/li&gt;
 &lt;li&gt;极其容易的作业A卡住了，而且非常光荣地又卡在了求和问题上。&lt;/li&gt;

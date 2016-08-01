@@ -4,6 +4,42 @@
 
     
   <url>
+    <loc>http://yibeichen.me/2016/07/23/PY4E-Chapter-13-2/</loc>
+    <lastmod>2016-08-01T10:14:11.000Z</lastmod>
+    <data>
+        <display>
+        <title>PY4E Chapter 13.2（JSON and the REST Architecture）</title>
+        <pubTime>2016-07-23T10:46:36.000Z</pubTime>
+        
+        <tag>coursera</tag>
+         
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yibeichen.me/2016/07/27/No-Desire-to-Study/</loc>
+    <lastmod>2016-08-01T10:13:54.000Z</lastmod>
+    <data>
+        <display>
+        <title>无心学习之没有VPN</title>
+        <pubTime>2016-07-26T16:07:07.000Z</pubTime>
+        
+        <tag>VPN</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yibeichen.me/2016/08/01/Machine-Learning/</loc>
     <lastmod>2016-08-01T09:59:54.000Z</lastmod>
     <data>
@@ -48,25 +84,6 @@
         <pubTime>2016-07-30T09:49:46.000Z</pubTime>
         
         <tag>machine learning</tag>
-         
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yibeichen.me/2016/07/23/PY4E-Chapter-13-2/</loc>
-    <lastmod>2016-07-30T10:22:31.000Z</lastmod>
-    <data>
-        <display>
-        <title>PY4E Chapter 13.2（JSON and the REST Architecture）</title>
-        <pubTime>2016-07-23T10:46:36.000Z</pubTime>
-        
-        <tag>coursera</tag>
          
         <tag>Python</tag>
          
@@ -334,23 +351,6 @@
         <tag>coursera</tag>
          
         <tag>music</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yibeichen.me/2016/07/27/No-Desire-to-Study/</loc>
-    <lastmod>2016-07-29T06:29:16.000Z</lastmod>
-    <data>
-        <display>
-        <title>无心学习之没有VPN</title>
-        <pubTime>2016-07-26T16:07:07.000Z</pubTime>
-        
-        <tag>VPN</tag>
          
          
            
