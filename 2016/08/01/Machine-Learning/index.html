@@ -1,0 +1,757 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ZNp-Or9osyj9lyjTN9O5DRqaSId7rz-OEXbix-AvYjM" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="coursera,machine learning," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="舞！舞！舞！" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="笔记完成时间：0801(简介)0801：本来打算这个月学三门课，结果今天学ML第一周的内容就遭受了深深的打击，这个月能弄完这一门都要谢天谢地了啦！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Machine Learning">
+<meta property="og:url" content="http://yibeichen.me/2016/08/01/Machine-Learning/index.html">
+<meta property="og:site_name" content="舞！舞！舞！">
+<meta property="og:description" content="笔记完成时间：0801(简介)0801：本来打算这个月学三门课，结果今天学ML第一周的内容就遭受了深深的打击，这个月能弄完这一门都要谢天谢地了啦！">
+<meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_15:33:48.jpg">
+<meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:00:36.jpg">
+<meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:29:37.jpg">
+<meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:30:57.jpg">
+<meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:55:25.jpg">
+<meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:03:40.jpg">
+<meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:33:12.jpg">
+<meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:34:07.jpg">
+<meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:24:09.jpg">
+<meta property="og:updated_time" content="2016-08-01T09:59:54.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Machine Learning">
+<meta name="twitter:description" content="笔记完成时间：0801(简介)0801：本来打算这个月学三门课，结果今天学ML第一周的内容就遭受了深深的打击，这个月能弄完这一门都要谢天谢地了啦！">
+<meta name="twitter:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_15:33:48.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yibeichen.me/2016/08/01/Machine-Learning/"/>
+
+  <title> Machine Learning | 舞！舞！舞！ </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">舞！舞！舞！</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">宁要壮烈的闪烁，不要平淡的沉默</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tools">
+          <a href="/tools" rel="section">
+            
+            工具
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Machine Learning
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-01T14:28:11+08:00" content="2016-08-01">
+              2016-08-01
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/01/Machine-Learning/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/08/01/Machine-Learning/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>笔记完成时间：0801(简介)<br>0801：本来打算这个月学三门课，结果今天学ML第一周的内容就遭受了深深的打击，这个月能弄完这一门都要谢天谢地了啦！<br><a id="more"></a></p>
+<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Machine Learning</p>
+<ul>
+<li>Grew out of work in AI</li>
+<li>New capability for computers</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>Database mining<ul>
+<li>Web click data</li>
+<li>medical records</li>
+<li>biology</li>
+<li>engineering</li>
+</ul>
+</li>
+<li>Applications can’t program by hand<ul>
+<li>Autonomous helicopter</li>
+<li>handwriting recognition</li>
+<li>most of Natural Language Processing(NLP)</li>
+<li>Computer Vision</li>
+</ul>
+</li>
+<li>Self-customizing programs<ul>
+<li>Amazon product recommendations</li>
+</ul>
+</li>
+<li>Understanding human learning brain(brain, real AI)</li>
+</ul>
+<h2 id="Supervised-Learning"><a href="#Supervised-Learning" class="headerlink" title="Supervised Learning"></a>Supervised Learning</h2><p><em>probably the most common type of ML problem</em></p>
+<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><h4 id="Housing-price-prediction"><a href="#Housing-price-prediction" class="headerlink" title="Housing price prediction"></a>Housing price prediction</h4><p>Given this data, you have a friend who owns a house that is 750 square feet and hoping to sell the house and they want to know how much the can get for the house.<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_15:33:48.jpg" alt="2016-08-01_15:33:48.jpg"></p>
+<p><strong>How can the learning algorithm help you?</strong></p>
+<ul>
+<li>straight line through the data<br>maybe about $150,000</li>
+<li>a second-order polynomial<br>closer to $200,000</li>
+</ul>
+<p>How to chose and how to decide do you want to fit a straight line to the data or do you want to fit the quadratic function to the data.(<strong>talk later</strong>)</p>
+<p><strong>What does this mean?</strong><br>Supervised learning refers to the fact that we gave the algorithm a data set in which the “right answers” were given.</p>
+<ul>
+<li>we give the algorithm a data set of houses in which for every example in this data set, we told it what is the right price so what is the actual price that, that house sold for and the toss of the algorithm was to just produce more of these right answers.</li>
+<li>also called <strong>a regression problem</strong> which means trying to predict a <em>continuous(not discrete)</em> value output.</li>
+</ul>
+<h4 id="Breast-cancer-malignant-benign"><a href="#Breast-cancer-malignant-benign" class="headerlink" title="Breast cancer (malignant, benign)"></a>Breast cancer (malignant, benign)</h4><p>Look at medical records and try to predict of a breast cancer as malignant or benign.<br>Let’s say a friend who tragically has a breast tumor, according to the size of her tumor, can you estimate what is the chance that a tumor is malignant versus benign?<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:00:36.jpg" alt="2016-08-01_16:00:36.jpg"></p>
+<p><strong>a classification problem</strong></p>
+<ul>
+<li>refers to we’re trying to predict a <em>discrete</em> value output: zero or one, malignant or benign.</li>
+<li>sometimes you can have more than two values for the two possible values for the output.<ul>
+<li>e.g. there are three types of breast cancers and so you may try to predict the discrete value of zero, one, two, or three with zero being benign, one means type one cancer, two means a second type of cancers, and three means the third type.</li>
+</ul>
+</li>
+</ul>
+<p><strong>another way to plot the data</strong><br>map it down to a real line and use different symbols to denote malignant versus benign examples.<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:29:37.jpg" alt="2016-08-01_16:29:37.jpg"></p>
+<p>↑↑↑we use only one feature or one attribute <em>tumor size</em><br>↓↓↓we have more than one feature, more than one attribute <em>age and tumor size</em><br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:30:57.jpg" alt="2016-08-01_16:30:57.jpg"><br>given a data set like this, the learning algorithm mighy throw the straight line through the data to try to separate out the malignant tumors from the benign ones.</p>
+<p><strong>How do you deal with an infinite numbers of feature?</strong><br>an algorithm called the Support Vector Machine</p>
+<ul>
+<li>allow a computer to deal with an infinite numbers of features.</li>
+</ul>
+<h3 id="Recap"><a href="#Recap" class="headerlink" title="Recap"></a>Recap</h3><ul>
+<li>Supervised learning lets you get the <em>correct</em> data</li>
+<li>a regression problem–predict a continuous(not discrete) value output</li>
+<li>a classification problem–predict a discrete value output</li>
+</ul>
+<h2 id="Unsupervised-Learning"><a href="#Unsupervised-Learning" class="headerlink" title="Unsupervised Learning"></a>Unsupervised Learning</h2><p>We’re given data that that doesn’t have any labels or that all has the same label or really no labels. And we’re not told what to do with it and what each data point is.<br>Instead we’re just told, here is a data set. Can you find some structure in the data?<br>an Unsupervised Learning algorithm might decide that the data lives in two different clusters<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:55:25.jpg" alt="2016-08-01_16:55:25.jpg"></p>
+<h3 id="clustering-algorithms"><a href="#clustering-algorithms" class="headerlink" title="clustering algorithms"></a>clustering algorithms</h3><h4 id="Examples-1"><a href="#Examples-1" class="headerlink" title="Examples"></a>Examples</h4><h5 id="Google-URLs"><a href="#Google-URLs" class="headerlink" title="Google URLs"></a>Google URLs</h5><p>you click different links then you get different stories.<br>So what Google News has done is look for tens of thousands of news stories and automatically cluster them together. The news stories that are all about the same topic get displayed together.</p>
+<h5 id="DNA-microarray-data"><a href="#DNA-microarray-data" class="headerlink" title="DNA microarray data"></a>DNA microarray data</h5><p> The idea is put a group of different individuals and for each of them, you measure how much they do or do not have a certain gene.<br> These colors, red, green, gray and so on, they show the degree to which different individuals do or do not have a specific gene.<br> <img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:03:40.jpg" alt="2016-08-01_17:03:40.jpg"><br> What you can do is run a clustering algorithm to group individuals into different categories or into different types of people.  </p>
+<h4 id="Applications"><a href="#Applications" class="headerlink" title="Applications"></a>Applications</h4><ul>
+<li>organize large computer clusters<br>at large data centers, figure out which machines tend to work together and if you put them together, you can make your data center work more efficiently</li>
+<li>social network analysis<br>given knowledge about which friends you email the most or given your Facebook friends or your Google+ circles, can we automatically identify which are cohesive groups of friends, also which are groups of people that all know each other?</li>
+<li>market segmentation<br>look at the customer data set and automatically discover market segments and group customers into different market segments so that you can automatically and more efficiently sell or market your different market segments together?</li>
+<li>surprisingly astronomical data analysis<br>gives surprisingly interesting useful theories of how galaxies are born.</li>
+</ul>
+<h3 id="cocktail-party-problem-algorithm"><a href="#cocktail-party-problem-algorithm" class="headerlink" title="cocktail party problem algorithm"></a>cocktail party problem algorithm</h3><p>(好了，我要上中文了)<br>想象有一个鸡尾酒会，房间里到处都是人，同时交谈，声音会重叠，你可能连站在你对面的那个人说的话都听不见。<br>那么重新想象一个只有两个人1和2的鸡尾酒会，他们同时交谈，房间里有两个麦克风A和B，放在不同的位置，因为距离不同，所以两个麦克风对这两个人的录音效果也不同。可能有在麦克风A那里1的声音大2的声音小，在B那里则是1的声音小2的声音大。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:33:12.jpg" alt="2016-08-01_17:33:12.jpg"><br>但是A和B都记录了两种声音，output的时候就会感受到声音的重叠。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:34:07.jpg" alt="2016-08-01_17:34:07.jpg"><br>假如两个人同时用不同的语言法语和英语数数，那么output的混音就是什么都听不见了，所以我们需要把法语和英语分开输出。</p>
+<p>这就是传说中的“鸡尾酒会问题算法”。<br>这么一个看上去简简单单的应用，区分两条音轨，用Java可能要写成千上万条代码。但是聪明机智锲而不舍的研究者们折腾出了下面这个，仅仅一条代码瞬间解决问题↓↓↓<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:24:09.jpg" alt="2016-08-01_17:24:09.jpg"><br>(看不懂这个公式)</p>
+<h3 id="Octave"><a href="#Octave" class="headerlink" title="Octave"></a>Octave</h3><p><strong>[W,s,v] = svd((repmat(sum(x.<em>x,1), size(x,1),1).</em>x)*x’)</strong><br>用的是Octave，也就是我们这门课要用的编程环境。<br>Octave/Matlab 和 Java/C++ 高下立见是吧。(还有我的Python也被黑了)</p>
+<ul>
+<li>SVD(singular value decomposition)–linear algebra routine which is built into octave</li>
+<li>using MATLAB to prototype is a really good way to do this</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/coursera/" rel="tag">#coursera</a>
+          
+            <a href="/tags/machine-learning/" rel="tag">#machine learning</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/31/A-Failed-Try/" rel="next" title="记一次失败的尝试">
+                <i class="fa fa-chevron-left"></i> 记一次失败的尝试
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Yibei Chen" />
+          <p class="site-author-name" itemprop="name">Yibei Chen</p>
+          <p class="site-description motion-element" itemprop="description">Keep writing and catch that python</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">23</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/Yibeichan" target="_blank" title="github">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  github
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/adelechen" target="_blank" title="zhihu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  zhihu
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://chatnone.com/" title="ChatNone" target="_blank">ChatNone</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://xiaolai.li/" title="xiaolai.li" target="_blank">xiaolai.li</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Supervised-Learning"><span class="nav-number">1.1.</span> <span class="nav-text">Supervised Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Examples"><span class="nav-number">1.1.1.</span> <span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Housing-price-prediction"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">Housing price prediction</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Breast-cancer-malignant-benign"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">Breast cancer (malignant, benign)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Recap"><span class="nav-number">1.1.2.</span> <span class="nav-text">Recap</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unsupervised-Learning"><span class="nav-number">1.2.</span> <span class="nav-text">Unsupervised Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#clustering-algorithms"><span class="nav-number">1.2.1.</span> <span class="nav-text">clustering algorithms</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Examples-1"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Google-URLs"><span class="nav-number">1.2.1.1.1.</span> <span class="nav-text">Google URLs</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#DNA-microarray-data"><span class="nav-number">1.2.1.1.2.</span> <span class="nav-text">DNA microarray data</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Applications"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">Applications</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cocktail-party-problem-algorithm"><span class="nav-number">1.2.2.</span> <span class="nav-text">cocktail party problem algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Octave"><span class="nav-number">1.2.3.</span> <span class="nav-text">Octave</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yibei Chen</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'yibeichen';
+      var disqus_identifier = '2016/08/01/Machine-Learning/';
+      var disqus_title = "Machine Learning";
+      var disqus_url = 'http://yibeichen.me/2016/08/01/Machine-Learning/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+
+  
+  
+
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+
+  
+
+</body>
+</html>

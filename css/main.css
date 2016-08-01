@@ -1305,7 +1305,7 @@ pre .javascript .function {
   }
 }
 .post-more-link {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .post-more-link .btn {
   color: #555;
@@ -1555,7 +1555,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b3917e;
+  background: #6e618c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2299,7 +2299,7 @@ hr {
   display: none;
 }
 .posts-expand .post {
-  margin-top: 120px;
+  margin-top: 50px;
 }
 .posts-expand .post:first-child {
   margin-top: 0;
