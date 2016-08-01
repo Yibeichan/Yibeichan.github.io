@@ -1226,7 +1226,7 @@ pre .javascript .function {
 .posts-expand .post-title-link {
   display: inline-block;
   position: relative;
-  color: #555;
+  color: #088CC7;
   border-bottom: none;
   line-height: 1.2;
   vertical-align: top;
@@ -1238,7 +1238,7 @@ pre .javascript .function {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #0570A0;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
