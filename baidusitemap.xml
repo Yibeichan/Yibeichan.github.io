@@ -4,6 +4,78 @@
 
     
   <url>
+    <loc>http://yibeichen.me/2016/08/01/Machine-Learning/</loc>
+    <lastmod>2016-08-03T05:36:37.000Z</lastmod>
+    <data>
+        <display>
+        <title>Machine Learning 课程笔记</title>
+        <pubTime>2016-08-01T06:28:11.000Z</pubTime>
+        
+        <tag>coursera</tag>
+         
+        <tag>machine learning</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yibeichen.me/2016/08/03/A-Joke/</loc>
+    <lastmod>2016-08-03T04:43:27.000Z</lastmod>
+    <data>
+        <display>
+        <title>一个玩笑之一个变量的线性回归</title>
+        <pubTime>2016-08-03T04:15:16.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yibeichen.me/2016/07/22/Something-about-Hexo/</loc>
+    <lastmod>2016-08-03T03:44:03.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo的安装、使用、折腾历程（不定期更新）</title>
+        <pubTime>2016-07-22T03:58:28.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+  <url>
+    <loc>http://yibeichen.me/2016/07/20/Introduction-to-Classical-Music/</loc>
+    <lastmod>2016-08-03T03:04:20.000Z</lastmod>
+    <data>
+        <display>
+        <title>Introduction to Classical Music 课程笔记</title>
+        <pubTime>2016-07-20T06:41:53.000Z</pubTime>
+        
+        <tag>music</tag>
+         
+        <tag>coursera</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yibeichen.me/2016/07/23/PY4E-Chapter-13-2/</loc>
     <lastmod>2016-08-01T10:14:11.000Z</lastmod>
     <data>
@@ -31,25 +103,6 @@
         <pubTime>2016-07-26T16:07:07.000Z</pubTime>
         
         <tag>VPN</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yibeichen.me/2016/08/01/Machine-Learning/</loc>
-    <lastmod>2016-08-01T09:59:54.000Z</lastmod>
-    <data>
-        <display>
-        <title>Machine Learning</title>
-        <pubTime>2016-08-01T06:28:11.000Z</pubTime>
-        
-        <tag>coursera</tag>
-         
-        <tag>machine learning</tag>
          
          
            
@@ -93,7 +146,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://yibeichen.me/2016/07/30/Test-for-Plugins/</loc>
@@ -329,28 +381,9 @@
         <title>Learning How To Learn 课程笔记</title>
         <pubTime>2016-07-07T16:06:40.000Z</pubTime>
         
+        <tag>coursera</tag>
+         
         <tag>method</tag>
-         
-        <tag>coursera</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yibeichen.me/2016/07/20/Listen-to-Music/</loc>
-    <lastmod>2016-07-29T06:29:22.000Z</lastmod>
-    <data>
-        <display>
-        <title>Listen to Music 课程笔记</title>
-        <pubTime>2016-07-20T06:41:53.000Z</pubTime>
-        
-        <tag>coursera</tag>
-         
-        <tag>music</tag>
          
          
            
@@ -371,23 +404,6 @@
         <tag>book</tag>
          
         <tag>三毛</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yibeichen.me/2016/07/22/Something-about-Hexo/</loc>
-    <lastmod>2016-07-27T08:33:07.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo的安装、使用、折腾历程（不定期更新）</title>
-        <pubTime>2016-07-22T03:58:28.000Z</pubTime>
-        
-        <tag>Hexo</tag>
          
          
            
@@ -429,6 +445,5 @@
     </data>
     </url>
 
-    
     
 </urlset>

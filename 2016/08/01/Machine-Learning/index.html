@@ -88,12 +88,12 @@
 
 
 
-<meta name="description" content="笔记完成时间：0801(简介)0801：本来打算这个月学三门课，结果今天学ML第一周的内容就遭受了深深的打击，这个月能弄完这一门都要谢天谢地了啦！">
+<meta name="description" content="笔记完成时间：0801(简介)0803(一元线性回归)0803：每天都有新问题之用markdown写数学公式。(好像并没有解决)0801：本来打算这个月学三门课，结果今天学ML第一周的内容就遭受了深深的打击，这个月能弄完这一门都要谢天谢地了啦！(因为笔记是自己看的，所以中英文夹杂在一起，有点混乱。)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Machine Learning">
+<meta property="og:title" content="Machine Learning 课程笔记">
 <meta property="og:url" content="http://yibeichen.me/2016/08/01/Machine-Learning/index.html">
 <meta property="og:site_name" content="舞！舞！舞！">
-<meta property="og:description" content="笔记完成时间：0801(简介)0801：本来打算这个月学三门课，结果今天学ML第一周的内容就遭受了深深的打击，这个月能弄完这一门都要谢天谢地了啦！">
+<meta property="og:description" content="笔记完成时间：0801(简介)0803(一元线性回归)0803：每天都有新问题之用markdown写数学公式。(好像并没有解决)0801：本来打算这个月学三门课，结果今天学ML第一周的内容就遭受了深深的打击，这个月能弄完这一门都要谢天谢地了啦！(因为笔记是自己看的，所以中英文夹杂在一起，有点混乱。)">
 <meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_15:33:48.jpg">
 <meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:00:36.jpg">
 <meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:29:37.jpg">
@@ -103,10 +103,13 @@
 <meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:33:12.jpg">
 <meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:34:07.jpg">
 <meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:24:09.jpg">
-<meta property="og:updated_time" content="2016-08-01T09:59:54.000Z">
+<meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-03_11:50:42.jpg">
+<meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-03_12:52:15.jpg">
+<meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-03_13:27:49.jpg">
+<meta property="og:updated_time" content="2016-08-03T05:36:37.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Machine Learning">
-<meta name="twitter:description" content="笔记完成时间：0801(简介)0801：本来打算这个月学三门课，结果今天学ML第一周的内容就遭受了深深的打击，这个月能弄完这一门都要谢天谢地了啦！">
+<meta name="twitter:title" content="Machine Learning 课程笔记">
+<meta name="twitter:description" content="笔记完成时间：0801(简介)0803(一元线性回归)0803：每天都有新问题之用markdown写数学公式。(好像并没有解决)0801：本来打算这个月学三门课，结果今天学ML第一周的内容就遭受了深深的打击，这个月能弄完这一门都要谢天谢地了啦！(因为笔记是自己看的，所以中英文夹杂在一起，有点混乱。)">
 <meta name="twitter:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-01_15:33:48.jpg">
 
 
@@ -130,7 +133,7 @@
 
   <link rel="canonical" href="http://yibeichen.me/2016/08/01/Machine-Learning/"/>
 
-  <title> Machine Learning | 舞！舞！舞！ </title>
+  <title> Machine Learning 课程笔记 | 舞！舞！舞！ </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -260,7 +263,7 @@
             
             
               
-                Machine Learning
+                Machine Learning 课程笔记
               
             
           </h1>
@@ -307,12 +310,14 @@
       
 
       
-        <p>笔记完成时间：0801(简介)<br>0801：本来打算这个月学三门课，结果今天学ML第一周的内容就遭受了深深的打击，这个月能弄完这一门都要谢天谢地了啦！<br><a id="more"></a></p>
+        <p>笔记完成时间：0801(简介)0803(一元线性回归)<br>0803：每天都有新问题之用markdown写数学公式。(好像并没有解决)<br>0801：本来打算这个月学三门课，结果今天学ML第一周的内容就遭受了深深的打击，这个月能弄完这一门都要谢天谢地了啦！(因为笔记是自己看的，所以中英文夹杂在一起，有点混乱。)<br><a id="more"></a><br>进入正文前再说两句：<br>第一天，本来是不打算记笔记的，但是找资料的时候，发现了一位学霸的笔记，这位学霸本科牛津，硕士帝国理工，博士华盛顿大学，翻了一下他的笔记，惊呆了！好详细！好吧，我也去记笔记了。<br>第二天，又找资料，这次找到了一个中国人的笔记，看完我就释然了，简洁好多。<br>比如，线性回归估计是整门课里我唯一看得懂的，前面那位学霸写了半张纸，后面这位只写了几句话。我觉得吧，还是中国人的方式适合我。所以，从第二天开始，笔记中的中文就比较多了。<br>忧心，感觉到了第三节课，我就看不懂了，可怎么办。</p>
+<hr>
 <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Machine Learning</p>
 <ul>
 <li>Grew out of work in AI</li>
 <li>New capability for computers</li>
 </ul>
+<p>Tom Mitchell provides a more <strong>modern definition</strong>: “A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.”<br>Example: playing checkers.<br>E = the experience of playing many games of checkers<br>T = the task of playing checkers.<br>P = the probability that the program will win the next game.</p>
 <p>Examples:</p>
 <ul>
 <li>Database mining<ul>
@@ -384,7 +389,32 @@
 <li>SVD(singular value decomposition)–linear algebra routine which is built into octave</li>
 <li>using MATLAB to prototype is a really good way to do this</li>
 </ul>
-
+<h1 id="Linear-Regression-with-One-Variable-一元线性回归"><a href="#Linear-Regression-with-One-Variable-一元线性回归" class="headerlink" title="Linear Regression with One Variable (一元线性回归)"></a>Linear Regression with One Variable (一元线性回归)</h1><h2 id="Model-and-Cost-Function"><a href="#Model-and-Cost-Function" class="headerlink" title="Model and Cost Function"></a>Model and Cost Function</h2><h3 id="Model-Representation"><a href="#Model-Representation" class="headerlink" title="Model Representation"></a>Model Representation</h3><p>Housing Price Predict</p>
+<ul>
+<li>supervised learning algorithm</li>
+<li>linear regression</li>
+</ul>
+<ol>
+<li>Training set (this is your data set)</li>
+<li>Notation (used throughout the course)<ul>
+<li>m = number of training examples</li>
+<li>x’s = input variables / features</li>
+<li>y’s = output variable “target” variables<ul>
+<li>(x,y) - single training example</li>
+<li>(x^{i}, y^{i}) - specific example (i^{th} training example)<ul>
+<li>i is an index to training set</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_11:50:42.jpg" alt="2016-08-03_11:50:42.jpg"><br>(把这一整张都截图下来不算侵权吧？忐忑)<br>这个函数的名字叫做hypothesis，跟科研中的“hypothesis”(假设)的含义有很大区别，反正约定俗称就这样称呼了，不用太惊讶。</p>
+<p>在预测房价这个问题中，一个自变量x(房子的面积)，一个因变量y(房价)，被称为一元线性回归, univariate也是一元的意思。<br>那么，怎么来表示函数h(hypothesis的缩写)呢？<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_12:52:15.jpg" alt="2016-08-03_12:52:15.jpg"><br>就是一元一次函数啦：y=b+kx</p>
+<h3 id="Cost-Function-成本函数"><a href="#Cost-Function-成本函数" class="headerlink" title="Cost Function (成本函数)"></a>Cost Function (成本函数)</h3><p>顾名思义，成本函数，当然是要降低成本，所以这个函数越小越好。</p>
+<p>也就是，根据样本数据，拟合一条直线出来。通常，这些样本数据的分布并不是非常完美的，它们大致会落在一条直线的附近。这条直线具体长什么样，取决于h函数的参数。<br>参数选得好，h函数做预测就会比较精确。而成本函数就是用来评估参数的好坏。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_13:27:49.jpg" alt="2016-08-03_13:27:49.jpg"><br>有没有觉得跟标准差的公式很相似？<br>道理是一样的，标准差也是用来描述一组数据的波动状况呀，越小表示数据越稳定。<br>所以呢，这个函数的另一个名字叫做 squared error function</p>
+<h1 id="Linear-Algebra-Review"><a href="#Linear-Algebra-Review" class="headerlink" title="Linear Algebra Review"></a>Linear Algebra Review</h1>
       
     </div>
 
@@ -424,6 +454,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/03/A-Joke/" rel="prev" title="一个玩笑之一个变量的线性回归">
+                一个玩笑之一个变量的线性回归 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -498,7 +532,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">23</span>
+              <span class="site-state-item-count">24</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -582,7 +616,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Supervised-Learning"><span class="nav-number">1.1.</span> <span class="nav-text">Supervised Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Examples"><span class="nav-number">1.1.1.</span> <span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Housing-price-prediction"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">Housing price prediction</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Breast-cancer-malignant-benign"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">Breast cancer (malignant, benign)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Recap"><span class="nav-number">1.1.2.</span> <span class="nav-text">Recap</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unsupervised-Learning"><span class="nav-number">1.2.</span> <span class="nav-text">Unsupervised Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#clustering-algorithms"><span class="nav-number">1.2.1.</span> <span class="nav-text">clustering algorithms</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Examples-1"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Google-URLs"><span class="nav-number">1.2.1.1.1.</span> <span class="nav-text">Google URLs</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#DNA-microarray-data"><span class="nav-number">1.2.1.1.2.</span> <span class="nav-text">DNA microarray data</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Applications"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">Applications</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cocktail-party-problem-algorithm"><span class="nav-number">1.2.2.</span> <span class="nav-text">cocktail party problem algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Octave"><span class="nav-number">1.2.3.</span> <span class="nav-text">Octave</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Supervised-Learning"><span class="nav-number">1.1.</span> <span class="nav-text">Supervised Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Examples"><span class="nav-number">1.1.1.</span> <span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Housing-price-prediction"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">Housing price prediction</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Breast-cancer-malignant-benign"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">Breast cancer (malignant, benign)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Recap"><span class="nav-number">1.1.2.</span> <span class="nav-text">Recap</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unsupervised-Learning"><span class="nav-number">1.2.</span> <span class="nav-text">Unsupervised Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#clustering-algorithms"><span class="nav-number">1.2.1.</span> <span class="nav-text">clustering algorithms</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Examples-1"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Google-URLs"><span class="nav-number">1.2.1.1.1.</span> <span class="nav-text">Google URLs</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#DNA-microarray-data"><span class="nav-number">1.2.1.1.2.</span> <span class="nav-text">DNA microarray data</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Applications"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">Applications</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cocktail-party-problem-algorithm"><span class="nav-number">1.2.2.</span> <span class="nav-text">cocktail party problem algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Octave"><span class="nav-number">1.2.3.</span> <span class="nav-text">Octave</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Linear-Regression-with-One-Variable-一元线性回归"><span class="nav-number">2.</span> <span class="nav-text">Linear Regression with One Variable (一元线性回归)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Model-and-Cost-Function"><span class="nav-number">2.1.</span> <span class="nav-text">Model and Cost Function</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Model-Representation"><span class="nav-number">2.1.1.</span> <span class="nav-text">Model Representation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cost-Function-成本函数"><span class="nav-number">2.1.2.</span> <span class="nav-text">Cost Function (成本函数)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Linear-Algebra-Review"><span class="nav-number">3.</span> <span class="nav-text">Linear Algebra Review</span></a></li></ol></div>
             
           </div>
         </section>
@@ -703,7 +737,7 @@
     <script type="text/javascript">
       var disqus_shortname = 'yibeichen';
       var disqus_identifier = '2016/08/01/Machine-Learning/';
-      var disqus_title = "Machine Learning";
+      var disqus_title = "Machine Learning 课程笔记";
       var disqus_url = 'http://yibeichen.me/2016/08/01/Machine-Learning/';
 
       function run_disqus_script(disqus_script){
