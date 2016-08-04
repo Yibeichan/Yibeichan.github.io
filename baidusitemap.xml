@@ -5,13 +5,32 @@
     
   <url>
     <loc>http://yibeichen.me/2016/08/04/An-Illusion/</loc>
-    <lastmod>2016-08-04T14:12:22.000Z</lastmod>
+    <lastmod>2016-08-04T14:21:26.000Z</lastmod>
     <data>
         <display>
         <title>黄粱一梦</title>
         <pubTime>2016-08-04T13:24:20.000Z</pubTime>
         
         <tag>nonsense</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yibeichen.me/2016/07/30/Test-for-Plugins/</loc>
+    <lastmod>2016-08-04T14:21:22.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo插件测试 (未完)</title>
+        <pubTime>2016-07-30T04:34:12.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>plugin</tag>
          
          
            
@@ -202,23 +221,6 @@
         <tag>machine learning</tag>
          
         <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yibeichen.me/2016/07/30/Test-for-Plugins/</loc>
-    <lastmod>2016-07-30T09:46:56.000Z</lastmod>
-    <data>
-        <display>
-        <title>Test for Plugins</title>
-        <pubTime>2016-07-30T04:34:12.000Z</pubTime>
-        
-        <tag>plugin</tag>
          
          
            
