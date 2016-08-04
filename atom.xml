@@ -57,6 +57,159 @@
   </entry>
   
   <entry>
+    <title>Machine Learning 课程笔记 (未完)</title>
+    <link href="http://yibeichen.me/2016/08/03/Machine-Learning/"/>
+    <id>http://yibeichen.me/2016/08/03/Machine-Learning/</id>
+    <published>2016-08-03T12:28:11.000Z</published>
+    <updated>2016-08-04T12:58:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>笔记完成时间：0804(线代复习) 0803(一元线性回归) 0801(简介)<br>0804：LaTex的问题要尽快解决。<br>0803：怎么用markdown写数学公式？<br>0801：抽风，笔记用英文开始，最后还是转向了中文。<br><a id="more"></a></p>
+<hr>
+<p>Coursera地址: <a href="https://www.coursera.org/learn/machine-learning" target="_blank" rel="external">机器学习</a></p>
+<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Machine Learning</p>
+<ul>
+<li>Grew out of work in AI</li>
+<li>New capability for computers</li>
+</ul>
+<p>Tom Mitchell provides a more <strong>modern definition</strong>: “A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.”<br>Example: playing checkers.<br>E = the experience of playing many games of checkers<br>T = the task of playing checkers.<br>P = the probability that the program will win the next game.</p>
+<p>Examples:</p>
+<ul>
+<li>Database mining<ul>
+<li>Web click data</li>
+<li>medical records</li>
+<li>biology</li>
+<li>engineering</li>
+</ul>
+</li>
+<li>Applications can’t program by hand<ul>
+<li>Autonomous helicopter</li>
+<li>handwriting recognition</li>
+<li>most of Natural Language Processing(NLP)</li>
+<li>Computer Vision</li>
+</ul>
+</li>
+<li>Self-customizing programs<ul>
+<li>Amazon product recommendations</li>
+</ul>
+</li>
+<li>Understanding human learning brain(brain, real AI)</li>
+</ul>
+<h2 id="Supervised-Learning"><a href="#Supervised-Learning" class="headerlink" title="Supervised Learning"></a>Supervised Learning</h2><p><em>probably the most common type of ML problem</em></p>
+<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><h4 id="Housing-price-prediction"><a href="#Housing-price-prediction" class="headerlink" title="Housing price prediction"></a>Housing price prediction</h4><p>Given this data, you have a friend who owns a house that is 750 square feet and hoping to sell the house and they want to know how much the can get for the house.<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_15:33:48.jpg" alt="2016-08-01_15:33:48.jpg"></p>
+<p><strong>How can the learning algorithm help you?</strong></p>
+<ul>
+<li>straight line through the data<br>maybe about $150,000</li>
+<li>a second-order polynomial<br>closer to $200,000</li>
+</ul>
+<p>How to chose and how to decide do you want to fit a straight line to the data or do you want to fit the quadratic function to the data.(<strong>talk later</strong>)</p>
+<p><strong>What does this mean?</strong><br>Supervised learning refers to the fact that we gave the algorithm a data set in which the “right answers” were given.</p>
+<ul>
+<li>we give the algorithm a data set of houses in which for every example in this data set, we told it what is the right price so what is the actual price that, that house sold for and the toss of the algorithm was to just produce more of these right answers.</li>
+<li>also called <strong>a regression problem</strong> which means trying to predict a <em>continuous(not discrete)</em> value output.</li>
+</ul>
+<h4 id="Breast-cancer-malignant-benign"><a href="#Breast-cancer-malignant-benign" class="headerlink" title="Breast cancer (malignant, benign)"></a>Breast cancer (malignant, benign)</h4><p>Look at medical records and try to predict of a breast cancer as malignant or benign.<br>Let’s say a friend who tragically has a breast tumor, according to the size of her tumor, can you estimate what is the chance that a tumor is malignant versus benign?<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:00:36.jpg" alt="2016-08-01_16:00:36.jpg"></p>
+<p><strong>a classification problem</strong></p>
+<ul>
+<li>refers to we’re trying to predict a <em>discrete</em> value output: zero or one, malignant or benign.</li>
+<li>sometimes you can have more than two values for the two possible values for the output.<ul>
+<li>e.g. there are three types of breast cancers and so you may try to predict the discrete value of zero, one, two, or three with zero being benign, one means type one cancer, two means a second type of cancers, and three means the third type.</li>
+</ul>
+</li>
+</ul>
+<p><strong>another way to plot the data</strong><br>map it down to a real line and use different symbols to denote malignant versus benign examples.<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:29:37.jpg" alt="2016-08-01_16:29:37.jpg"></p>
+<p>↑↑↑we use only one feature or one attribute <em>tumor size</em><br>↓↓↓we have more than one feature, more than one attribute <em>age and tumor size</em><br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:30:57.jpg" alt="2016-08-01_16:30:57.jpg"><br>given a data set like this, the learning algorithm mighy throw the straight line through the data to try to separate out the malignant tumors from the benign ones.</p>
+<p><strong>How do you deal with an infinite numbers of feature?</strong><br>an algorithm called the Support Vector Machine</p>
+<ul>
+<li>allow a computer to deal with an infinite numbers of features.</li>
+</ul>
+<h3 id="Recap"><a href="#Recap" class="headerlink" title="Recap"></a>Recap</h3><ul>
+<li>Supervised learning lets you get the <em>correct</em> data</li>
+<li>a regression problem–predict a continuous(not discrete) value output</li>
+<li>a classification problem–predict a discrete value output</li>
+</ul>
+<h2 id="Unsupervised-Learning"><a href="#Unsupervised-Learning" class="headerlink" title="Unsupervised Learning"></a>Unsupervised Learning</h2><p>We’re given data that that doesn’t have any labels or that all has the same label or really no labels. And we’re not told what to do with it and what each data point is.<br>Instead we’re just told, here is a data set. Can you find some structure in the data?<br>an Unsupervised Learning algorithm might decide that the data lives in two different clusters<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:55:25.jpg" alt="2016-08-01_16:55:25.jpg"></p>
+<h3 id="clustering-algorithms"><a href="#clustering-algorithms" class="headerlink" title="clustering algorithms"></a>clustering algorithms</h3><h4 id="Examples-1"><a href="#Examples-1" class="headerlink" title="Examples"></a>Examples</h4><h5 id="Google-URLs"><a href="#Google-URLs" class="headerlink" title="Google URLs"></a>Google URLs</h5><p>you click different links then you get different stories.<br>So what Google News has done is look for tens of thousands of news stories and automatically cluster them together. The news stories that are all about the same topic get displayed together.</p>
+<h5 id="DNA-microarray-data"><a href="#DNA-microarray-data" class="headerlink" title="DNA microarray data"></a>DNA microarray data</h5><p> The idea is put a group of different individuals and for each of them, you measure how much they do or do not have a certain gene.<br> These colors, red, green, gray and so on, they show the degree to which different individuals do or do not have a specific gene.<br> <img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:03:40.jpg" alt="2016-08-01_17:03:40.jpg"><br> What you can do is run a clustering algorithm to group individuals into different categories or into different types of people.  </p>
+<h4 id="Applications"><a href="#Applications" class="headerlink" title="Applications"></a>Applications</h4><ul>
+<li>organize large computer clusters<br>at large data centers, figure out which machines tend to work together and if you put them together, you can make your data center work more efficiently</li>
+<li>social network analysis<br>given knowledge about which friends you email the most or given your Facebook friends or your Google+ circles, can we automatically identify which are cohesive groups of friends, also which are groups of people that all know each other?</li>
+<li>market segmentation<br>look at the customer data set and automatically discover market segments and group customers into different market segments so that you can automatically and more efficiently sell or market your different market segments together?</li>
+<li>surprisingly astronomical data analysis<br>gives surprisingly interesting useful theories of how galaxies are born.</li>
+</ul>
+<h3 id="cocktail-party-problem-algorithm"><a href="#cocktail-party-problem-algorithm" class="headerlink" title="cocktail party problem algorithm"></a>cocktail party problem algorithm</h3><p>(好了，我要上中文了)<br>想象有一个鸡尾酒会，房间里到处都是人，同时交谈，声音会重叠，你可能连站在你对面的那个人说的话都听不见。<br>那么重新想象一个只有两个人1和2的鸡尾酒会，他们同时交谈，房间里有两个麦克风A和B，放在不同的位置，因为距离不同，所以两个麦克风对这两个人的录音效果也不同。可能有在麦克风A那里1的声音大2的声音小，在B那里则是1的声音小2的声音大。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:33:12.jpg" alt="2016-08-01_17:33:12.jpg"><br>但是A和B都记录了两种声音，output的时候就会感受到声音的重叠。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:34:07.jpg" alt="2016-08-01_17:34:07.jpg"><br>假如两个人同时用不同的语言法语和英语数数，那么output的混音就是什么都听不见了，所以我们需要把法语和英语分开输出。</p>
+<p>这就是传说中的“鸡尾酒会问题算法”。<br>这么一个看上去简简单单的应用，区分两条音轨，用Java可能要写成千上万条代码。但是聪明机智锲而不舍的研究者们折腾出了下面这个，仅仅一条代码瞬间解决问题↓↓↓<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:24:09.jpg" alt="2016-08-01_17:24:09.jpg"><br>(看不懂这个公式)</p>
+<h3 id="Octave"><a href="#Octave" class="headerlink" title="Octave"></a>Octave</h3><p><strong>[W,s,v] = svd((repmat(sum(x.<em>x,1), size(x,1),1).</em>x)*x’)</strong><br>用的是Octave，也就是我们这门课要用的编程环境。<br>Octave/Matlab 和 Java/C++ 高下立见是吧。(还有我的Python也被黑了)</p>
+<ul>
+<li>SVD(singular value decomposition)–linear algebra routine which is built into octave</li>
+<li>using MATLAB to prototype is a really good way to do this</li>
+</ul>
+<h1 id="Linear-Regression-with-One-Variable-一元线性回归"><a href="#Linear-Regression-with-One-Variable-一元线性回归" class="headerlink" title="Linear Regression with One Variable (一元线性回归)"></a>Linear Regression with One Variable (一元线性回归)</h1><h2 id="Model-and-Cost-Function"><a href="#Model-and-Cost-Function" class="headerlink" title="Model and Cost Function"></a>Model and Cost Function</h2><h3 id="Model-Representation"><a href="#Model-Representation" class="headerlink" title="Model Representation"></a>Model Representation</h3><p>Housing Price Predict</p>
+<ul>
+<li>supervised learning algorithm</li>
+<li>linear regression</li>
+</ul>
+<ol>
+<li>Training set (this is your data set)</li>
+<li>Notation (used throughout the course)<ul>
+<li>m = number of training examples</li>
+<li>x’s = input variables / features</li>
+<li>y’s = output variable “target” variables<ul>
+<li>(x,y) - single training example</li>
+<li>(x^{i}, y^{i}) - specific example (i^{th} training example)<ul>
+<li>i is an index to training set</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_11:50:42.jpg" alt="2016-08-03_11:50:42.jpg"><br>(把这一整张都截图下来不算侵权吧？忐忑)<br>这个函数的名字叫做hypothesis，跟科研中的“hypothesis”(假设)的含义有很大区别，反正约定俗称就这样称呼了，不用太惊讶。</p>
+<p>在预测房价这个问题中，一个自变量x(房子的面积)，一个因变量y(房价)，被称为一元线性回归, univariate也是一元的意思。<br>那么，怎么来表示函数h(hypothesis的缩写)呢？<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_12:52:15.jpg" alt="2016-08-03_12:52:15.jpg"><br>就是一元一次函数啦：y=b+kx</p>
+<h3 id="Cost-Function-成本函数"><a href="#Cost-Function-成本函数" class="headerlink" title="Cost Function (成本函数)"></a>Cost Function (成本函数)</h3><p>顾名思义，成本函数，当然是要降低成本，所以这个函数越小越好。</p>
+<p>也就是，根据样本数据，拟合一条直线出来。通常，这些样本数据的分布并不是非常完美的，它们大致会落在一条直线的附近。这条直线具体长什么样，取决于h函数的参数。<br>参数选得好，h函数做预测就会比较精确。而成本函数就是用来评估参数的好坏。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_13:27:49.jpg" alt="2016-08-03_13:27:49.jpg"><br>有没有觉得跟标准差的公式很相似？<br>道理是一样的，标准差也是用来描述一组数据的波动状况呀，越小表示数据越稳定。<br>所以呢，这个函数的另一个名字叫做 squared error function。</p>
+<p>hθ(x)是关于变量x的函数，J(θ1)是关于参数θ的函数。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_2016-08-03_14:59:51.jpg" alt="2016-08-03_2016-08-03_14:59:51.jpg"><br>对于每一个θ1，都有一个对应的J(θ1)曲线<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_15:00:09.jpg" alt="2016-08-03_15:00:09.jpg"><br>而我们的目标就是找到一个θ1，使得J(θ1)最小化，这张图上的最小值是θ1=1，我们就可以用这个θ1=1来设定我们的拟合函数h。</p>
+<p>上面这个案例是简化了算法，将θ0设定为0，接下来就回到原始的复杂数据上，来感受一下更普遍一点的线性回归。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_19:21:13.jpg" alt="2016-08-03_19:21:13.jpg"><br>这下我们有了两个参数θ0,θ1，J(θ0,θ1)的图形就不再是一条线了，而是下面这种三维曲面图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_19:25:25.jpg" alt="2016-08-03_19:25:25.jpg"><br>不过，为了便于理解，接下来还是用轮廓图讲解：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_19:28:36.jpg" alt="2016-08-03_19:28:36.jpg"><br>右边图中的椭圆，就是J(θ0,θ1)值相同的所有点的集合。<br>同心圆最中间那个圈的中心，就是函数J的最小值。</p>
+<h2 id="Parameter-Learning"><a href="#Parameter-Learning" class="headerlink" title="Parameter Learning"></a>Parameter Learning</h2><h3 id="Gradient-Descent-梯度下降"><a href="#Gradient-Descent-梯度下降" class="headerlink" title="Gradient Descent (梯度下降)"></a>Gradient Descent (梯度下降)</h3><p>这种算法在机器学习中应用得很广，不仅仅是一元线性回归，下面这个就是常用的做法：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:06:28.jpg" alt="2016-08-03_21:06:28.jpg"><br>假设有个函数J(不一定是线性回归)，要求它的成本函数，通常是要先设定θ0,θ1，把它们都初始为0，然后一点点改变这两个参数，使得成本函数的值最低，图形如下：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:06:55.jpg" alt="2016-08-03_21:06:55.jpg"><br>为了更好地理解梯度下降，你可以把图上的这两个高点想象成公园的两座小山，你站在其中一座山的某一点上，环顾四周，问自己：“假如要以最快的速度下山，我该走哪个方向呢？”你找到了一个方向，往前走了一步，现在你站在新的起点上，再一次问自己刚刚那个相同的问题。然后又迈出了一步……如此重复这几个步骤，直到你抵达局部最低点。<br>这个算法的有趣之处在于，如果你的起点偏离了一些，你得到的局部最优解也是不同的。</p>
+<p>接下来是梯度下降算法的定义：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:22:28.jpg" alt="2016-08-03_21:22:28.jpg"><br>这张图特意保留了笔记，助于日后唤醒记忆。<br>α 指的是learning rate，它控制着我们更新参数θj的幅度。<br>α 旁边的那串是导数项(derivative term)<br>要注意的是赋值的时候要同步更新 <strong>simultaneous update</strong><br>做课间练习的时候我还错了！明明右边的算法是错的，我还是用了它……</p>
+<p>接下来讲了偏导数，不懂，没关系，课程还是可以继续下去！<br>至于导数，现学：就是求曲线上一点的切线的斜率，如果斜率为正，那就是正导数。下面这两个图就是一个正导数和一个负导数：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:39:01.jpg" alt="2016-08-03_21:39:01.jpg"></p>
+<p>接下来看看α的大小对梯度下降的影响：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:41:31.jpg" alt="2016-08-03_21:41:31.jpg"><br>如果它的值过大，θ1会跑得很快，可能永远也找不到最优解。<br>如果它的值过小，θ1跑得会慢一点，但肯定不会错过最低点。</p>
+<p>假如我们初始化的θ1已经是最低点了，再用梯度下降这个公式会怎么样呢？<br>保持不变，因为导数为0了呀。<br>正是由于导数的存在，所以在越接近最低点的时候θ1的值变化得越小，因为斜率越小呀，所以不用总是改变α的值。</p>
+<h3 id="Gradient-Descent-For-Linear-Regression"><a href="#Gradient-Descent-For-Linear-Regression" class="headerlink" title="Gradient Descent For Linear Regression"></a>Gradient Descent For Linear Regression</h3><p>先复习一下这两个算法，如何将梯度下降应用到线性回归的成本函数中呢？最重要的部分是导数那块：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:51:46.jpg" alt="2016-08-03_21:51:46.jpg"><br>来，让我们推导一下：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:54:22.jpg" alt="2016-08-03_21:54:22.jpg"><br>再代入一下：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:58:42.jpg" alt="2016-08-03_21:58:42.jpg"><br>还记得吗？梯度下降的图形有两个山头，所以它有好几个局部最优解，但是成本函数的图形是一个 <strong>凸函数</strong>，又称 <strong>弓形函数</strong>，只有一个全局最优解。所以呢，用梯度下降来计算成本函数，只会得到一个全局最优解。</p>
+<p>两种算法结合在一起构成的新的算法，就是线性回归算法，又称为批量梯度下降 <strong>“Batch” Gradient Descent</strong>。<br>“批量”意味着，下降过程中用到了所有样本数据。<br>也有一些其他的梯度下降方法，并不会用到所有的数据，而只是用了这些数据的子集。以后的课程会介绍。</p>
+<p>线性代数中有一种称为正规方程 <strong>normal equations</strong> 的方法，可以不用梯度下降，也能求出J的最小值。不过，梯度下降更适用于large data。</p>
+<h1 id="Linear-Algebra-Review"><a href="#Linear-Algebra-Review" class="headerlink" title="Linear Algebra Review"></a>Linear Algebra Review</h1><h2 id="Matrices-and-Vectors-矩阵和向量"><a href="#Matrices-and-Vectors-矩阵和向量" class="headerlink" title="Matrices and Vectors (矩阵和向量)"></a>Matrices and Vectors (矩阵和向量)</h2><h3 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h3><p>矩阵可以理解为一个二维数组，矩阵的维度计算：行数乘以列数，比如4X2矩阵(R4X2,注意数字是上标)。<br>如何来表示一个特定的矩阵元素呢？以下图为例：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_18:39:42.jpg" alt="2016-08-04_18:39:42.jpg"><br>所以，A11=1402, A12=191, A43=undefined (注意，数字是下标)</p>
+<h3 id="向量-1"><a href="#向量-1" class="headerlink" title="向量"></a>向量</h3><p>向量是一个nX1的矩阵，n是行数，1是列数，向量的维度计算以行数为参考，比如4维向量(R4,数字是上标)。<br>向量内的元素引用公式为：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_CodeCogsEqn.png" alt="2016-08-04_CodeCogsEqn.png"><br>({y}^{i}={i}^{th}$)<br>通常有两种向量索引表示方法：1-索引和0-索引，如下图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_18:57:29.jpg" alt="2016-08-04_18:57:29.jpg"><br>很像Python里的数组，用的是0-indexed。<br>在数学上，用1-indexed比较多，在机器学习中0-indexed则更广泛些。</p>
+<p>最后，在矩阵和向量的使用过程中，通常会用大写字母来表示矩阵，用小写字母表示数字或向量。</p>
+<h2 id="Addition-and-Scalar-Multiplication-加法和标量乘法"><a href="#Addition-and-Scalar-Multiplication-加法和标量乘法" class="headerlink" title="Addition and Scalar Multiplication (加法和标量乘法)"></a>Addition and Scalar Multiplication (加法和标量乘法)</h2><h3 id="矩阵加法"><a href="#矩阵加法" class="headerlink" title="矩阵加法"></a>矩阵加法</h3><p>两个矩阵相加，就是把两个矩阵里的元素逐个相加，只有两个维度相同的矩阵才可以相加。</p>
+<h3 id="标量乘法"><a href="#标量乘法" class="headerlink" title="标量乘法"></a>标量乘法</h3><p>scalar指的是real number，也就是说，一个实数和一个矩阵相乘，就是把矩阵中的每个元素都和这个实数相乘。除法也是同理。乘除前后的矩阵维度是不变的。</p>
+<h3 id="综合运算-combination-of-operands"><a href="#综合运算-combination-of-operands" class="headerlink" title="综合运算(combination of operands)"></a>综合运算(combination of operands)</h3><p>也很简单啦，和实数的综合运算规律一样：先乘除后加减。</p>
+<h2 id="Matrix-Vector-Multiplication-矩阵向量乘法"><a href="#Matrix-Vector-Multiplication-矩阵向量乘法" class="headerlink" title="Matrix Vector Multiplication(矩阵向量乘法)"></a>Matrix Vector Multiplication(矩阵向量乘法)</h2><p>来看一个例子，一个3X2的矩阵和一个2X1向量相乘会得到一个3*1向量。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_19:38:23.jpg" alt="2016-08-04_19:38:23.jpg"><br>注意了，这里讲的是一个m x n矩阵和一个n x 1矩阵(n维向量)相乘，得到一个m维向量。<br>具体做法是：把矩阵A的第一行元素和向量x里对应的元素相乘后相加，得到向量y的第一个元素，再把矩阵第二行元素和向量x对应的元素相乘后相加，得到向量y的第二个元素……以此类推。<br>来看一下前几节课说的房价预测的案例，怎么用矩阵向量乘法来快速计算呢？如下图：<img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_19:48:35.jpg" alt="2016-08-04_19:48:35.jpg"><br>把它们弄成矩阵和向量，就可以很容易地用计算机语言比如Octave(Python也可以)来实现了：<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:, <span class="number">1000</span>,</div><div class="line">  prediction(<span class="built_in">i</span>):……</div></pre></td></tr></table></figure></p>
+<p>上面这行代码可能是Octave的，总之这样写代码很简洁高效。</p>
+<h2 id="Matrix-Matrix-Multiplication-矩阵和矩阵相乘"><a href="#Matrix-Matrix-Multiplication-矩阵和矩阵相乘" class="headerlink" title="Matrix Matrix Multiplication (矩阵和矩阵相乘)"></a>Matrix Matrix Multiplication (矩阵和矩阵相乘)</h2><p>矩阵和矩阵相乘，可以把第二个矩阵拆分为多个向量，就变成了矩阵和向量相乘，最后把得到的向量组合成矩阵：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_19:57:46.jpg" alt="2016-08-04_19:57:46.jpg"><br>注意，相乘的两个矩阵是有特点的，前一个矩阵的列数等于后一个矩阵的行数。<br>再用房价预测的案例，当有多个假设函数的时候，怎么用矩阵和矩阵乘法来计算：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:02:28.jpg" alt="2016-08-04_20:02:28.jpg"><br>一次矩阵计算就可以得到12个预测结果，而且很多编程语言都有丰富的线性代数库，用起来非常方便。</p>
+<h2 id="Matrix-Multiplication-Properties"><a href="#Matrix-Multiplication-Properties" class="headerlink" title="Matrix Multiplication Properties"></a>Matrix Multiplication Properties</h2><p>介绍一些关于矩阵乘法的特性：</p>
+<ol>
+<li>乘法交换律对矩阵并不适用。(《上帝掷骰子吗？》讲到了是薛定谔还是谁？就是通过矩阵的交换乘法发现了量子的特征？啊呀，不记得了。)</li>
+<li>矩阵符合乘法结合律。<h3 id="单位矩阵-identity-matrix"><a href="#单位矩阵-identity-matrix" class="headerlink" title="单位矩阵 (identity matrix)"></a>单位矩阵 (identity matrix)</h3>这样来理解吧，在实数乘法中，1乘以任何数都等于任何数，所以1就是一个identity，而在矩阵界也有这样的数：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:24:45.jpg" alt="2016-08-04_20:24:45.jpg"><br>看看这个销魂的板书，这种单位矩阵的特点就是，对角线都是1，其他部分全部是0.<h2 id="Inverse-and-Transpose-求倒和转置"><a href="#Inverse-and-Transpose-求倒和转置" class="headerlink" title="Inverse and Transpose (求倒和转置)"></a>Inverse and Transpose (求倒和转置)</h2><h3 id="求倒运算"><a href="#求倒运算" class="headerlink" title="求倒运算"></a>求倒运算</h3>实数界除了0以外的数都有倒数，那么矩阵界呢？<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:28:58.jpg" alt="2016-08-04_20:28:58.jpg"><br>注意，只有方阵才有导数，如果方阵的所有元素都是0，也是没有倒数的，矩阵和它的倒数相乘得到的是单位矩阵，所以其实是根据单位矩阵来推算矩阵倒数，很多编程软件都有求逆矩阵的软件库。</li>
+</ol>
+<p>另外，对于那些没有倒数的矩阵，他们被称为奇异(singular)矩阵或者退化(degenerate)矩阵。</p>
+<h3 id="转置运算"><a href="#转置运算" class="headerlink" title="转置运算"></a>转置运算</h3><p>最直观的理解就是，沿着矩阵的对角线画一条线，再以这条线为轴将矩阵翻转。来继续看一看销魂的板书吧：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:38:21.jpg" alt="2016-08-04_20:38:21.jpg"><br>如何检验转置运算的对错？看第一个和最后一个元素，它俩是不变的。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;笔记完成时间：0804(线代复习) 0803(一元线性回归) 0801(简介)&lt;br&gt;0804：LaTex的问题要尽快解决。&lt;br&gt;0803：怎么用markdown写数学公式？&lt;br&gt;0801：抽风，笔记用英文开始，最后还是转向了中文。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
+      <category term="machine learning" scheme="http://yibeichen.me/tags/machine-learning/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Introduction to Classical Music 课程笔记 (未完)</title>
     <link href="http://yibeichen.me/2016/08/03/Introduction-to-Classical-Music/"/>
     <id>http://yibeichen.me/2016/08/03/Introduction-to-Classical-Music/</id>
@@ -216,159 +369,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Machine Learning 课程笔记 (未完)</title>
-    <link href="http://yibeichen.me/2016/08/01/Machine-Learning/"/>
-    <id>http://yibeichen.me/2016/08/01/Machine-Learning/</id>
-    <published>2016-08-01T06:28:11.000Z</published>
-    <updated>2016-08-04T12:51:22.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>笔记完成时间：0804(线代复习) 0803(一元线性回归) 0801(简介)<br>0804：LaTex的问题要尽快解决。<br>0803：怎么用markdown写数学公式？<br>0801：抽风，笔记用英文开始，最后还是转向了中文。<br><a id="more"></a></p>
-<hr>
-<p>Coursera地址: <a href="https://www.coursera.org/learn/machine-learning" target="_blank" rel="external">机器学习</a></p>
-<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Machine Learning</p>
-<ul>
-<li>Grew out of work in AI</li>
-<li>New capability for computers</li>
-</ul>
-<p>Tom Mitchell provides a more <strong>modern definition</strong>: “A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.”<br>Example: playing checkers.<br>E = the experience of playing many games of checkers<br>T = the task of playing checkers.<br>P = the probability that the program will win the next game.</p>
-<p>Examples:</p>
-<ul>
-<li>Database mining<ul>
-<li>Web click data</li>
-<li>medical records</li>
-<li>biology</li>
-<li>engineering</li>
-</ul>
-</li>
-<li>Applications can’t program by hand<ul>
-<li>Autonomous helicopter</li>
-<li>handwriting recognition</li>
-<li>most of Natural Language Processing(NLP)</li>
-<li>Computer Vision</li>
-</ul>
-</li>
-<li>Self-customizing programs<ul>
-<li>Amazon product recommendations</li>
-</ul>
-</li>
-<li>Understanding human learning brain(brain, real AI)</li>
-</ul>
-<h2 id="Supervised-Learning"><a href="#Supervised-Learning" class="headerlink" title="Supervised Learning"></a>Supervised Learning</h2><p><em>probably the most common type of ML problem</em></p>
-<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><h4 id="Housing-price-prediction"><a href="#Housing-price-prediction" class="headerlink" title="Housing price prediction"></a>Housing price prediction</h4><p>Given this data, you have a friend who owns a house that is 750 square feet and hoping to sell the house and they want to know how much the can get for the house.<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_15:33:48.jpg" alt="2016-08-01_15:33:48.jpg"></p>
-<p><strong>How can the learning algorithm help you?</strong></p>
-<ul>
-<li>straight line through the data<br>maybe about $150,000</li>
-<li>a second-order polynomial<br>closer to $200,000</li>
-</ul>
-<p>How to chose and how to decide do you want to fit a straight line to the data or do you want to fit the quadratic function to the data.(<strong>talk later</strong>)</p>
-<p><strong>What does this mean?</strong><br>Supervised learning refers to the fact that we gave the algorithm a data set in which the “right answers” were given.</p>
-<ul>
-<li>we give the algorithm a data set of houses in which for every example in this data set, we told it what is the right price so what is the actual price that, that house sold for and the toss of the algorithm was to just produce more of these right answers.</li>
-<li>also called <strong>a regression problem</strong> which means trying to predict a <em>continuous(not discrete)</em> value output.</li>
-</ul>
-<h4 id="Breast-cancer-malignant-benign"><a href="#Breast-cancer-malignant-benign" class="headerlink" title="Breast cancer (malignant, benign)"></a>Breast cancer (malignant, benign)</h4><p>Look at medical records and try to predict of a breast cancer as malignant or benign.<br>Let’s say a friend who tragically has a breast tumor, according to the size of her tumor, can you estimate what is the chance that a tumor is malignant versus benign?<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:00:36.jpg" alt="2016-08-01_16:00:36.jpg"></p>
-<p><strong>a classification problem</strong></p>
-<ul>
-<li>refers to we’re trying to predict a <em>discrete</em> value output: zero or one, malignant or benign.</li>
-<li>sometimes you can have more than two values for the two possible values for the output.<ul>
-<li>e.g. there are three types of breast cancers and so you may try to predict the discrete value of zero, one, two, or three with zero being benign, one means type one cancer, two means a second type of cancers, and three means the third type.</li>
-</ul>
-</li>
-</ul>
-<p><strong>another way to plot the data</strong><br>map it down to a real line and use different symbols to denote malignant versus benign examples.<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:29:37.jpg" alt="2016-08-01_16:29:37.jpg"></p>
-<p>↑↑↑we use only one feature or one attribute <em>tumor size</em><br>↓↓↓we have more than one feature, more than one attribute <em>age and tumor size</em><br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:30:57.jpg" alt="2016-08-01_16:30:57.jpg"><br>given a data set like this, the learning algorithm mighy throw the straight line through the data to try to separate out the malignant tumors from the benign ones.</p>
-<p><strong>How do you deal with an infinite numbers of feature?</strong><br>an algorithm called the Support Vector Machine</p>
-<ul>
-<li>allow a computer to deal with an infinite numbers of features.</li>
-</ul>
-<h3 id="Recap"><a href="#Recap" class="headerlink" title="Recap"></a>Recap</h3><ul>
-<li>Supervised learning lets you get the <em>correct</em> data</li>
-<li>a regression problem–predict a continuous(not discrete) value output</li>
-<li>a classification problem–predict a discrete value output</li>
-</ul>
-<h2 id="Unsupervised-Learning"><a href="#Unsupervised-Learning" class="headerlink" title="Unsupervised Learning"></a>Unsupervised Learning</h2><p>We’re given data that that doesn’t have any labels or that all has the same label or really no labels. And we’re not told what to do with it and what each data point is.<br>Instead we’re just told, here is a data set. Can you find some structure in the data?<br>an Unsupervised Learning algorithm might decide that the data lives in two different clusters<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_16:55:25.jpg" alt="2016-08-01_16:55:25.jpg"></p>
-<h3 id="clustering-algorithms"><a href="#clustering-algorithms" class="headerlink" title="clustering algorithms"></a>clustering algorithms</h3><h4 id="Examples-1"><a href="#Examples-1" class="headerlink" title="Examples"></a>Examples</h4><h5 id="Google-URLs"><a href="#Google-URLs" class="headerlink" title="Google URLs"></a>Google URLs</h5><p>you click different links then you get different stories.<br>So what Google News has done is look for tens of thousands of news stories and automatically cluster them together. The news stories that are all about the same topic get displayed together.</p>
-<h5 id="DNA-microarray-data"><a href="#DNA-microarray-data" class="headerlink" title="DNA microarray data"></a>DNA microarray data</h5><p> The idea is put a group of different individuals and for each of them, you measure how much they do or do not have a certain gene.<br> These colors, red, green, gray and so on, they show the degree to which different individuals do or do not have a specific gene.<br> <img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:03:40.jpg" alt="2016-08-01_17:03:40.jpg"><br> What you can do is run a clustering algorithm to group individuals into different categories or into different types of people.  </p>
-<h4 id="Applications"><a href="#Applications" class="headerlink" title="Applications"></a>Applications</h4><ul>
-<li>organize large computer clusters<br>at large data centers, figure out which machines tend to work together and if you put them together, you can make your data center work more efficiently</li>
-<li>social network analysis<br>given knowledge about which friends you email the most or given your Facebook friends or your Google+ circles, can we automatically identify which are cohesive groups of friends, also which are groups of people that all know each other?</li>
-<li>market segmentation<br>look at the customer data set and automatically discover market segments and group customers into different market segments so that you can automatically and more efficiently sell or market your different market segments together?</li>
-<li>surprisingly astronomical data analysis<br>gives surprisingly interesting useful theories of how galaxies are born.</li>
-</ul>
-<h3 id="cocktail-party-problem-algorithm"><a href="#cocktail-party-problem-algorithm" class="headerlink" title="cocktail party problem algorithm"></a>cocktail party problem algorithm</h3><p>(好了，我要上中文了)<br>想象有一个鸡尾酒会，房间里到处都是人，同时交谈，声音会重叠，你可能连站在你对面的那个人说的话都听不见。<br>那么重新想象一个只有两个人1和2的鸡尾酒会，他们同时交谈，房间里有两个麦克风A和B，放在不同的位置，因为距离不同，所以两个麦克风对这两个人的录音效果也不同。可能有在麦克风A那里1的声音大2的声音小，在B那里则是1的声音小2的声音大。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:33:12.jpg" alt="2016-08-01_17:33:12.jpg"><br>但是A和B都记录了两种声音，output的时候就会感受到声音的重叠。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:34:07.jpg" alt="2016-08-01_17:34:07.jpg"><br>假如两个人同时用不同的语言法语和英语数数，那么output的混音就是什么都听不见了，所以我们需要把法语和英语分开输出。</p>
-<p>这就是传说中的“鸡尾酒会问题算法”。<br>这么一个看上去简简单单的应用，区分两条音轨，用Java可能要写成千上万条代码。但是聪明机智锲而不舍的研究者们折腾出了下面这个，仅仅一条代码瞬间解决问题↓↓↓<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-01_17:24:09.jpg" alt="2016-08-01_17:24:09.jpg"><br>(看不懂这个公式)</p>
-<h3 id="Octave"><a href="#Octave" class="headerlink" title="Octave"></a>Octave</h3><p><strong>[W,s,v] = svd((repmat(sum(x.<em>x,1), size(x,1),1).</em>x)*x’)</strong><br>用的是Octave，也就是我们这门课要用的编程环境。<br>Octave/Matlab 和 Java/C++ 高下立见是吧。(还有我的Python也被黑了)</p>
-<ul>
-<li>SVD(singular value decomposition)–linear algebra routine which is built into octave</li>
-<li>using MATLAB to prototype is a really good way to do this</li>
-</ul>
-<h1 id="Linear-Regression-with-One-Variable-一元线性回归"><a href="#Linear-Regression-with-One-Variable-一元线性回归" class="headerlink" title="Linear Regression with One Variable (一元线性回归)"></a>Linear Regression with One Variable (一元线性回归)</h1><h2 id="Model-and-Cost-Function"><a href="#Model-and-Cost-Function" class="headerlink" title="Model and Cost Function"></a>Model and Cost Function</h2><h3 id="Model-Representation"><a href="#Model-Representation" class="headerlink" title="Model Representation"></a>Model Representation</h3><p>Housing Price Predict</p>
-<ul>
-<li>supervised learning algorithm</li>
-<li>linear regression</li>
-</ul>
-<ol>
-<li>Training set (this is your data set)</li>
-<li>Notation (used throughout the course)<ul>
-<li>m = number of training examples</li>
-<li>x’s = input variables / features</li>
-<li>y’s = output variable “target” variables<ul>
-<li>(x,y) - single training example</li>
-<li>(x^{i}, y^{i}) - specific example (i^{th} training example)<ul>
-<li>i is an index to training set</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<p><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_11:50:42.jpg" alt="2016-08-03_11:50:42.jpg"><br>(把这一整张都截图下来不算侵权吧？忐忑)<br>这个函数的名字叫做hypothesis，跟科研中的“hypothesis”(假设)的含义有很大区别，反正约定俗称就这样称呼了，不用太惊讶。</p>
-<p>在预测房价这个问题中，一个自变量x(房子的面积)，一个因变量y(房价)，被称为一元线性回归, univariate也是一元的意思。<br>那么，怎么来表示函数h(hypothesis的缩写)呢？<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_12:52:15.jpg" alt="2016-08-03_12:52:15.jpg"><br>就是一元一次函数啦：y=b+kx</p>
-<h3 id="Cost-Function-成本函数"><a href="#Cost-Function-成本函数" class="headerlink" title="Cost Function (成本函数)"></a>Cost Function (成本函数)</h3><p>顾名思义，成本函数，当然是要降低成本，所以这个函数越小越好。</p>
-<p>也就是，根据样本数据，拟合一条直线出来。通常，这些样本数据的分布并不是非常完美的，它们大致会落在一条直线的附近。这条直线具体长什么样，取决于h函数的参数。<br>参数选得好，h函数做预测就会比较精确。而成本函数就是用来评估参数的好坏。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_13:27:49.jpg" alt="2016-08-03_13:27:49.jpg"><br>有没有觉得跟标准差的公式很相似？<br>道理是一样的，标准差也是用来描述一组数据的波动状况呀，越小表示数据越稳定。<br>所以呢，这个函数的另一个名字叫做 squared error function。</p>
-<p>hθ(x)是关于变量x的函数，J(θ1)是关于参数θ的函数。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_2016-08-03_14:59:51.jpg" alt="2016-08-03_2016-08-03_14:59:51.jpg"><br>对于每一个θ1，都有一个对应的J(θ1)曲线<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_15:00:09.jpg" alt="2016-08-03_15:00:09.jpg"><br>而我们的目标就是找到一个θ1，使得J(θ1)最小化，这张图上的最小值是θ1=1，我们就可以用这个θ1=1来设定我们的拟合函数h。</p>
-<p>上面这个案例是简化了算法，将θ0设定为0，接下来就回到原始的复杂数据上，来感受一下更普遍一点的线性回归。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_19:21:13.jpg" alt="2016-08-03_19:21:13.jpg"><br>这下我们有了两个参数θ0,θ1，J(θ0,θ1)的图形就不再是一条线了，而是下面这种三维曲面图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_19:25:25.jpg" alt="2016-08-03_19:25:25.jpg"><br>不过，为了便于理解，接下来还是用轮廓图讲解：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_19:28:36.jpg" alt="2016-08-03_19:28:36.jpg"><br>右边图中的椭圆，就是J(θ0,θ1)值相同的所有点的集合。<br>同心圆最中间那个圈的中心，就是函数J的最小值。</p>
-<h2 id="Parameter-Learning"><a href="#Parameter-Learning" class="headerlink" title="Parameter Learning"></a>Parameter Learning</h2><h3 id="Gradient-Descent-梯度下降"><a href="#Gradient-Descent-梯度下降" class="headerlink" title="Gradient Descent (梯度下降)"></a>Gradient Descent (梯度下降)</h3><p>这种算法在机器学习中应用得很广，不仅仅是一元线性回归，下面这个就是常用的做法：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:06:28.jpg" alt="2016-08-03_21:06:28.jpg"><br>假设有个函数J(不一定是线性回归)，要求它的成本函数，通常是要先设定θ0,θ1，把它们都初始为0，然后一点点改变这两个参数，使得成本函数的值最低，图形如下：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:06:55.jpg" alt="2016-08-03_21:06:55.jpg"><br>为了更好地理解梯度下降，你可以把图上的这两个高点想象成公园的两座小山，你站在其中一座山的某一点上，环顾四周，问自己：“假如要以最快的速度下山，我该走哪个方向呢？”你找到了一个方向，往前走了一步，现在你站在新的起点上，再一次问自己刚刚那个相同的问题。然后又迈出了一步……如此重复这几个步骤，直到你抵达局部最低点。<br>这个算法的有趣之处在于，如果你的起点偏离了一些，你得到的局部最优解也是不同的。</p>
-<p>接下来是梯度下降算法的定义：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:22:28.jpg" alt="2016-08-03_21:22:28.jpg"><br>这张图特意保留了笔记，助于日后唤醒记忆。<br>α 指的是learning rate，它控制着我们更新参数θj的幅度。<br>α 旁边的那串是导数项(derivative term)<br>要注意的是赋值的时候要同步更新 <strong>simultaneous update</strong><br>做课间练习的时候我还错了！明明右边的算法是错的，我还是用了它……</p>
-<p>接下来讲了偏导数，不懂，没关系，课程还是可以继续下去！<br>至于导数，现学：就是求曲线上一点的切线的斜率，如果斜率为正，那就是正导数。下面这两个图就是一个正导数和一个负导数：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:39:01.jpg" alt="2016-08-03_21:39:01.jpg"></p>
-<p>接下来看看α的大小对梯度下降的影响：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:41:31.jpg" alt="2016-08-03_21:41:31.jpg"><br>如果它的值过大，θ1会跑得很快，可能永远也找不到最优解。<br>如果它的值过小，θ1跑得会慢一点，但肯定不会错过最低点。</p>
-<p>假如我们初始化的θ1已经是最低点了，再用梯度下降这个公式会怎么样呢？<br>保持不变，因为导数为0了呀。<br>正是由于导数的存在，所以在越接近最低点的时候θ1的值变化得越小，因为斜率越小呀，所以不用总是改变α的值。</p>
-<h3 id="Gradient-Descent-For-Linear-Regression"><a href="#Gradient-Descent-For-Linear-Regression" class="headerlink" title="Gradient Descent For Linear Regression"></a>Gradient Descent For Linear Regression</h3><p>先复习一下这两个算法，如何将梯度下降应用到线性回归的成本函数中呢？最重要的部分是导数那块：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:51:46.jpg" alt="2016-08-03_21:51:46.jpg"><br>来，让我们推导一下：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:54:22.jpg" alt="2016-08-03_21:54:22.jpg"><br>再代入一下：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:58:42.jpg" alt="2016-08-03_21:58:42.jpg"><br>还记得吗？梯度下降的图形有两个山头，所以它有好几个局部最优解，但是成本函数的图形是一个 <strong>凸函数</strong>，又称 <strong>弓形函数</strong>，只有一个全局最优解。所以呢，用梯度下降来计算成本函数，只会得到一个全局最优解。</p>
-<p>两种算法结合在一起构成的新的算法，就是线性回归算法，又称为批量梯度下降 <strong>“Batch” Gradient Descent</strong>。<br>“批量”意味着，下降过程中用到了所有样本数据。<br>也有一些其他的梯度下降方法，并不会用到所有的数据，而只是用了这些数据的子集。以后的课程会介绍。</p>
-<p>线性代数中有一种称为正规方程 <strong>normal equations</strong> 的方法，可以不用梯度下降，也能求出J的最小值。不过，梯度下降更适用于large data。</p>
-<h1 id="Linear-Algebra-Review"><a href="#Linear-Algebra-Review" class="headerlink" title="Linear Algebra Review"></a>Linear Algebra Review</h1><h2 id="Matrices-and-Vectors-矩阵和向量"><a href="#Matrices-and-Vectors-矩阵和向量" class="headerlink" title="Matrices and Vectors (矩阵和向量)"></a>Matrices and Vectors (矩阵和向量)</h2><h3 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h3><p>矩阵可以理解为一个二维数组，矩阵的维度计算：行数乘以列数，比如4X2矩阵(R4X2,注意数字是上标)。<br>如何来表示一个特定的矩阵元素呢？以下图为例：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_18:39:42.jpg" alt="2016-08-04_18:39:42.jpg"><br>所以，A11=1402, A12=191, A43=undefined (注意，数字是下标)</p>
-<h3 id="向量-1"><a href="#向量-1" class="headerlink" title="向量"></a>向量</h3><p>向量是一个nX1的矩阵，n是行数，1是列数，向量的维度计算以行数为参考，比如4维向量(R4,数字是上标)。<br>向量内的元素引用公式为：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_CodeCogsEqn.png" alt="2016-08-04_CodeCogsEqn.png"><br>({y}^{i}={i}^{th}$)<br>通常有两种向量索引表示方法：1-索引和0-索引，如下图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_18:57:29.jpg" alt="2016-08-04_18:57:29.jpg"><br>很像Python里的数组，用的是0-indexed。<br>在数学上，用1-indexed比较多，在机器学习中0-indexed则更广泛些。</p>
-<p>最后，在矩阵和向量的使用过程中，通常会用大写字母来表示矩阵，用小写字母表示数字或向量。</p>
-<h2 id="Addition-and-Scalar-Multiplication-加法和标量乘法"><a href="#Addition-and-Scalar-Multiplication-加法和标量乘法" class="headerlink" title="Addition and Scalar Multiplication (加法和标量乘法)"></a>Addition and Scalar Multiplication (加法和标量乘法)</h2><h3 id="矩阵加法"><a href="#矩阵加法" class="headerlink" title="矩阵加法"></a>矩阵加法</h3><p>两个矩阵相加，就是把两个矩阵里的元素逐个相加，只有两个维度相同的矩阵才可以相加。</p>
-<h3 id="标量乘法"><a href="#标量乘法" class="headerlink" title="标量乘法"></a>标量乘法</h3><p>scalar指的是real number，也就是说，一个实数和一个矩阵相乘，就是把矩阵中的每个元素都和这个实数相乘。除法也是同理。乘除前后的矩阵维度是不变的。</p>
-<h3 id="综合运算-combination-of-operands"><a href="#综合运算-combination-of-operands" class="headerlink" title="综合运算(combination of operands)"></a>综合运算(combination of operands)</h3><p>也很简单啦，和实数的综合运算规律一样：先乘除后加减。</p>
-<h2 id="Matrix-Vector-Multiplication-矩阵向量乘法"><a href="#Matrix-Vector-Multiplication-矩阵向量乘法" class="headerlink" title="Matrix Vector Multiplication(矩阵向量乘法)"></a>Matrix Vector Multiplication(矩阵向量乘法)</h2><p>来看一个例子，一个3X2的矩阵和一个2X1向量相乘会得到一个3*1向量。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_19:38:23.jpg" alt="2016-08-04_19:38:23.jpg"><br>注意了，这里讲的是一个m x n矩阵和一个n x 1矩阵(n维向量)相乘，得到一个m维向量。<br>具体做法是：把矩阵A的第一行元素和向量x里对应的元素相乘后相加，得到向量y的第一个元素，再把矩阵第二行元素和向量x对应的元素相乘后相加，得到向量y的第二个元素……以此类推。<br>来看一下前几节课说的房价预测的案例，怎么用矩阵向量乘法来快速计算呢？如下图：<img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_19:48:35.jpg" alt="2016-08-04_19:48:35.jpg"><br>把它们弄成矩阵和向量，就可以很容易地用计算机语言比如Octave(Python也可以)来实现了：<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:, <span class="number">1000</span>,</div><div class="line">  prediction(<span class="built_in">i</span>):……</div></pre></td></tr></table></figure></p>
-<p>上面这行代码可能是Octave的，总之这样写代码很简洁高效。</p>
-<h2 id="Matrix-Matrix-Multiplication-矩阵和矩阵相乘"><a href="#Matrix-Matrix-Multiplication-矩阵和矩阵相乘" class="headerlink" title="Matrix Matrix Multiplication (矩阵和矩阵相乘)"></a>Matrix Matrix Multiplication (矩阵和矩阵相乘)</h2><p>矩阵和矩阵相乘，可以把第二个矩阵拆分为多个向量，就变成了矩阵和向量相乘，最后把得到的向量组合成矩阵：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_19:57:46.jpg" alt="2016-08-04_19:57:46.jpg"><br>注意，相乘的两个矩阵是有特点的，前一个矩阵的列数等于后一个矩阵的行数。<br>再用房价预测的案例，当有多个假设函数的时候，怎么用矩阵和矩阵乘法来计算：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:02:28.jpg" alt="2016-08-04_20:02:28.jpg"><br>一次矩阵计算就可以得到12个预测结果，而且很多编程语言都有丰富的线性代数库，用起来非常方便。</p>
-<h2 id="Matrix-Multiplication-Properties"><a href="#Matrix-Multiplication-Properties" class="headerlink" title="Matrix Multiplication Properties"></a>Matrix Multiplication Properties</h2><p>介绍一些关于矩阵乘法的特性：</p>
-<ol>
-<li>乘法交换律对矩阵并不适用。(《上帝掷骰子吗？》讲到了是薛定谔还是谁？就是通过矩阵的交换乘法发现了量子的特征？啊呀，不记得了。)</li>
-<li>矩阵符合乘法结合律。<h3 id="单位矩阵-identity-matrix"><a href="#单位矩阵-identity-matrix" class="headerlink" title="单位矩阵 (identity matrix)"></a>单位矩阵 (identity matrix)</h3>这样来理解吧，在实数乘法中，1乘以任何数都等于任何数，所以1就是一个identity，而在矩阵界也有这样的数：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:24:45.jpg" alt="2016-08-04_20:24:45.jpg"><br>看看这个销魂的板书，这种单位矩阵的特点就是，对角线都是1，其他部分全部是0.<h2 id="Inverse-and-Transpose-求倒和转置"><a href="#Inverse-and-Transpose-求倒和转置" class="headerlink" title="Inverse and Transpose (求倒和转置)"></a>Inverse and Transpose (求倒和转置)</h2><h3 id="求倒运算"><a href="#求倒运算" class="headerlink" title="求倒运算"></a>求倒运算</h3>实数界除了0以外的数都有倒数，那么矩阵界呢？<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:28:58.jpg" alt="2016-08-04_20:28:58.jpg"><br>注意，只有方阵才有导数，如果方阵的所有元素都是0，也是没有倒数的，矩阵和它的倒数相乘得到的是单位矩阵，所以其实是根据单位矩阵来推算矩阵倒数，很多编程软件都有求逆矩阵的软件库。</li>
-</ol>
-<p>另外，对于那些没有倒数的矩阵，他们被称为奇异(singular)矩阵或者退化(degenerate)矩阵。</p>
-<h3 id="转置运算"><a href="#转置运算" class="headerlink" title="转置运算"></a>转置运算</h3><p>最直观的理解就是，沿着矩阵的对角线画一条线，再以这条线为轴将矩阵翻转。来继续看一看销魂的板书吧：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:38:21.jpg" alt="2016-08-04_20:38:21.jpg"><br>如何检验转置运算的对错？看第一个和最后一个元素，它俩是不变的。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;笔记完成时间：0804(线代复习) 0803(一元线性回归) 0801(简介)&lt;br&gt;0804：LaTex的问题要尽快解决。&lt;br&gt;0803：怎么用markdown写数学公式？&lt;br&gt;0801：抽风，笔记用英文开始，最后还是转向了中文。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
-      <category term="machine learning" scheme="http://yibeichen.me/tags/machine-learning/"/>
     
   </entry>
   
