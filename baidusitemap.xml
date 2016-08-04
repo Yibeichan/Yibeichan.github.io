@@ -4,11 +4,47 @@
 
     
   <url>
-    <loc>http://yibeichen.me/2016/08/01/Machine-Learning/</loc>
-    <lastmod>2016-08-03T05:36:37.000Z</lastmod>
+    <loc>http://yibeichen.me/2016/07/27/No-Desire-to-Study/</loc>
+    <lastmod>2016-08-04T06:00:18.000Z</lastmod>
     <data>
         <display>
-        <title>Machine Learning 课程笔记</title>
+        <title>无心学习之没有VPN</title>
+        <pubTime>2016-07-26T16:07:07.000Z</pubTime>
+        
+        <tag>VPN</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yibeichen.me/2016/07/08/Learning-How-To-Learn/</loc>
+    <lastmod>2016-08-04T05:56:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>Learning How To Learn 课程笔记</title>
+        <pubTime>2016-07-07T16:06:40.000Z</pubTime>
+        
+        <tag>coursera</tag>
+         
+        <tag>method</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yibeichen.me/2016/08/01/Machine-Learning/</loc>
+    <lastmod>2016-08-04T05:53:13.000Z</lastmod>
+    <data>
+        <display>
+        <title>Machine Learning 课程笔记 (未完)</title>
         <pubTime>2016-08-01T06:28:11.000Z</pubTime>
         
         <tag>coursera</tag>
@@ -23,8 +59,54 @@
 
     
   <url>
+    <loc>http://yibeichen.me/2016/08/03/Introduction-to-Classical-Music/</loc>
+    <lastmod>2016-08-04T05:50:20.000Z</lastmod>
+    <data>
+        <display>
+        <title>Introduction to Classical Music 课程笔记 (未完)</title>
+        <pubTime>2016-08-03T04:41:53.000Z</pubTime>
+        
+        <tag>music</tag>
+         
+        <tag>coursera</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yibeichen.me/2016/08/04/HTML-CSS-Javascript-for-Web-Developers/</loc>
+    <lastmod>2016-08-04T05:36:53.000Z</lastmod>
+    <data>
+        <display>
+        <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
+        <pubTime>2016-08-04T03:03:23.000Z</pubTime>
+        
+        <tag>coursera</tag>
+         
+        <tag>web development</tag>
+         
+        <tag>HTML</tag>
+         
+        <tag>CSS</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+  <url>
     <loc>http://yibeichen.me/2016/08/03/A-Joke/</loc>
-    <lastmod>2016-08-03T04:43:27.000Z</lastmod>
+    <lastmod>2016-08-03T05:41:40.000Z</lastmod>
     <data>
         <display>
         <title>一个玩笑之一个变量的线性回归</title>
@@ -54,27 +136,6 @@
     </url>
 
     
-    
-    
-  <url>
-    <loc>http://yibeichen.me/2016/07/20/Introduction-to-Classical-Music/</loc>
-    <lastmod>2016-08-03T03:04:20.000Z</lastmod>
-    <data>
-        <display>
-        <title>Introduction to Classical Music 课程笔记</title>
-        <pubTime>2016-07-20T06:41:53.000Z</pubTime>
-        
-        <tag>music</tag>
-         
-        <tag>coursera</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
   <url>
     <loc>http://yibeichen.me/2016/07/23/PY4E-Chapter-13-2/</loc>
     <lastmod>2016-08-01T10:14:11.000Z</lastmod>
@@ -86,23 +147,6 @@
         <tag>coursera</tag>
          
         <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yibeichen.me/2016/07/27/No-Desire-to-Study/</loc>
-    <lastmod>2016-08-01T10:13:54.000Z</lastmod>
-    <data>
-        <display>
-        <title>无心学习之没有VPN</title>
-        <pubTime>2016-07-26T16:07:07.000Z</pubTime>
-        
-        <tag>VPN</tag>
          
          
            
@@ -372,26 +416,6 @@
     </data>
     </url>
 
-    
-  <url>
-    <loc>http://yibeichen.me/2016/07/08/Learning-How-To-Learn/</loc>
-    <lastmod>2016-07-29T06:29:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>Learning How To Learn 课程笔记</title>
-        <pubTime>2016-07-07T16:06:40.000Z</pubTime>
-        
-        <tag>coursera</tag>
-         
-        <tag>method</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
     
   <url>
     <loc>http://yibeichen.me/2016/07/25/Reread-Echo/</loc>
