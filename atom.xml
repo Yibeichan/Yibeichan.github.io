@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-08-04T06:06:58.000Z</updated>
+  <updated>2016-08-04T12:59:08.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -16,52 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
-    <link href="http://yibeichen.me/2016/08/04/HTML-CSS-Javascript-for-Web-Developers/"/>
-    <id>http://yibeichen.me/2016/08/04/HTML-CSS-Javascript-for-Web-Developers/</id>
-    <published>2016-08-04T03:03:23.000Z</published>
-    <updated>2016-08-04T06:06:58.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>老师长得太可爱啦，自带腮红！<br>你好呀，html&amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)<br>所有这种编程课，我最喜欢的都是第一节——安装各种工具。<br><a id="more"></a><br>Coursera地址: <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank" rel="external">面向Web开发者的HTML、CSS与Javascript课程</a><br>辅助资料请上<a href="https://github.com/jhu-ep-coursera/fullstack-course4" target="_blank" rel="external">github</a></p>
-<h1 id="HTML5入门"><a href="#HTML5入门" class="headerlink" title="HTML5入门"></a>HTML5入门</h1><h2 id="安装开发环境"><a href="#安装开发环境" class="headerlink" title="安装开发环境"></a>安装开发环境</h2><p>必备工具集：</p>
-<ul>
-<li>Github账号</li>
-<li>Chrome+CDT</li>
-<li>Sublime Text3 (想抛弃Atom重回ST怀抱了)</li>
-<li>Git</li>
-<li>Browser Sync</li>
-</ul>
-<p>噼里啪啦，跟着视频敲了一堆看不懂的命令符，新建了一个github仓库，但是，有点不对。之前我搭这个博客已经开通了github page，并且绑定了我的域名，但是课程案例又新建了另一个page，所以，这个新的page就自动变成我的网站二级页，还继承了favicon。呐，就是它了：<a href="http://yibeichen.me/coursera-test/">http://yibeichen.me/coursera-test/</a></p>
-<p>内心默默涌起一种“我上个月怎么没学这门课”的后悔！以及，“这下学会了新建二级页，又能自己写index.html了”，开心！</p>
-<p>这五个工具里，唯一没用过的就是Browser Sync，但感觉跟<code>$ hexo s</code>很相似，不过要比后者方便，真正即时同步。</p>
-<h3 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h3><p>《Pro Git》<a href="https://git-scm.com/book/en/v2" target="_blank" rel="external">英文版</a> <a href="http://iissnan.com/progit/" target="_blank" rel="external">中文版</a> 看完前三章</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;老师长得太可爱啦，自带腮红！&lt;br&gt;你好呀，html&amp;amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)&lt;br&gt;所有这种编程课，我最喜欢的都是第一节——安装各种工具。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
-      <category term="web development" scheme="http://yibeichen.me/tags/web-development/"/>
-    
-      <category term="HTML" scheme="http://yibeichen.me/tags/HTML/"/>
-    
-      <category term="CSS" scheme="http://yibeichen.me/tags/CSS/"/>
-    
-      <category term="JavaScript" scheme="http://yibeichen.me/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Machine Learning 课程笔记 (未完)</title>
-    <link href="http://yibeichen.me/2016/08/03/Machine-Learning/"/>
-    <id>http://yibeichen.me/2016/08/03/Machine-Learning/</id>
-    <published>2016-08-03T12:28:11.000Z</published>
-    <updated>2016-08-04T12:58:24.000Z</updated>
+    <link href="http://yibeichen.me/2016/08/04/Machine-Learning/"/>
+    <id>http://yibeichen.me/2016/08/04/Machine-Learning/</id>
+    <published>2016-08-04T12:28:11.000Z</published>
+    <updated>2016-08-04T12:59:08.000Z</updated>
     
     <content type="html"><![CDATA[<p>笔记完成时间：0804(线代复习) 0803(一元线性回归) 0801(简介)<br>0804：LaTex的问题要尽快解决。<br>0803：怎么用markdown写数学公式？<br>0801：抽风，笔记用英文开始，最后还是转向了中文。<br><a id="more"></a></p>
 <hr>
@@ -211,10 +170,10 @@
   
   <entry>
     <title>Introduction to Classical Music 课程笔记 (未完)</title>
-    <link href="http://yibeichen.me/2016/08/03/Introduction-to-Classical-Music/"/>
-    <id>http://yibeichen.me/2016/08/03/Introduction-to-Classical-Music/</id>
-    <published>2016-08-03T04:41:53.000Z</published>
-    <updated>2016-08-04T05:50:20.000Z</updated>
+    <link href="http://yibeichen.me/2016/08/04/Introduction-to-Classical-Music/"/>
+    <id>http://yibeichen.me/2016/08/04/Introduction-to-Classical-Music/</id>
+    <published>2016-08-04T04:41:53.000Z</published>
+    <updated>2016-08-04T12:59:30.000Z</updated>
     
     <content type="html"><![CDATA[<p>我用的教材是Craig Wright的<a href="https://www.amazon.cn/%E8%81%86%E5%90%AC%E9%9F%B3%E4%B9%90-%E5%85%8B%E9%9B%B7%E6%A0%BC%E2%80%A2%E8%8E%B1%E7%89%B9/dp/B007TQNEYW/ref=sr_1_1?ie=UTF8&amp;qid=1470288686&amp;sr=8-1&amp;keywords=%E8%81%86%E5%90%AC%E9%9F%B3%E4%B9%90" target="_blank" rel="external">《聆听音乐》</a>，Craig就是这门课的老师，老先生真是儒雅有风度。不过，他推荐的是：<a href="https://www.amazon.com/Essential-Listening-Digital-Downloads-Printed/dp/1285856791/ref=sr_1_2?ie=UTF8&amp;qid=1470288731&amp;sr=8-2&amp;keywords=CRAIG+WRIGHT" target="_blank" rel="external">《The Essential Listening to Music》</a>，但是这本没有中文版，实在是不太方便。</p>
 <p>7月20日开始记笔记，断断续续更新中。<br>刚开始扒英文字幕当笔记，很快就发现，这些英文我是不会再看第二眼了，于是改成中文，但笔记量也因此少了很多。<br><a id="more"></a><br>Coursera地址: <a href="https://www.coursera.org/learn/introclassicalmusic" target="_blank" rel="external">古典音乐导论</a><br>Spotify playlist: <a href="https://open.spotify.com/embed?uri=spotify:user:gauravkumar87:playlist:6sPZCTmf5razbg3CfCXsuF" target="_blank" rel="external">点这里</a></p>
@@ -341,6 +300,47 @@
       <category term="music" scheme="http://yibeichen.me/tags/music/"/>
     
       <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
+    <link href="http://yibeichen.me/2016/08/04/HTML-CSS-Javascript-for-Web-Developers/"/>
+    <id>http://yibeichen.me/2016/08/04/HTML-CSS-Javascript-for-Web-Developers/</id>
+    <published>2016-08-04T03:03:23.000Z</published>
+    <updated>2016-08-04T06:06:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>老师长得太可爱啦，自带腮红！<br>你好呀，html&amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)<br>所有这种编程课，我最喜欢的都是第一节——安装各种工具。<br><a id="more"></a><br>Coursera地址: <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank" rel="external">面向Web开发者的HTML、CSS与Javascript课程</a><br>辅助资料请上<a href="https://github.com/jhu-ep-coursera/fullstack-course4" target="_blank" rel="external">github</a></p>
+<h1 id="HTML5入门"><a href="#HTML5入门" class="headerlink" title="HTML5入门"></a>HTML5入门</h1><h2 id="安装开发环境"><a href="#安装开发环境" class="headerlink" title="安装开发环境"></a>安装开发环境</h2><p>必备工具集：</p>
+<ul>
+<li>Github账号</li>
+<li>Chrome+CDT</li>
+<li>Sublime Text3 (想抛弃Atom重回ST怀抱了)</li>
+<li>Git</li>
+<li>Browser Sync</li>
+</ul>
+<p>噼里啪啦，跟着视频敲了一堆看不懂的命令符，新建了一个github仓库，但是，有点不对。之前我搭这个博客已经开通了github page，并且绑定了我的域名，但是课程案例又新建了另一个page，所以，这个新的page就自动变成我的网站二级页，还继承了favicon。呐，就是它了：<a href="http://yibeichen.me/coursera-test/">http://yibeichen.me/coursera-test/</a></p>
+<p>内心默默涌起一种“我上个月怎么没学这门课”的后悔！以及，“这下学会了新建二级页，又能自己写index.html了”，开心！</p>
+<p>这五个工具里，唯一没用过的就是Browser Sync，但感觉跟<code>$ hexo s</code>很相似，不过要比后者方便，真正即时同步。</p>
+<h3 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h3><p>《Pro Git》<a href="https://git-scm.com/book/en/v2" target="_blank" rel="external">英文版</a> <a href="http://iissnan.com/progit/" target="_blank" rel="external">中文版</a> 看完前三章</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;老师长得太可爱啦，自带腮红！&lt;br&gt;你好呀，html&amp;amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)&lt;br&gt;所有这种编程课，我最喜欢的都是第一节——安装各种工具。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
+      <category term="web development" scheme="http://yibeichen.me/tags/web-development/"/>
+    
+      <category term="HTML" scheme="http://yibeichen.me/tags/HTML/"/>
+    
+      <category term="CSS" scheme="http://yibeichen.me/tags/CSS/"/>
+    
+      <category term="JavaScript" scheme="http://yibeichen.me/tags/JavaScript/"/>
     
   </entry>
   
