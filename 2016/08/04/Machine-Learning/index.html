@@ -129,7 +129,7 @@
 <meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:24:45.jpg">
 <meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:28:58.jpg">
 <meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:38:21.jpg">
-<meta property="og:updated_time" content="2016-08-04T12:59:08.000Z">
+<meta property="og:updated_time" content="2016-08-04T13:02:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Machine Learning 课程笔记 (未完)">
 <meta name="twitter:description" content="笔记完成时间：0804(线代复习) 0803(一元线性回归) 0801(简介)0804：LaTex的问题要尽快解决。0803：怎么用markdown写数学公式？0801：抽风，笔记用英文开始，最后还是转向了中文。">
@@ -460,8 +460,10 @@
 <h2 id="Matrix-Multiplication-Properties"><a href="#Matrix-Multiplication-Properties" class="headerlink" title="Matrix Multiplication Properties"></a>Matrix Multiplication Properties</h2><p>介绍一些关于矩阵乘法的特性：</p>
 <ol>
 <li>乘法交换律对矩阵并不适用。(《上帝掷骰子吗？》讲到了是薛定谔还是谁？就是通过矩阵的交换乘法发现了量子的特征？啊呀，不记得了。)</li>
-<li>矩阵符合乘法结合律。<h3 id="单位矩阵-identity-matrix"><a href="#单位矩阵-identity-matrix" class="headerlink" title="单位矩阵 (identity matrix)"></a>单位矩阵 (identity matrix)</h3>这样来理解吧，在实数乘法中，1乘以任何数都等于任何数，所以1就是一个identity，而在矩阵界也有这样的数：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:24:45.jpg" alt="2016-08-04_20:24:45.jpg"><br>看看这个销魂的板书，这种单位矩阵的特点就是，对角线都是1，其他部分全部是0.<h2 id="Inverse-and-Transpose-求倒和转置"><a href="#Inverse-and-Transpose-求倒和转置" class="headerlink" title="Inverse and Transpose (求倒和转置)"></a>Inverse and Transpose (求倒和转置)</h2><h3 id="求倒运算"><a href="#求倒运算" class="headerlink" title="求倒运算"></a>求倒运算</h3>实数界除了0以外的数都有倒数，那么矩阵界呢？<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:28:58.jpg" alt="2016-08-04_20:28:58.jpg"><br>注意，只有方阵才有导数，如果方阵的所有元素都是0，也是没有倒数的，矩阵和它的倒数相乘得到的是单位矩阵，所以其实是根据单位矩阵来推算矩阵倒数，很多编程软件都有求逆矩阵的软件库。</li>
+<li>矩阵符合乘法结合律。</li>
 </ol>
+<h3 id="单位矩阵-identity-matrix"><a href="#单位矩阵-identity-matrix" class="headerlink" title="单位矩阵 (identity matrix)"></a>单位矩阵 (identity matrix)</h3><p>这样来理解吧，在实数乘法中，1乘以任何数都等于任何数，所以1就是一个identity，而在矩阵界也有这样的数：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:24:45.jpg" alt="2016-08-04_20:24:45.jpg"><br>看看这个销魂的板书，这种单位矩阵的特点就是，对角线都是1，其他部分全部是0.</p>
+<h2 id="Inverse-and-Transpose-求倒和转置"><a href="#Inverse-and-Transpose-求倒和转置" class="headerlink" title="Inverse and Transpose (求倒和转置)"></a>Inverse and Transpose (求倒和转置)</h2><h3 id="求倒运算"><a href="#求倒运算" class="headerlink" title="求倒运算"></a>求倒运算</h3><p>实数界除了0以外的数都有倒数，那么矩阵界呢？<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:28:58.jpg" alt="2016-08-04_20:28:58.jpg"><br>注意，只有方阵才有导数，如果方阵的所有元素都是0，也是没有倒数的，矩阵和它的倒数相乘得到的是单位矩阵，所以其实是根据单位矩阵来推算矩阵倒数，很多编程软件都有求逆矩阵的软件库。</p>
 <p>另外，对于那些没有倒数的矩阵，他们被称为奇异(singular)矩阵或者退化(degenerate)矩阵。</p>
 <h3 id="转置运算"><a href="#转置运算" class="headerlink" title="转置运算"></a>转置运算</h3><p>最直观的理解就是，沿着矩阵的对角线画一条线，再以这条线为轴将矩阵翻转。来继续看一看销魂的板书吧：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:38:21.jpg" alt="2016-08-04_20:38:21.jpg"><br>如何检验转置运算的对错？看第一个和最后一个元素，它俩是不变的。</p>
 
