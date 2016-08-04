@@ -386,7 +386,7 @@
     <link href="http://yibeichen.me/2016/08/03/A-Joke/"/>
     <id>http://yibeichen.me/2016/08/03/A-Joke/</id>
     <published>2016-08-03T04:15:16.000Z</published>
-    <updated>2016-08-03T05:41:40.000Z</updated>
+    <updated>2016-08-04T14:02:51.000Z</updated>
     
     <content type="html"><![CDATA[<p>抽空写两句玩笑话，不过，我的笑点素来很奇怪，可能一点也不好笑。<br><a id="more"></a><br>今天学ML，讲到linear regression with one variable，直译就是“一个变量的线性回归”。</p>
 <p>笔记里写下这几个字的时候，觉得有点不对劲，脑洞一大就会想到“一个女人一生中的二十四个小时”、“一个陌生女子的来信”、“一个村庄里的中国”、“一桩事先张扬的凶杀案”……</p>
@@ -406,6 +406,8 @@
     
     </summary>
     
+    
+      <category term="nonsense" scheme="http://yibeichen.me/tags/nonsense/"/>
     
   </entry>
   
