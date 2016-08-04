@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yibeichen.me/2016/08/04/An-Illusion/</loc>
+    <loc>http://yibeichen.me/2016/08/04/Test-for-Plugins/</loc>
     
-    <lastmod>2016-08-04T14:21:26.000Z</lastmod>
+    <lastmod>2016-08-04T14:45:34.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yibeichen.me/2016/07/30/Test-for-Plugins/</loc>
+    <loc>http://yibeichen.me/2016/08/04/Machine-Learning/</loc>
     
-    <lastmod>2016-08-04T14:21:22.000Z</lastmod>
+    <lastmod>2016-08-04T14:43:28.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yibeichen.me/2016/08/04/An-Illusion/</loc>
+    
+    <lastmod>2016-08-04T14:21:26.000Z</lastmod>
     
   </url>
   
@@ -26,13 +33,6 @@
     <loc>http://yibeichen.me/2016/07/31/A-Failed-Try/</loc>
     
     <lastmod>2016-08-04T13:18:45.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yibeichen.me/2016/08/04/Machine-Learning/</loc>
-    
-    <lastmod>2016-08-04T13:02:14.000Z</lastmod>
     
   </url>
   

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-08-04T14:21:26.000Z</updated>
+  <updated>2016-08-04T14:45:34.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo插件测试 (未完)</title>
+    <link href="http://yibeichen.me/2016/08/04/Test-for-Plugins/"/>
+    <id>http://yibeichen.me/2016/08/04/Test-for-Plugins/</id>
+    <published>2016-08-04T14:34:12.000Z</published>
+    <updated>2016-08-04T14:45:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>测试了几个插件：<br>0804(网易云音乐代码嵌套) 0730(Spotify代码嵌套)</p>
+<p>玩心起了就折腾一下，不过，玩物总会丧志。<br><a id="more"></a></p>
+<h1 id="音乐插件"><a href="#音乐插件" class="headerlink" title="音乐插件"></a>音乐插件</h1><h2 id="代码嵌套"><a href="#代码嵌套" class="headerlink" title="代码嵌套"></a>代码嵌套</h2><h3 id="Spotify"><a href="#Spotify" class="headerlink" title="Spotify"></a>Spotify</h3><p>网站提供的代码如下：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">iframe</span> src=<span class="string">"https://embed.spotify.com/?uri=spotify%3Atrack%3A3v8PlUFGQQDBIk1J86waCo"</span> <span class="attribute">width</span>=<span class="string">"300"</span> height=<span class="string">"380"</span> frameborder=<span class="string">"0"</span> allowtransparency=<span class="string">"true"</span>&gt;</div><div class="line">&lt;/iframe&gt;</div></pre></td></tr></table></figure></p>
+<p>效果如图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-30_14:48:19.jpg" alt="2016-07-30_14:48:19.jpg"><br>没开VPN是显示不出来的。<br>看着挺美，但是问题在于，点击会跳转到Spotify官网，不能当前页播放。</p>
+<h3 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h3><p>打开网页版网易云音乐，进入歌曲播放页面，可以看到代码嵌套，可以设置播放框宽度，以及是否自动播放，代码如下：<br><figure class="highlight maxima"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;iframe frameborder=<span class="string">"no"</span> <span class="built_in">border</span>=<span class="string">"0"</span> marginwidth=<span class="string">"0"</span> marginheight=<span class="string">"0"</span> <span class="built_in">width</span>=<span class="string">"330"</span> <span class="built_in">height</span>=<span class="string">"86"</span> src=<span class="string">"http://music.163.com/outchain/player?type=2&amp;id=63875&amp;auto=1&amp;height=66"</span>&gt;&lt;/iframe&gt;</div></pre></td></tr></table></figure></p>
+<p>效果如图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_22:43:21.jpg" alt="2016-08-04_22:43:21.jpg"><br>体验请戳→<a href="http://yibeichen.me/2016/08/04/An-Illusion/">《黄粱一梦》</a><br>暂时不知道怎么改宽度。<br>颜值不敌Spotify，但是还算实用。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;测试了几个插件：&lt;br&gt;0804(网易云音乐代码嵌套) 0730(Spotify代码嵌套)&lt;/p&gt;
+&lt;p&gt;玩心起了就折腾一下，不过，玩物总会丧志。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yibeichen.me/tags/Hexo/"/>
+    
+      <category term="plugin" scheme="http://yibeichen.me/tags/plugin/"/>
+    
+  </entry>
   
   <entry>
     <title>黄粱一梦</title>
@@ -54,7 +83,7 @@
     <link href="http://yibeichen.me/2016/08/04/Machine-Learning/"/>
     <id>http://yibeichen.me/2016/08/04/Machine-Learning/</id>
     <published>2016-08-04T12:28:11.000Z</published>
-    <updated>2016-08-04T13:02:14.000Z</updated>
+    <updated>2016-08-04T14:43:28.000Z</updated>
     
     <content type="html"><![CDATA[<p>笔记完成时间：0804(线代复习) 0803(一元线性回归) 0801(简介)<br>0804：LaTex的问题要尽快解决。<br>0803：怎么用markdown写数学公式？<br>0801：抽风，笔记用英文开始，最后还是转向了中文。<br><a id="more"></a></p>
 <hr>
@@ -171,8 +200,8 @@
 <h3 id="Gradient-Descent-For-Linear-Regression"><a href="#Gradient-Descent-For-Linear-Regression" class="headerlink" title="Gradient Descent For Linear Regression"></a>Gradient Descent For Linear Regression</h3><p>先复习一下这两个算法，如何将梯度下降应用到线性回归的成本函数中呢？最重要的部分是导数那块：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:51:46.jpg" alt="2016-08-03_21:51:46.jpg"><br>来，让我们推导一下：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:54:22.jpg" alt="2016-08-03_21:54:22.jpg"><br>再代入一下：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-03_21:58:42.jpg" alt="2016-08-03_21:58:42.jpg"><br>还记得吗？梯度下降的图形有两个山头，所以它有好几个局部最优解，但是成本函数的图形是一个 <strong>凸函数</strong>，又称 <strong>弓形函数</strong>，只有一个全局最优解。所以呢，用梯度下降来计算成本函数，只会得到一个全局最优解。</p>
 <p>两种算法结合在一起构成的新的算法，就是线性回归算法，又称为批量梯度下降 <strong>“Batch” Gradient Descent</strong>。<br>“批量”意味着，下降过程中用到了所有样本数据。<br>也有一些其他的梯度下降方法，并不会用到所有的数据，而只是用了这些数据的子集。以后的课程会介绍。</p>
 <p>线性代数中有一种称为正规方程 <strong>normal equations</strong> 的方法，可以不用梯度下降，也能求出J的最小值。不过，梯度下降更适用于large data。</p>
-<h1 id="Linear-Algebra-Review"><a href="#Linear-Algebra-Review" class="headerlink" title="Linear Algebra Review"></a>Linear Algebra Review</h1><h2 id="Matrices-and-Vectors-矩阵和向量"><a href="#Matrices-and-Vectors-矩阵和向量" class="headerlink" title="Matrices and Vectors (矩阵和向量)"></a>Matrices and Vectors (矩阵和向量)</h2><h3 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h3><p>矩阵可以理解为一个二维数组，矩阵的维度计算：行数乘以列数，比如4X2矩阵(R4X2,注意数字是上标)。<br>如何来表示一个特定的矩阵元素呢？以下图为例：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_18:39:42.jpg" alt="2016-08-04_18:39:42.jpg"><br>所以，A11=1402, A12=191, A43=undefined (注意，数字是下标)</p>
-<h3 id="向量-1"><a href="#向量-1" class="headerlink" title="向量"></a>向量</h3><p>向量是一个nX1的矩阵，n是行数，1是列数，向量的维度计算以行数为参考，比如4维向量(R4,数字是上标)。<br>向量内的元素引用公式为：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_CodeCogsEqn.png" alt="2016-08-04_CodeCogsEqn.png"><br>({y}^{i}={i}^{th}$)<br>通常有两种向量索引表示方法：1-索引和0-索引，如下图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_18:57:29.jpg" alt="2016-08-04_18:57:29.jpg"><br>很像Python里的数组，用的是0-indexed。<br>在数学上，用1-indexed比较多，在机器学习中0-indexed则更广泛些。</p>
+<h1 id="Linear-Algebra-Review"><a href="#Linear-Algebra-Review" class="headerlink" title="Linear Algebra Review"></a>Linear Algebra Review</h1><h2 id="Matrices-and-Vectors-矩阵和向量"><a href="#Matrices-and-Vectors-矩阵和向量" class="headerlink" title="Matrices and Vectors (矩阵和向量)"></a>Matrices and Vectors (矩阵和向量)</h2><h3 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h3><p>矩阵可以理解为一个二维数组，矩阵的维度计算：行数乘以列数，比如4X2矩阵(R4X2,注意数字是上标)。<br>如何来表示一个特定的矩阵元素呢？以下图为例：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_18:39:42.jpg" alt="2016-08-04_18:39:42.jpg"><br>所以，A11=1402, A12=191, A43=undefined (注意，数字是下标)</p>
+<h3 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h3><p>向量是一个nX1的矩阵，n是行数，1是列数，向量的维度计算以行数为参考，比如4维向量(R4,数字是上标)。<br>向量内的元素引用公式为：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_CodeCogsEqn.png" alt="2016-08-04_CodeCogsEqn.png"><br>({y}^{i}={i}^{th}$)<br>通常有两种向量索引表示方法：1-索引和0-索引，如下图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_18:57:29.jpg" alt="2016-08-04_18:57:29.jpg"><br>很像Python里的数组，用的是0-indexed。<br>在数学上，用1-indexed比较多，在机器学习中0-indexed则更广泛些。</p>
 <p>最后，在矩阵和向量的使用过程中，通常会用大写字母来表示矩阵，用小写字母表示数字或向量。</p>
 <h2 id="Addition-and-Scalar-Multiplication-加法和标量乘法"><a href="#Addition-and-Scalar-Multiplication-加法和标量乘法" class="headerlink" title="Addition and Scalar Multiplication (加法和标量乘法)"></a>Addition and Scalar Multiplication (加法和标量乘法)</h2><h3 id="矩阵加法"><a href="#矩阵加法" class="headerlink" title="矩阵加法"></a>矩阵加法</h3><p>两个矩阵相加，就是把两个矩阵里的元素逐个相加，只有两个维度相同的矩阵才可以相加。</p>
 <h3 id="标量乘法"><a href="#标量乘法" class="headerlink" title="标量乘法"></a>标量乘法</h3><p>scalar指的是real number，也就是说，一个实数和一个矩阵相乘，就是把矩阵中的每个元素都和这个实数相乘。除法也是同理。乘除前后的矩阵维度是不变的。</p>
@@ -739,35 +768,6 @@
       <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo插件测试 (未完)</title>
-    <link href="http://yibeichen.me/2016/07/30/Test-for-Plugins/"/>
-    <id>http://yibeichen.me/2016/07/30/Test-for-Plugins/</id>
-    <published>2016-07-30T04:34:12.000Z</published>
-    <updated>2016-08-04T14:21:22.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>测试了几个插件：<br>0804(网易云音乐代码嵌套) 0730(Spotify代码嵌套)</p>
-<p>玩心起了就折腾一下，不过，玩物总会丧志。<br><a id="more"></a></p>
-<h1 id="音乐插件"><a href="#音乐插件" class="headerlink" title="音乐插件"></a>音乐插件</h1><h2 id="代码嵌套"><a href="#代码嵌套" class="headerlink" title="代码嵌套"></a>代码嵌套</h2><h3 id="Spotify"><a href="#Spotify" class="headerlink" title="Spotify"></a>Spotify</h3><p>网站提供的代码如下：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">iframe</span> src=<span class="string">"https://embed.spotify.com/?uri=spotify%3Atrack%3A3v8PlUFGQQDBIk1J86waCo"</span> <span class="attribute">width</span>=<span class="string">"300"</span> height=<span class="string">"380"</span> frameborder=<span class="string">"0"</span> allowtransparency=<span class="string">"true"</span>&gt;</div><div class="line">&lt;/iframe&gt;</div></pre></td></tr></table></figure></p>
-<p>效果如图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-30_14:48:19.jpg" alt="2016-07-30_14:48:19.jpg"><br>没开VPN是显示不出来的。<br>看着挺美，但是问题在于，点击会跳转到Spotify官网，不能当前页播放。</p>
-<h3 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h3><p>打开网页版网易云音乐，进入歌曲播放页面，可以看到代码嵌套，可以设置播放框宽度，以及是否自动播放，代码如下：<br><figure class="highlight maxima"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;iframe frameborder=<span class="string">"no"</span> <span class="built_in">border</span>=<span class="string">"0"</span> marginwidth=<span class="string">"0"</span> marginheight=<span class="string">"0"</span> <span class="built_in">width</span>=<span class="string">"330"</span> <span class="built_in">height</span>=<span class="string">"86"</span> src=<span class="string">"http://music.163.com/outchain/player?type=2&amp;id=63875&amp;auto=1&amp;height=66"</span>&gt;&lt;/iframe&gt;</div></pre></td></tr></table></figure></p>
-<p>颜值不敌Spotify，但是还算实用。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;测试了几个插件：&lt;br&gt;0804(网易云音乐代码嵌套) 0730(Spotify代码嵌套)&lt;/p&gt;
-&lt;p&gt;玩心起了就折腾一下，不过，玩物总会丧志。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="http://yibeichen.me/tags/Hexo/"/>
-    
-      <category term="plugin" scheme="http://yibeichen.me/tags/plugin/"/>
     
   </entry>
   
