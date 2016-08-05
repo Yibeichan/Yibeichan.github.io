@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-08-05T04:03:33.000Z</updated>
+  <updated>2016-08-05T14:45:42.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -16,147 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
-    <link href="http://yibeichen.me/2016/08/05/HTML-CSS-Javascript-for-Web-Developers/"/>
-    <id>http://yibeichen.me/2016/08/05/HTML-CSS-Javascript-for-Web-Developers/</id>
-    <published>2016-08-05T04:00:23.000Z</published>
-    <updated>2016-08-05T04:03:33.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>0805：有一种当年自学html&amp;css靠的都是野路子，这才是正规军的感觉。<br>0804：<br>老师长得太可爱啦，自带腮红！<br>你好呀，html&amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)<br>所有这种编程课，我最喜欢的都是第一节——安装各种工具。<br><a id="more"></a><br>Coursera地址: <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank" rel="external">面向Web开发者的HTML、CSS与Javascript课程</a><br>辅助资料请上<a href="https://github.com/jhu-ep-coursera/fullstack-course4" target="_blank" rel="external">github</a></p>
-<h1 id="HTML5入门"><a href="#HTML5入门" class="headerlink" title="HTML5入门"></a>HTML5入门</h1><h2 id="安装开发环境"><a href="#安装开发环境" class="headerlink" title="安装开发环境"></a>安装开发环境</h2><p>必备工具集：</p>
-<ul>
-<li>Github账号</li>
-<li>Chrome+CDT</li>
-<li>Sublime Text3 (想抛弃Atom重回ST怀抱了)</li>
-<li>Git</li>
-<li>Browser Sync</li>
-</ul>
-<p>噼里啪啦，跟着视频敲了一堆看不懂的命令符，新建了一个github仓库，但是，有点不对。之前我搭这个博客已经开通了github page，并且绑定了我的域名，但是课程案例又新建了另一个page，所以，这个新的page就自动变成我的网站二级页，还继承了favicon。呐，就是它了：<a href="http://yibeichen.me/coursera-test/">http://yibeichen.me/coursera-test/</a></p>
-<p>内心默默涌起一种“我上个月怎么没学这门课”的后悔！以及，“这下学会了新建二级页，又能自己写index.html了”，开心！</p>
-<p>这五个工具里，唯一没用过的就是Browser Sync，但感觉跟<code>$ hexo s</code>很相似，不过要比后者方便，真正即时同步。</p>
-<h3 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h3><p>《Pro Git》<a href="https://git-scm.com/book/en/v2" target="_blank" rel="external">英文版</a> <a href="http://iissnan.com/progit/" target="_blank" rel="external">中文版</a> 看完前三章</p>
-<h2 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h2><p>HTML→HyperText Markup Language 超链接文本标记语言<br>在网页开发中，HTML、CSS、JavaScript分别扮演了什么角色呢？<br>HTML 搭建网页的结构和框架 (structure)<br>CSS 决定了网页的样式 (style)<br>JavaScript 关乎网页的实现形式 (behavior)</p>
-<h3 id="相关历史"><a href="#相关历史" class="headerlink" title="相关历史"></a>相关历史</h3><p>两个组织控制着HTML，一个是W3C(官方)，一个是WHATWG(民间)。<br>前一个发布了HTML5标准，后一个致力于HTML的evolving。</p>
-<h3 id="几个资源"><a href="#几个资源" class="headerlink" title="几个资源"></a>几个资源</h3><ol>
-<li><a href="https://www.w3.org/" target="_blank" rel="external">W3C</a> (最官方的文档)</li>
-<li><a href="http://caniuse.com/" target="_blank" rel="external">Can I Use</a> (feature investigation查看主流浏览器对新html语言的支持)</li>
-<li><a href="http://validator.w3.org/" target="_blank" rel="external">Markup Validation Serivice</a> (查看网页html规范)<br>测试了一下yibeichen.me，结果竟然是：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-05_10:53:46.jpg" alt="2016-08-05_10:53:46.jpg"><br>错误和警告加起来一共有16个，有得改了。不过暂时还不懂这些错在哪了。</li>
-<li><a href="http://www.w3schools.com/" target="_blank" rel="external">W3Schools</a> (Browser stats resource)</li>
-<li><a href="https://www.google.com" target="_blank" rel="external">Google</a></li>
-</ol>
-<h3 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h3><p>大多数标签都是有开有关的，比如<code>&lt;a&gt;&lt;/a&gt;</code>、<code>&lt;p&gt;&lt;/p&gt;</code>等等，但是有一些标签只用开不用关，比如<code>&lt;br&gt;</code>、<code>&lt;hr&gt;</code>。</p>
-<h4 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h4><p>比如<code>&lt;p id=&quot;myId&quot;&gt;&lt;/p&gt;</code>,这里的id就是一个属性名，myId就是一个属性值。<br>注意，<code>id</code>的值是唯一的，不能定义两个相同的id值。<br>另外，双引号和单引号都是ok的。</p>
-<h3 id="基本HTML文本结构"><a href="#基本HTML文本结构" class="headerlink" title="基本HTML文本结构"></a>基本HTML文本结构</h3><ol>
-<li>必须以<code>&lt;!doctyp html&gt;</code>开头</li>
-<li>meta标签放在head标签里，是一个开放标签，不需要关闭。比如<code>&lt;meta charset=&quot;utf-8&quot;&gt;</code></li>
-<li>head标签里必须包含一个title标签</li>
-<li>head标签结束后就到了body标签</li>
-<li>浏览器读取网页是从上到下的顺序，所以，重要的定义要放在前面(以后写css这点很重要)</li>
-</ol>
-<h3 id="HTML内容模式"><a href="#HTML内容模式" class="headerlink" title="HTML内容模式"></a>HTML内容模式</h3><p><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-05_11:27:57.jpg" alt="2016-08-05_11:27:57.jpg"><br>比如，div 就是一个block-level元素，而 span 则是一个inline元素。<br>block-level元素自己要独占一行，inline则不会。<br>span可以嵌套在div里，但是div不能嵌套在span里，这就是两类元素的特性。<br>这两大类都不是HTML5里正式的内容，但是现在仍然在使用。</p>
-<h2 id="HTML5基本标签"><a href="#HTML5基本标签" class="headerlink" title="HTML5基本标签"></a>HTML5基本标签</h2><h3 id="semantic-html-element"><a href="#semantic-html-element" class="headerlink" title="semantic html element"></a>semantic html element</h3><p>语义的，意味着这些标签可以帮助理解html的内容。<br>来，介绍几个：</p>
-<ol>
-<li>header 标签，主要用来放公司logo、标语、导航等</li>
-<li>nav 标签，存放关于网站导航的内容</li>
-<li>h1 标签，在h1到h6系列中，它最重要</li>
-<li>section 标签</li>
-<li>article 标签</li>
-<li>aside 标签 (some information that relates to the main topic, i.e.,related posts)</li>
-<li>footer 标签</li>
-</ol>
-<p>上面说的这些都是block-level元素。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;0805：有一种当年自学html&amp;amp;css靠的都是野路子，这才是正规军的感觉。&lt;br&gt;0804：&lt;br&gt;老师长得太可爱啦，自带腮红！&lt;br&gt;你好呀，html&amp;amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)&lt;br&gt;所有这种编程课，我最喜欢的都是第一节——安装各种工具。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="web development" scheme="http://yibeichen.me/tags/web-development/"/>
-    
-      <category term="HTML" scheme="http://yibeichen.me/tags/HTML/"/>
-    
-      <category term="CSS" scheme="http://yibeichen.me/tags/CSS/"/>
-    
-      <category term="JavaScript" scheme="http://yibeichen.me/tags/JavaScript/"/>
-    
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo插件测试 (未完)</title>
-    <link href="http://yibeichen.me/2016/08/04/Test-for-Plugins/"/>
-    <id>http://yibeichen.me/2016/08/04/Test-for-Plugins/</id>
-    <published>2016-08-04T14:34:12.000Z</published>
-    <updated>2016-08-04T14:45:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>测试了几个插件：<br>0804(网易云音乐代码嵌套) 0730(Spotify代码嵌套)</p>
-<p>玩心起了就折腾一下，不过，玩物总会丧志。<br><a id="more"></a></p>
-<h1 id="音乐插件"><a href="#音乐插件" class="headerlink" title="音乐插件"></a>音乐插件</h1><h2 id="代码嵌套"><a href="#代码嵌套" class="headerlink" title="代码嵌套"></a>代码嵌套</h2><h3 id="Spotify"><a href="#Spotify" class="headerlink" title="Spotify"></a>Spotify</h3><p>网站提供的代码如下：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">iframe</span> src=<span class="string">"https://embed.spotify.com/?uri=spotify%3Atrack%3A3v8PlUFGQQDBIk1J86waCo"</span> <span class="attribute">width</span>=<span class="string">"300"</span> height=<span class="string">"380"</span> frameborder=<span class="string">"0"</span> allowtransparency=<span class="string">"true"</span>&gt;</div><div class="line">&lt;/iframe&gt;</div></pre></td></tr></table></figure></p>
-<p>效果如图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-30_14:48:19.jpg" alt="2016-07-30_14:48:19.jpg"><br>没开VPN是显示不出来的。<br>看着挺美，但是问题在于，点击会跳转到Spotify官网，不能当前页播放。</p>
-<h3 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h3><p>打开网页版网易云音乐，进入歌曲播放页面，可以看到代码嵌套，可以设置播放框宽度，以及是否自动播放，代码如下：<br><figure class="highlight maxima"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;iframe frameborder=<span class="string">"no"</span> <span class="built_in">border</span>=<span class="string">"0"</span> marginwidth=<span class="string">"0"</span> marginheight=<span class="string">"0"</span> <span class="built_in">width</span>=<span class="string">"330"</span> <span class="built_in">height</span>=<span class="string">"86"</span> src=<span class="string">"http://music.163.com/outchain/player?type=2&amp;id=63875&amp;auto=1&amp;height=66"</span>&gt;&lt;/iframe&gt;</div></pre></td></tr></table></figure></p>
-<p>效果如图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_22:43:21.jpg" alt="2016-08-04_22:43:21.jpg"><br>体验请戳→<a href="http://yibeichen.me/2016/08/04/An-Illusion/">《黄粱一梦》</a><br>暂时不知道怎么改宽度。<br>颜值不敌Spotify，但是还算实用。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;测试了几个插件：&lt;br&gt;0804(网易云音乐代码嵌套) 0730(Spotify代码嵌套)&lt;/p&gt;
-&lt;p&gt;玩心起了就折腾一下，不过，玩物总会丧志。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="http://yibeichen.me/tags/Hexo/"/>
-    
-      <category term="plugin" scheme="http://yibeichen.me/tags/plugin/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>黄粱一梦</title>
-    <link href="http://yibeichen.me/2016/08/04/An-Illusion/"/>
-    <id>http://yibeichen.me/2016/08/04/An-Illusion/</id>
-    <published>2016-08-04T13:24:20.000Z</published>
-    <updated>2016-08-04T14:21:26.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>“黄粱一梦二十年”，应该是陈升的《牡丹亭》，网易云音乐找不到这首，只有一首《黄粱一梦二十年》，都行都行，有这句就好。</p>
-<p>哇塞，我怎么想到了这么一个伤春悲秋的题目？其实，跟一梦黄粱一点关系都没有，是某件事情突然让我想到了”illusion”这个词，再一想，中文里最门当户对的词语就是“黄粱一梦”啦。</p>
-<p>为了这个题目，特意去搜索了一下怎么给hexo添加音乐，原来这么简单！之前我是有多懒啊天。<br><a id="more"></a></p>
-<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=63875&auto=1&height=66"></iframe><br>（为什么播放框被拉这么长，好难看。）</p>
-<p>事情是这样的。</p>
-<p>我现在用的是11寸的Air，好小啊！<br>当时买的时候，根本没有考虑过要做编程，只是想着方便携带，方便码字。<br>结果呢，现在开始敲代码了。<br>想象一下，这么小的屏幕，一边放编辑器，一边放浏览器，天哪，根本摆不下。<br>默默想起当年某厂的前端同事们，一人都是俩显示屏，一横一竖，帅呆了。竖着的那个专门拿来敲代码，横着的那个查看渲染效果，每次从他们的工位旁经过(每次都是故意绕路)，看着一行行五颜六色的代码刷刷刷地落下来，羡慕得不行。</p>
-<p>自然是心痒了，想买个外接显示屏。<br>上网比较了一下，Dell的某系列真是太棒了！具体参数就不说了，因为我也没弄懂，光顾着发痴了。总之就是理想中的爱人呀，颜值才华俱佳，然而最便宜也要2000+，什么27寸5000+的我就当没看见。</p>
-<p>某天跟我妈小小地试探了一下，结果被无情轰回来，想都别想。<br>怎么办，我是轻易说放弃的人吗？不买就不买嘛！哼！我拿iPad当外接显示屏。<br>一番比较之后，选中了duet。这个app实在太精明了，Mac版免费，但iPad版付费，怎么办？1000块我没有，难道还没有100块吗，于是花了123买了它。<br>从此呢，就变成Air敲代码，iPad查看网页效果。</p>
-<p>下午发了一门新的课程笔记，结果发现课程名太长，发出来折行了，不好看，动了折腾NexT页面宽度的心思。<br>把宽度从700px调到了900px。<br>iPad太小了，看不出效果，于是把Chrome拽回到了Air上。<br>天哪！<br>怎么这么美，这么宽敞，这么大屏，一瞬间感觉我的Air从11寸变成了27寸。</p>
-<p>很好。<br>很快就反应过来，这是幻觉，心理学上肯定对此有一整套的解释和论证，反正不是什么新鲜事。<br>不过呢，既然我没钱买外接显示屏，但又真的非常需要一个，用这种方式欺骗一下自己也是可以的，视觉上的假象大概是可以安慰一下大脑中的神经吧。</p>
-<p>所以，就从“幻觉”到了“illusion”，又到了“黄粱一梦”，然后是“黄粱一梦二十年”，最后就是“陈升和《牡丹亭》”。</p>
-<p>这篇文章好像没什么用，是谁说的来着，既然要在互联网上写东西，拜托写点有用的吧。反正我不同意这句，因为我常写些没用的，总不能自己打脸吧。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;“黄粱一梦二十年”，应该是陈升的《牡丹亭》，网易云音乐找不到这首，只有一首《黄粱一梦二十年》，都行都行，有这句就好。&lt;/p&gt;
-&lt;p&gt;哇塞，我怎么想到了这么一个伤春悲秋的题目？其实，跟一梦黄粱一点关系都没有，是某件事情突然让我想到了”illusion”这个词，再一想，中文里最门当户对的词语就是“黄粱一梦”啦。&lt;/p&gt;
-&lt;p&gt;为了这个题目，特意去搜索了一下怎么给hexo添加音乐，原来这么简单！之前我是有多懒啊天。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="nonsense" scheme="http://yibeichen.me/tags/nonsense/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Machine Learning 课程笔记 (未完)</title>
-    <link href="http://yibeichen.me/2016/08/04/Machine-Learning/"/>
-    <id>http://yibeichen.me/2016/08/04/Machine-Learning/</id>
-    <published>2016-08-04T12:28:11.000Z</published>
-    <updated>2016-08-04T14:43:28.000Z</updated>
+    <link href="http://yibeichen.me/2016/08/05/Machine-Learning/"/>
+    <id>http://yibeichen.me/2016/08/05/Machine-Learning/</id>
+    <published>2016-08-05T14:28:11.000Z</published>
+    <updated>2016-08-05T14:45:42.000Z</updated>
     
-    <content type="html"><![CDATA[<p>笔记完成时间：0804(线代复习) 0803(一元线性回归) 0801(简介)<br>0804：LaTex的问题要尽快解决。<br>0803：怎么用markdown写数学公式？<br>0801：抽风，笔记用英文开始，最后还是转向了中文。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p>笔记完成时间：0805(多元线性回归) 0804(线代复习) 0803(一元线性回归) 0801(简介)<br>0804：LaTex的问题要尽快解决。<br>0803：怎么用markdown写数学公式？<br>0801：抽风，笔记用英文开始，最后还是转向了中文。<br><a id="more"></a></p>
 <hr>
 <p>Coursera地址: <a href="https://www.coursera.org/learn/machine-learning" target="_blank" rel="external">机器学习</a></p>
 <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Machine Learning</p>
@@ -289,11 +155,31 @@
 <h2 id="Inverse-and-Transpose-求倒和转置"><a href="#Inverse-and-Transpose-求倒和转置" class="headerlink" title="Inverse and Transpose (求倒和转置)"></a>Inverse and Transpose (求倒和转置)</h2><h3 id="求倒运算"><a href="#求倒运算" class="headerlink" title="求倒运算"></a>求倒运算</h3><p>实数界除了0以外的数都有倒数，那么矩阵界呢？<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:28:58.jpg" alt="2016-08-04_20:28:58.jpg"><br>注意，只有方阵才有导数，如果方阵的所有元素都是0，也是没有倒数的，矩阵和它的倒数相乘得到的是单位矩阵，所以其实是根据单位矩阵来推算矩阵倒数，很多编程软件都有求逆矩阵的软件库。</p>
 <p>另外，对于那些没有倒数的矩阵，他们被称为奇异(singular)矩阵或者退化(degenerate)矩阵。</p>
 <h3 id="转置运算"><a href="#转置运算" class="headerlink" title="转置运算"></a>转置运算</h3><p>最直观的理解就是，沿着矩阵的对角线画一条线，再以这条线为轴将矩阵翻转。来继续看一看销魂的板书吧：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_20:38:21.jpg" alt="2016-08-04_20:38:21.jpg"><br>如何检验转置运算的对错？看第一个和最后一个元素，它俩是不变的。</p>
+<h1 id="Linear-Regression-with-Multiple-Variables"><a href="#Linear-Regression-with-Multiple-Variables" class="headerlink" title="Linear Regression with Multiple Variables"></a>Linear Regression with Multiple Variables</h1><h2 id="Multivariate-Linear-Regression-多元线性回归"><a href="#Multivariate-Linear-Regression-多元线性回归" class="headerlink" title="Multivariate Linear Regression (多元线性回归)"></a>Multivariate Linear Regression (多元线性回归)</h2><h3 id="Multiple-Features-多变量"><a href="#Multiple-Features-多变量" class="headerlink" title="Multiple Features (多变量)"></a>Multiple Features (多变量)</h3><p>上一个案例：房价预测，只有一个变量是x(房子的面积)。现在，变成多变量就是x1(房间面积)、x2(房子楼层)、x3(房子的年数)……<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-05_21:15:45.jpg" alt="2016-08-05_21:15:45.jpg"><br>这个图很好看懂吧？多个变量可以凑成一个向量。<br>为了帮助理解，上标表示第几行，下标表示第几列。<br>那么函数怎么表示呢？一个变量是一元一次函数，多个变量当然就是多元一次函数啦。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-05_21:24:06.jpg" alt="2016-08-05_21:24:06.jpg"><br>图上第一行就是这个多元一次函数，手写部分是简化这个函数的步骤，还记得上节课说的转置运算吗？这个函数最终被简化为矩阵θ的倒数和矩阵x的乘积。<br>注意，这里引进了x_0，并设定它等于1.</p>
+<h3 id="Gradient-Descent-for-Multiple-Variables"><a href="#Gradient-Descent-for-Multiple-Variables" class="headerlink" title="Gradient Descent for Multiple Variables"></a>Gradient Descent for Multiple Variables</h3><p>这节自然就是要讲用梯度下降来解决多元线性回归问题了。<br>首先，我们来看一下从一元变成多元，成本函数发生了什么样的变化：<br>注意，多个参数和多个变量都被写成了向量的形式。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-05_21:30:28.jpg" alt="2016-08-05_21:30:28.jpg"><br>接下来再看看梯度下降的公式有什么变化：<br>仔细看一下会发现，左右两边其实是一样的，运算的规则没有什么区别。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-05_2016-08-05_2016-08-05_2016-08-05_2016-08-05_2016-08-05_2016-08-05_2016-08-05_2016-08-05_21:33:11.jpg" alt="2016-08-05_2016-08-05_2016-08-05_2016-08-05_2016-08-05_2016-08-05_2016-08-05_2016-08-05_2016-08-05_21:33:11.jpg"></p>
+<h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><p>来，我们讲一讲梯度下降在实例中的应用</p>
+<h4 id="Feature-Scaling-特征缩放"><a href="#Feature-Scaling-特征缩放" class="headerlink" title="Feature Scaling (特征缩放)"></a>Feature Scaling (特征缩放)</h4><p>这到底是什么呢？<br>这么说吧，它的目标就是要确保多个不同的特征(变量)在一个相似的范围内。<br>比如房价预测问题中，有两个变量x1(房间面积0-2000㎡)、x2(房间数量1-5)，这两个变量的取值相差太大了，这样画出来的成本函数就是那种非常细长的椭圆，再用梯度下降来算的话，会特别特别得慢。<br>那特征缩放是怎么做呢？<br>把x1除以2000、x2除以5，使得这两个变量的范围都在[0，1]，这样的话，画出的成本函数图就比较圆了，梯度下降就会更快。</p>
+<p>通常，我们把各个变量的范围通过特征缩放，控制在[-1,1]左右，上下有误差没关系，只要各个变量之间的差别不大就行。<br>这也是有公式可以用的，注意公式里出现的两个数，一个是平均值，一个是极差。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-05_22:03:22.jpg" alt="2016-08-05_22:03:22.jpg"></p>
+<h4 id="Learning-Rate-学习率α"><a href="#Learning-Rate-学习率α" class="headerlink" title="Learning Rate (学习率α)"></a>Learning Rate (学习率α)</h4><p>还记得吧，α是梯度下降那个公式里的，所以这一小节主要讲两点：</p>
+<ol>
+<li>如何确保梯度下降是正确运行的，也就是debugging</li>
+<li>如何选择α的值</li>
+</ol>
+<p>下面这张图提供了两种方法来检验梯度下降是否正确：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-05_22:12:59.jpg" alt="2016-08-05_22:12:59.jpg"></p>
+<ol>
+<li>看左边，以迭代的步数(不同的案例这个数是不同的)为横坐标，J(θ)的值为纵坐标，画出图形，正确的情况就是，每一次梯度下降都会使J(θ)减小，当图形无限接近x轴的时候，差不多就是求出最优解的时候了。如果图形是上升的曲线，差不多你的梯度下降就是错的了。</li>
+<li>看右边，用的是公式，如果每次迭代J(θ)的值减少的量小于10^{-3}，那么差不多就是快求出解了，但是这个问题在于10^{-3}这个数很难界定。</li>
+</ol>
+<p>所以呢，当我们发现梯度下降不太对的时候，就可以考虑换一下α的值了。比如，上图的图形如果是上升的，α的值就应该调小一点。<br>同样，如果图形是”W”型的曲线，α的值也应该调小。<br>当然啦，α太小了就会变得很慢很慢，图形的坡度也会变小。</p>
+<p>建议：挑选α的值可以隔3倍试一试。比如：<br>……，0.001，0.003，0.01，0.03，0.1，0.31，……</p>
+<h3 id="Features-and-Polynomial-多项式-Regression"><a href="#Features-and-Polynomial-多项式-Regression" class="headerlink" title="Features and Polynomial (多项式) Regression"></a>Features and Polynomial (多项式) Regression</h3><p>首先，我们来讲怎么选择特征。<br>还是拿房价预测的例子吧，假如有两个变量，一个是房子临街的宽度，一个是房子的深度，但在设函数的时候，我们可以把变量定为宽度和深度的乘积，这样就变成了一个一元线性回归问题。</p>
+<p>多项式指的是什么呢？其实就是多次啦。<br>假如有一个案例只有一个变量，但是你发现用一次函数或者二次函数都不能很好地拟合这个数据集，那么你可以用三次函数，这样你就有了x、x²、x³，然后你可以重新定义一个有三个变量的函数，这三个变量分别就是x_1=x、x_2=x²、x_3=x³.不过要注意的是，这样一来三个变量的取值范围可能差别会很大，在梯度下降的时候别忘了缩放。<br>除了多项式，你还可以用根号呀，用一个变量表示x，另一个变量表示x的平方根，不过同样也要注意取值范围。</p>
+<p>讲了这么多，其实是想说明，碰到回归问题不是只有一元线性回归这一种做法，有很多解决问题的方案，注意变换看问题的角度。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;笔记完成时间：0804(线代复习) 0803(一元线性回归) 0801(简介)&lt;br&gt;0804：LaTex的问题要尽快解决。&lt;br&gt;0803：怎么用markdown写数学公式？&lt;br&gt;0801：抽风，笔记用英文开始，最后还是转向了中文。&lt;br&gt;
+      &lt;p&gt;笔记完成时间：0805(多元线性回归) 0804(线代复习) 0803(一元线性回归) 0801(简介)&lt;br&gt;0804：LaTex的问题要尽快解决。&lt;br&gt;0803：怎么用markdown写数学公式？&lt;br&gt;0801：抽风，笔记用英文开始，最后还是转向了中文。&lt;br&gt;
     
     </summary>
     
@@ -301,6 +187,140 @@
       <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
       <category term="machine learning" scheme="http://yibeichen.me/tags/machine-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
+    <link href="http://yibeichen.me/2016/08/05/HTML-CSS-Javascript-for-Web-Developers/"/>
+    <id>http://yibeichen.me/2016/08/05/HTML-CSS-Javascript-for-Web-Developers/</id>
+    <published>2016-08-05T04:00:23.000Z</published>
+    <updated>2016-08-05T04:03:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>0805：有一种当年自学html&amp;css靠的都是野路子，这才是正规军的感觉。<br>0804：<br>老师长得太可爱啦，自带腮红！<br>你好呀，html&amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)<br>所有这种编程课，我最喜欢的都是第一节——安装各种工具。<br><a id="more"></a><br>Coursera地址: <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank" rel="external">面向Web开发者的HTML、CSS与Javascript课程</a><br>辅助资料请上<a href="https://github.com/jhu-ep-coursera/fullstack-course4" target="_blank" rel="external">github</a></p>
+<h1 id="HTML5入门"><a href="#HTML5入门" class="headerlink" title="HTML5入门"></a>HTML5入门</h1><h2 id="安装开发环境"><a href="#安装开发环境" class="headerlink" title="安装开发环境"></a>安装开发环境</h2><p>必备工具集：</p>
+<ul>
+<li>Github账号</li>
+<li>Chrome+CDT</li>
+<li>Sublime Text3 (想抛弃Atom重回ST怀抱了)</li>
+<li>Git</li>
+<li>Browser Sync</li>
+</ul>
+<p>噼里啪啦，跟着视频敲了一堆看不懂的命令符，新建了一个github仓库，但是，有点不对。之前我搭这个博客已经开通了github page，并且绑定了我的域名，但是课程案例又新建了另一个page，所以，这个新的page就自动变成我的网站二级页，还继承了favicon。呐，就是它了：<a href="http://yibeichen.me/coursera-test/">http://yibeichen.me/coursera-test/</a></p>
+<p>内心默默涌起一种“我上个月怎么没学这门课”的后悔！以及，“这下学会了新建二级页，又能自己写index.html了”，开心！</p>
+<p>这五个工具里，唯一没用过的就是Browser Sync，但感觉跟<code>$ hexo s</code>很相似，不过要比后者方便，真正即时同步。</p>
+<h3 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h3><p>《Pro Git》<a href="https://git-scm.com/book/en/v2" target="_blank" rel="external">英文版</a> <a href="http://iissnan.com/progit/" target="_blank" rel="external">中文版</a> 看完前三章</p>
+<h2 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h2><p>HTML→HyperText Markup Language 超链接文本标记语言<br>在网页开发中，HTML、CSS、JavaScript分别扮演了什么角色呢？<br>HTML 搭建网页的结构和框架 (structure)<br>CSS 决定了网页的样式 (style)<br>JavaScript 关乎网页的实现形式 (behavior)</p>
+<h3 id="相关历史"><a href="#相关历史" class="headerlink" title="相关历史"></a>相关历史</h3><p>两个组织控制着HTML，一个是W3C(官方)，一个是WHATWG(民间)。<br>前一个发布了HTML5标准，后一个致力于HTML的evolving。</p>
+<h3 id="几个资源"><a href="#几个资源" class="headerlink" title="几个资源"></a>几个资源</h3><ol>
+<li><a href="https://www.w3.org/" target="_blank" rel="external">W3C</a> (最官方的文档)</li>
+<li><a href="http://caniuse.com/" target="_blank" rel="external">Can I Use</a> (feature investigation查看主流浏览器对新html语言的支持)</li>
+<li><a href="http://validator.w3.org/" target="_blank" rel="external">Markup Validation Serivice</a> (查看网页html规范)<br>测试了一下yibeichen.me，结果竟然是：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-05_10:53:46.jpg" alt="2016-08-05_10:53:46.jpg"><br>错误和警告加起来一共有16个，有得改了。不过暂时还不懂这些错在哪了。</li>
+<li><a href="http://www.w3schools.com/" target="_blank" rel="external">W3Schools</a> (Browser stats resource)</li>
+<li><a href="https://www.google.com" target="_blank" rel="external">Google</a></li>
+</ol>
+<h3 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h3><p>大多数标签都是有开有关的，比如<code>&lt;a&gt;&lt;/a&gt;</code>、<code>&lt;p&gt;&lt;/p&gt;</code>等等，但是有一些标签只用开不用关，比如<code>&lt;br&gt;</code>、<code>&lt;hr&gt;</code>。</p>
+<h4 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h4><p>比如<code>&lt;p id=&quot;myId&quot;&gt;&lt;/p&gt;</code>,这里的id就是一个属性名，myId就是一个属性值。<br>注意，<code>id</code>的值是唯一的，不能定义两个相同的id值。<br>另外，双引号和单引号都是ok的。</p>
+<h3 id="基本HTML文本结构"><a href="#基本HTML文本结构" class="headerlink" title="基本HTML文本结构"></a>基本HTML文本结构</h3><ol>
+<li>必须以<code>&lt;!doctyp html&gt;</code>开头</li>
+<li>meta标签放在head标签里，是一个开放标签，不需要关闭。比如<code>&lt;meta charset=&quot;utf-8&quot;&gt;</code></li>
+<li>head标签里必须包含一个title标签</li>
+<li>head标签结束后就到了body标签</li>
+<li>浏览器读取网页是从上到下的顺序，所以，重要的定义要放在前面(以后写css这点很重要)</li>
+</ol>
+<h3 id="HTML内容模式"><a href="#HTML内容模式" class="headerlink" title="HTML内容模式"></a>HTML内容模式</h3><p><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-05_11:27:57.jpg" alt="2016-08-05_11:27:57.jpg"><br>比如，div 就是一个block-level元素，而 span 则是一个inline元素。<br>block-level元素自己要独占一行，inline则不会。<br>span可以嵌套在div里，但是div不能嵌套在span里，这就是两类元素的特性。<br>这两大类都不是HTML5里正式的内容，但是现在仍然在使用。</p>
+<h2 id="HTML5基本标签"><a href="#HTML5基本标签" class="headerlink" title="HTML5基本标签"></a>HTML5基本标签</h2><h3 id="semantic-html-element"><a href="#semantic-html-element" class="headerlink" title="semantic html element"></a>semantic html element</h3><p>语义的，意味着这些标签可以帮助理解html的内容。<br>来，介绍几个：</p>
+<ol>
+<li>header 标签，主要用来放公司logo、标语、导航等</li>
+<li>nav 标签，存放关于网站导航的内容</li>
+<li>h1 标签，在h1到h6系列中，它最重要</li>
+<li>section 标签</li>
+<li>article 标签</li>
+<li>aside 标签 (some information that relates to the main topic, i.e.,related posts)</li>
+<li>footer 标签</li>
+</ol>
+<p>上面说的这些都是block-level元素。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;0805：有一种当年自学html&amp;amp;css靠的都是野路子，这才是正规军的感觉。&lt;br&gt;0804：&lt;br&gt;老师长得太可爱啦，自带腮红！&lt;br&gt;你好呀，html&amp;amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)&lt;br&gt;所有这种编程课，我最喜欢的都是第一节——安装各种工具。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="web development" scheme="http://yibeichen.me/tags/web-development/"/>
+    
+      <category term="HTML" scheme="http://yibeichen.me/tags/HTML/"/>
+    
+      <category term="CSS" scheme="http://yibeichen.me/tags/CSS/"/>
+    
+      <category term="JavaScript" scheme="http://yibeichen.me/tags/JavaScript/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo插件测试 (未完)</title>
+    <link href="http://yibeichen.me/2016/08/04/Test-for-Plugins/"/>
+    <id>http://yibeichen.me/2016/08/04/Test-for-Plugins/</id>
+    <published>2016-08-04T14:34:12.000Z</published>
+    <updated>2016-08-04T14:45:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>测试了几个插件：<br>0804(网易云音乐代码嵌套) 0730(Spotify代码嵌套)</p>
+<p>玩心起了就折腾一下，不过，玩物总会丧志。<br><a id="more"></a></p>
+<h1 id="音乐插件"><a href="#音乐插件" class="headerlink" title="音乐插件"></a>音乐插件</h1><h2 id="代码嵌套"><a href="#代码嵌套" class="headerlink" title="代码嵌套"></a>代码嵌套</h2><h3 id="Spotify"><a href="#Spotify" class="headerlink" title="Spotify"></a>Spotify</h3><p>网站提供的代码如下：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">iframe</span> src=<span class="string">"https://embed.spotify.com/?uri=spotify%3Atrack%3A3v8PlUFGQQDBIk1J86waCo"</span> <span class="attribute">width</span>=<span class="string">"300"</span> height=<span class="string">"380"</span> frameborder=<span class="string">"0"</span> allowtransparency=<span class="string">"true"</span>&gt;</div><div class="line">&lt;/iframe&gt;</div></pre></td></tr></table></figure></p>
+<p>效果如图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-07-30_14:48:19.jpg" alt="2016-07-30_14:48:19.jpg"><br>没开VPN是显示不出来的。<br>看着挺美，但是问题在于，点击会跳转到Spotify官网，不能当前页播放。</p>
+<h3 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h3><p>打开网页版网易云音乐，进入歌曲播放页面，可以看到代码嵌套，可以设置播放框宽度，以及是否自动播放，代码如下：<br><figure class="highlight maxima"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;iframe frameborder=<span class="string">"no"</span> <span class="built_in">border</span>=<span class="string">"0"</span> marginwidth=<span class="string">"0"</span> marginheight=<span class="string">"0"</span> <span class="built_in">width</span>=<span class="string">"330"</span> <span class="built_in">height</span>=<span class="string">"86"</span> src=<span class="string">"http://music.163.com/outchain/player?type=2&amp;id=63875&amp;auto=1&amp;height=66"</span>&gt;&lt;/iframe&gt;</div></pre></td></tr></table></figure></p>
+<p>效果如图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-04_22:43:21.jpg" alt="2016-08-04_22:43:21.jpg"><br>体验请戳→<a href="http://yibeichen.me/2016/08/04/An-Illusion/">《黄粱一梦》</a><br>暂时不知道怎么改宽度。<br>颜值不敌Spotify，但是还算实用。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;测试了几个插件：&lt;br&gt;0804(网易云音乐代码嵌套) 0730(Spotify代码嵌套)&lt;/p&gt;
+&lt;p&gt;玩心起了就折腾一下，不过，玩物总会丧志。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yibeichen.me/tags/Hexo/"/>
+    
+      <category term="plugin" scheme="http://yibeichen.me/tags/plugin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>黄粱一梦</title>
+    <link href="http://yibeichen.me/2016/08/04/An-Illusion/"/>
+    <id>http://yibeichen.me/2016/08/04/An-Illusion/</id>
+    <published>2016-08-04T13:24:20.000Z</published>
+    <updated>2016-08-04T14:21:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>“黄粱一梦二十年”，应该是陈升的《牡丹亭》，网易云音乐找不到这首，只有一首《黄粱一梦二十年》，都行都行，有这句就好。</p>
+<p>哇塞，我怎么想到了这么一个伤春悲秋的题目？其实，跟一梦黄粱一点关系都没有，是某件事情突然让我想到了”illusion”这个词，再一想，中文里最门当户对的词语就是“黄粱一梦”啦。</p>
+<p>为了这个题目，特意去搜索了一下怎么给hexo添加音乐，原来这么简单！之前我是有多懒啊天。<br><a id="more"></a></p>
+<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=63875&auto=1&height=66"></iframe><br>（为什么播放框被拉这么长，好难看。）</p>
+<p>事情是这样的。</p>
+<p>我现在用的是11寸的Air，好小啊！<br>当时买的时候，根本没有考虑过要做编程，只是想着方便携带，方便码字。<br>结果呢，现在开始敲代码了。<br>想象一下，这么小的屏幕，一边放编辑器，一边放浏览器，天哪，根本摆不下。<br>默默想起当年某厂的前端同事们，一人都是俩显示屏，一横一竖，帅呆了。竖着的那个专门拿来敲代码，横着的那个查看渲染效果，每次从他们的工位旁经过(每次都是故意绕路)，看着一行行五颜六色的代码刷刷刷地落下来，羡慕得不行。</p>
+<p>自然是心痒了，想买个外接显示屏。<br>上网比较了一下，Dell的某系列真是太棒了！具体参数就不说了，因为我也没弄懂，光顾着发痴了。总之就是理想中的爱人呀，颜值才华俱佳，然而最便宜也要2000+，什么27寸5000+的我就当没看见。</p>
+<p>某天跟我妈小小地试探了一下，结果被无情轰回来，想都别想。<br>怎么办，我是轻易说放弃的人吗？不买就不买嘛！哼！我拿iPad当外接显示屏。<br>一番比较之后，选中了duet。这个app实在太精明了，Mac版免费，但iPad版付费，怎么办？1000块我没有，难道还没有100块吗，于是花了123买了它。<br>从此呢，就变成Air敲代码，iPad查看网页效果。</p>
+<p>下午发了一门新的课程笔记，结果发现课程名太长，发出来折行了，不好看，动了折腾NexT页面宽度的心思。<br>把宽度从700px调到了900px。<br>iPad太小了，看不出效果，于是把Chrome拽回到了Air上。<br>天哪！<br>怎么这么美，这么宽敞，这么大屏，一瞬间感觉我的Air从11寸变成了27寸。</p>
+<p>很好。<br>很快就反应过来，这是幻觉，心理学上肯定对此有一整套的解释和论证，反正不是什么新鲜事。<br>不过呢，既然我没钱买外接显示屏，但又真的非常需要一个，用这种方式欺骗一下自己也是可以的，视觉上的假象大概是可以安慰一下大脑中的神经吧。</p>
+<p>所以，就从“幻觉”到了“illusion”，又到了“黄粱一梦”，然后是“黄粱一梦二十年”，最后就是“陈升和《牡丹亭》”。</p>
+<p>这篇文章好像没什么用，是谁说的来着，既然要在互联网上写东西，拜托写点有用的吧。反正我不同意这句，因为我常写些没用的，总不能自己打脸吧。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;“黄粱一梦二十年”，应该是陈升的《牡丹亭》，网易云音乐找不到这首，只有一首《黄粱一梦二十年》，都行都行，有这句就好。&lt;/p&gt;
+&lt;p&gt;哇塞，我怎么想到了这么一个伤春悲秋的题目？其实，跟一梦黄粱一点关系都没有，是某件事情突然让我想到了”illusion”这个词，再一想，中文里最门当户对的词语就是“黄粱一梦”啦。&lt;/p&gt;
+&lt;p&gt;为了这个题目，特意去搜索了一下怎么给hexo添加音乐，原来这么简单！之前我是有多懒啊天。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="nonsense" scheme="http://yibeichen.me/tags/nonsense/"/>
     
   </entry>
   
