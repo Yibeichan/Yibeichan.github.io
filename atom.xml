@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-08-04T14:45:34.000Z</updated>
+  <updated>2016-08-05T04:03:33.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -14,6 +14,77 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
+    <link href="http://yibeichen.me/2016/08/05/HTML-CSS-Javascript-for-Web-Developers/"/>
+    <id>http://yibeichen.me/2016/08/05/HTML-CSS-Javascript-for-Web-Developers/</id>
+    <published>2016-08-05T04:00:23.000Z</published>
+    <updated>2016-08-05T04:03:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>0805：有一种当年自学html&amp;css靠的都是野路子，这才是正规军的感觉。<br>0804：<br>老师长得太可爱啦，自带腮红！<br>你好呀，html&amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)<br>所有这种编程课，我最喜欢的都是第一节——安装各种工具。<br><a id="more"></a><br>Coursera地址: <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank" rel="external">面向Web开发者的HTML、CSS与Javascript课程</a><br>辅助资料请上<a href="https://github.com/jhu-ep-coursera/fullstack-course4" target="_blank" rel="external">github</a></p>
+<h1 id="HTML5入门"><a href="#HTML5入门" class="headerlink" title="HTML5入门"></a>HTML5入门</h1><h2 id="安装开发环境"><a href="#安装开发环境" class="headerlink" title="安装开发环境"></a>安装开发环境</h2><p>必备工具集：</p>
+<ul>
+<li>Github账号</li>
+<li>Chrome+CDT</li>
+<li>Sublime Text3 (想抛弃Atom重回ST怀抱了)</li>
+<li>Git</li>
+<li>Browser Sync</li>
+</ul>
+<p>噼里啪啦，跟着视频敲了一堆看不懂的命令符，新建了一个github仓库，但是，有点不对。之前我搭这个博客已经开通了github page，并且绑定了我的域名，但是课程案例又新建了另一个page，所以，这个新的page就自动变成我的网站二级页，还继承了favicon。呐，就是它了：<a href="http://yibeichen.me/coursera-test/">http://yibeichen.me/coursera-test/</a></p>
+<p>内心默默涌起一种“我上个月怎么没学这门课”的后悔！以及，“这下学会了新建二级页，又能自己写index.html了”，开心！</p>
+<p>这五个工具里，唯一没用过的就是Browser Sync，但感觉跟<code>$ hexo s</code>很相似，不过要比后者方便，真正即时同步。</p>
+<h3 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h3><p>《Pro Git》<a href="https://git-scm.com/book/en/v2" target="_blank" rel="external">英文版</a> <a href="http://iissnan.com/progit/" target="_blank" rel="external">中文版</a> 看完前三章</p>
+<h2 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h2><p>HTML→HyperText Markup Language 超链接文本标记语言<br>在网页开发中，HTML、CSS、JavaScript分别扮演了什么角色呢？<br>HTML 搭建网页的结构和框架 (structure)<br>CSS 决定了网页的样式 (style)<br>JavaScript 关乎网页的实现形式 (behavior)</p>
+<h3 id="相关历史"><a href="#相关历史" class="headerlink" title="相关历史"></a>相关历史</h3><p>两个组织控制着HTML，一个是W3C(官方)，一个是WHATWG(民间)。<br>前一个发布了HTML5标准，后一个致力于HTML的evolving。</p>
+<h3 id="几个资源"><a href="#几个资源" class="headerlink" title="几个资源"></a>几个资源</h3><ol>
+<li><a href="https://www.w3.org/" target="_blank" rel="external">W3C</a> (最官方的文档)</li>
+<li><a href="http://caniuse.com/" target="_blank" rel="external">Can I Use</a> (feature investigation查看主流浏览器对新html语言的支持)</li>
+<li><a href="http://validator.w3.org/" target="_blank" rel="external">Markup Validation Serivice</a> (查看网页html规范)<br>测试了一下yibeichen.me，结果竟然是：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-05_10:53:46.jpg" alt="2016-08-05_10:53:46.jpg"><br>错误和警告加起来一共有16个，有得改了。不过暂时还不懂这些错在哪了。</li>
+<li><a href="http://www.w3schools.com/" target="_blank" rel="external">W3Schools</a> (Browser stats resource)</li>
+<li><a href="https://www.google.com" target="_blank" rel="external">Google</a></li>
+</ol>
+<h3 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h3><p>大多数标签都是有开有关的，比如<code>&lt;a&gt;&lt;/a&gt;</code>、<code>&lt;p&gt;&lt;/p&gt;</code>等等，但是有一些标签只用开不用关，比如<code>&lt;br&gt;</code>、<code>&lt;hr&gt;</code>。</p>
+<h4 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h4><p>比如<code>&lt;p id=&quot;myId&quot;&gt;&lt;/p&gt;</code>,这里的id就是一个属性名，myId就是一个属性值。<br>注意，<code>id</code>的值是唯一的，不能定义两个相同的id值。<br>另外，双引号和单引号都是ok的。</p>
+<h3 id="基本HTML文本结构"><a href="#基本HTML文本结构" class="headerlink" title="基本HTML文本结构"></a>基本HTML文本结构</h3><ol>
+<li>必须以<code>&lt;!doctyp html&gt;</code>开头</li>
+<li>meta标签放在head标签里，是一个开放标签，不需要关闭。比如<code>&lt;meta charset=&quot;utf-8&quot;&gt;</code></li>
+<li>head标签里必须包含一个title标签</li>
+<li>head标签结束后就到了body标签</li>
+<li>浏览器读取网页是从上到下的顺序，所以，重要的定义要放在前面(以后写css这点很重要)</li>
+</ol>
+<h3 id="HTML内容模式"><a href="#HTML内容模式" class="headerlink" title="HTML内容模式"></a>HTML内容模式</h3><p><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-05_11:27:57.jpg" alt="2016-08-05_11:27:57.jpg"><br>比如，div 就是一个block-level元素，而 span 则是一个inline元素。<br>block-level元素自己要独占一行，inline则不会。<br>span可以嵌套在div里，但是div不能嵌套在span里，这就是两类元素的特性。<br>这两大类都不是HTML5里正式的内容，但是现在仍然在使用。</p>
+<h2 id="HTML5基本标签"><a href="#HTML5基本标签" class="headerlink" title="HTML5基本标签"></a>HTML5基本标签</h2><h3 id="semantic-html-element"><a href="#semantic-html-element" class="headerlink" title="semantic html element"></a>semantic html element</h3><p>语义的，意味着这些标签可以帮助理解html的内容。<br>来，介绍几个：</p>
+<ol>
+<li>header 标签，主要用来放公司logo、标语、导航等</li>
+<li>nav 标签，存放关于网站导航的内容</li>
+<li>h1 标签，在h1到h6系列中，它最重要</li>
+<li>section 标签</li>
+<li>article 标签</li>
+<li>aside 标签 (some information that relates to the main topic, i.e.,related posts)</li>
+<li>footer 标签</li>
+</ol>
+<p>上面说的这些都是block-level元素。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;0805：有一种当年自学html&amp;amp;css靠的都是野路子，这才是正规军的感觉。&lt;br&gt;0804：&lt;br&gt;老师长得太可爱啦，自带腮红！&lt;br&gt;你好呀，html&amp;amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)&lt;br&gt;所有这种编程课，我最喜欢的都是第一节——安装各种工具。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="web development" scheme="http://yibeichen.me/tags/web-development/"/>
+    
+      <category term="HTML" scheme="http://yibeichen.me/tags/HTML/"/>
+    
+      <category term="CSS" scheme="http://yibeichen.me/tags/CSS/"/>
+    
+      <category term="JavaScript" scheme="http://yibeichen.me/tags/JavaScript/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo插件测试 (未完)</title>
@@ -238,9 +309,9 @@
     <link href="http://yibeichen.me/2016/08/04/Introduction-to-Classical-Music/"/>
     <id>http://yibeichen.me/2016/08/04/Introduction-to-Classical-Music/</id>
     <published>2016-08-04T04:41:53.000Z</published>
-    <updated>2016-08-04T12:59:30.000Z</updated>
+    <updated>2016-08-05T02:27:05.000Z</updated>
     
-    <content type="html"><![CDATA[<p>我用的教材是Craig Wright的<a href="https://www.amazon.cn/%E8%81%86%E5%90%AC%E9%9F%B3%E4%B9%90-%E5%85%8B%E9%9B%B7%E6%A0%BC%E2%80%A2%E8%8E%B1%E7%89%B9/dp/B007TQNEYW/ref=sr_1_1?ie=UTF8&amp;qid=1470288686&amp;sr=8-1&amp;keywords=%E8%81%86%E5%90%AC%E9%9F%B3%E4%B9%90" target="_blank" rel="external">《聆听音乐》</a>，Craig就是这门课的老师，老先生真是儒雅有风度。不过，他推荐的是：<a href="https://www.amazon.com/Essential-Listening-Digital-Downloads-Printed/dp/1285856791/ref=sr_1_2?ie=UTF8&amp;qid=1470288731&amp;sr=8-2&amp;keywords=CRAIG+WRIGHT" target="_blank" rel="external">《The Essential Listening to Music》</a>，但是这本没有中文版，实在是不太方便。</p>
+    <content type="html"><![CDATA[<p>我用的教材是Craig Wright的<a href="https://www.amazon.cn/%E8%81%86%E5%90%AC%E9%9F%B3%E4%B9%90-%E5%85%8B%E9%9B%B7%E6%A0%BC%E2%80%A2%E8%8E%B1%E7%89%B9/dp/B007TQNEYW/ref=sr_1_1?ie=UTF8&amp;qid=1470288686&amp;sr=8-1&amp;keywords=%E8%81%86%E5%90%AC%E9%9F%B3%E4%B9%90" target="_blank" rel="external">《聆听音乐》</a>，Craig Wright就是这门课的老师，老先生真是儒雅有风度。不过，他推荐的是：<a href="https://www.amazon.com/Essential-Listening-Digital-Downloads-Printed/dp/1285856791/ref=sr_1_2?ie=UTF8&amp;qid=1470288731&amp;sr=8-2&amp;keywords=CRAIG+WRIGHT" target="_blank" rel="external">《The Essential Listening to Music》</a>，但是这本没有中文版，不太方便使用。</p>
 <p>7月20日开始记笔记，断断续续更新中。<br>刚开始扒英文字幕当笔记，很快就发现，这些英文我是不会再看第二眼了，于是改成中文，但笔记量也因此少了很多。<br><a id="more"></a><br>Coursera地址: <a href="https://www.coursera.org/learn/introclassicalmusic" target="_blank" rel="external">古典音乐导论</a><br>Spotify playlist: <a href="https://open.spotify.com/embed?uri=spotify:user:gauravkumar87:playlist:6sPZCTmf5razbg3CfCXsuF" target="_blank" rel="external">点这里</a></p>
 <h1 id="What-Is-Music"><a href="#What-Is-Music" class="headerlink" title="What Is Music?"></a>What Is Music?</h1><h2 id="Why-we-Like-What-we-Like"><a href="#Why-we-Like-What-we-Like" class="headerlink" title="Why we Like What we Like"></a>Why we Like What we Like</h2><h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>Art is life, art is another life, a life of imagination.</p>
 <blockquote>
@@ -356,7 +427,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;我用的教材是Craig Wright的&lt;a href=&quot;https://www.amazon.cn/%E8%81%86%E5%90%AC%E9%9F%B3%E4%B9%90-%E5%85%8B%E9%9B%B7%E6%A0%BC%E2%80%A2%E8%8E%B1%E7%89%B9/dp/B007TQNEYW/ref=sr_1_1?ie=UTF8&amp;amp;qid=1470288686&amp;amp;sr=8-1&amp;amp;keywords=%E8%81%86%E5%90%AC%E9%9F%B3%E4%B9%90&quot;&gt;《聆听音乐》&lt;/a&gt;，Craig就是这门课的老师，老先生真是儒雅有风度。不过，他推荐的是：&lt;a href=&quot;https://www.amazon.com/Essential-Listening-Digital-Downloads-Printed/dp/1285856791/ref=sr_1_2?ie=UTF8&amp;amp;qid=1470288731&amp;amp;sr=8-2&amp;amp;keywords=CRAIG+WRIGHT&quot;&gt;《The Essential Listening to Music》&lt;/a&gt;，但是这本没有中文版，实在是不太方便。&lt;/p&gt;
+      &lt;p&gt;我用的教材是Craig Wright的&lt;a href=&quot;https://www.amazon.cn/%E8%81%86%E5%90%AC%E9%9F%B3%E4%B9%90-%E5%85%8B%E9%9B%B7%E6%A0%BC%E2%80%A2%E8%8E%B1%E7%89%B9/dp/B007TQNEYW/ref=sr_1_1?ie=UTF8&amp;amp;qid=1470288686&amp;amp;sr=8-1&amp;amp;keywords=%E8%81%86%E5%90%AC%E9%9F%B3%E4%B9%90&quot;&gt;《聆听音乐》&lt;/a&gt;，Craig Wright就是这门课的老师，老先生真是儒雅有风度。不过，他推荐的是：&lt;a href=&quot;https://www.amazon.com/Essential-Listening-Digital-Downloads-Printed/dp/1285856791/ref=sr_1_2?ie=UTF8&amp;amp;qid=1470288731&amp;amp;sr=8-2&amp;amp;keywords=CRAIG+WRIGHT&quot;&gt;《The Essential Listening to Music》&lt;/a&gt;，但是这本没有中文版，不太方便使用。&lt;/p&gt;
 &lt;p&gt;7月20日开始记笔记，断断续续更新中。&lt;br&gt;刚开始扒英文字幕当笔记，很快就发现，这些英文我是不会再看第二眼了，于是改成中文，但笔记量也因此少了很多。&lt;br&gt;
     
     </summary>
@@ -365,47 +436,6 @@
       <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
       <category term="music" scheme="http://yibeichen.me/tags/music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
-    <link href="http://yibeichen.me/2016/08/04/HTML-CSS-Javascript-for-Web-Developers/"/>
-    <id>http://yibeichen.me/2016/08/04/HTML-CSS-Javascript-for-Web-Developers/</id>
-    <published>2016-08-04T03:03:23.000Z</published>
-    <updated>2016-08-04T06:06:58.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>老师长得太可爱啦，自带腮红！<br>你好呀，html&amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)<br>所有这种编程课，我最喜欢的都是第一节——安装各种工具。<br><a id="more"></a><br>Coursera地址: <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank" rel="external">面向Web开发者的HTML、CSS与Javascript课程</a><br>辅助资料请上<a href="https://github.com/jhu-ep-coursera/fullstack-course4" target="_blank" rel="external">github</a></p>
-<h1 id="HTML5入门"><a href="#HTML5入门" class="headerlink" title="HTML5入门"></a>HTML5入门</h1><h2 id="安装开发环境"><a href="#安装开发环境" class="headerlink" title="安装开发环境"></a>安装开发环境</h2><p>必备工具集：</p>
-<ul>
-<li>Github账号</li>
-<li>Chrome+CDT</li>
-<li>Sublime Text3 (想抛弃Atom重回ST怀抱了)</li>
-<li>Git</li>
-<li>Browser Sync</li>
-</ul>
-<p>噼里啪啦，跟着视频敲了一堆看不懂的命令符，新建了一个github仓库，但是，有点不对。之前我搭这个博客已经开通了github page，并且绑定了我的域名，但是课程案例又新建了另一个page，所以，这个新的page就自动变成我的网站二级页，还继承了favicon。呐，就是它了：<a href="http://yibeichen.me/coursera-test/">http://yibeichen.me/coursera-test/</a></p>
-<p>内心默默涌起一种“我上个月怎么没学这门课”的后悔！以及，“这下学会了新建二级页，又能自己写index.html了”，开心！</p>
-<p>这五个工具里，唯一没用过的就是Browser Sync，但感觉跟<code>$ hexo s</code>很相似，不过要比后者方便，真正即时同步。</p>
-<h3 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h3><p>《Pro Git》<a href="https://git-scm.com/book/en/v2" target="_blank" rel="external">英文版</a> <a href="http://iissnan.com/progit/" target="_blank" rel="external">中文版</a> 看完前三章</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;老师长得太可爱啦，自带腮红！&lt;br&gt;你好呀，html&amp;amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)&lt;br&gt;所有这种编程课，我最喜欢的都是第一节——安装各种工具。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="web development" scheme="http://yibeichen.me/tags/web-development/"/>
-    
-      <category term="HTML" scheme="http://yibeichen.me/tags/HTML/"/>
-    
-      <category term="CSS" scheme="http://yibeichen.me/tags/CSS/"/>
-    
-      <category term="JavaScript" scheme="http://yibeichen.me/tags/JavaScript/"/>
-    
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
