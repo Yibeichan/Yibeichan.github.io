@@ -141,7 +141,7 @@
 <meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-06_12:12:17.jpg">
 <meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-06_CodeCogsEqn.png">
 <meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2016-08-06_CodeCogsEqn-1.png">
-<meta property="og:updated_time" content="2016-08-06T15:21:59.000Z">
+<meta property="og:updated_time" content="2016-08-06T15:25:01.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Machine Learning 课程笔记 (未完)">
 <meta name="twitter:description" content="笔记完成时间：0806(Octave基本操作) 0805(多元线性回归) 0804(线代复习) 0803(一元线性回归) 0801(简介)0806：写个作业要看15页的文档，好难过。(做完作业觉得智商为负。转置总弄错！)0804：LaTex问题待解决。0803：怎么用markdown写数学公式？0801：抽风，笔记用英文开始，最后还是转向了中文。">
@@ -535,6 +535,7 @@
 <p>再看gradientDescent这个<br>正确答案1：<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gradJ = X'*(<span class="name">X*theta</span> - y)/m<span class="comment">;</span></div><div class="line">theta = theta - alpha*gradJ<span class="comment">;</span></div></pre></td></tr></table></figure></p>
 <p>正确答案2：<br><figure class="highlight gcode"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">temp<span class="number">1</span> = theta<span class="comment">(1)</span> - <span class="comment">(alpha / m)</span> * sum<span class="comment">((X * theta - y)</span>.* X<span class="comment">(:,1)</span>);  </div><div class="line">temp<span class="number">2</span> = theta<span class="comment">(2)</span> - <span class="comment">(alpha / m)</span> * sum<span class="comment">((X * theta - y)</span>.* X<span class="comment">(:,2)</span>);  </div><div class="line">theta<span class="comment">(1)</span> = temp<span class="number">1</span>;  </div><div class="line">theta<span class="comment">(2)</span> = temp<span class="number">2</span>;</div></pre></td></tr></table></figure></p>
 <p>答案1用了向量，答案2则是普通解法。<br>很不幸，我还是转置错了，等等，为什么这个向量就没用sum求和呢？刚才cost怎么就得用sum呢！</p>
+<p>另外，还有好几道选做的多元线性回归题目，没做，可以等全学完了再回头做做玩玩。</p>
 
       
     </div>
@@ -568,13 +569,17 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/08/05/HTML-CSS-Javascript-for-Web-Developers/" rel="next" title="HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)">
-                <i class="fa fa-chevron-left"></i> HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)
+              <a href="/2016/08/04/Test-for-Plugins/" rel="next" title="Hexo插件测试 (未完)">
+                <i class="fa fa-chevron-left"></i> Hexo插件测试 (未完)
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/07/HTML-CSS-Javascript-for-Web-Developers/" rel="prev" title="HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)">
+                HTML, CSS, and Javascript for Web Developers 课程笔记 (未完) <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>

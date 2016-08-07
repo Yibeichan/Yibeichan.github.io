@@ -4,16 +4,16 @@
 
     
   <url>
-    <loc>http://yibeichen.me/2016/08/06/Machine-Learning/</loc>
-    <lastmod>2016-08-06T15:21:59.000Z</lastmod>
+    <loc>http://yibeichen.me/2016/08/07/Introduction-to-Classical-Music/</loc>
+    <lastmod>2016-08-07T10:45:06.000Z</lastmod>
     <data>
         <display>
-        <title>Machine Learning 课程笔记 (未完)</title>
-        <pubTime>2016-08-06T09:28:11.000Z</pubTime>
+        <title>Introduction to Classical Music 课程笔记 (未完)</title>
+        <pubTime>2016-08-07T10:41:53.000Z</pubTime>
         
-        <tag>coursera</tag>
+        <tag>music</tag>
          
-        <tag>machine learning</tag>
+        <tag>coursera</tag>
          
          
            
@@ -23,13 +23,15 @@
 
     
   <url>
-    <loc>http://yibeichen.me/2016/08/05/HTML-CSS-Javascript-for-Web-Developers/</loc>
-    <lastmod>2016-08-05T04:03:33.000Z</lastmod>
+    <loc>http://yibeichen.me/2016/08/07/HTML-CSS-Javascript-for-Web-Developers/</loc>
+    <lastmod>2016-08-07T09:15:05.000Z</lastmod>
     <data>
         <display>
         <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
-        <pubTime>2016-08-05T04:00:23.000Z</pubTime>
+        <pubTime>2016-08-07T08:00:23.000Z</pubTime>
         
+        <tag>coursera</tag>
+         
         <tag>web development</tag>
          
         <tag>HTML</tag>
@@ -38,8 +40,6 @@
          
         <tag>JavaScript</tag>
          
-        <tag>coursera</tag>
-         
          
            
         </display>
@@ -49,16 +49,16 @@
     
     
   <url>
-    <loc>http://yibeichen.me/2016/08/04/Introduction-to-Classical-Music/</loc>
-    <lastmod>2016-08-05T02:27:05.000Z</lastmod>
+    <loc>http://yibeichen.me/2016/08/06/Machine-Learning/</loc>
+    <lastmod>2016-08-06T15:25:01.000Z</lastmod>
     <data>
         <display>
-        <title>Introduction to Classical Music 课程笔记 (未完)</title>
-        <pubTime>2016-08-04T04:41:53.000Z</pubTime>
+        <title>Machine Learning 课程笔记 (未完)</title>
+        <pubTime>2016-08-06T09:28:11.000Z</pubTime>
         
         <tag>coursera</tag>
          
-        <tag>music</tag>
+        <tag>machine learning</tag>
          
          
            
@@ -218,9 +218,9 @@
         <title>7 Steps to Mastering Machine Learning With Python</title>
         <pubTime>2016-07-30T09:49:46.000Z</pubTime>
         
-        <tag>machine learning</tag>
-         
         <tag>Python</tag>
+         
+        <tag>machine learning</tag>
          
          
            
