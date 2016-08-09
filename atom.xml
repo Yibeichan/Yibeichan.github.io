@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-08-07T10:45:06.000Z</updated>
+  <updated>2016-08-09T09:42:01.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -16,11 +16,126 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
+    <link href="http://yibeichen.me/2016/08/09/HTML-CSS-Javascript-for-Web-Developers/"/>
+    <id>http://yibeichen.me/2016/08/09/HTML-CSS-Javascript-for-Web-Developers/</id>
+    <published>2016-08-09T08:00:23.000Z</published>
+    <updated>2016-08-09T09:42:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>0809：算了下，以每天一小节的速度，学完整个课程还要14天，勉勉强强赶在上学前……<br>0807：到目前为止，课上讲的html还在我的知识储备内。(学代码最好的办法就是去写代码呀，忘了不要紧，被逼着写一回就全想起来了。)<br>0805：有一种当年自学html&amp;css靠的都是野路子，这才是正规军的感觉。<br>0804：<br>老师长得太可爱啦，自带腮红！<br>你好呀，html&amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)<br>所有这种编程课，我最喜欢的都是第一节——安装各种工具。<br><a id="more"></a><br>Coursera地址: <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank" rel="external">面向Web开发者的HTML、CSS与Javascript课程</a><br>辅助资料请上<a href="https://github.com/jhu-ep-coursera/fullstack-course4" target="_blank" rel="external">github</a></p>
+<h1 id="HTML5入门"><a href="#HTML5入门" class="headerlink" title="HTML5入门"></a>HTML5入门</h1><h2 id="安装开发环境"><a href="#安装开发环境" class="headerlink" title="安装开发环境"></a>安装开发环境</h2><p>必备工具集：</p>
+<ul>
+<li>Github账号</li>
+<li>Chrome+CDT</li>
+<li>Sublime Text3 (想抛弃Atom重回ST怀抱了)</li>
+<li>Git</li>
+<li>Browser Sync</li>
+</ul>
+<p>噼里啪啦，跟着视频敲了一堆看不懂的命令符，新建了一个github仓库，但是，有点不对。之前我搭这个博客已经开通了github page，并且绑定了我的域名，但是课程案例又新建了另一个page，所以，这个新的page就自动变成我的网站二级页，还继承了favicon。呐，就是它了：<a href="http://yibeichen.me/coursera-test/">http://yibeichen.me/coursera-test/</a></p>
+<p>内心默默涌起一种“我上个月怎么没学这门课”的后悔！以及，“这下学会了新建二级页，又能自己写index.html了”，开心！</p>
+<p>这五个工具里，唯一没用过的就是Browser Sync，但感觉跟<code>$ hexo s</code>很相似，不过要比后者方便，真正即时同步。</p>
+<h3 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h3><p>《Pro Git》<a href="https://git-scm.com/book/en/v2" target="_blank" rel="external">英文版</a> <a href="http://iissnan.com/progit/" target="_blank" rel="external">中文版</a> 看完前三章</p>
+<h2 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h2><p>HTML→HyperText Markup Language 超链接文本标记语言<br>在网页开发中，HTML、CSS、JavaScript分别扮演了什么角色呢？<br>HTML 搭建网页的结构和框架 (structure)<br>CSS 决定了网页的样式 (style)<br>JavaScript 关乎网页的实现形式 (behavior)</p>
+<h3 id="相关历史"><a href="#相关历史" class="headerlink" title="相关历史"></a>相关历史</h3><p>两个组织控制着HTML，一个是W3C(官方)，一个是WHATWG(民间)。<br>前一个发布了HTML5标准，后一个致力于HTML的evolving。</p>
+<h3 id="几个资源"><a href="#几个资源" class="headerlink" title="几个资源"></a>几个资源</h3><ol>
+<li><a href="https://www.w3.org/" target="_blank" rel="external">W3C</a> (最官方的文档)</li>
+<li><a href="http://caniuse.com/" target="_blank" rel="external">Can I Use</a> (feature investigation查看主流浏览器对新html语言的支持)</li>
+<li><a href="http://validator.w3.org/" target="_blank" rel="external">Markup Validation Serivice</a> (查看网页html规范)<br>测试了一下yibeichen.me，结果竟然是：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-05_10:53:46.jpg" alt="2016-08-05_10:53:46.jpg"><br>错误和警告加起来一共有16个，有得改了。不过暂时还不懂这些错在哪了。</li>
+<li><a href="http://www.w3schools.com/" target="_blank" rel="external">W3Schools</a> (Browser stats resource)</li>
+<li><a href="https://www.google.com" target="_blank" rel="external">Google</a></li>
+</ol>
+<h3 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h3><p>大多数标签都是有开有关的，比如<code>&lt;a&gt;&lt;/a&gt;</code>、<code>&lt;p&gt;&lt;/p&gt;</code>等等，但是有一些标签只用开不用关，比如<code>&lt;br&gt;</code>、<code>&lt;hr&gt;</code>。</p>
+<h4 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h4><p>比如<code>&lt;p id=&quot;myId&quot;&gt;&lt;/p&gt;</code>,这里的id就是一个属性名，myId就是一个属性值。<br>注意，<code>id</code>的值是唯一的，不能定义两个相同的id值。<br>另外，双引号和单引号都是ok的。</p>
+<h3 id="基本HTML文本结构"><a href="#基本HTML文本结构" class="headerlink" title="基本HTML文本结构"></a>基本HTML文本结构</h3><ol>
+<li>必须以<code>&lt;!doctyp html&gt;</code>开头</li>
+<li>meta标签放在head标签里，是一个开放标签，不需要关闭。比如<code>&lt;meta charset=&quot;utf-8&quot;&gt;</code></li>
+<li>head标签里必须包含一个title标签</li>
+<li>head标签结束后就到了body标签</li>
+<li>浏览器读取网页是从上到下的顺序，所以，重要的定义要放在前面(以后写css这点很重要)</li>
+</ol>
+<h3 id="HTML内容模式"><a href="#HTML内容模式" class="headerlink" title="HTML内容模式"></a>HTML内容模式</h3><p><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-05_11:27:57.jpg" alt="2016-08-05_11:27:57.jpg"><br>比如，div 就是一个block-level元素，而 span 则是一个inline元素。<br>block-level元素自己要独占一行，inline则不会。<br>span可以嵌套在div里，但是div不能嵌套在span里，这就是两类元素的特性。<br>这两大类都不是HTML5里正式的内容，但是现在仍然在使用。</p>
+<h2 id="HTML5基本标签"><a href="#HTML5基本标签" class="headerlink" title="HTML5基本标签"></a>HTML5基本标签</h2><h3 id="semantic-html-element"><a href="#semantic-html-element" class="headerlink" title="semantic html element"></a>semantic html element</h3><p>语义的，意味着这些标签可以帮助理解html的内容。<br>来，介绍几个：</p>
+<ol>
+<li>header 标签，主要用来放公司logo、标语、导航等</li>
+<li>nav 标签，存放关于网站导航的内容</li>
+<li>h1 标签，在h1到h6系列中，它最重要</li>
+<li>section 标签</li>
+<li>article 标签</li>
+<li>aside 标签 (some information that relates to the main topic, i.e.,related posts)</li>
+<li>footer 标签</li>
+</ol>
+<p>上面说的这些都是block-level元素。</p>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>废话不说了，看代码吧，下面是无序列表，注意哦，有列表嵌套：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>Milk<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>Donuts<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>Cookies</div><div class="line">        <span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">li</span>&gt;</span>Chocolate<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">li</span>&gt;</span>Sugar<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">li</span>&gt;</span>Peanut Butter<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>Pepto Bismol<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>来看一看有序列表，唯一的区别是<code>&lt;ul&gt;</code>变成了<code>&lt;ol&gt;</code>：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>Open box<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>Take out cookie<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>Make a Double Oreo</div><div class="line">        <span class="tag">&lt;<span class="name">ol</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">li</span>&gt;</span>Peel off the top part<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">li</span>&gt;</span>Place another cookie in the middle<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">li</span>&gt;</span>Put back the top part<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>Enjoy!<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="HTML-Character-Entity-References"><a href="#HTML-Character-Entity-References" class="headerlink" title="HTML Character Entity References"></a>HTML Character Entity References</h3><p>请看下图，其实不知道上面这个小标题是什么意思……惭愧<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-07_16:27:41.jpg" alt="2016-08-07_16:27:41.jpg"><br>意思就是，如果你的html文本里有<code>&lt;</code>、<code>&gt;</code>这类符号呢，需要转化一下，不然浏览器可能会解析错误，把文本解析成代码。<br>类似的reference还有很多，比如：<br>如果不想你的英文单词折行，可以在单词间加上<code>&amp;nbsp;</code><br><code>&amp;nbsp;</code>这个经常会被误用，写上好几个增加空格(我就这么干过)。如果想让两个单词之间多出空隙，最好的办法是选中其中一个单词，加上<code>margin-left(right)</code></p>
+<p>最后呢，当然是要献上<a href="https://brajeshwar.github.io/entities/" target="_blank" rel="external">cheatsheet</a>啦，我自己找的。</p>
+<h3 id="加超链"><a href="#加超链" class="headerlink" title="加超链"></a>加超链</h3><ol>
+<li>站内链接</li>
+<li>站外链接</li>
+<li>锚点标签，<code>&lt;a herf=&quot;#idname&quot;&gt;#idname&lt;/a&gt;</code></li>
+</ol>
+<p><code>&lt;a&gt;</code>既是一个inline element也是一个block-level element，所以，a标签可以嵌套div标签</p>
+<h3 id="图片展示"><a href="#图片展示" class="headerlink" title="图片展示"></a>图片展示</h3><p><code>&lt;img&gt;</code>也是一个inline element，记得定义图片的长宽。</p>
+<h1 id="CSS入门"><a href="#CSS入门" class="headerlink" title="CSS入门"></a>CSS入门</h1><h2 id="Cascading-Style-Sheets-Basics-CSS基础"><a href="#Cascading-Style-Sheets-Basics-CSS基础" class="headerlink" title="Cascading Style Sheets Basics (CSS基础)"></a>Cascading Style Sheets Basics (CSS基础)</h2><p>见过<a href="http://www.csszengarden.com/" target="_blank" rel="external">这个网站</a>，刷新了我对css的认识，一直以为那些好看的网站都是靠JavaScript(很明显都是静态的啊，怎么需要劳烦js)。<br>在上面那个网站，可以看到相同的html，不同的css效果，真的是千差万别！<br>存放css的文件叫做stylesheet</p>
+<h3 id="Element-Class-and-ID-Selectors"><a href="#Element-Class-and-ID-Selectors" class="headerlink" title="Element, Class, and ID Selectors"></a>Element, Class, and ID Selectors</h3><p>很简单啊，element selector就是<code>p</code>、<code>h1</code>……这种，class selector是<code>.blue(class=&quot;blue&quot;)</code>，id selector是<code>#name(id=name)</code><br>如果不同的selector共用同一个样式，它俩用逗号隔开就好了。<br>这三种selector的有效性也是递减的，就是，如果冲突了，后面的会继承前面的属性。</p>
+<h3 id="Combining-Selectors"><a href="#Combining-Selectors" class="headerlink" title="Combining Selectors"></a>Combining Selectors</h3><ol>
+<li><p>element with class selector</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">p</span><span class="selector-class">.highlight</span> &#123;  </div><div class="line">  <span class="attribute">font-style</span>: italic;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>child selector</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* any article element which is a direct child of a section element,i.e., any article element whose immediate parent is a section element. */</span></div><div class="line"><span class="selector-tag">section</span> &gt; <span class="selector-tag">article</span> &#123;</div><div class="line">  <span class="attribute">color</span>: green;</div><div class="line">  <span class="attribute">font-size</span>: <span class="number">24px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>descendant selector</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* all li elements that are inside a section element. */</span></div><div class="line"><span class="selector-tag">section</span> <span class="selector-tag">li</span> &#123;</div><div class="line">  <span class="attribute">color</span>: green;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>2和3的区别在于，2中说的是直接的子集，3中则不限“直接”，可以是嵌套好几层的。</p>
+<h3 id="Pseudo-Class-Selectors"><a href="#Pseudo-Class-Selectors" class="headerlink" title="Pseudo-Class Selectors"></a>Pseudo-Class Selectors</h3><p>有很多，说五个</p>
+<ul>
+<li>:link</li>
+<li>:visited</li>
+<li>:hover</li>
+<li>:active</li>
+<li>:nth-child(第一次用它，好神奇！)</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span>, <span class="selector-tag">a</span><span class="selector-pseudo">:visited</span> &#123;</div><div class="line">  <span class="attribute">text-decoration</span>: none;</div><div class="line">  <span class="attribute">background-color</span>: green;</div><div class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid blue;</div><div class="line">  <span class="attribute">color</span>: black;</div><div class="line">  <span class="attribute">display</span>: block;</div><div class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">text-align</span>: center;</div><div class="line">  <span class="attribute">margin-bottom</span>: <span class="number">1px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>, <span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;</div><div class="line">  <span class="attribute">background-color</span>: red;</div><div class="line">  <span class="attribute">color</span>: purple;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">header</span> <span class="selector-tag">li</span><span class="selector-pseudo">:nth-child(3)</span> &#123;</div><div class="line">  <span class="attribute">font-size</span>: <span class="number">24px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">section</span> <span class="selector-tag">div</span><span class="selector-pseudo">:nth-child(odd)</span> &#123; <span class="comment">/* 应用于奇数行 */</span></div><div class="line">  <span class="attribute">background-color</span>: gray;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">section</span> <span class="selector-tag">div</span><span class="selector-pseudo">:nth-child(4)</span><span class="selector-pseudo">:hover</span> &#123; <span class="comment">/* 应用于第四行*/</span></div><div class="line">  <span class="attribute">background-color</span>: green;</div><div class="line">  <span class="attribute">cursor</span>: pointer;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="CSS-Rules-Conflict-Resolution-and-Text-Styling"><a href="#CSS-Rules-Conflict-Resolution-and-Text-Styling" class="headerlink" title="CSS Rules Conflict Resolution and Text Styling"></a>CSS Rules Conflict Resolution and Text Styling</h2><p>css可以写在单独的文件夹里，也可以写在head里，还可以写在body中的selector后面。<br>第一种方法最推荐，第三种方法适合测试用。</p>
+<h3 id="Conflict-Resolution"><a href="#Conflict-Resolution" class="headerlink" title="Conflict Resolution"></a>Conflict Resolution</h3><p>定义了很多css，冲突了怎么办呢？这就涉及到cascading algorithm<br>讲几个概念：</p>
+<ul>
+<li>origin precedence<br><strong>Last Declarationn Wins</strong></li>
+<li>merge<br><strong>Declarationn Merge</strong> 指的是不同的属性比如字号和颜色合并</li>
+<li>inheritance<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-09_17:15:11.jpg" alt="2016-08-09_17:15:11.jpg"></li>
+<li>specificity<br><strong>Most Specific Selector Combination Wins</strong><br>看看下面这三张图就知道怎么打分了：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-09_17:22:29.jpg" alt="2016-08-09_17:22:29.jpg"><br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-09_17:23:05.jpg" alt="2016-08-09_17:23:05.jpg"><br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-09_17:23:24.jpg" alt="2016-08-09_17:23:24.jpg"></li>
+</ul>
+<p>id属性是高于class属性的。</p>
+<h3 id="Styling-Text"><a href="#Styling-Text" class="headerlink" title="Styling Text"></a>Styling Text</h3><p>学到一个新样式<code>text-transform: capitalize;</code>这个样式还有很多其他属性。<br>另，字号的相对大小比如：<br><code>&lt;div style=&quot;font-size: 2em;&quot;&gt;&lt;/div&gt;</code><br>表示这个div里的字是当前设定的字体的两倍。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;0809：算了下，以每天一小节的速度，学完整个课程还要14天，勉勉强强赶在上学前……&lt;br&gt;0807：到目前为止，课上讲的html还在我的知识储备内。(学代码最好的办法就是去写代码呀，忘了不要紧，被逼着写一回就全想起来了。)&lt;br&gt;0805：有一种当年自学html&amp;amp;css靠的都是野路子，这才是正规军的感觉。&lt;br&gt;0804：&lt;br&gt;老师长得太可爱啦，自带腮红！&lt;br&gt;你好呀，html&amp;amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)&lt;br&gt;所有这种编程课，我最喜欢的都是第一节——安装各种工具。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
+      <category term="web development" scheme="http://yibeichen.me/tags/web-development/"/>
+    
+      <category term="HTML" scheme="http://yibeichen.me/tags/HTML/"/>
+    
+      <category term="CSS" scheme="http://yibeichen.me/tags/CSS/"/>
+    
+      <category term="JavaScript" scheme="http://yibeichen.me/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Introduction to Classical Music 课程笔记 (未完)</title>
     <link href="http://yibeichen.me/2016/08/07/Introduction-to-Classical-Music/"/>
     <id>http://yibeichen.me/2016/08/07/Introduction-to-Classical-Music/</id>
     <published>2016-08-07T10:41:53.000Z</published>
-    <updated>2016-08-07T10:45:06.000Z</updated>
+    <updated>2016-08-07T11:52:07.000Z</updated>
     
     <content type="html"><![CDATA[<p>我用的教材是Craig Wright的<a href="https://www.amazon.cn/%E8%81%86%E5%90%AC%E9%9F%B3%E4%B9%90-%E5%85%8B%E9%9B%B7%E6%A0%BC%E2%80%A2%E8%8E%B1%E7%89%B9/dp/B007TQNEYW/ref=sr_1_1?ie=UTF8&amp;qid=1470288686&amp;sr=8-1&amp;keywords=%E8%81%86%E5%90%AC%E9%9F%B3%E4%B9%90" target="_blank" rel="external">《聆听音乐》</a>，Craig Wright就是这门课的老师，老先生真是儒雅有风度。不过，他推荐的是：<a href="https://www.amazon.com/Essential-Listening-Digital-Downloads-Printed/dp/1285856791/ref=sr_1_2?ie=UTF8&amp;qid=1470288731&amp;sr=8-2&amp;keywords=CRAIG+WRIGHT" target="_blank" rel="external">《The Essential Listening to Music》</a>，但是这本没有中文版，不太方便使用。</p>
 <p>7月20日开始记笔记，断断续续更新中。<br>刚开始扒英文字幕当笔记，很快就发现，这些英文我是不会再看第二眼了，于是改成中文，但笔记量也因此少了很多。<br><a id="more"></a><br>Coursera地址: <a href="https://www.coursera.org/learn/introclassicalmusic" target="_blank" rel="external">古典音乐导论</a><br>Spotify playlist: <a href="https://open.spotify.com/embed?uri=spotify:user:gauravkumar87:playlist:6sPZCTmf5razbg3CfCXsuF" target="_blank" rel="external">点这里</a></p>
@@ -144,7 +259,7 @@
 <li>低音提琴double bass</li>
 </ul>
 <p>在Spotify上找了一下马友友的音乐，好听！</p>
-<iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A3Nq0LrPYIXzWTPvXevNx0Z" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A3Nq0LrPYIXzWTPvXevNx0Z" width="300" height="180" frameborder="0" allowtransparency="true"></iframe>
 
 <p>木管乐器：</p>
 <ul>
@@ -193,93 +308,11 @@
   </entry>
   
   <entry>
-    <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
-    <link href="http://yibeichen.me/2016/08/07/HTML-CSS-Javascript-for-Web-Developers/"/>
-    <id>http://yibeichen.me/2016/08/07/HTML-CSS-Javascript-for-Web-Developers/</id>
-    <published>2016-08-07T08:00:23.000Z</published>
-    <updated>2016-08-07T09:15:05.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>0807：到目前为止，课上讲的html还在我的知识储备内。(学代码最好的办法就是去写代码呀，忘了不要紧，被逼着写一回就全想起来了。)<br>0805：有一种当年自学html&amp;css靠的都是野路子，这才是正规军的感觉。<br>0804：<br>老师长得太可爱啦，自带腮红！<br>你好呀，html&amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)<br>所有这种编程课，我最喜欢的都是第一节——安装各种工具。<br><a id="more"></a><br>Coursera地址: <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank" rel="external">面向Web开发者的HTML、CSS与Javascript课程</a><br>辅助资料请上<a href="https://github.com/jhu-ep-coursera/fullstack-course4" target="_blank" rel="external">github</a></p>
-<h1 id="HTML5入门"><a href="#HTML5入门" class="headerlink" title="HTML5入门"></a>HTML5入门</h1><h2 id="安装开发环境"><a href="#安装开发环境" class="headerlink" title="安装开发环境"></a>安装开发环境</h2><p>必备工具集：</p>
-<ul>
-<li>Github账号</li>
-<li>Chrome+CDT</li>
-<li>Sublime Text3 (想抛弃Atom重回ST怀抱了)</li>
-<li>Git</li>
-<li>Browser Sync</li>
-</ul>
-<p>噼里啪啦，跟着视频敲了一堆看不懂的命令符，新建了一个github仓库，但是，有点不对。之前我搭这个博客已经开通了github page，并且绑定了我的域名，但是课程案例又新建了另一个page，所以，这个新的page就自动变成我的网站二级页，还继承了favicon。呐，就是它了：<a href="http://yibeichen.me/coursera-test/">http://yibeichen.me/coursera-test/</a></p>
-<p>内心默默涌起一种“我上个月怎么没学这门课”的后悔！以及，“这下学会了新建二级页，又能自己写index.html了”，开心！</p>
-<p>这五个工具里，唯一没用过的就是Browser Sync，但感觉跟<code>$ hexo s</code>很相似，不过要比后者方便，真正即时同步。</p>
-<h3 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h3><p>《Pro Git》<a href="https://git-scm.com/book/en/v2" target="_blank" rel="external">英文版</a> <a href="http://iissnan.com/progit/" target="_blank" rel="external">中文版</a> 看完前三章</p>
-<h2 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h2><p>HTML→HyperText Markup Language 超链接文本标记语言<br>在网页开发中，HTML、CSS、JavaScript分别扮演了什么角色呢？<br>HTML 搭建网页的结构和框架 (structure)<br>CSS 决定了网页的样式 (style)<br>JavaScript 关乎网页的实现形式 (behavior)</p>
-<h3 id="相关历史"><a href="#相关历史" class="headerlink" title="相关历史"></a>相关历史</h3><p>两个组织控制着HTML，一个是W3C(官方)，一个是WHATWG(民间)。<br>前一个发布了HTML5标准，后一个致力于HTML的evolving。</p>
-<h3 id="几个资源"><a href="#几个资源" class="headerlink" title="几个资源"></a>几个资源</h3><ol>
-<li><a href="https://www.w3.org/" target="_blank" rel="external">W3C</a> (最官方的文档)</li>
-<li><a href="http://caniuse.com/" target="_blank" rel="external">Can I Use</a> (feature investigation查看主流浏览器对新html语言的支持)</li>
-<li><a href="http://validator.w3.org/" target="_blank" rel="external">Markup Validation Serivice</a> (查看网页html规范)<br>测试了一下yibeichen.me，结果竟然是：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-05_10:53:46.jpg" alt="2016-08-05_10:53:46.jpg"><br>错误和警告加起来一共有16个，有得改了。不过暂时还不懂这些错在哪了。</li>
-<li><a href="http://www.w3schools.com/" target="_blank" rel="external">W3Schools</a> (Browser stats resource)</li>
-<li><a href="https://www.google.com" target="_blank" rel="external">Google</a></li>
-</ol>
-<h3 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h3><p>大多数标签都是有开有关的，比如<code>&lt;a&gt;&lt;/a&gt;</code>、<code>&lt;p&gt;&lt;/p&gt;</code>等等，但是有一些标签只用开不用关，比如<code>&lt;br&gt;</code>、<code>&lt;hr&gt;</code>。</p>
-<h4 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h4><p>比如<code>&lt;p id=&quot;myId&quot;&gt;&lt;/p&gt;</code>,这里的id就是一个属性名，myId就是一个属性值。<br>注意，<code>id</code>的值是唯一的，不能定义两个相同的id值。<br>另外，双引号和单引号都是ok的。</p>
-<h3 id="基本HTML文本结构"><a href="#基本HTML文本结构" class="headerlink" title="基本HTML文本结构"></a>基本HTML文本结构</h3><ol>
-<li>必须以<code>&lt;!doctyp html&gt;</code>开头</li>
-<li>meta标签放在head标签里，是一个开放标签，不需要关闭。比如<code>&lt;meta charset=&quot;utf-8&quot;&gt;</code></li>
-<li>head标签里必须包含一个title标签</li>
-<li>head标签结束后就到了body标签</li>
-<li>浏览器读取网页是从上到下的顺序，所以，重要的定义要放在前面(以后写css这点很重要)</li>
-</ol>
-<h3 id="HTML内容模式"><a href="#HTML内容模式" class="headerlink" title="HTML内容模式"></a>HTML内容模式</h3><p><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-05_11:27:57.jpg" alt="2016-08-05_11:27:57.jpg"><br>比如，div 就是一个block-level元素，而 span 则是一个inline元素。<br>block-level元素自己要独占一行，inline则不会。<br>span可以嵌套在div里，但是div不能嵌套在span里，这就是两类元素的特性。<br>这两大类都不是HTML5里正式的内容，但是现在仍然在使用。</p>
-<h2 id="HTML5基本标签"><a href="#HTML5基本标签" class="headerlink" title="HTML5基本标签"></a>HTML5基本标签</h2><h3 id="semantic-html-element"><a href="#semantic-html-element" class="headerlink" title="semantic html element"></a>semantic html element</h3><p>语义的，意味着这些标签可以帮助理解html的内容。<br>来，介绍几个：</p>
-<ol>
-<li>header 标签，主要用来放公司logo、标语、导航等</li>
-<li>nav 标签，存放关于网站导航的内容</li>
-<li>h1 标签，在h1到h6系列中，它最重要</li>
-<li>section 标签</li>
-<li>article 标签</li>
-<li>aside 标签 (some information that relates to the main topic, i.e.,related posts)</li>
-<li>footer 标签</li>
-</ol>
-<p>上面说的这些都是block-level元素。</p>
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>废话不说了，看代码吧，下面是无序列表，注意哦，有列表嵌套：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>Milk<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>Donuts<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>Cookies</div><div class="line">        <span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">li</span>&gt;</span>Chocolate<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">li</span>&gt;</span>Sugar<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">li</span>&gt;</span>Peanut Butter<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>Pepto Bismol<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div></pre></td></tr></table></figure></p>
-<p>来看一看有序列表，唯一的区别是<code>&lt;ul&gt;</code>变成了<code>&lt;ol&gt;</code>：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>Open box<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>Take out cookie<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>Make a Double Oreo</div><div class="line">        <span class="tag">&lt;<span class="name">ol</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">li</span>&gt;</span>Peel off the top part<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">li</span>&gt;</span>Place another cookie in the middle<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">li</span>&gt;</span>Put back the top part<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>Enjoy!<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></div></pre></td></tr></table></figure></p>
-<h3 id="HTML-Character-Entity-References"><a href="#HTML-Character-Entity-References" class="headerlink" title="HTML Character Entity References"></a>HTML Character Entity References</h3><p>请看下图，其实不知道上面这个小标题是什么意思……惭愧<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-07_16:27:41.jpg" alt="2016-08-07_16:27:41.jpg"><br>意思就是，如果你的html文本里有<code>&lt;</code>、<code>&gt;</code>这类符号呢，需要转化一下，不然浏览器可能会解析错误，把文本解析成代码。<br>类似的reference还有很多，比如：<br>如果不想你的英文单词折行，可以在单词间加上<code>&amp;nbsp;</code><br><code>&amp;nbsp;</code>这个经常会被误用，写上好几个增加空格(我就这么干过)。如果想让两个单词之间多出空隙，最好的办法是选中其中一个单词，加上<code>margin-left(right)</code></p>
-<p>最后呢，当然是要献上<a href="https://brajeshwar.github.io/entities/" target="_blank" rel="external">cheatsheet</a>啦，我自己找的。</p>
-<h3 id="加超链"><a href="#加超链" class="headerlink" title="加超链"></a>加超链</h3><ol>
-<li>站内链接</li>
-<li>站外链接</li>
-<li>锚点标签，<code>&lt;a herf=&quot;#idname&quot;&gt;#idname&lt;/a&gt;</code></li>
-</ol>
-<p><code>&lt;a&gt;</code>既是一个inline element也是一个block-level element，所以，a标签可以嵌套div标签</p>
-<h3 id="图片展示"><a href="#图片展示" class="headerlink" title="图片展示"></a>图片展示</h3><p><code>&lt;img&gt;</code>也是一个inline element，记得定义图片的长宽。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;0807：到目前为止，课上讲的html还在我的知识储备内。(学代码最好的办法就是去写代码呀，忘了不要紧，被逼着写一回就全想起来了。)&lt;br&gt;0805：有一种当年自学html&amp;amp;css靠的都是野路子，这才是正规军的感觉。&lt;br&gt;0804：&lt;br&gt;老师长得太可爱啦，自带腮红！&lt;br&gt;你好呀，html&amp;amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)&lt;br&gt;所有这种编程课，我最喜欢的都是第一节——安装各种工具。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
-      <category term="web development" scheme="http://yibeichen.me/tags/web-development/"/>
-    
-      <category term="HTML" scheme="http://yibeichen.me/tags/HTML/"/>
-    
-      <category term="CSS" scheme="http://yibeichen.me/tags/CSS/"/>
-    
-      <category term="JavaScript" scheme="http://yibeichen.me/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Machine Learning 课程笔记 (未完)</title>
     <link href="http://yibeichen.me/2016/08/06/Machine-Learning/"/>
     <id>http://yibeichen.me/2016/08/06/Machine-Learning/</id>
     <published>2016-08-06T09:28:11.000Z</published>
-    <updated>2016-08-06T15:25:01.000Z</updated>
+    <updated>2016-08-08T12:48:51.000Z</updated>
     
     <content type="html"><![CDATA[<p>笔记完成时间：0806(Octave基本操作) 0805(多元线性回归) 0804(线代复习) 0803(一元线性回归) 0801(简介)<br>0806：写个作业要看15页的文档，好难过。(做完作业觉得智商为负。转置总弄错！)<br>0804：LaTex问题待解决。<br>0803：怎么用markdown写数学公式？<br>0801：抽风，笔记用英文开始，最后还是转向了中文。<br><a id="more"></a></p>
 <hr>
@@ -472,6 +505,14 @@
 <p>正确答案2：<br><figure class="highlight gcode"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">temp<span class="number">1</span> = theta<span class="comment">(1)</span> - <span class="comment">(alpha / m)</span> * sum<span class="comment">((X * theta - y)</span>.* X<span class="comment">(:,1)</span>);  </div><div class="line">temp<span class="number">2</span> = theta<span class="comment">(2)</span> - <span class="comment">(alpha / m)</span> * sum<span class="comment">((X * theta - y)</span>.* X<span class="comment">(:,2)</span>);  </div><div class="line">theta<span class="comment">(1)</span> = temp<span class="number">1</span>;  </div><div class="line">theta<span class="comment">(2)</span> = temp<span class="number">2</span>;</div></pre></td></tr></table></figure></p>
 <p>答案1用了向量，答案2则是普通解法。<br>很不幸，我还是转置错了，等等，为什么这个向量就没用sum求和呢？刚才cost怎么就得用sum呢！</p>
 <p>另外，还有好几道选做的多元线性回归题目，没做，可以等全学完了再回头做做玩玩。</p>
+<h1 id="Logistic-Regression-逻辑回归"><a href="#Logistic-Regression-逻辑回归" class="headerlink" title="Logistic Regression (逻辑回归)"></a>Logistic Regression (逻辑回归)</h1><h2 id="Classification-and-Representation"><a href="#Classification-and-Representation" class="headerlink" title="Classification and Representation"></a>Classification and Representation</h2><h3 id="分类问题"><a href="#分类问题" class="headerlink" title="分类问题"></a>分类问题</h3><p>比如：是不是垃圾邮件、肿瘤是良性还是恶性的……<br>这类问题中，我们想要预测的y，有两个值{0,1}，其中0：“Negative Class”(负类)，1：“Positive Class”(正类)<br>之后我们会讨论多分类问题，y有多个值{0，1，2，3……}，不过目前我们还是讨论二元分类问题。<br>先来说一下为什么线性回归不适合这种分类问题，看下图：<br>样本拟合的直线很可能会因为一个额外的样本量而发生改变，比如从红色线移到蓝色线，直线改变了，拟合结果也就不准确了。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-08_17:20:24.jpg" alt="2016-08-08_17:20:24.jpg"><br>还有一点是，通常分类问题中y = 0 or 1，但用线性回归可能会出现h<em>θ(x)&gt;1 or &lt;0<br>所以呢，逻辑回归出场了，它的取值就可以保证0&lt;=h</em>θ(x)&lt;=1</p>
+<h3 id="Hypothesis-Representation"><a href="#Hypothesis-Representation" class="headerlink" title="Hypothesis Representation"></a>Hypothesis Representation</h3><p>逻辑回归中的函数长这样：<br>看右边的图，两边无限接近于0到1，因为图像长得像S，所以又被称为Sigmid函数，跟Logistic函数是一个意思啦，可以换着用。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-08_17:28:46.jpg" alt="2016-08-08_17:28:46.jpg"><br>公式如下：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-08_CodeCogsEqn.png" alt="2016-08-08_CodeCogsEqn.png"><br>其实这个函数的意思呢，是表示一个概率，比如病人的肿瘤是恶性(y=1)的可能性有多少？带进去算一算，差不多0.7吧(注意，那他的肿瘤是良性的概率就是1-0。7)。这句话写成数学公式就可以表示为：h_θ(x)= P(y=1|x,θ)，后面这就是个概率公式啊！看图↓<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-08_17:32:26.jpg" alt="2016-08-08_17:32:26.jpg"></p>
+<h3 id="Decision-Boundary-决策边界"><a href="#Decision-Boundary-决策边界" class="headerlink" title="Decision Boundary (决策边界)"></a>Decision Boundary (决策边界)</h3><p>刚刚我们在例子里用公式，其实预测的是y=1的概率，那么到底应该什么时候预测y=1什么时候预测y=0呢？(总觉得这俩都差不多，一定是我没搞懂！)图中给了一个解决方案，当h_θ(x)&gt;=0.5就预测y=1的，反之则预测y=0.<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-08_17:52:19.jpg" alt="2016-08-08_17:52:19.jpg"><br>根据上面这个公式及理论，来看看下面这个例子：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-08_17:59:47.jpg" alt="2016-08-08_17:59:47.jpg"><br>看到坐标轴上的线了吗，那个就是决策边界，是根据参数和假设函数算出来的。这个图看上去好像那条线是根据样本数据的分布画出来的，事实上，把样本数据去掉也是一样的，它是算出来的，不是看到数据在图上的分布画的。(感觉我解释得有点艰难……)<br>再来看一个更复杂一点的案例，这次决策边界不是线性的了。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-08_18:06:59.jpg" alt="2016-08-08_18:06:59.jpg"><br>看到了吧，由于参数的选择，最后得到的是一个圆，所以就可以预测圆里面的是y=0，圆外面的是y=1.<br>还有更复杂的，图形画出来就更诡异了：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-08_18:07:58.jpg" alt="2016-08-08_18:07:58.jpg"><br>上面这两个案例都是多项式，前面我们讲过的。</p>
+<h2 id="Logistic-Regression-Model"><a href="#Logistic-Regression-Model" class="headerlink" title="Logistic Regression Model"></a>Logistic Regression Model</h2><h3 id="成本函数"><a href="#成本函数" class="headerlink" title="成本函数"></a>成本函数</h3><p><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-08_20:29:27.jpg" alt="2016-08-08_20:29:27.jpg"><br>看到了吗，图上用了一个函数嵌套，当我们考察里面这个函数cost的时候，看它的图形，就可以判断可不可以用梯度下降，当图形是凸形的时候，先降后升，才能找到一个全局最优解。<br>上面说的是线性回归的成本函数，来看看逻辑回归的，我们需要分类讨论下：</p>
+<ol>
+<li>当y=1的时候，函数图像如下(这个是根据对数函数的图像来的)，这个图形的意思是：当h<em>θ(x)=1，y=1，所以成本为0啊，预测准确了呀，但是当h</em>θ(x)=0的时候y还等于1，那就是你跟病人说你的肿瘤是良性的没问题，但实际上人家就是恶性的，你的预测错了，所以成本就非常之大，趋向无穷大！<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-08_20:38:27.jpg" alt="2016-08-08_20:38:27.jpg"></li>
+<li>当y=0的时候，图像如下，跟上面的道理是一样的<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-08_20:47:42.jpg" alt="2016-08-08_20:47:42.jpg"><h2 id="Multiclass-Classification"><a href="#Multiclass-Classification" class="headerlink" title="Multiclass Classification"></a>Multiclass Classification</h2><h1 id="Regularization"><a href="#Regularization" class="headerlink" title="Regularization"></a>Regularization</h1><h2 id="Solving-the-Problem-of-Overfitting"><a href="#Solving-the-Problem-of-Overfitting" class="headerlink" title="Solving the Problem of Overfitting"></a>Solving the Problem of Overfitting</h2></li>
+</ol>
 ]]></content>
     
     <summary type="html">
