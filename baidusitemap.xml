@@ -4,31 +4,12 @@
 
     
   <url>
-    <loc>http://yibeichen.me/2016/08/15/Machine-Learning/</loc>
-    <lastmod>2016-08-13T07:46:13.000Z</lastmod>
-    <data>
-        <display>
-        <title>Machine Learning 课程笔记 (未完)</title>
-        <pubTime>2016-08-15T07:28:11.000Z</pubTime>
-        
-        <tag>coursera</tag>
-         
-        <tag>machine learning</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yibeichen.me/2016/08/09/HTML-CSS-Javascript-for-Web-Developers/</loc>
-    <lastmod>2016-08-13T07:45:56.000Z</lastmod>
+    <loc>http://yibeichen.me/2016/08/13/HTML-CSS-Javascript-for-Web-Developers/</loc>
+    <lastmod>2016-08-13T08:02:53.000Z</lastmod>
     <data>
         <display>
         <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
-        <pubTime>2016-08-09T08:00:23.000Z</pubTime>
+        <pubTime>2016-08-13T08:00:23.000Z</pubTime>
         
         <tag>coursera</tag>
          
@@ -39,6 +20,25 @@
         <tag>CSS</tag>
          
         <tag>JavaScript</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yibeichen.me/2016/08/13/Machine-Learning/</loc>
+    <lastmod>2016-08-13T07:48:09.000Z</lastmod>
+    <data>
+        <display>
+        <title>Machine Learning 课程笔记 (未完)</title>
+        <pubTime>2016-08-13T07:28:11.000Z</pubTime>
+        
+        <tag>coursera</tag>
+         
+        <tag>machine learning</tag>
          
          
            
