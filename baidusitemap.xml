@@ -4,16 +4,16 @@
 
     
   <url>
-    <loc>http://yibeichen.me/2016/08/09/Introduction-to-Classical-Music/</loc>
-    <lastmod>2016-08-09T14:05:42.000Z</lastmod>
+    <loc>http://yibeichen.me/2016/08/15/Machine-Learning/</loc>
+    <lastmod>2016-08-13T07:46:13.000Z</lastmod>
     <data>
         <display>
-        <title>Introduction to Classical Music 课程笔记 (未完)</title>
-        <pubTime>2016-08-09T13:41:53.000Z</pubTime>
+        <title>Machine Learning 课程笔记 (未完)</title>
+        <pubTime>2016-08-15T07:28:11.000Z</pubTime>
         
-        <tag>music</tag>
-         
         <tag>coursera</tag>
+         
+        <tag>machine learning</tag>
          
          
            
@@ -24,7 +24,7 @@
     
   <url>
     <loc>http://yibeichen.me/2016/08/09/HTML-CSS-Javascript-for-Web-Developers/</loc>
-    <lastmod>2016-08-09T09:42:01.000Z</lastmod>
+    <lastmod>2016-08-13T07:45:56.000Z</lastmod>
     <data>
         <display>
         <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
@@ -47,18 +47,17 @@
     </url>
 
     
-    
   <url>
-    <loc>http://yibeichen.me/2016/08/06/Machine-Learning/</loc>
-    <lastmod>2016-08-08T12:48:51.000Z</lastmod>
+    <loc>http://yibeichen.me/2016/08/09/Introduction-to-Classical-Music/</loc>
+    <lastmod>2016-08-10T13:43:53.000Z</lastmod>
     <data>
         <display>
-        <title>Machine Learning 课程笔记 (未完)</title>
-        <pubTime>2016-08-06T09:28:11.000Z</pubTime>
+        <title>Introduction to Classical Music 课程笔记 (未完)</title>
+        <pubTime>2016-08-09T13:41:53.000Z</pubTime>
         
-        <tag>coursera</tag>
+        <tag>music</tag>
          
-        <tag>machine learning</tag>
+        <tag>coursera</tag>
          
          
            
@@ -66,6 +65,7 @@
     </data>
     </url>
 
+    
     
   <url>
     <loc>http://yibeichen.me/2016/08/04/Test-for-Plugins/</loc>
