@@ -4,22 +4,14 @@
 
     
   <url>
-    <loc>http://yibeichen.me/2016/08/13/HTML-CSS-Javascript-for-Web-Developers/</loc>
-    <lastmod>2016-08-13T08:02:53.000Z</lastmod>
+    <loc>http://yibeichen.me/2016/09/28/Preparation-for-Seminar/</loc>
+    <lastmod>2016-09-28T11:16:39.000Z</lastmod>
     <data>
         <display>
-        <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
-        <pubTime>2016-08-13T08:00:23.000Z</pubTime>
+        <title>为小组会准备的论文阅读</title>
+        <pubTime>2016-09-28T10:32:27.000Z</pubTime>
         
-        <tag>coursera</tag>
-         
-        <tag>web development</tag>
-         
-        <tag>HTML</tag>
-         
-        <tag>CSS</tag>
-         
-        <tag>JavaScript</tag>
+        <tag>传播学</tag>
          
          
            
@@ -29,8 +21,34 @@
 
     
   <url>
+    <loc>http://yibeichen.me/2016/08/13/HTML-CSS-Javascript-for-Web-Developers/</loc>
+    <lastmod>2016-08-30T06:45:21.000Z</lastmod>
+    <data>
+        <display>
+        <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
+        <pubTime>2016-08-13T08:00:23.000Z</pubTime>
+        
+        <tag>web development</tag>
+         
+        <tag>HTML</tag>
+         
+        <tag>CSS</tag>
+         
+        <tag>JavaScript</tag>
+         
+        <tag>coursera</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
     <loc>http://yibeichen.me/2016/08/13/Machine-Learning/</loc>
-    <lastmod>2016-08-13T07:48:09.000Z</lastmod>
+    <lastmod>2016-08-18T08:50:59.000Z</lastmod>
     <data>
         <display>
         <title>Machine Learning 课程笔记 (未完)</title>
@@ -55,9 +73,9 @@
         <title>Introduction to Classical Music 课程笔记 (未完)</title>
         <pubTime>2016-08-09T13:41:53.000Z</pubTime>
         
-        <tag>music</tag>
-         
         <tag>coursera</tag>
+         
+        <tag>music</tag>
          
          
            
@@ -65,7 +83,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://yibeichen.me/2016/08/04/Test-for-Plugins/</loc>
@@ -218,9 +235,9 @@
         <title>7 Steps to Mastering Machine Learning With Python</title>
         <pubTime>2016-07-30T09:49:46.000Z</pubTime>
         
-        <tag>Python</tag>
-         
         <tag>machine learning</tag>
+         
+        <tag>Python</tag>
          
          
            

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-08-13T08:02:53.000Z</updated>
+  <updated>2016-09-28T11:16:39.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -16,11 +16,67 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>为小组会准备的论文阅读</title>
+    <link href="http://yibeichen.me/2016/09/28/Preparation-for-Seminar/"/>
+    <id>http://yibeichen.me/2016/09/28/Preparation-for-Seminar/</id>
+    <published>2016-09-28T10:32:27.000Z</published>
+    <updated>2016-09-28T11:16:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>啊，竟然已经一个多月没有更新了，这域名可是花了钱买的呀……<br>正在发愁不知道该用Evernote、Ulysses还是DayOne来写日记，好吧，那就写到这里来吧，效果跟云盘一样。<br><a id="more"></a><br>每周，三个硕士一个博士，去导师办公室进行小组讨论，一般是读两篇文章。从第二次讨论会开始，每次两个人主讲，其他两位同学提问。每个人每周推荐一篇论文（邮件发送给大家），导师看过之后选两篇。当周发言的同学需要把论文读透读透读透……</p>
+<h3 id="9月27日-第一次小组会"><a href="#9月27日-第一次小组会" class="headerlink" title="9月27日 第一次小组会"></a>9月27日 第一次小组会</h3><p>两篇论文：</p>
+<ul>
+<li>Mining Consumer Health Vocabulary from Community-Generated Text</li>
+<li>It’s Time to Vote: The Effect of Matching Message Orientation and Temporal Frame on Political Persuasion</li>
+</ul>
+<p>这两篇是老师选的，第一篇重方法，第二篇重理论。<br>其实，看到第二篇有四个实验的时候，我以为说重方法的是它……<br>几个要点：</p>
+<ul>
+<li>看到一篇论文的时候，要思考，文中的理论是否适用于当下中国的问题。一个好的理论必然是实用的（啊，我的女神在课上也是这么说的，好像是延森的话？）</li>
+<li>如何提出一个好的问题，更重要的是如何提出一个好的传播学问题<br>比如mining那篇，涉及到了两种话语体系的转换，延伸至“官方——民间话语体系的转换”</li>
+<li>解释水平理论（construal-level theory）需要重点学习</li>
+<li>主讲论文的同学要说清楚以下几点<ul>
+<li>研究的问题是什么</li>
+<li>背景</li>
+<li>预设的前提</li>
+<li>需要修正的部分</li>
+<li>与现实的结合</li>
+<li>……</li>
+</ul>
+</li>
+</ul>
+<p>话说我每次看东西都不仔细？明明邮件里面写了要认真学习解释水平理论，根本没看见，结果去了之后一脸懵……</p>
+<p>快结束的时候，是我非要看老师的论文数据库，然而，最后变成，我要赶校车没看完就先跑了……</p>
+<h3 id="9月28日-找论文"><a href="#9月28日-找论文" class="headerlink" title="9月28日 找论文"></a>9月28日 找论文</h3><p>第一次见老师的时候，就被问：开学这么久你看论文了吗？<br>后来老师说，跟其他老师的读书会不一样，我们是论文研讨会，每周都要读论文。<br>其实我觉得老师的潜台词是：每天都要读论文……</p>
+<p>把老师邮件里推荐的期刊全都加了订阅，决定每天去Reeder扫一眼。<br>今天下载了六篇论文，两篇是为下次讨论会准备的，四篇是解释水平理论的相关文章：</p>
+<ul>
+<li>Building Buzz: (Scientists) Communicating Science in New Media Environments</li>
+<li>Taking Online Search Queries as an Indicator of the Public Agenda: The Role of Public Uncertainty</li>
+<li>Construal Level Theory and Consumer Behavior</li>
+<li>Construal Level Theory as an Integrative Framework for Behavioral Decision-Making Research and Consumer Psychology</li>
+<li>Construal Levels and Psychological Distance: Effects on Representation, Prediction, Evaluation, and Behavior</li>
+<li>Seeing the Forest or the Trees: Implications of Construal Level Theory for Consumer Choice</li>
+</ul>
+<p>还有一本书《The Handbook of Theories of Social Psychology: Collection: Volumes 1 &amp; 2》 专门有一章讲到了解释水平理论，不过，下载不了也买不到</p>
+<p>这六篇都没有细读，打印下来每天读一篇，够我看一周的了。</p>
+<p>另，我还没想好要怎么做学术阅读笔记……</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;啊，竟然已经一个多月没有更新了，这域名可是花了钱买的呀……&lt;br&gt;正在发愁不知道该用Evernote、Ulysses还是DayOne来写日记，好吧，那就写到这里来吧，效果跟云盘一样。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="传播学" scheme="http://yibeichen.me/tags/%E4%BC%A0%E6%92%AD%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
     <link href="http://yibeichen.me/2016/08/13/HTML-CSS-Javascript-for-Web-Developers/"/>
     <id>http://yibeichen.me/2016/08/13/HTML-CSS-Javascript-for-Web-Developers/</id>
     <published>2016-08-13T08:00:23.000Z</published>
-    <updated>2016-08-13T08:02:53.000Z</updated>
+    <updated>2016-08-30T06:45:21.000Z</updated>
     
     <content type="html"><![CDATA[<p>0813：为什么网速这么慢，今天写不完作业下周我就不记得怎么写了！<br>0809：算了下，以每天一小节的速度，学完整个课程还要14天，勉勉强强赶在上学前……<br>0807：到目前为止，课上讲的html还在我的知识储备内。(学代码最好的办法就是去写代码呀，忘了不要紧，被逼着写一回就全想起来了。)<br>0805：有一种当年自学html&amp;css靠的都是野路子，这才是正规军的感觉。<br>0804：<br>老师长得太可爱啦，自带腮红！<br>你好呀，html&amp;css，又见面了耶！(JavaScript你也好，然而我们并不熟。)<br>所有这种编程课，我最喜欢的都是第一节——安装各种工具。<br><a id="more"></a><br>Coursera地址: <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank" rel="external">面向Web开发者的HTML、CSS与Javascript课程</a><br>辅助资料请上<a href="https://github.com/jhu-ep-coursera/fullstack-course4" target="_blank" rel="external">github</a></p>
 <h1 id="HTML5入门"><a href="#HTML5入门" class="headerlink" title="HTML5入门"></a>HTML5入门</h1><h2 id="安装开发环境"><a href="#安装开发环境" class="headerlink" title="安装开发环境"></a>安装开发环境</h2><p>必备工具集：</p>
@@ -122,7 +178,26 @@
 <p>按理说12网格只能写4个3，2个6，不用担心，它们会自动换行排列的。<br>另外，把这个网页放到手机上，正常应该是每行只显示一块，但很可能手机浏览器没有解读出这个网页的响应式信息，把它当做中屏来展示了，这时候就要在head里加一行：<br><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</code></p>
 <h2 id="Introduction-to-Twitter-Bootstrap"><a href="#Introduction-to-Twitter-Bootstrap" class="headerlink" title="Introduction to Twitter Bootstrap"></a>Introduction to Twitter Bootstrap</h2><h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><p>来了解一下,<a href="https://www.zhihu.com/question/19821825" target="_blank" rel="external">什么是 Twitter Bootstrap？</a> <a href="http://getbootstrap.com/" target="_blank" rel="external">官网在此</a></p>
 <h3 id="The-Bootstrap-Grid-System"><a href="#The-Bootstrap-Grid-System" class="headerlink" title="The Bootstrap Grid System"></a>The Bootstrap Grid System</h3><p>啊，今天赶时间，请看下面的slide体会一下吧：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-13_16:00:03.jpg" alt="2016-08-13_16:00:03.jpg"><br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-13_16:00:27.jpg" alt="2016-08-13_16:00:27.jpg"><br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-13_16:01:28.jpg" alt="2016-08-13_16:01:28.jpg"><br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-13_16:01:06.jpg" alt="2016-08-13_16:01:06.jpg"><br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-13_16:01:28.jpg" alt="2016-08-13_16:01:28.jpg"></p>
-]]></content>
+<h2 id="作业-1"><a href="#作业-1" class="headerlink" title="作业"></a>作业</h2><p>要求如下：<a href="http://bit.ly/1SvqVyl" target="_blank" rel="external">http://bit.ly/1SvqVyl</a><br>我的作业：<a href="http://yibeichen.me/coursera_html_css_javascript/mod2_solution/">http://yibeichen.me/coursera_html_css_javascript/mod2_solution/</a><br>没想到这么小小的一个作业，竟然花了我一整天，大半天在敲敲改改，还去找配色方案了(强迫症也是没救了)，剩下个小半天全都死磕在git上，还是不太会用。今天主要是学怎么把master的内容merge到gh-pages。<br>参考文档：</p>
+<ul>
+<li><a href="https://www.zhihu.com/question/24156818" target="_blank" rel="external">怎么预览GitHub项目里的网页或Demo？</a></li>
+<li><a href="http://www.cnblogs.com/yuanzm/p/3945814.html" target="_blank" rel="external">如何将你的github仓库部署到github pages</a></li>
+</ul>
+<h1 id="Coding-the-Static-Restaurant-Site"><a href="#Coding-the-Static-Restaurant-Site" class="headerlink" title="Coding the Static Restaurant Site"></a>Coding the Static Restaurant Site</h1><p>这一章是网站实战——一个餐厅的网站，从客户沟通到网站制作一整个系列的过程都讲得很清楚。</p>
+<h2 id="Visit-with-the-Client-amp-Setup-Overview"><a href="#Visit-with-the-Client-amp-Setup-Overview" class="headerlink" title="Visit with the Client &amp; Setup Overview"></a>Visit with the Client &amp; Setup Overview</h2><p>给个建议：Google for ‘web development client questionnaire’<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-19_16:49:41.jpg" alt="2016-08-19_16:49:41.jpg"></p>
+<h3 id="Design-Overview"><a href="#Design-Overview" class="headerlink" title="Design Overview"></a>Design Overview</h3><p><a href="https://balsamiq.com/" target="_blank" rel="external">Mockup工具——balsamiq</a></p>
+<h3 id="Some-Ground-Rules-and-Overview-of-Setup"><a href="#Some-Ground-Rules-and-Overview-of-Setup" class="headerlink" title="Some Ground Rules and Overview of Setup"></a>Some Ground Rules and Overview of Setup</h3><p>记得启用browser sync，不记得怎么用的话请Google<br>如果要用一种电脑里没有的字体该怎么办？找Google！<br><a href="https://www.google.com/fonts" target="_blank" rel="external">https://www.google.com/fonts</a></p>
+<h2 id="Coding-the-Navigation-Bar-of-the-Site"><a href="#Coding-the-Navigation-Bar-of-the-Site" class="headerlink" title="Coding the Navigation Bar of the Site"></a>Coding the Navigation Bar of the Site</h2><h3 id="Coding-Basics-of-Navbar-Header"><a href="#Coding-Basics-of-Navbar-Header" class="headerlink" title="Coding Basics of Navbar Header"></a>Coding Basics of Navbar Header</h3><p>又碰到两个div互相挤，怎么样把他们并排放呢？在第一个div的内容里的a标签上加一句<code>class=&quot;pull-left&quot;</code>这个是bootstrap里面自带的。<br>text-shadow，自行搜索怎么用。<br>鉴于这是一个响应式设计，如果希望在小屏不显示logo的话，还是在刚刚那个位置加<code>class=&quot;pull-left visible-md visible-lg&quot;</code>这句话的意思就是只在大屏和中屏显示logo</p>
+<h3 id="Coding-Button-for-Future-Collapsible-Menu"><a href="#Coding-Button-for-Future-Collapsible-Menu" class="headerlink" title="Coding Button for Future Collapsible Menu"></a>Coding Button for Future Collapsible Menu</h3><p>来讨论一下小屏显示的menu按钮，还是直接用bootstrap，在button标签加一个<code>class=&quot;navbar-toggle collapsed&quot;</code>，不过要注意的是<code>collapsed</code>并不是bootstrap的内容，它是bootstrap的一个插件功能，意思是，当这个按钮被点击的时候，就collapsed。</p>
+<h3 id="Coding-Nav-Menu-Buttons"><a href="#Coding-Nav-Menu-Buttons" class="headerlink" title="Coding Nav Menu Buttons"></a>Coding Nav Menu Buttons</h3><p>这里要用到icon font。<br>另外还有一个属性<code>class=&quot;hidden-xs&quot;</code>，代表的是，当屏幕变小(xs)的时候，这个部分会隐藏不见。</p>
+<h3 id="Fixing-Navbar-Layout-Text-and-Dropdown-Menus"><a href="#Fixing-Navbar-Layout-Text-and-Dropdown-Menus" class="headerlink" title="Fixing Navbar Layout, Text, and Dropdown Menus"></a>Fixing Navbar Layout, Text, and Dropdown Menus</h3><p>这里出现一个<code>font-size: 5vw</code>，什么意思呢？<br>1vw = 1% of viewport width<br>这个单位是响应式的，可以随着屏幕宽度的变化而变化</p>
+<h3 id="Coding-the-Jumbotron"><a href="#Coding-the-Jumbotron" class="headerlink" title="Coding the Jumbotron"></a>Coding the Jumbotron</h3><p>不同尺寸的屏幕下显示的图片尺寸也不同，所以要在css的不同的media queries下定义不同尺寸的背景图。<br>在html里引用图片地址的时候，用最小的那个，这样不会对浏览器加载造成太多负担。</p>
+<h2 id="Coding-the-Homepage-and-the-Footer"><a href="#Coding-the-Homepage-and-the-Footer" class="headerlink" title="Coding the Homepage and the Footer"></a>Coding the Homepage and the Footer</h2><h3 id="Coding-Navigation-Tiles"><a href="#Coding-Navigation-Tiles" class="headerlink" title="Coding Navigation Tiles"></a>Coding Navigation Tiles</h3><p>来，介绍一个新工具，快速填充图片：<a href="http://placehold.it/" target="_blank" rel="external">http://placehold.it/</a> 用法如下：<br><code>&lt;img src=&quot;http://placehold.it/350x150&quot;&gt;</code><br>给图片加遮罩？css代码如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#menu-tile</span>, <span class="selector-id">#specials-tile</span>, <span class="selector-id">#map-tile</span> &#123;</div><div class="line">  <span class="attribute">height</span>: <span class="number">250px</span>;</div><div class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</div><div class="line">  <span class="attribute">margin-bottom</span>: <span class="number">15px</span>;</div><div class="line">  <span class="attribute">position</span>: relative;</div><div class="line">  <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#3F0C1F</span>;</div><div class="line">  <span class="attribute">overflow</span>: hidden;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>如何嵌套地图？Google提供嵌套代码，share link和embed map都要添加，记得修改宽高，和css里的保持一致。</p>
+<h3 id="Coding-the-Footer"><a href="#Coding-the-Footer" class="headerlink" title="Coding the Footer"></a>Coding the Footer</h3><p><code>&lt;footer class=&quot;panel-footer&quot;&gt;</code>直接用element和class，有default样式。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#testimonials</span> <span class="selector-tag">p</span><span class="selector-pseudo">:nth-child(2)</span> &#123;</div><div class="line">  <span class="attribute">margin-top</span>: <span class="number">25px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>又用上了<code>nth-child(2)</code>这一句，意思是对testimonials的第二个p生效。</p>
+<h2 id="Coding-the-Restaurant-Menu-Pages"><a href="#Coding-the-Restaurant-Menu-Pages" class="headerlink" title="Coding the Restaurant Menu Pages"></a>Coding the Restaurant Menu Pages</h2><h3 id="Coding-the-Menu-Categories"><a href="#Coding-the-Menu-Categories" class="headerlink" title="Coding the Menu Categories"></a>Coding the Menu Categories</h3><p>复制主页的index.html，头尾都不用变，更换一下main-content的内容。<br>定制了一个超小屏xxs，仿照xs来的</p>
+<h3 id="Coding-the-Single-Menu-Category-Page"><a href="#Coding-the-Single-Menu-Category-Page" class="headerlink" title="Coding the Single Menu Category Page"></a>Coding the Single Menu Category Page</h3>]]></content>
     
     <summary type="html">
     
@@ -130,8 +205,6 @@
     
     </summary>
     
-    
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
       <category term="web development" scheme="http://yibeichen.me/tags/web-development/"/>
     
@@ -141,6 +214,8 @@
     
       <category term="JavaScript" scheme="http://yibeichen.me/tags/JavaScript/"/>
     
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
   </entry>
   
   <entry>
@@ -148,7 +223,7 @@
     <link href="http://yibeichen.me/2016/08/13/Machine-Learning/"/>
     <id>http://yibeichen.me/2016/08/13/Machine-Learning/</id>
     <published>2016-08-13T07:28:11.000Z</published>
-    <updated>2016-08-13T07:48:09.000Z</updated>
+    <updated>2016-08-18T08:50:59.000Z</updated>
     
     <content type="html"><![CDATA[<p>笔记完成时间：0813(逻辑回归) 0806(Octave基本操作) 0805(多元线性回归) 0804(线代复习) 0803(一元线性回归) 0801(简介)<br>0806：写个作业要看15页的文档，好难过。(做完作业觉得智商为负。转置总弄错！)<br>0804：LaTex问题待解决。<br>0803：怎么用markdown写数学公式？<br>0801：抽风，笔记用英文开始，最后还是转向了中文。<br><a id="more"></a></p>
 <hr>
@@ -361,7 +436,8 @@
 <p><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-12_15:59:41.jpg" alt="2016-08-12_15:59:41.jpg"><br>上面的成本函数，比线性回归的多了一项，所以，要求得最小值，意味着两项的值都要很小，从而降低了θ的值。而λ 是正则化参数(regularization parameter)。<br>如果λ非常大，会发生什么呢？<br>所有的θ都会被惩罚，变得很小，那就不能很好地拟合训练集了，变成了underfitting</p>
 <h3 id="Regularized-Linear-Regression-正则化线性回归"><a href="#Regularized-Linear-Regression-正则化线性回归" class="headerlink" title="Regularized Linear Regression (正则化线性回归)"></a>Regularized Linear Regression (正则化线性回归)</h3><p>再来看看正则化的梯度下降。<br>这张图中，把θ_0分离开了，因为在成本函数中，我们要惩罚的是θ_j，而j是从1开始的。<br>所以从θ_1开始算起，在原来梯度下降的公式上又加了一项，如下图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-12_16:14:01.jpg" alt="2016-08-12_16:14:01.jpg"><br>公式整理如下：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-12_16:18:03.jpg" alt="2016-08-12_16:18:03.jpg"><br>其中，下面这项始终是＜1的，这就一步一步降低了θ_j的值。<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-12_2016-08-12_16:18:42.jpg" alt="2016-08-12_2016-08-12_16:18:42.jpg"><br>接下来把梯度下降的公式向量化：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-12_16:21:21.jpg" alt="2016-08-12_16:21:21.jpg"><br>λ后面的是一个(n+1)(n+1)维的矩阵，长得很像单位矩阵，但是它的第一个元素是0不是1.</p>
 <h3 id="Regularized-Logistic-Regression-正则化逻辑回归"><a href="#Regularized-Logistic-Regression-正则化逻辑回归" class="headerlink" title="Regularized Logistic Regression (正则化逻辑回归)"></a>Regularized Logistic Regression (正则化逻辑回归)</h3><p>来复习一下，逻辑回归的成本函数：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-12_16:40:29.jpg" alt="2016-08-12_16:40:29.jpg"><br>把它正则化，则是要加上下面这一项：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-12_16:41:06.jpg" alt="2016-08-12_16:41:06.jpg"><br>再来看一下，代码里是怎么做的：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-12_16:44:41.jpg" alt="2016-08-12_16:44:41.jpg"><br>用的还是<code>fminunc</code></p>
-<h2 id="作业-1"><a href="#作业-1" class="headerlink" title="作业"></a>作业</h2><p>声明一下，并不是独立完成的，参考了许多位大神的代码，致谢！<br>先说ex2<br>第一步是画图，不会用plotData，于是用了<code>help plot</code>，勉强写了几句，但是不成功，折腾了半天意识到：</p>
+<h2 id="作业-1"><a href="#作业-1" class="headerlink" title="作业"></a>作业</h2><p>声明一下，并不是独立完成的，参考了许多位大神的代码，致谢！</p>
+<h3 id="先说ex2"><a href="#先说ex2" class="headerlink" title="先说ex2"></a>先说ex2</h3><p>第一步是画图，不会用plotData，于是用了<code>help plot</code>，勉强写了几句，但是不成功，折腾了半天意识到：</p>
 <ul>
 <li>Octave不在乎空格，但是在乎全角半角，一切标点都要用英文的</li>
 <li>只要用了<code>;</code>，换不换行都不重要</li>
@@ -372,9 +448,12 @@
 <p>还是直接贴代码+解释吧<br>sigmoid.m里该填的代码：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">g = (<span class="number">1</span> + e.^(<span class="number">-1</span> *z)).^(<span class="number">-1</span>);</div></pre></td></tr></table></figure></p>
 <p>这句就是把数学公式改成程序语言。<br>costFunction.m里该填的代码：<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">h=sigmoid(<span class="name">X*theta</span>)<span class="comment">;</span></div><div class="line">J=1/m*(<span class="name">-1*y</span>'*log(<span class="name">h</span>)-(<span class="number">1</span>-y')*log(1-h));</div><div class="line">grad=1/m*(<span class="name">h-y</span>)'*X<span class="comment">;</span></div></pre></td></tr></table></figure></p>
 <p>这是用程序语言把三个函数分别表示出来，拟合函数、成本函数、梯度下降<br>predict.m里该填的代码：<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">h=sigmoid(X*theta);</div><div class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:m</div><div class="line">    <span class="keyword">if</span> h(<span class="built_in">i</span>)&gt;=<span class="number">0.5</span></div><div class="line">       p(<span class="built_in">i</span>)=<span class="number">1</span>;</div><div class="line">    <span class="keyword">else</span></div><div class="line">       p(<span class="built_in">i</span>)=<span class="number">0</span>;</div><div class="line">    <span class="keyword">end</span>;</div><div class="line"><span class="keyword">end</span>;</div></pre></td></tr></table></figure></p>
-<p>对着代码解释就是很轻松啊，然而当初想的时候，差点被折腾死，<code>i</code>是我随便用的一个，估计用其他字母也都可以。<code>1：m</code>这句有点像Python里面的list的用法。<br>接下来是ex2_reg，这个涉及到了正则化，只用补充一个costFunctionReg.m的代码：<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">h=sigmoid(X*theta);</div><div class="line">J=<span class="number">1</span>/m*(-y'*<span class="built_in">log</span>(h)-(<span class="number">1</span>-y')*<span class="built_in">log</span>(<span class="number">1</span>-h))+lambda/(<span class="number">2</span>*m)*(theta(<span class="number">2</span>:<span class="keyword">end</span>)'*theta(<span class="number">2</span>:<span class="keyword">end</span>));</div><div class="line">grad=<span class="number">1</span>/m*[(h-y)<span class="string">'*X]+lambda/m*theta'</span>;</div><div class="line">grad(<span class="number">1</span>)=grad(<span class="number">1</span>)-lambda/m*theta(<span class="number">1</span>);</div></pre></td></tr></table></figure></p>
+<p>对着代码解释就是很轻松啊，然而当初想的时候，差点被折腾死，<code>i</code>是我随便用的一个，估计用其他字母也都可以。<code>1：m</code>这句有点像Python里面的list的用法。</p>
+<h3 id="接下来是ex2-reg"><a href="#接下来是ex2-reg" class="headerlink" title="接下来是ex2_reg"></a>接下来是ex2_reg</h3><p>这个涉及到了正则化，只用补充一个costFunctionReg.m的代码：<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">h=sigmoid(X*theta);</div><div class="line">J=<span class="number">1</span>/m*(-y'*<span class="built_in">log</span>(h)-(<span class="number">1</span>-y')*<span class="built_in">log</span>(<span class="number">1</span>-h))+lambda/(<span class="number">2</span>*m)*(theta(<span class="number">2</span>:<span class="keyword">end</span>)'*theta(<span class="number">2</span>:<span class="keyword">end</span>));</div><div class="line">grad=<span class="number">1</span>/m*[(h-y)<span class="string">'*X]+lambda/m*theta'</span>;</div><div class="line">grad(<span class="number">1</span>)=grad(<span class="number">1</span>)-lambda/m*theta(<span class="number">1</span>);</div></pre></td></tr></table></figure></p>
 <p>就是这个，折腾了我半天，总提示我syntax error。看到<code>theta(2:end)&#39;*theta(2:end)</code>了吗，本来我写的是平方，但是显然向量只能写成两个相乘的方式，平方不行。<br>另外，先定义grad，再定义grad(1)，后面等于前面的减去一项。<br>转置的问题还是不太清楚，为什么<code>grad=1/m*[(h-y)&#39;*X]+lambda/m*theta&#39;;</code>这里的theta要转置！<br>PS：整整一周啊！陷入对智商的重大怀疑中，其实老师讲的已经很易懂了……</p>
-]]></content>
+<h1 id="Neural-Networks-Representation"><a href="#Neural-Networks-Representation" class="headerlink" title="Neural Networks: Representation"></a>Neural Networks: Representation</h1><h2 id="Motivations"><a href="#Motivations" class="headerlink" title="Motivations"></a>Motivations</h2><h3 id="Non-linear-Hypotheses"><a href="#Non-linear-Hypotheses" class="headerlink" title="Non-linear Hypotheses"></a>Non-linear Hypotheses</h3><p>为什么有了线性回归和逻辑回归算法还要学神经网络算法？<br>主要适用于非线性问题，为了准确描述此类问题通常需要用到多项式，如果特征很多，多项式会变得非常非常长。<br>比如说计算机识别图像这个案例。和人眼不同，计算机看到的图像是一堆像素，所以这个识别图像问题到计算机这就变成了：给你一组汽车的图片作为training set，训练出一个分类器，再给你一张照片，判断它是不是汽车。只不过，这里的x是像素……超级多的像素。<br>感受一下下面这张图：<br><img src="http://oapfne1kf.bkt.clouddn.com/2016-08-18_16:01:27.jpg" alt="2016-08-18_16:01:27.jpg"></p>
+<h3 id="Neurons-and-the-Brain"><a href="#Neurons-and-the-Brain" class="headerlink" title="Neurons and the Brain"></a>Neurons and the Brain</h3><p>神经网络算法源于人们想拥有一种模仿大脑的算法。<br>视频里举了很多例子，比如传感器、声纳等等。</p>
+<h2 id="Neural-Networks"><a href="#Neural-Networks" class="headerlink" title="Neural Networks"></a>Neural Networks</h2><h3 id="Model-Representation-I"><a href="#Model-Representation-I" class="headerlink" title="Model Representation I"></a>Model Representation I</h3>]]></content>
     
     <summary type="html">
     
@@ -596,9 +675,9 @@
     </summary>
     
     
-      <category term="music" scheme="http://yibeichen.me/tags/music/"/>
-    
       <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
+      <category term="music" scheme="http://yibeichen.me/tags/music/"/>
     
   </entry>
   
@@ -886,9 +965,9 @@
     </summary>
     
     
-      <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
-    
       <category term="machine learning" scheme="http://yibeichen.me/tags/machine-learning/"/>
+    
+      <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
     
   </entry>
   
@@ -1473,116 +1552,6 @@ print sum(s)</code><br>报错：str是不能求和的。</p>
       <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo的安装、使用、折腾历程（不定期更新）</title>
-    <link href="http://yibeichen.me/2016/07/22/Something-about-Hexo/"/>
-    <id>http://yibeichen.me/2016/07/22/Something-about-Hexo/</id>
-    <published>2016-07-22T03:58:28.000Z</published>
-    <updated>2016-08-03T03:44:03.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>0727：<br>自定义导航、七牛图床、弃用Mou改为Atom</p>
-<p>0722：<br>7月17日的晚上，开始决定要用github+hexo搭一个博客。</p>
-<p>7月7日，阿冰说准备用WordPress搭个博客，行动好快，她迅速买了域名，搭了框架，噼里啪啦，今天去她那看了看，7月9日就已经发了文章了。（目测某冰应该不是跟我一样，把文章搬上来还非得改成原始发布时间。）</p>
-<p>隆重（这地不知道哪天才有人气，也敢称隆重？）推荐：<a href="http://chatnone.com" target="_blank" rel="external"><strong>ChatNone</strong></a></p>
-<p>广告到此结束，以下进入正文。</p>
-<a id="more"></a>
-<hr>
-<p>7月17日，学完了<a href="https://www.coursera.org/learn/python-data" target="_blank" rel="external">《Python Data Structures》</a>，<a href="http://yibeichen.me/2016/07/18/PR4E-Chapter-10-assignment/">最后一章的作业</a>很闹心，代码写得啰里啰嗦，不知道该怎么简化。想啊想，试呀试，哎哎哎，那三行是不是可以合并到一起？对呀！<code>print</code>一下，没错哎！哇噻，我好棒！（陷入了深深的自我迷恋…）咦，等等，这么“复杂”的心路历程是不是该记下来？下次再碰到也能引以为戒嘛。那么，记在哪里呢？默默爬上豆瓣，忍痛把这一大块代码放上去，真真是惨不忍睹。估计拿豆瓣记编程笔记的，千古仅我一人。</p>
-<p>如此惨烈丑陋不支持Mardown语法的页面，深深刺痛了我！搭一个博客的想法就此生根发芽……</p>
-<p>鉴于我在搭博客的过程中，厚着脸皮求助了无数陌生人，并得到了这些善良的大神们非常热心地回复，决定也记录一下我在使用Hexo过程中的心得，如果碰巧能为别人提供一点微薄的帮助，将不胜荣幸。（谢谢大家，我的发言结束了……）</p>
-<h1 id="利用Github-Pages和Hexo搭建博客"><a href="#利用Github-Pages和Hexo搭建博客" class="headerlink" title="利用Github Pages和Hexo搭建博客"></a>利用Github Pages和Hexo搭建博客</h1><p>这部分内容包括：为什么要选择github和hero、购买域名、注册github、安装hero、配置github和hexo参数、域名解析……</p>
-<p>这一部分的教程非常之多，推荐几个：</p>
-<p><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程</a> @<a href="http://cnfeat.com/" target="_blank" rel="external">CNfeat</a><br><a href="https://xuanwo.org/2015/03/26/hexo-intor/" target="_blank" rel="external">史上最详细的Hexo博客搭建图文教程</a> @<a href="https://xuanwo.org/" target="_blank" rel="external">Xuanwo</a><br><a href="http://blog.waydrow.com/2015/08/14/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8Github%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2/" target="_blank" rel="external">使用Hexo在Github上搭建你的博客</a> @<a href="blog.waydrow.com"> Waydrow </a></p>
-<p>这三篇也是我参考得最多的教程，7.18的晚上按照第一篇的方法搭建成功了，但是不知道哪里出了问题，本地的内容不能和github同步，7.19找到了@Xuanwo的教程，按照他的方法删掉了hexo文件夹又重来一遍，终于成功了，感谢。</p>
-<p>期间还因为安装hexo出现权限错误的问题骚扰过@Waydrow，感谢。</p>
-<p>这里不是说@CNfeat的方法有问题呀，是我自己操作失误，他介绍得非常详细，边边角角都说到了，非常感谢。</p>
-<p>其实这几篇都是基于Windows系统的，我在搜索的时候发现Mac下安装Git还需要Homebrew，但是我装完了才发现，所以从技术上来看不用它也可以，不过也许用了它之后更方便，就不会出错了呢，谁用谁知道……</p>
-<p>强烈推荐hexo的<a href="https://hexo.io/docs/" target="_blank" rel="external">官方文档</a>，再一次是搭完了才发现，早一点发现就不用走那么多弯路了呀！另外，此处评论非常值得一看，看过就知道，you are not alone，你碰到的问题他们都碰到了。</p>
-<h2 id="补充：Namecheap修改DNS设置"><a href="#补充：Namecheap修改DNS设置" class="headerlink" title="补充：Namecheap修改DNS设置"></a>补充：Namecheap修改DNS设置</h2><p>似乎大家都是在GoDaddy或者万网买的域名，然而我用的是Namecheap，还忘记用coupon，心疼！</p>
-<p>如果有人也是个“少数派”，那么，请看下面的设置方法：）</p>
-<p>Namecheap自带域名解析功能，但是在国内还是推荐Dnspod，至于为什么选它和怎么操作，前面的文档都提过了，下面专门介绍Namecheap的部分，因为网站换了新颜，相关教程上的截图还是旧的，完全看不懂，特来贡献一把。</p>
-<p>登录进入Namecheap，点击“Domain List”：<br><img src="http://ww1.sinaimg.cn/large/72f96cbagw1f62pwjsthej20x80c8t9z.jpg" alt="15:29:57.jpg"><br>再点击右边的“MANAGE”进入以下页面：<br><img src="http://ww2.sinaimg.cn/large/72f96cbagw1f62q2jhpv2j20sm0i2acp.jpg" alt="15:35:35.jpg"><br>选择“Custom DNS”，把在dnspod获得的两个ns填进去就ok啦。</p>
-<p>域名解析据说要24小时才能生效。</p>
-<h1 id="Hexo使用及优化"><a href="#Hexo使用及优化" class="headerlink" title="Hexo使用及优化"></a>Hexo使用及优化</h1><h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>正在使用的是NexT，前两天折腾过Maupassant，又换回来了。</p>
-<p>附上操作文档：</p>
-<p>NexT：<a href="http://theme-NexT.iissnan.com/" target="_blank" rel="external">NexT主题使用文档</a></p>
-<p>Maupassant：<a href="https://www.haomwei.com/technology/maupassant-hexo.html" target="_blank" rel="external">大道至简——Hexo简洁主题推荐</a></p>
-<h3 id="NexT优化"><a href="#NexT优化" class="headerlink" title="NexT优化"></a>NexT优化</h3><h4 id="自定义导航"><a href="#自定义导航" class="headerlink" title="自定义导航"></a>自定义导航</h4><p>NexT默认的导航很有限，只有“首页、分类、归档、关于”这几个选项，不太够用，那么怎么按需添加呢？</p>
-<p>以添加“工具”为例，需要修改三个文件：</p>
-<blockquote>
-<p>hexo/source/tools/index.md<br>hexo/themes/next/_config.yml<br>hexo/themes/next/languages/zh-Hans.yml</p>
-</blockquote>
-<p>首先，在hexo/source下，新建tools文件夹，在文件夹内新建index.md文件，可以复试about文件中的index，修改一下title就可以了。</p>
-<p>然后，到hexo/themes/next/_config.yml修改两个部分：</p>
-<ol>
-<li><p>添加menu名称</p>
-<figure class="highlight dts"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">menu:</span></div><div class="line"><span class="symbol">  home:</span> /</div><div class="line">  <span class="meta">#categories: /categories</span></div><div class="line"><span class="symbol">  archives:</span> /archives</div><div class="line"><span class="symbol">  tags:</span> /tags</div><div class="line"><span class="symbol">  tools:</span> /tools   <span class="meta">#添加的位置决定了页面呈现的位置</span></div><div class="line"><span class="symbol">  about:</span> /about</div><div class="line">  <span class="meta">#commonweal: /404.html</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>添加menu icon，在fontawesome.io寻找喜欢的icon</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="attr">menu_icons:</span></div><div class="line"><span class="attr">  enable:</span> <span class="literal">true</span>   <span class="comment">#如果不想显示icon，改为false</span></div><div class="line">  <span class="comment">#KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome</span></div><div class="line"><span class="attr">  home:</span> home</div><div class="line"><span class="attr">  tools:</span> magic   <span class="comment">#FontAwesome没有tools对应的icon，所以我选了magic</span></div><div class="line"><span class="attr">  about:</span> user</div><div class="line"><span class="attr">  categories:</span> th</div><div class="line"><span class="attr">  tags:</span> tags</div><div class="line"><span class="attr">  archives:</span> archive</div><div class="line"><span class="attr">  commonweal:</span> heartbeat</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>关于“标签”页和“404”页面的添加，请参考官方文档。</p>
-<p>本部分参考了<a href="http://www.selfrebuild.net/2015/06/24/Github-Hexo-Next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E5%AE%9A%E5%88%B6/" target="_blank" rel="external">Hexo博客优化 - Next主题个性化定制</a>，感谢！</p>
-<h4 id="字体（字号、颜色）"><a href="#字体（字号、颜色）" class="headerlink" title="字体（字号、颜色）"></a>字体（字号、颜色）</h4><p><strong>工具：</strong>chrome开发者工具 + TextWrangler</p>
-<p>NexT原始的字号实在是太小了，可能因为是走极简风格，大量留白，行距段距都很大，字号衬托得更小了，尤其是英文字。</p>
-<p>为了用眼健康，我决定，改字号！</p>
-<p>chrome开发者工具是前端必备神器，啊，就当大家都认识它了。用它调到满意的样式之后再去css里修改对应行的代码就好，那么问题来了，css在哪改呢？</p>
-<h5 id="误区"><a href="#误区" class="headerlink" title="误区"></a>误区</h5><p>我掉过的坑必须要给大家竖个牌子，也许并没有人跟我一样蠢……</p>
-<p>调试的时候，chrome提示我css的文件名是main.css，于是我就去找呀，真是太机智了，一下子就找到了呢。路径是：hexo（你给hexo取的文件名）/source/public/css/main.css</p>
-<p>欢欢喜喜去改字号，改颜色，改行距，还改了header的margin、padding等等等。</p>
-<p>可是，执行<code>$ hexo s</code>和<code>$ hexo g -d</code>的时候，时好时坏，以为是cookies的问题，清理了好几次也没什么效果。</p>
-<p>直到我的github本地的一个repository同步出现了问题，我才意识到，刚刚改的main.css所在的public文件夹是hexo和github同步的部分。就是说，B文件夹是A文件夹同步的结果，但我改的是B，没有改A，所以每执行一次同步，A的数据就把B覆盖了，等于我白改了。</p>
-<p>repository那个问题也是，我把hexo部署在github上的仓库给clone到本地了，结果每次执行<code>$ hexo g -d</code>的时候，就出现：当本地的hexo和远程的github同步的时候，本地的github也在和远程的github同步。活生生逼疯了它……</p>
-<h5 id="正确答案"><a href="#正确答案" class="headerlink" title="正确答案"></a>正确答案</h5><p>嗯，犯错了不要紧，要记得去Google。</p>
-<p>果然找到一位<a href="http://papacochon.com/2015/10/02/hexo-3-hexo-NexT-customize/" target="_blank" rel="external">小伙伴</a>，指出了一条明路：hexo/themes/next/source/css/_variables/base.styl</p>
-<p>在这个文件中可以修改所有的字号、字体、颜色，然而，我去改了，发现没什么用……于是我把修改后的文件内容copy到了同一目录下的Muse.styl（因为我用的是Muse主题）里，保存之后，生效了！</p>
-<p>事实上，这个文件夹下，除了base.styl以外，其他的四个styl文件都是空的，是故意留给我们自己定制吗？其中有一个是custom.styl，我觉得，把base.styl的内容copy到这里而不是Muse.styl，应该也能生效？有空试试。</p>
-<h4 id="侧边栏优化"><a href="#侧边栏优化" class="headerlink" title="侧边栏优化"></a>侧边栏优化</h4><h5 id="头像"><a href="#头像" class="headerlink" title="头像"></a>头像</h5><p><strong>头像更换</strong></p>
-<p>官方文档中关于这部分写得好像有点麻烦，我不太记得了。我是把图片改成avatar.gif放到themes/next/source/images。就这样，OK啦。<br><strong>头像变圆形</strong></p>
-<p>还是从上面那位改字号的朋友那里学来的，再次感谢。上传的图片最好是正方形的，不然会变形，文件路径：themes/next/source/css_common_components/sidebar/sidebar.styl 代码修改如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.site-author-image</span> &#123;</div><div class="line">  <span class="attribute">display</span>: block;</div><div class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</div><div class="line">  <span class="attribute">max-width</span>: <span class="number">96px</span>;</div><div class="line">  <span class="attribute">height</span>: auto;</div><div class="line">  <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#333</span>;</div><div class="line">  <span class="attribute">padding</span>: <span class="number">2px</span>;  </div><div class="line">  <span class="comment">/* start*/</span></div><div class="line">  <span class="attribute">border-radius</span>: <span class="number">90%</span></div><div class="line">  webkit-transition: <span class="number">1.4s</span> all;</div><div class="line">  <span class="attribute">moz-transition</span>: <span class="number">1.4s</span> all;</div><div class="line">  <span class="attribute">ms-transition</span>: <span class="number">1.4s</span> all;</div><div class="line">  <span class="attribute">transition</span>: <span class="number">1.4s</span> all;</div><div class="line">  <span class="comment">/* end */</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p><code>start</code>和<code>end</code>标记的部分就是需要添加的。</p>
-<p>PS：每个的文件路径可能并不完全一致，请自行对应。</p>
-<h3 id="关于Maupassant的一点点"><a href="#关于Maupassant的一点点" class="headerlink" title="关于Maupassant的一点点"></a>关于Maupassant的一点点</h3><p>这个主题我大概用了半天，也是简约路线，但是突然有一会儿，语言莫名奇妙变成了德语，我脆弱的内心已经经不起折腾了，于是换了它。</p>
-<p>但是关于这个主题安装，有一点要说的：</p>
-<p><code>npm install hexo-renderer-sass</code>安装的时候可能会报错，解决方法也有很多种，但，我是开着全局的VPN来安装的，很是顺利。</p>
-<p>没错，这一段就是为了安利VPN，科学上网必备。</p>
-<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><h3 id="音乐视频"><a href="#音乐视频" class="headerlink" title="音乐视频"></a>音乐视频</h3><p>正在找，试过再来说。</p>
-<h1 id="Hexo的好搭档！"><a href="#Hexo的好搭档！" class="headerlink" title="Hexo的好搭档！"></a>Hexo的好搭档！</h1><h2 id="七牛云-图床"><a href="#七牛云-图床" class="headerlink" title="七牛云+图床"></a>七牛云+图床</h2><p>一如既往，操作文档送上：</p>
-<p><a href="http://toolinbox.net/iPic/" target="_blank" rel="external">图床神器 iPic</a></p>
-<p><a href="http://toolinbox.net/iPic/AddQiniuImageHost.html" target="_blank" rel="external">在 iPic 中添加七牛云</a></p>
-<p>可以点<a href="https://portal.qiniu.com/signup?code=3lmae5oay6pua" target="_blank" rel="external">此处</a>注册七牛账户，互惠互利：）</p>
-<p>不过在用七牛图床的时候出现了一个bug：</p>
-<p><code>{&quot;error&quot;:&quot;download token not specified&quot;}</code></p>
-<p>悲伤的是，我不知道怎么解决它，先放着吧，等脑袋扩容了再来想这件事。</p>
-<p>0727:<br>七牛图床的问题和他们的技术沟通过了，已解决。原因是因为我开启了“原图保护”，导致外部文件访问图片受阻，类似是跟“私有空间”同一个效果，关闭以后就正常了。</p>
-<h2 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h2><p>聊天之前先上文档：</p>
-<p><a href="http://wowubuntu.com/markdown/index.html" target="_blank" rel="external">Markdown 语法说明 (简体中文版)</a></p>
-<p><a href="https://wizardforcel.gitbooks.io/markdown-simple-world/content/index.html" target="_blank" rel="external">Markdown - 简单的世界</a></p>
-<p>大概是从去年初开始用Markdown的，为此买了Ulysses（Mac+iPad），可是支持md语言的网站我用得不多，只有Medium，所以平日里写的都是很基础的语法。</p>
-<p>直到我开始学Python，才深感md之好用。</p>
-<p>然而，我的Ulysses写出来的东西在hexo上显示非常之奇怪，代码不能高亮，一些语法的使用好像不太一致？所以又下载了Mou，它和hexo契合得倒是很完美，而且可以即时预览，但是反应有点卡顿，打开窗口时很奇怪，一个一个的，不能组合在一起，使用体验不及Ulysses。</p>
-<p>已决定弃用Mou，改用Atom书写markdown。<br>假如早点认识Atom，大概连Ulysses都不用买了罢。</p>
-<p>（未完待续）</p>
-<hr>
-<p>作为一个文科生，我真是在爬着建站。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;0727：&lt;br&gt;自定义导航、七牛图床、弃用Mou改为Atom&lt;/p&gt;
-&lt;p&gt;0722：&lt;br&gt;7月17日的晚上，开始决定要用github+hexo搭一个博客。&lt;/p&gt;
-&lt;p&gt;7月7日，阿冰说准备用WordPress搭个博客，行动好快，她迅速买了域名，搭了框架，噼里啪啦，今天去她那看了看，7月9日就已经发了文章了。（目测某冰应该不是跟我一样，把文章搬上来还非得改成原始发布时间。）&lt;/p&gt;
-&lt;p&gt;隆重（这地不知道哪天才有人气，也敢称隆重？）推荐：&lt;a href=&quot;http://chatnone.com&quot;&gt;&lt;strong&gt;ChatNone&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;广告到此结束，以下进入正文。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="http://yibeichen.me/tags/Hexo/"/>
     
   </entry>
   
