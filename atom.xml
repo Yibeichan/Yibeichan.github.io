@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2016-11-10T15:10:39.000Z</updated>
+  <updated>2017-01-29T10:03:13.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -16,15 +16,69 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2017年的第一篇博文</title>
+    <link href="http://yibeichen.me/2017/01/29/First-Blog-in-2017/"/>
+    <id>http://yibeichen.me/2017/01/29/First-Blog-in-2017/</id>
+    <published>2017-01-29T09:19:58.000Z</published>
+    <updated>2017-01-29T10:03:13.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>修复了next显示空白的问题，用了一下git pull，写了2017年的第一篇博文。<br>一个笼罩在4篇论文阴影下的大年初二。<br><a id="more"></a></p>
+<h1 id="修复因github-pages更新导致的next主题显示空白"><a href="#修复因github-pages更新导致的next主题显示空白" class="headerlink" title="修复因github pages更新导致的next主题显示空白"></a>修复因github pages更新导致的next主题显示空白</h1><p>11月9号或者10号左右吧，我记得把Ajax的作业放到这里之后，没过多久，网站就变成了一片空白，那天搜索没有找到解决办法，就搁置了。</p>
+<p>这一歇，就是80天。</p>
+<p>今天不知道怎么又突然想起来了，找了找，发现竟然是因为11月8号那天，github pages更新了，过滤了next主题下source/vendors文件夹（里面装了css和js），所以才导致了网站显示空白。</p>
+<p>解决方案有两个：</p>
+<ul>
+<li>去官网更新最新的next（主题作者已经针对这个问题修复了）</li>
+<li>修改文件夹名：source/vendors改为source/rename（自己换一个名字），再到_config.yml文件中修改_internal：vendors（改为你换的名字）</li>
+</ul>
+<p>我先尝试了方法二，其实也不是无效，只是一开始没有刷新成功，可能cookies没有清理干净，我没闲住，又想去试试方法一。</p>
+<p>方法一呢，就涉及到如何更新next主题了，也有两个方法，都是看别人提问的解答（<a href="https://github.com/iissnan/hexo-theme-next/issues/61" target="_blank" rel="external">这里</a>）:</p>
+<ul>
+<li>适用于不熟悉git的盆友：<ul>
+<li>备份_config.yml、_custom.styl 以及你修改过的其他文件</li>
+<li>删除掉 themes/next 目录</li>
+<li>重新 clone 一份 <code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></li>
+<li>比对你修改的文件与主题对应的文件，将修改应用回去</li>
+</ul>
+</li>
+<li>用git指令：<ul>
+<li><code>cd themes/next</code></li>
+<li><code>git init</code></li>
+<li><code>git pull</code></li>
+</ul>
+</li>
+</ul>
+<p>其实这两种更新方法我也都试了（就是闲得，又没耐心），第一个弄到一半嫌它太麻烦，终止了，换了git，本来在github的回答中，<code>git pull</code>前还有一句<code>git remote add origin</code> 但是我输入后显示无效，所以就去掉它了。</p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>其他没什么好说的了，最近，也不是最近，已经有快三个月了，口头表达能力严重退化，无法连续说话两分钟，跟有人掐着我喉咙把要说的字往回按似得；文字表达能力也退化到只能写论文、给老师发邮件、微信发“新年快乐”这种地步了。</p>
+<p>新年计划、感想什么的？没有。<br>旧年总结、反思什么的？更没有。</p>
+<p>我来想象一下，我导估计会说，这样最好呀，别说什么其他话了，看论文去，也别写什么其他东西了，写论文去。</p>
+<p>唉哟，这论文们，托福啊，各种去年的to-do lists和flags呀，折腾我心慌得。</p>
+<p>大年初二怎么就这么垂头丧气了。<br>都是愁容童子，可别说诺贝尔文学奖了，你连一篇日记都写不出。</p>
+<p>向大江健三郎先生问个好。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;修复了next显示空白的问题，用了一下git pull，写了2017年的第一篇博文。&lt;br&gt;一个笼罩在4篇论文阴影下的大年初二。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yibeichen.me/tags/Hexo/"/>
+    
+      <category term="nonsense" scheme="http://yibeichen.me/tags/nonsense/"/>
+    
+  </entry>
+  
+  <entry>
     <title>对“埃阿斯自杀”的文本和图像材料的简要分析</title>
     <link href="http://yibeichen.me/2016/11/09/The-Suicide-of-Ajax/"/>
     <id>http://yibeichen.me/2016/11/09/The-Suicide-of-Ajax/</id>
     <published>2016-11-09T08:35:23.000Z</published>
-    <updated>2016-11-10T15:10:39.000Z</updated>
+    <updated>2017-01-29T10:03:22.000Z</updated>
     
-    <content type="html"><![CDATA[<p>把那句“Before Gods, we are equally wise and equally foolish.”换成“Before professors, we are all idiots.”丝毫没有违和感。<br>承蒙老师不弃，每周忍受这样一个我，还很照顾，谢谢谢谢。<br>这篇文章的副标题应该是，十天入门希腊文。</p>
-<p>另，上午看<em>Myth and Tragedy</em>的时候，想，假如世间的一切都能顺其自然的话，那些oracle的预言就不会成真，古希腊也就不会有那么多悲剧，但是，要那么多皆大欢喜干什么呢？</p>
-<p>“总在这注定失败的事业里，觉得自己是英雄。”<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p>20170129：<br>腊月二十九写完了古希腊神话研究的第二份作业，回过头来看看这第一份，真是惨不忍睹，张老师给的评语都不敢看第二眼，只记住了四个字“注释规范！”<br>听从可可学姐的建议，下载了一篇张老师的论文，学习了一下，和我写传播学论文的注释完全不同呢。</p>
+<p>哎，不懂你们古典学。<br><a id="more"></a></p>
 <p>对雅典人来说，埃阿斯是非常重要的英雄人物，祭拜埃阿斯的仪式似乎延续的时间极为久远：鲍桑尼亚斯（Pausanias）说，<code>διαμένουσι δὲ καὶ ἐς τόδε τῷ Αἴαντι παρὰ Ἀθηναίοις τιμαὶ αὐτῷ τε καὶ Εὐρυσάκει, καὶ γὰρ Εὐρυσάκους βωμός ἐστιν ἐν Ἀθήναις.</code>（就是时至今日，雅典人还依然给予埃阿斯极高的荣誉，也很推崇欧律萨克斯，在雅典甚至还设置这欧律萨克斯的龛位：鲍桑尼亚斯, 《希腊志》, Ⅰ. 35. 3）。 除了埃阿斯本身所具有的英雄特征比如骁勇善战之外，可能正是他的自戕所蕴含的悲剧力量，使其伟大得到了证明。</p>
 <p>关于埃阿斯（Ajax）自杀，有两个版本。前半部分是相同的：阿喀琉斯战死，埃阿斯背回了他的尸体，认为自己的功绩有目共睹，理所应当得到阿喀琉斯的武器，但最后不敌巧言善辩的奥德修斯，没能分到武器。此处出现了分叉：一个版本是埃阿斯直接愤而自杀；另一个版本是埃阿斯非常气愤想要杀奥德修斯和阿伽门农，但雅典娜施法，令其发疯，宰杀了作为战利品的牛羊，埃阿斯又气愤又羞愧，遂自杀。</p>
 <p>下文列举了和一些埃阿斯自杀相关的文字和图像材料，并对部分材料进行了重点描述，并由此探讨文本和图像之间的关系。其中文本分析以索福克勒斯（Sophocles）的悲剧《埃阿斯》为主，图像分析以科林斯杯、埃塞克基亚斯（Exekias）的黑绘双耳罐和阿提卡红绘杯三件作品为主。</p>
@@ -69,9 +123,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;把那句“Before Gods, we are equally wise and equally foolish.”换成“Before professors, we are all idiots.”丝毫没有违和感。&lt;br&gt;承蒙老师不弃，每周忍受这样一个我，还很照顾，谢谢谢谢。&lt;br&gt;这篇文章的副标题应该是，十天入门希腊文。&lt;/p&gt;
-&lt;p&gt;另，上午看&lt;em&gt;Myth and Tragedy&lt;/em&gt;的时候，想，假如世间的一切都能顺其自然的话，那些oracle的预言就不会成真，古希腊也就不会有那么多悲剧，但是，要那么多皆大欢喜干什么呢？&lt;/p&gt;
-&lt;p&gt;“总在这注定失败的事业里，觉得自己是英雄。”&lt;br&gt;
+      &lt;p&gt;20170129：&lt;br&gt;腊月二十九写完了古希腊神话研究的第二份作业，回过头来看看这第一份，真是惨不忍睹，张老师给的评语都不敢看第二眼，只记住了四个字“注释规范！”&lt;br&gt;听从可可学姐的建议，下载了一篇张老师的论文，学习了一下，和我写传播学论文的注释完全不同呢。&lt;/p&gt;
+&lt;p&gt;哎，不懂你们古典学。&lt;br&gt;
     
     </summary>
     
@@ -1504,58 +1557,6 @@
 &lt;/ol&gt;
 &lt;p&gt;另，开始记课程笔记的时候，就是已经听不懂的时候。&lt;/p&gt;
 &lt;p&gt;两道习题，跟JSON、API相关。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
-      <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PY4E Chapter 13.1（Web Service and XML）</title>
-    <link href="http://yibeichen.me/2016/07/22/PY4E-Chapter-13-1/"/>
-    <id>http://yibeichen.me/2016/07/22/PY4E-Chapter-13-1/</id>
-    <published>2016-07-22T11:03:26.000Z</published>
-    <updated>2016-07-30T09:46:46.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>本节课介绍XML，下一节课介绍JSON。</p>
-<p>如何判断一次课程难不难？看我做作业的时候有没有借助外力就知道了。其实我是借助了教材，而且老师一开始就说了呀，本周的作业很容易！然而……</p>
-<p>Again and again and again, I was stuck at the stage of converting a string into an integrate and making a sum.<br><a id="more"></a></p>
-<p>#知识点<br>quiz中遇到的几个<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">XML</span> <span class="title">Basics</span>：</div><div class="line"><span class="literal">start</span> <span class="keyword">tag</span></div><div class="line"><span class="title">end</span> <span class="keyword">tag</span></div><div class="line"><span class="title">text</span> content</div><div class="line"><span class="keyword">attribute</span></div><div class="line">self closing <span class="keyword">tag</span></div><div class="line"></div><div class="line"><span class="title">XSD</span> Structure</div><div class="line">xs:element</div><div class="line">xs:sequence</div><div class="line">xs:complexType</div><div class="line"></div><div class="line"><span class="keyword">XML</span> <span class="title">Tree</span></div><div class="line"></div><div class="line">parsing →→→ de-serialization</div></pre></td></tr></table></figure></p>
-<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>In this assignment you will write a Python program somewhat similar to <a href="http://www.pythonlearn.com/code/geoxml.py" target="_blank" rel="external">http://www.pythonlearn.com/code/geoxml.py</a>. The program will prompt for a URL, read the XML data from that URL using urllib and then parse and extract the comment counts from the XML data, compute the sum of the numbers in the file.</p>
-<p>We provide two files for this assignment. One is a sample file where we give you the sum for your testing and the other is the actual data you need to process for the assignment.</p>
-<ul>
-<li><p>Sample data: <a><a href="http://python-data.dr-chuck.net/comments_42.xml" target="_blank" rel="external">http://python-data.dr-chuck.net/comments_42.xml</a></a> (Sum=2553)</p>
-</li>
-<li><p>Actual data: <a><a href="http://python-data.dr-chuck.net/comments_291517.xml" target="_blank" rel="external">http://python-data.dr-chuck.net/comments_291517.xml</a></a> (Sum ends with 32)</p>
-</li>
-</ul>
-<p>You do not need to save these files to your folder since your program will read the data directly from the URL. Note: Each student will have a distinct data url for the assignment - so only use your own data url for analysis.<br>Data Format and Approach</p>
-<p>The data consists of a number of names and comment counts in XML as follows:</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">comment</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>Matthias<span class="tag">&lt;/<span class="name">name</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">count</span>&gt;</span>97<span class="tag">&lt;/<span class="name">count</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">comment</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>You are to look through all the <comment> tags and find the <count> values sum the numbers. The closest sample code that shows how to parse XML is geoxml.py. But since the nesting of the elements in our data is different than the data we are parsing in that sample code you will have to make real changes to the code.<br>To make the code a little simpler, you can use an XPath selector string to look through the entire tree of XML for any tag named ‘count’ with the following line of code:<br><code>counts = tree.findall(&#39;.//count&#39;)</code></count></comment></p>
-<p>Take a look at the Python ElementTree documentation and look for the supported XPath syntax for details. You could also work from the top of the XML down to the comments node and then loop through the child nodes of the comments node.</p>
-<h1 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h1><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">import urllib</div><div class="line">import xml.etree.ElementTree <span class="keyword">as</span> ET</div><div class="line"></div><div class="line"></div><div class="line">url = raw_input(<span class="string">'Enter - '</span>)</div><div class="line"><span class="keyword">if</span> <span class="built_in">len</span>(url) &lt; <span class="number">1</span>:</div><div class="line">   url = <span class="string">"http://python-data.dr-chuck.net/comments_291517.xml"</span></div><div class="line">data = urllib.urlopen(url).<span class="keyword">read</span>()</div><div class="line"></div><div class="line">tree = ET.fromstring(data)</div><div class="line">lst = tree.findall(<span class="string">'comments/comment'</span>)</div><div class="line">s = []</div><div class="line"><span class="keyword">for</span> item in <span class="keyword">ls</span><span class="variable">t:</span></div><div class="line">    <span class="built_in">count</span> = item.<span class="keyword">find</span>(<span class="string">'count'</span>).text</div><div class="line">    s.<span class="keyword">append</span>(<span class="keyword">int</span>(<span class="built_in">count</span>))</div><div class="line"><span class="keyword">print</span> sum(s)</div></pre></td></tr></table></figure>
-<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>开头已经说了，这次的题目很简单，但是我还是卡在了两个地方</p>
-<h2 id="tree-findall"><a href="#tree-findall" class="headerlink" title="tree.findall()"></a>tree.findall()</h2><p>我最开始写的是<code>tree.findall(&#39;commentinfo/comments/comment&#39;)</code>相当于把根目录<code>commentinfo</code>（不知道标准称呼是什么，反正这么称呼我容易懂）放进来了，结果是<code>0</code>，其实可以理解为“空”。</p>
-<p>也就是说，一级tag是不用写出来的，直接从二级tag<code>comments</code>写到要计算的那级tag的上一级就可以了。</p>
-<h2 id="列表求和"><a href="#列表求和" class="headerlink" title="列表求和"></a>列表求和</h2><p>看见求和我就紧张，估计已经造成了心理阴影。</p>
-<p>最开始是直接用<code>sum(count)</code>求和，这是程序错误呀，循环中的一节怎么能用来求和呢。</p>
-<p>改成列表求和：<br><code>s.append(count)
-print sum(s)</code><br>报错：str是不能求和的。</p>
-<p>找到上回“借鉴”来的代码<code>s.append(int(count.string))</code>，又报错：count已经是一个str类型了，不能再转成一个string。</p>
-<p>好好好，那就去掉它，变成了<code>s.append(int(count))</code>，OK啦！</p>
-<p>PS：第12章以后的内容基本都是讲用Python联网，所以如果网络不好的话，在运行py的时候也会报错————显示urllib相关的一长串错误，不要紧张，不是程序错误，网络重新连接下就好了。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本节课介绍XML，下一节课介绍JSON。&lt;/p&gt;
-&lt;p&gt;如何判断一次课程难不难？看我做作业的时候有没有借助外力就知道了。其实我是借助了教材，而且老师一开始就说了呀，本周的作业很容易！然而……&lt;/p&gt;
-&lt;p&gt;Again and again and again, I was stuck at the stage of converting a string into an integrate and making a sum.&lt;br&gt;
     
     </summary>
     
