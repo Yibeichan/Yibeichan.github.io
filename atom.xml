@@ -94,9 +94,9 @@
     </summary>
     
     
-      <category term="nonsense" scheme="http://yibeichen.me/tags/nonsense/"/>
-    
       <category term="Hexo" scheme="http://yibeichen.me/tags/Hexo/"/>
+    
+      <category term="nonsense" scheme="http://yibeichen.me/tags/nonsense/"/>
     
   </entry>
   
@@ -300,8 +300,6 @@
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="web development" scheme="http://yibeichen.me/tags/web-development/"/>
     
       <category term="HTML" scheme="http://yibeichen.me/tags/HTML/"/>
@@ -309,6 +307,8 @@
       <category term="CSS" scheme="http://yibeichen.me/tags/CSS/"/>
     
       <category term="JavaScript" scheme="http://yibeichen.me/tags/JavaScript/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -769,9 +769,9 @@
     </summary>
     
     
-      <category term="music" scheme="http://yibeichen.me/tags/music/"/>
-    
       <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
+      <category term="music" scheme="http://yibeichen.me/tags/music/"/>
     
   </entry>
   
@@ -1059,9 +1059,9 @@
     </summary>
     
     
-      <category term="machine learning" scheme="http://yibeichen.me/tags/machine-learning/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="machine learning" scheme="http://yibeichen.me/tags/machine-learning/"/>
     
   </entry>
   

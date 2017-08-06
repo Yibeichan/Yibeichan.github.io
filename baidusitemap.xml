@@ -47,9 +47,9 @@
         <title>2017年的第一篇博文</title>
         <pubTime>2017-01-29T09:19:58.000Z</pubTime>
         
-        <tag>nonsense</tag>
-         
         <tag>Hexo</tag>
+         
+        <tag>nonsense</tag>
          
          
            
@@ -66,8 +66,6 @@
         <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
         <pubTime>2016-08-13T08:00:23.000Z</pubTime>
         
-        <tag>coursera</tag>
-         
         <tag>web development</tag>
          
         <tag>HTML</tag>
@@ -75,6 +73,8 @@
         <tag>CSS</tag>
          
         <tag>JavaScript</tag>
+         
+        <tag>coursera</tag>
          
          
            
@@ -111,9 +111,9 @@
         <title>Introduction to Classical Music 课程笔记 (未完)</title>
         <pubTime>2016-08-09T13:41:53.000Z</pubTime>
         
-        <tag>music</tag>
-         
         <tag>coursera</tag>
+         
+        <tag>music</tag>
          
          
            
@@ -273,9 +273,9 @@
         <title>7 Steps to Mastering Machine Learning With Python</title>
         <pubTime>2016-07-30T09:49:46.000Z</pubTime>
         
-        <tag>machine learning</tag>
-         
         <tag>Python</tag>
+         
+        <tag>machine learning</tag>
          
          
            
