@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2017-08-06T16:52:14.000Z</updated>
+  <updated>2017-08-06T16:59:33.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>有人给他写信的M</title>
-    <link href="http://yibeichen.me/2017/08/06/A-letter/"/>
-    <id>http://yibeichen.me/2017/08/06/A-letter/</id>
-    <published>2017-08-06T15:17:11.000Z</published>
-    <updated>2017-08-06T16:52:14.000Z</updated>
+    <link href="http://yibeichen.me/2017/08/07/A-Letter/"/>
+    <id>http://yibeichen.me/2017/08/07/A-Letter/</id>
+    <published>2017-08-06T16:58:35.000Z</published>
+    <updated>2017-08-06T16:59:33.000Z</updated>
     
     <content type="html"><![CDATA[<p>我正写信告诉我，今天的夜晚，是什么颜色。<br><a id="more"></a><br>M:</p>
 <p>你好吗？你好不好我全知道，有时候，我又什么都不知道。</p>
@@ -300,6 +300,8 @@
     </summary>
     
     
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
+    
       <category term="web development" scheme="http://yibeichen.me/tags/web-development/"/>
     
       <category term="HTML" scheme="http://yibeichen.me/tags/HTML/"/>
@@ -307,8 +309,6 @@
       <category term="CSS" scheme="http://yibeichen.me/tags/CSS/"/>
     
       <category term="JavaScript" scheme="http://yibeichen.me/tags/JavaScript/"/>
-    
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -769,9 +769,9 @@
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="music" scheme="http://yibeichen.me/tags/music/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
