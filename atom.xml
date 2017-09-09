@@ -69,11 +69,11 @@
   </entry>
   
   <entry>
-    <title>2017年的第一篇博文</title>
+    <title>大年初二、论文、修复Next及其他</title>
     <link href="http://yibeichen.me/2017/01/29/First-Blog-in-2017/"/>
     <id>http://yibeichen.me/2017/01/29/First-Blog-in-2017/</id>
     <published>2017-01-29T09:19:58.000Z</published>
-    <updated>2017-01-29T10:03:13.000Z</updated>
+    <updated>2017-09-09T15:15:28.000Z</updated>
     
     <content type="html"><![CDATA[<p>修复了next显示空白的问题，用了一下git pull，写了2017年的第一篇博文。<br>一个笼罩在4篇论文阴影下的大年初二。<br><a id="more"></a></p>
 <h1 id="修复因github-pages更新导致的next主题显示空白"><a href="#修复因github-pages更新导致的next主题显示空白" class="headerlink" title="修复因github pages更新导致的next主题显示空白"></a>修复因github pages更新导致的next主题显示空白</h1><p>11月9号或者10号左右吧，我记得把Ajax的作业放到这里之后，没过多久，网站就变成了一片空白，那天搜索没有找到解决办法，就搁置了。</p>
