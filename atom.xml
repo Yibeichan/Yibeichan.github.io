@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2017-09-09T15:03:01.000Z</updated>
+  <updated>2017-09-09T15:10:20.000Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -16,16 +16,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>A Letter 2</title>
+    <title>1/10家书</title>
     <link href="http://yibeichen.me/2017/09/09/A-Letter-2/"/>
     <id>http://yibeichen.me/2017/09/09/A-Letter-2/</id>
     <published>2017-09-09T15:03:01.000Z</published>
-    <updated>2017-09-09T15:03:01.000Z</updated>
+    <updated>2017-09-09T15:10:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>每一次跟爹娘的谈话，我都当做是一次练习。#传播与说服</p>
+<p>建议传播学考研增加一题：请运用所学的传播学知识，回顾你在家庭交往中的失误与不足，并提出改进方案。<br><a id="more"></a><br>牙/胃事件<br>（to 我爹）<br>你是党员，是公务员，退休了国家还会给你钱，但国家不会照顾你，不会像你爱我那样爱你，但我妈会。</p>
+]]></content>
     
     <summary type="html">
     
+      &lt;p&gt;每一次跟爹娘的谈话，我都当做是一次练习。#传播与说服&lt;/p&gt;
+&lt;p&gt;建议传播学考研增加一题：请运用所学的传播学知识，回顾你在家庭交往中的失误与不足，并提出改进方案。&lt;br&gt;
+    
     </summary>
     
+    
+      <category term="myletter" scheme="http://yibeichen.me/tags/myletter/"/>
     
   </entry>
   
@@ -108,9 +117,9 @@
     </summary>
     
     
-      <category term="nonsense" scheme="http://yibeichen.me/tags/nonsense/"/>
-    
       <category term="Hexo" scheme="http://yibeichen.me/tags/Hexo/"/>
+    
+      <category term="nonsense" scheme="http://yibeichen.me/tags/nonsense/"/>
     
   </entry>
   
@@ -1073,9 +1082,9 @@
     </summary>
     
     
-      <category term="machine learning" scheme="http://yibeichen.me/tags/machine-learning/"/>
-    
       <category term="Python" scheme="http://yibeichen.me/tags/Python/"/>
+    
+      <category term="machine learning" scheme="http://yibeichen.me/tags/machine-learning/"/>
     
   </entry>
   
