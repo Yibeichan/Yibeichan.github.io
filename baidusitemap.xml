@@ -4,6 +4,21 @@
 
     
   <url>
+    <loc>http://yibeichen.me/2017/09/09/A-Letter-2/</loc>
+    <lastmod>2017-09-09T15:03:01.000Z</lastmod>
+    <data>
+        <display>
+        <title>A Letter 2</title>
+        <pubTime>2017-09-09T15:03:01.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yibeichen.me/2017/08/07/A-Letter/</loc>
     <lastmod>2017-08-06T16:59:33.000Z</lastmod>
     <data>
@@ -47,9 +62,9 @@
         <title>2017年的第一篇博文</title>
         <pubTime>2017-01-29T09:19:58.000Z</pubTime>
         
-        <tag>Hexo</tag>
-         
         <tag>nonsense</tag>
+         
+        <tag>Hexo</tag>
          
          
            
@@ -66,8 +81,6 @@
         <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
         <pubTime>2016-08-13T08:00:23.000Z</pubTime>
         
-        <tag>coursera</tag>
-         
         <tag>web development</tag>
          
         <tag>HTML</tag>
@@ -75,6 +88,8 @@
         <tag>CSS</tag>
          
         <tag>JavaScript</tag>
+         
+        <tag>coursera</tag>
          
          
            
@@ -111,9 +126,9 @@
         <title>Introduction to Classical Music 课程笔记 (未完)</title>
         <pubTime>2016-08-09T13:41:53.000Z</pubTime>
         
-        <tag>music</tag>
-         
         <tag>coursera</tag>
+         
+        <tag>music</tag>
          
          
            
