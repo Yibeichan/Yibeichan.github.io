@@ -4,6 +4,21 @@
 
     
   <url>
+    <loc>http://yibeichen.me/2017/10/18/scene/</loc>
+    <lastmod>2017-10-18T13:45:12.000Z</lastmod>
+    <data>
+        <display>
+        <title>scene</title>
+        <pubTime>2017-10-18T13:45:12.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yibeichen.me/2017/01/29/First-Blog-in-2017/</loc>
     <lastmod>2017-09-09T15:15:28.000Z</lastmod>
     <data>
@@ -11,9 +26,9 @@
         <title>大年初二、论文、修复Next及其他</title>
         <pubTime>2017-01-29T09:19:58.000Z</pubTime>
         
-        <tag>Hexo</tag>
-         
         <tag>nonsense</tag>
+         
+        <tag>Hexo</tag>
          
          
            
