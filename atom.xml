@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>舞！舞！舞！</title>
-  <subtitle>宁要壮烈的闪烁，不要平淡的沉默</subtitle>
+  <title>写了几个字</title>
+  <subtitle>逃避可耻</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2017-12-23T15:37:42.969Z</updated>
+  <updated>2017-12-24T01:08:12.350Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -20,12 +20,13 @@
     <link href="http://yibeichen.me/2017/12/23/Psychological/"/>
     <id>http://yibeichen.me/2017/12/23/Psychological/</id>
     <published>2017-12-23T14:26:07.000Z</published>
-    <updated>2017-12-23T15:37:42.969Z</updated>
+    <updated>2017-12-24T01:08:12.350Z</updated>
     
     <content type="html"><![CDATA[<p>见了几次心理咨询师，感觉没什么用。</p>
 <p>很久很久了，我不再阅读文学，也不再写字。</p>
 <p>我甚至觉得，日益严重的心理问题都与我停止了这两件事有关。</p>
 <a id="more"></a>
+<hr>
 <p>我知道我的心理问题始于何时。</p>
 <p>高二。</p>
 <p>我清楚地记得每天晚上下了自习回到家，是如何将巨大的压力化为对我妈无声的暴力，而她默默承受了两年。后来我妈回忆，那时候真的是“噤若寒蝉”，她什么也不说，不敢说，也不知道该说什么。</p>
@@ -369,8 +370,6 @@
     </summary>
     
     
-      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
-    
       <category term="web development" scheme="http://yibeichen.me/tags/web-development/"/>
     
       <category term="HTML" scheme="http://yibeichen.me/tags/HTML/"/>
@@ -378,6 +377,8 @@
       <category term="CSS" scheme="http://yibeichen.me/tags/CSS/"/>
     
       <category term="JavaScript" scheme="http://yibeichen.me/tags/JavaScript/"/>
+    
+      <category term="coursera" scheme="http://yibeichen.me/tags/coursera/"/>
     
   </entry>
   
@@ -1413,11 +1414,10 @@
     <link href="http://yibeichen.me/2016/07/27/No-Desire-to-Study/"/>
     <id>http://yibeichen.me/2016/07/27/No-Desire-to-Study/</id>
     <published>2016-07-26T16:07:07.000Z</published>
-    <updated>2016-08-04T06:00:18.000Z</updated>
+    <updated>2017-12-24T01:08:08.179Z</updated>
     
-    <content type="html"><![CDATA[<p>0727 13:25:00<br>一天，哦不，12个小时都忍不了，中午刚开电脑就跑去补了15G的套餐，焦灼等待一小时后，终于生效。<br>从此又是手脚齐全的人了。<br>Atom插件顺利安装！</p>
-<hr>
-<p>今天发现，本月的VPN流量已经用完了，于是，再也无心学习。</p>
+    <content type="html"><![CDATA[<p>0727 13:25:00<br>一天，哦不，12个小时都忍不了，中午刚开电脑就跑去补了15G的套餐，焦灼等待一小时后，终于生效。<br>从此又是手脚齐全的人了。</p>
+<h2 id="Atom插件顺利安装！"><a href="#Atom插件顺利安装！" class="headerlink" title="Atom插件顺利安装！"></a>Atom插件顺利安装！</h2><p>今天发现，本月的VPN流量已经用完了，于是，再也无心学习。</p>
 <blockquote>
 <p>没有VPN的时候怎么过的？<br>有氪星给的chrome插件啊。<br>在那之前呢？<br>某厂自带VPN，随时随地科学上网……</p>
 </blockquote>
@@ -1439,9 +1439,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;0727 13:25:00&lt;br&gt;一天，哦不，12个小时都忍不了，中午刚开电脑就跑去补了15G的套餐，焦灼等待一小时后，终于生效。&lt;br&gt;从此又是手脚齐全的人了。&lt;br&gt;Atom插件顺利安装！&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;今天发现，本月的VPN流量已经用完了，于是，再也无心学习。&lt;/p&gt;
+      &lt;p&gt;0727 13:25:00&lt;br&gt;一天，哦不，12个小时都忍不了，中午刚开电脑就跑去补了15G的套餐，焦灼等待一小时后，终于生效。&lt;br&gt;从此又是手脚齐全的人了。&lt;/p&gt;
+&lt;h2 id=&quot;Atom插件顺利安装！&quot;&gt;&lt;a href=&quot;#Atom插件顺利安装！&quot; class=&quot;headerlink&quot; title=&quot;Atom插件顺利安装！&quot;&gt;&lt;/a&gt;Atom插件顺利安装！&lt;/h2&gt;&lt;p&gt;今天发现，本月的VPN流量已经用完了，于是，再也无心学习。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;没有VPN的时候怎么过的？&lt;br&gt;有氪星给的chrome插件啊。&lt;br&gt;在那之前呢？&lt;br&gt;某厂自带VPN，随时随地科学上网……&lt;/p&gt;
 &lt;/blockquote&gt;
