@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://yibeichen.me/2017/12/29/Virtue/</loc>
+    <lastmod>2017-12-29T16:34:03.720Z</lastmod>
+    <data>
+        <display>
+        <title>美德是什么？</title>
+        <pubTime>2017-12-29T15:27:04.000Z</pubTime>
+        
+        <tag>nonsense</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yibeichen.me/2017/12/23/Psychological/</loc>
     <lastmod>2017-12-24T01:08:12.350Z</lastmod>
     <data>
@@ -64,9 +81,9 @@
         <title>大年初二、论文、修复Next及其他</title>
         <pubTime>2017-01-29T09:19:58.000Z</pubTime>
         
-        <tag>Hexo</tag>
-         
         <tag>nonsense</tag>
+         
+        <tag>Hexo</tag>
          
          
            
@@ -326,9 +343,9 @@
         <title>7 Steps to Mastering Machine Learning With Python</title>
         <pubTime>2016-07-30T09:49:46.000Z</pubTime>
         
-        <tag>Python</tag>
-         
         <tag>machine learning</tag>
+         
+        <tag>Python</tag>
          
          
            
