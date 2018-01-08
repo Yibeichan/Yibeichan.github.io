@@ -1,0 +1,692 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ZNp-Or9osyj9lyjTN9O5DRqaSId7rz-OEXbix-AvYjM" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Python," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="写了几个字" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="又见Python，争取在8月之前，熟练Python。日后出去了，也是有技可傍，不至于手足无措。哎，为了可怜的零星的安全感。
+这篇纯粹是写给自己看的……">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python 学习笔记">
+<meta property="og:url" content="http://yibeichen.me/2018/01/08/Data-Scientist-with-Python/index.html">
+<meta property="og:site_name" content="写了几个字">
+<meta property="og:description" content="又见Python，争取在8月之前，熟练Python。日后出去了，也是有技可傍，不至于手足无措。哎，为了可怜的零星的安全感。
+这篇纯粹是写给自己看的……">
+<meta property="og:updated_time" content="2018-01-08T07:53:08.702Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python 学习笔记">
+<meta name="twitter:description" content="又见Python，争取在8月之前，熟练Python。日后出去了，也是有技可傍，不至于手足无措。哎，为了可怜的零星的安全感。
+这篇纯粹是写给自己看的……">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yibeichen.me/2018/01/08/Data-Scientist-with-Python/"/>
+
+  <title> Python 学习笔记 | 写了几个字 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-82770324-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">写了几个字</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">逃避可耻</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tools">
+          <a href="/tools" rel="section">
+            
+            工具
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Python 学习笔记
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2018-01-08T15:46:27+08:00" content="2018-01-08">
+              2018-01-08
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2018/01/08/Data-Scientist-with-Python/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/01/08/Data-Scientist-with-Python/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>又见Python，争取在8月之前，熟练Python。日后出去了，也是有技可傍，不至于手足无措。<br>哎，为了可怜的零星的安全感。</p>
+<p>这篇纯粹是写给自己看的……</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><p><em>2018-01-08</em></p>
+<h2 id="Intermediate-Python-for-Data-Science"><a href="#Intermediate-Python-for-Data-Science" class="headerlink" title="Intermediate Python for Data Science"></a>Intermediate Python for Data Science</h2><h3 id="Loops"><a href="#Loops" class="headerlink" title="Loops"></a>Loops</h3><p><a href="https://campus.datacamp.com/courses/intermediate-python-for-data-science/loops?ex=10" target="_blank" rel="external">Looping data structures, Part1</a></p>
+<p>List<br><code>for i in my_list():</code><br>Dictionary<br><code>for key, val in my_dict.items():</code><br>dict用但是methods, print(key+str(val))<br>Numpy array<br><code>for val in np.nditer(my_array):</code><br>numpy用的是function, print(str(val))</p>
+<p><a href="https://campus.datacamp.com/courses/intermediate-python-for-data-science/loops?ex=13" target="_blank" rel="external">Looping data structure, Part2</a></p>
+<p><em>Pandas</em></p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">import pandas as pd</div><div class="line">brics = pd.<span class="built_in">read</span>.csv(“brics.csv, index_col = <span class="number">0</span>)<span class="symbol">_</span></div><div class="line"><span class="keyword">for</span> lab, <span class="built_in">row</span> <span class="keyword">in</span> brics.iterrows() :</div><div class="line">	brics.loc[lab, “name_length”] = len(<span class="built_in">row</span>[”country”]) # add colum</div><div class="line">	brics[“name_length”] = brics[“country”].<span class="built_in">apply</span>(len) # <span class="built_in">apply</span> <span class="built_in">length</span> funtion on “country”——more efficient</div><div class="line"><span class="built_in">print</span>(brics)</div></pre></td></tr></table></figure>
+<h3 id="Case-Study-Hacker-Statistics"><a href="#Case-Study-Hacker-Statistics" class="headerlink" title="Case Study: Hacker Statistics"></a>Case Study: Hacker Statistics</h3><h4 id="Random-Numbers"><a href="#Random-Numbers" class="headerlink" title="Random Numbers"></a>Random Numbers</h4><p>计算机生成的随机数其实是pseudo-random number，想到doctor who皮卡叔有一集就是讲这个的</p>
+<p>roll the dice<br><code>np.random.randint(4,8)</code></p>
+<p>来看一个掷骰子爬楼梯的案例</p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"># Import numpy <span class="keyword">and</span> set seed</div><div class="line">import numpy as <span class="built_in">np</span></div><div class="line"><span class="built_in">np</span>.<span class="built_in">random</span>.seed(<span class="number">123</span>)</div><div class="line"></div><div class="line"># Starting <span class="keyword">step</span></div><div class="line"><span class="keyword">step</span> = <span class="number">50</span></div><div class="line"></div><div class="line"># Roll the dice</div><div class="line">dice=<span class="built_in">np</span>.<span class="built_in">random</span>.randint(<span class="number">1</span>,<span class="number">7</span>)</div><div class="line"></div><div class="line"># Finish the control construct</div><div class="line"><span class="keyword">if</span> dice &lt;= <span class="number">2</span> :</div><div class="line">	<span class="keyword">step</span> = <span class="keyword">step</span> - <span class="number">1</span></div><div class="line">elif dice &lt;=<span class="number">5</span> :</div><div class="line">	<span class="keyword">step</span> = <span class="keyword">step</span> + <span class="number">1</span></div><div class="line"><span class="keyword">else</span> :</div><div class="line">	<span class="keyword">step</span> = <span class="keyword">step</span> + <span class="built_in">np</span>.<span class="built_in">random</span>.randint(<span class="number">1</span>,<span class="number">7</span>)</div><div class="line"></div><div class="line"># Print out dice <span class="keyword">and</span> <span class="keyword">step</span></div><div class="line"><span class="built_in">print</span>(dice)</div><div class="line"><span class="built_in">print</span>(<span class="keyword">step</span>)</div></pre></td></tr></table></figure>
+<h4 id="Random-Walk"><a href="#Random-Walk" class="headerlink" title="Random Walk"></a>Random Walk</h4><figure class="highlight maxima"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line"># Import numpy <span class="keyword">and</span> set seed</div><div class="line">import numpy as <span class="built_in">np</span></div><div class="line"><span class="built_in">np</span>.<span class="built_in">random</span>.seed(<span class="number">123</span>)</div><div class="line"></div><div class="line"># Initialize random_walk</div><div class="line">random_walk=[<span class="number">0</span>]</div><div class="line"></div><div class="line"><span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>) :</div><div class="line">	# Set <span class="keyword">step</span>: <span class="built_in">last</span> element <span class="keyword">in</span> random_walk</div><div class="line">	<span class="keyword">step</span>=random_walk[-<span class="number">1</span>]</div><div class="line"></div><div class="line">	# Roll the dice</div><div class="line">	dice = <span class="built_in">np</span>.<span class="built_in">random</span>.randint(<span class="number">1</span>,<span class="number">7</span>)</div><div class="line"></div><div class="line">	# Determine next <span class="keyword">step</span></div><div class="line">	<span class="keyword">if</span> dice &lt;= <span class="number">2</span>:</div><div class="line">		<span class="keyword">step</span> = <span class="keyword">step</span> - <span class="number">1</span></div><div class="line">		# 用了一个新函数 <span class="built_in">max</span>()，有两个参数，下面表示，在保证<span class="keyword">step</span>不小于<span class="number">0</span>的情况下，减<span class="number">1</span>.不过，如果小于<span class="number">0</span>了，要执行那一句呢？</div><div class="line">		<span class="keyword">step</span> = <span class="built_in">max</span>(<span class="number">0</span>, <span class="keyword">step</span>-<span class="number">1</span>)</div><div class="line">		</div><div class="line">	elif dice &lt;= <span class="number">5</span>:</div><div class="line">		<span class="keyword">step</span> = <span class="keyword">step</span> + <span class="number">1</span></div><div class="line">	<span class="keyword">else</span>:</div><div class="line">		<span class="keyword">step</span> = <span class="keyword">step</span> + <span class="built_in">np</span>.<span class="built_in">random</span>.randint(<span class="number">1</span>,<span class="number">7</span>)</div><div class="line"></div><div class="line">	# <span class="built_in">append</span> next_step to random_walk</div><div class="line">	random_walk.<span class="built_in">append</span>(<span class="keyword">step</span>)</div><div class="line"></div><div class="line"># Print random_walk</div><div class="line"><span class="built_in">print</span>(random_walk)</div><div class="line"></div><div class="line"># Import matplotlib.pyplot as plt</div><div class="line">import matplotlib.pyplot as plt</div><div class="line"></div><div class="line"># Plot random_walk</div><div class="line">plt.plot(random_walk)</div><div class="line">plt.<span class="built_in">show</span>()</div></pre></td></tr></table></figure>
+<p>接下来是进阶版的模拟爬楼梯+可视化</p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">import matplotlib.pyplot as plt</div><div class="line">import numpy as <span class="built_in">np</span></div><div class="line"># 为什么每次的seed都是<span class="number">123</span>？</div><div class="line"><span class="built_in">np</span>.<span class="built_in">random</span>.seed(<span class="number">123</span>) </div><div class="line">all_walks = []</div><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">250</span>) :</div><div class="line">	random_walk = [<span class="number">0</span>]</div><div class="line">	<span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>) :</div><div class="line">		<span class="keyword">step</span> = random_walk[-<span class="number">1</span>]</div><div class="line">		dice = <span class="built_in">np</span>.<span class="built_in">random</span>.randint(<span class="number">1</span>,<span class="number">7</span>)</div><div class="line">		<span class="keyword">if</span> dice &lt;= <span class="number">2</span>:</div><div class="line">			<span class="keyword">step</span> = <span class="built_in">max</span>(<span class="number">0</span>, <span class="keyword">step</span> - <span class="number">1</span>)</div><div class="line">		elif dice &lt;= <span class="number">5</span>:</div><div class="line">			<span class="keyword">step</span> = <span class="keyword">step</span> + <span class="number">1</span></div><div class="line">		<span class="keyword">else</span>:</div><div class="line">			<span class="keyword">step</span> = <span class="keyword">step</span> + <span class="built_in">np</span>.<span class="built_in">random</span>.randint(<span class="number">1</span>,<span class="number">7</span>)</div><div class="line">		# Implement clumsiness 这句是用来干嘛的——You're a bit clumsy <span class="keyword">and</span> you have a <span class="number">0.1</span><span class="symbol">%</span> chance of falling down.为什么要考虑这个？</div><div class="line">		<span class="keyword">if</span> <span class="built_in">np</span>.<span class="built_in">random</span>.rand() &lt;= <span class="number">0.001</span>:</div><div class="line">			<span class="keyword">step</span> = <span class="number">0</span></div><div class="line">		random_walk.<span class="built_in">append</span>(<span class="keyword">step</span>)</div><div class="line">	all_walks.<span class="built_in">append</span>(random_walk)</div><div class="line"></div><div class="line"># Convert all_walks to Numpy <span class="built_in">array</span>: np_aw</div><div class="line">np_aw=<span class="built_in">np</span>.<span class="built_in">array</span>(all_walks)</div><div class="line"></div><div class="line"># Plot np_aw <span class="keyword">and</span> <span class="built_in">show</span></div><div class="line">plt.plot(np_aw)</div><div class="line">plt.<span class="built_in">show</span>()</div><div class="line"># Clear the figure</div><div class="line">plt.clf()</div><div class="line"></div><div class="line"># Transpose np_aw: np_aw_t 这一步是干嘛的？把它变成什么形状了？</div><div class="line">np_aw_t=<span class="built_in">np</span>.<span class="built_in">transpose</span>(np_aw)</div><div class="line"></div><div class="line"># Plot np_aw_t <span class="keyword">and</span> <span class="built_in">show</span></div><div class="line">plt.plot(np_aw_t)</div><div class="line">plt.<span class="built_in">show</span>()</div></pre></td></tr></table></figure>
+<p>有一处模拟的我不太懂，想了半天还是似懂非懂，trails单独print出来是个三角形……嗯，我还得再想想</p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">import numpy as <span class="built_in">np</span></div><div class="line"><span class="built_in">np</span>.<span class="built_in">random</span>.seed(<span class="number">123</span>)</div><div class="line">final_tails = []</div><div class="line"><span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>):</div><div class="line">	tails = [<span class="number">0</span>]</div><div class="line">	<span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):</div><div class="line">		coin = <span class="built_in">np</span>.<span class="built_in">random</span>.randint(<span class="number">0</span>,<span class="number">2</span>)</div><div class="line">		tails.<span class="built_in">append</span>(tails[x]+coin) # 就是这一步</div><div class="line">		<span class="built_in">print</span>(tails)</div><div class="line">	final_tails.<span class="built_in">append</span>(tails[-<span class="number">1</span>]) # 为什么要这么加</div><div class="line"><span class="built_in">print</span>(final_tails)</div></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag">#Python</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/07/What Can Sociologists Do/" rel="next" title="社会学家能做什么？">
+                <i class="fa fa-chevron-left"></i> 社会学家能做什么？
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Yibei Chen" />
+          <p class="site-author-name" itemprop="name">Yibei Chen</p>
+          <p class="site-description motion-element" itemprop="description">Keep writing and catch that python</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">35</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/Yibeichan" target="_blank" title="github">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  github
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/adelechen" target="_blank" title="zhihu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  zhihu
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://chatnone.com/" title="ChatNone" target="_blank">ChatNone</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Intermediate-Python-for-Data-Science"><span class="nav-number">2.</span> <span class="nav-text">Intermediate Python for Data Science</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Loops"><span class="nav-number">2.1.</span> <span class="nav-text">Loops</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Case-Study-Hacker-Statistics"><span class="nav-number">2.2.</span> <span class="nav-text">Case Study: Hacker Statistics</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Random-Numbers"><span class="nav-number">2.2.1.</span> <span class="nav-text">Random Numbers</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Random-Walk"><span class="nav-number">2.2.2.</span> <span class="nav-text">Random Walk</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yibei Chen</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'yibeichen';
+      var disqus_identifier = '2018/01/08/Data-Scientist-with-Python/';
+      var disqus_title = "Python 学习笔记";
+      var disqus_url = 'http://yibeichen.me/2018/01/08/Data-Scientist-with-Python/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+
+  
+  
+
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+
+  
+
+</body>
+</html>
