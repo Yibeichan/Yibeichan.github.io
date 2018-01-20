@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://yibeichen.me/2018/01/08/Data-Scientist-with-Python/</loc>
-    <lastmod>2018-01-08T07:53:08.702Z</lastmod>
+    <lastmod>2018-01-14T11:23:44.179Z</lastmod>
     <data>
         <display>
         <title>Python 学习笔记</title>
@@ -37,23 +37,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>http://yibeichen.me/2017/12/31/The-End-of-2017/</loc>
-    <lastmod>2018-01-02T02:25:59.449Z</lastmod>
-    <data>
-        <display>
-        <title>写在2018边上</title>
-        <pubTime>2017-12-31T03:10:47.000Z</pubTime>
-        
-        <tag>nonsense</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://yibeichen.me/2017/12/29/Virtue/</loc>
@@ -114,9 +97,9 @@
         <title>PY4E Chapter 11（Regular Expressions）</title>
         <pubTime>2016-07-19T07:24:11.000Z</pubTime>
         
-        <tag>Python</tag>
-         
         <tag>coursera</tag>
+         
+        <tag>Python</tag>
          
          
            
@@ -136,23 +119,6 @@
         <tag>nonsense</tag>
          
         <tag>Hexo</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yibeichen.me/2017/09/09/A-Letter-2/</loc>
-    <lastmod>2017-09-09T15:10:20.000Z</lastmod>
-    <data>
-        <display>
-        <title>1/10家书</title>
-        <pubTime>2017-09-09T15:03:01.000Z</pubTime>
-        
-        <tag>myletter</tag>
          
          
            
@@ -375,9 +341,9 @@
         <title>PY4E Chapter 13.2（JSON and the REST Architecture）</title>
         <pubTime>2016-07-23T10:46:36.000Z</pubTime>
         
-        <tag>Python</tag>
-         
         <tag>coursera</tag>
+         
+        <tag>Python</tag>
          
          
            
@@ -413,9 +379,9 @@
         <title>PY4E Chapter 10（Tuples）</title>
         <pubTime>2016-07-18T06:39:13.000Z</pubTime>
         
-        <tag>Python</tag>
-         
         <tag>coursera</tag>
+         
+        <tag>Python</tag>
          
          
            
@@ -432,9 +398,9 @@
         <title>Python for Everybody 系列课程总结</title>
         <pubTime>2016-07-30T08:52:06.000Z</pubTime>
         
-        <tag>Python</tag>
-         
         <tag>coursera</tag>
+         
+        <tag>Python</tag>
          
          
            
@@ -451,9 +417,9 @@
         <title>PY4E Chapter 12.1（Networks and Sockets）</title>
         <pubTime>2016-07-20T13:42:59.000Z</pubTime>
         
-        <tag>Python</tag>
-         
         <tag>coursera</tag>
+         
+        <tag>Python</tag>
          
          
            
@@ -470,9 +436,9 @@
         <title>PY4E Chapter 12.2（Programs that Surf the Web）</title>
         <pubTime>2016-07-21T11:21:49.000Z</pubTime>
         
-        <tag>Python</tag>
-         
         <tag>coursera</tag>
+         
+        <tag>Python</tag>
          
          
            
@@ -489,9 +455,9 @@
         <title>PY4E Chapter 13.1（Web Service and XML）</title>
         <pubTime>2016-07-22T11:03:26.000Z</pubTime>
         
-        <tag>Python</tag>
-         
         <tag>coursera</tag>
+         
+        <tag>Python</tag>
          
          
            
@@ -508,9 +474,9 @@
         <title>PY4E Chapter 13A（Object Oriented Programming）</title>
         <pubTime>2016-07-25T13:54:44.000Z</pubTime>
         
-        <tag>Python</tag>
-         
         <tag>coursera</tag>
+         
+        <tag>Python</tag>
          
          
            
@@ -527,9 +493,9 @@
         <title>PY4E Chapter 14.1（Basic Structured Query Language）</title>
         <pubTime>2016-07-28T08:24:05.000Z</pubTime>
         
-        <tag>Python</tag>
-         
         <tag>coursera</tag>
+         
+        <tag>Python</tag>
          
          
            
@@ -546,9 +512,9 @@
         <title>PY4E Chapter 14.2（Data Models and Relational SQL）</title>
         <pubTime>2016-07-29T06:18:39.000Z</pubTime>
         
-        <tag>Python</tag>
-         
         <tag>coursera</tag>
+         
+        <tag>Python</tag>
          
          
            
@@ -565,9 +531,9 @@
         <title>PY4E Chapter 14.3（Many-to-Many Relationships in SQL）</title>
         <pubTime>2016-07-30T05:44:17.000Z</pubTime>
         
-        <tag>Python</tag>
-         
         <tag>coursera</tag>
+         
+        <tag>Python</tag>
          
          
            
@@ -584,9 +550,9 @@
         <title>PY4E Chapter 15（Databases and Visualization）</title>
         <pubTime>2016-07-30T06:57:44.000Z</pubTime>
         
-        <tag>Python</tag>
-         
         <tag>coursera</tag>
+         
+        <tag>Python</tag>
          
          
            
@@ -606,23 +572,6 @@
         <tag>book</tag>
          
         <tag>三毛</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yibeichen.me/2016/07/24/To-HUST/</loc>
-    <lastmod>2016-07-27T08:33:03.000Z</lastmod>
-    <data>
-        <display>
-        <title>献给华科</title>
-        <pubTime>2016-07-24T06:35:55.000Z</pubTime>
-        
-        <tag>recollection</tag>
          
          
            
