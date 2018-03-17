@@ -2,16 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yibeichen.me/2018/02/04/Unspeakable/</loc>
+    <loc>http://yibeichen.me/2018/03/17/0317-Down/</loc>
     
-    <lastmod>2018-02-04T10:40:25.888Z</lastmod>
+    <lastmod>2018-03-17T14:22:02.622Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yibeichen.me/2018/01/08/Data-Scientist-with-Python/</loc>
     
-    <lastmod>2018-02-02T06:47:20.610Z</lastmod>
+    <lastmod>2018-03-17T14:19:01.993Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yibeichen.me/2018/03/17/Natural-Language-Processing-101/</loc>
+    
+    <lastmod>2018-03-17T14:14:15.394Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yibeichen.me/2017/12/29/Virtue/</loc>
+    
+    <lastmod>2018-02-05T14:21:33.054Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yibeichen.me/2016/07/22/Something-about-Hexo/</loc>
+    
+    <lastmod>2018-02-05T14:21:32.427Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yibeichen.me/2016/07/25/Reread-Echo/</loc>
+    
+    <lastmod>2018-02-05T14:21:31.786Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yibeichen.me/2017/12/23/Psychological/</loc>
+    
+    <lastmod>2018-02-05T14:21:30.988Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yibeichen.me/2016/08/13/Machine-Learning/</loc>
+    
+    <lastmod>2018-02-05T14:21:27.718Z</lastmod>
     
   </url>
   
@@ -26,20 +68,6 @@
     <loc>http://yibeichen.me/tools/index.html</loc>
     
     <lastmod>2018-01-05T12:58:28.404Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yibeichen.me/2017/12/29/Virtue/</loc>
-    
-    <lastmod>2017-12-30T12:17:31.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yibeichen.me/2017/12/23/Psychological/</loc>
-    
-    <lastmod>2017-12-24T01:08:12.350Z</lastmod>
     
   </url>
   
@@ -82,13 +110,6 @@
     <loc>http://yibeichen.me/2016/08/13/HTML-CSS-Javascript-for-Web-Developers/</loc>
     
     <lastmod>2016-08-30T06:45:21.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yibeichen.me/2016/08/13/Machine-Learning/</loc>
-    
-    <lastmod>2016-08-18T08:50:59.000Z</lastmod>
     
   </url>
   
@@ -138,13 +159,6 @@
     <loc>http://yibeichen.me/about/index.html</loc>
     
     <lastmod>2016-08-03T06:47:58.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yibeichen.me/2016/07/22/Something-about-Hexo/</loc>
-    
-    <lastmod>2016-08-03T03:44:03.000Z</lastmod>
     
   </url>
   
@@ -229,13 +243,6 @@
     <loc>http://yibeichen.me/2016/07/30/PY4E-Chapter-15/</loc>
     
     <lastmod>2016-07-30T09:46:32.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yibeichen.me/2016/07/25/Reread-Echo/</loc>
-    
-    <lastmod>2016-07-27T08:33:39.000Z</lastmod>
     
   </url>
   
