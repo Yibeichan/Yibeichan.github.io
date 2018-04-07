@@ -1,0 +1,750 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="ZNp-Or9osyj9lyjTN9O5DRqaSId7rz-OEXbix-AvYjM" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Python,NLP," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="写了几个字" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="学完了，入门了吗？不知道。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Natural Language Processing 101">
+<meta property="og:url" content="http://yibeichen.me/2018/04/07/Natural-Language-Processing-101/index.html">
+<meta property="og:site_name" content="写了几个字">
+<meta property="og:description" content="学完了，入门了吗？不知道。">
+<meta property="og:image" content="http://oapfne1kf.bkt.clouddn.com/2018-03-23-105851.png">
+<meta property="og:updated_time" content="2018-04-07T13:46:35.584Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Natural Language Processing 101">
+<meta name="twitter:description" content="学完了，入门了吗？不知道。">
+<meta name="twitter:image" content="http://oapfne1kf.bkt.clouddn.com/2018-03-23-105851.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yibeichen.me/2018/04/07/Natural-Language-Processing-101/"/>
+
+  <title> Natural Language Processing 101 | 写了几个字 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-82770324-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">写了几个字</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">逃避可耻</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tools">
+          <a href="/tools" rel="section">
+            
+            工具
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Natural Language Processing 101
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2018-04-07T21:46:26+08:00" content="2018-04-07">
+              2018-04-07
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2018/04/07/Natural-Language-Processing-101/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/04/07/Natural-Language-Processing-101/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>学完了，入门了吗？不知道。<br><a id="more"></a><br><em>2018-03-17</em></p>
+<h1 id="Natural-Language-Processing-Fundamentals-in-Python"><a href="#Natural-Language-Processing-Fundamentals-in-Python" class="headerlink" title="Natural Language Processing Fundamentals in Python"></a>Natural Language Processing Fundamentals in Python</h1><h2 id="Regular-expressions-amp-word-tokenization"><a href="#Regular-expressions-amp-word-tokenization" class="headerlink" title="Regular expressions &amp; word tokenization"></a>Regular expressions &amp; word tokenization</h2><h3 id="Regular-expression"><a href="#Regular-expression" class="headerlink" title="Regular expression"></a>Regular expression</h3><p>re 模块</p>
+<ul>
+<li>split</li>
+<li>findall</li>
+<li>search</li>
+<li>match<br>pattern first, and the string second 这句话啥意思？<br>may return an iterator, strig, or match object<br>说那么多有什么用？来写一句啊。根据结尾标点符号来分的，真是没想到要这么写，我写成了<code>r&quot;[.?!]\s*&quot;</code>其实也运行出结果了呀。<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Import the regex module</span></div><div class="line"><span class="keyword">import</span> re</div><div class="line"></div><div class="line"><span class="comment"># Write a pattern to match sentence endings: sentence_endings</span></div><div class="line">sentence_endings = <span class="string">r"[.?!]"</span></div><div class="line"></div><div class="line"><span class="comment"># Split my_string on sentence endings and print the result</span></div><div class="line">print(re.split(sentence_endings, my_string))</div><div class="line"></div><div class="line"><span class="comment"># Find all capitalized words in my_string and print the result</span></div><div class="line">capitalized_words = <span class="string">r"[A-Z]\w+"</span></div><div class="line">print(re.findall(capitalized_words, my_string))</div><div class="line"></div><div class="line"><span class="comment"># Split my_string on spaces and print the result</span></div><div class="line">spaces = <span class="string">r"\s+"</span></div><div class="line">print(re.split(spaces, my_string))</div><div class="line"></div><div class="line"><span class="comment"># Find all digits in my_string and print the result</span></div><div class="line">digits = <span class="string">r"\d+"</span></div><div class="line">print(re.findall(digits, my_string))</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="Tokenization"><a href="#Tokenization" class="headerlink" title="Tokenization"></a>Tokenization</h3><p>turning a string or document into tokens(smaller chunks)，也是通过正则表达式来完成的。<br>nltk里的一些常用tokenizers：</p>
+<ul>
+<li>sent_tokenize</li>
+<li>regexp_tokenize</li>
+<li>TweetTokenizer —— 专为tweet定做的，可以separate hashtags，mentions and lots of exclamation points<br><code>re.match()</code>和<code>re.search()</code>的区别，match只找开头，search找整个句子<br>来试一下word tokenization<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Import necessary modules</span></div><div class="line"><span class="built_in">from</span> nltk.tokenize import sent_tokenize</div><div class="line"><span class="built_in">from</span> nltk.tokenize import word_tokenize</div><div class="line"></div><div class="line"><span class="comment"># Split scene_one into sentences: sentences</span></div><div class="line"><span class="keyword">sentences</span> = sent_tokenize(scene_one)</div><div class="line"></div><div class="line"><span class="comment"># Use word_tokenize to tokenize the fourth sentence: tokenized_sent</span></div><div class="line">tokenized_sent = word_tokenize(<span class="keyword">sentences</span>[<span class="number">3</span>])</div><div class="line"></div><div class="line"><span class="comment"># Make a set of unique tokens in the entire scene: unique_tokens</span></div><div class="line">unique_tokens = <span class="built_in">set</span>(word_tokenize(scene_one))</div><div class="line"></div><div class="line"><span class="comment"># Print the unique tokens result</span></div><div class="line">print(unique_tokens)</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>正则这种东西真是要多练啊，最后那个找notation的，标准答案是<code>r&quot;[\w\s]+:&quot;</code> 我写的是<code>r&quot;[A-Z]*:&quot;</code>，可是这两个结果是一样的啊。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Search for the first occurrence of "coconuts" in scene_one: match</span></div><div class="line">match = re.search(<span class="string">"coconuts"</span>, scene_one)</div><div class="line"></div><div class="line"><span class="comment"># Print the start and end indexes of match</span></div><div class="line">print(match.start(), match.end())</div><div class="line"></div><div class="line"><span class="comment"># Write a regular expression to search for anything in square brackets: pattern1</span></div><div class="line">pattern1 = <span class="string">r"\[.*\]"</span></div><div class="line"></div><div class="line"><span class="comment"># Use re.search to find the first text in square brackets</span></div><div class="line">print(re.search(pattern1, scene_one))</div><div class="line"></div><div class="line"><span class="comment"># Find the script notation at the beginning of the fourth sentence and print it</span></div><div class="line">pattern2 = <span class="string">r"[\w\s]+:"</span></div><div class="line">print(re.match(pattern2, sentences[<span class="number">3</span>]))</div></pre></td></tr></table></figure></p>
+<h3 id="Advanced-tokenization-with-NLTK-and-regex"><a href="#Advanced-tokenization-with-NLTK-and-regex" class="headerlink" title="Advanced tokenization with NLTK and regex"></a>Advanced tokenization with NLTK and regex</h3><p>所以这一次是练习<code>()</code>的使用吗？加和不加有什么区别我在<a href="https://regex101.com/" target="_blank" rel="external">regex101</a>测试的时候发现，加了括号就会变成绿色的group，话说加不加转义符都无所谓吗？<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Import the necessary modules</span></div><div class="line"><span class="keyword">from</span> nltk.tokenize <span class="keyword">import</span> regexp_tokenize</div><div class="line"><span class="keyword">from</span> nltk.tokenize <span class="keyword">import</span> TweetTokenizer</div><div class="line"></div><div class="line"><span class="comment"># Define a regex pattern to find hashtags: pattern1</span></div><div class="line">pattern1 = <span class="string">r"#\w+"</span></div><div class="line"></div><div class="line"><span class="comment"># Use the pattern on the first tweet in the tweets list</span></div><div class="line">regexp_tokenize(tweets[<span class="number">0</span>], pattern1)</div><div class="line"></div><div class="line"><span class="comment"># Write a pattern that matches both mentions and hashtags</span></div><div class="line">pattern2 = <span class="string">r"([#|@]\w+)"</span></div><div class="line"></div><div class="line"><span class="comment"># Use the pattern on the last tweet in the tweets list</span></div><div class="line">regexp_tokenize(tweets[<span class="number">-1</span>], pattern2)</div><div class="line"></div><div class="line"><span class="comment"># Use the TweetTokenizer to tokenize all tweets into one list</span></div><div class="line">tknzr = TweetTokenizer()</div><div class="line">all_tokens = [tknzr.tokenize(t) <span class="keyword">for</span> t <span class="keyword">in</span> tweets]</div><div class="line">print(all_tokens)</div></pre></td></tr></table></figure></p>
+<h4 id="Non-ascii-tokenization"><a href="#Non-ascii-tokenization" class="headerlink" title="Non-ascii tokenization"></a>Non-ascii tokenization</h4><p>这里面唯一要注意的就是大写的德语单词怎么把它找出来<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Tokenize and print all words in german_text</span></div><div class="line">all_words = word_tokenize(german_text)</div><div class="line">print(all_words)</div><div class="line"></div><div class="line"><span class="comment"># Tokenize and print only capital words</span></div><div class="line">capital_words = <span class="string">r"[A-ZÜ]\w+"</span></div><div class="line">print(regexp_tokenize(german_text, capital_words))</div><div class="line"></div><div class="line"><span class="comment"># Tokenize and print only emoji</span></div><div class="line">emoji = <span class="string">"['\U0001F300-\U0001F5FF'|'\U0001F600-\U0001F64F'|'\U0001F680-\U0001F6FF'|'\u2600-\u26FF\u2700-\u27BF']"</span></div><div class="line">print(regexp_tokenize(german_text, emoji))</div></pre></td></tr></table></figure></p>
+<h3 id="Charting-word-length-with-NLTK"><a href="#Charting-word-length-with-NLTK" class="headerlink" title="Charting word length with NLTK"></a>Charting word length with NLTK</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Split the script into lines: lines</span></div><div class="line">lines = holy_grail.split(<span class="string">'\n'</span>)</div><div class="line"></div><div class="line"><span class="comment"># Replace all script lines for speaker</span></div><div class="line">pattern = <span class="string">"[A-Z]&#123;2,&#125;(\s)?(#\d)?([A-Z]&#123;2,&#125;)?:"</span></div><div class="line">lines = [re.sub(pattern, <span class="string">''</span>, l) <span class="keyword">for</span> l <span class="keyword">in</span> lines]</div><div class="line"></div><div class="line"><span class="comment"># Tokenize each line: tokenized_lines</span></div><div class="line">tokenized_lines = [regexp_tokenize(s,<span class="string">r"\w+"</span>) <span class="keyword">for</span> s <span class="keyword">in</span> lines]</div><div class="line"></div><div class="line"><span class="comment"># Make a frequency list of lengths: line_num_words</span></div><div class="line">line_num_words = [len(t_line) <span class="keyword">for</span> t_line <span class="keyword">in</span> tokenized_lines]</div><div class="line"></div><div class="line"><span class="comment"># Plot a histogram of the line lengths</span></div><div class="line">plt.hist(line_num_words)</div><div class="line"></div><div class="line"><span class="comment"># Show the plot</span></div><div class="line">plt.show()</div></pre></td></tr></table></figure>
+<p><em>2018-03-23</em></p>
+<h2 id="Simple-topic-identification"><a href="#Simple-topic-identification" class="headerlink" title="Simple topic identification"></a>Simple topic identification</h2><p>第一个视频坏掉了……给网站保修了好几天也没修好，哼</p>
+<h3 id="Building-a-Counter-with-bag-of-words"><a href="#Building-a-Counter-with-bag-of-words" class="headerlink" title="Building a Counter with bag-of-words"></a>Building a Counter with bag-of-words</h3><figure class="highlight livescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Import Counter</span></div><div class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> Counter</div><div class="line"></div><div class="line"><span class="comment"># Tokenize the article: tokens</span></div><div class="line">tokens = word_tokenize(article)</div><div class="line"></div><div class="line"><span class="comment"># Convert the tokens into lowercase: lower_tokens</span></div><div class="line">lower_tokens = [t.lower() <span class="keyword">for</span> t <span class="keyword">in</span> tokens]</div><div class="line"></div><div class="line"><span class="comment"># Create a Counter with the lowercase tokens: bow_simple</span></div><div class="line">bow_simple = Counter(lower_tokens)</div><div class="line"></div><div class="line"><span class="comment"># Print the 10 most common tokens</span></div><div class="line"><span class="built_in">print</span>(bow_simple.most_common(<span class="number">10</span>))</div></pre></td></tr></table></figure>
+<h2 id="Simple-text-preprocessing"><a href="#Simple-text-preprocessing" class="headerlink" title="Simple text preprocessing"></a>Simple text preprocessing</h2><p>什么鬼……第二个视频也坏了！只能看ppt了……<br>预处理几步走：</p>
+<ul>
+<li>lemmatization/stemming</li>
+<li>removing stop words, punctuation, or unwanted tokens</li>
+<li>good to experiment with different approaches</li>
+</ul>
+<p>在<code>Instantiate</code>这里被卡了个半死，什么叫Instantiate啊……<br>然后是<code>Create the bag-of-words</code>，这里不用token words了吗？<br><figure class="highlight livescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Import WordNetLemmatizer</span></div><div class="line"><span class="keyword">from</span> nltk.stem <span class="keyword">import</span> WordNetLemmatizer</div><div class="line"></div><div class="line"><span class="comment"># Retain alphabetic words: alpha_only</span></div><div class="line">alpha_only = [t <span class="keyword">for</span> t <span class="keyword">in</span> lower_tokens <span class="keyword">if</span> t.isalpha()]</div><div class="line"></div><div class="line"><span class="comment"># Remove all stop words: no_stops</span></div><div class="line">no_stops = [t <span class="keyword">for</span> t <span class="keyword">in</span> alpha_only <span class="keyword">if</span> t <span class="keyword">not</span> <span class="keyword">in</span> english_stops]</div><div class="line"></div><div class="line"><span class="comment"># Instantiate the WordNetLemmatizer</span></div><div class="line">wordnet_lemmatizer = WordNetLemmatizer()</div><div class="line"></div><div class="line"><span class="comment"># Lemmatize all tokens into a new list: lemmatized</span></div><div class="line">lemmatized = [wordnet_lemmatizer.lemmatize(t) <span class="keyword">for</span> t <span class="keyword">in</span> no_stops]</div><div class="line"></div><div class="line"><span class="comment"># Create the bag-of-words: bow</span></div><div class="line">bow = Counter(lemmatized)</div><div class="line"></div><div class="line"><span class="comment"># Print the 10 most common tokens</span></div><div class="line"><span class="built_in">print</span>(bow.most_common(<span class="number">10</span>))</div></pre></td></tr></table></figure></p>
+<h2 id="Gensim"><a href="#Gensim" class="headerlink" title="Gensim"></a>Gensim</h2><p>我看出来了，这节课所有的视频都不行……<br>word vector是什么？听名字就感觉是multi-dimensional</p>
+<h3 id="Creating-and-querying-a-corpus-with-gensim"><a href="#Creating-and-querying-a-corpus-with-gensim" class="headerlink" title="Creating and querying a corpus with gensim"></a>Creating and querying a corpus with gensim</h3><p>不知道这段是怎么误打误撞写完的……<br><figure class="highlight livescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Import Dictionary</span></div><div class="line"><span class="keyword">from</span> gensim.corpora.dictionary <span class="keyword">import</span> Dictionary</div><div class="line"></div><div class="line"><span class="comment"># Create a Dictionary from the articles: dictionary</span></div><div class="line">dictionary = Dictionary(articles)</div><div class="line"></div><div class="line"><span class="comment"># Select the id for "computer": computer_id</span></div><div class="line">computer_id = dictionary.token2id.get(<span class="string">"computer"</span>)</div><div class="line"></div><div class="line"><span class="comment"># Use computer_id with the dictionary to print the word</span></div><div class="line"><span class="built_in">print</span>(dictionary.get(computer_id))</div><div class="line"></div><div class="line"><span class="comment"># Create a MmCorpus: corpus</span></div><div class="line">corpus = [dictionary.doc2bow(article) <span class="keyword">for</span> article <span class="keyword">in</span> articles]</div><div class="line"></div><div class="line"><span class="comment"># Print the first 10 word ids with their frequency counts from the fifth document</span></div><div class="line"><span class="built_in">print</span>(corpus[<span class="number">4</span>][:<span class="number">10</span>])</div></pre></td></tr></table></figure></p>
+<h3 id="Gensim-bag-of-words"><a href="#Gensim-bag-of-words" class="headerlink" title="Gensim bag-of-words"></a>Gensim bag-of-words</h3><p><code>total_word_count = defaultdict(int)</code>终于看到了这个，<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Save the fifth document: doc</span></div><div class="line">doc = corpus[<span class="number">4</span>]</div><div class="line"></div><div class="line"><span class="comment"># Sort the doc for frequency: bow_doc</span></div><div class="line">bow_doc = sorted(doc, key=<span class="keyword">lambda</span> w: w[<span class="number">1</span>], reverse=<span class="keyword">True</span>)</div><div class="line"></div><div class="line"><span class="comment"># Print the top 5 words of the document alongside the count</span></div><div class="line"><span class="keyword">for</span> word_id, word_count <span class="keyword">in</span> bow_doc[:<span class="number">5</span>]:</div><div class="line">    print(dictionary.get(word_id), word_count)</div><div class="line">    </div><div class="line"><span class="comment"># Create the defaultdict: total_word_count</span></div><div class="line">total_word_count = defaultdict(int)</div><div class="line"><span class="keyword">for</span> word_id, word_count <span class="keyword">in</span> itertools.chain.from_iterable(corpus):</div><div class="line">    total_word_count[word_id] += word_count</div><div class="line"></div><div class="line"><span class="comment"># Create a sorted list from the defaultdict: sorted_word_count</span></div><div class="line">sorted_word_count = sorted(total_word_count.items(), key=<span class="keyword">lambda</span> w: w[<span class="number">1</span>], reverse=<span class="keyword">True</span>) </div><div class="line"></div><div class="line"><span class="comment"># Print the top 5 words across all documents alongside the count</span></div><div class="line"><span class="keyword">for</span> word_id, word_count <span class="keyword">in</span> sorted_word_count[:<span class="number">5</span>]:</div><div class="line">    print(dictionary.get(word_count), word_count)</div></pre></td></tr></table></figure></p>
+<h3 id="Tf-idf-with-gensim"><a href="#Tf-idf-with-gensim" class="headerlink" title="Tf-idf with gensim"></a>Tf-idf with gensim</h3><p>Tf-idf是什么<br>简单说就是找到最重要的词吧<br>最重要的词不是出现次数最多的<br>计算公式长这样<br><img src="http://oapfne1kf.bkt.clouddn.com/2018-03-23-105851.png" alt=""><br>讲真我算了半天……</p>
+<h4 id="Tf-idf-with-Wikipedia"><a href="#Tf-idf-with-Wikipedia" class="headerlink" title="Tf-idf with Wikipedia"></a>Tf-idf with Wikipedia</h4><p>其实我不知道这个在算什么……<br>应该是先用corpus建立一个模型tfidf，这个模型就可以用来计算Tf-idf weights了<br>每次都很喜欢这个网站写的<code>lambda</code>和list comprehension了<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Import TfidfModel</span></div><div class="line"><span class="keyword">from</span> gensim.models.tfidfmodel <span class="keyword">import</span> TfidfModel</div><div class="line"></div><div class="line"><span class="comment"># Create a new TfidfModel using the corpus: tfidf</span></div><div class="line">tfidf = TfidfModel(corpus)</div><div class="line"></div><div class="line"><span class="comment"># Calculate the tfidf weights of doc: tfidf_weights</span></div><div class="line">tfidf_weights = tfidf[doc]</div><div class="line"></div><div class="line"><span class="comment"># Print the first five weights</span></div><div class="line">print(tfidf_weights[:<span class="number">5</span>])</div><div class="line"></div><div class="line"><span class="comment"># Sort the weights from highest to lowest: sorted_tfidf_weights</span></div><div class="line">sorted_tfidf_weights = sorted(tfidf_weights, key=<span class="keyword">lambda</span> w: w[<span class="number">1</span>], reverse=<span class="keyword">True</span>)</div><div class="line"></div><div class="line"><span class="comment"># Print the top 5 weighted words</span></div><div class="line"><span class="keyword">for</span> term_id, weight <span class="keyword">in</span> sorted_tfidf_weights[:<span class="number">5</span>]:</div><div class="line">    print(dictionary.get(term_id), weight)</div></pre></td></tr></table></figure></p>
+<p><em>2018-04-03</em></p>
+<h2 id="Named-entity-recognition"><a href="#Named-entity-recognition" class="headerlink" title="Named-entity recognition"></a>Named-entity recognition</h2><p>我的理解就是，在一段话中，把人名、地名、组织名等标记出来，可以迅速了解这段话讲了什么内容。当然你标记的东西取决于你用什么library。<br>nltk用的是Stanford CoreNLP Library</p>
+<h3 id="NER-with-NLTK"><a href="#NER-with-NLTK" class="headerlink" title="NER with NLTK"></a>NER with NLTK</h3><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Tokenize the article into sentences: sentences</span></div><div class="line"><span class="keyword">sentences</span> = nltk.sent_tokenize(article)</div><div class="line"></div><div class="line"><span class="comment"># Tokenize each sentence into words: token_sentences</span></div><div class="line">token_sentences = [nltk.word_tokenize(sent) <span class="keyword">for</span> sent <span class="keyword">in</span> <span class="keyword">sentences</span>]</div><div class="line"></div><div class="line"><span class="comment"># Tag each tokenized sentence into parts of speech: pos_sentences</span></div><div class="line">pos_sentences = [nltk.pos_tag(sent) <span class="keyword">for</span> sent <span class="keyword">in</span> token_sentences] </div><div class="line"></div><div class="line"><span class="comment"># Create the named entity chunks: chunked_sentences</span></div><div class="line">chunked_sentences = nltk.ne_chunk_sents(pos_sentences, binary = True)</div><div class="line"></div><div class="line"><span class="comment"># Test for stems of the tree with 'NE' tags</span></div><div class="line"><span class="keyword">for</span> sent <span class="keyword">in</span> chunked_sentences:</div><div class="line">    <span class="keyword">for</span> chunk <span class="keyword">in</span> sent:</div><div class="line">        <span class="keyword">if</span> hasattr(chunk, <span class="string">"label"</span>) <span class="keyword">and</span> chunk.label() == <span class="string">"NE"</span>:</div><div class="line">            print(chunk)</div></pre></td></tr></table></figure>
+<p>不知道是不是错觉，经过最近的训练，感觉顺手多了。</p>
+<h4 id="Charting-Practice"><a href="#Charting-Practice" class="headerlink" title="Charting Practice"></a>Charting Practice</h4><p>刚说完就打脸……这段简直不知在说什么<br>话说<code>defaultdict()</code>看上去好好用啊！比我的<code>Counter</code>要好用多了……难怪当时搜索的时候，似乎看到有人用这个了<br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Create the defaultdict: ner_categories</span></div><div class="line">ner_categories = defaultdict(int)</div><div class="line"></div><div class="line"><span class="comment"># Create the nested for loop</span></div><div class="line"><span class="keyword">for</span> sent <span class="keyword">in</span> chunked_sentences:</div><div class="line">    <span class="keyword">for</span> chunk <span class="keyword">in</span> sent:</div><div class="line">        <span class="keyword">if</span> hasattr(chunk, <span class="string">'label'</span>):</div><div class="line">            ner_categories[chunk.label()] += <span class="number">1</span></div><div class="line">            </div><div class="line"><span class="comment"># Create a list from the dictionary keys for the chart labels: labels</span></div><div class="line">labels = list(ner_categories.<span class="built_in">keys</span>())</div><div class="line"></div><div class="line"><span class="comment"># Create a list of the values: values</span></div><div class="line">values = [ner_categories.<span class="built_in">get</span>(l) <span class="keyword">for</span> l <span class="keyword">in</span> labels]</div><div class="line"></div><div class="line"><span class="comment"># Create the pie chart</span></div><div class="line">plt.pie(values, labels=labels, autopct=<span class="string">'%1.1f%%'</span>, startangle=<span class="number">140</span>)</div><div class="line"></div><div class="line"><span class="comment"># Display the chart</span></div><div class="line">plt.show()</div></pre></td></tr></table></figure></p>
+<h3 id="SpaCy"><a href="#SpaCy" class="headerlink" title="SpaCy"></a>SpaCy</h3><p>另一个library，擅长于creating NLP pipelines to generate models and corpora<br>它比较适合处理非正式的预料库，所以tweets和聊天记录适合用它<br>它跟nltk的区别在于entity的种类有差别</p>
+<h4 id="Comparing-NLTK-with-spaCy-NER"><a href="#Comparing-NLTK-with-spaCy-NER" class="headerlink" title="Comparing NLTK with spaCy NER"></a>Comparing NLTK with spaCy NER</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Import spacy</span></div><div class="line"><span class="keyword">import</span> spacy</div><div class="line"></div><div class="line"><span class="comment"># Instantiate the English model: nlp</span></div><div class="line">nlp = spacy.load(<span class="string">'en'</span>, tagger = <span class="keyword">False</span>, parser = <span class="keyword">False</span>, matcher = <span class="keyword">False</span>)</div><div class="line"></div><div class="line"><span class="comment"># Create a new document: doc</span></div><div class="line">doc = nlp(article)</div><div class="line"></div><div class="line"><span class="comment"># Print all of the found entities and their labels</span></div><div class="line"><span class="keyword">for</span> ent <span class="keyword">in</span> doc.ents:</div><div class="line">    print(ent.label_, ent.text)</div></pre></td></tr></table></figure>
+<h3 id="Multilingual-NER-with-polyglot"><a href="#Multilingual-NER-with-polyglot" class="headerlink" title="Multilingual NER with polyglot"></a>Multilingual NER with polyglot</h3><p>另一个library，主要用word vectors，它的优势在于，支持超级多的语言！可以用来做translation</p>
+<h4 id="French-NER-with-polyglot-I"><a href="#French-NER-with-polyglot-I" class="headerlink" title="French NER with polyglot I"></a>French NER with polyglot I</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Create a new text object using Polyglot's Text class: txt</span></div><div class="line">txt = Text(article)</div><div class="line"></div><div class="line"><span class="comment"># Print each of the entities found</span></div><div class="line"><span class="keyword">for</span> ent <span class="keyword">in</span> txt.entities:</div><div class="line">    <span class="built_in">print</span>(ent)</div><div class="line">    </div><div class="line"><span class="comment"># Print the type of each entity</span></div><div class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(ent))</div></pre></td></tr></table></figure>
+<h4 id="French-NER-with-polyglot-II"><a href="#French-NER-with-polyglot-II" class="headerlink" title="French NER with polyglot II"></a>French NER with polyglot II</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Create the list of tuples: entities</span></div><div class="line">entities = [(ent.tag, <span class="string">' '</span>.join(ent)) <span class="keyword">for</span> ent <span class="keyword">in</span> txt.entities]</div><div class="line"></div><div class="line"><span class="comment"># Print the entities</span></div><div class="line"><span class="built_in">print</span>(entities)</div></pre></td></tr></table></figure>
+<h4 id="Spanish-NER-with-polyglot"><a href="#Spanish-NER-with-polyglot" class="headerlink" title="Spanish NER with polyglot"></a>Spanish NER with polyglot</h4><p>我一定是脑子进水了，中间那个if判断句我竟然写了个or！！！<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"># Initialize the <span class="built_in">count</span> variable: <span class="built_in">count</span></div><div class="line"><span class="built_in">count</span> = <span class="number">0</span></div><div class="line"></div><div class="line"># Iterate over <span class="keyword">all</span> the entities</div><div class="line"><span class="keyword">for</span> ent in txt.entitie<span class="variable">s:</span></div><div class="line">    # Check whether the entity contains <span class="string">'Márquez'</span> <span class="built_in">or</span> <span class="string">'Gabo'</span></div><div class="line">    <span class="keyword">if</span> <span class="string">"Márquez"</span> in ent <span class="built_in">or</span> <span class="string">"Gabo"</span> in <span class="keyword">en</span><span class="variable">t:</span></div><div class="line">        # Increment <span class="built_in">count</span></div><div class="line">        <span class="built_in">count</span> += <span class="number">1</span></div><div class="line"></div><div class="line"># <span class="keyword">Print</span> <span class="built_in">count</span></div><div class="line"><span class="keyword">print</span>(<span class="built_in">count</span>)</div><div class="line"></div><div class="line"># Calculate the percentage of entities that refer <span class="keyword">to</span> <span class="string">"Gabo"</span>: percentage</div><div class="line">percentage = <span class="built_in">count</span> * <span class="number">1.0</span> / <span class="built_in">len</span>(txt.entities)</div><div class="line"><span class="keyword">print</span>(percentage)</div></pre></td></tr></table></figure></p>
+<p><em>2018-04-07</em></p>
+<h2 id="Building-a-“fake-news”-classifier"><a href="#Building-a-“fake-news”-classifier" class="headerlink" title="Building a “fake news” classifier"></a>Building a “fake news” classifier</h2><h3 id="Classifying-fake-news-using-supervised-learning-with-NLP"><a href="#Classifying-fake-news-using-supervised-learning-with-NLP" class="headerlink" title="Classifying fake news using supervised learning with NLP"></a>Classifying fake news using supervised learning with NLP</h3><p>监督学习 scikit-learn是个很不错的开源library<br>如何利用文本进行监督学习</p>
+<ul>
+<li>bag-of-words models</li>
+<li>tf-idf as features</li>
+</ul>
+<p>拿IMDb作为例子</p>
+<ul>
+<li>手机数据</li>
+<li>确定以label，比如电影类型</li>
+<li>将数据分为training和test两个集合，分开（最核心的部分）</li>
+<li>从文本中获取特征来预测这个label——比如说scikit-learn里面的bag-of-words vector</li>
+<li>确定来训练模型后就可以使用test set<h3 id="Building-word-count-vectors-with-scikit-learn"><a href="#Building-word-count-vectors-with-scikit-learn" class="headerlink" title="Building word count vectors with scikit-learn"></a>Building word count vectors with scikit-learn</h3><h4 id="CountVectorizer-for-text-classification"><a href="#CountVectorizer-for-text-classification" class="headerlink" title="CountVectorizer for text classification"></a>CountVectorizer for text classification</h4>最后一行真的是死活都想不出要怎么写…… 好困好困（默默吐槽一下，有好多杂事要做，一分钟都不想做）<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Import the necessary modules</span></div><div class="line">from sklearn.feature_extraction.text import CountVectorizer</div><div class="line">from sklearn.model_selection import train_<span class="built_in">test</span>_split</div><div class="line"></div><div class="line"><span class="comment"># Print the head of df</span></div><div class="line"><span class="built_in">print</span>(df.head())</div><div class="line"></div><div class="line"><span class="comment"># Create a series to store the labels: y</span></div><div class="line">y = df.label</div><div class="line"></div><div class="line"><span class="comment"># Create training and test sets</span></div><div class="line">X_train, X_<span class="built_in">test</span>, y_train, y_<span class="built_in">test</span> = train_<span class="built_in">test</span>_split(df[<span class="string">'text'</span>], y, <span class="built_in">test</span>_size=0.33, random_state=53)</div><div class="line"></div><div class="line"><span class="comment"># Initialize a CountVectorizer object: count_vectorizer</span></div><div class="line">count_vectorizer = CountVectorizer(stop_words=<span class="string">'english'</span>)</div><div class="line"></div><div class="line"><span class="comment"># Transform the training data using only the 'text' column values: count_train </span></div><div class="line">count_train = count_vectorizer.fit_transform(X_train)</div><div class="line"></div><div class="line"><span class="comment"># Transform the test data using only the 'text' column values: count_test </span></div><div class="line">count_<span class="built_in">test</span> = count_vectorizer.transform(X_<span class="built_in">test</span>)</div><div class="line"></div><div class="line"><span class="comment"># Print the first 10 features of the count_vectorizer</span></div><div class="line"><span class="built_in">print</span>(count_vectorizer.get_feature_names()[:10])</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="TfidfVectorizer-for-text-classification"><a href="#TfidfVectorizer-for-text-classification" class="headerlink" title="TfidfVectorizer for text classification"></a>TfidfVectorizer for text classification</h4><p>感真，不知道自己在写什么。<br>感觉是数据清洗得对了，符合标准，拿出来分析就会方便很多？（我觉得我说出这种话是因为对算法一无所知）<br><figure class="highlight nix"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Import TfidfVectorizer</span></div><div class="line">from sklearn.feature_extraction.text <span class="built_in">import</span> TfidfVectorizer</div><div class="line"></div><div class="line"><span class="comment"># Initialize a TfidfVectorizer object: tfidf_vectorizer</span></div><div class="line"><span class="attr">tfidf_vectorizer</span> = TfidfVectorizer(<span class="attr">stop_words="english",</span> <span class="attr">max_df=</span> <span class="number">0.7</span>)</div><div class="line"></div><div class="line"><span class="comment"># Transform the training data: tfidf_train </span></div><div class="line"><span class="attr">tfidf_train</span> = tfidf_vectorizer.fit_transform(X_train)</div><div class="line"></div><div class="line"><span class="comment"># Transform the test data: tfidf_test </span></div><div class="line"><span class="attr">tfidf_test</span> = tfidf_vectorizer.transform(X_test)</div><div class="line"></div><div class="line"><span class="comment"># Print the first 10 features</span></div><div class="line">print(tfidf_vectorizer.get_feature_names()[:<span class="number">10</span>])</div><div class="line"></div><div class="line"><span class="comment"># Print the first 5 vectors of the tfidf training data</span></div><div class="line">print(tfidf_train.A[:<span class="number">5</span>])</div></pre></td></tr></table></figure></p>
+<h4 id="Inspecting-the-vectors"><a href="#Inspecting-the-vectors" class="headerlink" title="Inspecting the vectors"></a>Inspecting the vectors</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Create the CountVectorizer DataFrame: count_df</span></div><div class="line">count_df = pd.DataFrame(count_train.A, columns=count_vectorizer.get_feature_names())</div><div class="line"></div><div class="line"><span class="comment"># Create the TfidfVectorizer DataFrame: tfidf_df</span></div><div class="line">tfidf_df = pd.DataFrame(tfidf_train.A,columns=tfidf_vectorizer.get_feature_names())</div><div class="line"></div><div class="line"><span class="comment"># Print the head of count_df</span></div><div class="line"><span class="built_in">print</span>(count_df.head())</div><div class="line"></div><div class="line"><span class="comment"># Print the head of tfidf_df</span></div><div class="line"><span class="built_in">print</span>(tfidf_df.head())</div><div class="line"></div><div class="line"><span class="comment"># Calculate the difference in columns: difference</span></div><div class="line">difference = <span class="built_in">set</span>(count_df.columns) - <span class="built_in">set</span>(tfidf_df.columns)</div><div class="line"><span class="built_in">print</span>(difference)</div><div class="line"></div><div class="line"><span class="comment"># Check whether the DataFrames are equal</span></div><div class="line"><span class="built_in">print</span>(count_df.equals(tfidf_df))</div></pre></td></tr></table></figure>
+<h3 id="Training-and-testing-a-classification-model-with-scikit-learn"><a href="#Training-and-testing-a-classification-model-with-scikit-learn" class="headerlink" title="Training and testing a classification model with scikit-learn"></a>Training and testing a classification model with scikit-learn</h3><ul>
+<li>Naive Bayes模型，特别想给它取名 天真贝叶斯。这是解决NLP分类最常用的，主要是基于概率<h4 id="Training-and-testing-the-“fake-news”-model-with-CountVectorizer"><a href="#Training-and-testing-the-“fake-news”-model-with-CountVectorizer" class="headerlink" title="Training and testing the “fake news” model with CountVectorizer"></a>Training and testing the “fake news” model with CountVectorizer</h4>大概就是把视频里的东西抄了一遍吧（微笑脸<figure class="highlight livescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Import the necessary modules</span></div><div class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> metrics</div><div class="line"><span class="keyword">from</span> sklearn.naive_bayes <span class="keyword">import</span> MultinomialNB</div><div class="line"></div><div class="line"><span class="comment"># Instantiate a Multinomial Naive Bayes classifier: nb_classifier</span></div><div class="line">nb_classifier = MultinomialNB()</div><div class="line"></div><div class="line"><span class="comment"># Fit the classifier to the training data</span></div><div class="line">nb_classifier.fit(count_train,y_train)</div><div class="line"></div><div class="line"><span class="comment"># Create the predicted tags: pred</span></div><div class="line">pred = nb_classifier.predict(count_test)</div><div class="line"></div><div class="line"><span class="comment"># Calculate the accuracy score: score</span></div><div class="line">score = metrics.accuracy_score(y_test,pred)</div><div class="line"><span class="built_in">print</span>(score)</div><div class="line"></div><div class="line"><span class="comment"># Calculate the confusion matrix: cm</span></div><div class="line">cm = metrics.confusion_matrix(y_test,pred,labels=[<span class="string">'FAKE'</span>,<span class="string">'REAL'</span>])</div><div class="line"><span class="built_in">print</span>(cm)</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="Training-and-testing-the-“fake-news”-model-with-TfidfVectorizer"><a href="#Training-and-testing-the-“fake-news”-model-with-TfidfVectorizer" class="headerlink" title="Training and testing the “fake news” model with TfidfVectorizer"></a>Training and testing the “fake news” model with TfidfVectorizer</h4><p>跟上面的原理都是一模一样了<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Create a Multinomial Naive Bayes classifier: nb_classifier</span></div><div class="line">nb_classifier = MultinomialNB()</div><div class="line"></div><div class="line"><span class="comment"># Fit the classifier to the training data</span></div><div class="line">nb_classifier.fit(tfidf_train,y_train)</div><div class="line"></div><div class="line"><span class="comment"># Create the predicted tags: pred</span></div><div class="line">pred = nb_classifier.predict(tfidf_<span class="built_in">test</span>)</div><div class="line"></div><div class="line"><span class="comment"># Calculate the accuracy score: score</span></div><div class="line">score = metrics.accuracy_score(y_<span class="built_in">test</span>,pred)</div><div class="line"><span class="built_in">print</span>(score)</div><div class="line"></div><div class="line"><span class="comment"># Calculate the confusion matrix: cm</span></div><div class="line">cm = metrics.confusion_matrix(y_<span class="built_in">test</span>,pred,labels=[<span class="string">'FAKE'</span>,<span class="string">'REAL'</span>])</div><div class="line"><span class="built_in">print</span>(cm)</div></pre></td></tr></table></figure></p>
+<h3 id="Simple-NLP-complex-problems"><a href="#Simple-NLP-complex-problems" class="headerlink" title="Simple NLP, complex problems"></a>Simple NLP, complex problems</h3><p>使用的场景：translation、sentiment analysis、language biases</p>
+<h4 id="Improving-your-model"><a href="#Improving-your-model" class="headerlink" title="Improving your model"></a>Improving your model</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Create the list of alphas: alphas</span></div><div class="line">alphas = np.arange(<span class="number">0</span>,<span class="number">1</span>,<span class="number">0.1</span>)</div><div class="line"></div><div class="line"><span class="comment"># Define train_and_predict()</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">train_and_predict</span><span class="params">(alpha)</span>:</span></div><div class="line">    <span class="comment"># Instantiate the classifier: nb_classifier</span></div><div class="line">    nb_classifier = MultinomialNB(alpha=alpha)</div><div class="line">    <span class="comment"># Fit to the training data</span></div><div class="line">    nb_classifier.fit(tfidf_train,y_train)</div><div class="line">    <span class="comment"># Predict the labels: pred</span></div><div class="line">    pred = nb_classifier.predict(tfidf_test)</div><div class="line">    <span class="comment"># Compute accuracy: score</span></div><div class="line">    score = metrics.accuracy_score(y_test,pred)</div><div class="line">    <span class="keyword">return</span> score</div><div class="line"></div><div class="line"><span class="comment"># Iterate over the alphas and print the corresponding score</span></div><div class="line"><span class="keyword">for</span> alpha <span class="keyword">in</span> alphas:</div><div class="line">    print(<span class="string">'Alpha: '</span>, alpha)</div><div class="line">    print(<span class="string">'Score: '</span>, train_and_predict(alpha))</div><div class="line">    print()</div></pre></td></tr></table></figure>
+<h4 id="Inspecting-your-model"><a href="#Inspecting-your-model" class="headerlink" title="Inspecting your model"></a>Inspecting your model</h4><p>知道自己在写什么吗？不知道……<br><figure class="highlight makefile"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Get the class labels: class_labels</span></div><div class="line">class_labels = nb_classifier.classes_</div><div class="line"></div><div class="line"><span class="comment"># Extract the features: feature_names</span></div><div class="line">feature_names = tfidf_vectorizer.get_feature_names()</div><div class="line"></div><div class="line"><span class="comment"># Zip the feature names together with the coefficient array and sort by weights: feat_with_weights</span></div><div class="line">feat_with_weights = sorted(zip(nb_classifier.coef_[0], feature_names))</div><div class="line"></div><div class="line"><span class="comment"># Print the first class label and the top 20 feat_with_weights entries</span></div><div class="line">print(class_labels[0], feat_with_weights[:20])</div><div class="line"></div><div class="line"><span class="comment"># Print the second class label and the bottom 20 feat_with_weights entries</span></div><div class="line">print(class_labels[1], feat_with_weights[-20:])</div></pre></td></tr></table></figure></p>
+<p>话说，数据预处理真的是非常重要了。</p>
+<p>我发现，我周有时候跟我妈很像，所以我才这么喜欢她吧。同样的场景，她们俩会做出相同的选择，说出相同的话。我爸就不会。<br>妈妈会劝我无论如何要试一下，万一成功了呢？<br>爸爸会让我量力而行，不要去追求难度太大的东西，要求稳。<br>我不要！更喜欢妈妈，喜欢我周。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag">#Python</a>
+          
+            <a href="/tags/NLP/" rel="tag">#NLP</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/08/Data-Scientist-with-Python/" rel="next" title="Python 学习笔记">
+                <i class="fa fa-chevron-left"></i> Python 学习笔记
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Yibei Chen" />
+          <p class="site-author-name" itemprop="name">Yibei Chen</p>
+          <p class="site-description motion-element" itemprop="description">Keep writing and catch that python</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">33</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/Yibeichan" target="_blank" title="github">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  github
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/adelechen" target="_blank" title="zhihu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  zhihu
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://chatnone.com/" title="ChatNone" target="_blank">ChatNone</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Natural-Language-Processing-Fundamentals-in-Python"><span class="nav-number">1.</span> <span class="nav-text">Natural Language Processing Fundamentals in Python</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Regular-expressions-amp-word-tokenization"><span class="nav-number">1.1.</span> <span class="nav-text">Regular expressions & word tokenization</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Regular-expression"><span class="nav-number">1.1.1.</span> <span class="nav-text">Regular expression</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tokenization"><span class="nav-number">1.1.2.</span> <span class="nav-text">Tokenization</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Advanced-tokenization-with-NLTK-and-regex"><span class="nav-number">1.1.3.</span> <span class="nav-text">Advanced tokenization with NLTK and regex</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Non-ascii-tokenization"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">Non-ascii tokenization</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Charting-word-length-with-NLTK"><span class="nav-number">1.1.4.</span> <span class="nav-text">Charting word length with NLTK</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Simple-topic-identification"><span class="nav-number">1.2.</span> <span class="nav-text">Simple topic identification</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Building-a-Counter-with-bag-of-words"><span class="nav-number">1.2.1.</span> <span class="nav-text">Building a Counter with bag-of-words</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Simple-text-preprocessing"><span class="nav-number">1.3.</span> <span class="nav-text">Simple text preprocessing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gensim"><span class="nav-number">1.4.</span> <span class="nav-text">Gensim</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Creating-and-querying-a-corpus-with-gensim"><span class="nav-number">1.4.1.</span> <span class="nav-text">Creating and querying a corpus with gensim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gensim-bag-of-words"><span class="nav-number">1.4.2.</span> <span class="nav-text">Gensim bag-of-words</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tf-idf-with-gensim"><span class="nav-number">1.4.3.</span> <span class="nav-text">Tf-idf with gensim</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Tf-idf-with-Wikipedia"><span class="nav-number">1.4.3.1.</span> <span class="nav-text">Tf-idf with Wikipedia</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Named-entity-recognition"><span class="nav-number">1.5.</span> <span class="nav-text">Named-entity recognition</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#NER-with-NLTK"><span class="nav-number">1.5.1.</span> <span class="nav-text">NER with NLTK</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Charting-Practice"><span class="nav-number">1.5.1.1.</span> <span class="nav-text">Charting Practice</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SpaCy"><span class="nav-number">1.5.2.</span> <span class="nav-text">SpaCy</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Comparing-NLTK-with-spaCy-NER"><span class="nav-number">1.5.2.1.</span> <span class="nav-text">Comparing NLTK with spaCy NER</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Multilingual-NER-with-polyglot"><span class="nav-number">1.5.3.</span> <span class="nav-text">Multilingual NER with polyglot</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#French-NER-with-polyglot-I"><span class="nav-number">1.5.3.1.</span> <span class="nav-text">French NER with polyglot I</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#French-NER-with-polyglot-II"><span class="nav-number">1.5.3.2.</span> <span class="nav-text">French NER with polyglot II</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Spanish-NER-with-polyglot"><span class="nav-number">1.5.3.3.</span> <span class="nav-text">Spanish NER with polyglot</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Building-a-“fake-news”-classifier"><span class="nav-number">1.6.</span> <span class="nav-text">Building a “fake news” classifier</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Classifying-fake-news-using-supervised-learning-with-NLP"><span class="nav-number">1.6.1.</span> <span class="nav-text">Classifying fake news using supervised learning with NLP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Building-word-count-vectors-with-scikit-learn"><span class="nav-number">1.6.2.</span> <span class="nav-text">Building word count vectors with scikit-learn</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#CountVectorizer-for-text-classification"><span class="nav-number">1.6.2.1.</span> <span class="nav-text">CountVectorizer for text classification</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#TfidfVectorizer-for-text-classification"><span class="nav-number">1.6.2.2.</span> <span class="nav-text">TfidfVectorizer for text classification</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Inspecting-the-vectors"><span class="nav-number">1.6.2.3.</span> <span class="nav-text">Inspecting the vectors</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Training-and-testing-a-classification-model-with-scikit-learn"><span class="nav-number">1.6.3.</span> <span class="nav-text">Training and testing a classification model with scikit-learn</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Training-and-testing-the-“fake-news”-model-with-CountVectorizer"><span class="nav-number">1.6.3.1.</span> <span class="nav-text">Training and testing the “fake news” model with CountVectorizer</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Training-and-testing-the-“fake-news”-model-with-TfidfVectorizer"><span class="nav-number">1.6.3.2.</span> <span class="nav-text">Training and testing the “fake news” model with TfidfVectorizer</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Simple-NLP-complex-problems"><span class="nav-number">1.6.4.</span> <span class="nav-text">Simple NLP, complex problems</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Improving-your-model"><span class="nav-number">1.6.4.1.</span> <span class="nav-text">Improving your model</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Inspecting-your-model"><span class="nav-number">1.6.4.2.</span> <span class="nav-text">Inspecting your model</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yibei Chen</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'yibeichen';
+      var disqus_identifier = '2018/04/07/Natural-Language-Processing-101/';
+      var disqus_title = "Natural Language Processing 101";
+      var disqus_url = 'http://yibeichen.me/2018/04/07/Natural-Language-Processing-101/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+
+  
+  
+
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+
+  
+
+</body>
+</html>
