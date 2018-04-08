@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yibeichen.me/"/>
-  <updated>2018-04-07T13:46:35.584Z</updated>
+  <updated>2018-04-07T13:47:33.136Z</updated>
   <id>http://yibeichen.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yibeichen.me/2018/04/07/Natural-Language-Processing-101/"/>
     <id>http://yibeichen.me/2018/04/07/Natural-Language-Processing-101/</id>
     <published>2018-04-07T13:46:26.000Z</published>
-    <updated>2018-04-07T13:46:35.584Z</updated>
+    <updated>2018-04-07T13:47:33.136Z</updated>
     
     <content type="html"><![CDATA[<p>学完了，入门了吗？不知道。<br><a id="more"></a><br><em>2018-03-17</em></p>
 <h1 id="Natural-Language-Processing-Fundamentals-in-Python"><a href="#Natural-Language-Processing-Fundamentals-in-Python" class="headerlink" title="Natural Language Processing Fundamentals in Python"></a>Natural Language Processing Fundamentals in Python</h1><h2 id="Regular-expressions-amp-word-tokenization"><a href="#Regular-expressions-amp-word-tokenization" class="headerlink" title="Regular expressions &amp; word tokenization"></a>Regular expressions &amp; word tokenization</h2><h3 id="Regular-expression"><a href="#Regular-expression" class="headerlink" title="Regular expression"></a>Regular expression</h3><p>re 模块</p>
