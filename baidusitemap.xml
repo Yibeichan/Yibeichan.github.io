@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://yibeichen.me/2018/08/25/Taobao-Crawler/</loc>
-    <lastmod>2018-08-25T09:26:06.902Z</lastmod>
+    <lastmod>2018-08-25T09:31:36.236Z</lastmod>
     <data>
         <display>
         <title>淘宝（天猫）商品相关的爬虫</title>
@@ -209,9 +209,9 @@
         <title>大年初二、论文、修复Next及其他</title>
         <pubTime>2017-01-29T09:19:58.000Z</pubTime>
         
-        <tag>Hexo</tag>
-         
         <tag>nonsense</tag>
+         
+        <tag>Hexo</tag>
          
          
            
@@ -264,6 +264,8 @@
         <title>HTML, CSS, and Javascript for Web Developers 课程笔记 (未完)</title>
         <pubTime>2016-08-13T08:00:23.000Z</pubTime>
         
+        <tag>coursera</tag>
+         
         <tag>web development</tag>
          
         <tag>HTML</tag>
@@ -271,8 +273,6 @@
         <tag>CSS</tag>
          
         <tag>JavaScript</tag>
-         
-        <tag>coursera</tag>
          
          
            
@@ -289,9 +289,9 @@
         <title>Introduction to Classical Music 课程笔记 (未完)</title>
         <pubTime>2016-08-09T13:41:53.000Z</pubTime>
         
-        <tag>coursera</tag>
-         
         <tag>music</tag>
+         
+        <tag>coursera</tag>
          
          
            
