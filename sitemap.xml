@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yibeichen.me/2018/08/25/Taobao-Crawler/</loc>
+    
+    <lastmod>2018-08-25T09:26:06.902Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yibeichen.me/2016/07/22/Something-about-Hexo/</loc>
+    
+    <lastmod>2018-04-10T11:04:52.897Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yibeichen.me/2018/04/07/Natural-Language-Processing-101/</loc>
     
     <lastmod>2018-04-08T03:02:19.639Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://yibeichen.me/2017/12/29/Virtue/</loc>
     
     <lastmod>2018-02-05T14:21:33.054Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yibeichen.me/2016/07/22/Something-about-Hexo/</loc>
-    
-    <lastmod>2018-02-05T14:21:32.427Z</lastmod>
     
   </url>
   
